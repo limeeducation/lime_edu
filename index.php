@@ -2,5 +2,5 @@
 ?>
 
 <p>
-  Hello
+  Hello Philippines
 </p>
