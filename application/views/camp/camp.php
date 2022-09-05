@@ -2,5 +2,5 @@
 This is Camp Main Page
 
 <?php
-include('../layout/footer.php');
+include($_SERVER['DOCUMENT_ROOT']."/layout/footer.php");
 ?>
