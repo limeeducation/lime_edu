@@ -21,6 +21,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+	public function goCampPage(){
+	    $this->load->view('camp/camp');
+	}
 }
 
 /* End of file welcome.php */
