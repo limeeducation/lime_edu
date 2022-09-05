@@ -68,7 +68,7 @@
 
 <div id="container">
 	<h1>This is the Philippines Main Page!</h1>
-    <a href="/welcome/goCampPage">GO TO CAMP PAGE</a>
+    <a href="/phil/welcome/goCampPage">GO TO CAMP PAGE</a>
 </div>
 
 </body>
