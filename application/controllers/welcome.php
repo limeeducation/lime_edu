@@ -19,7 +19,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('camp/camp');
+		$this->load->view('welcome_message');
 	}
 	public function goCampPage(){
 	    $this->load->view('camp/camp');
