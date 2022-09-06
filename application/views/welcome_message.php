@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div id="container">
 	<p><?= BASEPATH?></p>
-
+	<img src=<?= BASEPATH?>."/static/img/on_construct.jpg">
 </div>
 
 </body>
