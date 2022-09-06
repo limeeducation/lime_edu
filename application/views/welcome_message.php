@@ -5,14 +5,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Lime Education</title>
-
+<style>
+body {
+        height: 100vh;
+        width: 100vw;
+        background-image: url('/static/img/on_construct.jpg');
+        background-repeat : no-repeat;
+        background-size : cover;
+      }
+</style>
 </head>
 <body>
-
-<div id="container">
-	<p><?= BASEPATH?></p>
-	<img src=/static/img/on_construct.jpg>
-</div>
 
 </body>
 </html>
