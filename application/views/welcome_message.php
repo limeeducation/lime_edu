@@ -7,8 +7,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Lime Education</title>
 <style>
 body {
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         background-image: url('/static/img/on_construct.jpg');
         background-repeat : no-repeat;
         background-size : cover;
