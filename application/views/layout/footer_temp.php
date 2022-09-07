@@ -22,12 +22,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
   <footer
-          class="text-center text-lg-start text-dark my-5"
+          class="text-dark"
           style="background-color: #ECEFF1"
           >
     <!-- Section: Social media -->
     <section
-             class="d-flex justify-content-between p-4 text-white"
+             class="d-flex justify-content-between p-3"
              style="background-color: #21D192"
              >
       <!-- Left -->
@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- Left -->
 
       <!-- Right -->
-      <div>
+      <div style="display: flex;">
         <a href="https://blog.naver.com/mylimeeducation" class="text-white me-4">
           <i class="naver_blog"></i>
         </a>
@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-center text-md-start mt-4">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
