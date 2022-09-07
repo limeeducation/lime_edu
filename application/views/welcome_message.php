@@ -20,7 +20,7 @@ body {
 </body>
 
 <?php
-include('./layout/footer_temp.php');
+include($_SERVER['DOCUMENT_ROOT'].'application/views/layout/footer_temp.php');
 ?>
 
 </html>
