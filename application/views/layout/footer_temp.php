@@ -1,7 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<script type="text/javascript" src="/static/mdb/js/mdb.min.js"></script>
+<script type="text/javascript" src="/static/mdb/src/js/mdb.free.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/mdb/css/mdb.rtl.min.css">
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
   <footer
