@@ -2,7 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <script type="text/javascript" src="/static/mdb/src/js/mdb.free.js"></script>
-<link rel="stylesheet" type="text/css" href="/static/mdb/src/scss/mdb.free.scss">
+<link rel="stylesheet" type="text/css" href="/static/mdb/css/mdb.rtl.min.css">
+<link rel="stylesheet" type="text/css" href="/static/mdb/css/mdb.min.css">
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
   <footer
