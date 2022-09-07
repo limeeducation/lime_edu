@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		width: 28px;
 		display: block;
 	}
-	.naver_cafe{
+	.naver_blog{
     		background: url("/static/img/icon_naver_blog.png");
     		height: 28px;
     		width: 28px;
