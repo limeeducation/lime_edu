@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Lime Education</title>
 <style>
 .const_info {
-        height: 100%;
+        height: 70%;
         width: 100%;
         background-image: url('');
         background-repeat : no-repeat;
