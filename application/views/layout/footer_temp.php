@@ -18,22 +18,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
              >
       <!-- Left -->
       <div class="me-5">
-        <span>Get connected with us on social networks:</span>
+        <span></span>
       </div>
       <!-- Left -->
 
       <!-- Right -->
       <div>
         <a href="" class="text-white me-4">
-          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-blog"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="text-white me-4">
+        <a href="https://instagram.com/limeedu?igshid=YmMyMTA2M2Y=" class="text-white me-4">
           <i class="fab fa-instagram"></i>
         </a>
         <a href="" class="text-white me-4">
