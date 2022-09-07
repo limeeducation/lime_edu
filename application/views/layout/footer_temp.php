@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB5-Free_5.0.0/js/mdb.min.js"></script>
+<script type="text/javascript" src="/static/mdb/js/mdb.min.js"></script>
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
   <footer
