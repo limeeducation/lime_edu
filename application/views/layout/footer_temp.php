@@ -1,8 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+?>
+<script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB5-Free_5.0.0/js/mdb.min.js"></script>
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
+<div class="my-5">
   <!-- Footer -->
   <footer
           class="text-center text-lg-start text-dark"
@@ -98,4 +99,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- Footer -->
 </div>
 <!-- End of .container -->
-<script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB5-Free_5.0.0/js/mdb.min.js"></script>
+
