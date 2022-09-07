@@ -3,10 +3,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB5-Free_5.0.0/js/mdb.min.js"></script>
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="my-5">
   <!-- Footer -->
   <footer
-          class="text-center text-lg-start text-dark"
+          class="text-center text-lg-start text-dark my-5"
           style="background-color: #ECEFF1"
           >
     <!-- Section: Social media -->
@@ -97,6 +96,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-</div>
 <!-- End of .container -->
 
