@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     		width: 28px;
     		display: block;
     }
-    .fix_btn .bt2{background-image:url(/static/img/footer/main_ic2.png); border-radius:50%;background-color:#fff;height:65px;}
+    .fix_btn .bt2{background-image:url(/static/img/footer/main_ic2.png); border-radius:50%;background-color:#fff;height:65px;width:65px;}
     .fix_btn{position:fixed;right:10px;bottom:10px;z-index:9999;}
     .fix_btn li{border-radius:50%;background-color:#fff;width:45px;height:45px;display:flex;align-items: center;justify-content:center; background-repeat:no-repeat;background-size:30px auto;background-position:center;margin-bottom:10px;box-shadow:0 0 2px #000000a6}
 	.fix_btn{right:50px;bottom:100px;}
