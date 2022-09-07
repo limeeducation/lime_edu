@@ -18,4 +18,9 @@ body {
 <body>
 
 </body>
+
+<?php
+include('/layout/footer_temp.php');
+?>
+
 </html>
