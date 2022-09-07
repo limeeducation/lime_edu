@@ -5,6 +5,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <link rel="stylesheet" type="text/css" href="/static/mdb/css/mdb.rtl.min.css">
 <link rel="stylesheet" type="text/css" href="/static/mdb/css/mdb.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<style>
+	.naver_cafe{
+		background: url("/static/img/icon_naver_cafe.png");
+		height: 28px;
+		width: 28px;
+		display: block;
+	}
+	.naver_cafe{
+    		background: url("/static/img/icon_naver_blog.png");
+    		height: 28px;
+    		width: 28px;
+    		display: block;
+    	}
+</style>
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
   <footer
@@ -24,14 +38,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
       <!-- Right -->
       <div>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-blog"></i>
+        <a href="https://blog.naver.com/mylimeeducation" class="text-white me-4">
+          <i class="naver_blog"></i>
         </a>
         <a href="https://instagram.com/limeedu?igshid=YmMyMTA2M2Y=" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram fa-2xl"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
+        <a href="https://m.cafe.naver.com/limecanada" class="text-white me-4">
+          <i class="naver_cafe"></i>
         </a>
       </div>
       <!-- Right -->
@@ -49,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h6 class="text-uppercase fw-bold">한국 지역 본부</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
+                style="width: 150px; background-color: #7c4dff; height: 2px"
                 />
             <p><i class="fas fa-home mr-3"></i> 서울시 서초구 서초동 1330-10번지 갤럭시타워 604호</p>
             <p><i class="fas fa-envelope mr-3"></i> hm.lee@mylimeedu.com</p>
@@ -63,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h6 class="text-uppercase fw-bold">캐나다 본사</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
+                style="width: 150px; background-color: #7c4dff; height: 2px"
                 />
             <p><i class="fas fa-home mr-3"></i> 55 Eglinton Ave East, Suite 601, Toronto, ON Canada M4P 1G8</p>
             <p><i class="fas fa-envelope mr-3"></i> tglee@mylimeedu.com </p>
