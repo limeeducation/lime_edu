@@ -114,7 +114,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </footer>
   <!-- Footer -->
 <!-- End of .container -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="application_form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -151,9 +151,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <script type="text/javascript">
-	const Modal = document.getElementById('open_application');
 	function open_modal(){
-		const myModalEl = document.getElementById('open_application');
+		const myModalEl = document.getElementById('application_form');
 		const modal = new mdb.Modal(myModalEl);
         modal.show();
 	}
