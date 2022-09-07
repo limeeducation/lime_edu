@@ -41,6 +41,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a href="https://blog.naver.com/mylimeeducation" class="text-white me-4">
           <i class="naver_blog"></i>
         </a>
+        <a href="https://blog.naver.com/PostList.naver?blogId=thelimeinc" class="text-white me-4">
+		  <i class="naver_blog"></i>
+		</a>
         <a href="https://instagram.com/limeedu?igshid=YmMyMTA2M2Y=" class="text-white me-4">
           <i class="fab fa-instagram fa-2xl"></i>
         </a>
