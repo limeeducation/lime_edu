@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Section: Social media -->
     <section
              class="d-flex justify-content-between p-3"
-             style="background-color: #21D192"
+             style="background-color: #b4d130"
              >
       <!-- Left -->
       <div class="me-5">
