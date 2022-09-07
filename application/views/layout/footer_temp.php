@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     		height: 28px;
     		width: 28px;
     		display: block;
-    	}
+    }
 </style>
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-lg-6 col-md-12 mb-md-0 mx-auto mb-4">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">한국 지역 본부</h6>
             <hr
