@@ -137,7 +137,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="fix_btn">
         <ul>
             <li>
-            	<button type="button" class="btn btn-primary bt2" data-mdb-toggle="modal" data-mdb-target="#exampleModal" onclick="open_modal()">
+            	<button type="button" class="btn btn-primary bt2" data-mdb-toggle="modal" data-mdb-target="#exampleModal" onclick="javascript:open_modal();">
                 </button>
             </li>
         </ul>
