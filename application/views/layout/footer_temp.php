@@ -327,6 +327,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$(".yac_more").slideToggle(500);
 		$(".yac_Btn").css("display","none");
 		$(".yac_Btn_cl").css("display","inline-block");
+		span_view('1');
 	});
 	$(".yac_Btn_cl").click(function(){
 		$(".yac_more").slideToggle(500);
