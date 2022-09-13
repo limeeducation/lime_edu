@@ -31,12 +31,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	.fix_btn li:hover{background-image:none;cursor:pointer}
 	.fix_btn li:hover p{display:block;  position: relative;animation:tex .2s;}
 	@media (min-width: 576px){
-		.modal-dialog{max-width:30%;}
+		#apply-modal{max-width:30%;}
 	}
 	@media (max-width: 576px){
-		.modal-dialog{
-			max-width: 80% !important;
-		}
+		#apply-modal{max-width: 70% !important;}
     }
 </style>
 <!-- Remove the container if you want to extend the Footer to full width. -->
@@ -119,7 +117,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <a class="text-dark" target="_blank" href="http://mylimeedu.com">mylimeedu.com</a>
     </div>
     <div class="modal fade" id="application_form" tabindex="-1" aria-labelledby="exampleModalLabel">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered" id="apply-modal">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">상담 신청하기</h5>
