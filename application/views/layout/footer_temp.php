@@ -131,7 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<input type="hidden" name="temp_key" value="<?='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" >
 				<div class="mb-3">
 					<label for="recipient-name" class="col-form-label">이름</label>
-					<input type="text" class="form-control" id="stu_name" />
+					<input type="text" class="form-control" name="temp_namef" id="stu_name" />
 				</div>
 				<div class="mb-3">
 					<label for="message-text" class="col-form-label">연락처</label>
