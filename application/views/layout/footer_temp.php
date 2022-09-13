@@ -344,4 +344,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		document.getElementById('btn_'+a).style.background="#7591f8";
 		document.getElementById('btn_'+a).style.color="#fff";
 	}
+
+	$( document ).ready(function() {
+       $(".yac_Btn_cl").click();
+    });
 </script>
