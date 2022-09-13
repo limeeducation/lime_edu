@@ -125,7 +125,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
           <div class="modal-body">
             <form name='myform' id='myform' method='post'>
-				<input type="hidden" name="tempbang" value='<?=$temp_bang?>' >
 				<input type="hidden" name="temp_site" value='limeedu' >
 				<input type="hidden" name="tempkbn" value='on' >
 				<input type="hidden" name="backURL" value='<?='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>' >
@@ -311,7 +310,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 data: params,
                 contentType : "application/x-www-form-urlencoded;charset=utf-8",
                 success: function(rtnData){
-
+					console.log(rtnData);
                     if(rtnData == 'ok'){
                         alert("상담예약이 완료되었습니다.");
                     }else{
@@ -324,7 +323,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 complete : function(){
 
                 },
-                error : function(xhr, status, error){alert(error);}
+                error : function(xhr, status, error){
+                	alert(error);
+                	console.log(xhr);
+                	console.log(status);
+                	console.log(error);
+                }
             });
         });
     }
