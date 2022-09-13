@@ -215,7 +215,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         });
     }
 
-	$(".yac_Btn").click(function(){
+/* 	$(".yac_Btn").click(function(){
 		$(".yac_more").slideToggle(500);
 		$(".yac_Btn").css("display","none");
 		$(".yac_Btn_cl").css("display","inline-block");
@@ -224,7 +224,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$(".yac_more").slideToggle(500);
 		$(".yac_Btn").css("display","inline-block");
 		$(".yac_Btn_cl").css("display","none");
-	});
+	}); */
 
 	function span_view(a){
 		for(var i="1"; i<"4"; i++){
