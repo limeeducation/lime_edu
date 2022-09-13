@@ -152,6 +152,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script type="text/javascript">
 	function open_modal(){
+		console.log('open_come');
 		const myModalEl = document.getElementById('application_form');
 		const modal = new mdb.Modal(myModalEl);
         modal.show();
