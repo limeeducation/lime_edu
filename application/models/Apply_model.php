@@ -8,7 +8,7 @@ class Apply_model extends CI_Model
 		//Codeigniter : Write Less Do More
 	}
 	public function apply_consult($query){
-		$this->db->query($query)->result();
+		$this->db->query($query);
 	}
 }
 
