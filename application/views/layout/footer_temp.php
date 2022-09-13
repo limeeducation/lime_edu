@@ -213,7 +213,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="taba" id="btn_3" onclick="span_view('3')">개인정보의 <br>보유 및 이용기간</div>
 							</div>
 
-							<div class="yac_con" id="tab_1">
+							<div class="yac_con" id="tab_1" style="border:1px solid #000;">
 								<h4>■ 수집하는 개인정보 항목</h4>
 								<p> 라임에듀케이션은 원활한 상담진행과 서비스 제공을 위해서 아래와 같은 개인정보를 수집하고 있습니다.
 								<p>아래와 같은 개인정보를 수집하고 있습니다.</p>
@@ -226,7 +226,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<p>- PC 혹은 모바일 홈페이지 상담예약, 전화, 서면양식</p>
 							</div>
 
-							<div class="yac_con" id="tab_2">
+							<div class="yac_con" id="tab_2" style="border:1px solid #000;">
 								<h4>■ 개인정보의 수집 및 이용목적</h4>
 								<p>수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
 								<p>- 서비스 제공에 관한 계약 이행</p>
@@ -241,7 +241,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<p>이벤트 등 광고성 정보 전달 , 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계 </p>
 							</div>
 
-							<div class="yac_con" id="tab_3">
+							<div class="yac_con" id="tab_3" style="border:1px solid #000;">
 								<h4>■ 개인정보의 보유 및 이용기간</h4>
 								<p>원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. </p>
 								<p>단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.</p>
