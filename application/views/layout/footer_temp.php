@@ -103,53 +103,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)"
-         >
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >
       © 2022 Copyright:
       <a class="text-dark" target="_blank" href="http://mylimeedu.com">mylimeedu.com</a>
+    </div>
+    <div class="modal fade" id="application_form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">상담 신청하기</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fix_btn">
+        <ul>
+            <li>
+            	<button type="button" class="btn btn-primary bt2" data-mdb-toggle="modal" data-mdb-target="#exampleModal" onclick="open_modal()">
+                </button>
+            </li>
+        </ul>
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
 <!-- End of .container -->
-<div class="modal fade" id="application_form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">상담 신청하기</h5>
-        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name" />
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="fix_btn">
-    <ul>
-        <li>
-        	<button type="button" class="btn btn-primary bt2" data-mdb-toggle="modal" data-mdb-target="#exampleModal" onclick="open_modal()">
-            </button>
-        </li>
-    </ul>
-</div>
-
 <script type="text/javascript">
 	import { Modal } from 'mdb-ui-kit';
 	function open_modal(){
