@@ -33,12 +33,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	@media(min-width: 576px){
 		.modal-dialog{max-width:30%;}
 	}
-	@media screen and (max-width:640px){
-            .modal-dialog{
-                left: 0;
-                width: 100%;
-            }
-        }
+	@media(max-width: 576px){
+		.modal-dialog{
+			width: 100%;
+		}
+    }
 </style>
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
