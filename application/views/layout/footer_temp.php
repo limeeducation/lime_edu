@@ -147,7 +147,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- Footer -->
 <!-- End of .container -->
 <script type="text/javascript">
-	import { Modal } from 'mdb-ui-kit';
+	//import { Modal } from 'mdb-ui-kit';
 	function open_modal(){
 		const myModalEl = document.getElementById('application_form');
 		const modal = new mdb.Modal(myModalEl);
