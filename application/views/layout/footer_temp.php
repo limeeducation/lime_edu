@@ -1,6 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="/static/mdb/css/mdb.rtl.min.css">
 <link rel="stylesheet" type="text/css" href="/static/mdb/css/mdb.min.css">
@@ -107,8 +110,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       © 2022 Copyright:
       <a class="text-dark" target="_blank" href="http://mylimeedu.com">mylimeedu.com</a>
     </div>
-    <div class="modal fade" id="application_form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <div class="modal fade" id="application_form" tabindex="-1" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">상담 신청하기</h5>
@@ -137,7 +140,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="fix_btn">
         <ul>
             <li>
-            	<button type="button" class="btn btn-primary bt2" data-mdb-toggle="modal" data-mdb-target="#exampleModal" onclick="javascript:open_modal();">
+            	<button type="button" class="btn btn-primary bt2" data-toggle="modal" data-target="#application_form">
                 </button>
             </li>
         </ul>
@@ -146,15 +149,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </footer>
   <!-- Footer -->
 <!-- End of .container -->
-<script type="text/javascript">
-	import { Modal } from 'mdb-ui-kit';
-	function open_modal(){
-		const myModalEl = document.getElementById('application_form');
-		const modal = new mdb.Modal(myModalEl);
-        modal.show();
-	}
-</script>
-
 <script type="text/javascript">
 
     function checkInput() {
