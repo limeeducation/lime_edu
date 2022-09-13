@@ -307,7 +307,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             var params = $form.serialize();
             $.ajax({
                 type: "post",
-                url: "/rn_quick_act",
+                url: "/RnQuickAct",
                 data: params,
                 contentType : "application/x-www-form-urlencoded;charset=utf-8",
                 success: function(rtnData){
