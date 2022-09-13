@@ -30,6 +30,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	.fix_btn li{width:65px;height:65px;margin-bottom:20px;background-size:55px auto;}
 	.fix_btn li:hover{background-image:none;cursor:pointer}
 	.fix_btn li:hover p{display:block;  position: relative;animation:tex .2s;}
+	@media(min-width: 576px){
+		.modal-dialog{max-width:30%;}
+	}
+	@media screen and (max-width:640px){
+            .modal-dialog{
+                left: 0;
+                width: 100%;
+            }
+        }
 </style>
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
