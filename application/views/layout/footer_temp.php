@@ -31,11 +31,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	.fix_btn li:hover{background-image:none;cursor:pointer}
 	.fix_btn li:hover p{display:block;  position: relative;animation:tex .2s;}
 	@media screen and (min-width: 576px){
-		.modal-dialog{width:30%;}
+		.modal-dialog{max-width:30%;}
 	}
 	@media screen and (max-width: 576px){
 		.modal-dialog{
-			width: 80% !important;
+			max-width: 80% !important;
 		}
     }
 </style>
