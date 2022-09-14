@@ -37,6 +37,6 @@ class Test extends CI_Controller {
 		$sResultData = `$scheckplus_path AUTH $sSiteCode $sSitePw $sJumin "" $sHPComp $sHP $sRequestSeq`;
 
 		//결과 : 응답코드|요청SEQ|응답SEQ
-		echo "결과 : ".$sResultData;
+		echo "결과 : $sResultData";
 	}
 }
