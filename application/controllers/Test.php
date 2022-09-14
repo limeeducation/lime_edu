@@ -36,7 +36,7 @@ class Test extends CI_Controller {
 		echo "경로 : $scheckplus_path";
 		echo "<br>";
 		//인자값 : AUTH 사이트코드 사이트패스워드 주민등록번호 이통사구분(1/2/3) 휴대전화번호 요청SEQ(option)
-		$sResultData = $scheckplus_path AUTH $sSiteCode $sSitePw $sJumin $sHPComp $sHP $sRequestSeq;
+		$sResultData = `$scheckplus_path AUTH $sSiteCode $sSitePw $sJumin $sHPComp $sHP $sRequestSeq`;
 		echo "sResultData : $sResultData";
 		print_r($sResultData);
         echo "<br>";
