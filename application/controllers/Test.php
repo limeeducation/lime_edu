@@ -31,10 +31,14 @@ class Test extends CI_Controller {
 		$sHPComp  		= "1";										// 이통사 구분안함
 
 		echo "핸드폰번호 : $sHP";
+		echo "<br>";
 		$scheckplus_path = $_SERVER['DOCUMENT_ROOT']."/SCheckPlus";
-
+		echo "경로 : $scheckplus_path";
+		echo "<br>";
 		//인자값 : AUTH 사이트코드 사이트패스워드 주민등록번호 이통사구분(1/2/3) 휴대전화번호 요청SEQ(option)
 		$sResultData = `$scheckplus_path AUTH $sSiteCode $sSitePw $sJumin "" $sHPComp $sHP $sRequestSeq`;
+		echo "sResultData : $sResultData";
+        echo "<br>";
 		$decode_res = json_decode($sResultData);
 		//결과 : 응답코드|요청SEQ|응답SEQ
 		echo "결과 : $decode_res";
