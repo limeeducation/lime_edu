@@ -30,7 +30,7 @@ class Test extends CI_Controller {
 		$sRequestSeq 	= "SEQ00001";								// 요청SEQ_식별값
 		$sHPComp  		= "1";										// 이통사 구분안함
 
-
+		echo "핸드폰번호 : $sHP":
 		$scheckplus_path = $_SERVER['DOCUMENT_ROOT']."/SCheckPlus";
 
 		//인자값 : AUTH 사이트코드 사이트패스워드 주민등록번호 이통사구분(1/2/3) 휴대전화번호 요청SEQ(option)
