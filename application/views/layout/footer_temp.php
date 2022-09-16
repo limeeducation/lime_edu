@@ -30,9 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	.fix_btn li{width:65px;height:65px;margin-bottom:20px;background-size:55px auto;}
 	.fix_btn li:hover{background-image:none;cursor:pointer}
 	.fix_btn li:hover p{display:block;  position: relative;animation:tex .2s;}
-	@media (min-width: 576px){
-		#apply-modal{max-width:30%;}
-	}
+
 	@media (max-width: 576px){
 		#apply-modal{max-width: 70% !important;}
     }
