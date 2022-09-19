@@ -1,6 +1,5 @@
 <?
-include_once($_SERVER['DOCUMENT_ROOT']."/config/common.php");
-
+include_once($_SERVER['DOCUMENT_ROOT']."/static/etc/old/common.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -10,8 +9,8 @@ include_once($_SERVER['DOCUMENT_ROOT']."/config/common.php");
   <meta property="og:image" content="./img/og_main.jpg" />
 
   <title>라임에듀</title>
-  <link href="/css/style.css" rel="stylesheet" >
-  <link href="/css/sub_ca.css" rel="stylesheet" >
+  <link href="/static/css/style.css" rel="stylesheet" >
+  <link href="/static/css/sub_ca.css" rel="stylesheet" >
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
