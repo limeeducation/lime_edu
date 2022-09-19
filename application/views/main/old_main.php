@@ -72,7 +72,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 				<div class="swiper-slide">
 					<ul class="mc1_im_ul">
 					<?
-					for($i=0;$row1 = mysql_fetch_array($result);$i++){
+					for($i=0;$row1 = mysqli_fetch_array($result);$i++){
 						$img_file = explode("|",$row1['filename_real1']);
 						
 					?>
@@ -90,7 +90,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 				<div class="swiper-slide">
 					<ul class="mc1_im_ul">
 					<?
-					for($i=0;$row2 = mysql_fetch_array($result2);$i++){
+					for($i=0;$row2 = mysqli_fetch_array($result2);$i++){
 						$img_file = explode("|",$row2['filename_real1']);
 					?>
 						<li><a href="/board/blog_view.php?idx=<?=$row2['idx']?>">
