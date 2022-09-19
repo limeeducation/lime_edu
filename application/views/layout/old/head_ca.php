@@ -25,7 +25,7 @@
 
 <div id="headerin">
 <header>
-	<h1 class="logo"><a href="/"><img src="/img/logo_lime.png" title="미국 캐나다 영국 전문가 라임에듀" alt="미국 캐나다 영국 전문가 라임에듀"></a></h1>
+	<h1 class="logo"><a href="/"><img src="/static/img/old/logo_lime.png" title="미국 캐나다 영국 전문가 라임에듀" alt="미국 캐나다 영국 전문가 라임에듀"></a></h1>
 
 	<div class="top_call">
 		<div class="his"><a href=""><i class="far fa-building"></i><span>회사소개</span></a></div>
