@@ -1,6 +1,6 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
-include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
+//include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
 
 
