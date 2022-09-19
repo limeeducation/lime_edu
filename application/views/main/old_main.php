@@ -5,20 +5,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 
 
 <link href="/static/css/old/main.css" rel="stylesheet" >
-<br>
-<br>
-<br>
-result =
-<br>
-<?php print_r($result); ?>
-<br>
-<br>
-<br>
-result2 =
-<?php print_r($result2); ?>
-<br>
-<br>
-<br>
 <div class="main_top">  
 		<div id="slide_wrap">
 		<ul style="display: none;">
@@ -84,9 +70,8 @@ result2 =
 				<div class="swiper-slide">
 					<ul class="mc1_im_ul">
 					<?
-					for($i=0;$row1 = mysqli_fetch_array($result);$i++){
+					for($i=0;$row1 = mysqli_fetch_array($result); $i++){
 						$img_file = explode("|",$row1['filename_real1']);
-						
 					?>
 						<li><a href="/board/blog_view.php?idx=<?=$row1['idx']?>">
 							<div class="tx">
