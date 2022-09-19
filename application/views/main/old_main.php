@@ -70,14 +70,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 				<div class="swiper-slide">
 					<ul class="mc1_im_ul">
 					<?
-					print_r($result);
 					for($i=0; $row1 = $result[$i]; $i++){
-						$img_file = explode("|",$row1['filename_real1']);
+						$img_file = explode("|",$row1->filename_real1);
 					?>
-						<li><a href="/board/blog_view.php?idx=<?=$row1['idx']?>">
+						<li><a href="/board/blog_view.php?idx=<?=$row1->idx?>">
 							<div class="tx">
-								<p class="tit"><?=$row1['title']?></p>
-								<div><?=strip_tags($row1['contents'])?></div>
+								<p class="tit"><?=$row1->title?></p>
+								<div><?=strip_tags($row1->contents)?></div>
 							</div>
 							<div class="im"><img src="/static/img/old/data/board/<?=$img_file[0]?>"></div></a>
 						</li>	
@@ -89,12 +88,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 					<ul class="mc1_im_ul">
 					<?
 					for($i=0; $row2 = $result2[$i]; $i++){
-						$img_file = explode("|",$row2['filename_real1']);
+						$img_file = explode("|",$row2->filename_real1);
 					?>
-						<li><a href="/board/blog_view.php?idx=<?=$row2['idx']?>">
+						<li><a href="/board/blog_view.php?idx=<?=$row2->idx?>">
 							<div class="tx">
-								<p class="tit"><?=$row2['title']?></p>
-								<div><?=strip_tags($row2['contents'])?></div>
+								<p class="tit"><?=$row2->title?></p>
+								<div><?=strip_tags($row2->contents)?></div>
 								<!--<span>
 									조회 <b>103</b> 
 									댓글 <b>8</b>
