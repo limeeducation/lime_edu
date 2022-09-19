@@ -70,7 +70,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 				<div class="swiper-slide">
 					<ul class="mc1_im_ul">
 					<?
-					for($i=0; $i<$result.count(); $i++){
+					for($i=0; $i<count($result); $i++){
 						$row1 = $result[$i];
 						$img_file = explode("|",$row1->filename_real1);
 					?>
@@ -88,7 +88,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 				<div class="swiper-slide">
 					<ul class="mc1_im_ul">
 					<?
-					for($i=0; $i<$result2.count(); $i++){
+					for($i=0; $i<count($result2); $i++){
 						$row2 = $result2[$i];
 						$img_file = explode("|",$row2->filename_real1);
 					?>
