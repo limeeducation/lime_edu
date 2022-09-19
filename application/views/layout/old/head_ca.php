@@ -39,7 +39,7 @@
         <nav class="gnb ">
             <ul>
                 <li class="mn_c">
-                    <a href="#" class="<?if($me=='1'){echo 'on';}?> class=" cate">캐나다 관리형유학</a>
+                    <a href="#" class="cate">캐나다 관리형유학</a>
                     <div class="sub">
                         <ul>
                             <li class="side_dmn"><a href="/mng/bc.php" class=""><span>BC주 관리형 유학</span></a></li>
@@ -49,7 +49,7 @@
                     </div>
                 </li>
                 <li class="mn_c">
-                    <a href="#" class="<?if($me=='2'){echo 'on';}?> cate">국제 사립학교</a>
+                    <a href="#" class="cate">국제 사립학교</a>
                     <div class="sub">
                         <ul>
                             <li class="side_dmn"><a href="/intl/bicc.php" class=""><span>BICC</span></a></li>
@@ -61,7 +61,7 @@
                 </li>
 				
 				<li class="mn_c">
-                    <a href="#" class="<?if($me=='3'){echo 'on';}?> cate">명문보딩스쿨</a>
+                    <a href="#" class="cate">명문보딩스쿨</a>
                     <div class="sub">
                         <ul>
                             <li class="side_dmn"><a href="/bod/sch1.php" class=""><span>Lakefield College School</span></a></li>
@@ -75,7 +75,7 @@
 
 				
                 <li class="mn_c">
-                    <a href="#" class="<?if($me=='4'){echo 'on';}?> cate">아이 혼자 공립학교</a>
+                    <a href="#" class="cate">아이 혼자 공립학교</a>
                     <div class="sub">
                         <ul>
                             <li class="side_dmn"><a href="/publ/on.php" class=""><span>요크가톨릭 교육청</span></a></li>
@@ -94,18 +94,18 @@
 
 				
                 <li class="mn_c">
-                    <a href="/gdn/gdn.php" class="<?if($me=='5'){echo 'on';}?>">프리미엄 가디언 서비스</a>
+                    <a href="/gdn/gdn.php" class="cate">프리미엄 가디언 서비스</a>
                 </li>
 				
                 <li class="mn_c">
-                    <a href="/fm/family.php" class="<?if($me=='6'){echo 'on';}?> ">캐나다 명문대 편입</a>
+                    <a href="/fm/family.php" class="cate">캐나다 명문대 편입</a>
 
                 </li>
 				
    
 				
                 <li class="mn_c">
-                    <a href="#" class="<?if($me=='7'){echo 'on';}?> cate">컬리지</a>
+                    <a href="#" class="cate">컬리지</a>
 					<div class="sub">
                         <ul>
                             <li class="side_dmn"><a href="/col/major.php" class=""><span>전공별 컬리지</span></a></li>
@@ -115,7 +115,7 @@
                 </li>
 				
                 <li class="mn_c">
-                    <a href="#" class="<?if($me=='8'){echo 'on';}?> cate">교육제도 및 비자</a>
+                    <a href="#" class="cate">교육제도 및 비자</a>
                     <div class="sub">
                         <ul>
                             <li class="side_dmn"><a href="/visa/edu.php" class=""><span>캐나다 교육제도</span></a></li>
