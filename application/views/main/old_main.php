@@ -70,6 +70,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 				<div class="swiper-slide">
 					<ul class="mc1_im_ul">
 					<?
+					print_r($result);
 					for($i=0; $row1 = $result[$i]; $i++){
 						$img_file = explode("|",$row1['filename_real1']);
 					?>
