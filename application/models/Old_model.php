@@ -8,7 +8,7 @@ class Old_model extends CI_Model
 		//Codeigniter : Write Less Do More
 	}
 	public function run_query($query){
-		return $this->db->query($query)->result();
+		return $this->db->query($query);
 	}
 }
 
