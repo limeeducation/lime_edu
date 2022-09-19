@@ -1,6 +1,4 @@
-<?
-include_once($_SERVER['DOCUMENT_ROOT']."/static/etc/old/common.php");
-?>
+
 <!doctype html>
 <html lang="en">
  <head>
