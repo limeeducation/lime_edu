@@ -7,6 +7,7 @@ class Main extends CI_Controller {
 		parent::__construct();
 		$this->load->database();
 		$this->load->model(array('old_model'));
+		$this->load->library( 'document' );
 	}
 	public function index()
 	{
