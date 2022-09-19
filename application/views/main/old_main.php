@@ -400,7 +400,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/footer_temp.php');
 
 </script>
 
-<script src="/js/lc-micro-slider.js" type="text/javascript"></script> 
+<script src="/static/js/old/lc-micro-slider.js" type="text/javascript"></script>
     <script type="text/javascript">
     const timing = 8000;
         

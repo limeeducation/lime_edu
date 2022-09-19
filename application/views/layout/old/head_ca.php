@@ -4,7 +4,7 @@
  <head>
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  <meta property="og:image" content="./img/og_main.jpg" />
+  <meta property="og:image" content="/static/img/old/og_main.jpg" />
 
   <title>라임에듀</title>
   <link href="/static/css/old/style.css" rel="stylesheet" >
