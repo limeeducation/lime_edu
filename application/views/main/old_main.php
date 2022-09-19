@@ -5,9 +5,20 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 
 
 <link href="/static/css/old/main.css" rel="stylesheet" >
-
+<?= echo "<br>";?>
+<?= echo "<br>";?>
+<?= echo "<br>";?>
+<?= echo "result = ";?>
+<?= echo "<br>";?>
 <?php print_r($result); ?>
+<?= echo "<br>";?>
+<?= echo "<br>";?>
+<?= echo "<br>";?>
+<?= echo "result2 = ";?>
 <?php print_r($result2); ?>
+<?= echo "<br>";?>
+<?= echo "<br>";?>
+<?= echo "<br>";?>
 <div class="main_top">  
 		<div id="slide_wrap">
 		<ul style="display: none;">
