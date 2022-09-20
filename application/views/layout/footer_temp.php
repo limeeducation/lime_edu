@@ -198,7 +198,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<textarea class="form-control" name="temp_stetc" ></textarea>
 				</div>
 				<div class="mb-3">
-					<span class="yac_ttxx"><label for="agree"><input type='checkbox' name='agree' id='agree'  >개인정보 보호에 동의(*) </label> <b class="yac_Btn">[방침보기]</b><b class="yac_Btn_cl">[닫기]</b></a></span>
+					<span class="yac_ttxx"><label for="agree"><input type='checkbox' name='agree' id='agree'  >개인정보 보호에 동의(*) </label> <b class="yac_Btn">[닫기]</b><b class="yac_Btn_cl">[방침보기]</b></a></span>
 					<div class="yac_more">
 						<div id="privacy">
 							<div class="yac_tit">개인정보수집 및 이용에 대한 안내</div>
