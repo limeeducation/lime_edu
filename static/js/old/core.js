@@ -4,27 +4,27 @@ $(function(){
 		$(".side").animate({left:"0px"},500);
 		return false;
 	})
-$(".closeSide").click(function(){
-	$(".side").animate({left:"-240px"},500);
+	$(".closeSide").click(function(){
+		$(".side").animate({left:"-240px"},500);
 		return false;
 	})
 
-$(".side .mn_c .cate").click(function(){
-	console.log("clickMenu");
-	var tg = $(this).nextElementSibling;
-	var dis = tg.css("display");
-	console.log("tg_display : "+dis);
-	if(dis=="none"){
-		$(".mn_c .cate").removeClass("active");
-		$(".mn_c .sub").slideUp(500);
-		$(this).addClass("active");
-		tg.slideDown(500);
-	} else {
-		$(".mn_c .cate").removeClass("active");
-		$(".mn_c .sub").slideUp(500);
-	}
-	return false;
-});
+	$(".side .mn_c .cate").click(function(){
+		console.log("clickMenu");
+		var tg = $(this).nextElementSibling;
+		var dis = tg.prop("display");
+		console.log("tg_display : "+dis);
+		if(dis=="none"){
+			$(".mn_c .cate").removeClass("active");
+			$(".mn_c .sub").slideUp(500);
+			$(this).addClass("active");
+			tg.slideDown(500);
+		} else {
+			$(".mn_c .cate").removeClass("active");
+			$(".mn_c .sub").slideUp(500);
+		}
+		return false;
+	})
 });
 
 /**/
