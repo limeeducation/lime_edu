@@ -30,12 +30,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 							<p class="bl_vtit3">최근 5년간 컨설턴트 기준</p>
 						</div>
 						<ul>
-							<li><div>김*희님</div><p>Fanshawe College 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
-							<li><div>박*윤님</div><p>Kingston University, London 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
-							<li><div>윤*이님</div><p>Fanshawe College 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
-							<li><div>김*수님</div><p>Fanshawe College 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
-							<li><div>김*혜님</div><p>Fanshawe College 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
-							<li><div>윤*정님</div><p>Fanshawe College 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
+							<li><div>김*희님</div><p>Fanshawe College 입학을 축하드립니다</p><span>23년 9월 학기</span> </li>
+							<li><div>박*윤님</div><p>Kingston University, London 입학을 축하드립니다</p><span>23년 9월 학기</span> </li>
+							<li><div>윤*이님</div><p>Fanshawe College 입학을 축하드립니다</p><span>23년 9월 학기</span> </li>
+							<li><div>김*수님</div><p>Fanshawe College 입학을 축하드립니다</p><span>23년 9월 학기</span> </li>
+							<li><div>김*혜님</div><p>Fanshawe College 입학을 축하드립니다</p><span>22년 9월 학기</span> </li>
+							<li><div>윤*정님</div><p>Fanshawe College 입학을 축하드립니다</p><span>22년 9월 학기</span> </li>
 							<li><div>김*님</div><p>Fanshawe College 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
 							<li><div>김*혜님</div><p>Fanshawe College 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
 							<li><div>김*희님</div><p>Fanshawe College 입학을 축하드립니다</p><span>21년 9월 학기</span> </li>
