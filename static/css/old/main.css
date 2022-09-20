@@ -161,12 +161,12 @@
 #main{z-index:999;}
 #main .main_con1{margin-bottom: 200px;}
 .main_tit{text-align:center;margin-bottom:80px;font-size:40px;}
-.mainc1{width:1300px;margin:-100px auto 0px;display:flex;justify-content: space-between;}
+.mainc1{width:1300px;margin:100px auto 0px;display:flex;justify-content: space-between;}
 .mc1box{width:650px;border-radius:10px;height:720px;}
 .mc1box.bx1{box-shadow:0 0 10px #3333338a}
 .mc1box.bx2{width:605px;}
 
-.mc1_ic_ul{flex-wrap: wrap;align-items: center;justify-content: center;width:530px;margin:auto}
+.mc1_ic_ul{flex-wrap: wrap;align-items: center;justify-content: center;width:600px;margin:auto}
 .mc1_ic_ul li{color:#fff;width:122px;height:122px;border-radius:20px;display:flex;    align-items: center;font-size:15px;line-height:20px;margin:5px;}
 .mc1_ic_ul li:hover{background:#fff;}
 .mc1_ic_ul li:hover a{color:#282828;}
