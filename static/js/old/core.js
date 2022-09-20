@@ -13,9 +13,11 @@ $(function(){
 		var tg = $(this).next();
 		$(".mn_c .cate").removeClass("active");
 		$(".mn_c .sub").slideUp(500);
-		$(this).addClass("active");
-		tg.slideDown(500);
 
+		if(tg.css('display') == 'none'){
+			$(this).addClass("active");
+			tg.slideDown(500);
+		}
 		return false;
 	})
 });
