@@ -135,7 +135,7 @@ background-image:url(/static/img/old/r_on2.png) ;
 .gnb li{border-bottom:1px solid #ccc;}
 .gnb li a{display:block; padding:15px 20px; font-size:15px; color:#111;}
 
-/*.gnb li .cate{background:url(/static/img/old/icon_arrow_down.png) no-repeat 195px 23px; background-size:12px auto;position:relative}*/
+.gnb li .cate{background:url(/static/img/old/arw_d.png) no-repeat 195px 23px; background-size:12px auto;position:relative}
 .gnb li .cate:after{content:"";position:absolute;right:20px;top:20px;width:6px;height:6px; border-right:1px solid #aaa;border-bottom:1px solid #aaa;transform:rotate(45deg);} 
 .gnb li .active.cate:after{transform:rotate(-135deg);top:25px}
 
