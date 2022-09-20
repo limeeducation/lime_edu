@@ -322,7 +322,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/footer_temp.php');
 ?>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.1.0/swiper-bundle.min.js'></script>
 <script>
 	$(".map_sch_list .tab h3").click(function(){
 		$(".map_sch_list .tab").removeClass("on");
