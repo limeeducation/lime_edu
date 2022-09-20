@@ -34,7 +34,7 @@ window.addEventListener('scroll', handleScroll);
 
 
 	$(".side .mn_c .cate").click(function(){
-		var tg = $(this).nextElementSibling();
+		var tg = $(this).nextElementSibling;
 		var dis = tg.css("display");
 		if(dis=="none"){
 			$(".mn_c .cate").removeClass("active");
