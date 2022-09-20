@@ -12,7 +12,7 @@ $(function(){
 	$(".side .mn_c .cate").click(function(){
 		console.log("clickMenu");
 		var tg = $(this).nextElementSibling;
-		var dis = tg.prop("display");
+		var dis = tg.style.display;
 		console.log("tg_display : "+dis);
 		if(dis=="none"){
 			$(".mn_c .cate").removeClass("active");
