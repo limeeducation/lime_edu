@@ -332,7 +332,7 @@ background-image:url(/static/img/old/r_on2.png) ;
 
 .gnb li .sub ul li:last-child{margin-bottom:10px}
 .gnb li .sub ul li a{font-size:16px;line-height:20px;}
-.gnb ul{display:flex;justify-content:space-between;width:1040px;}
+.gnb ul{display:flex;justify-content:space-between;width:1200px;}
 .gnb li{border:none;}
 .gnb li .cate{height:85px;}
 .gnb li .cate:after{display:none;}
