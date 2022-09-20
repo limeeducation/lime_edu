@@ -11,6 +11,8 @@ $(function(){
 
 	$(".side .mn_c .cate").click(function(){
 		console.log("clickMenu");
+		var val = $(this).val();
+		console.log(val);
 		var tg = $(this).nextElementSibling;
 		var dis = tg.css("display");
 		console.log("tg_display : "+dis);
