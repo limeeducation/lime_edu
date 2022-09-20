@@ -34,7 +34,7 @@ window.addEventListener('scroll', handleScroll);
 
 
 	$(".side .mn_c .cate").click(function(){
-		var tg = $(this).siblings(".sub");
+		var tg = $(this).nextElementSibling();
 		var dis = tg.css("display");
 		if(dis=="none"){
 			$(".mn_c .cate").removeClass("active");
@@ -69,10 +69,10 @@ window.addEventListener('scroll', handleScroll);
 
 
 $(window).resize(function(){ 
-	if (window.innerWidth > 1080) { // ´Ù¹ÙÀÌ½º Å©±â°¡ 1080ÀÌ»óÀÏ¶§ 
+	if (window.innerWidth > 1080) { // ï¿½Ù¹ï¿½ï¿½Ì½ï¿½ Å©ï¿½â°¡ 1080ï¿½Ì»ï¿½ï¿½Ï¶ï¿½ 
 
 		$(".cate2").off("click");
-		return false; /*PC¿¡¼­¸¸ a¸µÅ© Å¬¸¯µÇµµ·Ï ½ºÅ©¸³Æ® »èÁ¦ÇØ¾ßÇÔ...*/
+		return false; /*PCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ aï¿½ï¿½Å© Å¬ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½...*/
 	
 
 	} else { 
