@@ -143,7 +143,7 @@
 #slide_wrap{position:absolute;width:100%;left:0;top:0;height:900px;background:#aaaaaa87;z-index:800;}
 
 .lcms_content {    width: 1300px;    padding: 0;    left: 50%;    margin-left: -650px;}
-.blackbox{width:330px;position:absolute;right:0;top:260px;padding-bottom:20px;}
+.blackbox{width:450px;position:absolute;right:0;top:260px;padding-bottom:20px;}
 .bl_vtit{border-bottom:1px solid #a9a9a9;}
 .bl_vtit1{font-size:20px;margin:15px 0 10px;}
 .bl_vtit2{font-size:16px;padding:8px 20px;}
