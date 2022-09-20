@@ -156,12 +156,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
     
 	<div class="swiper c3Swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/static/img/old/after_ka_1.jpg"></div>
-        <div class="swiper-slide"><img src="/static/img/old/after_ka_2.jpg"></div>
-        <div class="swiper-slide"><img src="/static/img/old/after_ka_3.jpg"></div>
-        <div class="swiper-slide"><img src="/static/img/old/after_ka_4.jpg"></div>
-        <div class="swiper-slide"><img src="/static/img/old/after_ka_5.jpg"></div>
-		 <div class="swiper-slide"><img src="/static/img/old/after_ka_7.jpg"></div>
+        <a href="/static/img/old/after_ka_1.jpg" target="_blank"><div class="swiper-slide"><img src="/static/img/old/after_ka_1.jpg"></div></a>
+        <a href="/static/img/old/after_ka_2.jpg" target="_blank"><div class="swiper-slide"><img src="/static/img/old/after_ka_2.jpg"></div></a>
+        <a href="/static/img/old/after_ka_3.jpg" target="_blank"><div class="swiper-slide"><img src="/static/img/old/after_ka_3.jpg"></div></a>
+        <a href="/static/img/old/after_ka_4.jpg" target="_blank"><div class="swiper-slide"><img src="/static/img/old/after_ka_4.jpg"></div></a>
+        <a href="/static/img/old/after_ka_5.jpg" target="_blank"><div class="swiper-slide"><img src="/static/img/old/after_ka_5.jpg"></div></a>
+		<a href="/static/img/old/after_ka_7.jpg" target="_blank"><div class="swiper-slide"><img src="/static/img/old/after_ka_7.jpg"></div></a>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
