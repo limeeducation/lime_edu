@@ -10,21 +10,12 @@ $(function(){
 	})
 
 	$(".side .mn_c .cate").click(function(){
-		console.log("clickMenu");
-		var val = $(this).val();
-		console.log(val);
-		var tg = $(this).nextElementSibling;
-		var dis = tg.css("display");
-		console.log("tg_display : "+dis);
-		if(dis=="none"){
-			$(".mn_c .cate").removeClass("active");
-			$(".mn_c .sub").slideUp(500);
-			$(this).addClass("active");
-			tg.slideDown(500);
-		} else {
-			$(".mn_c .cate").removeClass("active");
-			$(".mn_c .sub").slideUp(500);
-		}
+		var tg = $(this).next();
+		$(".mn_c .cate").removeClass("active");
+		$(".mn_c .sub").slideUp(500);
+		$(this).addClass("active");
+		tg.slideDown(500);
+
 		return false;
 	})
 });

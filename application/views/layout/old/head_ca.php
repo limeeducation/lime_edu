@@ -39,7 +39,7 @@
         <nav class="gnb ">
             <ul>
                 <li class="mn_c">
-                    <a href="#" class="cate" value="1">캐나다 관리형유학</a>
+                    <a href="#" class="cate">캐나다 관리형유학</a>
                     <div class="sub">
                         <ul>
                             <li class="side_dmn"><a href="/mng/bc.php" class=""><span>BC주 관리형 유학</span></a></li>
@@ -49,7 +49,7 @@
                     </div>
                 </li>
                 <li class="mn_c">
-                    <a href="#" class="cate" value="2">국제 사립학교</a>
+                    <a href="#" class="cate">국제 사립학교</a>
                     <div class="sub">
                         <ul>
                             <li class="side_dmn"><a href="/intl/bicc.php" class=""><span>BICC</span></a></li>
