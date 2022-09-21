@@ -92,11 +92,21 @@
 
 				
                 <li class="mn_c">
-                    <a href="/ca/gdn" class="cate">프리미엄 가디언 서비스</a>
+                    <a href="#" class="cate">프리미엄 가디언 서비스</a>
+                    <div class="sub">
+						<ul>
+							<li class="side_dmn"><a href="/ca/gdn" class=""><span>프리미엄 가디언 서비스</span></a></li>
+						</ul>
+					</div>
                 </li>
 				
                 <li class="mn_c">
-                    <a href="/ca/family" class="cate">캐나다 명문대 편입</a>
+                    <a href="#" class="cate">캐나다 명문대 편입</a>
+                    <div class="sub">
+						<ul>
+							<li class="side_dmn"><a href="/ca/family" class=""><span>캐나다 명문대 편입</span></a></li>
+						</ul>
+					</div>
                 </li>
 				
    
