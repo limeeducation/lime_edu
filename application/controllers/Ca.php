@@ -88,7 +88,7 @@ class Ca extends CI_Controller {
 		}
 	}
 
-	public function gnd(){
+	public function gdn(){
 		$this->load->view('old/gdn/gdn');
 	}
 
