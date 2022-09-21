@@ -92,11 +92,11 @@
 
 				
                 <li class="mn_c">
-                    <a href="/gdn" class="cate">프리미엄 가디언 서비스</a>
+                    <a href="/ca/gdn" class="cate">프리미엄 가디언 서비스</a>
                 </li>
 				
                 <li class="mn_c">
-                    <a href="/family" class="cate">캐나다 명문대 편입</a>
+                    <a href="/ca/family" class="cate">캐나다 명문대 편입</a>
 
                 </li>
 				
@@ -106,8 +106,8 @@
                     <a href="#" class="cate">컬리지</a>
 					<div class="sub">
                         <ul>
-                            <li class="side_dmn"><a href="/col/major" class=""><span>전공별 컬리지</span></a></li>
-                            <li class="side_dmn"><a href="/col/area" class=""><span>지역별 컬리리</span></a></li>
+                            <li class="side_dmn"><a href="/ca/col/major" class=""><span>전공별 컬리지</span></a></li>
+                            <li class="side_dmn"><a href="/ca/col/area" class=""><span>지역별 컬리리</span></a></li>
                         </ul>
 					</div>
                 </li>
