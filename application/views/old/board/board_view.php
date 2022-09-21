@@ -14,10 +14,16 @@ $img_file = explode("|",$contents[0]->filename_real1);
 </div>
 
 <div class="sb_con_all">
-	<div class="up-on-scroll txbox">
-		<h4 class="sub_tx_tit"><?=$contents[0]->title?></h4>
-		<div class="tblbox le">
-			<?=$contents[0]->contents?>
+	<div class="sb_con_tx_box">
+		<div class="main_text">
+			<div class="txbox">
+				<h4 class="sub_tx_tit"><?=$contents[0]->title?></h4>
+			</div>
+			<div class="txbox">
+				<div class="tblbox le">
+					<?=$contents[0]->contents?>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
