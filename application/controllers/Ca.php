@@ -5,6 +5,8 @@ class Ca extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->database();
+		$this->load->model(array('old_model'));
 	}
 	public function index()
 	{
@@ -116,6 +118,14 @@ class Ca extends CI_Controller {
 				$this->load->view('old/visa/ca_visa');
 				break;
 		}
+	}
+
+	public function board($idx){
+		$query = "select * from ms_board_table where idx = '{$idx}'";
+		$result = $this->old_model->run_query($query);
+		$this->load->view('old/board/board_view', array(
+				'contents' 	=> $result
+		));
 	}
 }
 
