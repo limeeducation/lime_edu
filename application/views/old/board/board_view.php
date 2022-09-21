@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
+
+$img_file = explode("|",$contents[0]->filename_real1);
 ?>
 
 <div id="container">
@@ -10,9 +12,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 		<h3 class="tit_tx">유학컬럼</h3>
 	</div>
 </div>
-<?php
-$img_file = explode("|",$contents[0]->filename_real1);
-?>
+
 <div class="sb_con_all">
 	<div class="up-on-scroll txbox">
 		<h4 class="sub_tx_tit"><?=$contents[0]->title?></h4>
