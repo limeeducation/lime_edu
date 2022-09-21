@@ -115,22 +115,22 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 		<div class="mc1box bx2">
 			<h2 class="main_tit">전공별 대학</h2>
 			<ul class="mc1_ic_ul scrollbar">
-				<li><a href="./col/major.php"><i class="fas fa-desktop"></i><p>Computer Science & Engineering</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-wrench"></i><p>Mechanical Engineering</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-stethoscope"></i><p>Health & Medical Science</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-briefcase"></i><p>Business & Commerce</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-truck-pickup"></i><p>Architectural Engineering</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-palette"></i><p>Art & Design</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-share-alt"></i><p>Social Scinece</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-vials"></i><p>Biomedical Enginerring</p></a></li>
-				<li><a href="./col/major.php"><i class="far fa-newspaper"></i><p>Journlism</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-superscript"></i><p>Mathmatics</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-space-shuttle"></i><p>Aerospace Engineering</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-user-astronaut"></i><p>Pilot Training</p></a></li>
-				<li><a href="./col/major.php"><i class="far fa-chart-bar"></i><p>Statistics</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-book-medical"></i><p>Psychology &Neuroscience</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-school"></i><p>Education</p></a></li>
-				<li><a href="./col/major.php"><i class="fas fa-user-nurse"></i><p>Nursing</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-desktop"></i><p>Computer Science & Engineering</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-wrench"></i><p>Mechanical Engineering</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-stethoscope"></i><p>Health & Medical Science</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-briefcase"></i><p>Business & Commerce</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-truck-pickup"></i><p>Architectural Engineering</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-palette"></i><p>Art & Design</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-share-alt"></i><p>Social Scinece</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-vials"></i><p>Biomedical Enginerring</p></a></li>
+				<li><a href="/ca/college/major"><i class="far fa-newspaper"></i><p>Journlism</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-superscript"></i><p>Mathmatics</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-space-shuttle"></i><p>Aerospace Engineering</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-user-astronaut"></i><p>Pilot Training</p></a></li>
+				<li><a href="/ca/college/major"><i class="far fa-chart-bar"></i><p>Statistics</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-book-medical"></i><p>Psychology &Neuroscience</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-school"></i><p>Education</p></a></li>
+				<li><a href="/ca/college/major"><i class="fas fa-user-nurse"></i><p>Nursing</p></a></li>
 			</ul>
 		</div>
 	</div><!--mainc1-->
@@ -141,10 +141,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 	<div class="main_sl_box">
 		<div class="swiper c2Swiper">
 		  <div class="swiper-wrapper">
-			<div class="swiper-slide"><a href="/bod/sch2.php"><div><img src="/static/img/old/prog_ca01_new.jpg" alt=""></div></a><a href="/fm/family.php"><div><img src="/static/img/old/prog_ca05_new.jpg" alt=""></div></a></div>
-			<div class="swiper-slide"><a href="/mng/bc.php"><div><img src="/static/img/old/prog_ca02_new.jpg" alt=""></div></a><div><a href="/intl/bicc.php"><img src="/static/img/old/prog_ca06_new.jpg" alt=""></a></div></div>
-			<div class="swiper-slide"><div><a href="/gdn/gdn.php"><img src="/static/img/old/prog_ca03_new.jpg" alt=""></a></div><div><a href="/col/major.php"><img src="/static/img/old/prog_ca07_new.jpg" alt=""></a></div></div>
-			<div class="swiper-slide"><div><a href="/publ/on.php"><img src="/static/img/old/prog_ca04_new.jpg" alt=""></a></div><div><a href="/visa/edu.php"><img src="/static/img/old/prog_ca08_new.jpg" alt=""></a></div></div>
+			<div class="swiper-slide"><a href="/ca/bod/ridely"><div><img src="/static/img/old/prog_ca01_new.jpg" alt=""></div></a><a href="/ca/family"><div><img src="/static/img/old/prog_ca05_new.jpg" alt=""></div></a></div>
+			<div class="swiper-slide"><a href="/ca/mng/bc"><div><img src="/static/img/old/prog_ca02_new.jpg" alt=""></div></a><div><a href="/ca/intl/bicc"><img src="/static/img/old/prog_ca06_new.jpg" alt=""></a></div></div>
+			<div class="swiper-slide"><div><a href="/ca/gdn"><img src="/static/img/old/prog_ca03_new.jpg" alt=""></a></div><div><a href="/ca/college/major"><img src="/static/img/old/prog_ca07_new.jpg" alt=""></a></div></div>
+			<div class="swiper-slide"><div><a href="/ca/publ/york_catholic"><img src="/static/img/old/prog_ca04_new.jpg" alt=""></a></div><div><a href="/ca/visa/education"><img src="/static/img/old/prog_ca08_new.jpg" alt=""></a></div></div>
 		  </div>
 		   <div class="swiper-pagination"></div>
 		</div>
