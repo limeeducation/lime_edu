@@ -39,5 +39,22 @@ class Ca extends CI_Controller {
 		}
 	}
 
+	public function bod($page){
+    		switch ($page){
+    			case 'lakefield':
+    				$this->load->view('old/bod/lakefield');
+    				break;
+    			case 'ridely':
+    				$this->load->view('old/bod/ridely');
+    				break;
+    			case 'pickering':
+    				$this->load->view('old/bod/pickering');
+    				break;
+    			case 'bodwell':
+    				$this->load->view('old/bod/bodwell');
+    				break;
+    		}
+    	}
+
 }
 

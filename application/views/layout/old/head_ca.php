@@ -64,11 +64,10 @@
                     <a href="#" class="cate">명문보딩스쿨</a>
                     <div class="sub">
                         <ul>
-                            <li class="side_dmn"><a href="/bod/sch1.php" class=""><span>Lakefield College School</span></a></li>
-                            <li class="side_dmn"><a href="/bod/sch2.php" class=""><span>Ridely College</span></a></li>
-                            <li class="side_dmn"><a href="/bod/sch3.php" class=""><span>Pickering College</span></a></li>
-                            <!--<li class="side_dmn"><a href="/bod/sch4.php" class=""><span>St. Johns Academy</span></a></li>-->
-                            <li class="side_dmn"><a href="/bod/sch5.php" class=""><span>Bodwell High School</span></a></li>
+                            <li class="side_dmn"><a href="/ca/bod/lakefield" class=""><span>Lakefield College School</span></a></li>
+                            <li class="side_dmn"><a href="/ca/bod/ridely" class=""><span>Ridely College</span></a></li>
+                            <li class="side_dmn"><a href="/ca/bod/pickering" class=""><span>Pickering College</span></a></li>
+                            <li class="side_dmn"><a href="/ca/bod/bodwell" class=""><span>Bodwell High School</span></a></li>
                         </ul>
                     </div>
                 </li>
