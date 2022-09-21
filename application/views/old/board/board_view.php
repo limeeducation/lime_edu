@@ -18,8 +18,6 @@ $img_file = explode("|",$contents[0]->filename_real1);
 		<div class="main_text">
 			<div class="txbox">
 				<h4 class="sub_tx_tit"><?=$contents[0]->title?></h4>
-			</div>
-			<div class="txbox">
 				<?=$contents[0]->contents?>
 			</div>
 		</div>
