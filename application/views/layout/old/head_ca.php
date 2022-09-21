@@ -97,7 +97,6 @@
 				
                 <li class="mn_c">
                     <a href="/ca/family" class="cate">캐나다 명문대 편입</a>
-
                 </li>
 				
    
@@ -106,8 +105,8 @@
                     <a href="#" class="cate">컬리지</a>
 					<div class="sub">
                         <ul>
-                            <li class="side_dmn"><a href="/ca/col/major" class=""><span>전공별 컬리지</span></a></li>
-                            <li class="side_dmn"><a href="/ca/col/area" class=""><span>지역별 컬리리</span></a></li>
+                            <li class="side_dmn"><a href="/ca/college/major" class=""><span>전공별 컬리지</span></a></li>
+                            <li class="side_dmn"><a href="/ca/college/area" class=""><span>지역별 컬리리</span></a></li>
                         </ul>
 					</div>
                 </li>
