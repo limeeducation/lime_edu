@@ -52,9 +52,9 @@
                     <a href="#" class="cate">국제 사립학교</a>
                     <div class="sub">
                         <ul>
-                            <li class="side_dmn"><a href="/intl/bicc.php" class=""><span>BICC</span></a></li>
-                            <li class="side_dmn"><a href="/intl/tale.php" class=""><span>TAIE</span></a></li>
-                            <li class="side_dmn"><a href="/intl/umc.php" class=""><span>UMC High School</span></a></li>
+                            <li class="side_dmn"><a href="/ca/intl/bicc" class=""><span>BICC</span></a></li>
+                            <li class="side_dmn"><a href="/ca/intl/tale" class=""><span>TAIE</span></a></li>
+                            <li class="side_dmn"><a href="/ca/intl/umc" class=""><span>UMC High School</span></a></li>
                            <!-- <li class="side_dmn"><a href="/intl/sgb.php" class=""><span>SGA</span></a></li>-->
                         </ul>
                     </div>
