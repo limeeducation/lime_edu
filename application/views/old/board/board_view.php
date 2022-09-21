@@ -12,7 +12,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 </div>
 
 
-<?php print_r($contents[0].$title);?>
+<?php print_r($contents[0]->title);?>
 	<div class="up-on-scroll txbox">
 		<h4 class="sub_tx_tit"><?=$contents[0].$title?></h4>
 		<div class="tblbox le">
