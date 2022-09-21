@@ -73,9 +73,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 					<p class="gs_tit">알렉산더 컬리지를 통한 편입의 장점</p>
 					
 					<ul class="gdn_imul">
-					<li><img src="/static/img/old/bccat_1.JPG"></li>
-					<li><img src="/static/img/old/bccat_2.JPG"></li>
-					<li><img src="/static/img/old/bccat_3.JPG"></li>
+					<li><img src="/static/img/old/bccat_1.jpg"></li>
+					<li><img src="/static/img/old/bccat_2.jpg"></li>
+					<li><img src="/static/img/old/bccat_3.jpg"></li>
 					<li><img src="/static/img/old/bccat_4.JPG"></li>
 					</ul>
 				</div>
