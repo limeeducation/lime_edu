@@ -42,9 +42,9 @@
                     <a href="#" class="cate">캐나다 관리형유학</a>
                     <div class="sub">
                         <ul>
-                            <li class="side_dmn"><a href="/mng/bc.php" class=""><span>BC주 관리형 유학</span></a></li>
-                            <li class="side_dmn"><a href="/mng/ab.php" class=""><span>AB주 관리형 유학</span></a></li>
-                          <!--   <li class="side_dmn"><a href="/mng/on.php" class=""><span>ON주 관리형 유학</span></a></li> -->
+                            <li class="side_dmn"><a href="/ca/mng/bc" class=""><span>BC주 관리형 유학</span></a></li>
+                            <li class="side_dmn"><a href="/ca/mng/ab" class=""><span>AB주 관리형 유학</span></a></li>
+                          <!-- <li class="side_dmn"><a href="/mng/on.php" class=""><span>ON주 관리형 유학</span></a></li> -->
                         </ul>
                     </div>
                 </li>
