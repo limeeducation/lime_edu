@@ -10,8 +10,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 		<h3 class="tit_tx">유학컬럼</h3>
 	</div>
 </div>
-
-
+<?php
+$img_file = explode("|",$contents[0]->filename_real1);
+?>
+<div class="up-on-scroll txbox"><img src="/static/img/old/data/board/<?=$img_file[0]?>" alt=" 사진"></div>
 	<div class="up-on-scroll txbox">
 		<h4 class="sub_tx_tit"><?=$contents[0]->title?></h4>
 		<div class="tblbox le">
