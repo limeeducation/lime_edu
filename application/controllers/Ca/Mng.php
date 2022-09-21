@@ -12,6 +12,7 @@ class Mng extends CI_Controller {
 	}
 
 	public function bc(){
+		echo "1231212213";
 		$this->load->view('old/mng/bc');
 	}
 
