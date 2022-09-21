@@ -40,21 +40,53 @@ class Ca extends CI_Controller {
 	}
 
 	public function bod($page){
-    		switch ($page){
-    			case 'lakefield':
-    				$this->load->view('old/bod/lakefield');
-    				break;
-    			case 'ridely':
-    				$this->load->view('old/bod/ridely');
-    				break;
-    			case 'pickering':
-    				$this->load->view('old/bod/pickering');
-    				break;
-    			case 'bodwell':
-    				$this->load->view('old/bod/bodwell');
-    				break;
-    		}
-    	}
+		switch ($page){
+			case 'lakefield':
+				$this->load->view('old/bod/lakefield');
+				break;
+			case 'ridely':
+				$this->load->view('old/bod/ridely');
+				break;
+			case 'pickering':
+				$this->load->view('old/bod/pickering');
+				break;
+			case 'bodwell':
+				$this->load->view('old/bod/bodwell');
+				break;
+		}
+	}
+
+	public function publ($page){
+		switch ($page){
+			case 'york_catholic':
+				$this->load->view('old/publ/york_catholic');
+				break;
+			case 'york':
+				$this->load->view('old/publ/york');
+				break;
+			case 'tor_catholic':
+				$this->load->view('old/publ/tor_catholic');
+				break;
+			case 'tor':
+				$this->load->view('old/publ/tor');
+				break;
+			case 'north_van':
+				$this->load->view('old/publ/north_van');
+				break;
+			case 'langley':
+				$this->load->view('old/publ/langley');
+				break;
+			case 'vancouver':
+				$this->load->view('old/publ/vancouver');
+				break;
+			case 'burnaby':
+				$this->load->view('old/publ/burnaby');
+				break;
+			case 'coqui':
+				$this->load->view('old/publ/coqui');
+				break;
+		}
+	}
 
 }
 

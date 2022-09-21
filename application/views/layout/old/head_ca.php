@@ -77,16 +77,15 @@
                     <a href="#" class="cate">아이 혼자 공립학교</a>
                     <div class="sub">
                         <ul>
-                            <li class="side_dmn"><a href="/publ/on.php" class=""><span>요크가톨릭 교육청</span></a></li>
-                            <li class="side_dmn"><a href="/publ/on2.php" class=""><span>요크 교육청</span></a></li>
-							<li class="side_dmn"><a href="/publ/on3.php" class=""><span>토론토 가톨릭 교육청</span></a></li>
-							<li class="side_dmn"><a href="/publ/on4.php" class=""><span>토론토 교육청</span></a></li>
-							<li class="side_dmn"><a href="/publ/on5.php" class=""><span>노스밴쿠버 교육청</span></a></li>
-                            <li class="side_dmn"><a href="/publ/on6.php" class=""><span>랭리 교육청</span></a></li>
-							<li class="side_dmn"><a href="/publ/on7.php" class=""><span>밴쿠버 교육청</span></a></li>
-							<li class="side_dmn"><a href="/publ/on8.php" class=""><span>버나비 교육청</span></a></li>
-							<li class="side_dmn"><a href="/publ/on9.php" class=""><span>코퀴틀람 교육청</span></a></li>
-							<!--<li class="side_dmn"><a href="/publ/bc.php" class=""><span>코퀴틀람 교육청</span></a></li>-->
+                            <li class="side_dmn"><a href="/ca/publ/york_catholic" class=""><span>요크가톨릭 교육청</span></a></li>
+                            <li class="side_dmn"><a href="/ca/publ/york" class=""><span>요크 교육청</span></a></li>
+							<li class="side_dmn"><a href="/ca/publ/tor_catholic" class=""><span>토론토 가톨릭 교육청</span></a></li>
+							<li class="side_dmn"><a href="/ca/publ/tor" class=""><span>토론토 교육청</span></a></li>
+							<li class="side_dmn"><a href="/ca/publ/north_van" class=""><span>노스밴쿠버 교육청</span></a></li>
+                            <li class="side_dmn"><a href="/ca/publ/langley" class=""><span>랭리 교육청</span></a></li>
+							<li class="side_dmn"><a href="/ca/publ/vancouver" class=""><span>밴쿠버 교육청</span></a></li>
+							<li class="side_dmn"><a href="/ca/publ/burnaby" class=""><span>버나비 교육청</span></a></li>
+							<li class="side_dmn"><a href="/ca/publ/coqui" class=""><span>코퀴틀람 교육청</span></a></li>
                         </ul>
                     </div>
                 </li>
