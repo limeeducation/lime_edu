@@ -88,5 +88,24 @@ class Ca extends CI_Controller {
 		}
 	}
 
+	public function gnd(){
+		$this->load->view('old/gdn/gdn');
+	}
+
+	public function family(){
+		$this->load->view('old/fm/family');
+	}
+
+	public function college($page){
+		switch ($page){
+			case 'major':
+				$this->load->view('old/col/major');
+				break;
+			case 'area':
+				$this->load->view('old/col/area');
+				break;
+		}
+	}
+
 }
 
