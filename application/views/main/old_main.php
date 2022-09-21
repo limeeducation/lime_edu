@@ -74,7 +74,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 						$row1 = $result[$i];
 						$img_file = explode("|",$row1->filename_real1);
 					?>
-						<li><a href="/board/blog_view.php?idx=<?=$row1->idx?>">
+						<li><a href="/ca/board/<?=$row1->idx?>">
 							<div class="tx">
 								<p class="tit"><?=$row1->title?></p>
 								<div><?=strip_tags($row1->contents)?></div>
@@ -92,7 +92,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 						$row2 = $result2[$i];
 						$img_file = explode("|",$row2->filename_real1);
 					?>
-						<li><a href="/board/blog_view.php?idx=<?=$row2->idx?>">
+						<li><a href="/ca/board/<?=$row2->idx?>">
 							<div class="tx">
 								<p class="tit"><?=$row2->title?></p>
 								<div><?=strip_tags($row2->contents)?></div>
