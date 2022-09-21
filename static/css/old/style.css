@@ -418,7 +418,7 @@ form .radio[type="radio"] + label {font-size:20px;}
 .sub_tx_tit2{text-align:left;}
 .main_text{display:flex;}
 .sb_con_tx_box{margin:-25vh auto 0;width:1300px;padding:65px 50px;letter-spacing:-.8px;}
-.txbox{width:1200px;box-sizing:border-box;font-size:20px;line-height:40px;letter-spacing:-1px;margin:0 auto;}
+.txbox{width:1300px;box-sizing:border-box;font-size:20px;line-height:40px;letter-spacing:-1px;margin:0 auto;}
 .txbox span{display:block;}
 .tx_list_round{display:flex;flex-wrap:wrap;}
 
