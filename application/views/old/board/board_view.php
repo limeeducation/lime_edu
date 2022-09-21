@@ -20,9 +20,7 @@ $img_file = explode("|",$contents[0]->filename_real1);
 				<h4 class="sub_tx_tit"><?=$contents[0]->title?></h4>
 			</div>
 			<div class="txbox">
-				<div class="tblbox le">
-					<?=$contents[0]->contents?>
-				</div>
+				<?=$contents[0]->contents?>
 			</div>
 		</div>
 	</div>
