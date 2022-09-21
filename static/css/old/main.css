@@ -179,7 +179,7 @@
 .mc1_im_ul li .tx div{font-size:16px;line-height:25px;  width: 200px;width: 320px;
   white-space: normal;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;}
 .mc1_im_ul li .tx span{font-size:15px;line-height:15px;}
 .mc1_im_ul li .im{width:200px;height:155px;right:25px;top:35px;}
