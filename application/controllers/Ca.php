@@ -107,5 +107,15 @@ class Ca extends CI_Controller {
 		}
 	}
 
+	public function visa($page){
+		switch ($page){
+			case 'education':
+				$this->load->view('old/visa/edu');
+				break;
+			case 'ca_visa':
+				$this->load->view('old/visa/ca_visa');
+				break;
+		}
+	}
 }
 
