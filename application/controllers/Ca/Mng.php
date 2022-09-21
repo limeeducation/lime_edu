@@ -5,7 +5,6 @@ class Main extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-
 	}
 	public function index()
 	{
@@ -17,6 +16,7 @@ class Main extends CI_Controller {
 	}
 
 	public function ab(){
-    		$this->load->view('old/mng/ab');
-    	}
+		$this->load->view('old/mng/ab');
+	}
 }
+

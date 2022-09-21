@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 ?>
 <link rel="stylesheet" href="/static/js/old/grid-gallery/grid-gallery.min.css">
