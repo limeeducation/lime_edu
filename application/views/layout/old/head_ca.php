@@ -125,7 +125,7 @@
                     <a href="#" class="cate">교육제도 및 비자</a>
                     <div class="sub">
                         <ul>
-                            <li class="side_dmn"><a href="/ca/visa/education" class=""><span>캐나다 교육제도</span></a></li>
+                            <li class="side_dmn"><a href="/ca/visa/education" onclick="out_page();" class=""><span>캐나다 교육제도</span></a></li>
                             <li class="side_dmn"><a href="/ca/visa/ca_visa" class=""><span>캐나다 비자</span></a></li>
                         </ul>
                     </div>
@@ -135,7 +135,11 @@
             </ul>
 		</nav>
 	 </div><!--side-->
-
+<script>
+	function out_page(){
+		window.open('http://mylimeedu.com/ca/visa/education','_blank','resizable=yes');
+	}
+</script>
 </header>
 </div><!--headerin-->
 
