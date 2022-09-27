@@ -176,7 +176,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
       console.log(inner_width);
       var change_height = Math.floor(inner_width/4*3);
       console.log(change_height);
-      //window.resizeTo(innerWidth, change_height);
+      window.resizeTo(innerWidth, change_height);
     }
 </script>
 <?php
