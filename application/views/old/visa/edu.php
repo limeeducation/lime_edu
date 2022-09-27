@@ -174,9 +174,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 	window.onresize = function(event){
       var inner_width = document.documentElement.clientWidth;
       console.log(inner_width);
-      var change_height = inner_width/4*3;
+      var change_height = Math.floor(inner_width/4*3);
       console.log(change_height);
-      //window.resizeTo(innerWidth, change_height);
+      window.resizeTo(innerWidth, change_height);
     }
 </script>
 <?php
