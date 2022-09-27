@@ -170,7 +170,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 			</table>
 </div>
 </div>
-
+<script>
+	window.onresize = function(event){
+      var inner_width = window.innerWidth;
+      var change_height = inner_width/4*3;
+      window.resizeTo(innerWidth, change_height);
+    }
+</script>
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/footer_temp.php');
 ?>
