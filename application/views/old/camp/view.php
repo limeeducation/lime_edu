@@ -28,10 +28,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 			<img src="/static/img/old/camp/am_east_pri_camp.png" class="inner_content">
 		</a>
 		<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-			<img src="/static/img/old/camp/ca_pub_sch.png" class="inner_content">
+			<img src="/static/img/old/camp/uk_pub_sch.png" class="inner_content">
 		</a>
 		<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-			<img src="/static/img/old/camp/phi_tallac_fa.png" class="inner_content">
+			<img src="/static/img/old/camp/ca_pub_sch.png" class="inner_content">
 		</a>
 		<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
 			<img src="/static/img/old/camp/phil_ceb_camp.png" class="inner_content">
@@ -40,7 +40,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 			<img src="/static/img/old/camp/phil_tallac_camp.png" class="inner_content">
 		</a>
 		<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-			<img src="/static/img/old/camp/uk_pub_sch.png" class="inner_content">
+			<img src="/static/img/old/camp/phi_tallac_fa.png" class="inner_content">
 		</a>
 	</div>
 </body>
