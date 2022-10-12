@@ -141,10 +141,54 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 	<div class="main_sl_box">
 		<div class="swiper c2Swiper">
 		  <div class="swiper-wrapper">
-			<div class="swiper-slide"><a href="/ca/bod/ridely"><div><img src="/static/img/old/prog_ca01_new.jpg" alt=""></div></a><a href="/ca/family"><div><img src="/static/img/old/prog_ca05_new.jpg" alt=""></div></a></div>
-			<div class="swiper-slide"><a href="/ca/mng/bc"><div><img src="/static/img/old/prog_ca02_new.jpg" alt=""></div></a><div><a href="/ca/intl/bicc"><img src="/static/img/old/prog_ca06_new.jpg" alt=""></a></div></div>
-			<div class="swiper-slide"><div><a href="/ca/gdn"><img src="/static/img/old/prog_ca03_new.jpg" alt=""></a></div><div><a href="/ca/college/major"><img src="/static/img/old/prog_ca07_new.jpg" alt=""></a></div></div>
-			<div class="swiper-slide"><div><a href="/ca/publ/york_catholic"><img src="/static/img/old/prog_ca04_new.jpg" alt=""></a></div><div><a href="/ca/visa/education"><img src="/static/img/old/prog_ca08_new.jpg" alt=""></a></div></div>
+			<div class="swiper-slide">
+				<a href="/ca/bod/ridely">
+					<div>
+						<img src="/static/img/old/prog_ca01_new.jpg" alt="">
+					</div>
+				</a>
+				<a href="/ca/family">
+					<div>
+						<img src="/static/img/old/prog_ca05_new.jpg" alt="">
+					</div>
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="/ca/mng/bc">
+					<div>
+						<img src="/static/img/old/prog_ca02_new.jpg" alt="">
+					</div>
+				</a>
+				<div>
+					<a href="/ca/intl/bicc">
+						<img src="/static/img/old/prog_ca06_new.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div>
+					<a href="/ca/gdn">
+						<img src="/static/img/old/prog_ca03_new.jpg" alt="">
+					</a>
+				</div>
+				<div>
+					<a href="/ca/college/major">
+						<img src="/static/img/old/prog_ca07_new.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div>
+					<a href="/ca/publ/york_catholic">
+						<img src="/static/img/old/prog_ca04_new.jpg" alt="">
+					</a>
+				</div>
+				<div>
+					<a href="/ca/visa/education">
+						<img src="/static/img/old/prog_ca08_new.jpg" alt="">
+					</a>
+				</div>
+			</div>
 		  </div>
 		   <div class="swiper-pagination"></div>
 		</div>

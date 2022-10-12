@@ -127,5 +127,9 @@ class Ca extends CI_Controller {
 				'contents' 	=> $result
 		));
 	}
+
+	public function campPage(){
+		$this->load->view('old/camp/view');
+	}
 }
 
