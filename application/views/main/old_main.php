@@ -184,7 +184,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 					</a>
 				</div>
 				<div>
-					<a href="/ca/visa/education">
+					<a href="/ca/campPage">
 						<img src="/static/img/old/prog_ca08_new.jpg" alt="">
 					</a>
 				</div>
