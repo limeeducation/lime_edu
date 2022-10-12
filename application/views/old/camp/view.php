@@ -9,18 +9,23 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 		background-color:#00000057;
 	}
 	.content_outer{
+		margin:1%;
 		width:100%;
 		text-align:center;
 	}
 	.inner_content{
 		width:40%;
+		margin:1%;
 	}
 </style>
 <body>
 	<div class="top_back">
 	</div>
 	<div class="content_outer">
-		<img src="/static/img/old/camp/am_east_pri_camp.png" class="inner_content">
+
+		<a href="#none">
+			<img src="/static/img/old/camp/am_east_pri_camp.png" class="inner_content">
+		</a>
 		<img src="/static/img/old/camp/ca_pub_sch.png" class="inner_content">
 		<img src="/static/img/old/camp/phi_tallac_fa.png" class="inner_content">
 		<img src="/static/img/old/camp/phil_ceb_camp.png" class="inner_content">
