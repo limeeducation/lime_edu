@@ -170,14 +170,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 			</table>
 </div>
 </div>
-<script>
-	window.onresize = function(event){
-	  window.resizeTo(window.outerWidth, Math.floor(window.outerWidth/4*3));
-      if((window.outerWidth == screen.width) || (window.outerHeight == screen.height)) {
-		alert("최대화면!");
-	  }
-    }
-</script>
+
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/footer_temp.php');
 ?>
