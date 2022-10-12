@@ -9,10 +9,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 		background-color:#00000057;
 	}
 	.content_outer{
-		width:80%;
+		width:100%;
+		text-align:center;
 	}
 	.inner_content{
-		width:50%;
+		width:40%;
 	}
 </style>
 <body>
