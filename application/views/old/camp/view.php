@@ -22,7 +22,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 	}
 	@media(max-width: 768px){
 		.inner_content{
-			width:100%;
+			width:90%;
 			margin:1%;
         }
 	}
