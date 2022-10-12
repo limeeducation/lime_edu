@@ -114,7 +114,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       © 2022 Copyright:
       <a class="text-dark" target="_blank" href="http://mylimeedu.com">mylimeedu.com</a>
     </div>
-    <div class="modal fade" id="application_form" tabindex="-1" aria-labelledby="exampleModalLabel">
+    <div class="modal fade" id="application_form" tabindex="-1" aria-labelledby="exampleModalLabel" style="z-index:-1;">
       <div class="modal-dialog modal-dialog-centered" id="apply-modal">
         <div class="modal-content">
           <div class="modal-header">
