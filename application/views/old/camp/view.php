@@ -23,12 +23,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 	</div>
 	<div class="content_outer">
 
-
-		<div class="inner_content">
-			<img src="/static/img/old/camp/am_east_pri_camp.png" >
-			<a href="#none"></a>
-		</div>
-
+		<img src="/static/img/old/camp/am_east_pri_camp.png" class="inner_content">
+		<a href="#none"></a>
 		<img src="/static/img/old/camp/ca_pub_sch.png" class="inner_content">
 		<img src="/static/img/old/camp/phi_tallac_fa.png" class="inner_content">
 		<img src="/static/img/old/camp/phil_ceb_camp.png" class="inner_content">
