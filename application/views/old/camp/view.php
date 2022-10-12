@@ -20,6 +20,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 	.btn_consult{
 		width:100%;
 	}
+	@media(max-width: 768px){
+		.inner_content{
+			width:100%;
+			margin:1%;
+        }
+	}
 </style>
 <body>
 	<div class="top_back"></div>
