@@ -21,7 +21,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 	.content_outer .img_wrap {position:relative; display:inline-block;}
 	.content_outer .img_wrap .btn_consult {position:absolute; left:50%; transform:translate(-50%); bottom:0; width:100%; height:11%;}
 
-	@media(max-width: 768px){
+	@media(max-width: 576px){
 		.img_wrap{
 			width:90%;
 			margin:1%;

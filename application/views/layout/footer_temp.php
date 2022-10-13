@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	.fix_btn li:hover p{display:block;  position: relative;animation:tex .2s;}
 
 	@media (max-width: 576px){
-		#apply-modal{max-width: 70% !important;}
+		#apply-modal{max-width: 85% !important;}
     }
 </style>
 <!-- Remove the container if you want to extend the Footer to full width. -->
