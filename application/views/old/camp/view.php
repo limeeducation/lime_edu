@@ -17,9 +17,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 		width:40%;
 		margin:1%;
 	}
-	.content_outer .img_wrap img {display:block; width:100%; margin:1%;}
+	.content_outer .img_wrap img {display:block; width:100%;}
 	.content_outer .img_wrap {position:relative;}
-	.content_outer .img_wrap .btn_consult {position:absolute; left:50%; transform:translate(-50%); bottom:0; width:69%; height:9.3%;}
+	.content_outer .img_wrap .btn_consult {position:absolute; left:50%; transform:translate(-50%); bottom:0; width:100%; height:11%;}
 
 	@media(max-width: 768px){
 		.img_wrap{
@@ -37,40 +37,40 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 		<div class="img_wrap">
 			<img src="/static/img/old/camp/am_east_pri_camp.png" class="inner_content">
 			<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-				<span class="blind">상담신청하기</span>
+				<span class="blind"></span>
 			</a>
 		</div>
 		<div class="img_wrap">
 			<img src="/static/img/old/camp/uk_pub_sch.png" class="inner_content">
 			<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-				<span class="blind">상담신청하기</span>
+				<span class="blind"></span>
 			</a>
 		</div>
 		<div class="img_wrap">
 			<img src="/static/img/old/camp/ca_pub_sch.png" class="inner_content">
 			<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-				<span class="blind">상담신청하기</span>
+				<span class="blind"></span>
 			</a>
 		</div>
 
 		<div class="img_wrap">
 			<img src="/static/img/old/camp/phil_ceb_camp.png" class="inner_content">
 			<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-				<span class="blind">상담신청하기</span>
+				<span class="blind"></span>
 			</a>
 		</div>
 
 		<div class="img_wrap">
 			<img src="/static/img/old/camp/phil_tallac_camp.png" class="inner_content">
 			<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-				<span class="blind">상담신청하기</span>
+				<span class="blind"></span>
 			</a>
 		</div>
 
 		<div class="img_wrap">
 			<img src="/static/img/old/camp/phi_tallac_fa.png" class="inner_content">
 			<a href="#none" class="btn_consult" data-toggle="modal" data-target="#application_form">
-				<span class="blind">상담신청하기</span>
+				<span class="blind"></span>
 			</a>
 		</div>
 
