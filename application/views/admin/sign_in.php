@@ -1,5 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/admin/head.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/admin/head.php');
 ?>
 
 <body>
@@ -24,35 +24,102 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/admin/head.php');
                             </a>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="userId">
                             <label for="floatingInput">ID</label>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <input type="password" class="form-control" id="userPass" placeholder="Password">
                             <label for="floatingPassword">Password</label>
                         </div>
-                        <button type="submit" class="btn btn-success py-3 w-100 mb-4">LOGIN</button>
-                        <p class="text-center mb-0">관리자 계정이 없으신가요?<a class="text-success" href="">관리자 계정 신청하기</a></p>
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="remember">
+								<label class="form-check-label" for="remember">ID 기억하기</label>
+							</div>
+						</div>
+                        <button type="submit" class="btn btn-success py-3 w-100 mb-4" id="btnLogin">LOGIN</button>
+                        <p class="text-center mb-0">관리자 계정이 없으신가요? <a class="text-success" href="" onclick="javascript:on_product_alert()">관리자 계정 신청하기</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Sign In End -->
+        <form id="info_form" style="display: none;">
+        	<input type="hidden" id="id" name="id">
+        	<input type="hidden" id="user_idx" name="user_idx">
+        	<input type="hidden" id="mobile" name="mobile">
+        	<input type="hidden" id="name" name="name">
+        	<input type="hidden" id="position" name="position">
+        </form>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/lib/chart/chart.min.js"></script>
-    <script src="/lib/easing/easing.min.js"></script>
-    <script src="/lib/waypoints/waypoints.min.js"></script>
-    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script type="text/javascript">
 
-    <!-- Template Javascript -->
-    <script src="/static/js/admin/main.js"></script>
+    	function on_product_alert(){
+    		alert("현재 준비중인 기능입니다.");
+    	}
+
+    	$('#btnLogin').on('click', function () {
+			doLogin();
+		});
+
+		$('#userPass').bind('keydown', function(e) {
+			if(e.keyCode == 13) {
+				$('#btnLogin').trigger('click');
+			}
+		});
+
+		function doLogin() {
+			var userid = $('#userId').val();
+			if(userid.length == 0) {
+				alert('아이디를 입력해 주세요.');
+				$('#userId').focus();
+				return false;
+			}
+			var userpass = $('#userPass').val();
+			if(userpass.length == 0) {
+				alert('비밀번호를 입력해 주세요.');
+				$('#userPass').focus();
+				return;
+			}
+			var remember = document.getElementById('remember');
+			var isRememberChk = $(remember).is(':checked');
+			is_resend = false;
+			//로그인 기능 ajax로 변경
+			$.ajax({
+				type : 'post',
+				url : '/admin/doSignIn',
+				data : {
+					'userId' : userid,
+					'userPass' : userpass,
+					'remember' : isRememberChk
+				},
+				dataType : 'json',
+				async : true,
+				success : function(data){
+					if(data.result == 'success'){
+						document.getElementById(mobile).value = data.mobile;
+						document.getElementById(id).value = data.id;
+						document.getElementById(name).value = data.name;
+						document.getElementById(user_idx).value = data.user_idx;
+						document.getElementById(position).value = data.position;
+
+						$('#info_form').attr({
+							method: 'post',
+							action: '/admin/successLogin'
+						}).submit();
+
+					}else{
+						alert(data.msg);
+					}
+				},error : function(data){
+					alert("통신중 장애가 발생 하였습니다.");
+					console.log(data.msg);
+				}
+			});
+		}
+
+    </script>
 </body>
 
 </html>
