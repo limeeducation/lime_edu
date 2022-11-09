@@ -64,7 +64,7 @@ class Admin extends CI_Controller {
 		//fail_count 0으로 만들기
 		$this->admin_model->resetFailCount($user_idx);
 
-		redirect('/admin/goMain');
+		redirect(base_url('/admin/goMain'));
 	}
 
 	public function goMain(){
