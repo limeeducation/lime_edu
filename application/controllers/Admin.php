@@ -53,7 +53,7 @@ class Admin extends CI_Controller {
 
 		//계정 정보 세션 적용
 		$this->session->set_userdata(array(
-				'id'=>$id,
+				'user'=>$id,
 				'name'=>$name,
 				'user_idx'=>$user_idx,
 				'position'=>$position,
@@ -70,7 +70,7 @@ class Admin extends CI_Controller {
 	public function goMain(){
 		if(!is_user_logged_in()){
 			$msg = "로그인이 필요한 페이지입니다.";
-			script_alert_go($msg, base_url('/admin'));
+			script_alert_go($msg, '/admin');
 		}
 		$this->load->view('admin/main');
 	}
