@@ -6,6 +6,7 @@ class Admin extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->database();
+		$this->load->library('session');
 		$this->load->helper(array('url', 'cookie', 'script', 'login'));
 		$this->load->model(array('admin_model'));
 	}
