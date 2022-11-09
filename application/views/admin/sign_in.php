@@ -98,11 +98,11 @@
 				async : true,
 				success : function(data){
 					if(data.result == 'success'){
-						document.getElementById(mobile).value = data.mobile;
-						document.getElementById(id).value = data.id;
-						document.getElementById(name).value = data.name;
-						document.getElementById(user_idx).value = data.user_idx;
-						document.getElementById(position).value = data.position;
+						document.getElementById('mobile').value = data.mobile;
+						document.getElementById('id').value = data.id;
+						document.getElementById('name').value = data.name;
+						document.getElementById('user_idx').value = data.user_idx;
+						document.getElementById('position').value = data.position;
 
 						$('#info_form').attr({
 							method: 'post',
