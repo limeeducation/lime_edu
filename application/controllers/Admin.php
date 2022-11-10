@@ -74,4 +74,11 @@ class Admin extends CI_Controller {
 		}
 		$this->load->view('admin/main');
 	}
+
+	public function signOut(){
+		$array_items = array( 'user', 'name', 'user_idx', 'position', 'mobile');
+		$this->session->unset_userdata($array_items);
+		$msg = '로그아웃 되었습니다.';
+		script_alert_go($msg, '/admin');
+	}
 }
