@@ -75,6 +75,19 @@ class Admin_model extends CI_Model
 		$this->db->where('idx',$user_idx);
 		return $this->db->update('lime_adn_user');
 	}
+
+	public function getSimpleStudents($isCnt=false){
+		$q_get_simple_students = "SELECT stu_idx, stu_name, stu_nat, stu_field, start_dt, stu_mobile, cur_area, reg_date
+								  FROM apply_students
+								  WHERE contact_yn = 'N'
+								  ORDER BY reg_date DESC limit 10";
+
+		if($isCnt){
+			$q_get_simple_students = "SELECT count(*) FROM apply_students";
+		}
+		$result =  $this->db->query($q_get_simple_students)->result();
+		return $result;
+	}
 }
 
 ?>

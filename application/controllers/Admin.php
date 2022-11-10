@@ -72,7 +72,12 @@ class Admin extends CI_Controller {
 			$msg = "로그인이 필요한 페이지입니다.";
 			script_alert_go($msg, '/admin');
 		}
-		$this->load->view('admin/main');
+		$simpleStudents = $this->admin_model->getSimpleStudents();
+		$applicantsCnt = $this->admin_model->getSimpleStudents(true);
+		$this->load->view('admin/main', array(
+			'students'   => $simpleStudents,
+			'studentCnt' => $applicantsCnt
+		));
 	}
 
 	public function signOut(){
