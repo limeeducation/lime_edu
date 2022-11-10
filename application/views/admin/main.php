@@ -39,7 +39,7 @@
 									<th scope="col">전화번호</th>
 									<th scope="col">상담 희망 지역</th>
 									<th scope="col">상담 신청일</th>
-									<th scope="col"><?= $studentCnt;?></th>
+									<th scope="col"><?= print_r($studentCnt);?></th>
 								</tr>
 							</thead>
 							<tbody>
