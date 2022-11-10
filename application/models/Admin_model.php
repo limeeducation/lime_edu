@@ -83,7 +83,7 @@ class Admin_model extends CI_Model
 								  ORDER BY reg_date DESC limit 10";
 
 		if($isCnt){
-			$q_get_simple_students = "SELECT count(*) FROM apply_students";
+			$q_get_simple_students = "SELECT count(*) as cnt FROM apply_students";
 		}
 		$result =  $this->db->query($q_get_simple_students)->result();
 		return $result;
