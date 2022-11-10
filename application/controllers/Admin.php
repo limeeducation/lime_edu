@@ -17,6 +17,10 @@ class Admin extends CI_Controller {
 
 	//관리자 로그인 페이지 진입
 	public function viewSignIn(){
+		if(is_user_logged_in()){
+			$msg = "메인 화면으로 이동합니다.";
+			script_alert_go($msg, '/admin/goMain');
+		}
 		$this->load->view('admin/sign_in');
 	}
 
