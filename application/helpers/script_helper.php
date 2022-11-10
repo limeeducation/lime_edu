@@ -33,4 +33,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             ');
     	}
     }
+
+    if(!function_exists('script_go_page')) {
+		/**
+		 * 해당 URL로 이동합니다.
+		 *
+		 * @param $url
+		 */
+		function script_go_page($url) {
+			exit('
+				<script>
+					location.href="'.$url.'";
+				</script>
+			');
+		}
+	}
 ?>
