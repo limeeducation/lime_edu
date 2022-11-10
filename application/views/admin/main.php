@@ -60,7 +60,7 @@
 								</tr>
 								<?php endforeach;?>
 								<?php else:?>
-									<tr><td colspan="9">신규 상담 신청 내역이 없습니다.</td></tr>
+									<tr><td colspan="9" style="text-align:center;">신규 상담 신청 내역이 없습니다.</td></tr>
 								<?php endif;?>
 							</tbody>
 						</table>
