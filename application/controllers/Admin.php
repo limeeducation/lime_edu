@@ -19,7 +19,7 @@ class Admin extends CI_Controller {
 	public function viewSignIn(){
 		if(is_user_logged_in()){
 			$msg = "메인 화면으로 이동합니다.";
-			script_alert_go($msg, '/admin/goMain');
+			script_alert_go($msg, '/admin/main');
 		}
 		$this->load->view('admin/sign_in');
 	}
@@ -68,10 +68,10 @@ class Admin extends CI_Controller {
 		//fail_count 0으로 만들기
 		$this->admin_model->resetFailCount($user_idx);
 
-		$this->goMain();
+		$this->main();
 	}
 
-	public function goMain(){
+	public function main(){
 		if(!is_user_logged_in()){
 			$msg = "로그인이 필요한 페이지입니다.";
 			script_alert_go($msg, '/admin');
