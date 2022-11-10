@@ -54,7 +54,7 @@
 									<td>서울</td>
 									<td>2022-11-10 22:10:34</td>
 									<td>N</td>
-									<td><button type="button" class="btn btn-btn-success rounded-pill ms-2">자세히 보기</button></td>
+									<td><a class="btn btn-sm btn-success" href="">자세히 보기</a></td>
 								</tr>
 							</tbody>
 						</table>
