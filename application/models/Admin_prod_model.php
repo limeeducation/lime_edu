@@ -11,7 +11,7 @@ class Admin_model extends CI_Model
 		return $this->db->query($query)->result();
 	}
 
-	public function selectProdList($){
+	public function selectProdList(){
 		$q_get_simple_students = "SELECT stu_idx, stu_name, stu_nat, stu_field, start_dt, stu_mobile, cur_area, reg_date
 								  FROM apply_students
 								  WHERE contact_yn = 'N'
