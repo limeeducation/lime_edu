@@ -6,8 +6,21 @@
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
 <script type="text/javascript">
 	$(function(){
-		$("#sortable").sortable();
+
 	});
+	$(document).ready(function(){
+		$(".fixList").hide();
+	});
+	function changeList(){
+		$("#sortable").sortable({disabled: false});
+		$(".changeList").hide();
+		$(".fixList").show();
+	}
+	function fixList(){
+		$("#sortable").sortable({disabled: true});
+		$(".fixList").hide();
+		$(".changeList").show();
+	}
 </script>
 <body>
     <div class="container-fluid position-relative d-flex p-0">
@@ -34,7 +47,8 @@
 						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2">TAB 2</button></h6>
 						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2">TAB 3</button></h6>
 						<a class="text-success" href="" >이미지 등록하기</a>
-						<a href="" >순서 변경하기</a>
+						<a href="javascript:changeList();" class="changeList">순서 변경하기</a>
+						<a href="javascript:fixList();" class="fixList">순서 적용하기</a>
 					</div>
                 </div>
                 <ul id="sortable" style="list-style:none;">
