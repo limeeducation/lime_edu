@@ -33,11 +33,6 @@
         return false;
     });
 
-	function sidebar_toggler(){
-		console.log('click successful');
-		$('.sidebar, .content').toggleClass("open");
-		return false;
-	}
 
     // Progress Bar
     $('.pg-bar').waypoint(function () {
