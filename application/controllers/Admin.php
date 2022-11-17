@@ -70,6 +70,7 @@ class Admin extends CI_Controller {
 		script_go_page('/admin/main');
 	}
 
+	//메인 페이지 진입
 	public function main(){
 		if(!is_user_logged_in()){
 			$msg = "로그인이 필요한 페이지입니다.";
@@ -83,10 +84,13 @@ class Admin extends CI_Controller {
 		));
 	}
 
+	// 로그아웃
 	public function signOut(){
 		$array_items = array( 'user', 'name', 'user_idx', 'position', 'mobile');
 		$this->session->unset_userdata($array_items);
 		$msg = '로그아웃 되었습니다.';
 		script_alert_go($msg, '/admin');
 	}
+
+
 }

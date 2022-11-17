@@ -18,6 +18,13 @@
 		<div class="navbar-nav w-100">
 			<a href="/admin/main" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>대시보드</a>
 			<div class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-images me-2"></i>이미지 관리</a>
+				<div class="dropdown-menu bg-transparent border-0">
+					<a href="/adminProd/bannerList?type=main" class="dropdown-item">메인이미지 관리</a>
+					<a href="typography.html" class="dropdown-item">이벤트 이미지 관리</a>
+				</div>
+			</div>
+			<div class="nav-item dropdown">
 				<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-images me-2"></i>상품관리</a>
 				<div class="dropdown-menu bg-transparent border-0">
 					<a href="button.html" class="dropdown-item">상시상품 관리</a>
