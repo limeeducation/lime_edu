@@ -2,7 +2,6 @@
 <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
 <script>
 	function sidebar_toggler(){
-		console.log('click successful');
 		$('.sidebar, .content').toggleClass("open");
 		return false;
 	}
