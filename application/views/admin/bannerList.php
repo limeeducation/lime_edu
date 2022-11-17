@@ -46,14 +46,14 @@
 							</div>
 						</div>
 						<div class="mb-3 col-xl-6 mx-3">
-							<label for="exampleInputPassword1" class="form-label">이미지 URL</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-							<label for="exampleInputPassword1" class="form-label">연결 URL</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-							<label for="exampleInputPassword1" class="form-label">노출 시작일</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-							<label for="exampleInputPassword1" class="form-label">노출 종료일</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
+							<label for="img_url_1" class="form-label">이미지 URL</label>
+							<input type="text" class="form-control" id="img_url_1">
+							<label for="conn_url_1" class="form-label">연결 URL</label>
+							<input type="text" class="form-control" id="conn_url_1">
+							<label for="exp_start_1" class="form-label">노출 시작일</label>
+							<input type="text" class="form-control" id="exp_start_1">
+							<label for="exp_end_1" class="form-label">노출 종료일</label>
+							<input type="text" class="form-control" id="exp_end_1">
 						</div>
 					</form>
 				</div>
@@ -66,14 +66,14 @@
 							</div>
 						</div>
 						<div class="mb-3 col-xl-6 mx-3">
-							<label for="exampleInputPassword1" class="form-label">이미지 URL</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-							<label for="exampleInputPassword1" class="form-label">연결 URL</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-							<label for="exampleInputPassword1" class="form-label">노출 시작일</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-							<label for="exampleInputPassword1" class="form-label">노출 종료일</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
+							<label for="img_url_2" class="form-label">이미지 URL</label>
+							<input type="text" class="form-control" id="img_url_2">
+							<label for="conn_url_2" class="form-label">연결 URL</label>
+							<input type="text" class="form-control" id="conn_url_2">
+							<label for="exp_start_2" class="form-label">노출 시작일</label>
+							<input type="text" class="form-control" id="exp_start_2">
+							<label for="exp_end_2" class="form-label">노출 종료일</label>
+							<input type="text" class="form-control" id="exp_end_2">
 						</div>
 					</form>
 				</div>
