@@ -11,7 +11,7 @@
     };
     spinner();
     
-    
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -33,6 +33,11 @@
         return false;
     });
 
+	function sidebar_toggler(){
+		console.log('click successful');
+		$('.sidebar, .content').toggleClass("open");
+		return false;
+	}
 
     // Progress Bar
     $('.pg-bar').waypoint(function () {
