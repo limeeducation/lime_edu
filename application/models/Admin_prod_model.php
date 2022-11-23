@@ -25,6 +25,12 @@ class Admin_prod_model extends CI_Model
 	}
 
 	public function addBanner($data){
+		$tab = $data['banr_tab'];
+		$type = $data['banr_type'];
+		$seq_max_q = "SELECT MAX(banr_seq) AS seq FROM banner WHERE banr_tab='{$tab}' AND banr_type='{$type}'"
+		$res =  $this->db->query($seq_max_q)->result();
+		$seq_max = $res[0]->seq;
+		$data['banr_seq'] = $seq_max+1;
 		$this->db->insert('banner',$data);
         return $this->db->insert_id();
 	}
