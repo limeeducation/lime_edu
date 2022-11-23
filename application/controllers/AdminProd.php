@@ -20,7 +20,7 @@ class AdminProd extends CI_Controller {
 
 	//상품 배너 리스트
 	public function bannerList(){
-		$type = empty($this->input->get('type')) ? 'noraml' : $this->input->get('type');
+		$type = empty($this->input->get('type')) ? 'normal' : $this->input->get('type');
 		$this->load->view('admin/bannerList', array(
 			'type'   => $type
 		));
