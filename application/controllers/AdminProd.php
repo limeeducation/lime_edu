@@ -49,4 +49,11 @@ class AdminProd extends CI_Controller {
 			script_alert_back('저장중 장애가 발생했습니다.');
 		}
 	}
+
+	//탭별 리스트 호출
+	public function getTabListAjax(){
+		$type = $this->input->post('type');
+		$tab = $this->input->post('tab');
+		return $this->admin_prod_model->getBanners($type, $tab);
+	}
 }

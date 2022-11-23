@@ -8,6 +8,7 @@
 
 	$(document).ready(function(){
 		$(".fixList").hide();
+		get_banr_tab('1');
 	});
 
 	//리스트 재정렬 활성화
@@ -22,6 +23,29 @@
 		$("#sortable").sortable({disabled: true});
 		$(".fixList").hide();
 		$(".changeList").show();
+	}
+
+	//탭별 리스트 호출
+	function get_banr_tab(tab){
+		var type = '<?= $type;?>';
+		$.ajax({
+			type: "post",
+			url: "/adminProd/getTabListAjax",
+			async: true,
+			data: {
+				"type": type,
+				"tab": tab
+			},
+			dataType: "json",
+			beforeSend: function () {
+			},
+			success: function (data) {
+				console.log(data);
+			},
+			error: function () {
+				alert("통신중 장애가 발생 하였습니다.");
+			}
+		});
 	}
 </script>
 <body>

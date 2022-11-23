@@ -34,6 +34,14 @@ class Admin_prod_model extends CI_Model
 		$this->db->insert('banner',$data);
         return $this->db->insert_id();
 	}
+
+	public function getBanners($type, $tab){
+		$this->db->select('banr_idx, banr_seq, banr_img, banr_link_url, banr_use_yn');
+		$this->db->from('banner');
+		$this->db->where('banr_type', $type);
+		$this->db->where('banr_tab', $tab);
+		return $this->db->order_by('banr_seq', 'ASC')->get()->row_array();
+	}
 }
 
 ?>
