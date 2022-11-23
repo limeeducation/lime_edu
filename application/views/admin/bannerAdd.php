@@ -61,7 +61,6 @@
 							<input type="text" class="form-control" id="banrImg" name="banr_img">
 							<label for="banrImg" class="form-label">배너 이미지 url</label>
 						</div>
-						</div>
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" id="banrLinkUrl" name="banr_link_url">
                             <label for="banrLinkUrl" class="form-label">배너 링크 url</label>
