@@ -6,7 +6,7 @@
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
 <script>
 	$(function(){
-		$("#banr_save").bind('click',function(){
+		$("#btn_banr_save").bind('click',function(){
 			if( '' == $("select[name=banr_tab]").val() ) alert('배너 탭을 선택해주세요.');
 			else{
 				$( "#banr_save" ).submit();
@@ -69,7 +69,7 @@
 							<input class="form-check-input" type="checkbox" role="switch" id="banrUseYn" name="banr_use_yn" checked="checked">
 							<label class="form-check-label" for="banrUseYn">배너 노출 여부</label>
 						</div>
-						<button type="button" class="btn btn-success" id="banr_save">배너 저장</button>
+						<button type="button" class="btn btn-success" id="btn_banr_save">배너 저장</button>
 						<button type="button" class="btn btn-primary" onclick="history.back()" id="banr_cancel">취소</button>
 					</form>
 				</div>
