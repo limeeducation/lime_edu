@@ -20,9 +20,33 @@ class AdminProd extends CI_Controller {
 
 	//상품 배너 리스트
 	public function bannerList(){
-		$type = $this->input->get('type');
+		$type = empty($this->input->get('type')) ? 'noraml' : $this->input->get('type');
 		$this->load->view('admin/bannerList', array(
 			'type'   => $type
 		));
+	}
+
+	//상품 배너 등록 페이지
+	public function bannerAdd(){
+		$type = $this->input->get('type');
+		$this->load->view('admin/bannerAdd', array(
+			'type'   => $type
+		));
+	}
+
+	//상품 배너 저장
+	public function bannerSave(){
+		$data['banr_type'] = $this->input->post('banr_type');
+		$data['banr_tab'] = $this->input->post('banr_tab');
+		$data['banr_img'] = $this->input->post('banr_img');
+		$data['banr_link_url'] = $this->input->post('banr_link_url');
+		$data['banr_use_yn'] = $this->input->post('banr_use_yn');
+		$data['banr_reg_id'] = $this->session->userdata('user_idx');
+		$res = $this->admin_prod_model->addBanner($data);
+		if($res){
+			script_alert_go('배너가 등록되었습니다.',base_url('/AdminProd/bannerList'));
+		}else{
+			script_alert_back('저장중 장애가 발생했습니다.');
+		}
 	}
 }

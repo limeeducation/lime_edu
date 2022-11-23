@@ -48,7 +48,7 @@
 						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2">TAB 1</button></h6>
 						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2">TAB 2</button></h6>
 						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2">TAB 3</button></h6>
-						<a class="text-success" href="" >이미지 추가하기</a>
+						<a class="text-success" href="/adminProd/bannerAdd?type=normal" >이미지 추가하기</a>
 						<a href="javascript:changeList();" class="changeList">순서 변경하기</a>
 						<a href="javascript:fixList();" class="fixList">순서 적용하기</a>
 					</div>

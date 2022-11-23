@@ -23,6 +23,11 @@ class Admin_prod_model extends CI_Model
 		$result =  $this->db->query($q_get_simple_students)->result();
 		return $result;
 	}
+
+	public function addBanner($data){
+		$this->db->insert('banner',$data);
+        return $this->db->insert_id();
+	}
 }
 
 ?>
