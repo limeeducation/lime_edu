@@ -45,7 +45,7 @@ class Admin_prod_model extends CI_Model
 		$this->db->where('banr_type', $type);
 		$this->db->where('banr_tab', $tab);
 		$this->db->order_by('banr_seq', 'ASC');
-		return $this->db->get()->row();
+		return $this->db->get()->result();
 	}
 }
 
