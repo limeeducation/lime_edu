@@ -77,10 +77,10 @@ class Admin_model extends CI_Model
 	}
 
 	public function getSimpleStudents($isCnt=false){
-		$q_get_simple_students = "SELECT stu_idx, stu_name, stu_nat, stu_field, start_dt, stu_mobile, cur_area, reg_date
+		$q_get_simple_students = "SELECT con_idx, con_name, con_natio, con_study, con_start_dt, con_date, con_office, con_reg_dt
 								  FROM apply_students
-								  WHERE contact_yn = 'N'
-								  ORDER BY reg_date DESC limit 10";
+								  WHERE con_contact_yn = 'N'
+								  ORDER BY con_reg_dt DESC limit 10";
 
 		if($isCnt){
 			$q_get_simple_students = "SELECT count(*) as cnt FROM apply_students";

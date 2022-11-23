@@ -36,8 +36,8 @@
 									<th scope="col">희망 국가</th>
 									<th scope="col">희망 분야</th>
 									<th scope="col">희망 시작일</th>
-									<th scope="col">전화번호</th>
-									<th scope="col">상담 희망 지역</th>
+									<th scope="col">희망 상담일</th>
+									<th scope="col">상담 희망 지사</th>
 									<th scope="col">상담 신청일</th>
 									<th scope="col"></th>
 								</tr>
@@ -48,14 +48,14 @@
 									foreach($students as $student):
 								?>
 								<tr>
-									<td><?= $student->stu_idx;?></td>
-									<td><?= $student->stu_name;?></td>
-									<td><?= $student->stu_nat;?></td>
-									<td><?= $student->stu_field;?></td>
-									<td><?= $student->start_dt;?></td>
-									<td><?= $student->stu_mobile;?></td>
-									<td><?= $student->cur_area;?></td>
-									<td><?= $student->reg_date;?></td>
+									<td><?= $student->con_idx;?></td>
+									<td><?= $student->con_name;?></td>
+									<td><?= $student->con_natio;?></td>
+									<td><?= $student->con_study;?></td>
+									<td><?= $student->con_start_dt;?></td>
+									<td><?= $student->con_date;?></td>
+									<td><?= $student->con_office;?></td>
+									<td><?= $student->con_reg_dt;?></td>
 									<td><a class="btn btn-sm btn-success" href="">자세히 보기</a></td>
 								</tr>
 								<?php endforeach;?>
