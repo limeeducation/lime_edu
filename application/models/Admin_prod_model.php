@@ -36,7 +36,11 @@ class Admin_prod_model extends CI_Model
 	}
 
 	public function getBanners($type, $tab){
-		$this->db->select('banr_idx, banr_seq, banr_img, banr_link_url, banr_use_yn');
+		$this->db->select('banr_idx');
+		$this->db->select('banr_seq');
+		$this->db->select('banr_img');
+		$this->db->select('banr_link_url');
+		$this->db->select('banr_use_yn');
 		$this->db->from('banner');
 		$this->db->where('banr_type', $type);
 		$this->db->where('banr_tab', $tab);
