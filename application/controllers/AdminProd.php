@@ -54,6 +54,7 @@ class AdminProd extends CI_Controller {
 	public function getTabListAjax(){
 		$type = $this->input->post('type');
 		$tab = $this->input->post('tab');
-		return $this->admin_prod_model->getBanners($type, $tab);
+		$banner_list = $this->admin_prod_model->getBanners($type, $tab);
+		echo json_encode($banner_list);
 	}
 }
