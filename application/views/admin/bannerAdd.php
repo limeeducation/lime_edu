@@ -35,11 +35,11 @@
                 <div class="bg-secondary rounded h-100 p-4">
 					<h6 class="mb-4">이미지 등록</h6>
 					<form action="/adminProd/bannerSave" id="banr_save" method="post">
-						<input type="hidden" class="form-control" name="banr_type" value="<?= $type;?>">
+						<input type="hidden" class="form-control" name="banr_type" value='<?= $type;?>'>
 						<?php if($type == "normal") :?>
 							<div class="form-floating mb-3">
 								<select class="form-select" id="banrTab" name="banr_tab">
-									<option selected="">탭 선택</option>
+									<option value="">탭 선택</option>
 									<option value="1">상시 상품 탭1</option>
 									<option value="2">상시 상품 탭2</option>
 									<option value="3">상시 상품 탭3</option>
@@ -49,7 +49,7 @@
 						<?php else : ?>
 							<div class="form-floating mb-3">
 								<select class="form-select" id="banrTab" name="banr_tab">
-									<option selected="">탭 선택</option>
+									<option value="">탭 선택</option>
 									<option value="1">이벤트 상품 탭1</option>
 									<option value="2">이벤트 상품 탭2</option>
 									<option value="3">이벤트 상품 탭3</option>

@@ -40,7 +40,7 @@ class AdminProd extends CI_Controller {
 		$data['banr_tab'] = $this->input->post('banr_tab');
 		$data['banr_img'] = $this->input->post('banr_img');
 		$data['banr_link_url'] = $this->input->post('banr_link_url');
-		$data['banr_use_yn'] = $this->input->post('banr_use_yn');
+		$data['banr_use_yn'] = $this->input->post('banr_use_yn') == 'on' ? 'Y' : 'N';
 		$data['banr_reg_id'] = $this->session->userdata('user_idx');
 		$res = $this->admin_prod_model->addBanner($data);
 		if($res){
