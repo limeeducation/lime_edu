@@ -48,7 +48,7 @@
 					<form action="/adminProd/bannerSave" id="banr_save" method="post">
 						<input type="hidden" class="form-control" name="banr_type" value='<?= $type;?>'>
 						<input type="hidden" class="form-control" name="edit_type" value='<?= $do_func;?>'>
-						<?php if($$do_func == "edit") :?>
+						<?php if($do_func == "edit") :?>
 							<input type="hidden" class="form-control" name="banr_idx" value="<?= $detail['banr_idx'];?>">
 						<?php endif;?>
 						<?php if($type == "normal") :?>
