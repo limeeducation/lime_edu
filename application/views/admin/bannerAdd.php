@@ -19,7 +19,7 @@
 			$('#banrTab').val("<?= empty($detail['banr_tab']) ? '' : $detail['banr_tab'];?>").prop("selected",true);
 			$("#banrImg").val("<?= empty($detail['banr_img']) ? '' : $detail['banr_img'];?>");
 			$("#banrLinkUrl").val("<?= empty($detail['banr_link_url']) ? '' : $detail['banr_link_url'];?>");
-			if("<?= $detail['banr_use_yn'];?>" == 'N'){
+			if("<?= empty($detail['banr_use_yn']) ? 'Y' : $detail['banr_use_yn'];?>" == 'N'){
 				$("input[name='banr_use_yn']").prop("checked", false);
 			}
 		}
