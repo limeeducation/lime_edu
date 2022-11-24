@@ -15,7 +15,6 @@
 	});
 
 	$(document).ready(function(){
-		<?= $detail;?>
 		/* $('#banrTab').val('test2').prop("selected",true); */
 	});
 </script>
@@ -79,7 +78,7 @@
 					</form>
 				</div>
             </div>
-
+<?php print_r($detail);?>
             <?php
             	include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/admin/footer.php');
             ?>
