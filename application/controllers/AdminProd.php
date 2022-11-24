@@ -56,9 +56,17 @@ class AdminProd extends CI_Controller {
 		$data['banr_link_url'] = $this->input->post('banr_link_url');
 		$data['banr_use_yn'] = $this->input->post('banr_use_yn') == 'on' ? 'Y' : 'N';
 		$data['banr_reg_id'] = $this->session->userdata('user_idx');
-		$res = $this->admin_prod_model->addBanner($data);
+		$editType = $this->input->post('edit_type');
+		if($editType == 'edit'){
+			$data['banr_idx'] = $this->input->post('banr_idx');
+			$res = $this->admin_prod_model->editBanner($data);
+		}else{
+			$res = $this->admin_prod_model->addBanner($data);
+		}
+
 		if($res){
-			script_alert_go('배너가 등록되었습니다.',base_url('/AdminProd/bannerList'));
+		$res_msg = $editType == 'edit' ? '배너가 수정되었습니다.' : '배너가 등록되었습니다.';
+			script_alert_go($res_msg, base_url('/AdminProd/bannerList'));
 		}else{
 			script_alert_back('저장중 장애가 발생했습니다.');
 		}

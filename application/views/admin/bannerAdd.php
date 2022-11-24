@@ -47,6 +47,10 @@
 					<h6 class="mb-4">이미지 <?= $do_func == 'edit' ? '수정' : '등록';?></h6>
 					<form action="/adminProd/bannerSave" id="banr_save" method="post">
 						<input type="hidden" class="form-control" name="banr_type" value='<?= $type;?>'>
+						<input type="hidden" class="form-control" name="edit_type" value='<?= $do_func;?>'>
+						<?php if($$do_func == "edit") :?>
+							<input type="hidden" class="form-control" name="banr_idx" value="<?= $detail['banr_idx'];?>">
+						<?php endif;?>
 						<?php if($type == "normal") :?>
 							<div class="form-floating mb-3">
 								<select class="form-select" id="banrTab" name="banr_tab">

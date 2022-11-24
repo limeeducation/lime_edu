@@ -35,6 +35,20 @@ class Admin_prod_model extends CI_Model
         return $this->db->insert_id();
 	}
 
+	public function editBanner($data){
+		$edit_data = array(
+			'banr_tab'		=> $data['banr_tab'],
+			'banr_img'		=> $data['banr_img'],
+			'banr_link_url'	=> $data['banr_link_url'],
+			'banr_use_yn'	=> $data['banr_use_yn']
+		);
+		$edit_where = array(
+			'banr_idx'		=> $data['banr_idx']
+		);
+		$this->db->update('banner', $edit_data, $edit_where);
+		return $this->db->trans_status();
+    }
+
 	public function getBanners($type, $tab){
 		$this->db->select('banr_idx');
 		$this->db->select('banr_seq');
@@ -58,6 +72,8 @@ class Admin_prod_model extends CI_Model
 		$this->db->where('banr_idx', $idx);
 		return $this->db->get()->row_array();
 	}
+
+
 }
 
 ?>
