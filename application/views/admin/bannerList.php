@@ -31,6 +31,14 @@
 	//탭별 리스트 호출
 	function get_banr_tab(tab){
 		var type = '<?= $type;?>';
+
+		//현재 그려진 리스트 삭제하기
+		var ul = document.getElementById("sortable");
+		while(ul.hasChildNodes()){
+			ul.removeChild(ul.firstChild);
+		}
+
+		//해당 탭의 리스트 호출
 		$.ajax({
 			type: "post",
 			url: "/adminProd/getTabListAjax",
