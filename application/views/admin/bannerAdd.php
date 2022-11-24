@@ -15,7 +15,14 @@
 	});
 
 	$(document).ready(function(){
-		/* $('#banrTab').val('test2').prop("selected",true); */
+		if('<?= $do_func;?>' == 'edit'){
+			$('#banrTab').val("<?= $detail['banr_tab']?>").prop("selected",true);
+			$("#banrImg").val('<?= $detail['banr_img']?>');
+			$("#banrLinkUrl").val('<?= $detail['banr_link_url']?>');
+			if("<?= $detail['banr_use_yn'];?>" == 'N'){
+				$("input[name='banr_use_yn']").prop("checked", false);
+			}
+		}
 	});
 </script>
 <body>
@@ -78,7 +85,6 @@
 					</form>
 				</div>
             </div>
-<?php print_r($detail);?>
             <?php
             	include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/admin/footer.php');
             ?>
