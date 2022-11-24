@@ -29,9 +29,19 @@ class AdminProd extends CI_Controller {
 	//상품 배너 등록 페이지
 	public function bannerAdd(){
 		$type = $this->input->get('type');
-		$this->load->view('admin/bannerAdd', array(
-			'type'   => $type
-		));
+		$idx = $this->input->get('idx');
+		if(!empty($idx){
+			$banr_detail = $this->admin_prod_model->getBannerDetail($idx);
+			$this->load->view('admin/bannerAdd', array(
+				'type'   => $type,
+				'detail' => $banr_detail
+			));
+		}else{
+			$this->load->view('admin/bannerAdd', array(
+				'type'   => $type
+			));
+		}
+
 	}
 
 	//상품 배너 저장

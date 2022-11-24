@@ -55,12 +55,14 @@
 					list_html += "			<div class='mb-3 col-xl-6 mx-3'>";
 					list_html += "				<label for='banr_img_"+i+"' class='form-label'>이미지 URL</label>";
 					list_html += "				<input type='text' class='form-control' id='banr_img_"+i+"' name='img_url_"+i+"' value='"+data[i].banr_img+"'>";
-					list_html += "				<label for='banr_link_url_"+i+"' class='form-label'>연결 URL</label>";
+					list_html += "				<label for='banr_link_url_"+i+"' class='form-label mt-3'>연결 URL</label>";
 					list_html += "				<input type='text' class='form-control' id='banr_link_url_"+i+"' name='banr_link_url_"+i+"' value='"+data[i].banr_link_url+"'>";
-					list_html += "				<div class='form-check form-switch'>";
+					list_html += "				<div class='form-check form-switch mt-3'>";
 					list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' checked=''>";
 					list_html += "					<label class='form-check-label' for='banr_use_yn_"+i+"'>배너 노출 여부</label>";
 					list_html += "				</div>";
+					list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='/adminProd/bannerAdd?type=<?= $type?>&idx="+data[i].banr_idx+"'>수정</button>";
+					list_html += "				<button type='button' class='btn btn-lg btn-primary m-2' onclick='/adminProd/bannerDel?idx="+data[i].banr_idx+"'>삭제</button>";
 					list_html += "			</div>";
 					list_html += "		</form>";
 					list_html += "	</div>";

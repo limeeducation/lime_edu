@@ -47,6 +47,16 @@ class Admin_prod_model extends CI_Model
 		$this->db->order_by('banr_seq', 'ASC');
 		return $this->db->get()->result();
 	}
+
+	public function getBannerDetail($idx){
+		$this->db->select('banr_idx');
+		$this->db->select('banr_img');
+		$this->db->select('banr_link_url');
+		$this->db->select('banr_use_yn');
+		$this->db->from('banner');
+		$this->db->where('banr_idx', $idx);
+		return $this->db->get()->row_array();
+	}
 }
 
 ?>
