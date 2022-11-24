@@ -45,29 +45,37 @@
 			success: function (data) {
 				//리스트 생성
 				var list_html = "";
-				for(var i=0; i<data.length; i++){
+				if(data.length > 0){
+					for(var i=0; i<data.length; i++){
+						list_html += "<li>";
+						list_html += "	<div class='bg-secondary rounded p-2 mt-3'>";
+						list_html += "		<form style='display: flex;'>";
+						list_html += "			<div class='mb-3 pt-1 col-xl-5' style='height: 270px;'>";
+						list_html += "				<img style='width: 100%; height: 100%;' src='"+data[i].banr_img+"'>";
+						list_html += "				<div class='form-text'>";
+						list_html += "					이미지 권장 사이즈 : @@@@ X @@@@";
+						list_html += "				</div>";
+						list_html += "			</div>";
+						list_html += "			<div class='mb-3 col-xl-6 mx-3'>";
+						list_html += "				<label for='banr_img_"+i+"' class='form-label'>이미지 URL</label>";
+						list_html += "				<input type='text' class='form-control' id='banr_img_"+i+"' name='img_url_"+i+"' value='"+data[i].banr_img+"' readonly>";
+						list_html += "				<label for='banr_link_url_"+i+"' class='form-label mt-3'>연결 URL</label>";
+						list_html += "				<input type='text' class='form-control' id='banr_link_url_"+i+"' name='banr_link_url_"+i+"' value='"+data[i].banr_link_url+"' readonly>";
+						list_html += "				<div class='form-check form-switch mt-3'>";
+						list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' checked='' disabled>";
+						list_html += "					<label class='form-check-label' for='banr_use_yn_"+i+"'>배너 노출 여부</label>";
+						list_html += "				</div>";
+						list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='go_edit("+data[i].banr_idx+")'>수정</button>";
+						list_html += "				<button type='button' class='btn btn-lg btn-primary m-2' onclick='/adminProd/bannerDel?idx="+data[i].banr_idx+"'>삭제</button>";
+						list_html += "			</div>";
+						list_html += "		</form>";
+						list_html += "	</div>";
+						list_html += "</li>";
+					}
+				}else{
 					list_html += "<li>";
 					list_html += "	<div class='bg-secondary rounded p-2 mt-3'>";
-					list_html += "		<form style='display: flex;'>";
-					list_html += "			<div class='mb-3 pt-1 col-xl-5' style='height: 270px;'>";
-					list_html += "				<img style='width: 100%; height: 100%;' src='"+data[i].banr_img+"'>";
-					list_html += "				<div class='form-text'>";
-					list_html += "					이미지 권장 사이즈 : @@@@ X @@@@";
-					list_html += "				</div>";
-					list_html += "			</div>";
-					list_html += "			<div class='mb-3 col-xl-6 mx-3'>";
-					list_html += "				<label for='banr_img_"+i+"' class='form-label'>이미지 URL</label>";
-					list_html += "				<input type='text' class='form-control' id='banr_img_"+i+"' name='img_url_"+i+"' value='"+data[i].banr_img+"' readonly>";
-					list_html += "				<label for='banr_link_url_"+i+"' class='form-label mt-3'>연결 URL</label>";
-					list_html += "				<input type='text' class='form-control' id='banr_link_url_"+i+"' name='banr_link_url_"+i+"' value='"+data[i].banr_link_url+"' readonly>";
-					list_html += "				<div class='form-check form-switch mt-3'>";
-					list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' checked='' disabled>";
-					list_html += "					<label class='form-check-label' for='banr_use_yn_"+i+"'>배너 노출 여부</label>";
-					list_html += "				</div>";
-					list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='go_edit("+data[i].banr_idx+")'>수정</button>";
-					list_html += "				<button type='button' class='btn btn-lg btn-primary m-2' onclick='/adminProd/bannerDel?idx="+data[i].banr_idx+"'>삭제</button>";
-					list_html += "			</div>";
-					list_html += "		</form>";
+					list_html += "		등록된 이미지가 없습니다.";
 					list_html += "	</div>";
 					list_html += "</li>";
 				}
@@ -102,9 +110,9 @@
 			<div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary text-center rounded p-2">
                     <div class="d-flex align-items-center justify-content-between ">
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2">TAB 1</button></h6>
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2">TAB 2</button></h6>
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2">TAB 3</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" onclick="get_banr_tab('1');">TAB 1</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" onclick="get_banr_tab('2');">TAB 2</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" onclick="get_banr_tab('3');">TAB 3</button></h6>
 						<a class="text-success" href="/adminProd/bannerAdd?type=normal" >이미지 추가하기</a>
 						<a href="javascript:changeList();" class="changeList">순서 변경하기</a>
 						<a href="javascript:fixList();" class="fixList">순서 적용하기</a>
