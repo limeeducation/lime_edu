@@ -30,17 +30,19 @@ class AdminProd extends CI_Controller {
 	public function bannerAdd(){
 		$type = $this->input->get('type');
 		$idx = $this->input->get('idx');
-		if(!empty($idx){
+		if(!empty($idx)){
 			$banr_detail = $this->admin_prod_model->getBannerDetail($idx);
-			$this->load->view('admin/bannerAdd', array(
-				'type'   => $type,
-				'detail' => $banr_detail
-			));
+			$data_arr = array(
+							'type'   => $type,
+                            'detail' => $banr_detail
+                        );
+
 		}else{
-			$this->load->view('admin/bannerAdd', array(
-				'type'   => $type
-			));
+			$data_arr = array(
+							'type'   => $type,
+					    );
 		}
+		$this->load->view('admin/bannerAdd', $data_arr);
 
 	}
 
