@@ -61,7 +61,7 @@
 					list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' checked=''>";
 					list_html += "					<label class='form-check-label' for='banr_use_yn_"+i+"'>배너 노출 여부</label>";
 					list_html += "				</div>";
-					list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='/adminProd/bannerAdd?type=<?= $type?>&idx="+data[i].banr_idx+"'>수정</button>";
+					list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='javascript:go_edit("+data[i].banr_idx+")'>수정</button>";
 					list_html += "				<button type='button' class='btn btn-lg btn-primary m-2' onclick='/adminProd/bannerDel?idx="+data[i].banr_idx+"'>삭제</button>";
 					list_html += "			</div>";
 					list_html += "		</form>";
@@ -74,6 +74,10 @@
 				alert("통신중 장애가 발생 하였습니다.");
 			}
 		});
+
+		function go_edit(idx){
+			location.href="/adminProd/bannerAdd?type=<?= $type?>&idx="+idx;
+		}
 	}
 </script>
 <body>
