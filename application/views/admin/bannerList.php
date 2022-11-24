@@ -57,11 +57,11 @@
 					list_html += "			</div>";
 					list_html += "			<div class='mb-3 col-xl-6 mx-3'>";
 					list_html += "				<label for='banr_img_"+i+"' class='form-label'>이미지 URL</label>";
-					list_html += "				<input type='text' class='form-control' id='banr_img_"+i+"' name='img_url_"+i+"' value='"+data[i].banr_img+"'>";
+					list_html += "				<input type='text' class='form-control' id='banr_img_"+i+"' name='img_url_"+i+"' value='"+data[i].banr_img+"' readonly>";
 					list_html += "				<label for='banr_link_url_"+i+"' class='form-label mt-3'>연결 URL</label>";
-					list_html += "				<input type='text' class='form-control' id='banr_link_url_"+i+"' name='banr_link_url_"+i+"' value='"+data[i].banr_link_url+"'>";
+					list_html += "				<input type='text' class='form-control' id='banr_link_url_"+i+"' name='banr_link_url_"+i+"' value='"+data[i].banr_link_url+"' readonly>";
 					list_html += "				<div class='form-check form-switch mt-3'>";
-					list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' checked=''>";
+					list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' checked='' readonly>";
 					list_html += "					<label class='form-check-label' for='banr_use_yn_"+i+"'>배너 노출 여부</label>";
 					list_html += "				</div>";
 					list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='go_edit("+data[i].banr_idx+")'>수정</button>";

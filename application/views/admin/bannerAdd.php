@@ -13,6 +13,11 @@
 			}
 		})
 	});
+
+	$(document).ready(function(){
+		console.log('<?= $detail;?>');
+		/* $('#banrTab').val('test2').prop("selected",true); */
+	});
 </script>
 <body>
     <div class="container-fluid position-relative d-flex p-0">
@@ -33,7 +38,7 @@
 			?>
 			<div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded h-100 p-4">
-					<h6 class="mb-4">이미지 등록</h6>
+					<h6 class="mb-4">이미지 <?= $do_func == 'edit' ? '수정' : '등록';?></h6>
 					<form action="/adminProd/bannerSave" id="banr_save" method="post">
 						<input type="hidden" class="form-control" name="banr_type" value='<?= $type;?>'>
 						<?php if($type == "normal") :?>

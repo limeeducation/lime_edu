@@ -34,12 +34,14 @@ class AdminProd extends CI_Controller {
 			$banr_detail = $this->admin_prod_model->getBannerDetail($idx);
 			$data_arr = array(
 							'type'   => $type,
-                            'detail' => $banr_detail
+                            'detail' => $banr_detail,
+                            'do_func'=> 'edit'
                         );
 
 		}else{
 			$data_arr = array(
 							'type'   => $type,
+							'do_func'=> 'add'
 					    );
 		}
 		$this->load->view('admin/bannerAdd', $data_arr);
