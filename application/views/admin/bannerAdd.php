@@ -16,9 +16,9 @@
 
 	$(document).ready(function(){
 		if('<?= $do_func;?>' == 'edit'){
-			$('#banrTab').val("<?= $detail['banr_tab']?>").prop("selected",true);
-			$("#banrImg").val('<?= $detail['banr_img']?>');
-			$("#banrLinkUrl").val('<?= $detail['banr_link_url']?>');
+			$('#banrTab').val("<?= empty($detail['banr_tab']) ? '' : $detail['banr_tab'];?>").prop("selected",true);
+			$("#banrImg").val("<?= empty($detail['banr_img']) ? '' : $detail['banr_img'];?>");
+			$("#banrLinkUrl").val("<?= empty($detail['banr_link_url']) ? '' : $detail['banr_link_url'];?>");
 			if("<?= $detail['banr_use_yn'];?>" == 'N'){
 				$("input[name='banr_use_yn']").prop("checked", false);
 			}
