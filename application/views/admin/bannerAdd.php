@@ -15,7 +15,7 @@
 	});
 
 	$(document).ready(function(){
-		console.log('<?= $detail;?>');
+		<?= $detail;?>
 		/* $('#banrTab').val('test2').prop("selected",true); */
 	});
 </script>
