@@ -53,8 +53,10 @@
 			success: function (data) {
 				//리스트 생성
 				var list_html = "";
+				var banr_chk_yn = "";
 				if(data.length > 0){
 					for(var i=0; i<data.length; i++){
+						banr_chk_yn =  data[i].banr_use_yn == "Y" ? "checked" : "";
 						list_html += "<li>";
 						list_html += "	<div class='bg-secondary rounded p-2 mt-3'>";
 						list_html += "		<form style='display: flex;'>";
@@ -70,7 +72,7 @@
 						list_html += "				<label for='banr_link_url_"+i+"' class='form-label mt-3'>연결 URL</label>";
 						list_html += "				<input type='text' class='form-control' id='banr_link_url_"+i+"' name='banr_link_url_"+i+"' value='"+data[i].banr_link_url+"' readonly>";
 						list_html += "				<div class='form-check form-switch mt-3'>";
-						list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' "+data[i].banr_use_yn == 'Y' ? "checked" : " "+" disabled>";
+						list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' "+banr_chk_yn+" disabled>";
 						list_html += "					<label class='form-check-label' for='banr_use_yn_"+i+"'>배너 노출 여부</label>";
 						list_html += "				</div>";
 						list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='go_edit("+data[i].banr_idx+")'>수정</button>";
