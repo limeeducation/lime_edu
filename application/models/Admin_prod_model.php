@@ -57,6 +57,7 @@ class Admin_prod_model extends CI_Model
 		$this->db->select('banr_img');
 		$this->db->select('banr_link_url');
 		$this->db->select('banr_use_yn');
+		$this->db->select('banr_tab');
 		$this->db->from('banner');
 		$this->db->where('banr_type', $type);
 		$this->db->where('banr_tab', $tab);
@@ -79,6 +80,17 @@ class Admin_prod_model extends CI_Model
 		$this->db->where('banr_idx', $idx);
 		$this->db->delete('banner');
 		return $this->db->trans_status();
+	}
+
+	public function updateBannerSeq($data){
+		$seq_update = array(
+			'banr_seq' => $data['banr_seq']
+		);
+		$seq_where = array(
+			'banr_idx'	=>	$data['banr_idx']
+		);
+		$this->db->update('banner', $seq_update, $seq_where);
+        return $this->db->trans_status();
 	}
 
 }

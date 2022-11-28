@@ -29,9 +29,42 @@
 
 	//현재 탭의 노출순서 적용
 	function updateSeq(){
+		var tab = $("input[name=banr_tab]").val();
+		var no = 0;
+		var success = 0;
+		var fail = 0;
 		$(".seq").each(function(i, box) {
 			$(this).val(i);
+			var banner_idx = $(this).prop("id");
+			var idx = banner_idx.substr(4);
+			$.ajax({
+				type: "post",
+				url: "/adminProd/updateBanrSeq",
+				async: false,
+				data: {
+					"idx": idx,
+					"seq": i,
+					"tab": tab
+				},
+				dataType: "json",
+				beforeSend: function () {
+				},
+				success: function (data) {
+					success++;
+				},
+				error: function () {
+					fail++;
+				}
+			});
+			no++;
 		});
+		if(no == success){
+			alert("노출 순서가 변경되었습니다.");
+		}else if(fail > 0){
+			alert("노출 순서 변경에 실패했습니다.");
+		}else{
+			alert("오류가 발생했습니다. 관리자에게 문의해주세요");
+		}
 	}
 	//수정 페이지 이동
 	function go_edit_banner(idx){
@@ -72,6 +105,7 @@
 						banr_chk_yn =  data[i].banr_use_yn == "Y" ? "checked" : "";
 						list_html += "<li class='banner'>";
 						list_html += "	<input type='hidden' id='banr"+data[i].banr_idx+"' class='seq'>";
+						list_html += "	<input type='hidden' name='banr_tab' value='"+data[i].banr_tab+"'>";
 						list_html += "	<div class='bg-secondary rounded p-2 mt-3'>";
 						list_html += "		<form style='display: flex;'>";
 						list_html += "			<div class='mb-3 pt-1 col-xl-5' style='height: 270px;'>";
