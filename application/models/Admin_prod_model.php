@@ -73,6 +73,11 @@ class Admin_prod_model extends CI_Model
 		return $this->db->get()->row_array();
 	}
 
+	public function deleteBanner($idx){
+		$this->db->where('banr_idx', $idx);
+		$this->db->delete('banner');
+		return $this->db->trans_status();
+	}
 
 }
 

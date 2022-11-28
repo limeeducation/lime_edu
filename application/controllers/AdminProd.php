@@ -79,4 +79,14 @@ class AdminProd extends CI_Controller {
 		$banner_list = $this->admin_prod_model->getBanners($type, $tab);
 		echo json_encode($banner_list);
 	}
+
+	//배너 삭제
+	public function bannerDel(){
+		$banr_idx = $this->input->get('idx');
+		$res = $this->admin_prod_model->deleteBanner($banr_idx);
+		if(!$res){
+			script_alert_back('배너 삭제 중 장애가 발생했습니다.');
+		}
+		script_alert_go('배너가 삭제되었습니다.', base_url('/AdminProd/bannerList'));
+	}
 }
