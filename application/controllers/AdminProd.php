@@ -20,6 +20,10 @@ class AdminProd extends CI_Controller {
 
 	//상품 배너 리스트
 	public function bannerList(){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
 		$type = empty($this->input->get('type')) ? 'normal' : $this->input->get('type');
 		$this->load->view('admin/bannerList', array(
 			'type'   => $type
@@ -28,6 +32,10 @@ class AdminProd extends CI_Controller {
 
 	//상품 배너 등록 페이지
 	public function bannerAdd(){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
 		$type = $this->input->get('type');
 		$idx = $this->input->get('idx');
 		if(!empty($idx)){
@@ -50,6 +58,12 @@ class AdminProd extends CI_Controller {
 
 	//상품 배너 저장
 	public function bannerSave(){
+
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+
 		$data['banr_type'] = $this->input->post('banr_type');
 		$data['banr_tab'] = $this->input->post('banr_tab');
 		$data['banr_img'] = $this->input->post('banr_img');
@@ -85,6 +99,12 @@ class AdminProd extends CI_Controller {
 
 	//배너 삭제
 	public function bannerDel(){
+
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+
 		$banr_idx = $this->input->get('idx');
 		$res = $this->admin_prod_model->deleteBanner($banr_idx);
 		if(!$res){
