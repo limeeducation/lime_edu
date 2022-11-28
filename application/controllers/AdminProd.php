@@ -117,7 +117,6 @@ class AdminProd extends CI_Controller {
 	public function updateBanrSeq(){
 		$data['banr_idx'] = $this->input->post('idx');
 		$data['banr_seq'] = $this->input->post('seq');
-		$data['banr_tab'] = $this->input->post('tab');
 		$res = $this->admin_prod_model->updateBannerSeq($data);
 		echo json_encode($res);
 	}

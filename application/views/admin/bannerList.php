@@ -5,7 +5,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
 <script type="text/javascript">
-
+	var current_tab = '1';
 	$(document).ready(function(){
 		$(".fixList").hide();
 		get_banr_tab('1');
@@ -43,8 +43,7 @@
 				async: false,
 				data: {
 					"idx": idx,
-					"seq": i,
-					"tab": tab
+					"seq": i
 				},
 				dataType: "json",
 				beforeSend: function () {
@@ -144,7 +143,9 @@
 			}
 		});
 
-
+		var cur_tab = "tab_"+tab;
+		$("#"+cur_tab).css("color", "white");
+		$("#"+cur_tab).css("background-color", "#198754");
 	}
 </script>
 <body>
@@ -168,9 +169,9 @@
 			<div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary text-center rounded p-2">
                     <div class="d-flex align-items-center justify-content-between ">
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" onclick="get_banr_tab('1');">TAB 1</button></h6>
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" onclick="get_banr_tab('2');">TAB 2</button></h6>
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" onclick="get_banr_tab('3');">TAB 3</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" id="tab_1" onclick="get_banr_tab('1');">TAB 1</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" id="tab_2" onclick="get_banr_tab('2');">TAB 2</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" id="tab_3" onclick="get_banr_tab('3');">TAB 3</button></h6>
 						<a class="text-success" href="/adminProd/bannerAdd?type=<?= $type;?>" >이미지 추가하기</a>
 						<a href="javascript:changeList();" class="changeList">순서 변경하기</a>
 						<a href="javascript:fixList();" class="fixList">순서 적용하기</a>
