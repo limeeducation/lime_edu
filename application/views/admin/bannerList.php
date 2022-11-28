@@ -142,7 +142,9 @@
 				alert("통신중 장애가 발생 하였습니다.");
 			}
 		});
-
+		$(".tab_btn").css("color", "#198754");
+		$(".tab_btn").css("border-color", "#198754");
+		$(".tab_btn").css("background-color", "unset");
 		var cur_tab = "tab_"+tab;
 		$("#"+cur_tab).css("color", "white");
 		$("#"+cur_tab).css("background-color", "#198754");
@@ -169,9 +171,9 @@
 			<div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary text-center rounded p-2">
                     <div class="d-flex align-items-center justify-content-between ">
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" id="tab_1" onclick="get_banr_tab('1');">TAB 1</button></h6>
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" id="tab_2" onclick="get_banr_tab('2');">TAB 2</button></h6>
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" id="tab_3" onclick="get_banr_tab('3');">TAB 3</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" class="tab_btn" id="tab_1" onclick="get_banr_tab('1');">TAB 1</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" class="tab_btn" id="tab_2" onclick="get_banr_tab('2');">TAB 2</button></h6>
+						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2" class="tab_btn" id="tab_3" onclick="get_banr_tab('3');">TAB 3</button></h6>
 						<a class="text-success" href="/adminProd/bannerAdd?type=<?= $type;?>" >이미지 추가하기</a>
 						<a href="javascript:changeList();" class="changeList">순서 변경하기</a>
 						<a href="javascript:fixList();" class="fixList">순서 적용하기</a>
