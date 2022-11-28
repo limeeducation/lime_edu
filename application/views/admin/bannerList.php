@@ -25,8 +25,12 @@
 		$(".changeList").show();
 	}
 	//수정 페이지 이동
-	function go_edit(idx){
-			location.href="/adminProd/bannerAdd?type=<?= $type?>&idx="+idx;
+	function go_edit_banner(idx){
+		location.href="/adminProd/bannerAdd?type=<?= $type?>&idx="+idx;
+	}
+	//배너 삭제
+	function go_del_banner(idx){
+		location.href="/adminProd/bannerDel?idx="+idx;
 	}
 	//탭별 리스트 호출
 	function get_banr_tab(tab){
@@ -75,8 +79,8 @@
 						list_html += "					<input class='form-check-input' type='checkbox' role='switch' id='banr_use_yn_"+i+"' name='banr_use_yn_"+i+"' "+banr_chk_yn+" disabled>";
 						list_html += "					<label class='form-check-label' for='banr_use_yn_"+i+"'>배너 노출 여부</label>";
 						list_html += "				</div>";
-						list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='go_edit("+data[i].banr_idx+")'>수정</button>";
-						list_html += "				<button type='button' class='btn btn-lg btn-primary m-2' onclick='/adminProd/bannerDel?idx="+data[i].banr_idx+"'>삭제</button>";
+						list_html += "				<button type='button' class='btn btn-lg btn-success m-2' onclick='go_edit_banner("+data[i].banr_idx+")'>수정</button>";
+						list_html += "				<button type='button' class='btn btn-lg btn-primary m-2' onclick='go_del_banner("+data[i].banr_idx+")'>삭제</button>";
 						list_html += "			</div>";
 						list_html += "		</form>";
 						list_html += "	</div>";
