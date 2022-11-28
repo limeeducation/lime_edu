@@ -71,7 +71,7 @@
 					for(var i=0; i<data.length; i++){
 						banr_chk_yn =  data[i].banr_use_yn == "Y" ? "checked" : "";
 						list_html += "<li class='banner'>";
-						list_html += "	<input type='hidden' class='seq'>";
+						list_html += "	<input type='hidden' id='banr"+data[i].banr_idx+"' class='seq'>";
 						list_html += "	<div class='bg-secondary rounded p-2 mt-3'>";
 						list_html += "		<form style='display: flex;'>";
 						list_html += "			<div class='mb-3 pt-1 col-xl-5' style='height: 270px;'>";
