@@ -40,7 +40,8 @@ class Admin_prod_model extends CI_Model
 			'banr_tab'		=> $data['banr_tab'],
 			'banr_img'		=> $data['banr_img'],
 			'banr_link_url'	=> $data['banr_link_url'],
-			'banr_use_yn'	=> $data['banr_use_yn']
+			'banr_use_yn'	=> $data['banr_use_yn'],
+
 		);
 		$edit_where = array(
 			'banr_idx'		=> $data['banr_idx']

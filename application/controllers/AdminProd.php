@@ -55,12 +55,14 @@ class AdminProd extends CI_Controller {
 		$data['banr_img'] = $this->input->post('banr_img');
 		$data['banr_link_url'] = $this->input->post('banr_link_url');
 		$data['banr_use_yn'] = $this->input->post('banr_use_yn') == 'on' ? 'Y' : 'N';
-		$data['banr_reg_id'] = $this->session->userdata('user_idx');
 		$editType = $this->input->post('edit_type');
 		if($editType == 'edit'){
 			$data['banr_idx'] = $this->input->post('banr_idx');
+			$data['banr_mod_id'] = $this->session->userdata('user_idx');
+			$data['banr_mod_dt'] = current_time('mysql');
 			$res = $this->admin_prod_model->editBanner($data);
 		}else{
+			$data['banr_reg_id'] = $this->session->userdata('user_idx');
 			$res = $this->admin_prod_model->addBanner($data);
 		}
 
