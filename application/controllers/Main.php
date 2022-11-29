@@ -23,8 +23,8 @@ class Main extends CI_Controller {
 
 	//신규 메인페이지
 	public function new_main(){
-		$normal_banner_list = getBanner("1", "normal");
-		$event_banner_list = getBanner("1", "event");
+		$normal_banner_list = get_banner("1", "normal");
+		$event_banner_list = get_banner("1", "event");
 		$this->load->view('main/main', array(
 			'normal_banner_list'		=> $normal_banner_list,
 			'event_banner_list'			=> $event_banner_list
