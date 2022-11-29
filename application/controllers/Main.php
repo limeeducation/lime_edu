@@ -28,6 +28,6 @@ class Main extends CI_Controller {
 		$this->load->view('main/main', array(
 			'normal_banner_list'		=> $normal_banner_list,
 			'event_banner_list'			=> $event_banner_list
-		);
+		));
 	}
 }
