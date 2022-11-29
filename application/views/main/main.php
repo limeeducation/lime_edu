@@ -1,5 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
+include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php');
 //include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
 <script>
@@ -76,5 +76,4 @@ $('#carousel div').click(function() {
 
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/footer_temp.php');
-//include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
