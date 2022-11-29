@@ -6,6 +6,7 @@ class Main extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->database();
+		$this->load->helper(array('url', 'script', 'banner'));
 		$this->load->model(array('old_model'));
 	}
 	public function index()
@@ -18,5 +19,15 @@ class Main extends CI_Controller {
         			'result' 	=> $result,
         			'result2'	=> $result2
         ));
+	}
+
+	//신규 메인페이지
+	public function new_main(){
+		$normal_banner_list = getBanner("1", "normal");
+		$event_banner_list = getBanner("1", "event");
+		$this->load->view('main/main', array(
+			'normal_banner_list'		=> $normal_banner_list,
+			'event_banner_list'			=> $event_banner_list
+		);
 	}
 }
