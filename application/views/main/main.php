@@ -48,7 +48,6 @@ $('#carousel div').click(function() {
 				<img src="<?= $event_banner->banr_img;?>">
 			</div>
 		<?php endif; ?>
-
 	<?php endforeach; ?>
 </div>
 
