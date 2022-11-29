@@ -2,7 +2,7 @@
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php');
 //include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
-<script>
+<script type="text/javascript">
 function moveToSelected(element) {
 
   if (element == "next") {
@@ -30,22 +30,6 @@ function moveToSelected(element) {
   $(prevSecond).prevAll().removeClass().addClass('hideLeft');
 
 }
-
-// Eventos teclado
-$(document).keydown(function(e) {
-    switch(e.which) {
-        case 37: // left
-        moveToSelected('prev');
-        break;
-
-        case 39: // right
-        moveToSelected('next');
-        break;
-
-        default: return;
-    }
-    e.preventDefault();
-});
 
 $('#carousel div').click(function() {
   moveToSelected($(this));
