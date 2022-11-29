@@ -55,19 +55,13 @@ $('#carousel div').click(function() {
 <body>
 <div id="carousel">
 	<?php foreach($event_banner_list as $event_banner) : ?>
-	<?php print_r($event_banner);?>
-	<?php print_r($event_banner->banr_seq);?>
-		<input type="radio" name="evt_banner" id="evt_banner_<?= $event_banner['banr_seq']?>">
-
-		<label for="evt_banner_<?= $event_banner['banr_seq']?>" id="evt_banner_img_<?= $event_banner['banr_seq']?>"><img src="<?= $event_banner['banr_img']?>"></label>
-
-		<?php if($event_banner['banr_seq'] == '0'): ?>
+		<?php if($event_banner->banr_seq == '0'): ?>
 			<div class="selected">
-				<img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+				<img src="<?= $event_banner->banr_img;?>">
 			</div>
 		<?php else : ?>
 			<div class="next">
-				<img src="<?= $event_banner['banr_img']?>">
+				<img src="<?= $event_banner->banr_img;?>">
 			</div>
 		<?php endif; ?>
 
