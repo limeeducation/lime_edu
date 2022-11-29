@@ -56,6 +56,7 @@ $('#carousel div').click(function() {
 <div id="carousel">
 	<?php foreach($event_banner_list as $event_banner) : ?>
 	<?php print_r($event_banner);?>
+	<?php print_r($event_banner.banr_seq);?>
 		<input type="radio" name="evt_banner" id="evt_banner_<?= $event_banner['banr_seq']?>">
 
 		<label for="evt_banner_<?= $event_banner['banr_seq']?>" id="evt_banner_img_<?= $event_banner['banr_seq']?>"><img src="<?= $event_banner['banr_img']?>"></label>
