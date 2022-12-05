@@ -74,17 +74,14 @@
 	height: 86px;
 	top: 33%;
 	z-index: 999;
-}
-#carousel .btn_left{
-	background: url("/static/img/button/btn_left.png");
-}
-#carousel .btn_right{
-	background: url("/static/img/button/btn_right.png");
+	border: none;
 }
 #cls_evt_left{
 	left: 15%;
+	background: url("/static/img/button/btn_left.png");
 }
 #cls_evt_right{
 	left: 80%;
+	background: url("/static/img/button/btn_right.png");
 }
 /* 이벤트 배너 */

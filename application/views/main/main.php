@@ -51,8 +51,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 				</div>
 			<?php endif; ?>
 		<?php endforeach; ?>
-		<button class="btn_evt_bnr" id="cls_evt_left" onclick="javascript:moveToSelected('prev');"><i class="btn_left"></i></button>
-		<button class="btn_evt_bnr" id="cls_evt_right" onclick="javascript:moveToSelected('next');"><i class="btn_right"></i></button>
+		<button class="btn_evt_bnr" id="cls_evt_left" onclick="javascript:moveToSelected('prev');"></button>
+		<button class="btn_evt_bnr" id="cls_evt_right" onclick="javascript:moveToSelected('next');"></button>
 	</div>
 
 </body>
