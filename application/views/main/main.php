@@ -34,17 +34,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 		  $("#cls_evt_right").addClass('btn_evt_bnr');
 		  if($(".selected").attr("id") == "0"){
 		  	$("#cls_evt_left").hide();
+		  }else{
+		  	$("#cls_evt_left").show();
 		  }
 
 		  if($(".selected").attr("id") == "<?= count($event_banner_list)-1 ; ?>" ){
 		  	$("#cls_evt_right").hide();
+		  }else{
+		  	$("#cls_evt_right").show();
 		  }
 		}
 
 		$('#carousel div').click(function() {
 		  moveToSelected($(this));
 		});
-
+		$("#cls_evt_left").hide();
 	</script>
 	<div id="carousel">
 		<?php foreach($event_banner_list as $event_banner) : ?>
