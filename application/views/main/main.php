@@ -48,7 +48,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 		$('#carousel div').click(function() {
 		  moveToSelected($(this));
 		});
-		$("#cls_evt_left").hide();
+
+		$(document).ready(function(){
+			$("#cls_evt_left").hide();
+		});
+
 	</script>
 	<div id="carousel">
 		<?php foreach($event_banner_list as $event_banner) : ?>
