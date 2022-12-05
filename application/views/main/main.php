@@ -32,9 +32,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 
 		  $("#cls_evt_left").addClass('btn_evt_bnr');
 		  $("#cls_evt_right").addClass('btn_evt_bnr');
-		  if(!hasClass("prev")){
+		  if(hasClass("prev") != "true"){
 		  	$("#cls_evt_left").hide();
-		  }else if(!hasClass("next")){
+		  }else if(hasClass("next") != "true"){
 		  	$("#cls_evt_right").hide();
 		  }
 		}
