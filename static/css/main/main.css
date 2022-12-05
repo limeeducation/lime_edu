@@ -89,5 +89,6 @@
 }
 #cls_evt_right:hover{
 	background: url("/static/img/button/btn_right_on.png");
+	transform: scale(1.0);
 }
 /* 이벤트 배너 */
