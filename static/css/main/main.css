@@ -80,8 +80,14 @@
 	left: 15%;
 	background: url("/static/img/button/btn_left.png");
 }
+#cls_evt_left:hover{
+	background: url("/static/img/button/btn_left_on.png");
+}
 #cls_evt_right{
 	left: 80%;
 	background: url("/static/img/button/btn_right.png");
+}
+#cls_evt_right:hover{
+	background: url("/static/img/button/btn_right_on.png");
 }
 /* 이벤트 배너 */
