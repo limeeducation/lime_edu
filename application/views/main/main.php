@@ -33,13 +33,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 		  $("#cls_evt_left").addClass('btn_evt_bnr');
 		  $("#cls_evt_right").addClass('btn_evt_bnr');
 
-		  if($(".selected").attr("id") == "0"){
-		  	$("#cls_evt_left").hide();
-		  }
-
-		  if($(".selected").attr("id") == "<?= count($event_banner_list)-1 ;" ?>){
-		  	$("#cls_evt_right").hide();
-		  }
 		}
 
 		$('#carousel div').click(function() {
