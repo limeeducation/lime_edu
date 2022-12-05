@@ -32,9 +32,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 
 		  $("#cls_evt_left").addClass('btn_evt_bnr');
 		  $("#cls_evt_right").addClass('btn_evt_bnr');
-		  if(prev.hasClass("prev") != "true"){
+
+		  if($(".selected").attr("id") == "0"){
 		  	$("#cls_evt_left").hide();
-		  }else if(next.hasClass("next") != "true"){
+		  }
+
+		  if($(".selected").attr("id") == "<?= count($event_banner_list)-1 ;" ?>){
 		  	$("#cls_evt_right").hide();
 		  }
 		}
@@ -47,11 +50,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 	<div id="carousel">
 		<?php foreach($event_banner_list as $event_banner) : ?>
 			<?php if($event_banner->banr_seq == '0'): ?>
-				<div class="selected">
+				<div class="selected" id="<?= $event_banner->banr_seq; ?>">
 					<img src="<?= $event_banner->banr_img;?>">
 				</div>
 			<?php else : ?>
-				<div class="next">
+				<div class="next" id="<?= $event_banner->banr_seq; ?>">
 					<img src="<?= $event_banner->banr_img;?>">
 				</div>
 			<?php endif; ?>
