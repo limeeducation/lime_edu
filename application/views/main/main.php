@@ -49,6 +49,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 				</div>
 			<?php endif; ?>
 		<?php endforeach; ?>
+		<button class="btn_evt_bnr" onclick="javascript:moveToSelected('prev');"><i class="fa-duotone fa-circle-chevron-left btn_left"></i></button>
+		<button class="btn_evt_bnr" onclick="javascript:moveToSelected('next');"><i class="fa-duotone fa-circle-chevron-right btn_right"></i></button>
 	</div>
 
 </body>

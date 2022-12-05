@@ -68,4 +68,20 @@
 	top: 15%;
 	transform: translateX(-35%);
 }
+#carousel .btn_evt_bnr {
+	position: absolute;
+	width: 86px;
+	height: 86px;
+}
+#carousel .btn_left{
+	top: 15%;
+	left: 20%;
+}
+#carousel .btn_right{
+	top: 15%;
+	left: 80%;
+}
+.btn_left{
+
+}
 /* 이벤트 배너 */

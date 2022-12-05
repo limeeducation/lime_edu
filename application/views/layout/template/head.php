@@ -12,4 +12,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <title>LIME EDUCATION</title>
   <link href="/static/css/main/main.css" rel="stylesheet" >
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
