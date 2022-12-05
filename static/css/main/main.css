@@ -22,7 +22,7 @@
 #carousel div.hideLeft {
 	left: 0%;
 	opacity: 0;
-	transform: translateY(50%) translateX(-50%);
+	transform: translateY(0%) translateX(-50%);
 }
 #carousel div.hideLeft img {
 	width: 200px;
