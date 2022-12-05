@@ -81,10 +81,10 @@
 #carousel .btn_right{
 	background: url("/static/img/button/btn_right.png");
 }
-.cls_evt_left{
+#cls_evt_left{
 	left: 15%;
 }
-.cls_evt_right{
+#cls_evt_right{
 	left: 80%;
 }
 /* 이벤트 배너 */

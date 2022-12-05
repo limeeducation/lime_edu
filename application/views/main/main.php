@@ -30,6 +30,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 		  $(nextSecond).nextAll().removeClass().addClass('hideRight');
 		  $(prevSecond).prevAll().removeClass().addClass('hideLeft');
 
+		  $("#cls_evt_left").addClass('btn_evt_bnr');
+		  $("#cls_evt_right").addClass('btn_evt_bnr');
 		}
 
 		$('#carousel div').click(function() {
@@ -49,8 +51,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 				</div>
 			<?php endif; ?>
 		<?php endforeach; ?>
-		<button class="btn_evt_bnr cls_evt_left" onclick="javascript:moveToSelected('prev');"><i class="btn_left"></i></button>
-		<button class="btn_evt_bnr cls_evt_right" onclick="javascript:moveToSelected('next');"><i class="btn_right"></i></button>
+		<button class="btn_evt_bnr" id="cls_evt_left" onclick="javascript:moveToSelected('prev');"><i class="btn_left"></i></button>
+		<button class="btn_evt_bnr" id="cls_evt_right" onclick="javascript:moveToSelected('next');"><i class="btn_right"></i></button>
 	</div>
 
 </body>
