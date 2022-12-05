@@ -39,29 +39,33 @@
 	z-index: 5;
 	left: 30%;
 	width: 42%;
-	transform: translateY(10%) translateX(-45%);
+	top: 9%;
+	transform: translateX(-45%);
 }
 #carousel div.prevLeftSecond {
 	z-index: 4;
 	width: 33%;
-	transform: translateY(25%) translateX(-10%);
+	top: 15%;
+	transform: translateX(-10%);
 }
 #carousel div.selected {
 	z-index: 10;
 	width: 50%;
 	left: 50%;
-	transform: translateY(0px) translateX(-50%);
+	transform: translateX(-50%);
 }
 #carousel div.next {
 	z-index: 5;
 	left: 64%;
 	width: 42%;
-	transform: translateY(10%) translateX(-40%);
+	top: 9%;
+	transform: translateX(-40%);
 }
 #carousel div.nextRightSecond {
 	z-index: 4;
 	left: 80%;
 	width: 33%;
-	transform: translateY(25%) translateX(-35%);
+	top: 15%;
+	transform: translateX(-35%);
 }
 /* 이벤트 배너 */
