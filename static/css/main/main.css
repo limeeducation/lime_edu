@@ -1,9 +1,13 @@
 /*이벤트 배너*/
 #carousel {
 	position: relative;
-	height: 400px;
+	height: 600px;
 	top: 50%;
 	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 #carousel div {
 	position: absolute;
@@ -11,8 +15,9 @@
 	opacity: 1;
 }
 #carousel div img {
-	width: 400px;
+	width: 100%;
 	transition: width 1s;
+	border-radius: 20px;
 }
 #carousel div.hideLeft {
 	left: 0%;
@@ -33,40 +38,30 @@
 #carousel div.prev {
 	z-index: 5;
 	left: 30%;
-	transform: translateY(50px) translateX(-50%);
-}
-#carousel div.prev img {
-	width: 300px;
+	width: 42%;
+	transform: translateY(10%) translateX(-45%);
 }
 #carousel div.prevLeftSecond {
 	z-index: 4;
-	left: 15%;
-	transform: translateY(50%) translateX(-50%);
-	opacity: 0.7;
-}
-#carousel div.prevLeftSecond img {
-	width: 200px;
+	width: 33%;
+	transform: translateY(25%) translateX(-10%);
 }
 #carousel div.selected {
 	z-index: 10;
+	width: 50%;
 	left: 50%;
 	transform: translateY(0px) translateX(-50%);
 }
 #carousel div.next {
 	z-index: 5;
-	left: 70%;
-	transform: translateY(50px) translateX(-50%);
-}
-#carousel div.next img {
-	width: 300px;
+	left: 64%;
+	width: 42%;
+	transform: translateY(10%) translateX(-40%);
 }
 #carousel div.nextRightSecond {
 	z-index: 4;
-	left: 85%;
-	transform: translateY(50%) translateX(-50%);
-	opacity: 0.7;
-}
-#carousel div.nextRightSecond img {
-	width: 200px;
+	left: 80%;
+	width: 33%;
+	transform: translateY(25%) translateX(-35%);
 }
 /* 이벤트 배너 */
