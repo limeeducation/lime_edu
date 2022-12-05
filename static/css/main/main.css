@@ -88,6 +88,6 @@
 	background: url("/static/img/button/btn_right.png");
 }
 #cls_evt_right:hover{
-
+	background: url("/static/img/button/btn_right_on.png");
 }
 /* 이벤트 배너 */
