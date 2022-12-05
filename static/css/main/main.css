@@ -72,16 +72,19 @@
 	position: absolute;
 	width: 86px;
 	height: 86px;
+	top: 33%;
+	z-index: 999;
 }
 #carousel .btn_left{
-	top: 15%;
-	left: 20%;
+	background: url("/static/img/button/btn_left.png");
 }
 #carousel .btn_right{
-	top: 15%;
-	left: 80%;
+	background: url("/static/img/button/btn_right.png");
 }
-.btn_left{
-
+.cls_evt_left{
+	left: 15%;
+}
+.cls_evt_right{
+	left: 80%;
 }
 /* 이벤트 배너 */
