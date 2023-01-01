@@ -110,7 +110,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    <h6 class="text-uppercase fw-bold">캐나다 토론토 센터</h6>
 		    <p><i class="fas fa-home mr-3"></i> 55 Eglinton Ave East, Suite 601, Toronto ON M4P 1G8 Canada</p>
 			<h6 class="text-uppercase fw-bold">캐나다 벤쿠버 센터</h6>
-			<p><i class="fas fa-home mr-3"></i> 595 Burrard st., Vancouver BC V7X 1J1 Canada</p>
+			<p class="mb-0"><i class="fas fa-home mr-3"></i> 595 Burrard st., Vancouver BC V7X 1J1 Canada</p>
 			<p><i class="fas fa-phone mr-3"></i> 778-874-7890</p>
 		  </div>
 		  <!-- Grid column -->
