@@ -75,34 +75,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <section class="">
       <div class="container text-center text-md-start mt-4">
         <!-- Grid row -->
-        <div class="row mt-3">
+        <div class="row mt-6">
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div class="col-md-4 col-lg-3 mx-auto">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">한국 지역 본부</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 150px; background-color: #7c4dff; height: 2px"
-                />
-            <p><i class="fas fa-home mr-3"></i> 서울시 서초구 서초동 1330-10번지 갤럭시타워 604호</p>
-            <p><i class="fas fa-envelope mr-3"></i> hm.lee@mylimeedu.com</p>
+            <h6 class="text-uppercase fw-bold">본점</h6>
             <p><i class="fas fa-phone mr-3"></i> 02 2135 7699</p>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
+            <h6 class="text-uppercase fw-bold">서울 강남센터</h6>
+            <p><i class="fas fa-home mr-3"></i> 서울시 강남구 강남대로 310 유니온센터 1204호</p>
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">캐나다 본사</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 150px; background-color: #7c4dff; height: 2px"
-                />
-            <p><i class="fas fa-home mr-3"></i> 55 Eglinton Ave East, Suite 601, Toronto, ON Canada M4P 1G8</p>
-            <p><i class="fas fa-envelope mr-3"></i> tglee@mylimeedu.com </p>
-            <p><i class="fas fa-phone mr-3"></i> + 1 647 427 2006</p>
+            <h6 class="text-uppercase fw-bold">국내 직영센터</h6>
+            <p><i class="fas fa-phone mr-3"></i> 대표번호 1688-0897</p>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
+            <h6 class="text-uppercase fw-bold">인천 송도 센터</h6>
+            <p><i class="fas fa-home mr-3"></i> 인천광역시 연수구 컨벤시아대로 165 포스코타워 26층 484호</p>
+			<h6 class="text-uppercase fw-bold">대구 동성로 센터</h6>
+			<p><i class="fas fa-home mr-3"></i> 대구광역시 중구 중앙대로 385-1 3층</p>
+			<h6 class="text-uppercase fw-bold">부산 서면 센터</h6>
+			<p><i class="fas fa-home mr-3"></i> 부산시 진구 동천로 109 삼한골든게이트 빌딩 9층 966호</p>
           </div>
           <!-- Grid column -->
+          <!-- Grid column -->
+		  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+		    <!-- Links -->
+		    <h6 class="text-uppercase fw-bold">해외 직영센터</h6>
+		    <p><i class="fas fa-phone mr-3"></i> 대표번호 +1 647 427 2006</p>
+		    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
+		    <h6 class="text-uppercase fw-bold">캐나다 토론토 센터</h6>
+		    <p><i class="fas fa-home mr-3"></i> 55 Eglinton Ave East, Suite 601, Toronto ON M4P 1G8 Canada</p>
+			<h6 class="text-uppercase fw-bold">캐나다 벤쿠버 센터</h6>
+			<p><i class="fas fa-home mr-3"></i> 595 Burrard st., Vancouver BC V7X 1J1 Canada</p>
+			<p><i class="fas fa-phone mr-3"></i> 778-874-7890</p>
+		  </div>
+		  <!-- Grid column -->
+
         </div>
         <!-- Grid row -->
       </div>
