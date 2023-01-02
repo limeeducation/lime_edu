@@ -76,7 +76,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 	echo '스크래핑 결과 종료';
 ?>
 <script>
-	console.log("'"+<?= $blog_contents?>+"'");
+	console.log("<?= $blog_contents?>");
 </script>
 </body>
 
