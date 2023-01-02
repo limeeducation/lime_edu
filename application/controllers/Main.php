@@ -23,13 +23,17 @@ class Main extends CI_Controller {
 
 	//신규 메인페이지
 	public function new_main(){
+		require_once($_SERVER['DOCUMENT_ROOT'].'/lib/snoopy/Snoopy.class.php');
 		$normal_banner_list = get_banner("1", "normal");
 		$event_banner_list = get_banner("1", "event");
+
+
 		//블로그 내용 스크래핑
-		$scrap_contents_all = get_contents_web(NAVER_BLOG_URL);
+		$snoopy = new Snoopy;
+		$snoopy->fetch(NAVER_BLOG_URL);
 
 		//필요한 내용만 추출
-		preg_match('/<dd class="p_photo_d">(.*?)<\/dd>/is', $scrap_contents_all, $scrap_contents);
+		preg_match('/<dd class="p_photo_d">(.*?)<\/dd>/is', $snoopy->results, $scrap_contents);
 
 		$this->load->view('main/main', array(
 			'normal_banner_list'		=> $normal_banner_list,
