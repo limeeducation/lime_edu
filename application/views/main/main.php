@@ -71,7 +71,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 	</div>
 
 <?php
-	echo $blog_contents;
+	print_r($blog_contents);
 ?>
 </body>
 
