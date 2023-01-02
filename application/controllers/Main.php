@@ -33,7 +33,7 @@ class Main extends CI_Controller {
 		$snoopy->fetch(NAVER_BLOG_URL);
 
 		//필요한 내용만 추출
-		preg_match('/<dd class="p_photo_d">(.*?)<\/dd>/is', $snoopy->results, $scrap_contents);
+		preg_match('/<p class="p_img">(.*?)<\/p>/is', $snoopy->results, $scrap_contents);
 
 		$this->load->view('main/main', array(
 			'normal_banner_list'		=> $normal_banner_list,
