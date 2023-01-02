@@ -70,6 +70,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 		<button class="btn_evt_bnr" id="cls_evt_right" onclick="javascript:moveToSelected('next');"></button>
 	</div>
 
+<?php
+	echo $blog_contents;
+?>
 </body>
 
 <?php

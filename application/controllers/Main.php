@@ -6,7 +6,7 @@ class Main extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->database();
-		$this->load->helper(array('url', 'script', 'banner'));
+		$this->load->helper(array('url', 'script', 'banner', 'html'));
 		$this->load->model(array('old_model'));
 	}
 	public function index()
@@ -25,9 +25,11 @@ class Main extends CI_Controller {
 	public function new_main(){
 		$normal_banner_list = get_banner("1", "normal");
 		$event_banner_list = get_banner("1", "event");
+		$scrap_contents = get_contents_web(NAVER_BLOG_URL);
 		$this->load->view('main/main', array(
 			'normal_banner_list'		=> $normal_banner_list,
-			'event_banner_list'			=> $event_banner_list
+			'event_banner_list'			=> $event_banner_list,
+			'blog_contents'				=> $scrap_contents
 		));
 	}
 }
