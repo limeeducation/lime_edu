@@ -71,7 +71,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 	</div>
 
 <?php
-	print_r($blog_contents);
+	echo '스크래핑 결과 시작';
+	echo $blog_contents;
+	echo '스크래핑 결과 종료';
 ?>
 </body>
 
