@@ -69,12 +69,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 		<button class="btn_evt_bnr" id="cls_evt_left" onclick="javascript:moveToSelected('prev');"></button>
 		<button class="btn_evt_bnr" id="cls_evt_right" onclick="javascript:moveToSelected('next');"></button>
 	</div>
+<?php phpinfo(); ?>
 
 <?php
 	echo '스크래핑 결과 시작';
 	print_r($blog_contents);
 	echo '스크래핑 결과 종료';
 ?>
+
+
 </body>
 
 <?php
