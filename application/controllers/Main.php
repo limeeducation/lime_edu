@@ -33,7 +33,7 @@ class Main extends CI_Controller {
 		$snoopy->fetch(NAVER_BLOG_URL);
 
 		//필요한 내용만 추출
-		preg_match('/<li class="item">(.*?)<\/li>/is', $snoopy->results, $scrap_contents);
+		preg_match('/<iframe id="ExternalWidgetIframe_10" class="item">(.*?)<\/li>/is', $snoopy->results, $scrap_contents);
 
 		$this->load->view('main/main', array(
 			'normal_banner_list'		=> $normal_banner_list,
