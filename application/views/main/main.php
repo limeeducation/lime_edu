@@ -2,8 +2,17 @@
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php');
 //include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
+
 <body>
 	<script type="text/javascript">
+	$(document).ready(function(){
+	    <?php
+	        preg_match('/<dl class="p_post_top">(.*?)<\/dl>/is', $blog_contents, $scrap_contents);
+	        echo "scrap content start";
+	        print_r($scrap_contents);
+	        echo "scrap content end";
+	    ?>
+	});
 		function moveToSelected(element) {
 
 		  if (element == "next") {
