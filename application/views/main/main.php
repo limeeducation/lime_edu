@@ -9,7 +9,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 	    <?php
 	        preg_match('/<dl class="p_post_top">(.*?)<\/dl>/is', $blog_contents, $scrap_contents);
 	        echo "console.log('scrap content start')";
-	        echo "console.log('".$scrap_contents."')";
+	        echo "console.log('".print_r($scrap_contents)."')";
 	        echo "console.log('scrap content end')";
 	    ?>
 	});
