@@ -11,6 +11,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 	        echo "console.log('scrap content start')";
 	        echo "console.log('".print_r($scrap_contents)."')";
 	        echo "console.log('scrap content end')";
+
+	         echo "console.log('blog content start')";
+             echo "console.log('".print_r($blog_contents)."')";
+             echo "console.log('blog content end')";
 	    ?>
 	});
 		function moveToSelected(element) {
