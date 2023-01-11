@@ -76,9 +76,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 	</div>
 	<img id="img_1">
 <?php
-/* 	echo '스크래핑 결과 시작';
+ 	echo '스크래핑 결과 시작';
 	print_r($blog_contents);
-	echo '스크래핑 결과 종료'; */
+	echo '스크래핑 결과 종료';
 ?>
 
 
