@@ -6,16 +6,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 <body>
 	<script type="text/javascript">
 	$(document).ready(function(){
-	    <?php
-	        preg_match('/<dl class="p_post_top">(.*?)<\/dl>/is', $blog_contents, $scrap_contents);
-	        echo "console.log('scrap content start')";
-	        echo "console.log('".print_r($scrap_contents)."')";
-	        echo "console.log('scrap content end')";
-
-	         echo "console.log('blog content start')";
-             echo "console.log('".print_r($blog_contents)."')";
-             echo "console.log('blog content end')";
-	    ?>
+	    var blog_imgs = Document.getElementsByClassName("p_img");
+	    console.log(blog_imgs);
 	});
 		function moveToSelected(element) {
 
@@ -82,11 +74,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 		<button class="btn_evt_bnr" id="cls_evt_left" onclick="javascript:moveToSelected('prev');"></button>
 		<button class="btn_evt_bnr" id="cls_evt_right" onclick="javascript:moveToSelected('next');"></button>
 	</div>
-
+	<img id="img_1">
 <?php
-	echo '스크래핑 결과 시작';
+/* 	echo '스크래핑 결과 시작';
 	print_r($blog_contents);
-	echo '스크래핑 결과 종료';
+	echo '스크래핑 결과 종료'; */
 ?>
 
 
