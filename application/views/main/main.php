@@ -6,7 +6,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/template/head.php')
 <body>
 	<script type="text/javascript">
 	$(document).ready(function(){
-	    var blog_imgs = document.getElementsByClassName("p_img");
+	    var blog_imgs = $('iframe').contents().find(".p_img");
 	    console.log(blog_imgs);
 	});
 		function moveToSelected(element) {
