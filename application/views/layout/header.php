@@ -112,8 +112,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- headUser -->
 	<div id="headUser">
 		<ul class="header_user">
-			<li><a href="#">로그인</a></li>
-			<li><a href="#">회원가입</a></li>
+			<!-- <li><a href="#">로그인</a></li>  -->
+			<!-- <li><a href="#">회원가입</a></li> -->
 		</ul>
 	</div>
 	<!-- // headUser -->
