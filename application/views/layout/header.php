@@ -125,7 +125,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<nav class="header_nav">
 			<ul id="gnb">
-				<li class="item item1 on"><a href="#">해외대학 유학</a>
+				<li class="item item1"><a href="#">해외대학 유학</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
