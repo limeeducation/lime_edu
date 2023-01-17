@@ -22,11 +22,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<!-- <a class="item slider-rotate__item" href="#" target="_blank"><img src="/static/img/main/visual_image3@2x.png"></a>  -->
 							<!-- <a class="item slider-rotate__item" href="#" target="_blank"><img src="/static/img/main/visual_image4@2x.png"></a>  -->
 							<!-- <a class="item slider-rotate__item" href="#" target="_blank"><img src="/static/img/main/visual_image5@2x.png"></a>  -->
-							<!-- <a class="item slider-rotate__item" href="#" target="_blank"><img src="/static/img/main/visual_image1@2x.png"></a>  -->
-							<!-- <a class="item slider-rotate__item" href="#" target="_blank"><img src="/static/img/main/visual_image2@2x.png"></a>  -->
-							<!-- <a class="item slider-rotate__item" href="#" target="_blank"><img src="/static/img/main/visual_image3@2x.png"></a>  -->
-							<!-- <a class="item slider-rotate__item" href="#" target="_blank"><img src="/static/img/main/visual_image4@2x.png"></a>  -->
-							<!-- <a class="item slider-rotate__item" href="#" target="_blank"><img src="/static/img/main/visual_image5@2x.png"></a>  -->
 						</div>
 						<div class="slider-rotate__nav">
 							<span class="slider-rotate__arrow slider-rotate__arrow--right js-slider-rotate-arrow" data-action="next">next</span>

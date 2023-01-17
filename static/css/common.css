@@ -211,7 +211,7 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 #footer > .inner{}
 .footer_info{}
 .footer_info::after{display:block;clear:both;content:'';}
-.footer_data{float:left;width:50%;}
+.footer_data{float:left;width:33%;}
 .footer_data dt{margin-bottom:2.6rem;font-size:2rem;font-weight:500;line-height:2.8rem;color:#FFFFFF;}
 .footer_data dd{}
 .footer_data dd p{position:relative;padding-left:3.2rem;font-size:1.6rem;line-height:2.4rem;color:#FFFFFF;}
