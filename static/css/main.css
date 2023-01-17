@@ -178,6 +178,7 @@
 .story_title{width:22.6rem;height:5rem;margin:0 auto 4.5rem;background:url(/static/img/main/story_title@2x.png) no-repeat 50% 50% / 22.6rem 4.3rem;text-indent:-9999px;font-size:0;}
 .story_more{position:absolute;top:0;right:0;width:15rem;}
 .story_more a{display:block;height:5rem;line-height:5rem;font-weight:500;font-size:1.8rem;text-align:center;color:#000000;background:#FFFFFF;border:1px solid; -webkit-box-shadow:inset 0 0 0 1px #000;-moz-box-shadow:inset 0 0 0 1px #000;box-shadow:inset 0 0 0 1px #000;border-radius:2.8rem;}
+.story_more a:hover{background:#000000;color:#FFFFFF;}
 .story_more a i{display:inline-block;padding-left:1rem;}
 
 .story-swiper{position:relative;}
