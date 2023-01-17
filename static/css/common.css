@@ -86,7 +86,7 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 #headGlobal::after{display:block;clear:both;content:''}
 
 .header_logo{position:relative;float:left;width:15rem;margin-right:4.6rem;z-index:10;}
-.header_logo a{display:block;height:15rem;background:url(/static/img/common/header_logo@2x.png) no-repeat 0 0 / 100% 100%;text-indent:-9999px;font-size:0;}
+.header_logo a{display:block;height:15rem;background:url(/static/img/common/header_logo_2@2x.png) no-repeat 0 0 / 100% 100%;text-indent:-9999px;font-size:0;}
 .on .header_logo a,.active .header_logo a{}
 
 .header_btns{position:relative;float:right;margin-top:6rem;z-index:10;}

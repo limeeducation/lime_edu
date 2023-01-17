@@ -197,7 +197,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="more">이동하기</div>
 						</a>
 					</div>
-
 					<ul class="banner_list">
 						<li><a href="#"><img src="/static/img/main/banner_image1@2x.png" alt=""></a></li>
 						<li><a href="#"><img src="/static/img/main/banner_image2@2x.png" alt=""></a></li>

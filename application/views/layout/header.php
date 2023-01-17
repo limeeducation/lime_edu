@@ -13,7 +13,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<li class="item1">
 				<a href="#"><span>해외대학 유학</span></a>
 				<ul class="depth">
-
 					<li>
 						<a href="#" class="depth_sub_title">미국 <i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i></a>
 						<ul class="depth_list">
