@@ -7,8 +7,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<a href="#" class="mo_menu_close"><i class="ri-close-line"></i><span class="blind">전체메뉴 닫기</span></a>
 		<ul class="mobile_user">
 			<li></li>
-			<!-- <li><a href="#">로그인</a></li> -->
-			<!-- <li><a href="#">회원가입</a></li> -->
+			<li><a href="javascript:on_construct();">로그인</a></li>
+			<li><a href="javascript:on_construct();">회원가입</a></li>
 		</ul>
 		<ul id="mnb">
 			<li class="item1">
@@ -113,9 +113,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- headUser -->
 	<div id="headUser">
 		<ul class="header_user">
-			<li></li>
-			<!-- <li><a href="#">로그인</a></li>  -->
-			<!-- <li><a href="#">회원가입</a></li> -->
+			<li><a href="javascript:on_construct();">로그인</a></li>
+			<li><a href="javascript:on_construct();">회원가입</a></li>
 		</ul>
 	</div>
 	<!-- // headUser -->
@@ -256,3 +255,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </header>
 <!-- // header -->
+<script type="text/javascript">
+	function on_construct(){
+		alert('현재 준비중인 기능입니다.');
+	}
+</script>
