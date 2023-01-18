@@ -41,7 +41,7 @@ class Main extends CI_Controller {
 			'normal_banner_list'		=> $normal_banner_list,
 			'event_banner_list'			=> $event_banner_list,
 			'blog_contents'				=> $snoopy->results,
-			'tba'						=> $tab
+			'tab'						=> $tab
 		));
 	}
 }
