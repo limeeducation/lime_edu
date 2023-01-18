@@ -78,7 +78,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<a href="#" class="depth_sub_title">캐나다 <i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i></a>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title">필리핀 <i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i></a>
+						<a href="#" class="depth_sub_title">필리핀 <i><img src="/static/img/common/gnb_ico_phi@2x.png" alt=""></i></a>
 					</li>
 				</ul>
 			</li>
@@ -98,7 +98,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<a href="#" class="depth_sub_title">뉴질랜드 <i><img src="/static/img/common/gnb_ico_nz@2x.png" alt="NZ"></i></a>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title">필리핀 <i><img src="/static/img/common/gnb_ico_gb@2x.png" alt="PH"></i></a>
+						<a href="#" class="depth_sub_title">필리핀 <i><img src="/static/img/common/gnb_ico_phi@2x.png" alt="PH"></i></a>
 					</li>
 				</ul>
 			</li>
@@ -124,7 +124,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<nav class="header_nav">
 			<ul id="gnb">
-				<li class="item item1"><a href="#">해외대학 유학</a>
+				<li class="item item1"><a href="/main/new_main?tab=2">해외대학 유학</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -163,7 +163,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</li>
-				<li class="item item2"><a href="#">조기유학</a>
+				<li class="item item2"><a href="/main/new_main?tab=3">조기유학</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -193,7 +193,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</li>
-				<li class="item item3"><a href="#">어학연수</a>
+				<li class="item item3"><a href="/main/new_main?tab=4">어학연수</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -213,7 +213,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</li>
-				<li class="item item4"><a href="#">가족연수/캠프/스쿨링</a>
+				<li class="item item4"><a href="/main/new_main?tab=5">가족연수/캠프/스쿨링</a>
 					<div class="depth_wrap">
 						<div class="inner">
 

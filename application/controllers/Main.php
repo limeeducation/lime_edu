@@ -23,6 +23,8 @@ class Main extends CI_Controller {
 
 	//신규 메인페이지
 	public function new_main(){
+		//tab = 1:최초메인 / 2:해외대학유학 / 3:조기유학 / 4:어학연수 / 5:가족,캠프,스쿨링
+		$tab = !empty(get_default('tab')) ? get_default('tab') : '1';
 		require_once($_SERVER['DOCUMENT_ROOT'].'/lib/snoopy/Snoopy.class.php');
 		$normal_banner_list = get_banner("1", "normal");
 		$event_banner_list = get_banner("1", "event");
@@ -38,7 +40,8 @@ class Main extends CI_Controller {
 		$this->load->view('main/main', array(
 			'normal_banner_list'		=> $normal_banner_list,
 			'event_banner_list'			=> $event_banner_list,
-			'blog_contents'				=> $snoopy->results
+			'blog_contents'				=> $snoopy->results,
+			'tba'						=> $tab
 		));
 	}
 }
