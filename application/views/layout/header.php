@@ -120,7 +120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- headGlobal -->
 	<div id="headGlobal">
-		<h1 class="header_logo"><a href="#">라임에듀</a></h1>
+		<h1 class="header_logo"><a href="/main/new_main">라임에듀</a></h1>
 
 		<nav class="header_nav">
 			<ul id="gnb">
