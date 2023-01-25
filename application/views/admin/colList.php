@@ -36,15 +36,19 @@
 						<div class="h-100 bg-secondary rounded p-4">
 							<div class="d-flex align-items-center justify-content-between mb-2">
 								<h6 class="mb-0">칼럼 관리</h6>
-								<form class="d-none d-md-flex ms-5">
-									<input class="form-control bg-dark border-0" type="search" placeholder="검색어를 입력해주세요">
-									<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+							</div>
+							<div class="d-flex align-items-center justify-content-between mb-2">
+								<form class="d-none d-md-flex ms-5 form-floating">
+									<input class="form-control bg-dark border-0" type="search" id="colStr" name="col_str" placeholder="검색어를 입력해주세요">
+									<label for="colStr">검색어를 입력해주세요</label>
+									<select class="form-select" id="colSub" name="col_sub" aria-label="Floating label select example">
 										<option selected="">주제</option>
 										<option value="1">해외대학유학</option>
 										<option value="2">조기유학</option>
 										<option value="3">어학연수</option>
 										<option value="4">가족연수/캠프/스쿨링</option>
 									</select>
+									<label for="colSub">주제</label>
 								</form>
 								<button type="button" class="btn btn-success rounded-pill m-2" onclick="javascript:go_search();">검색</button>
 							</div>
