@@ -94,7 +94,6 @@ class Admin_prod_model extends CI_Model
 	}
 
 	public function get_cols($search,$totalCnt=false){
-		$s = $this->replace_search_data(@$search['str']);
 		$sub_str = $search['subject'];
 
 		if($totalCnt) $limit = '';
