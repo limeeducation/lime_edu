@@ -129,8 +129,7 @@ class AdminProd extends CI_Controller {
 		}
 		$search = array(
 			'str'		=> !empty($_GET['str']) ? $_GET['str'] : '',
-			'reg_start' => !empty($_GET['reg_start']) ? $_GET['reg_start'] : '',
-			'reg_end'   => !empty($_GET['reg_end']) ? $_GET['reg_end'] : '',
+			'subject'	=> !empty($_GET['subject']) ? $_GET['subject'] : '',
 			'page'      => !empty($_GET['page']) ? $_GET['page'] : 1,
 			'pageSize'  => !empty($_GET['list_count']) ? $_GET['list_count'] : 10
 		);
