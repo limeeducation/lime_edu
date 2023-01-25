@@ -38,14 +38,14 @@
 								<h6 class="mb-0">칼럼 관리</h6>
 							</div>
 							<div class="d-flex align-items-center justify-content-between mb-2">
-								<form class="d-md-flex ms-5 form-floating">
-									<div>
-										<input class="form-control bg-dark border-0 me-5" type="search" id="colString" name="col_str" placeholder="검색어를 입력해주세요">
+								<form class="d-md-flex ms-5 w-100">
+									<div class="form-floating me-5" style="width:40%;">
+										<input class="form-control bg-dark border-0" type="search" id="colString" name="col_str" placeholder="검색어를 입력해주세요">
 										<label for="colString">검색어</label>
 									</div>
-									<div>
-										<select class="form-select me-5" id="colSubject" name="col_sub" aria-label="Floating label select example">
-											<option selected="">주제</option>
+									<div class="form-floating me-5" style="width:40%;">
+										<select class="form-select" id="colSubject" name="col_sub" aria-label="Floating label select example">
+											<option selected="">주제를 선택해주세요</option>
 											<option value="1">해외대학유학</option>
 											<option value="2">조기유학</option>
 											<option value="3">어학연수</option>
