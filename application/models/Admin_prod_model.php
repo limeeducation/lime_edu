@@ -135,6 +135,28 @@ class Admin_prod_model extends CI_Model
 		return $this->db->get()->row_array();
 	}
 
+	public function addColumn(){
+		$this->db->insert('lime_columns',$data);
+        return $this->db->insert_id();
+	}
+
+	public function editColumn(){
+		$edit_data = array(
+			'col_title'		=> $data['col_title'],
+			'col_subject'	=> $data['col_subject'],
+			'col_thumb'		=> $data['col_thumb'],
+			'col_cnts'		=> $data['col_cnts'],
+			'use_yn'		=> $data['use_yn'],
+			'mod_idx'		=> $data['mod_idx'],
+			'mod_date'		=> $data['mod_date']
+		);
+		$edit_where = array(
+			'idx'		=> $data['idx']
+		);
+		$this->db->update('lime_columns', $edit_data, $edit_where);
+		return $this->db->trans_status();
+	}
+
 }
 
 ?>

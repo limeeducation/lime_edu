@@ -8,6 +8,9 @@
 	$(function(){
 		$("#btn_col_save").bind('click',function(){
 			if( '' == $("select[name=col_subject]").val() ) alert('칼럼 주제를 선택해주세요.');
+			else if('' == $('#colTitle').val()) alert('칼럼 제목을 입력해주세요.');
+			else if('' == $('#colThumb').val()) alert('썸네일 URL을 입력해주세요.');
+			else if('' == $('#colCnts').val()) alert('썸네일 내용을 입력해주세요.');
 			else{
 				$( "#column_save" ).submit();
 			}
@@ -47,10 +50,9 @@
                 <div class="bg-secondary rounded h-100 p-4">
 					<h6 class="mb-4">칼럼 <?= $stat == 'edit' ? '수정' : '등록';?></h6>
 					<form action="/adminProd/columnSave" id="column_save" method="post">
-						<input type="hidden" class="form-control" name="column_type" value='<?= $type;?>'>
 						<input type="hidden" class="form-control" name="edit_type" value='<?= $stat;?>'>
 						<?php if($stat == "edit") :?>
-							<input type="hidden" class="form-control" name="banr_idx" value="<?= $idx;?>">
+							<input type="hidden" class="form-control" name="col_idx" value="<?= $idx;?>">
 						<?php endif;?>
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" id="colTitle" name="col_title">
@@ -72,13 +74,13 @@
 						</div>
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" id="colCnts" name="col_cnts">
-                            <label for="colCnts" class="form-label">배너 링크 url</label>
+                            <label for="colCnts" class="form-label">칼럼 내용(임시)</label>
 						</div>
 						<div class="form-check form-switch">
 							<input class="form-check-input" type="checkbox" role="switch" id="colUseYn" name="use_yn" checked="checked">
 							<label class="form-check-label" for="colUseYn">칼럼 노출 여부</label>
 						</div>
-						<button type="button" class="btn btn-success" id="btn_col_save">배너 저장</button>
+						<button type="button" class="btn btn-success" id="btn_col_save">칼럼 저장</button>
 						<button type="button" class="btn btn-primary" onclick="history.back()" id="col_cancel">취소</button>
 					</form>
 				</div>

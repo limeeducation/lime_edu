@@ -159,7 +159,33 @@ class AdminProd extends CI_Controller {
 
 	//칼럼 등록,수정
 	public function columnSave(){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+		$data['col_title'] = $this->input->post('col_title');
+		$data['col_subject'] = $this->input->post('col_subject');
+		$data['col_thumb'] = $this->input->post('col_thumb');
+		$data['col_cnts'] = $this->input->post('col_cnts');
+		$data['use_yn'] = $this->input->post('use_yn') == 'on' ? 'Y' : 'N';
+		$editType = $this->input->post('edit_type');
+		if($editType == 'edit'){
+			date_default_timezone_set('Asia/Seoul');
+			$data['idx'] = $this->input->post('col_idx');
+			$data['mod_idx'] = $this->session->userdata('user_idx');
+			$data['mod_date'] = date('Y-m-d H:i:s');
+			$res = $this->admin_prod_model->editColumn($data);
+		}else{
+			$data['reg_idx'] = $this->session->userdata('user_idx');
+			$res = $this->admin_prod_model->addColumn($data);
+		}
 
+		if($res){
+		$res_msg = $editType == 'edit' ? '칼럼이 수정되었습니다.' : '칼럼이 등록되었습니다.';
+			script_alert_go($res_msg, base_url('/AdminProd/columnList'));
+		}else{
+			script_alert_back('저장중 장애가 발생했습니다.');
+		}
 	}
 
 	//칼럼 삭제
