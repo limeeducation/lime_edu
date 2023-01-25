@@ -120,4 +120,51 @@ class AdminProd extends CI_Controller {
 		$res = $this->admin_prod_model->updateBannerSeq($data);
 		echo json_encode($res);
 	}
+
+	//칼럼 리스트
+	public function columnList(){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+		$search = array(
+			'str'		=> get_default('str'),
+			'reg_start'     => get_default('reg_start'),
+			'reg_end'     => get_default('reg_end'),
+			'page'      => get_default('page', 1),
+			'pageSize'  => get_default('list_count', 10)
+		);
+		$cols = $this->admin_prod_model->get_cols($search);
+		$colCnt = $this->admin_prod_model->get_cols($search, true);
+		//make_log(null,'칼럼리스트 호출');
+		$this->document->view('admin/colList', array(
+			'search' => $cols,
+			'totalCnt' => $colCnt
+		));
+	}
+
+	//칼럼 등록,수정 페이지
+	public function columnEdit($idx=null){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+		$res['stat'] = "new";
+		if(!empty($idx){
+			$res = $this->admin_prod_model->get_col_detail($idx);
+			$res['stat'] = "edit";
+			$this->admin_prod_model->get_cols($search, true);
+		}
+		$this->document->view('admin/colEdit', $res);
+	}
+
+	//칼럼 등록,수정
+	public function columnSave(){
+
+	}
+
+	//칼럼 삭제
+	public function columnDelete(){
+
+	}
 }

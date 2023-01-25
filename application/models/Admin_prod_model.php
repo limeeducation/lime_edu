@@ -93,6 +93,49 @@ class Admin_prod_model extends CI_Model
         return $this->db->trans_status();
 	}
 
+	public function get_cols($search,$totalCnt=false){
+		$s = $this->replace_search_data(@$search['str']);
+		$sub_str = $search['subject'];
+
+		if($totalCnt) $limit = '';
+		else $limit = "limit ".($search['page'] - 1) * $search['pageSize'].", {$search['pageSize']}";
+		$whereStr = '';
+		if(!empty($s)){
+			$whereStr = "AND (
+						`col_title` LIKE '%".$s."%' ESCAPE '!'
+						OR  `col_cnts` LIKE '%".$s."%' ESCAPE '!'
+						)";
+		}
+
+		$subSearch = '';
+		if(!empty($sub_str)) $subSearch = "AND col_subject = '".$subSearch."'";
+
+		$search_q =	" SELECT `col`.idx as col_idx, col_title,
+					  col_thumb, col_subject, col_cnts
+					  (SELECT id FROM lime_adn_user AS u WHERE `u`.idx = `col`.reg_idx) as reg_name,
+					  DATE_FORMAT(col.reg_dt,'%Y-%m-%d') `reg_dt`
+					  		FROM `lime_columns` AS col
+					  		WHERE 1=1
+					  		{$whereStr}
+					  		{$subSearch}
+					  ORDER BY `col`.`reg_dt` DESC {$limit}";
+		$result =  $this->db->query($search_q)->result();
+		if($totalCnt) return $this->db->query($search_q)->num_rows();
+		return $result;
+	}
+
+	public function get_col_detail($idx){
+		$this->db->select('idx');
+		$this->db->select('col_title');
+		$this->db->select('col_subject');
+		$this->db->select('col_cnts');
+		$this->db->select('col_thumb');
+		$this->db->select('use_yn');
+		$this->db->from('lime_columns');
+		$this->db->where('idx', $idx);
+		return $this->db->get()->row_array();
+	}
+
 }
 
 ?>
