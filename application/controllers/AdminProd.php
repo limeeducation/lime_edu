@@ -128,11 +128,11 @@ class AdminProd extends CI_Controller {
 			script_alert_go($msg, '/admin');
 		}
 		$search = array(
-			'str'		=> get_default('str'),
-			'reg_start'     => get_default('reg_start'),
-			'reg_end'     => get_default('reg_end'),
-			'page'      => get_default('page', 1),
-			'pageSize'  => get_default('list_count', 10)
+			'str'		=> !empty($_GET['str']) ? $_GET['str'] : '',
+			'reg_start' => !empty($_GET['reg_start']) ? $_GET['reg_start'] : '',
+			'reg_end'   => !empty($_GET['reg_end']) ? $_GET['reg_end'] : '',
+			'page'      => !empty($_GET['page']) ? $_GET['page'] : 1,
+			'pageSize'  => !empty($_GET['list_count']) ? $_GET['list_count'] : 10
 		);
 		$cols = $this->admin_prod_model->get_cols($search);
 		$colCnt = $this->admin_prod_model->get_cols($search, true);
