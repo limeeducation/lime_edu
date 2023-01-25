@@ -54,7 +54,7 @@
 										<label for="colSubject">주제</label>
 									</div>
 								</form>
-								<button type="button" class="btn btn-success rounded-pill m-2" onclick="javascript:go_search();">검색</button>
+								<button type="button" class="btn btn-success rounded-pill m-2" onclick="javascript:go_search();" style="width:8%;">검색</button>
 							</div>
 							<?php if($totalCnt > 0) : ?>
 								<?php foreach($search as $columns) : ?>
