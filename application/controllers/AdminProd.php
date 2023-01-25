@@ -150,7 +150,7 @@ class AdminProd extends CI_Controller {
 			script_alert_go($msg, '/admin');
 		}
 		$res['stat'] = "new";
-		if(!empty($idx){
+		if(!empty($idx)){
 			$res = $this->admin_prod_model->get_col_detail($idx);
 			$res['stat'] = "edit";
 			$this->admin_prod_model->get_cols($search, true);
