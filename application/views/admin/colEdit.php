@@ -48,7 +48,7 @@
 					<h6 class="mb-4">칼럼 <?= $stat == 'edit' ? '수정' : '등록';?></h6>
 					<form action="/adminProd/columnSave" id="column_save" method="post">
 						<input type="hidden" class="form-control" name="column_type" value='<?= $type;?>'>
-						<input type="hidden" class="form-control" name="edit_type" value='<?= stat;?>'>
+						<input type="hidden" class="form-control" name="edit_type" value='<?= $stat;?>'>
 						<?php if($stat == "edit") :?>
 							<input type="hidden" class="form-control" name="banr_idx" value="<?= $idx;?>">
 						<?php endif;?>
