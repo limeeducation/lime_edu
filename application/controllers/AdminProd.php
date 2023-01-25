@@ -152,7 +152,6 @@ class AdminProd extends CI_Controller {
 		if(!empty($idx)){
 			$res = $this->admin_prod_model->get_col_detail($idx);
 			$res['stat'] = "edit";
-			$this->admin_prod_model->get_cols($search, true);
 		}
 		$this->load->view('admin/colEdit', $res);
 	}
