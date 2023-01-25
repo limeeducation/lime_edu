@@ -194,7 +194,7 @@ class AdminProd extends CI_Controller {
 			script_alert_go($msg, '/admin');
 		}
 
-		$res = $this->admin_prod_model->deleteBanner($idx);
+		$res = $this->admin_prod_model->deleteColumn($idx);
 		if(!$res){
 			script_alert_back('칼럼 삭제 중 장애가 발생했습니다.');
 		}
