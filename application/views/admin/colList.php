@@ -38,17 +38,21 @@
 								<h6 class="mb-0">칼럼 관리</h6>
 							</div>
 							<div class="d-flex align-items-center justify-content-between mb-2">
-								<form class="d-none d-md-flex ms-5 form-floating">
-									<input class="form-control bg-dark border-0" type="search" id="colStr" name="col_str" placeholder="검색어를 입력해주세요">
-									<label for="colStr">검색어를 입력해주세요</label>
-									<select class="form-select" id="colSub" name="col_sub" aria-label="Floating label select example">
-										<option selected="">주제</option>
-										<option value="1">해외대학유학</option>
-										<option value="2">조기유학</option>
-										<option value="3">어학연수</option>
-										<option value="4">가족연수/캠프/스쿨링</option>
-									</select>
-									<label for="colSub">주제</label>
+								<form class="d-md-flex ms-5 form-floating">
+									<div>
+										<input class="form-control bg-dark border-0 me-5" type="search" id="colString" name="col_str" placeholder="검색어를 입력해주세요">
+										<label for="colString">검색어</label>
+									</div>
+									<div>
+										<select class="form-select me-5" id="colSubject" name="col_sub" aria-label="Floating label select example">
+											<option selected="">주제</option>
+											<option value="1">해외대학유학</option>
+											<option value="2">조기유학</option>
+											<option value="3">어학연수</option>
+											<option value="4">가족연수/캠프/스쿨링</option>
+										</select>
+										<label for="colSubject">주제</label>
+									</div>
 								</form>
 								<button type="button" class="btn btn-success rounded-pill m-2" onclick="javascript:go_search();">검색</button>
 							</div>
