@@ -135,12 +135,12 @@ class Admin_prod_model extends CI_Model
 		return $this->db->get()->row_array();
 	}
 
-	public function addColumn(){
+	public function addColumn($data){
 		$this->db->insert('lime_columns',$data);
         return $this->db->insert_id();
 	}
 
-	public function editColumn(){
+	public function editColumn($data){
 		$edit_data = array(
 			'col_title'		=> $data['col_title'],
 			'col_subject'	=> $data['col_subject'],
