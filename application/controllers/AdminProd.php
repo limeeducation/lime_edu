@@ -136,7 +136,7 @@ class AdminProd extends CI_Controller {
 		$cols = $this->admin_prod_model->get_cols($search);
 		$colCnt = $this->admin_prod_model->get_cols($search, true);
 		//make_log(null,'칼럼리스트 호출');
-		$this->document->view('admin/colList', array(
+		$this->load->view('admin/colList', array(
 			'search' => $cols,
 			'totalCnt' => $colCnt
 		));
@@ -154,7 +154,7 @@ class AdminProd extends CI_Controller {
 			$res['stat'] = "edit";
 			$this->admin_prod_model->get_cols($search, true);
 		}
-		$this->document->view('admin/colEdit', $res);
+		$this->load->view('admin/colEdit', $res);
 	}
 
 	//칼럼 등록,수정
