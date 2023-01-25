@@ -157,6 +157,12 @@ class Admin_prod_model extends CI_Model
 		return $this->db->trans_status();
 	}
 
+	public function deleteBanner($idx){
+		$this->db->where('idx', $idx);
+		$this->db->delete('lime_columns');
+		return $this->db->trans_status();
+	}
+
 }
 
 ?>

@@ -188,7 +188,16 @@ class AdminProd extends CI_Controller {
 	}
 
 	//칼럼 삭제
-	public function columnDelete(){
+	public function columnDelete($idx){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
 
+		$res = $this->admin_prod_model->deleteBanner($idx);
+		if(!$res){
+			script_alert_back('칼럼 삭제 중 장애가 발생했습니다.');
+		}
+		script_alert_go('칼럼이 삭제되었습니다.', base_url('/AdminProd/columnList'));
 	}
 }

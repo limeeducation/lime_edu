@@ -28,6 +28,10 @@
 			}
 		}
 	});
+
+	function del_col(){
+		location.href="/adminProd/columnDelete/<?= $idx;?>";
+	}
 </script>
 <body>
     <div class="container-fluid position-relative d-flex p-0">
@@ -82,6 +86,9 @@
 						</div>
 						<button type="button" class="btn btn-success" id="btn_col_save">칼럼 저장</button>
 						<button type="button" class="btn btn-primary" onclick="history.back()" id="col_cancel">취소</button>
+						<?php if($stat == "edit") :?>
+							<button type="button" class="btn btn-success rounded-pill m-2" onclick="javascript:del_col();">삭제</button>
+						<?php endif;?>
 					</form>
 				</div>
             </div>
