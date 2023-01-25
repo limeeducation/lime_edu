@@ -112,12 +112,12 @@ class Admin_prod_model extends CI_Model
 		$search_q =	" SELECT `col`.idx as col_idx, col_title,
 					  col_thumb, col_subject, col_cnts,
 					  (SELECT id FROM lime_adn_user AS u WHERE `u`.idx = `col`.reg_idx) as reg_name,
-					  DATE_FORMAT(col.reg_dt,'%Y-%m-%d') `reg_dt`
+					  DATE_FORMAT(`col`.reg_date,'%Y-%m-%d') `reg_dt`
 					  		FROM `lime_columns` AS col
 					  		WHERE 1=1
 					  		{$whereStr}
 					  		{$subSearch}
-					  ORDER BY `col`.`reg_dt` DESC {$limit}";
+					  ORDER BY `reg_dt` DESC {$limit}";
 		$result =  $this->db->query($search_q)->result();
 		if($totalCnt) return $this->db->query($search_q)->num_rows();
 		return $result;
