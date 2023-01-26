@@ -53,7 +53,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<div class="swiper-wrapper">
 
 									<div class="swiper-slide">
-										<div class="program_title">인기 프로그램</div>
+										<div class="program_title">어학연수</div>
 										<ul class="program_list">
 											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image1@2x.png" alt=""></div></a></li>
 											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image2@2x.png" alt=""></div></a></li>
@@ -65,7 +65,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<a href="#" class="box"></a>
 									</div>
 									<div class="swiper-slide">
-										<div class="program_title">추천 프로그램</div>
+										<div class="program_title">초중고 유학</div>
 										<ul class="program_list">
 											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image1@2x.png" alt=""></div></a></li>
 											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image2@2x.png" alt=""></div></a></li>
@@ -76,7 +76,30 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</ul>
 										<a href="#" class="box"></a>
 									</div>
-
+									<div class="swiper-slide">
+										<div class="program_title">대학 유학</div>
+										<ul class="program_list">
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image1@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image2@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image3@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image4@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image5@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image6@2x.png" alt=""></div></a></li>
+										</ul>
+										<a href="#" class="box"></a>
+									</div>
+									<div class="swiper-slide">
+										<div class="program_title">컬리지 유학 후 이민 / 자녀무상</div>
+										<ul class="program_list">
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image1@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image2@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image3@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image4@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image5@2x.png" alt=""></div></a></li>
+											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image6@2x.png" alt=""></div></a></li>
+										</ul>
+										<a href="#" class="box"></a>
+									</div>
 								</div><!-- // swiper-wrapper -->
 							</div><!-- // swiper-container -->
 							<div class="swiper-button-prev"></div>
