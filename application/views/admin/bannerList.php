@@ -117,7 +117,7 @@
 						list_html += "	<input type='hidden' name='banr_tab' value='"+data[i].banr_tab+"'>";
 						list_html += "	<div class='bg-secondary rounded p-2 mt-3'>";
 						list_html += "		<form style='display: flex;'>";
-						list_html += "			<div class='mb-3 pt-1 col-xl-5' style='height: 270px;'>";
+						list_html += img_div;
 						list_html += "				<img style='width: 100%; height: 100%;' src='"+data[i].banr_img+"'>";
 						list_html += "				<div class='form-text'>";
 						list_html += "					이미지 권장 사이즈 : ";
