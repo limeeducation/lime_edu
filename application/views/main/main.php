@@ -55,7 +55,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="swiper-slide">
 											<div class="program_title">어학연수</div>
 											<ul class="program_list">
-												<?foreach($normal_banner_list[0] as $nor_banr_0) ?>
+												<? foreach($normal_banner_list[0] as $nor_banr_0): ?>
 													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_0->banr_img;?>" alt=""></div></a></li>
 												<? endforeach; ?>
 											</ul>
@@ -64,7 +64,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="swiper-slide">
 											<div class="program_title">초중고 유학</div>
 											<ul class="program_list">
-												<?foreach($normal_banner_list[1] as $nor_banr_1) ?>
+												<? foreach($normal_banner_list[1] as $nor_banr_1): ?>
 													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_1->banr_img;?>" alt=""></div></a></li>
 												<? endforeach; ?>
 											</ul>
@@ -73,7 +73,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="swiper-slide">
 											<div class="program_title">대학 유학</div>
 											<ul class="program_list">
-												<?foreach($normal_banner_list[2] as $nor_banr_2) ?>
+												<? foreach($normal_banner_list[2] as $nor_banr_2): ?>
 													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_2->banr_img;?>" alt=""></div></a></li>
 												<? endforeach; ?>
 											</ul>
@@ -82,7 +82,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="swiper-slide">
 											<div class="program_title">컬리지 유학 후 이민 / 자녀무상</div>
 											<ul class="program_list">
-												<?foreach($normal_banner_list[3] as $nor_banr_3) ?>
+												<? foreach($normal_banner_list[3] as $nor_banr_3): ?>
 													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_3->banr_img;?>" alt=""></div></a></li>
 												<? endforeach; ?>
 											</ul>
