@@ -99,6 +99,12 @@
 				//리스트 생성
 				var list_html = "";
 				var banr_chk_yn = "";
+				var img_rec_size = "";
+				if(type == 'normal'){
+					img_rec_size = "1100px X 480px";
+				}else{
+					img_rec_size = "300px X 250px";
+				}
 				if(data.length > 0){
 					for(var i=0; i<data.length; i++){
 						banr_chk_yn =  data[i].banr_use_yn == "Y" ? "checked" : "";
@@ -110,7 +116,8 @@
 						list_html += "			<div class='mb-3 pt-1 col-xl-5' style='height: 270px;'>";
 						list_html += "				<img style='width: 100%; height: 100%;' src='"+data[i].banr_img+"'>";
 						list_html += "				<div class='form-text'>";
-						list_html += "					이미지 권장 사이즈 : @@@@ X @@@@";
+						list_html += "					이미지 권장 사이즈 : ";
+						list_html += img_rec_size;
 						list_html += "				</div>";
 						list_html += "			</div>";
 						list_html += "			<div class='mb-3 col-xl-6 mx-3'>";
@@ -171,9 +178,16 @@
 			<div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary text-center rounded p-2">
                     <div class="d-flex align-items-center justify-content-between ">
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_1" onclick="get_banr_tab('1');">TAB 1</button></h6>
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_2" onclick="get_banr_tab('2');">TAB 2</button></h6>
-						<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('3');">TAB 3</button></h6>
+                    	<?php if($type == "normal") : ?>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_1" onclick="get_banr_tab('1');">메인 - 어학연수</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_2" onclick="get_banr_tab('2');">메인 - 초중고 유학</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('3');">메인 - 대학유학</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('4');">메인 - 컬리지 유학 후 이민/자녀무상</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('5');">해외대학 유학</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('6');">조기유학</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('7');">어학연수</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('8');">가족연수/캠프/스쿨링</button></h6>
+						<?php endif; ?>
 						<a class="text-success" href="/adminProd/bannerAdd?type=<?= $type;?>" >이미지 추가하기</a>
 						<a href="javascript:changeList();" class="changeList">순서 변경하기</a>
 						<a href="javascript:fixList();" class="fixList">순서 적용하기</a>

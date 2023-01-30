@@ -55,19 +55,21 @@
 							<div class="form-floating mb-3">
 								<select class="form-select" id="banrTab" name="banr_tab">
 									<option value="">탭 선택</option>
-									<option value="1">상시 상품 탭1</option>
-									<option value="2">상시 상품 탭2</option>
-									<option value="3">상시 상품 탭3</option>
+									<option value="1">메인 - 어학연수</option>
+									<option value="2">메인 - 초중고 유학</option>
+									<option value="3">메인 - 대학유학</option>
+									<option value="4">메인 - 컬리지 유학 후 이민/자녀무상</option>
+									<option value="5">해외대학 유학</option>
+									<option value="6">조기유학</option>
+									<option value="7">어학연수</option>
+									<option value="8">가족연수/캠프/스쿨링</option>
 								</select>
 								<label for="banrTab" class="form-label">배너 탭</label>
 							</div>
 						<?php else : ?>
-							<div class="form-floating mb-3">
+							<div class="form-floating mb-3" style="display:hidden;">
 								<select class="form-select" id="banrTab" name="banr_tab">
-									<option value="">탭 선택</option>
-									<option value="1">이벤트 상품 탭1</option>
-									<option value="2">이벤트 상품 탭2</option>
-									<option value="3">이벤트 상품 탭3</option>
+									<option value="1" selected>메인</option>
 								</select>
 								<label for="banrTab" class="form-label">배너 탭</label>
 							</div>

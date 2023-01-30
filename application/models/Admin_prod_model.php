@@ -82,6 +82,13 @@ class Admin_prod_model extends CI_Model
 		return $this->db->trans_status();
 	}
 
+	public function getBannerTabUseCnt($tab){
+		$this->db->from('banner');
+		$this->db->where('banr_tab', $tab);
+		$this->db->where('banr_use_yn', 'Y');
+		return $this->db->count_all_results();
+	}
+
 	public function updateBannerSeq($data){
 		$seq_update = array(
 			'banr_seq' => $data['banr_seq']
