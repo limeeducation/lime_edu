@@ -35,10 +35,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<div class="inner">
 						<?php if($tab == '1') : ?>
 						<div class="sect_image"><img src="/static/img/main/event_image1@2x.png" alt=""></div>
-						<?php elseif($tab == '2'): ?>
-						<?php elseif($tab == '3'): ?>
-						<?php elseif($tab == '4'): ?>
 						<?php elseif($tab == '5'): ?>
+						<?php elseif($tab == '6'): ?>
+						<?php elseif($tab == '7'): ?>
+						<?php elseif($tab == '8'): ?>
 						<?php endif; ?>
 					</div><!-- // inner -->
 				</section>
@@ -51,55 +51,49 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="program-swiper">
 							<div class="swiper-container">
 								<div class="swiper-wrapper">
+									<?php if($tab == '1') : ?> <!-- 최초 메인 -->
+										<div class="swiper-slide">
+											<div class="program_title">어학연수</div>
+											<ul class="program_list">
+												<?foreach($normal_banner_list[0] as $nor_banr_0) ?>
+													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_0->banr_img;?>" alt=""></div></a></li>
+												<? endforeach; ?>
+											</ul>
+											<a href="#" class="box"></a>
+										</div>
+										<div class="swiper-slide">
+											<div class="program_title">초중고 유학</div>
+											<ul class="program_list">
+												<?foreach($normal_banner_list[1] as $nor_banr_1) ?>
+													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_1->banr_img;?>" alt=""></div></a></li>
+												<? endforeach; ?>
+											</ul>
+											<a href="#" class="box"></a>
+										</div>
+										<div class="swiper-slide">
+											<div class="program_title">대학 유학</div>
+											<ul class="program_list">
+												<?foreach($normal_banner_list[2] as $nor_banr_2) ?>
+													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_2->banr_img;?>" alt=""></div></a></li>
+												<? endforeach; ?>
+											</ul>
+											<a href="#" class="box"></a>
+										</div>
+										<div class="swiper-slide">
+											<div class="program_title">컬리지 유학 후 이민 / 자녀무상</div>
+											<ul class="program_list">
+												<?foreach($normal_banner_list[3] as $nor_banr_3) ?>
+													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_3->banr_img;?>" alt=""></div></a></li>
+												<? endforeach; ?>
+											</ul>
+											<a href="#" class="box"></a>
+										</div>
+									<?php elseif($tab == '5'): ?> <!-- 해외대학유학 메인 -->
+									<?php elseif($tab == '6'): ?> <!-- 조기유학 메인 -->
+									<?php elseif($tab == '7'): ?> <!-- 어학연수 메인 -->
+									<?php elseif($tab == '8'): ?> <!-- 가족연수/캠프/스쿨링 메인 -->
+									<?php endif; ?>
 
-									<div class="swiper-slide">
-										<div class="program_title">어학연수</div>
-										<ul class="program_list">
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image1@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image2@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image3@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image4@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image5@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image6@2x.png" alt=""></div></a></li>
-										</ul>
-										<a href="#" class="box"></a>
-									</div>
-									<div class="swiper-slide">
-										<div class="program_title">초중고 유학</div>
-										<ul class="program_list">
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image1@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image2@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image3@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image4@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image5@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image6@2x.png" alt=""></div></a></li>
-										</ul>
-										<a href="#" class="box"></a>
-									</div>
-									<div class="swiper-slide">
-										<div class="program_title">대학 유학</div>
-										<ul class="program_list">
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image1@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image2@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image3@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image4@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image5@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image6@2x.png" alt=""></div></a></li>
-										</ul>
-										<a href="#" class="box"></a>
-									</div>
-									<div class="swiper-slide">
-										<div class="program_title">컬리지 유학 후 이민 / 자녀무상</div>
-										<ul class="program_list">
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image1@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image2@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image3@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image4@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image5@2x.png" alt=""></div></a></li>
-											<li><a href="#"><div class="thumb"><img src="/static/img/main/program_image6@2x.png" alt=""></div></a></li>
-										</ul>
-										<a href="#" class="box"></a>
-									</div>
 								</div><!-- // swiper-wrapper -->
 							</div><!-- // swiper-container -->
 							<div class="swiper-button-prev"></div>
