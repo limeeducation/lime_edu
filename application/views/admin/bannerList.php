@@ -186,11 +186,11 @@
 							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_1" onclick="get_banr_tab('1');">메인 - 어학연수</button></h6>
 							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_2" onclick="get_banr_tab('2');">메인 - 초중고 유학</button></h6>
 							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('3');">메인 - 대학유학</button></h6>
-							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('4');">메인 - 컬리지 유학 후 이민/자녀무상</button></h6>
-							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('5');">해외대학 유학</button></h6>
-							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('6');">조기유학</button></h6>
-							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('7');">어학연수</button></h6>
-							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_3" onclick="get_banr_tab('8');">가족연수/캠프/스쿨링</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_4" onclick="get_banr_tab('4');">메인 - 컬리지 유학 후 이민/자녀무상</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_5" onclick="get_banr_tab('5');">해외대학 유학</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_6" onclick="get_banr_tab('6');">조기유학</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_7" onclick="get_banr_tab('7');">어학연수</button></h6>
+							<h6 class="mb-0"><button type="button" class="btn btn-lg btn-outline-success m-2 tab_btn" id="tab_8" onclick="get_banr_tab('8');">가족연수/캠프/스쿨링</button></h6>
 						<?php endif; ?>
 						<a class="text-success" href="/adminProd/bannerAdd?type=<?= $type;?>" >이미지 추가하기</a>
 						<a href="javascript:changeList();" class="changeList">순서 변경하기</a>
