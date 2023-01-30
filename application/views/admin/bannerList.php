@@ -100,11 +100,15 @@
 				var list_html = "";
 				var banr_chk_yn = "";
 				var img_rec_size = "";
-				if(type == 'normal'){
+				var img_div = "";
+				if(type == 'event'){
 					img_rec_size = "1100px X 480px";
+					img_div = "<div class='mb-3 pt-1 col-xl-5' style='height: 270px;'>";
 				}else{
 					img_rec_size = "300px X 250px";
+					img_div = "<div class='mb-3 pt-1 col-xl-5' style='height: 250px; width: 300px;'>";
 				}
+
 				if(data.length > 0){
 					for(var i=0; i<data.length; i++){
 						banr_chk_yn =  data[i].banr_use_yn == "Y" ? "checked" : "";
