@@ -1,6 +1,3 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
 <!-- 전체메뉴 영역 -->
 <aside id="mobileMenu">
 	<div class="inner">
