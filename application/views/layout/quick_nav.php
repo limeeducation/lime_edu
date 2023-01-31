@@ -1,6 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
+
 <!-- quick_nav -->
 <div class="quick_nav">
 	<div class="quick_title">유학 관련 궁금한 점은 부담없이 문의하세요!</div>
