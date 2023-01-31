@@ -26,7 +26,7 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 }
 
 /* 전체메뉴 */
-#mobileMenu{display:block;position:fixed;top:0px;right:-100%;width:39rem;min-width:320px;height:100%;z-index:1001;}
+#mobileMenu{display:block;position:fixed;top:0;right:-100%;width:39rem;min-width:320px;height:100%;z-index:1001;}
 #mobileMenu > .inner{position:relative;overflow-y:auto;width:100%;height:100%;padding:8rem 3.2rem;background-color:#76CF84;color:#fff;-webkit-overflow-scrolling:touch}
 
 .mobile_user{position:absolute;top:6.6rem;left:3.2rem;}
@@ -110,7 +110,7 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 #gnb > li.on > a:before{width:4rem;margin-left:-2rem;}
 
 #gnb .depth_wrap::after{display:block;clear:both;content:'';position:absolute;top:-15rem;left:0;right:0;height:15rem;background:#fff;z-index:10;}
-#gnb .depth_wrap{display:none;position:absolute;left:0;right:0;margin:auto;padding:0;/* border-top:1px solid #d9d9d9; */background-color:#F7F9F7;z-index:9;box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);}
+#gnb .depth_wrap{display:none;position:absolute;left:0;right:0;margin:auto;padding:0;/* border-top:1px solid #d9d9d9; */background-color:#F7F9F7;z-index:9;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);}
 #gnb .on > .depth_wrap{display:block}
 #gnb .depth_wrap .inner{position:relative;width:928px;min-height:60px;margin:0 auto;padding:32px 0 62px;}
 #gnb .depth_wrap .inner:after{display:block;clear:both;content:''}
