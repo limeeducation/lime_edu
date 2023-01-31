@@ -161,6 +161,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div><!-- // inner -->
 				</section>
 				<!-- // mainBanner -->
+			<?php
+				include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/quick_nav.php');
+			?>
 			</div>
 			<!-- // content -->
 		</div>
