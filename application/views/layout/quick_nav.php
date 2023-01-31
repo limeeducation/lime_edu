@@ -7,7 +7,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<ul class="quick_list">
 		<li class="phone"><a href="#">전화 상담 예약</a></li>
 		<li class="home"><a href="#">방문 상담 예약</a></li>
-		<div id="kakao-talk-channel-chat-button" data-channel-public-id="_mnYdxj" data-title="consult" data-size="large" data-color="yellow" data-shape="pc" data-support-multiple-densities="true" ></div>
+		<li>
+			<div id="kakao-talk-channel-chat-button" data-channel-public-id="_mnYdxj" data-title="consult" data-size="large" data-color="yellow" data-shape="pc" data-support-multiple-densities="true" ></div>
+		</li>
 		<!-- <li class="kakao"><a href="#">실시간 상담</a></li> -->
 	</ul>
 	<ul class="quick_time">
