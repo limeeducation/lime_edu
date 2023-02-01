@@ -54,7 +54,7 @@ class Main extends CI_Controller {
 			foreach($column_list as $column){
 				$column->col_cnts = mb_strimwidth($column->col_cnts, '0', '70', '...', 'utf-8');
 			}
-			$data['column_list'] = $column_list
+			$data['column_list'] = $column_list;
 		}else{
 			$normal_banner_list = get_banner($tab, "normal");
 			$data['normal_banner_list'] = $normal_banner_list;
@@ -62,7 +62,7 @@ class Main extends CI_Controller {
 			foreach($column_list as $column){
 				$column->col_cnts = mb_strimwidth($column->col_cnts, '0', '70', '...', 'utf-8');
 			}
-			$data['column_list'] = $column_list
+			$data['column_list'] = $column_list;
 		}
 
 		$this->load->view('main/main', $data);
