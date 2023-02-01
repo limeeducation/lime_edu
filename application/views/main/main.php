@@ -143,7 +143,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<div class="inner">
 
 						<div class="blog_banner">
-							<a href="#">
+							<a href="https://blog.naver.com/mylimeeducation" target="_blank">
 								<!-- <div class="icon">blog</div>
 								<div class="info">
 									<span>네이버 블로그 타이틀</span>
