@@ -240,8 +240,9 @@
 		</nav><!-- // header_nav -->
 
 		<ul class="header_btns">
-			<li class="facebook"><a href="#">페이스북</a></li>
-			<li class="blog"><a href="#">블로그</a></li>
+			<li class="facebook"><a href="https://www.instagram.com/limeedu/?igshid=YmMyMTA2M2Y%3D">인스타그램</a></li>
+			<li class="blog"><a href="https://blog.naver.com/mylimeeducation">블로그</a></li>
+			<li class="blog"><a href="https://blog.naver.com/PostList.naver?blogId=thelimeinc">블로그</a></li>
 		</ul><!-- // header_btns -->
 
 		<div class="header_mo_menu"><a href="#" class="mo_menu_open"><i class="ri-menu-line"></i><span class="blind">전체메뉴 열기</span></a></div>
