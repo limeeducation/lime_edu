@@ -80,9 +80,7 @@
 									</div>
 								</div>
 							<?php endif; ?>
-							<!-- <?php if($totalCnt > 0):?>
-								<?php pagination('', empty($_GET['page'])?1:$_GET['page'], $totalCnt,empty(@$_GET['list_count']) ? 10 : @$_GET['list_count']);?>
-							<?php endif;?> -->
+
 							<button type="button" class="btn btn-success rounded-pill m-2" onclick="javascript:add_col();">칼럼 등록하기</button>
 						</div>
 					</div>
