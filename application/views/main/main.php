@@ -144,11 +144,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						<div class="blog_banner">
 							<a href="#">
-								<div class="icon">blog</div>
-								<div class="info">
-									<span>네이버 블로그 타이틀</span>
-									<span>W:300px  H: 300px</span>
-								</div>
 								<div class="more">이동하기</div>
 							</a>
 						</div>
