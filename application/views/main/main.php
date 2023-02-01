@@ -114,17 +114,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="story-swiper">
 							<div class="swiper-container">
 								<div class="swiper-wrapper">
-									<?php for($idx=0; $idx<10; $idx++){ ?>
+									<?php foreach($column_list as $column) : ?>
 										<div class="swiper-slide">
 											<a href="#" class="box">
-												<div class="thumb"><img src="/static/img/main/story_image1@2x.png" alt=""></div>
+												<div class="thumb"><img src="<?= $column->col_thumb; ?>" alt=""></div>
 												<div class="info">
-													<span class="title">어학연수를 위한 7가지 </span>
-													<span class="text">어학연수를 생각한다면 꼭 중요하게 생각해봐야할 7가지 라임에듀와 함께 하면서 꼼꼼히 챙길 수 있었습니다. 라임에듀에서 여러가지 혜택을 받을 수 있도록 도와드립니다.</span>
+													<span class="title"><?= $column->col_title; ?></span>
+													<span class="text"><?= $column->col_cnts; ?></span>
 												</div>
 											</a>
 										</div>
-									<?php }?>
+									<?php endforeach; ?>
 
 								</div><!-- // swiper-wrapper -->
 							</div><!-- // swiper-container -->
@@ -144,6 +144,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						<div class="blog_banner">
 							<a href="#">
+								<div class="icon">blog</div>
+								<div class="info">
+									<span>네이버 블로그 타이틀</span>
+									<span>W:300px  H: 300px</span>
+								</div>
 								<div class="more">이동하기</div>
 							</a>
 						</div>

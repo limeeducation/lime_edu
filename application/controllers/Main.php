@@ -48,9 +48,21 @@ class Main extends CI_Controller {
 			$event_banner_list = get_banner("1", "event");
 			$data['normal_banner_list'] = $normal_banner_list;
 			$data['event_banner_list'] = $event_banner_list;
+
+			//전체 칼럼 리스트 중 최근 작성 글 10개 불러오기
+			$column_list = get_column();
+			foreach($column_list as $column){
+				$column->col_cnts = mb_strimwidth($column->col_cnts, '0', '70', '...', 'utf-8');
+			}
+			$data['column_list'] = $column_list
 		}else{
 			$normal_banner_list = get_banner($tab, "normal");
 			$data['normal_banner_list'] = $normal_banner_list;
+			$column_list = get_column();
+			foreach($column_list as $column){
+				$column->col_cnts = mb_strimwidth($column->col_cnts, '0', '70', '...', 'utf-8');
+			}
+			$data['column_list'] = $column_list
 		}
 
 		$this->load->view('main/main', $data);
