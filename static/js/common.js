@@ -125,13 +125,17 @@ jQuery(function($){
 	function set_header(event){
 		if($(window).scrollTop() > header_h){
 			$('#header').addClass('active');
-			$('.quick_nav').css('position','fixed');
-			$('.quick_nav').css('top','23.8rem');
-			$('.quick_nav').css('bottom','auto');
+			if($(window).width() > 1200){
+				$('.quick_nav').css('position','fixed');
+				$('.quick_nav').css('top','23.8rem');
+				$('.quick_nav').css('bottom','auto');
+			}
 		} else {
 			$('#header').removeClass('active');
-			$('.quick_nav').css('position','absolute');
-			$('.quick_nav').css('top','3.8rem');
+			if($(window).width() > 1200){
+				$('.quick_nav').css('position','absolute');
+				$('.quick_nav').css('top','3.8rem');
+			}
 		}
 	}
 
