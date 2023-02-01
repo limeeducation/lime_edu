@@ -30,7 +30,7 @@
 	});
 
 	function del_col(){
-		location.href="/adminProd/columnDelete/<?= $idx;?>";
+		location.href="/adminProd/columnDelete<?= empty($idx) ? '' : '/'.$idx;?>";
 	}
 </script>
 <body>
