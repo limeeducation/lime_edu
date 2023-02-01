@@ -125,13 +125,13 @@ jQuery(function($){
 	function set_header(event){
 		if($(window).scrollTop() > header_h){
 			$('#header').addClass('active');
-			$('.quick_nav').prop('position','fixed');
-			$('.quick_nav').prop('top','23.8rem');
-			$('.quick_nav').prop('bottom','auto');
+			$('.quick_nav').css('position','fixed');
+			$('.quick_nav').css('top','23.8rem');
+			$('.quick_nav').css('bottom','auto');
 		} else {
 			$('#header').removeClass('active');
-			$('.quick_nav').prop('position','absolute');
-			$('.quick_nav').prop('top','3.8rem');
+			$('.quick_nav').css('position','absolute');
+			$('.quick_nav').css('top','3.8rem');
 		}
 	}
 
