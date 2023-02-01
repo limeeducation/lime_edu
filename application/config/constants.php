@@ -85,4 +85,4 @@ defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 //네이버 블로그 url
-defined('NAVER_BLOG_URL')      OR define('NAVER_BLOG_URL', 'https://blog.naver.com/mylimeeducation');
+defined('NAVER_BLOG_URL')      OR define('NAVER_BLOG_URL', 'https://blog.naver.com/prologue/PrologueList.naver?blogId=mylimeeducation&topReferer=https%3A%2F%2Fmylimeedu.com%2F&directAccess=true');
