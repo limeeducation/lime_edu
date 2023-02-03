@@ -2,7 +2,6 @@
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 //include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
-
 <body>
 	<div id="wrap">
 	<?php
@@ -131,7 +130,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<!-- // mainProgram -->
 
 				<!-- mainStory -->
-				<section class="main_sect" id="mainStory">
+				<?php if($tab == '1'):?>
+					<section class="main_sect" id="mainStory">
+				<?php else : ?>
+					<section class="main_sect" id="mainStory" style="background-color:#EFF4F3; padding: 5rem 0;">
+				<?php endif; ?>
+
 					<div class="inner">
 
 						<div class="story_title">라임스토리</div>
