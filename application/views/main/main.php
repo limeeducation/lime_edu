@@ -31,18 +31,25 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 				<!-- 상단 고정배너 -->
 				<section class="main_sect" id="mainEvent">
+					<?php if($tab == '1') : ?>
 					<div class="inner">
-						<?php if($tab == '1') : ?>
 						<div class="sect_image"><img src="/static/img/main/event_image1@2x.png" alt=""></div>
-						<?php elseif($tab == '5'): ?>
+					</div>
+					<?php elseif($tab == '5'): ?>
+					<div class="big_inner">
 						<div class="sect_image"><img src="/static/img/main/univ_main_banner.png" alt=""></div>
-						<?php elseif($tab == '6'): ?>
+					</div>
+					<?php elseif($tab == '6'): ?>
+					<div class="big_inner">
+						<div class="sect_image"><img src="/static/img/main/early_main_banner.png" alt=""></div>
+					</div>
+					<?php elseif($tab == '7'): ?>
+					<div class="big_inner">
 						<div class="sect_image"><img src="/static/img/main/event_image1@2x.png" alt=""></div>
-						<?php elseif($tab == '7'): ?>
-						<div class="sect_image"><img src="/static/img/main/event_image1@2x.png" alt=""></div>
-						<?php elseif($tab == '8'): ?>
-						<?php endif; ?>
-					</div><!-- // inner -->
+					</div>
+					<?php elseif($tab == '8'): ?>
+					<?php endif; ?>
+					<!-- // inner -->
 				</section>
 				<!-- // 상단 고정배너 -->
 				<!--  5: 해외대학 유학 / 6: 조기유학 / 7: 어학연수 / 8: 가족연수/캠프/스쿨링 -->

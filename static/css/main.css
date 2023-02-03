@@ -130,6 +130,7 @@
 
 #mainEvent{margin-bottom:8.88rem;}
 #mainEvent .inner{width:1000px;}
+#mainEvent .big_inner{width:1100px;}
 
 @media all and (max-width:1200px){
 	#mainEvent .inner{width:100%;}
