@@ -48,15 +48,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<section class="main_sect" id="mainProgram">
 					<div class="inner">
 						 <div class="univ_main_sect">
-							<div class="univ_nation">
-								<img class="univ_main_img" src="/static/img/main/univ_main_usa.png">
-							</div>
-							<div class="univ_nation">
-								<img class="univ_main_img" src="/static/img/main/univ_main_uk.png">
-							</div>
-							<div class="univ_nation">
-								<img class="univ_main_img" src="/static/img/main/univ_main_ca.png">
-							</div>
+						 	<a href="#none">
+								<div class="univ_nation">
+									<img class="univ_main_img" src="/static/img/main/univ_main_usa.png">
+								</div>
+							</a>
+							<a href="#none">
+								<div class="univ_nation">
+									<img class="univ_main_img" src="/static/img/main/univ_main_uk.png">
+								</div>
+							</a>
+							<a href="#none">
+								<div class="univ_nation">
+									<img class="univ_main_img" src="/static/img/main/univ_main_ca.png">
+								</div>
+							</a>
 						 </div>
 					</div>
 				</section>
@@ -64,14 +70,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<?php elseif($tab == '7'): ?>
 				<?php elseif($tab == '8'): ?>
 				<?php endif; ?>
+
 				<!-- mainProgram -->
 				<section class="main_sect" id="mainProgram">
 					<div class="inner">
 
 						<div class="program-swiper">
+							<?php if($tab == '1') : ?> <!-- 최초 메인 -->
 							<div class="swiper-container">
 								<div class="swiper-wrapper">
-									<?php if($tab == '1') : ?> <!-- 최초 메인 -->
 										<div class="swiper-slide">
 											<div class="program_title">어학연수</div>
 											<ul class="program_list">
@@ -108,16 +115,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</ul>
 											<a href="#" class="box"></a>
 										</div>
-									<?php elseif($tab == '5'): ?> <!-- 해외대학유학 메인 -->
-									<?php elseif($tab == '6'): ?> <!-- 조기유학 메인 -->
-									<?php elseif($tab == '7'): ?> <!-- 어학연수 메인 -->
-									<?php elseif($tab == '8'): ?> <!-- 가족연수/캠프/스쿨링 메인 -->
-									<?php endif; ?>
-
 								</div><!-- // swiper-wrapper -->
 							</div><!-- // swiper-container -->
 							<div class="swiper-button-prev"></div>
 							<div class="swiper-button-next"></div>
+							<?php elseif($tab == '5'): ?> <!-- 해외대학유학 메인 -->
+							<?php elseif($tab == '6'): ?> <!-- 조기유학 메인 -->
+							<?php elseif($tab == '7'): ?> <!-- 어학연수 메인 -->
+							<?php elseif($tab == '8'): ?> <!-- 가족연수/캠프/스쿨링 메인 -->
+							<?php endif; ?>
 						</div><!-- // program-swiper -->
 
 					</div><!-- // inner -->
