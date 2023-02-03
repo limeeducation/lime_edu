@@ -118,6 +118,7 @@
 
 @media all and (max-width:1280px){
 	.main_sect .inner{padding-left:4rem;padding-right:4rem;}
+	.main_sect .big_inner{padding-left:4rem;padding-right:4rem;}
 	.sect_text{margin-bottom:6.4rem;}
 }
 @media all and (max-width:720px){
@@ -135,6 +136,7 @@
 
 @media all and (max-width:1200px){
 	#mainEvent .inner{width:100%;}
+	#mainEvent .big_inner{width:100%;}
 }
 @media all and (max-width:720px){
 	#mainEvent{margin-bottom:5rem;}
