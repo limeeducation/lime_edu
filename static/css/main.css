@@ -253,7 +253,7 @@
 @media all and (max-width:480px){
 
 }
-
+#mainUniv .inner{width:1100px;}
 .univ_main_sect{display:flex;}
 
 .univ_nation{width:fit-content;margin:0 1rem;}

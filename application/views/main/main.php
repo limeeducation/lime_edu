@@ -45,24 +45,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<!-- // 상단 고정배너 -->
 				<!--  5: 해외대학 유학 / 6: 조기유학 / 7: 어학연수 / 8: 가족연수/캠프/스쿨링 -->
 				<?php if($tab == '5'): ?>
-				<section class="main_sect" id="mainProgram">
+				<section class="main_sect" id="mainUniv">
 					<div class="inner">
 						 <div class="univ_main_sect">
-						 	<a href="#none">
-								<div class="univ_nation">
+							<div class="univ_nation">
+								<a href="#none">
 									<img class="univ_main_img" src="/static/img/main/univ_main_usa.png">
-								</div>
-							</a>
-							<a href="#none">
-								<div class="univ_nation">
+								</a>
+							</div>
+							<div class="univ_nation">
+								<a href="#none">
 									<img class="univ_main_img" src="/static/img/main/univ_main_uk.png">
-								</div>
-							</a>
-							<a href="#none">
-								<div class="univ_nation">
+								</a>
+							</div>
+							<div class="univ_nation">
+								<a href="#none">
 									<img class="univ_main_img" src="/static/img/main/univ_main_ca.png">
-								</div>
-							</a>
+								</a>
+							</div>
 						 </div>
 					</div>
 				</section>
