@@ -6,9 +6,10 @@
 
 #visual{}
 #visual > .inner{width:100%;padding:2.3rem 0;}
-
+#visual > .big_inner{width:100%;padding:2.3rem 0;}
 @media all and (max-width:720px){
 	#visual > .inner{padding:3rem 0;}
+	#visual > .big_inner{padding:3rem 0;}
 }
 
 .slider-rotate {position:relative;margin:0 auto}
