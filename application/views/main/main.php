@@ -49,13 +49,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<div class="inner">
 						 <div class="univ_main_sect">
 							<div class="univ_nation">
-								<img src="/static/img/main/univ_main_usa.png">
+								<img class="univ_main_img" src="/static/img/main/univ_main_usa.png">
 							</div>
 							<div class="univ_nation">
-								<img src="/static/img/main/univ_main_uk.png">
+								<img class="univ_main_img" src="/static/img/main/univ_main_uk.png">
 							</div>
 							<div class="univ_nation">
-								<img src="/static/img/main/univ_main_ca.png">
+								<img class="univ_main_img" src="/static/img/main/univ_main_ca.png">
 							</div>
 						 </div>
 					</div>

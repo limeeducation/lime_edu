@@ -254,4 +254,8 @@
 
 }
 
+.univ_main_sect{display:flex;}
 
+.univ_nation{width:fit-content;margin:0 1rem;}
+
+.univ_main_img{max-width:325px;}
