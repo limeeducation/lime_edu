@@ -43,7 +43,27 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div><!-- // inner -->
 				</section>
 				<!-- // 상단 고정배너 -->
-
+				<!--  5: 해외대학 유학 / 6: 조기유학 / 7: 어학연수 / 8: 가족연수/캠프/스쿨링 -->
+				<?php if($tab == '5'): ?>
+				<section class="main_sect" id="mainProgram">
+					<div class="inner">
+						 <div class="univ_main_sect">
+							<div class="univ_nation">
+								<img src="/static/img/main/univ_main_usa.png">
+							</div>
+							<div class="univ_nation">
+								<img src="/static/img/main/univ_main_uk.png">
+							</div>
+							<div class="univ_nation">
+								<img src="/static/img/main/univ_main_ca.png">
+							</div>
+						 </div>
+					</div>
+				</section>
+				<?php elseif($tab == '6'): ?>
+				<?php elseif($tab == '7'): ?>
+				<?php elseif($tab == '8'): ?>
+				<?php endif; ?>
 				<!-- mainProgram -->
 				<section class="main_sect" id="mainProgram">
 					<div class="inner">
