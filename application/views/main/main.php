@@ -35,8 +35,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<?php if($tab == '1') : ?>
 						<div class="sect_image"><img src="/static/img/main/event_image1@2x.png" alt=""></div>
 						<?php elseif($tab == '5'): ?>
+						<div class="sect_image"><img src="/static/img/main/event_image1@2x.png" alt=""></div>
 						<?php elseif($tab == '6'): ?>
+						<div class="sect_image"><img src="/static/img/main/event_image1@2x.png" alt=""></div>
 						<?php elseif($tab == '7'): ?>
+						<div class="sect_image"><img src="/static/img/main/event_image1@2x.png" alt=""></div>
 						<?php elseif($tab == '8'): ?>
 						<?php endif; ?>
 					</div><!-- // inner -->
