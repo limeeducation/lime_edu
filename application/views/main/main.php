@@ -53,7 +53,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				</section>
 				<!-- // 상단 고정배너 -->
 				<!--  5: 해외대학 유학 / 6: 조기유학 / 7: 어학연수 / 8: 가족연수/캠프/스쿨링 -->
-				<?php if($tab == '5'): ?>
+				<?php if($tab == '5' || $tab == '6' ): ?>
 				<section class="main_sect" id="mainUniv">
 					<div class="inner">
 						 <div class="univ_main_sect">
@@ -75,7 +75,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						 </div>
 					</div>
 				</section>
-				<?php elseif($tab == '6'): ?>
 				<?php elseif($tab == '7'): ?>
 				<?php elseif($tab == '8'): ?>
 				<?php endif; ?>
