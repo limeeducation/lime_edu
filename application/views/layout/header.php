@@ -121,7 +121,7 @@
 
 		<nav class="header_nav">
 			<ul id="gnb">
-				<li class="item item1"><a href="/main/new_main?tab=2">해외대학 유학</a>
+				<li class="item item1"><a href="/main/new_main?tab=5">해외대학 유학</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -160,7 +160,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="item item2"><a href="/main/new_main?tab=3">조기유학</a>
+				<li class="item item2"><a href="/main/new_main?tab=6">조기유학</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -190,7 +190,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="item item3"><a href="/main/new_main?tab=4">어학연수</a>
+				<li class="item item3"><a href="/main/new_main?tab=7">어학연수</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -210,7 +210,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="item item4"><a href="/main/new_main?tab=5">가족연수/캠프/스쿨링</a>
+				<li class="item item4"><a href="/main/new_main?tab=8">가족연수/캠프/스쿨링</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
