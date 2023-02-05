@@ -59,6 +59,7 @@ class Admin_prod_model extends CI_Model
 		$this->db->select('banr_link_url');
 		$this->db->select('banr_use_yn');
 		$this->db->select('banr_tab');
+		$this->db->select('banr_tab_2');
 		$this->db->from('banner');
 		$this->db->where('banr_type', $type);
 		$this->db->where('banr_tab', $tab);
@@ -69,6 +70,7 @@ class Admin_prod_model extends CI_Model
 	public function getBannerDetail($idx){
 		$this->db->select('banr_idx');
 		$this->db->select('banr_tab');
+		$this->db->select('banr_tab_2');
 		$this->db->select('banr_img');
 		$this->db->select('banr_link_url');
 		$this->db->select('banr_use_yn');
