@@ -101,6 +101,7 @@
 				var banr_chk_yn = "";
 				var img_rec_size = "";
 				var img_div = "";
+				var nation = "";
 				if(type == 'event'){
 					img_rec_size = "1100px X 480px";
 					img_div = "<div class='mb-3 pt-1 col-xl-5' style='height: 270px;'>";
@@ -111,6 +112,15 @@
 
 				if(data.length > 0){
 					for(var i=0; i<data.length; i++){
+					    if(data[i].banr_tab_2 == "1"){
+					        nation = "미국";
+					    }else if(data[i].banr_tab_2 == "2"){
+                            nation = "영국";
+                        }else if(data[i].banr_tab_2 == "3"){
+                            nation = "캐나다";
+                        }else if(data[i].banr_tab_2 == "4"){
+                            nation = "필리핀";
+                        }
 						banr_chk_yn =  data[i].banr_use_yn == "Y" ? "checked" : "";
 						list_html += "<li class='banner'>";
 						list_html += "	<input type='hidden' id='banr"+data[i].banr_idx+"' class='seq'>";
@@ -127,6 +137,10 @@
 						list_html += "			<div class='mb-3 col-xl-6 mx-3'>";
 						list_html += "				<label for='banr_img_"+i+"' class='form-label'>이미지 URL</label>";
 						list_html += "				<input type='text' class='form-control' id='banr_img_"+i+"' name='img_url_"+i+"' value='"+data[i].banr_img+"' readonly>";
+						if(type == "normal" && nation != ""){
+						    list_html += "				<label for='banr_img_"+i+"' class='form-label'>국가 종류</label>";
+						    list_html += "				<input type='text' class='form-control' id='banr_img_"+i+"' name='img_url_"+i+"' value='"+nation+"' readonly>";
+						}
 						list_html += "				<label for='banr_link_url_"+i+"' class='form-label mt-3'>연결 URL</label>";
 						list_html += "				<input type='text' class='form-control' id='banr_link_url_"+i+"' name='banr_link_url_"+i+"' value='"+data[i].banr_link_url+"' readonly>";
 						list_html += "				<div class='form-check form-switch mt-3'>";
