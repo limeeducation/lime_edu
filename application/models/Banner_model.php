@@ -9,6 +9,7 @@ class Banner_model extends CI_Model
 	}
 	public function getBanner($tab, $type){
 		$this->db->select('banr_seq');
+		$this->db->select('banr_tab_2');
 		$this->db->select('banr_img');
 		$this->db->select('banr_link_url');
 		$this->db->from('banner');
