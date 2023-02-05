@@ -57,6 +57,10 @@ class Main extends CI_Controller {
 			$data['column_list'] = $column_list;
 		}else{
 			$normal_banner_list = get_banner($tab, "normal");
+			$us_banner_list = array();
+			$uk_banner_list = array();
+			$ca_banner_list = array();
+			$phil_banner_list = array();
 			if(in_array($tab,array('6','7','8'))){
 			    foreach($normal_banner_list as $normal_banner){
                     $tab_2 = $normal_banner->banr_tab_2;
