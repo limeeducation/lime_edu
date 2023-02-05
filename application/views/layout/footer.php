@@ -2,7 +2,7 @@
 			<div class="inner">
 
 				<div class="footer_info">
-					<dl class="footer_data" style="width:25%;">
+					<dl class="footer_data">
 						<dt>본사</dt>
 						<dt>서울 강남센터</dt>
 						<dd>
@@ -10,7 +10,7 @@
 							<p class="addr">서울시 강남구 강남대로 310 유니온센터 1204호</p>
 						</dd>
 					</dl>
-					<dl class="footer_data" style="width:37.5%;">
+					<dl class="footer_data">
 						<dt>국내 직영센터</dt>
 						<dd>
 							<p class="tel">대표번호 1688-0897</p>
@@ -24,7 +24,7 @@
 							<p class="addr">부산시 진구 동천로 109 삼한골든게이트 빌딩 9층 966호</p>
 						</dd>
 					</dl>
-					<dl class="footer_data" style="width:37.5%;">
+					<dl class="footer_data">
 						<dt>해외 직영센터</dt>
 						<dd>
 							<p class="tel">대표번호 +1 647-427-2006</p>
