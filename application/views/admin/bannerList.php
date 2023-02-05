@@ -120,6 +120,8 @@
                             nation = "캐나다";
                         }else if(data[i].banr_tab_2 == "4"){
                             nation = "필리핀";
+                        }else{
+                            nation = "국가 선택이 필요합니다.";
                         }
 						banr_chk_yn =  data[i].banr_use_yn == "Y" ? "checked" : "";
 						list_html += "<li class='banner'>";
