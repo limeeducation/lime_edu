@@ -67,6 +67,7 @@ class AdminProd extends CI_Controller {
 		$data['banr_type'] = $this->input->post('banr_type');
 		//1: 메인 - 어학연수 / 2: 메인 - 초중고 유학 / 3: 메인 - 대학유학 / 4: 메인 - 컬리지 유학 후 이민/자녀무상 / 5: 해외대학 유학 / 6: 조기유학 / 7: 어학연수 / 8: 가족연수/캠프/스쿨링
 		$data['banr_tab'] = $this->input->post('banr_tab');
+		$data['banr_tab_2'] = $this->input->post('banr_tab_2');
 		$data['banr_img'] = $this->input->post('banr_img');
 		$data['banr_link_url'] = $this->input->post('banr_link_url');
 		$data['banr_use_yn'] = $this->input->post('banr_use_yn') == 'on' ? 'Y' : 'N';

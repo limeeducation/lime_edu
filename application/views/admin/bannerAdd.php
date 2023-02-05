@@ -17,6 +17,7 @@
 	$(document).ready(function(){
 		if('<?= $do_func;?>' == 'edit'){
 			$('#banrTab').val("<?= empty($detail['banr_tab']) ? '' : $detail['banr_tab'];?>").prop("selected",true);
+			$('#banrTab2').val("<?= empty($detail['banr_tab_2']) ? '' : $detail['banr_tab_2'];?>").prop("selected",true);
 			$("#banrImg").val("<?= empty($detail['banr_img']) ? '' : $detail['banr_img'];?>");
 			$("#banrLinkUrl").val("<?= empty($detail['banr_link_url']) ? '' : $detail['banr_link_url'];?>");
 			if("<?= empty($detail['banr_use_yn']) ? 'Y' : $detail['banr_use_yn'];?>" == 'N'){
@@ -24,6 +25,15 @@
 			}
 		}
 	});
+
+	function changeTab2List(){
+	    var tab1Val = $("select[name=banr_tab]").val();
+	    if(tab1Val == '5' || tab1Val == '6' || tab1Val == '7' || tab1Val == '8'){
+	        $("#tab2SelDiv").show();
+	    }else{
+	        $("#tab2SelDiv").hide();
+	    }
+	}
 </script>
 <body>
     <div class="container-fluid position-relative d-flex p-0">
@@ -53,7 +63,7 @@
 						<?php endif;?>
 						<?php if($type == "normal") :?>
 							<div class="form-floating mb-3">
-								<select class="form-select" id="banrTab" name="banr_tab">
+								<select class="form-select" id="banrTab" name="banr_tab" onchange="changeTab2List()">
 									<option value="">탭 선택</option>
 									<option value="1">메인 - 어학연수</option>
 									<option value="2">메인 - 초중고 유학</option>
@@ -66,6 +76,17 @@
 								</select>
 								<label for="banrTab" class="form-label">배너 탭</label>
 							</div>
+							<div class="form-floating mb-3" style="display:hidden;" id="tab2SelDiv">
+							    <!-- 1:미국/2:영국/3:캐나다/4:필리핀 -->
+                            	<select class="form-select" id="banrTab2" name="banr_tab_2">
+                            		<option value="">탭 선택</option>
+                            		<option value="1">미국</option>
+                            		<option value="2">영국</option>
+                            		<option value="3">캐나다</option>
+                            		<option value="4">필리핀</option>
+                            	</select>
+                            	<label for="banrTab" class="form-label">배너 탭</label>
+                            </div>
 						<?php else : ?>
 							<div class="form-floating mb-3" style="display:hidden;">
 								<select class="form-select" id="banrTab" name="banr_tab">
