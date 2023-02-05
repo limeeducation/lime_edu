@@ -3,6 +3,16 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 //include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
 <body>
+    <script type="text/javascript">
+        function change_nation(tab,nation){
+            if(tab == "5"){
+
+            }else{
+                $(".banr_lists").hide();
+                $("#banr_list_"+nation).show();
+            }
+        }
+    </script>
 	<div id="wrap">
 	<?php
     include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header.php');
@@ -58,17 +68,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<div class="inner">
 						 <div class="univ_main_sect">
 							<div class="univ_nation">
-								<a href="#none">
+								<a href="javascript:change_nation('<?= $tab;?>','us');">
 									<img class="univ_main_img" src="/static/img/main/univ_main_usa.png">
 								</a>
 							</div>
 							<div class="univ_nation">
-								<a href="#none">
+								<a href="javascript:change_nation('<?= $tab;?>','uk');">
 									<img class="univ_main_img" src="/static/img/main/univ_main_uk.png">
 								</a>
 							</div>
 							<div class="univ_nation">
-								<a href="#none">
+								<a href="javascript:change_nation('<?= $tab;?>','ca');">
 									<img class="univ_main_img" src="/static/img/main/univ_main_ca.png">
 								</a>
 							</div>
@@ -129,6 +139,35 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="swiper-button-next"></div>
 							<?php elseif($tab == '5'): ?> <!-- 해외대학유학 메인 -->
 							<?php elseif($tab == '6'): ?> <!-- 조기유학 메인 -->
+							<div class="swiper-container">
+                            	<div class="swiper-wrapper">
+                            		<div class="swiper-slide">
+                            			<div class="program_title">추천상품</div>
+                            			<ul class="program_list banr_lists" id="banr_list_us">
+                            				<? foreach($us_banner_list as $us_banner): ?>
+                            					<li><a href="#"><div class="thumb"><img src="<?= $us_banner->banr_img;?>" alt=""></div></a></li>
+                            				<? endforeach; ?>
+                            			</ul>
+                            			<ul class="program_list banr_lists" id="banr_list_uk" style="display:none;">
+                                        	<? foreach($uk_banner_list as $uk_banner): ?>
+                                        		<li><a href="#"><div class="thumb"><img src="<?= $uk_banner->banr_img;?>" alt=""></div></a></li>
+                                        	<? endforeach; ?>
+                                        </ul>
+                            			<ul class="program_list banr_lists" id="banr_list_ca"style="display:none;">
+                                        	<? foreach($ca_banner_list as $ca_banner): ?>
+                                        		<li><a href="#"><div class="thumb"><img src="<?= $ca_banner->banr_img;?>" alt=""></div></a></li>
+                                        	<? endforeach; ?>
+                                        </ul>
+                            			<ul class="program_list banr_lists" id="banr_list_phil"style="display:none;">
+                                        	<? foreach($phil_banner_list as $phil_banner): ?>
+                                        		<li><a href="#"><div class="thumb"><img src="<?= $phil_banner->banr_img;?>" alt=""></div></a></li>
+                                        	<? endforeach; ?>
+                                        </ul>
+                            			<a href="#" class="box"></a>
+                            		</div>
+                            	</div><!-- // swiper-wrapper -->
+                            </div><!-- // swiper-container -->
+
 							<?php elseif($tab == '7'): ?> <!-- 어학연수 메인 -->
 							<?php elseif($tab == '8'): ?> <!-- 가족연수/캠프/스쿨링 메인 -->
 							<?php endif; ?>
