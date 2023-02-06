@@ -240,7 +240,7 @@
 		</nav><!-- // header_nav -->
 
 		<ul class="header_btns">
-			<li class="facebook"><a href="https://www.instagram.com/limeedu/?igshid=YmMyMTA2M2Y%3D" target="_blank">인스타그램</a></li>
+			<li class="instagram"><a href="https://www.instagram.com/limeedu/?igshid=YmMyMTA2M2Y%3D" target="_blank">인스타그램</a></li>
 			<li class="blog"><a href="https://blog.naver.com/mylimeeducation" target="_blank">블로그</a></li>
 			<li class="blog"><a href="https://blog.naver.com/PostList.naver?blogId=thelimeinc" target="_blank">블로그</a></li>
 		</ul><!-- // header_btns -->
