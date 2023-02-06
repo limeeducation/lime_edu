@@ -18,10 +18,10 @@
 		<li class="email">hm.lee@mylimeedu.com</li>
 		<li class="tel">02-2135-7699</li>
 	</ul>
+</div>
 	<?php
 		include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/consult_popup.php');
 	?>
-</div>
 <script>
   window.kakaoAsyncInit = function() {
     Kakao.Channel.createChatButton({container: '#kakao-talk-channel-chat-button', });
