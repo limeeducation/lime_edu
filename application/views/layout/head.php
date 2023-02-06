@@ -23,7 +23,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script src="/static/js/swiper.js"></script>
 	<script src="/static/js/common.js"></script>
 	<script src="/static/js/main.js"></script>
-	<link rel="stylesheet" type="text/css" href="/static/css/consultPopup/sangdam-yeyag-pabeob.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/consultPopup/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/consultPopup/globals.css" />
+
 </head>
