@@ -1,0 +1,59 @@
+:root { 
+  --abbey: #4e4e4e;
+  --black: #000000;
+  --de-york: #76cf84;
+  --gunsmoke: #868686;
+  --quill-gray: #d5d5d5;
+  --white: #ffffff;
+ 
+  --font-size-l: 24px;
+  --font-size-m: 20px;
+  --font-size-s: 16px;
+  --font-size-xs: 15px;
+  --font-size-xxs: 14px;
+  --font-size-xxxs: 13px;
+  --font-size-xxxxs: 12px;
+ 
+  --font-family-spoqa_han_sans_neo-bold: "Spoqa Han Sans Neo-Bold", Helvetica;
+  --font-family-spoqa_han_sans_neo-medium: "Spoqa Han Sans Neo-Medium", Helvetica;
+  --font-family-spoqa_han_sans_neo-regular: "Spoqa Han Sans Neo-Regular", Helvetica;
+}
+.spoqahansansneo-medium-abbey-20px {
+  color: var(--abbey);
+  font-family: var(--font-family-spoqa_han_sans_neo-medium);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.spoqahansansneo-medium-gunsmoke-20px {
+  color: var(--gunsmoke);
+  font-family: var(--font-family-spoqa_han_sans_neo-medium);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.spoqahansansneo-bold-abbey-24px {
+  color: var(--abbey);
+  font-family: var(--font-family-spoqa_han_sans_neo-bold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.spoqahansansneo-medium-abbey-15px {
+  color: var(--abbey);
+  font-family: var(--font-family-spoqa_han_sans_neo-medium);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.spoqahansansneo-medium-gunsmoke-12px {
+  color: var(--gunsmoke);
+  font-family: var(--font-family-spoqa_han_sans_neo-medium);
+  font-size: var(--font-size-xxxxs);
+  font-style: normal;
+  font-weight: 500;
+}

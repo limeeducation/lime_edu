@@ -1,6 +1,5 @@
 		<footer id="footer">
 			<div class="inner">
-
 				<div class="footer_info">
 					<dl class="footer_data">
 						<dt>본사</dt>
@@ -38,7 +37,6 @@
 					</dl>
 				</div>
 				<div class="footer_copy">© 2022 Copyright: mylimeedu.com</div>
-
 			</div><!-- // inner -->
 		</footer>
 

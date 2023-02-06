@@ -3,7 +3,7 @@
 <div class="quick_nav">
 	<div class="quick_title">유학 관련 궁금한 점은 부담없이 문의하세요!</div>
 	<ul class="quick_list">
-		<li class="cal"><a href="javascript:on_construct();">상담 예약</a></li>
+		<li class="cal"><a href="javascript:showConsult();">상담 예약</a></li>
 		<div id="kakao-talk-channel-chat-button" data-channel-public-id="_mnYdxj" data-title="consult" data-size="large" data-color="yellow" data-shape="mobile" data-support-multiple-densities="true" style="margin-top:1.2rem;"></div>
 	</ul>
 	<ul class="quick_time">
@@ -18,7 +18,9 @@
 		<li class="email">hm.lee@mylimeedu.com</li>
 		<li class="tel">02-2135-7699</li>
 	</ul>
-
+	<?php
+		include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/consult_popup.php');
+	?>
 </div>
 <script>
   window.kakaoAsyncInit = function() {
@@ -34,5 +36,9 @@
     js.crossOrigin = 'anonymous';
     fjs.parentNode.insertBefore(js, fjs);
   })(document, 'script', 'kakao-js-sdk');
+
+  function showConsult(){
+  	$(".sangdam-yeyag-pabeob").show();
+  }
 </script>
 <!-- // quick_nav -->
