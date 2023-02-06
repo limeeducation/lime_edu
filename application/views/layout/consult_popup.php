@@ -1,6 +1,6 @@
 
 <!-- quick_nav -->
-<div class="sangdam-yeyag-pabeob screen" style="z-index:10000; display=none;">
+<div class="sangdam-yeyag-pabeob screen" style="z-index:10000; display:none;">
 	<script type="text/javascript">
 	  $(document).ready(function(){
 		showHideAgree('hide');
