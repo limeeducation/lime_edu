@@ -31,7 +31,7 @@ class AdminStudent extends CI_Controller {
 	}
 
 	//신규 학생 등록페이지
-	public function editStudent($idx){
+	public function editStudent($idx = null){
 		if(!is_user_logged_in()){
 			$msg = "로그인이 필요한 페이지입니다.";
 			script_alert_go($msg, '/admin');
