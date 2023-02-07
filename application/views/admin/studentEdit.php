@@ -6,7 +6,7 @@
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
 <script>
 	$(function(){
-		$("#student_save").bind('click',function(){
+		$("#btn_student_save").bind('click',function(){
 			if('' == $('#conName').val()) alert('이름을 입력해주세요.');
 			else if('' == $('#conContact').val()) alert('연락처를 입력해주세요.');
 			else if('' == $('#conManager').val()) alert('담당자를 배정해주세요.');
