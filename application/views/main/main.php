@@ -11,7 +11,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $(".banr_lists").hide();
                 $("#banr_list_"+nation).show();
             }else if(tab == "7"){
-
+				$(".natio_btn_area").hide();
+				$("#banr_list_"+nation).show();
+				$("#btn_"+nation+"_area").show();
             }
         }
     </script>
@@ -115,6 +117,98 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						 </div>
 					</div>
 				</section>
+				<section class="main_sect" id="mainUniv">
+					<div class="inner">
+						 <div class="univ_main_sect">
+							<div class="eng_nation">
+								<a href="javascript:change_nation('<?= $tab;?>','us');">
+									<img class="eng_main_img" src="/static/img/main/btn_main_eng_usa.png">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:change_nation('<?= $tab;?>','uk');">
+									<img class="eng_main_img" src="/static/img/main/btn_main_eng_uk.png">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:change_nation('<?= $tab;?>','ca');">
+									<img class="eng_main_img" src="/static/img/main/btn_main_eng_ca.png">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:change_nation('<?= $tab;?>','phil');">
+									<img class="eng_main_img" src="/static/img/main/btn_main_eng_phi.png">
+								</a>
+							</div>
+						 </div>
+						 <div class="univ_main_sect natio_btn_area" id="btn_us_area">
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_boston.png" id="btn_boston">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_newyork.png" id="btn_newyork">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_sandiego.png" id="btn_sandiego">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_sanfrancisco.png" id="btn_sanfrancisco">
+								</a>
+							</div>
+						 </div>
+						 <div class="univ_main_sect natio_btn_area" id="btn_uk_area" style="display:none;">
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_brighton.png" id="btn_brighton">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_cambridge.png" id="btn_cambridge">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_london.png" id="btn_london">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_manchester.png" id="btn_manchester">
+								</a>
+							</div>
+						 </div>
+						 <div class="univ_main_sect natio_btn_area" id="btn_ca_area" style="display:none;">
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_calgary.png" id="btn_calgary">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_montreal.png" id="btn_montreal">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_toronto.png" id="btn_toronto">
+								</a>
+							</div>
+							<div class="eng_nation">
+								<a href="javascript:;">
+									<img class="eng_main_img" src="/static/img/main/btn_vancouver.png" id="btn_vancouver">
+								</a>
+							</div>
+						 </div>
+					</div>
+				</section>
 				<?php elseif($tab == '8'): ?>
 				<?php endif; ?>
 
@@ -167,7 +261,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="swiper-button-prev"></div>
 							<div class="swiper-button-next"></div>
 							<?php elseif($tab == '5'): ?> <!-- 해외대학유학 메인 -->
-							<?php elseif($tab == '6'): ?> <!-- 조기유학 메인 -->
+							<?php elseif($tab == '6' || $tab == '7'): ?> <!-- 조기유학 메인 / 어학연수 메인 -->
 							<div class="swiper-container">
                             	<div class="swiper-wrapper">
                             		<div class="swiper-slide">
@@ -196,8 +290,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                             		</div>
                             	</div><!-- // swiper-wrapper -->
                             </div><!-- // swiper-container -->
-
-							<?php elseif($tab == '7'): ?> <!-- 어학연수 메인 -->
 							<?php elseif($tab == '8'): ?> <!-- 가족연수/캠프/스쿨링 메인 -->
 							<?php endif; ?>
 						</div><!-- // program-swiper -->

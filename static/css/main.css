@@ -266,8 +266,6 @@
 .univ_main_img{max-width:325px;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);border-radius:5%/3%;box-sizing: border-box;}
 .univ_main_img:hover{opacity:1;border:0.7rem solid #76CF84;}
 .eng_main_img{max-width:250px;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);border-radius:5%/3%;box-sizing: border-box;}
-/*.eng_nation:hover{box-shadow: 0 0 0 0.7rem #76CF84 inset;border-radius:5%/3%;z-index:100;}*/
-
-.eng_nation{cursor:pointer;position:relative;display:block;border-radius:1rem;background:#FFFFFF;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);}
+ .eng_nation{cursor:pointer;position:relative;display:block;border-radius:1rem;background:#FFFFFF;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);}
 .eng_nation:after{display:block;clear:both;content:'';position:absolute;top:0;left:0;bottom:0;right:0;border-radius:1rem;border:0.7rem solid #76CF84;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;opacity:0;}
 .eng_nation:hover::after{opacity:1;}
