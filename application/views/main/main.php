@@ -17,12 +17,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#banr_list_"+nation).show();
             }
         }
-        $(".eng_city_btn").find('img').hover(function(){
+        $(".eng_city_btn").hover(function(){
         	console.log("on");
-        	$(this).attr("src", $(this).attr("src").replace(".png", "_after.png"));
+        	$(this).attr("src", $(this).find('img').attr("src").replace(".png", "_after.png"));
         }, function(){
         	console.log("off");
-        	$(this).attr("src", $(this).attr("src").replace("_after.png", ".png"));
+        	$(this).attr("src", $(this).find('img').attr("src").replace("_after.png", ".png"));
         });
     </script>
 	<div id="wrap">
