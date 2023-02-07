@@ -25,7 +25,7 @@
 				<div class="bg-secondary text-center rounded p-4">
 					<div class="d-flex align-items-center justify-content-between mb-4">
 						<h6 class="mb-0">상담 신청 학생</h6>
-						<a href="/adminStudent/addStudent" >등록하기</a>
+						<a href="/adminStudent/editStudent" >등록하기</a>
 					</div>
 					<div class="table-responsive">
 						<table class="table text-start align-middle table-hover mb-0">
