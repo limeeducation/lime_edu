@@ -257,6 +257,7 @@
 @media all and (max-width:480px){
 
 }
+#mainUniv{margin-bottom:8.88rem;}
 #mainUniv .inner{width:1100px;}
 .univ_main_sect{display:flex;justify-content:center;}
 
