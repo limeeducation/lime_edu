@@ -119,69 +119,45 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<section class="main_sect" id="mainUniv">
 					<div class="inner">
 						 <div class="univ_main_sect natio_btn_area" id="btn_us_area">
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_boston.png" id="btn_boston">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_boston.png" id="btn_boston">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_newyork.png" id="btn_newyork">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_newyork.png" id="btn_newyork">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_sandiego.png" id="btn_sandiego">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_sandiego.png" id="btn_sandiego">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_sanfrancisco.png" id="btn_sanfrancisco">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_sanfrancisco.png" id="btn_sanfrancisco">
 							</div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_uk_area" style="display:none;">
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_brighton.png" id="btn_brighton">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_brighton.png" id="btn_brighton">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_cambridge.png" id="btn_cambridge">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_cambridge.png" id="btn_cambridge">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_london.png" id="btn_london">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_london.png" id="btn_london">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_manchester.png" id="btn_manchester">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_manchester.png" id="btn_manchester">
 							</div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_ca_area" style="display:none;">
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_calgary.png" id="btn_calgary">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_calgary.png" id="btn_calgary">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_montreal.png" id="btn_montreal">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_montreal.png" id="btn_montreal">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_toronto.png" id="btn_toronto">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_toronto.png" id="btn_toronto">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/button/btn_vancouver.png" id="btn_vancouver">
-								</a>
+							<div class="eng_city_btn">
+								<img src="/static/img/button/btn_vancouver.png" id="btn_vancouver">
 							</div>
 						 </div>
 					</div>
