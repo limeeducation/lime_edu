@@ -18,7 +18,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
             }
         }
 
-        $('natio_btn_area').each(function() {
+        $('.natio_btn_area').each(function() {
 
 			var nowImg = $(this).find('img');  //호버한 부분의 img파일 찾기
 			console.log(nowImg);
