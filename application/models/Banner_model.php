@@ -18,9 +18,6 @@ class Banner_model extends CI_Model
 		$this->db->where('banr_tab', $tab);
 		$this->db->where('banr_use_yn', 'Y');
 		$this->db->order_by('banr_seq', 'ASC');
-		if($tab == "6" || $tab == "7"){
-			$this->db->limit(3);
-		}
 		return $this->db->get()->result();
 	}
 

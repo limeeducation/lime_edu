@@ -226,9 +226,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="swiper-button-next"></div>
 							<?php elseif($tab == '5'): ?> <!-- 해외대학유학 메인 -->
 							<?php elseif($tab == '6' || $tab == '7'): ?> <!-- 조기유학 메인 / 어학연수 메인 -->
-							<?php
-								print_r($phil_banner_list);
-							?>
 							<div class="swiper-container">
                             	<div class="swiper-wrapper">
                             		<div class="swiper-slide">
