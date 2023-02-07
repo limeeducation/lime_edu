@@ -7,9 +7,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         function change_nation(tab,nation){
             if(tab == "5"){
 
-            }else{
+            }else if(tab == "6"){
                 $(".banr_lists").hide();
                 $("#banr_list_"+nation).show();
+            }else if(tab == "7"){
+
             }
         }
     </script>
@@ -86,6 +88,32 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div>
 				</section>
 				<?php elseif($tab == '7'): ?>
+				<section class="main_sect" id="mainUniv">
+					<div class="inner">
+						 <div class="univ_main_sect">
+							<div class="univ_nation">
+								<a href="javascript:change_nation('<?= $tab;?>','us');">
+									<img class="univ_main_img" src="/static/img/main/btn_main_eng_usa.png">
+								</a>
+							</div>
+							<div class="univ_nation">
+								<a href="javascript:change_nation('<?= $tab;?>','uk');">
+									<img class="univ_main_img" src="/static/img/main/btn_main_eng_uk.png">
+								</a>
+							</div>
+							<div class="univ_nation">
+								<a href="javascript:change_nation('<?= $tab;?>','ca');">
+									<img class="univ_main_img" src="/static/img/main/btn_main_eng_ca.png">
+								</a>
+							</div>
+							<div class="univ_nation">
+								<a href="javascript:change_nation('<?= $tab;?>','phil');">
+									<img class="univ_main_img" src="/static/img/main/btn_main_eng_phi.png">
+								</a>
+							</div>
+						 </div>
+					</div>
+				</section>
 				<?php elseif($tab == '8'): ?>
 				<?php endif; ?>
 
