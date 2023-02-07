@@ -119,28 +119,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				</section>
 				<section class="main_sect" id="mainUniv">
 					<div class="inner">
-						 <div class="univ_main_sect">
-							<div class="eng_nation">
-								<a href="javascript:change_nation('<?= $tab;?>','us');">
-									<img class="eng_main_img" src="/static/img/main/btn_main_eng_usa.png">
-								</a>
-							</div>
-							<div class="eng_nation">
-								<a href="javascript:change_nation('<?= $tab;?>','uk');">
-									<img class="eng_main_img" src="/static/img/main/btn_main_eng_uk.png">
-								</a>
-							</div>
-							<div class="eng_nation">
-								<a href="javascript:change_nation('<?= $tab;?>','ca');">
-									<img class="eng_main_img" src="/static/img/main/btn_main_eng_ca.png">
-								</a>
-							</div>
-							<div class="eng_nation">
-								<a href="javascript:change_nation('<?= $tab;?>','phil');">
-									<img class="eng_main_img" src="/static/img/main/btn_main_eng_phi.png">
-								</a>
-							</div>
-						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_us_area">
 							<div class="eng_nation">
 								<a href="javascript:;">
