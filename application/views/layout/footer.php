@@ -37,10 +37,7 @@
 					</dl>
 				</div>
 				<div class="footer_copy">© 2022 Copyright: mylimeedu.com</div>
-			</div><!-- // inner
-			<!-- <link rel="stylesheet" type="text/css" href="/static/css/consultPopup/sangdam-yeyag-pabeob.css" />
-            <link rel="stylesheet" type="text/css" href="/static/css/consultPopup/styleguide.css" />
-            <link rel="stylesheet" type="text/css" href="/static/css/consultPopup/globals.css" /> -->
+			</div><!-- // inner -->
 		</footer>
 
 
