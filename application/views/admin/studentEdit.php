@@ -7,7 +7,7 @@
 <script>
 	$(function(){
 		$("#student_save").bind('click',function(){
-			else if('' == $('#conName').val()) alert('이름을 입력해주세요.');
+			if('' == $('#conName').val()) alert('이름을 입력해주세요.');
 			else if('' == $('#conContact').val()) alert('연락처를 입력해주세요.');
 			else if('' == $('#conManager').val()) alert('담당자를 배정해주세요.');
 			else{
