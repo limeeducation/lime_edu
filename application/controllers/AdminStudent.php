@@ -23,8 +23,10 @@ class AdminStudent extends CI_Controller {
 		}
 		//학생 리스트 호출
 		$studentList = $this->admin_student_model->gatStudentList();
+		$applicantsCnt = $this->admin_model->getSimpleStudents(true);
 		$this->load->view('admin/studentList', array(
-			'students'   => $studentList
+			'students'   => $studentList,
+            'studentCnt' => $applicantsCnt
 		));
 	}
 
