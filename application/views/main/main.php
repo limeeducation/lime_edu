@@ -18,8 +18,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
             }
         }
         $(".eng_city_btn").find('img').hover(function(){
+        	console.log("on");
         	$(this).attr("src", $(this).attr("src").replace(".png", "_after.png"));
         }, function(){
+        	console.log("off");
         	$(this).attr("src", $(this).attr("src").replace("_after.png", ".png"));
         });
     </script>
