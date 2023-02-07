@@ -29,11 +29,11 @@
 			$("#conStartDt").val("<?= empty($con_start_dt) ? '' : $con_start_dt;?>");
 			$("#conDetails").val("<?= empty($con_details) ? '' : $con_details;?>");
 			$("#conManager").val("<?= empty($con_manager) ? '' : $con_manager;?>");
-			if("<?= empty($con_contact_yn) ? 'Y' : $con_contact_yn;?>" == 'N'){
-				$("input[name='con_contact_yn']").prop("checked", false);
+			if("<?= $con_contact_yn;?>" == 'Y'){
+				$("input[name='con_contact_yn']").prop("checked", true);
 			}
-			if("<?= empty($con_regist_yn) ? 'Y' : $con_regist_yn;?>" == 'N'){
-            	$("input[name='con_regist_yn']").prop("checked", false);
+			if("<?= $con_regist_yn;?>" == 'Y'){
+            	$("input[name='con_regist_yn']").prop("checked", true);
             }
 		}
 	});
