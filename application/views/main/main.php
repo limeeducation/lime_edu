@@ -5,6 +5,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <body>
     <script type="text/javascript">
         function change_nation(tab,nation){
+        console.log("tab = "+tab);
+        console.log("nation = "+nation);
             if(tab == "5"){
 
             }else if(tab == "6"){
@@ -16,6 +18,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#btn_"+nation+"_area").show();
             }
         }
+        $(document).ready(function(){
+        	if("<?= $tab;?>" == "7"){
+
+        	}
+        });
     </script>
 	<div id="wrap">
 	<?php
