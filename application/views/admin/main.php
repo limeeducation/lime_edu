@@ -48,15 +48,15 @@
 									foreach($students as $student):
 								?>
 								<tr>
-									<td><?= $student->con_idx;?></td>
-									<td><?= $student->con_name;?></td>
-									<td><?= $student->con_natio;?></td>
-									<td><?= $student->con_study;?></td>
-									<td><?= $student->con_start_dt;?></td>
-									<td><?= $student->con_date;?></td>
-									<td><?= $student->con_office;?></td>
-									<td><?= $student->con_reg_dt;?></td>
-									<td><a class="btn btn-sm btn-success" href="">자세히 보기</a></td>
+									<td><?= empty($student->con_idx) ? ' - ' 		: $student->con_idx;?></td>
+									<td><?= empty($student->con_name) ? ' - ' 		: $student->con_name;?></td>
+									<td><?= empty($student->con_natio) ? ' - ' 		: $student->con_natio;?></td>
+									<td><?= empty($student->con_study) ? ' - ' 		: $student->con_study;?></td>
+									<td><?= empty($student->con_start_dt) ? ' - ' 	: $student->con_start_dt;?></td>
+									<td><?= empty($student->con_date) ? ' - ' 		: $student->con_date;?></td>
+									<td><?= empty($student->con_office) ? ' - ' 	: $student->con_office;?></td>
+									<td><?= empty($student->con_reg_dt) ? ' - ' 	: $student->con_reg_dt;?></td>
+									<td><a class="btn btn-sm btn-success" href="/adminStudent/editStudent/<?= $student->con_idx; ?>">자세히 보기</a></td>
 								</tr>
 								<?php endforeach;?>
 								<?php else:?>
