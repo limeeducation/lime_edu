@@ -265,3 +265,5 @@
 
 .univ_main_img{max-width:325px;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);border-radius:5%/3%;box-sizing: border-box;}
 .univ_main_img:hover{opacity:1;border:0.7rem solid #76CF84;}
+.eng_main_img{max-width:250px;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);border-radius:5%/3%;box-sizing: border-box;}
+.eng_main_img:hover{box-shadow: 0 0 0 0.7rem #76CF84 inset;}

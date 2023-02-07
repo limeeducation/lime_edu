@@ -94,22 +94,22 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						 <div class="univ_main_sect">
 							<div class="univ_nation">
 								<a href="javascript:change_nation('<?= $tab;?>','us');">
-									<img class="univ_main_img" src="/static/img/main/btn_main_eng_usa.png">
+									<img class="eng_main_img" src="/static/img/main/btn_main_eng_usa.png">
 								</a>
 							</div>
 							<div class="univ_nation">
 								<a href="javascript:change_nation('<?= $tab;?>','uk');">
-									<img class="univ_main_img" src="/static/img/main/btn_main_eng_uk.png">
+									<img class="eng_main_img" src="/static/img/main/btn_main_eng_uk.png">
 								</a>
 							</div>
 							<div class="univ_nation">
 								<a href="javascript:change_nation('<?= $tab;?>','ca');">
-									<img class="univ_main_img" src="/static/img/main/btn_main_eng_ca.png">
+									<img class="eng_main_img" src="/static/img/main/btn_main_eng_ca.png">
 								</a>
 							</div>
 							<div class="univ_nation">
 								<a href="javascript:change_nation('<?= $tab;?>','phil');">
-									<img class="univ_main_img" src="/static/img/main/btn_main_eng_phi.png">
+									<img class="eng_main_img" src="/static/img/main/btn_main_eng_phi.png">
 								</a>
 							</div>
 						 </div>
