@@ -68,7 +68,7 @@
 					<form action="/adminStudent/studentSave" id="student_save" method="post">
 						<input type="hidden" class="form-control" name="edit_type" value='<?= $stat;?>'>
 						<?php if($stat == "edit") :?>
-							<input type="hidden" class="form-control" name="con_idx" value="<?= $idx;?>">
+							<input type="hidden" class="form-control" name="con_idx" value="<?= $con_idx;?>">
 						<?php endif;?>
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" id="conName" name="con_name">
