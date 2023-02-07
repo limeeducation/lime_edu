@@ -90,6 +90,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<?php elseif($tab == '7'): ?>
 				<section class="main_sect" id="mainUniv">
 					<div class="inner">
+						<div class="program_title">국가별 어학연수</div>
 						 <div class="univ_main_sect">
 							<div class="univ_nation">
 								<a href="javascript:change_nation('<?= $tab;?>','us');">
