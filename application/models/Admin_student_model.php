@@ -11,7 +11,7 @@ class Admin_student_model extends CI_Model
 	public function gatStudentList($isCnt = null){
 		$q_get_simple_students = "SELECT con_idx, con_name, con_natio, con_study, con_start_dt, con_date, con_office, con_reg_dt
 								  FROM apply_students
-								  ORDER BY reg_date DESC";
+								  ORDER BY con_reg_dt DESC";
 
 		if($isCnt){
 			$q_get_simple_students = "SELECT count(*) as cnt FROM apply_students";
