@@ -5,8 +5,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <body>
     <script type="text/javascript">
         function change_nation(tab,nation){
-        console.log("tab = "+tab);
-        console.log("nation = "+nation);
             if(tab == "5"){
 
             }else if(tab == "6"){
@@ -19,6 +17,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#banr_list_"+nation).show();
             }
         }
+        $("#btn_newyork").hover(function(){
+        	$(this).attr("src", $(this).attr("src").replace(".png", "_after.png"));
+        }, function(){
+        	$(this).attr("src", $(this).attr("src").replace("_after.png", ".png"));
+        });
     </script>
 	<div id="wrap">
 	<?php

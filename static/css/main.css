@@ -274,5 +274,3 @@
 .eng_city_btn:hover::after{opacity:1;}
 
 .more_city{position:relative;margin:0 1rem;margin-top:1.3rem;}
-.btn_boston:hover{content:url("/static/img/button/btn_boston_after.png");}
-.btn_newyork:hover{content:url("/static/img/button/btn_newyork_after.png");}
