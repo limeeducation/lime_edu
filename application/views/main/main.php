@@ -101,25 +101,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<div class="inner">
 						<div class="program_title">국가별 어학연수</div>
 						 <div class="univ_main_sect">
-							<div class="eng_nation">
-								<a href="javascript:change_nation('<?= $tab;?>','us');">
-									<img class="eng_main_img" src="/static/img/main/btn_main_eng_usa.png">
-								</a>
+							<div class="eng_nation" onclick="javascript:change_nation('<?= $tab;?>','us');">
+								<img class="eng_main_img" src="/static/img/main/btn_main_eng_usa.png">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:change_nation('<?= $tab;?>','uk');">
-									<img class="eng_main_img" src="/static/img/main/btn_main_eng_uk.png">
-								</a>
+							<div class="eng_nation" onclick="javascript:change_nation('<?= $tab;?>','uk');">
+								<img class="eng_main_img" src="/static/img/main/btn_main_eng_uk.png">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:change_nation('<?= $tab;?>','ca');">
-									<img class="eng_main_img" src="/static/img/main/btn_main_eng_ca.png">
-								</a>
+							<div class="eng_nation" onclick="javascript:change_nation('<?= $tab;?>','ca');">
+								<img class="eng_main_img" src="/static/img/main/btn_main_eng_ca.png">
 							</div>
-							<div class="eng_nation">
-								<a href="javascript:change_nation('<?= $tab;?>','phil');">
-									<img class="eng_main_img" src="/static/img/main/btn_main_eng_phi.png">
-								</a>
+							<div class="eng_nation" onclick="javascript:change_nation('<?= $tab;?>','phil');">
+								<img class="eng_main_img" src="/static/img/main/btn_main_eng_phi.png">
 							</div>
 						 </div>
 					</div>
