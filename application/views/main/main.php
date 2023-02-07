@@ -27,14 +27,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 			//호버이벤트
 			$(this).hover(function() {
-				console.log(nowImg);
 				$(this).find('img').attr('src', newSrc+ '_after.' + /[^.]+$/.exec(srcName)); //hover시 _on붙이기
 			}, function() {
-				console.log(srcName);
 				$(this).find('img').attr('src', newSrc + '.' + /[^.]+$/.exec(srcName)); //hover시 _on 때기
 			});
-
-
         });
     </script>
 	<div id="wrap">
