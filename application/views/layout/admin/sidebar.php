@@ -44,7 +44,7 @@
 			<div class="nav-item dropdown">
 				<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-users me-2"></i>학생관리</a>
 				<div class="dropdown-menu bg-transparent border-0">
-					<a href="button.html" class="dropdown-item">상담학생 관리</a>
+					<a href="/adminStudent/studentList" class="dropdown-item">상담학생 관리</a>
 					<a href="typography.html" class="dropdown-item">수속학생 관리</a>
 				</div>
 			</div>
