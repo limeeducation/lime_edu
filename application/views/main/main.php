@@ -14,8 +14,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#banr_list_"+nation).show();
             }else if(tab == "7"){
 				$(".natio_btn_area").hide();
-				$("#banr_list_"+nation).show();
 				$("#btn_"+nation+"_area").show();
+				$(".banr_lists").hide();
+				$("#banr_list_"+nation).show();
             }
         }
         $(document).ready(function(){
