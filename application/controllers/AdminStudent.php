@@ -22,7 +22,7 @@ class AdminStudent extends CI_Controller {
 			script_alert_go($msg, '/admin');
 		}
 		//학생 리스트 호출
-		$studentList = $this->admin_student_model->selectStudentList();
+		$studentList = $this->admin_student_model->gatStudentList();
 		$this->load->view('admin/studentList', array(
 			'students'   => $studentList
 		));
