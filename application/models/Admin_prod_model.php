@@ -11,19 +11,6 @@ class Admin_prod_model extends CI_Model
 		return $this->db->query($query)->result();
 	}
 
-	public function selectProdList(){
-		$q_get_simple_students = "SELECT stu_idx, stu_name, stu_nat, stu_field, start_dt, stu_mobile, cur_area, reg_date
-								  FROM apply_students
-								  WHERE contact_yn = 'N'
-								  ORDER BY reg_date DESC limit 10";
-
-		if($isCnt){
-			$q_get_simple_students = "SELECT count(*) as cnt FROM apply_students";
-		}
-		$result =  $this->db->query($q_get_simple_students)->result();
-		return $result;
-	}
-
 	public function addBanner($data){
 		$tab = $data['banr_tab'];
 		$type = $data['banr_type'];
