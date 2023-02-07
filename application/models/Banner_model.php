@@ -8,6 +8,7 @@ class Banner_model extends CI_Model
 		//Codeigniter : Write Less Do More
 	}
 	public function getBanner($tab, $type){
+
 		$this->db->select('banr_seq');
 		$this->db->select('banr_tab_2');
 		$this->db->select('banr_img');
@@ -17,6 +18,9 @@ class Banner_model extends CI_Model
 		$this->db->where('banr_tab', $tab);
 		$this->db->where('banr_use_yn', 'Y');
 		$this->db->order_by('banr_seq', 'ASC');
+		if($tab == "6" || $tab == "7"){
+			$this->db->limit(3);
+		}
 		return $this->db->get()->result();
 	}
 
