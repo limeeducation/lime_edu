@@ -147,11 +147,11 @@
                         	<label for="conManager" class="form-label">담당자</label>
                         </div>
 						<div class="form-check form-switch">
-							<input class="form-check-input" type="checkbox" role="switch" id="conContactYn" name="con_contact_yn" checked="checked">
+							<input class="form-check-input" type="checkbox" role="switch" id="conContactYn" name="con_contact_yn" >
 							<label class="form-check-label" for="conContactYn">연락 여부</label>
 						</div>
 						<div class="form-check form-switch">
-                        	<input class="form-check-input" type="checkbox" role="switch" id="conRegistYn" name="con_regist_yn" checked="checked">
+                        	<input class="form-check-input" type="checkbox" role="switch" id="conRegistYn" name="con_regist_yn" >
                         	<label class="form-check-label" for="conRegistYn">등록 여부</label>
                         </div>
 						<button type="button" class="btn btn-success" id="btn_student_save">학생 정보 저장</button>
