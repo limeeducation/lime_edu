@@ -144,66 +144,66 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						 <div class="univ_main_sect natio_btn_area" id="btn_us_area">
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_boston.png" id="btn_boston">
+									<img class="eng_main_img" src="/static/img/button/btn_boston.png" id="btn_boston">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_newyork.png" id="btn_newyork">
+									<img class="eng_main_img" src="/static/img/button/btn_newyork.png" id="btn_newyork">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_sandiego.png" id="btn_sandiego">
+									<img class="eng_main_img" src="/static/img/button/btn_sandiego.png" id="btn_sandiego">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_sanfrancisco.png" id="btn_sanfrancisco">
+									<img class="eng_main_img" src="/static/img/button/btn_sanfrancisco.png" id="btn_sanfrancisco">
 								</a>
 							</div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_uk_area" style="display:none;">
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_brighton.png" id="btn_brighton">
+									<img class="eng_main_img" src="/static/img/button/btn_brighton.png" id="btn_brighton">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_cambridge.png" id="btn_cambridge">
+									<img class="eng_main_img" src="/static/img/button/btn_cambridge.png" id="btn_cambridge">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_london.png" id="btn_london">
+									<img class="eng_main_img" src="/static/img/button/btn_london.png" id="btn_london">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_manchester.png" id="btn_manchester">
+									<img class="eng_main_img" src="/static/img/button/btn_manchester.png" id="btn_manchester">
 								</a>
 							</div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_ca_area" style="display:none;">
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_calgary.png" id="btn_calgary">
+									<img class="eng_main_img" src="/static/img/button/btn_calgary.png" id="btn_calgary">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_montreal.png" id="btn_montreal">
+									<img class="eng_main_img" src="/static/img/button/btn_montreal.png" id="btn_montreal">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_toronto.png" id="btn_toronto">
+									<img class="eng_main_img" src="/static/img/button/btn_toronto.png" id="btn_toronto">
 								</a>
 							</div>
 							<div class="eng_nation">
 								<a href="javascript:;">
-									<img class="eng_main_img" src="/static/img/main/btn_vancouver.png" id="btn_vancouver">
+									<img class="eng_main_img" src="/static/img/button/btn_vancouver.png" id="btn_vancouver">
 								</a>
 							</div>
 						 </div>
