@@ -132,7 +132,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="eng_city_btn">
 								<img src="/static/img/button/btn_sanfrancisco.png" id="btn_sanfrancisco">
 							</div>
-							<div class="city_more"><a href="#">전체보기<i>+</i></a></div>
+							<div class="story_more"><a href="#">전체보기<i>+</i></a></div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_uk_area" style="display:none;">
 							<div class="eng_city_btn">
@@ -147,7 +147,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="eng_city_btn">
 								<img src="/static/img/button/btn_manchester.png" id="btn_manchester">
 							</div>
-							<div class="city_more"><a href="#">전체보기<i>+</i></a></div>
+							<div class="story_more"><a href="#">전체보기<i>+</i></a></div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_ca_area" style="display:none;">
 							<div class="eng_city_btn">
@@ -162,7 +162,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="eng_city_btn">
 								<img src="/static/img/button/btn_vancouver.png" id="btn_vancouver">
 							</div>
-							<div class="city_more"><a href="#">전체보기<i>+</i></a></div>
+							<div class="story_more"><a href="#">전체보기<i>+</i></a></div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_phil_area" style="display:none;">
 							<div class="eng_city_btn">
@@ -174,7 +174,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="eng_city_btn">
 								<img src="/static/img/button/btn_etc.png" id="btn_etc">
 							</div>
-							<div class="city_more"><a href="#">전체보기<i>+</i></a></div>
+							<div class="story_more"><a href="#">전체보기<i>+</i></a></div>
 						 </div>
 					</div>
 				</section>
