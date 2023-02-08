@@ -86,7 +86,7 @@ class Main extends CI_Controller {
 		$data['con_office'] = $this->input->post('con_office');
 		$data['con_type'] = $this->input->post('con_type');
 		$data['con_date'] = $this->input->post('con_date');
-		$data['con_time'] = $this->input->post('con_time');
+		$data['con_time'] = $this->input->post('con_time').":00";
 		$data['con_start_dt'] = $this->input->post('start_year').".".$this->input->post('start_month');
 		$data['con_name'] = $this->input->post('con_name');
 		$data['con_contact'] = $this->input->post('con_contact');
