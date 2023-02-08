@@ -10,6 +10,11 @@ class Apply_model extends CI_Model
 	public function apply_consult($query){
 		$this->db->query($query);
 	}
+
+	public function consult_apply($data){
+		$this->db->insert('apply_students',$data);
+        return $this->db->insert_id();
+	}
 }
 
 ?>

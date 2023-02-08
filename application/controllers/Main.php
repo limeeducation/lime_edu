@@ -7,7 +7,7 @@ class Main extends CI_Controller {
 		parent::__construct();
 		$this->load->database();
 		$this->load->helper(array('url', 'script', 'banner', 'html'));
-		$this->load->model(array('old_model'));
+		$this->load->model(array('old_model','apply_model'));
 	}
 	public function index()
 	{
@@ -25,17 +25,8 @@ class Main extends CI_Controller {
 	public function new_main(){
 		//tab => 1: 메인 / 5: 해외대학 유학 / 6: 조기유학 / 7: 어학연수 / 8: 가족연수/캠프/스쿨링
 		$tab = !empty($_GET['tab']) ? $_GET['tab'] : '1';
-		require_once($_SERVER['DOCUMENT_ROOT'].'/lib/snoopy/Snoopy.class.php');
-
-		//블로그 내용 스크래핑
-		$snoopy = new Snoopy;
-		$snoopy->fetch(NAVER_BLOG_URL);
-
-		//필요한 내용만 추출
-		preg_match('/<iframe id="ExternalWidgetIframe_10" class="item">(.*?)<\/li>/is', $snoopy->results, $scrap_contents);
 
 		$data = array(
-			'blog_contents'				=> $snoopy->results,
 			'tab'						=> $tab
 		);
 
@@ -88,5 +79,28 @@ class Main extends CI_Controller {
 		}
 
 		$this->load->view('main/main', $data);
+	}
+
+	//상담 신청
+	public function apply_consult(){
+		$data['con_office'] = $this->input->post('con_office');
+		$data['con_type'] = $this->input->post('con_type');
+		$data['con_date'] = $this->input->post('con_date');
+		$data['con_time'] = $this->input->post('con_time');
+		$data['con_start_dt'] = $this->input->post('start_year').".".$this->input->post('start_month');
+		$data['con_name'] = $this->input->post('con_name');
+		$data['con_contact'] = $this->input->post('con_contact');
+		$data['con_natio'] = $this->input->post('con_natio');
+		$data['con_study'] = $this->input->post('con_study');
+		$data['con_details'] = $this->input->post('con_details');
+		$data['con_apply_url'] = $this->input->post('con_apply_url');
+
+		$apply_res = $this->apply_model->consult_apply($data);
+
+		if(!$apply_res){
+			script_alert_back('상담 신청에 실패했습니다. 관리자에게 문의하세요.');
+		}else{
+			script_alert_go('상담 신청이 완료되었습니다.', $data['con_apply_url']);
+		}
 	}
 }
