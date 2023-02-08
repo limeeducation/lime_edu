@@ -1,16 +1,34 @@
 <!-- 상담예약팝업 -->
 <script>
 	function applyStart(){
-		if(''==$("#conOffice").val()) alert('상담 희망 지사를 선택해주세요');
-		else if(''==$("#conDate").val())alert('상담 희망 날짜를 선택해주세요');
-		else if(''==$("#conTime").val())alert('상담 희망 시간을 선택해주세요');
-		else if(''==$("#startYear").val())alert('희망 시작 년도를 선택해주세요');
-		else if(''==$("#startMonth").val())alert('희망 시작 월을 선택해주세요');
-		else if(''==$("#conName").val())alert('이름을 입력해주세요');
-		else if(''==$("#conContact").val())alert('연락처를 입력해주세요');
-		else if(''==$("#conNatio").val())alert('상담 국가를 선택해주세요');
-		else if(!$("#conAgreeYn").is(":checked"))alert('개인정보 수집 및 이용에 동의해주세요');
-		else{
+		if(''==$("#conOffice").val()){
+			alert('상담 희망 지사를 선택해주세요');
+			$("$con_office").focus();
+		}else if(''==$("#conDate").val()){
+			alert('상담 희망 날짜를 선택해주세요');
+			$("#conDate").focus();
+		}else if(''==$("#conTime").val()){
+			alert('상담 희망 시간을 선택해주세요');
+			$("#conTime").focus();
+		}else if(''==$("#startYear").val()){
+			alert('희망 시작 년도를 선택해주세요');
+			$("#startYear").focus();
+		}else if(''==$("#startMonth").val()){
+			alert('희망 시작 월을 선택해주세요');
+			$("#startMonth").focus();
+		}else if(''==$("#conName").val()){
+			alert('이름을 입력해주세요');
+			$("#conName").focus();
+		}else if(''==$("#conContact").val()){
+			alert('연락처를 입력해주세요');
+			$("#conContact").focus();
+		}else if(''==$("#conNatio").val()){
+			alert('상담 국가를 선택해주세요');
+			$("#conNatio").focus();
+		}else if(!$("#conAgreeYn").is(":checked")){
+			alert('개인정보 수집 및 이용에 동의해주세요');
+			$("#conAgreeYn").focus();
+		}else{
 			var cur_url = window.location.href;
 			$("#conNatio").val(cur_url);
 			$("#applyConsult").submit();
