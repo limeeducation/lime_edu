@@ -24,7 +24,7 @@
 						<a href="#none" class="tab on">서울</a>
 						<a href="#none" class="tab">대전</a>
 						<a href="#none" class="tab">송도</a>
-						<a href="#none" class="tab off">대구</a>
+						<a href="#none" class="tab">대구</a>
 						<a href="#none" class="tab">부산</a>
 						<a href="#none" class="tab">제주</a>
 					</div>
