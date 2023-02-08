@@ -1,7 +1,7 @@
 <!-- 전체메뉴 영역 -->
 <script>
 	$(document).ready(function(){
-		var container = document.getElementsById('container');
+		var container = document.getElementById('container');
 		container.style.zoom = 0.8;
 	});
 </script>
