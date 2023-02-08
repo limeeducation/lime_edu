@@ -451,4 +451,4 @@ $(document).ready(function(){
 		$(this).addClass('on').siblings().removeClass('on');
 		$('.txt_list > div').hide().eq(tabCnt).stop().show();
 	});
-})
+});
