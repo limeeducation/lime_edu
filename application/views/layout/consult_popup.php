@@ -3,7 +3,7 @@
 	function applyStart(){
 		if(''==$("#conOffice").val()){
 			alert('상담 희망 지사를 선택해주세요');
-			$("$seoul_office").focus();
+			$("#seoul_office").focus();
 		}else if(''==$("#conDate").val()){
 			alert('상담 희망 날짜를 선택해주세요');
 			$("#conDate").focus();
