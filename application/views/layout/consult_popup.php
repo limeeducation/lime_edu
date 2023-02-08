@@ -145,13 +145,13 @@
 							</div>
 						</div>
 						<div class="info_wrap">
-							<p class="info_tit">신청자 이름</p>
+							<p class="info_tit">이름</p>
 							<div class="form_wrap">
-								<input type="text" placeholder="신청자 이름" name="con_name" id="conName">
+								<input type="text" placeholder="이름" name="con_name" id="conName">
 							</div>
 						</div>
 						<div class="info_wrap">
-							<p class="info_tit">신청자 연락처</p>
+							<p class="info_tit">연락처</p>
 							<div class="form_wrap">
 								<input type="text" placeholder="전화번호 or 카카오톡 ID" name="con_contact" id="conContact">
 							</div>

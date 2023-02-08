@@ -11,8 +11,8 @@
 		<li>주말 10:00AM~14:00PM</li>
 	</ul>
 	<ul class="quick_alert">
-    		<li>*일요일/공휴일 예약은</li>
-    		<li>유선으로 따로 예약해야 합니다.</li>
+    		<li>*일요일과 공휴일에는</li>
+    		<li>유선으로 따로 예약이 필요합니다.</li>
     	</ul>
 	<ul class="quick_contact">
 		<li class="email">hm.lee@mylimeedu.com</li>

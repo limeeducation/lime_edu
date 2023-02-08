@@ -155,10 +155,10 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 @media all and (max-width:1024px){
 	#container{margin-top:15rem;}
 }
-.quick_nav{position:absolute;top:3.8rem;right:8vw;width:20rem;overflow:hidden;border:1px solid #000;border-radius:1rem;background:#fff;z-index:10;}
+.quick_nav{position:absolute;top:3.8rem;right:8vw;width:20rem;overflow:hidden;border:1px solid #76CF84;border-radius:1rem;background:#fff;z-index:10;}
 .active + #container .quick_nav{position:fixed;top:23.8rem;bottom:auto;}
 
-.quick_title{padding:1.5rem 1rem;margin-bottom:1.5rem;background-color:#EEEEEE;text-align:center;font-size:1.6rem;font-weight:700;line-height:2rem;color:#000000;-ms-word-break:keep-all;word-break:keep-all;}
+.quick_title{padding:1.5rem 1rem;margin-bottom:1.5rem;background-color:#76CF84;text-align:center;font-size:1.6rem;font-weight:700;line-height:2rem;color:#FFFFFF;-ms-word-break:keep-all;word-break:keep-all;}
 .quick_list{padding:0 1.5rem;}
 .quick_list > li{width: 97%;}
 .quick_list > li + li{margin-top:1.2rem;}
@@ -168,6 +168,9 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 .quick_list > li.cal a::after{background-image:url(/static/img/common/quick_ico_cal@2x.png);}
 .quick_list > li.home a::after{background-image:url(/static/img/common/quick_ico_home@2x.png);}
 .quick_list > li.kakao a::after{background-image:url(/static/img/common/quick_ico_kakao@2x.png);}
+.popup_open{background-image:url(/static/img/common/button_booking.png);}
+.popup_open:after{border:0.5rem solid #000000;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;opacity:0;}
+.popup_open:hover::after{opacity:1;}
 
 .quick_list > li a:hover{background-color: #000000;color: #FFFFFF;}
 .quick_list > li.phone a:hover::after{background-image:url(/static/img/common/quick_ico_phone_on@2x.png);}
@@ -197,7 +200,7 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 	.quick_nav,
 	.active + #container .quick_nav{position:fixed !important;top:auto;bottom:1vw;right:1vw;}
 	.quick_time,.quick_contact,.quick_alert{display:none;}
-	.quick_title{padding:1.5rem 1rem 0;font-size:1.5rem;margin-bottom:1.5rem;background-color:#EEEEEE;}
+	.quick_title{padding:1.5rem 1rem 0;font-size:1.5rem;margin-bottom:1.5rem;background-color:#76CF84;}
 	.quick_list{padding:1.5rem;}
 }
 @media all and (max-width:480px){
