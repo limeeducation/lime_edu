@@ -168,7 +168,7 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 .quick_list > li.home a::after{background-image:url(/static/img/common/quick_ico_home@2x.png);}
 .quick_list > li.kakao a::after{background-image:url(/static/img/common/quick_ico_kakao@2x.png);}
 .popup_open{background-image:url(/static/img/common/button_booking.png);}
-.popup_open:hover{transform:scale(1.5);}
+.popup_open:hover{transform:scale(1.1);}
 
 .quick_list > li a:hover{background-color: #000000;color: #FFFFFF;}
 .quick_list > li.phone a:hover::after{background-image:url(/static/img/common/quick_ico_phone_on@2x.png);}
