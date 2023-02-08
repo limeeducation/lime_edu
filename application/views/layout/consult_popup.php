@@ -64,12 +64,12 @@
 					<!-- 라디오영역 -->
 					<div class="rdo_wrap">
 						<label for="rdo21">
-							<input type="radio" name="con_type" value="call" checked>
+							<input type="radio" name="con_type" value="call" id="rdo21" checked>
 							<i class="icon_rdo"></i>
 							<span>전화상담</span>
 						</label>
 						<label for="rdo22">
-							<input type="radio" name="con_type" value="visit">
+							<input type="radio" name="con_type" value="visit" id="rdo22">
 							<i class="icon_rdo"></i>
 							<span>방문상담</span>
 						</label>
