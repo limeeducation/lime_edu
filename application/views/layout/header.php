@@ -1,8 +1,8 @@
 <!-- 전체메뉴 영역 -->
 <script>
 	$(document).ready(function(){
-		var body = document.getElementsByTagName('body')[0];
-		body.style.zoom = 0.8;
+		var container = document.getElementsById('container');
+		container.style.zoom = 0.8;
 	});
 </script>
 <aside id="mobileMenu">

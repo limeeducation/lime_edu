@@ -4,7 +4,7 @@
 
 .mo_menu_open{background:url(/static/img/common/header_ico_menuopen_w@2x.png) no-repeat 50% 50% / 100% 100%;}
 
-#visual{}
+#visual{margin-top:3rem;}
 #visual > .inner{width:100%;padding:2.3rem 0;}
 #visual > .big_inner{width:100%;padding:2.3rem 0;}
 @media all and (max-width:720px){
