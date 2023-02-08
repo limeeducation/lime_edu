@@ -1,6 +1,6 @@
 <!-- 상담예약팝업 -->
 <script>
-	$("#btn_apply_consult").bind('click',function(){
+	function applyStart(){
 		if(''==$("#conOffice").val()) alert('상담 희망 지사를 선택해주세요');
 		else if(''==$("#conDate").val())alert('상담 희망 날짜를 선택해주세요');
 		else if(''==$("#conTime").val())alert('상담 희망 시간을 선택해주세요');
@@ -9,17 +9,16 @@
 		else if(''==$("#conName").val())alert('이름을 입력해주세요');
 		else if(''==$("#conContact").val())alert('연락처를 입력해주세요');
 		else if(''==$("#conNatio").val())alert('상담 국가를 선택해주세요');
-		else if(''==$("#conNatio").val())alert('상담 국가를 선택해주세요');
 		else if(!$("#conAgreeYn").is(":checked"))alert('개인정보 수집 및 이용에 동의해주세요');
 		else{
 			var cur_url = window.location.href;
 			$("#conNatio").val(cur_url);
 			$("#applyConsult").submit();
 		}
-	});
+	};
 	function setValue(key,value){
 		$('#'+key).val(value);
-	}
+	};
 </script>
 <section class="popup_wrap cs_pop">
 	<!-- 팝업헤더 -->
@@ -344,7 +343,7 @@
 			<!-- 버튼 -->
 			<div class="btn_wrap">
 				<button type="button" class="pop_btn cancel">취소</button>
-				<button type="button" class="pop_btn confirm" id="btn_apply_consult">상담예약</button>
+				<button type="button" class="pop_btn confirm" onclick="applyStart();">상담예약</button>
 			</div>
 			<!--// 버튼 -->
 		</form>
