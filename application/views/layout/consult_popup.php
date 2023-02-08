@@ -3,7 +3,7 @@
 	function applyStart(){
 		if(''==$("#conOffice").val()){
 			alert('상담 희망 지사를 선택해주세요');
-			$("$con_office").focus();
+			$("$seoul_office").focus();
 		}else if(''==$("#conDate").val()){
 			alert('상담 희망 날짜를 선택해주세요');
 			$("#conDate").focus();
@@ -24,7 +24,7 @@
 			$("#conContact").focus();
 		}else if(''==$("#conNatio").val()){
 			alert('상담 국가를 선택해주세요');
-			$("#conNatio").focus();
+			$("#country_usa").focus();
 		}else if(!$("#conAgreeYn").is(":checked")){
 			alert('개인정보 수집 및 이용에 동의해주세요');
 			$("#conAgreeYn").focus();
@@ -62,7 +62,7 @@
 							탭 비활성화 class="off" 추가
 						-->
 						<input type="hidden" id="conOffice" name="con_office">
-						<a href="javascript:setValue('conOffice','서울');" class="tab">서울</a>
+						<a href="javascript:setValue('conOffice','서울');" class="tab" id="seoul_office">서울</a>
 						<a href="javascript:setValue('conOffice','대전');" class="tab">대전</a>
 						<a href="javascript:setValue('conOffice','송도');" class="tab">송도</a>
 						<a href="javascript:setValue('conOffice','대구');" class="tab">대구</a>
@@ -174,7 +174,7 @@
 							탭 비활성화 class="off" 추가
 						-->
 						<input type="hidden" id="conNatio" name="con_natio" value="">
-						<a href="javascript:setValue('conNatio','us');" class="tab on">미국</a>
+						<a href="javascript:setValue('conNatio','us');" class="tab on" id="country_usa">미국</a>
 						<a href="javascript:setValue('conNatio','uk');" class="tab">영국</a>
 						<a href="javascript:setValue('conNatio','ca');" class="tab">캐나다</a>
 						<a href="javascript:setValue('conNatio','aus');" class="tab">호주</a>
