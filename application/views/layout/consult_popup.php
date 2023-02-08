@@ -18,7 +18,7 @@
 		}
 	});
 	function setValue(key,value){
-		$('#'+key).value(value);
+		$('#'+key).val(value);
 	}
 </script>
 <section class="popup_wrap cs_pop">
