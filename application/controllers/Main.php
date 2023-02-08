@@ -95,12 +95,13 @@ class Main extends CI_Controller {
 		$data['con_details'] = $this->input->post('con_details');
 		$data['con_apply_url'] = $this->input->post('con_apply_url');
 
-		$apply_res = $this->apply_model->consult_apply($data);
+		print_r($data);
+		//$apply_res = $this->apply_model->consult_apply($data);
 
-		if(!$apply_res){
+		/* if(!$apply_res){
 			script_alert_back('상담 신청에 실패했습니다. 관리자에게 문의하세요.');
 		}else{
 			script_alert_go('상담 신청이 완료되었습니다.', $data['con_apply_url']);
-		}
+		} */
 	}
 }
