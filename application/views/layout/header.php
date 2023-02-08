@@ -1,4 +1,10 @@
 <!-- 전체메뉴 영역 -->
+<script>
+	$(document).ready(function(){
+		var body = document.getElementsByTagName('body')[0];
+		body.style.zoom = 0.8;
+	});
+</script>
 <aside id="mobileMenu">
 	<div class="inner">
 		<a href="#" class="mo_menu_close"><i class="ri-close-line"></i><span class="blind">전체메뉴 닫기</span></a>
