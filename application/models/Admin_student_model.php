@@ -36,6 +36,7 @@ class Admin_student_model extends CI_Model
 		$this->db->select('con_contact_yn');
 		$this->db->select('con_manager');
 		$this->db->select('con_regist_yn');
+		$this->db->select('con_apply_url');
 		$this->db->from('apply_students');
 		$this->db->where('con_idx', $idx);
 		return $this->db->get()->row_array();

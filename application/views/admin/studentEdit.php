@@ -29,6 +29,7 @@
 			$("#conStartDt").val("<?= empty($con_start_dt) ? '' : $con_start_dt;?>");
 			$("#conDetails").val(`<?= empty($con_details) ? '' : $con_details;?>`);
 			$("#conManager").val("<?= empty($con_manager) ? '' : $con_manager;?>");
+			$("#conApplyUrl").val("<?= empty($con_apply_url) ? '' : $con_apply_url;?>");
 			if("<?= $con_contact_yn;?>" == 'Y'){
 				$("input[name='con_contact_yn']").prop("checked", true);
 			}
@@ -135,6 +136,10 @@
 						<div class="form-floating mb-3">
 							<textarea class="form-control" id="conDetails" name="con_details" style="height:300px;"></textarea>
                             <label for="conDetails" class="form-label">문의 내용</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input type="text" class="form-control" id="conApplyUrl" name="con_apply_url" readonly>
+							<label for="conApplyUrl" class="form-label">접근 URL</label>
 						</div>
 						<div class="form-floating mb-3">
                         	<input type="text" class="form-control" id="conManager" name="con_manager">
