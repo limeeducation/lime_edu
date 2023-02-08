@@ -160,16 +160,15 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 
 .quick_title{padding:1.5rem 1rem;margin-bottom:1.5rem;background-color:#76CF84;text-align:center;font-size:1.6rem;font-weight:700;line-height:2rem;color:#FFFFFF;-ms-word-break:keep-all;word-break:keep-all;}
 .quick_list{padding:0 1.5rem;}
-.quick_list > li{width: 97%;}
+.quick_list > li{width: 103%;}
 .quick_list > li + li{margin-top:1.2rem;}
-.quick_list > li a{position:relative;display:block;height:6rem;line-height:6rem;padding-left:2.6rem;background:#76CF84;-webkit-box-shadow:0 5px 5px 0 #bbbbbb;-moz-box-shadow:0 5px 5px 0 #bbbbbb;box-shadow: 0 5px 5px 0 #bbbbbb;border-radius:3rem;text-align:center;font-size: 2.3rem;color: #000000;font-weight:600;}
+.quick_list > li a{position:relative;display:block;height:5.1rem;line-height:6rem;padding-left:2.6rem;-webkit-box-shadow:0 5px 5px 0 #bbbbbb;-moz-box-shadow:0 5px 5px 0 #bbbbbb;box-shadow: 0 5px 5px 0 #bbbbbb;border-radius:3rem;text-align:center;font-size: 2.3rem;color: #000000;font-weight:600;}
 .quick_list > li a:after{display:block;clear:both;content:'';position:absolute;top:50%;left:2.2rem;width:2rem;height:2rem;margin-top:-1rem;background-repeat:no-repeat;background-position:0 50%;background-size:2rem auto;}
 .quick_list > li.phone a::after{background-image:url(/static/img/common/quick_ico_phone@2x.png);}
 .quick_list > li.home a::after{background-image:url(/static/img/common/quick_ico_home@2x.png);}
 .quick_list > li.kakao a::after{background-image:url(/static/img/common/quick_ico_kakao@2x.png);}
 .popup_open{background-image:url(/static/img/common/button_booking.png);}
-.popup_open:after{border:0.5rem solid #000000;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;opacity:0;}
-.popup_open:hover::after{opacity:1;}
+.popup_open:hover{transform:scale(1.5);}
 
 .quick_list > li a:hover{background-color: #000000;color: #FFFFFF;}
 .quick_list > li.phone a:hover::after{background-image:url(/static/img/common/quick_ico_phone_on@2x.png);}
