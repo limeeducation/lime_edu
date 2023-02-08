@@ -20,6 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
 	<script src="/static/js/jquery-1.12.4.js"></script>
 	<script src="/static/js/jquery.easing.1.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script><!-- 상담예약팝업 달력 추가 -->
 	<script src="/static/js/swiper.js"></script>
 	<script src="/static/js/common.js"></script>
 	<script src="/static/js/main.js"></script>

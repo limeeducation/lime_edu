@@ -382,3 +382,73 @@ $(function() {
   };
 
 }(jQuery, window, document));
+
+/* ======= 상담예약팝업 ======= */
+$(document).ready(function(){
+	function dimShow(){ /* 딤드 show */
+		$('body').addClass('dimed');
+	}
+	function dimHide(){ /* 딤드 hide */
+		$('body').removeClass('dimed');
+	}
+
+
+	function modalPop(){//팝업
+		//팝업 노출
+		$('.popup_open').on('click', function(){
+			$('.cs_pop').fadeIn(200);
+			dimShow();
+		});
+
+		// 취소버튼 팝업 닫기
+		$('.cancel').on('click', function(){
+			$('.cs_pop').fadeOut(200);
+			dimHide();
+		});
+
+		// 딤드 클릭시 닫기
+		$(document).mouseup(function (e){
+			var popArea = $('.cs_pop');
+			if($('.ui-datepicker').has(e.target).length === 0 && popArea.has(e.target).length === 0 && $('body').hasClass('dimed')){
+				popArea.fadeOut(200);
+				setTimeout(dimHide, 150);
+			}
+		});
+	}
+
+	modalPop();
+
+	// 달력
+	$('.datepick').datepicker({
+		dateFormat: "yy-mm-dd",
+		minDate:0,
+		dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+	});
+
+	//지사 선택 tab
+	$('.pop_tap_wrap > a').on('click', function(){
+		if(!$(this).hasClass('off')){
+			$(this).addClass('on').siblings().removeClass('on');
+		}
+	});
+
+	//보기 닫기 버튼
+	$('.btn_policy').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).text('[보기]');
+			$('.policy_cotn').stop().slideUp(600);
+			$(this).removeClass('on');
+		}else{
+			$(this).text('[닫기]');
+			$('.policy_cotn').stop().slideDown(600);
+			$(this).addClass('on');
+		}
+	});
+
+	//개인정보 tab
+	$('.policy_tab > a').on('click', function(){
+		var tabCnt = $(this).index();
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.txt_list > div').hide().eq(tabCnt).stop().show();
+	});
+})

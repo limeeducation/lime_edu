@@ -348,7 +348,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/footer.php');
 		?>
 		<div class="dim"></div>
-
+		<?php
+		include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/consult_popup.php');
+		?>
 	</div>
 	<!-- // wrap-->
 </body>

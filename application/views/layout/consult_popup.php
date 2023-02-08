@@ -1,263 +1,324 @@
+<!-- 상담예약팝업 -->
+<section class="popup_wrap cs_pop">
+	<!-- 팝업헤더 -->
+	<header class="pop_head">
+		<h1>상담 예약</h1>
+	</header>
+	<!--// 팝업헤더 -->
 
-<!-- quick_nav -->
-<div class="sangdam-yeyag-pabeob screen" style="z-index:10000; display:none;">
-	<script type="text/javascript">
-	  $(document).ready(function(){
-		showHideAgree('hide');
-	  });
-	  function showHideAgree(action){
-		if(action == 'show'){
-		  $('.agreeInfo').show();
-		}else{
-		  $('.agreeInfo').hide();
-		}
-	  }
-	</script>
-	<div class="overlap-group7">
-	  <div class="overlap-group6"><h1 class="text-45 valign-text-middle">상담 예약</h1></div>
-	  <div class="view-17">
-		<div class="text-44">지사선택</div>
-		<img class="x-11" src="/static/img/common/consultPopup/horizontal_line.svg" alt="-" />
-		<div class="flex-row flex">
-		  <div class="overlap-group-container">
-			<div class="overlap-group-2"><div class="text-3 valign-text-middle">서울</div></div>
-			<div class="overlap-group-1">
-			  <div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">부산</div>
-			</div>
-		  </div>
-		  <div class="overlap-group-container">
-			<div class="overlap-group-1">
-			  <div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">대전</div>
-			</div>
-			<div class="overlap-group-1">
-			  <div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">제주</div>
-			</div>
-		  </div>
-		  <div class="overlap-group-1">
-			<div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">송도</div>
-		  </div>
-		  <div class="overlap-group5">
-			<div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">대구</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="view-11">
-		<div class="flex-row-3">
-		  <div class="text-1 spoqahansansneo-bold-abbey-24px">상담일시</div>
-		  <div class="view-12">
-			<!--<div class="overlap-group">-->
-			<!--<div class="ellipse-16"></div>-->
-			<input name="apply_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-			<!--</div>-->
-			<div class="text-4 valign-text-middle spoqahansansneo-medium-abbey-20px">전화상담</div>
-		  </div>
-		  <div class="view-13">
-			<!--<div class="ellipse-15"></div>-->
-			<input name="apply_type" type="radio" style="accent-color: #22BB3A;width:1.2rem;height:1.2rem;">
-			<div class="text-4 valign-text-middle spoqahansansneo-medium-abbey-20px">방문상담</div>
-		  </div>
-		</div>
-		<img class="x-7" src="/static/img/common/consultPopup/horizontal_line.svg" alt="-" />
-		<div class="overlap-group-container-2 overlap-group-container-3">
-		  <div class="overlap-group2">
-			<input class="text_input spoqahansansneo-medium-gunsmoke-20px" name="예약일자" placeholder="예약일자" type="text" />
-		  </div>
-		  <div class="overlap-group-9">
-			<div class="text-4 valign-text-middle spoqahansansneo-medium-gunsmoke-20px">예약시간</div>
-			<img class="chevron-down" src="/static/img/common/consultPopup/chevron-down.svg" alt="chevron-down" />
-		  </div>
-		</div>
-		<p class="text-28">
-		  *월~금 : 오전 10:00 ~ 오후 7:00 까지   |   토 : 오전 10:00 ~
-		  오후 2:00 까지<br />*일요일/공휴일 예약은 유선으로 따로 예약해야 합니다
-		</p>
-		<div class="view-14">
-		  <div class="text-3-1 valign-text-middle text-3-4 spoqahansansneo-medium-abbey-20px">희망 시작 시기</div>
-		  <img class="x-8" src="/static/img/common/consultPopup/vertical_line.svg" alt="|" />
-		  <div class="overlap-group1-1 overlap-group1-3">
-			<div class="text-3-2 valign-text-middle text-3-4 spoqahansansneo-medium-gunsmoke-20px">년</div>
-			<img class="chevron-down" src="/static/img/common/consultPopup/chevron-down.svg" alt="chevron-down" />
-		  </div>
-		  <div class="overlap-group-10">
-			<div class="text-3-2 valign-text-middle text-3-4 spoqahansansneo-medium-gunsmoke-20px">월</div>
-			<img class="chevron-down" src="/static/img/common/consultPopup/chevron-down.svg" alt="chevron-down" />
-		  </div>
-		</div>
-		<div class="flex-row-4">
-		  <div class="view-15">
-			<div class="text-3-1 valign-text-middle text-3-4 spoqahansansneo-medium-abbey-20px">신청자 이름</div>
-			<img class="x-9" src="/static/img/common/consultPopup/vertical_line.svg" alt="|" />
-		  </div>
-		  <div class="overlap-group1-2 overlap-group1-3">
-			<input class="text_input-1" name="신청자이름" placeholder="신청자 이름" type="text" />
-		  </div>
-		</div>
-		<div class="view-16">
-		  <div class="text-3-1 valign-text-middle text-3-4 spoqahansansneo-medium-abbey-20px">신청자 연락처</div>
-		  <img class="x-10" src="/static/img/common/consultPopup/vertical_line.svg" alt="|" />
-		  <div class="overlap-group-11">
-			<input class="or-id" name="전화번호or카카오톡id" placeholder="전화번호 or 카카오톡 ID" type="text" />
-		  </div>
-		</div>
-	  </div>
-	  <div class="view-10">
-		<div class="text-1 spoqahansansneo-bold-abbey-24px">상담국가</div>
-		<img class="x-6" src="/static/img/common/consultPopup/horizontal_line.svg" alt="-" />
-		<div class="flex-row flex">
-		  <div class="overlap-group-container">
-			<div class="overlap-group-1">
-			  <div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">미국</div>
-			</div>
-			<div class="overlap-group-1">
-			  <div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">필리핀</div>
-			</div>
-		  </div>
-		  <div class="overlap-group-1">
-			<div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">영국</div>
-		  </div>
-		  <div class="overlap-group-2">
-			<div class="text-3 valign-text-middle">캐나다</div>
-		  </div>
-		  <div class="overlap-group-1">
-			<div class="text-2 valign-text-middle spoqahansansneo-medium-abbey-20px">호주</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="view-4">
-		<div class="text-1 spoqahansansneo-bold-abbey-24px">유학과정</div>
-		<img class="x-2" src="/static/img/common/consultPopup/horizontal_line.svg" alt="-" />
-		<div class="flex-row-1">
-		  <div class="flex-col-1">
-			<div class="view-5">
-			  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-			  <div class="text-1-1 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">어학연수</div>
-			</div>
-			<div class="x-3">
-			  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-			  <div class="text-1-1 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">
-				조기유학 (초)
-			  </div>
-			</div>
-			<div class="view-6">
-			  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-			  <div class="text-1-1 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">컬리지</div>
-			</div>
-		  </div>
-		  <div class="flex-col-2">
-			<div class="view-7">
-			  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-			  <div class="text-20 valign-text-middle spoqahansansneo-medium-abbey-20px">
-				전문과정 (테솔/통번역/인턴쉽 등)
-			  </div>
-			</div>
-			<div class="flex-row-2">
-			  <div class="flex-col flex">
-				<div class="x-4">
-				  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-				  <div class="text-1-1 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">
-					조기유학 (중)
-				  </div>
+	<!-- 컨텐츠 -->
+	<div class="pop_cotn">
+		<form action="">
+			<!-- 지사선택 -->
+			<div class="cotn">
+				<div class="tit_area">
+					<p class="cotn_tit">지사선택</p>
 				</div>
-				<div class="view-8">
-				  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-				  <div class="text-1-1 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">학사</div>
+				<div class="res_wrap">
+					<!-- 탭영역 -->
+					<div class="pop_tap_wrap">
+						<!--
+							탭 활성화 class="on" 추가
+							탭 비활성화 class="off" 추가
+						-->
+						<a href="#none" class="tab on">서울</a>
+						<a href="#none" class="tab">대전</a>
+						<a href="#none" class="tab">송도</a>
+						<a href="#none" class="tab off">대구</a>
+						<a href="#none" class="tab">부산</a>
+						<a href="#none" class="tab">제주</a>
+					</div>
+					<!--// 탭영역 -->
 				</div>
-			  </div>
-			  <div class="flex-col flex">
-				<div class="x-5">
-				  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-				  <div class="text-1-1 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">
-					조기유학 (고)
-				  </div>
+			</div>
+			<!--// 지사선택 -->
+
+			<!-- 상담일시 -->
+			<div class="cotn">
+				<div class="tit_area">
+					<p class="cotn_tit">상담일시</p>
+					<!-- 라디오영역 -->
+					<div class="rdo_wrap">
+						<label for="rdo21">
+							<input type="radio" name="rdo_02" id="rdo21" checked>
+							<i class="icon_rdo"></i>
+							<span>전화상담</span>
+						</label>
+						<label for="rdo22">
+							<input type="radio" name="rdo_02" id="rdo22">
+							<i class="icon_rdo"></i>
+							<span>방문상담</span>
+						</label>
+					</div>
+					<!--// 라디오영역 -->
 				</div>
-				<div class="view-9">
-				  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-				  <div class="text-1-1 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">석사</div>
+				<div class="res_wrap">
+					<div class="inpt_wrap">
+						<div class="date_wrap">
+							<div class="form_date">
+								<input type="text" class="datepick">
+								<select class="select_area">
+									<option selected>예약시간</option>
+									<option>오전 10시</option>
+									<option>오전 11시</option>
+									<option>오후 12시</option>
+									<option>오후 1시</option>
+									<option>오후 2시</option>
+									<option>오후 3시</option>
+									<option>오후 4시</option>
+									<option>오후 5시</option>
+									<option>오후 6시</option>
+									<option>오후 7시</option>
+								</select>
+							</div>
+							<div class="date_text">
+								*월~금 : 오전 10:00 ~ 오후 7:00 까지 &ensp;|&ensp; 토 : 오전 10:00 ~ 오후 2:00 까지<br>
+								*일요일/공휴일 예약은 유선으로 따로 예약해야 합니다
+							</div>
+						</div>
+						<div class="info_wrap">
+							<p class="info_tit">희망 시작 시기</p>
+							<div class="form_wrap">
+								<select class="select_area">
+									<option selected>년</option>
+									<option>2023년</option>
+									<option>2024년</option>
+									<option>2025년</option>
+									<option>2026년</option>
+								</select>
+								<select class="select_area">
+									<option selected>월</option>
+									<option>1월</option>
+									<option>2월</option>
+									<option>3월</option>
+									<option>4월</option>
+									<option>5월</option>
+									<option>6월</option>
+									<option>7월</option>
+									<option>8월</option>
+									<option>9월</option>
+									<option>10월</option>
+									<option>11월</option>
+									<option>12월</option>
+								</select>
+							</div>
+						</div>
+						<div class="info_wrap">
+							<p class="info_tit">신청자 이름</p>
+							<div class="form_wrap">
+								<input type="text" placeholder="신청자 이름">
+							</div>
+						</div>
+						<div class="info_wrap">
+							<p class="info_tit">신청자 연락처</p>
+							<div class="form_wrap">
+								<input type="text" placeholder="전화번호 or 카카오톡 ID">
+							</div>
+						</div>
+					</div>
 				</div>
-			  </div>
 			</div>
-		  </div>
-		  <div class="flex-col-3">
-			<div class="flex-col-item">
-			  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-			  <div class="text-1-2 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">
-				교환학생 (중고생)
-			  </div>
+			<!--// 상담일시 -->
+
+			<!-- 상담국가 -->
+			<div class="cotn">
+				<div class="tit_area">
+					<p class="cotn_tit">상담국가</p>
+				</div>
+				<div class="res_wrap">
+					<!-- 탭영역 -->
+					<div class="pop_tap_wrap">
+						<!--
+							탭 활성화 class="on" 추가
+							탭 비활성화 class="off" 추가
+						-->
+						<a href="#none" class="tab on">미국</a>
+						<a href="#none" class="tab">영국</a>
+						<a href="#none" class="tab">캐나다</a>
+						<a href="#none" class="tab">호주</a>
+						<a href="#none" class="tab">필리핀</a>
+					</div>
+					<!--// 탭영역 -->
+				</div>
 			</div>
-			<div class="flex-col-item">
-			  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-			  <div class="text-1-2 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">
-				영어캠프 (초중고)
-			  </div>
+			<!--// 상담국가 -->
+
+			<!-- 유학과정 -->
+			<div class="cotn">
+				<div class="tit_area">
+					<p class="cotn_tit">유학과정</p>
+				</div>
+				<div class="res_wrap">
+					<!-- 라디오영역 -->
+					<div class="rdo_wrap res_rdo">
+						<div class="rdo_inner in_01">
+							<label for="rdo1">
+								<input type="radio" name="rdo_01" id="rdo1" checked>
+								<i class="icon_rdo"></i>
+								<span>어학연수</span>
+							</label>
+							<label for="rdo2" class="label_b">
+								<input type="radio" name="rdo_01" id="rdo2">
+								<i class="icon_rdo"></i>
+								<span>전문과정 (테솔/통번역/인턴쉽 등)</span>
+							</label>
+							<label for="rdo3" class="label_m">
+								<input type="radio" name="rdo_01" id="rdo3">
+								<i class="icon_rdo"></i>
+								<span>교환학생 (중고생)</span>
+							</label>
+						</div>
+						<div class="rdo_inner in_02">
+							<label for="rdo4">
+								<input type="radio" name="rdo_01" id="rdo4">
+								<i class="icon_rdo"></i>
+								<span>조기유학 (초)</span>
+							</label>
+							<label for="rdo5">
+								<input type="radio" name="rdo_01" id="rdo5">
+								<i class="icon_rdo"></i>
+								<span>조기유학 (중)</span>
+							</label>
+							<label for="rdo6">
+								<input type="radio" name="rdo_01" id="rdo6">
+								<i class="icon_rdo"></i>
+								<span>조기유학 (고)</span>
+							</label>
+							<label for="rdo7" class="label_m">
+								<input type="radio" name="rdo_01" id="rdo7">
+								<i class="icon_rdo"></i>
+								<span>영어캠프 (초중고)</span>
+							</label>
+						</div>
+						<div class="rdo_inner in_03">
+							<label for="rdo8">
+								<input type="radio" name="rdo_01" id="rdo8">
+								<i class="icon_rdo"></i>
+								<span>컬리지</span>
+							</label>
+							<label for="rdo9">
+								<input type="radio" name="rdo_01" id="rdo9">
+								<i class="icon_rdo"></i>
+								<span>학사</span>
+							</label>
+							<label for="rdo10">
+								<input type="radio" name="rdo_01" id="rdo10">
+								<i class="icon_rdo"></i>
+								<span>석사</span>
+							</label>
+							<label for="rdo11" class="label_m">
+								<input type="radio" name="rdo_01" id="rdo11">
+								<i class="icon_rdo"></i>
+								<span>박사</span>
+							</label>
+						</div>
+					</div>
+					<!--// 라디오영역 -->
+				</div>
 			</div>
-			<div class="flex-col-item">
-			  <input name="study_type" type="radio" style="accent-color:#22BB3A;width:1.2rem;height:1.2rem;">
-			  <div class="text-1-2 valign-text-middle text-1-4 spoqahansansneo-medium-abbey-20px">박사</div>
+			<!--// 유학과정 -->
+
+			<!-- 문의내용 -->
+			<div class="cotn">
+				<div class="tit_area">
+					<p class="cotn_tit">문의내용</p>
+				</div>
+				<div class="res_wrap">
+					<!-- textarea -->
+					<div class="textarea_wrap">
+						<textarea placeholder="(선택) 문의 내용을 간략히 입력해 주세요."></textarea>
+					</div>
+					<!--// textarea -->
+
+					<!-- 개인정보수집동의영역 -->
+					<div class="policy_wrap">
+						<div class="chk_wrap">
+							<div class="form_chk">
+								<label for="chk1">
+									<input type="checkbox" name="chk_01" id="chk1">
+									<i class="icon_chk"></i>
+									<span>개인정보 수집 및 이용 동의</span>
+								</label>
+								<button type="button" class="btn_policy">[보기]</button><!-- 하단 컨텐츠 열기 class="on"추가 -->
+							</div>
+						</div>
+						<div class="policy_cotn" style="display: none;">
+							<p class="policy_title">개인정보수집 및 이용에 대한 안내</p>
+							<div class="policy_tab">
+								<a href="#none" class="tab on">수집하는 개인정보의 항목</a><!-- 활성화시 class="on" 추가 -->
+								<a href="#none" class="tab">개인정보의 수집 및 이용목적</a>
+								<a href="#none" class="tab">개인정보의 보유 및 이용기간</a>
+								<a href="#none" class="tab">동의 거부 시 불이익에 관한 사항</a>
+							</div>
+							<div class="txt_list">
+								<div class="txt_wrap" style="display: block;">
+									<p class="tit">■ 수집하는 개인정보 항목</p>
+									<p class="txt">
+										라임에듀케이션은 원활한 상담진행과 서비스 제공을 위해서 아래와 같은 개인정보를 수집하고 있습니다.<br>
+										아래와 같은 개인정보를 수집하고 있습니다.
+									</p>
+									<p class="tit">수집항목</p>
+									<p class="txt">
+										필수항목 : 이름, 휴대전화, 상담형태, 상담지사, 출국예정일<br>
+										선택항목 : 예상기간, 희망국가, 관심분야, 관심학교, 기타문의사항<br>
+										단, 수집항목은 상담신청과 세미나신청, 유학박람회신청 등과 관계 없이 모두 동일합니다.
+									</p>
+								</div>
+								<div class="txt_wrap">
+									<p class="tit">■ 개인정보의 수집 및 이용목적</p>
+									<p class="txt">
+										라임에듀케이션은 원활한 상담진행과 서비스 제공을 위해서 아래와 같은 개인정보를 수집하고 있습니다.<br>
+										아래와 같은 개인정보를 수집하고 있습니다.
+									</p>
+									<p class="tit">수집항목</p>
+									<p class="txt">
+										필수항목 : 이름, 휴대전화, 상담형태, 상담지사, 출국예정일<br>
+										선택항목 : 예상기간, 희망국가, 관심분야, 관심학교, 기타문의사항<br>
+										단, 수집항목은 상담신청과 세미나신청, 유학박람회신청 등과 관계 없이 모두 동일합니다.
+									</p>
+								</div>
+								<div class="txt_wrap">
+									<p class="tit">■ 개인정보의 보유 및 이용기간</p>
+									<p class="txt">
+										라임에듀케이션은 원활한 상담진행과 서비스 제공을 위해서 아래와 같은 개인정보를 수집하고 있습니다.<br>
+										아래와 같은 개인정보를 수집하고 있습니다.
+									</p>
+									<p class="tit">수집항목</p>
+									<p class="txt">
+										필수항목 : 이름, 휴대전화, 상담형태, 상담지사, 출국예정일<br>
+										선택항목 : 예상기간, 희망국가, 관심분야, 관심학교, 기타문의사항<br>
+										단, 수집항목은 상담신청과 세미나신청, 유학박람회신청 등과 관계 없이 모두 동일합니다.
+									</p>
+								</div>
+								<div class="txt_wrap">
+									<p class="tit">■ 동의 거부 시 불이익에 관한 사항</p>
+									<p class="txt">
+										라임에듀케이션은 원활한 상담진행과 서비스 제공을 위해서 아래와 같은 개인정보를 수집하고 있습니다.<br>
+										아래와 같은 개인정보를 수집하고 있습니다.
+									</p>
+									<p class="tit">수집항목</p>
+									<p class="txt">
+										필수항목 : 이름, 휴대전화, 상담형태, 상담지사, 출국예정일<br>
+										선택항목 : 예상기간, 희망국가, 관심분야, 관심학교, 기타문의사항<br>
+										단, 수집항목은 상담신청과 세미나신청, 유학박람회신청 등과 관계 없이 모두 동일합니다.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 개인정보수집동의영역 -->
+				</div>
 			</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="view-3">
-		<div class="text-1 spoqahansansneo-bold-abbey-24px">문의내용</div>
-		<img class="x" src="/static/img/common/consultPopup/horizontal_line.svg" alt="-" />
-		<div class="overlap-group-8">
-		  <textarea class="x-1 spoqahansansneo-medium-gunsmoke-20px" name="선택문의내용을간략히입력해주세요"  placeholder="(선택) 문의 내용을 간략히 입력해 주세요." type="text" ></textarea>
-		</div>
-	  </div>
-	  <div class="view">
-		<img class="view-item" src="/static/img/common/consultPopup/horizontal_line.svg" alt="-" />
-		<div class="overlap-group-3">
-		  <a href="javascript:showHideAgree('show');"><div class="text-1-3 valign-text-middle text-1-4">[보기]</div></a>
-		  <a href="javascript:showHideAgree('hide');" style="display:none;"><div class="text-1-3 valign-text-middle text-1-4">[닫기]</div></a>
-		  <div class="view-1">
-			<div class="check-square-on">
-			  <input type="checkbox" style="accent-color: #22BB3A;" checked>
+			<!--// 문의내용 -->
+
+			<!-- 버튼 -->
+			<div class="btn_wrap">
+				<button type="button" class="pop_btn cancel">취소</button>
+				<button type="button" class="pop_btn confirm">상담예약</button>
 			</div>
-			<p class="text-2-1 valign-text-middle">개인정보 수집 및 이용 동의</p>
-		  </div>
-		</div>
-		<img class="view-item agreeInfo" src="/static/img/common/consultPopup/horizontal_line.svg" alt="-" />
-		<p class="text-3-3 valign-text-middle agreeInfo" >개인정보수집 및 이용에 대한 안내</p>
-		<div class="view-2 agreeInfo">
-		  <div class="group-18852">
-			<div class="overlap-group-4"><div class="text-6 valign-text-middle">수집하는 개인정보의 항목</div></div>
-			<div class="overlap-group-5">
-			  <div class="text valign-text-middle spoqahansansneo-medium-abbey-15px">
-				개인정보의 수집 및 이용목적
-			  </div>
-			</div>
-		  </div>
-		  <div class="overlap-group-container-1 overlap-group-container-3">
-			<div class="overlap-group-6">
-			  <div class="text valign-text-middle spoqahansansneo-medium-abbey-15px">
-				개인정보의 보유 및 이용기간
-			  </div>
-			</div>
-			<div class="overlap-group-7">
-			  <p class="text valign-text-middle spoqahansansneo-medium-abbey-15px">
-				동의 거부 시 불이익에 관한 사항
-			  </p>
-			</div>
-		  </div>
-		  <div class="overlap-group1">
-			<p class="text-4-1">
-			  <span class="span-2">■ 수집하는 개인정보 항목<br /></span>
-			  <span class="spoqahansansneo-medium-gunsmoke-12px">
-				라임에듀케이션은 원활한 상담진행과 서비스 제공을 위해서 아래와 같은 개인정보를 수집하고
-				있습니다.<br />아래와 같은 개인정보를 수집하고 있습니다.<br />
-			  </span>
-			  <span class="span-1">수집항목<br /></span >
-			  <span class="spoqahansansneo-medium-gunsmoke-12px">
-				필수항목 : 이름, 휴대전화, 상담형태, 상담지사, 출국예정일<br />선택항목 : 예상기간, 희망국가,
-				관심분야, 관심학교, 기타문의사항<br />단, 수집항목은 상담신청과 세미나신청, 유학박람회신청 등과 관계
-				없이 모두 동일합니다.<br />
-			  </span>
-			</p>
-		  </div>
-		</div>
-	  </div>
-	  <img class="button_" src="/static/img/common/consultPopup/btn_cancel.png" alt="button_" />
-	  <img class="button_-1" src="/static/img/common/consultPopup/btn_confirm.png" alt="button_" />
+			<!--// 버튼 -->
+		</form>
 	</div>
-</div>
-<!-- // quick_nav -->
+	<!--// 컨텐츠 -->
+</section>
+<!--// 상담예약팝업 -->
