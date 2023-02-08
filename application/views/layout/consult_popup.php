@@ -259,7 +259,7 @@
 						<div class="chk_wrap">
 							<div class="form_chk">
 								<label for="chk1">
-									<input type="checkbox" name="con_agree_yn" id="conAgreeYn">
+									<input type="checkbox" name="con_agree_yn" id="chk1">
 									<i class="icon_chk"></i>
 									<span>개인정보 수집 및 이용 동의</span>
 								</label>
