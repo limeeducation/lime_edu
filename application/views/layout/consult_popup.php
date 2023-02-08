@@ -30,7 +30,7 @@
 			$("#conAgreeYn").focus();
 		}else{
 			var cur_url = window.location.href;
-			$("#conNatio").val(cur_url);
+			$("#conApplyUrl").val(cur_url);
 			$("#applyConsult").submit();
 		}
 	};
