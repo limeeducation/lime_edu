@@ -27,7 +27,7 @@
 			$('#conStudy').val("<?= empty($con_study) ? '' : $con_study;?>").prop("selected",true);
 			$('#conNatio').val("<?= empty($con_natio) ? '' : $con_natio;?>").prop("selected",true);
 			$("#conStartDt").val("<?= empty($con_start_dt) ? '' : $con_start_dt;?>");
-			$("#conDetails").val("<?= empty($con_details) ? '' : $con_details;?>");
+			$("#conDetails").val(`<?= empty($con_details) ? '' : $con_details;?>`);
 			$("#conManager").val("<?= empty($con_manager) ? '' : $con_manager;?>");
 			if("<?= $con_contact_yn;?>" == 'Y'){
 				$("input[name='con_contact_yn']").prop("checked", true);
