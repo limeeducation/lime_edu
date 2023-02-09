@@ -193,26 +193,26 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 @media all and (max-width:1600px){
 	.quick_nav{right:2vw;}
 }
-@media all and (max-width:1200px){
+/*@media all and (max-width:1200px){
 	.quick_nav,
 	.active + #container .quick_nav{position:fixed !important;top:auto;bottom:1vw;right:1vw;}
 	.quick_time,.quick_contact,.quick_alert{display:none;}
 	.quick_title{padding:1.5rem 1rem 0;font-size:1.5rem;margin-bottom:1.5rem;background-color:#76CF84;}
 	.quick_list{padding:1.5rem;}
-}
+}*/
 @media all and (max-width:480px){
 	.quick_nav{width:auto;background-color:transparent;border:0 none;}
 	.quick_time,.quick_contact.quick_alert{display:none;}
 	.quick_title{display:none;}
 	.quick_list{padding:0 0 1rem;}
 	.quick_list > li + li{margin-top:1rem;}
-	.quick_list > li a{width:5rem;height:5rem;line-height:5rem;padding-left:0;text-indent:-9999px;font-size:0;}
+	/*.quick_list > li a{width:5rem;height:5rem;line-height:5rem;padding-left:0;text-indent:-9999px;font-size:0;}
 	.quick_list > li a{background-repeat:no-repeat;background-position:50% 50%;background-size:2rem auto;}
 	.quick_list > li.phone a{background-image:url(/static/img/common/quick_ico_phone@2x.png);}
 	.quick_list > li.home a{background-image:url(/static/img/common/quick_ico_home@2x.png);}
 	.quick_list > li.kakao a{background-image:url(/static/img/common/quick_ico_kakao@2x.png);}
 	.quick_list > li a:after{display:none;}
-	.quick_list > li a:hover{background-color: #76CF84;}
+	.quick_list > li a:hover{background-color: #76CF84;}*/
 }
 
 #footer{position:relative;padding:6.4rem 0 3.5rem;background:rgba(3, 3, 3, 0.95);}
