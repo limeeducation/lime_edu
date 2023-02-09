@@ -290,9 +290,10 @@ class AdminProd extends CI_Controller {
 		if($type == 'new'){
 			$data['reg_id'] = $this->session->userdata('user_idx');
 			$idx = $this->admin_prod_model->addProd($data);
+			script_alert_go($idx, base_url('/AdminProd/prodList'));
 			$data['prod_view_url'] = "/product/detail/".$idx;
 		}else{
-			$data['prod_view_url'] = $this->session->userdata('prod_view_url');
+			$data['prod_view_url'] = $this->input->post('prod_view_url');
 			$data['mod_id'] = $this->session->userdata('user_idx');
 			date_default_timezone_set('Asia/Seoul');
 			$data['prod_mod_dt'] = date('Y-m-d H:i:s');
