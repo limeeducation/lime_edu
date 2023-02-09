@@ -3,6 +3,8 @@
 	$(document).ready(function(){
 		var container = document.getElementById('container');
 		container.style.zoom = 0.8;
+		var cs_pop = document.getElementsByClassName('cs_pop');
+		cs_pop.style.zoom = 0.8;
 	});
 </script>
 <aside id="mobileMenu">
