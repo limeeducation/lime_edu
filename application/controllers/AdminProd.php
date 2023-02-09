@@ -300,7 +300,7 @@ class AdminProd extends CI_Controller {
 		$data['prod_idx'] = $this->input->post('prod_idx');
 		$res = $this->admin_prod_model->editProd($data,$type);
 		if($res){
-			$res_msg = $editType == 'edit' ? '상품이 수정되었습니다.' : '상품이 등록되었습니다.';
+			$res_msg = $type == 'edit' ? '상품이 수정되었습니다.' : '상품이 등록되었습니다.';
 			script_alert_go($res_msg, base_url('/AdminProd/prodList'));
 		}else{
 			script_alert_back('저장중 장애가 발생했습니다.');
