@@ -7,11 +7,11 @@
 <script type="text/javascript">
 	//수정 페이지 이동
 	function go_edit_prod(idx){
-		location.href="/adminProd/prodEdit/idx="+idx;
+		location.href="/adminProd/prodEdit/"+idx;
 	}
 	//상품 삭제
 	function go_del_prod(idx){
-		location.href="/adminProd/prodDel/idx="+idx;
+		location.href="/adminProd/prodDel/"+idx;
 	}
 
 </script>
