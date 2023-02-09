@@ -290,15 +290,16 @@ class AdminProd extends CI_Controller {
 		if($type == 'new'){
 			$data['reg_id'] = $this->session->userdata('user_idx');
 			$idx = $this->admin_prod_model->addProd($data);
-			script_alert_go($idx, base_url('/AdminProd/prodList'));
 			$data['prod_view_url'] = "/product/detail/".$idx;
+			$data['prod_idx'] = $idx;
 		}else{
+			$data['prod_idx'] = $this->input->post('prod_idx');
 			$data['prod_view_url'] = $this->input->post('prod_view_url');
 			$data['mod_id'] = $this->session->userdata('user_idx');
 			date_default_timezone_set('Asia/Seoul');
 			$data['prod_mod_dt'] = date('Y-m-d H:i:s');
 		}
-		$data['prod_idx'] = $this->input->post('prod_idx');
+
 		$res = $this->admin_prod_model->editProd($data,$type);
 		if($res){
 			$res_msg = $type == 'edit' ? '상품이 수정되었습니다.' : '상품이 등록되었습니다.';
