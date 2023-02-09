@@ -308,4 +308,17 @@ class AdminProd extends CI_Controller {
 			script_alert_back('저장중 장애가 발생했습니다.');
 		}
 	}
+
+	public function prodDel($idx){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+
+		$res = $this->admin_prod_model->deleteProd($idx);
+		if(!$res){
+			script_alert_back('상품 삭제 중 장애가 발생했습니다.');
+		}
+		script_alert_go('상품이 삭제되었습니다.', base_url('/AdminProd/prodList'));
+	}
 }

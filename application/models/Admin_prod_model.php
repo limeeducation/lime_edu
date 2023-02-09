@@ -204,6 +204,11 @@ class Admin_prod_model extends CI_Model
 		return $this->db->trans_status();
 	}
 
+	public function deleteProd($idx){
+		$this->db->where('prod_idx', $idx);
+		$this->db->delete('products');
+		return $this->db->trans_status();
+	}
 }
 
 ?>
