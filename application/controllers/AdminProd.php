@@ -292,12 +292,12 @@ class AdminProd extends CI_Controller {
 			$idx = $this->admin_prod_model->addProd($data);
 			$data['prod_view_url'] = "/product/detail/".$idx;
 		}else{
-			$data['prod_idx'] = $this->input->post('prod_idx');
 			$data['prod_view_url'] = $this->session->userdata('prod_view_url');
 			$data['mod_id'] = $this->session->userdata('user_idx');
 			date_default_timezone_set('Asia/Seoul');
 			$data['prod_mod_dt'] = date('Y-m-d H:i:s');
 		}
+		$data['prod_idx'] = $this->input->post('prod_idx');
 		$res = $this->admin_prod_model->editProd($data,$type);
 		if($res){
 			$res_msg = $editType == 'edit' ? '상품이 수정되었습니다.' : '상품이 등록되었습니다.';
