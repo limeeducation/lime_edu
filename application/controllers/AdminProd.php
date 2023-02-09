@@ -251,7 +251,7 @@ class AdminProd extends CI_Controller {
 
 	//상품 리스트
 	//상품 : 인덱스, 이미지 url, 등록자, 등록일, 수정자, 수정일
-	public function productList(){
+	public function prodList(){
 		if(!is_user_logged_in()){
 			$msg = "로그인이 필요한 페이지입니다.";
 			script_alert_go($msg, '/admin');
