@@ -259,7 +259,7 @@ class AdminProd extends CI_Controller {
 
 		$products = $this->admin_prod_model->get_products();
 		//make_log(null,'칼럼리스트 호출');
-		$this->load->view('admin/colList', array(
+		$this->load->view('admin/prodList', array(
 			'products' => $products
 		));
 	}
