@@ -6,7 +6,7 @@ class AdminProd extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->database();
-		$this->load->library('session');
+		$this->load->library('session','pagination');
 		$this->load->helper(array('url', 'cookie', 'script', 'login'));
 		$this->load->model(array('admin_model', 'admin_prod_model'));
 	}
@@ -228,7 +228,7 @@ class AdminProd extends CI_Controller {
 		}
 
 		if($res){
-		$res_msg = $editType == 'edit' ? '칼럼이 수정되었습니다.' : '칼럼이 등록되었습니다.';
+			$res_msg = $editType == 'edit' ? '칼럼이 수정되었습니다.' : '칼럼이 등록되었습니다.';
 			script_alert_go($res_msg, base_url('/AdminProd/columnList'));
 		}else{
 			script_alert_back('저장중 장애가 발생했습니다.');
@@ -247,5 +247,62 @@ class AdminProd extends CI_Controller {
 			script_alert_back('칼럼 삭제 중 장애가 발생했습니다.');
 		}
 		script_alert_go('칼럼이 삭제되었습니다.', base_url('/AdminProd/columnList'));
+	}
+
+	//상품 리스트
+	//상품 : 인덱스, 이미지 url, 등록자, 등록일, 수정자, 수정일
+	public function productList(){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+
+		$products = $this->admin_prod_model->get_products();
+		//make_log(null,'칼럼리스트 호출');
+		$this->load->view('admin/colList', array(
+			'products' => $products
+		));
+	}
+
+	//상품 등록,수정 페이지
+	public function prodEdit($idx=null){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+		$res['stat'] = "new";
+		if(!empty($idx)){
+			$res = $this->admin_prod_model->get_prod_detail($idx);
+			$res['stat'] = "edit";
+		}
+		$this->load->view('admin/prodEdit', $res);
+	}
+
+	//상품 등록,수정
+	public function prodSave(){
+		if(!is_user_logged_in()){
+			$msg = "로그인이 필요한 페이지입니다.";
+			script_alert_go($msg, '/admin');
+		}
+		$data['prod_name'] = $this->input->post('prod_name');
+		$data['prod_img_url'] = $this->input->post('prod_img_url');
+		$type = $this->input->post('edit_type');
+		if($type == 'new'){
+			$data['reg_id'] = $this->session->userdata('user_idx');
+			$idx = $this->admin_prod_model->addProd($data);
+			$data['prod_view_url'] = "/product/detail/".$idx;
+		}else{
+			$data['prod_view_url'] = $this->session->userdata('prod_view_url');
+			$data['mod_id'] = $this->session->userdata('user_idx');
+			date_default_timezone_set('Asia/Seoul');
+			$data['prod_mod_dt'] = date('Y-m-d H:i:s');
+		}
+		$res = $this->admin_prod_model->editProd($data,$type);
+		if($res){
+			$res_msg = $editType == 'edit' ? '상품이 수정되었습니다.' : '상품이 등록되었습니다.';
+			script_alert_go($res_msg, base_url('/AdminProd/prodList'));
+		}else{
+			script_alert_back('저장중 장애가 발생했습니다.');
+		}
 	}
 }

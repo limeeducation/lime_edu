@@ -161,6 +161,49 @@ class Admin_prod_model extends CI_Model
 		return $this->db->trans_status();
 	}
 
+	public function get_products(){
+		$this->db->select('prod_idx');
+		$this->db->select('prod_name');
+		$this->db->select('prod_img_url');
+		$this->db->select('prod_reg_dt');
+		$this->db->select('prod_view_url');
+		$this->db->from('products');
+		$this->db->order_by('prod_idx', 'DESC');
+		return $this->db->get()->result();
+	}
+
+	public function get_prod_detail($idx){
+		$this->db->select('prod_idx');
+		$this->db->select('prod_name');
+		$this->db->select('prod_img_url');
+		$this->db->select('prod_view_url');
+		$this->db->from('products');
+		$this->db->where('prod_idx', $idx);
+		return $this->db->get()->row_array();
+	}
+
+	public function addProd($data){
+		$this->db->insert('products',$data);
+        return $this->db->insert_id();
+	}
+
+	public function editProd($data,$type){
+		$edit_data = array(
+			'prod_name'		=> $data['prod_name'],
+			'prod_img_url'	=> $data['prod_img_url'],
+			'prod_view_url'	=> $data['prod_view_url']
+		);
+		if($type == "edit"){
+			$edit_data['mod_id'] = $data['mod_id'];
+			$edit_data['prod_mod_dt'] = $data['prod_mod_dt'];
+		}
+		$edit_where = array(
+			'prod_idx'		=> $data['prod_idx']
+		);
+		$this->db->update('products', $edit_data, $edit_where);
+		return $this->db->trans_status();
+	}
+
 }
 
 ?>
