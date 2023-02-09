@@ -3,7 +3,7 @@
 	$(document).ready(function(){
 		var container = document.getElementById('container');
 		container.style.zoom = 0.8;
-		var cs_pop = document.getElementsByClassName('cs_pop');
+		var cs_pop = document.getElementsByClassName('cs_pop')[0];
 		cs_pop.style.zoom = 0.8;
 	});
 </script>
