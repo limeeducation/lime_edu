@@ -33,9 +33,9 @@
 					</div>
 				</div>
 				<?php if(count($products) < 1): ?>
-					<li>
+					<li class='banner'>
                     	<div class='bg-secondary rounded p-2 mt-3'>
-                    		등록된 이미지가 없습니다.
+                    		등록된 상품이 없습니다.
                     	</div>
                     </li>
 				<?php else : ?>
