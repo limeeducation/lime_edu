@@ -193,13 +193,13 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 @media all and (max-width:1600px){
 	.quick_nav{right:2vw;}
 }
-/*@media all and (max-width:1200px){
+@media all and (max-width:1200px){
 	.quick_nav,
 	.active + #container .quick_nav{position:fixed !important;top:auto;bottom:1vw;right:1vw;}
 	.quick_time,.quick_contact,.quick_alert{display:none;}
 	.quick_title{padding:1.5rem 1rem 0;font-size:1.5rem;margin-bottom:1.5rem;background-color:#76CF84;}
 	.quick_list{padding:1.5rem;}
-}*/
+}
 @media all and (max-width:480px){
 	.quick_nav{width:auto;background-color:transparent;border:0 none;}
 	.quick_time,.quick_contact.quick_alert{display:none;}
