@@ -4,6 +4,7 @@
 <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+<script type="text/javascript" src="/lib/smarteditor2/js/HuskyEZCreator.js" charset="utf-8"></script>
 <script>
 	$(function(){
 		$("#btn_col_save").bind('click',function(){
@@ -12,6 +13,8 @@
 			else if('' == $('#colThumb').val()) alert('썸네일 URL을 입력해주세요.');
 			else if('' == $('#colCnts').val()) alert('썸네일 내용을 입력해주세요.');
 			else{
+				//스마트 에디터 활용
+				obj.getById["colCnts"].exec("UPDATE_CONTENTS_FIELD", []);
 				$( "#column_save" ).submit();
 			}
 		})
@@ -32,6 +35,32 @@
 	function del_col(){
 		location.href="/adminProd/columnDelete<?= empty($idx) ? '' : '/'.$idx;?>";
 	}
+
+	//스마트 에디터 스크립트
+	$(function(){
+		//전역변수
+		var obj = [];
+		//스마트에디터 프레임생성
+		nhn.husky.EZCreator.createInIFrame({
+			oAppRef: obj,
+			elPlaceHolder: "col_cnts",
+			sSkinURI: "/lib/smarteditor2/SmartEditor2Skin.html",  // 본인 경로게 맞게 수정
+			htParams : {
+				// 툴바 사용 여부
+				bUseToolbar : true,
+				// 입력창 크기 조절바 사용 여부
+				bUseVerticalResizer : true,
+				// 모드 탭(Editor | HTML | TEXT) 사용 여부
+				bUseModeChanger : true,
+			},
+			fCreator: "createSEditor2"
+		});
+		function pasteHTML(filepath) {
+			var sHTML = '';
+			oEditors.getById["colCnts"].exec("PASTE_HTML", [sHTML]);
+		}
+
+	});
 </script>
 <body>
     <div class="container-fluid position-relative d-flex p-0">
@@ -46,7 +75,7 @@
 			<div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded h-100 p-4">
 					<h6 class="mb-4">칼럼 <?= $stat == 'edit' ? '수정' : '등록';?></h6>
-					<form action="/adminProd/columnSave" id="column_save" method="post">
+					<form action="/adminProd/columnSave" id="column_save" method="post" enctype="MULTIPART/FORM-DATA">
 						<input type="hidden" class="form-control" name="edit_type" value='<?= $stat;?>'>
 						<?php if($stat == "edit") :?>
 							<input type="hidden" class="form-control" name="col_idx" value="<?= $idx;?>">
@@ -71,7 +100,7 @@
 						</div>
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" id="colCnts" name="col_cnts">
-                            <label for="colCnts" class="form-label">칼럼 내용(임시)</label>
+                            <label for="colCnts" class="form-label">칼럼 내용</label>
 						</div>
 						<div class="form-check form-switch">
 							<input class="form-check-input" type="checkbox" role="switch" id="colUseYn" name="use_yn" checked="checked">
