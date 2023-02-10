@@ -43,7 +43,7 @@
 		//스마트에디터 프레임생성
 		nhn.husky.EZCreator.createInIFrame({
 			oAppRef: obj,
-			elPlaceHolder: "col_cnts",
+			elPlaceHolder: "colCnts",
 			sSkinURI: "/lib/smarteditor2/SmartEditor2Skin.html",  // 본인 경로게 맞게 수정
 			htParams : {
 				// 툴바 사용 여부
