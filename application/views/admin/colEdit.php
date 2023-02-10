@@ -11,7 +11,7 @@
 			$('#colSubject').val("<?= empty($col_subject) ? '' : $col_subject;?>").prop("selected",true);
 			$("#colThumb").val("<?= empty($col_thumb) ? '' : $col_thumb;?>");
 			$("#colTitle").val("<?= empty($col_title) ? '' : $col_title;?>");
-			$("#colCnts").val("<?= empty($col_cnts) ? '' : $col_cnts;?>");
+			$("#colCnts").val('<?= empty($col_cnts) ? '' : $col_cnts;?>');
 			if("<?= empty($use_yn) ? 'Y' : $use_yn;?>" == 'N'){
 				$("input[name='use_yn']").prop("checked", false);
 			}
