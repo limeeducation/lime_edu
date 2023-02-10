@@ -52,7 +52,7 @@
 			if( '' == $("select[name=col_subject]").val() ) alert('칼럼 주제를 선택해주세요.');
 			else if('' == $('#colTitle').val()) alert('칼럼 제목을 입력해주세요.');
 			else if('' == $('#colThumb').val()) alert('썸네일 URL을 입력해주세요.');
-			else if('' == $('#colCnts').val()) alert('칼럼 내용을 입력해주세요.');
+			else if('' == $('#colCnts').val() || '<p><br></p>' == $('#colCnts').val()) alert('칼럼 내용을 입력해주세요.');
 			else{
 				$( "#column_save" ).submit();
 			}
