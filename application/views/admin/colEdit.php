@@ -99,7 +99,7 @@
 							<label for="colSubject" class="form-label">칼럼 주제</label>
 						</div>
 						<div class="form-floating mb-3">
-							<input type="text" class="form-control" id="colCnts" name="col_cnts">
+							<input type="textarea" class="form-control" id="colCnts" name="col_cnts">
                             <label for="colCnts" class="form-label">칼럼 내용</label>
 						</div>
 						<div class="form-check form-switch">
