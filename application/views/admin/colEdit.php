@@ -8,13 +8,13 @@
 <script>
 	$(function(){
 		$("#btn_col_save").bind('click',function(){
+			//칼럼 내용 삽입
+            obj.getById["colCnts"].exec("UPDATE_CONTENTS_FIELD", []);
 			if( '' == $("select[name=col_subject]").val() ) alert('칼럼 주제를 선택해주세요.');
 			else if('' == $('#colTitle').val()) alert('칼럼 제목을 입력해주세요.');
 			else if('' == $('#colThumb').val()) alert('썸네일 URL을 입력해주세요.');
-			else if('' == $('#colCnts').val()) alert('썸네일 내용을 입력해주세요.');
+			else if('' == $('#colCnts').val()) alert('칼럼 내용을 입력해주세요.');
 			else{
-				//스마트 에디터 활용
-				obj.getById["colCnts"].exec("UPDATE_CONTENTS_FIELD", []);
 				$( "#column_save" ).submit();
 			}
 		})
