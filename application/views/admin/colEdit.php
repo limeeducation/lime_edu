@@ -6,20 +6,6 @@
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
 <script type="text/javascript" src="/lib/smarteditor2/js/HuskyEZCreator.js" charset="utf-8"></script>
 <script>
-	$(function(){
-		$("#btn_col_save").bind('click',function(){
-			//칼럼 내용 삽입
-            obj.getById["colCnts"].exec("UPDATE_CONTENTS_FIELD", []);
-			if( '' == $("select[name=col_subject]").val() ) alert('칼럼 주제를 선택해주세요.');
-			else if('' == $('#colTitle').val()) alert('칼럼 제목을 입력해주세요.');
-			else if('' == $('#colThumb').val()) alert('썸네일 URL을 입력해주세요.');
-			else if('' == $('#colCnts').val()) alert('칼럼 내용을 입력해주세요.');
-			else{
-				$( "#column_save" ).submit();
-			}
-		})
-	});
-
 	$(document).ready(function(){
 		if('<?= $stat;?>' == 'edit'){
 			$('#colSubject').val("<?= empty($col_subject) ? '' : $col_subject;?>").prop("selected",true);
@@ -59,6 +45,18 @@
 			var sHTML = '';
 			oEditors.getById["colCnts"].exec("PASTE_HTML", [sHTML]);
 		}
+		//칼럼 저장
+		$("#btn_col_save").bind('click',function(){
+			//칼럼 내용 삽입
+			obj.getById["colCnts"].exec("UPDATE_CONTENTS_FIELD", []);
+			if( '' == $("select[name=col_subject]").val() ) alert('칼럼 주제를 선택해주세요.');
+			else if('' == $('#colTitle').val()) alert('칼럼 제목을 입력해주세요.');
+			else if('' == $('#colThumb').val()) alert('썸네일 URL을 입력해주세요.');
+			else if('' == $('#colCnts').val()) alert('칼럼 내용을 입력해주세요.');
+			else{
+				$( "#column_save" ).submit();
+			}
+		})
 
 	});
 </script>
