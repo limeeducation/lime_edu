@@ -2,7 +2,7 @@
 include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 //include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
-<link rel="stylesheet" type="text/css" href="css/sub.css">
+<link rel="stylesheet" type="text/css" href="/static/css/sub.css">
 <body>
     <script type="text/javascript">
 
