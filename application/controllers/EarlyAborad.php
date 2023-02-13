@@ -23,7 +23,7 @@ class EarlyAbroad extends CI_Controller {
 
 	//조기유학 미국 왜 조기유학인가
 	public function whyEarlyUsa(){
-		$this->load->view('earlyAborad/whyEarlyUsa');
+		$this->load->view('earlyAbroad/whyEarlyUsa');
 	}
 
 }

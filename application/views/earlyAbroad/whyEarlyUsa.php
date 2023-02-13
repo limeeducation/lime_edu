@@ -5,34 +5,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="css/sub.css">
 <body>
     <script type="text/javascript">
-        function change_nation(tab,nation){
-            if(tab == "5"){
 
-            }else if(tab == "6"){
-                $(".banr_lists").hide();
-                $("#banr_list_"+nation).show();
-            }else if(tab == "7"){
-				$(".natio_btn_area").hide();
-				$("#btn_"+nation+"_area").show();
-				$(".banr_lists").hide();
-				$("#banr_list_"+nation).show();
-            }
-        }
-
-        $('.natio_btn_area').each(function() {
-
-			var nowImg = $(this).find('img');  //호버한 부분의 img파일 찾기
-			var srcName = nowImg.attr('src');  //호버한 부분의 이미지 주소값 src가지고오기
-			var newSrc = srcName.substring(0, srcName.lastIndexOf('.'));
-			//.png , .jpg 와같이 파일명 자르기. 뒤에서부터 시작해서 '.'점있는 곳 까지 컷!
-
-			//호버이벤트
-			$(this).hover(function() {
-				$(this).find('img').attr('src', newSrc+ '_after.' + /[^.]+$/.exec(srcName)); //hover시 _on붙이기
-			}, function() {
-				$(this).find('img').attr('src', newSrc + '.' + /[^.]+$/.exec(srcName)); //hover시 _on 때기
-			});
-        });
     </script>
 	<div id="wrap">
 	<?php
