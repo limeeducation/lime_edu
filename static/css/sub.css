@@ -85,7 +85,7 @@
 .cont_table_top th{background:#FFF4F4;font-weight:700;color:#E46D6D;}
 .us_top_ranking_table{width:104rem;box-shadow:0 0 0 1px #E06969;}
 .us_top_ranking_table th,.us_top_ranking_table td{padding:5px;border:1px solid #E06969;font-size:12px;line-height:18px;color:#E06969;}
-.us_top_ranking_table th{background:#E8F3FF;}
+.us_top_ranking_table th{background:#FFF4F4;}
 .us_top_ranking_table tbody tr{display:none;}
 .us_top_ranking_table tbody tr.top20{display:table-row}
 .us_top_ranking_table.on tbody tr{display:table-row}
