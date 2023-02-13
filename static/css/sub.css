@@ -83,8 +83,8 @@
 .cont_table_top{width:100%;margin:0 auto;background-color:#fff;border-collapse:collapse;border-radius:10px;border-style:hidden;box-shadow:0 0 0 1px #E06969;overflow:hidden;}
 .cont_table_top th,.cont_table_top td{padding:1.2rem;border:1px solid #E06969;font-size:1.8rem;line-height:1.42;text-align:center;color:#4E4E4E;vertical-align:middle;}
 .cont_table_top th{background:#FFF4F4;font-weight:700;color:#E46D6D;}
-.us_top_ranking_table{width:104rem;box-shadow:0 0 0 1px #2E58FF;}
-.us_top_ranking_table th,.us_top_ranking_table td{padding:5px;border:1px solid #2E58FF;font-size:12px;line-height:18px;color:#2E58FF;}
+.us_top_ranking_table{width:104rem;box-shadow:0 0 0 1px #E06969;}
+.us_top_ranking_table th,.us_top_ranking_table td{padding:5px;border:1px solid #E06969;font-size:12px;line-height:18px;color:#E06969;}
 .us_top_ranking_table th{background:#E8F3FF;}
 .us_top_ranking_table tbody tr{display:none;}
 .us_top_ranking_table tbody tr.top20{display:table-row}

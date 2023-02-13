@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	<?php
     include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header.php');
     ?>
-		<div id="container">
+		<div id="container" style="padding:0;">
 
 			<div id="content">
 
