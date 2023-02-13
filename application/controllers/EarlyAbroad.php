@@ -26,4 +26,9 @@ class EarlyAbroad extends CI_Controller {
 		$this->load->view('earlyAbroad/whyEarlyUsa');
 	}
 
+	//조기유학 미국 명문 TOP50
+	public function usTopSchools(){
+		$this->load->view('earlyAbroad/usaTopSchools');
+	}
+
 }

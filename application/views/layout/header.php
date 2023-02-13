@@ -55,9 +55,9 @@
 					<li>
 						<a href="#" class="depth_sub_title">미국 <i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i></a>
 						<ul class="depth_list">
-							<li><a href="#">조기유학 학교찾기</a></li>
+							<li><a href="/earlyAbroad/usSchoolList">조기유학 학교찾기</a></li>
 							<li><a href="/earlyAbroad/whyEarlyUsa">왜 조기유학인가?</a></li>
-							<li><a href="#">명문 TOP 50</a></li>
+							<li><a href="/earlyAbroad/usTopSchools">명문 TOP 50</a></li>
 						</ul>
 					</li>
 					<li>
@@ -176,9 +176,9 @@
 								<li>
 									<a href="#" class="depth_sub_title">미국 <i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i></a>
 									<ul class="depth_list">
-										<li><a href="#">조기유학 학교찾기</a></li>
+										<li><a href="/earlyAbroad/usSchoolList">조기유학 학교찾기</a></li>
 										<li><a href="/earlyAbroad/whyEarlyUsa">왜 조기유학인가?</a></li>
-										<li><a href="#">명문 TOP 50</a></li>
+										<li><a href="/earlyAbroad/usTopSchools">명문 TOP 50</a></li>
 									</ul>
 								</li>
 								<li>
