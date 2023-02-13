@@ -28,14 +28,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							</li>
 							<li>
 								<a href="/earlyAbroad/whyEarlyUsa">
-									<i class="ico ico2" style="background-color:#FFE8E8;"></i>
-									<div class="text" style="background-color:#FFE8E8;">왜 조기유학인가?</div>
+									<i class="ico ico2"></i>
+									<div class="text">왜 조기유학인가?</div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<i class="ico ico3"></i>
-									<div class="text">명문 TOP50</div>
+									<i class="ico ico3" style="background-color:#FFE8E8;"></i>
+									<div class="text" style="background-color:#FFE8E8;">명문 TOP50</div>
 								</a>
 							</li>
 						</ul>
