@@ -27,9 +27,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<i class="ico ico2"></i>
-									<div class="text">왜 조기유학인가?</div>
+								<a href="/earlyAbroad/whyEarlyUsa">
+									<i class="ico ico2" style="background-color:#FFE8E8;"></i>
+									<div class="text" style="background-color:#FFE8E8;">왜 조기유학인가?</div>
 								</a>
 							</li>
 							<li>
