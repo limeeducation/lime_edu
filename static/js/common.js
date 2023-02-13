@@ -161,5 +161,14 @@ jQuery(function($){
 		});
 	}
 
+	$('.ranking_more').on('click',function(){
+		$(this).parent('.cont_title').toggleClass('on');
+		if($(this).parent('.cont_title').hasClass('on')){
+			$(this).parent('.cont_title').siblings('.ranking_table').addClass('on')
+		}else{
+			$(this).parent('.cont_title').siblings('.ranking_table').removeClass('on')
+		}
+		return false;
+	});
 });
 
