@@ -311,6 +311,27 @@
 .intro_wrap .btn_intro.btn_i_02 {background-image:url(/static/img/main/btn_intro_02@2x.png);}
 .intro_wrap .btn_intro span {display: block; width: 100%; height: 100%; border-radius: 1rem; border: .2rem solid #fff; color: #fff;font-size: 3.6rem; font-weight: 700; box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25); text-align: center; line-height: 2.222em;}
 
+@media all and (max-width:1200px){
+	#mainIntro{margin-bottom:7rem;}
+	#mainIntro .inner {width:100%;}
+	.intro_cotn {width: 100%;}
+}
+
+@media all and (max-width:1024px) {
+	.intro_cotn {padding-left: 0; height: auto;}
+	.family .intro_cotn,
+	.camp .intro_cotn {background: none;}
+	.intro_cotn .txt_area {padding:6rem;}
+}
+
+@media all and (max-width:720px) {
+	.intro_cotn .txt_area {padding:4rem;}
+	.intro_wrap .btn_intro span {font-size: 3rem; line-height: 2.622em;}
+}
+
+@media all and (max-width:480px) {
+	.intro_cotn .txt_area .txt br {display: none;}
+}
 
 /* ============================================ <<상담예약팝업>> ================================================ */
 body.dimed {overflow:hidden;}
