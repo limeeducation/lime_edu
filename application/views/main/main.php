@@ -268,6 +268,89 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                             	</div><!-- // swiper-wrapper -->
                             </div><!-- // swiper-container -->
 							<?php elseif($tab == '8'): ?> <!-- 가족연수/캠프/스쿨링 메인 -->
+							<!-- 가족연수/캠프란? -->
+								<section class="main_sect" id="mainIntro">
+									<div class="inner">
+										<!-- 가족연수란 -->
+										<div class="intro_wrap family">
+											<!-- 제목영역 -->
+											<div class="tit_area">
+												<p class="tit">가족연수란?</p>
+											</div>
+											<!--// 제목영역 -->
+
+											<!-- 컨텐츠 -->
+											<div class="intro_cotn">
+												<div class="txt_area">
+													<div class="group">
+														<i class="i_intro intro_01"></i>
+														<p class="txt">자녀는 물론 보호자도 함께<br> 수업을 받을 수 있습니다.</p>
+													</div>
+													<div class="group">
+														<i class="i_intro intro_02"></i>
+														<p class="txt">주말에는 보호자와 함께<br> 좋은 추억을 만들 수 있습니다.</p>
+													</div>
+													<div class="group">
+														<i class="i_intro intro_03"></i>
+														<p class="txt">캠프에 비해 비교적<br> 저렴한 비용으로 연수가 가능합니다.</p>
+													</div>
+													<div class="group">
+														<i class="i_intro intro_04"></i>
+														<p class="txt">주로 학업위주 프로그램이<br> 준비되어 있습니다.</p>
+													</div>
+												</div>
+											</div>
+											<!--// 컨텐츠 -->
+
+											<!-- 버튼 -->
+											<a href="#none" class="btn_intro btn_i_01">
+												<span>가족연수 모집공고 확인하기 Click!</span>
+											</a>
+											<!--// 버튼 -->
+										</div>
+										<!--// 가족연수란 -->
+
+										<!-- 캠프란 -->
+										<div class="intro_wrap camp">
+											<!-- 제목영역 -->
+											<div class="tit_area">
+												<p class="tit">캠프란?</p>
+											</div>
+											<!--// 제목영역 -->
+
+											<!-- 컨텐츠 -->
+											<div class="intro_cotn">
+												<div class="txt_area">
+													<div class="group">
+														<i class="i_intro intro_05"></i>
+														<p class="txt">출국부터 입국까지 담당자가<br> 안전하게 책임집니다.</p>
+													</div>
+													<div class="group">
+														<i class="i_intro intro_06"></i>
+														<p class="txt">주말에도 캠프 관계자들이 아이들과<br>함께합니다.</p>
+													</div>
+													<div class="group">
+														<i class="i_intro intro_07"></i>
+														<p class="txt">다양한 액티비티가 포함되어 있어 또래<br>들과 신나게 놀면서 공부할 수 있습니다.</p>
+													</div>
+													<div class="group">
+														<i class="i_intro intro_08"></i>
+														<p class="txt">영어공부에 대한 좋은 기억을<br> 만들어 줍니다.</p>
+													</div>
+												</div>
+											</div>
+											<!--// 컨텐츠 -->
+
+											<!-- 버튼 -->
+											<a href="#none" class="btn_intro btn_i_02">
+												<span>캠프 모집공고 확인하기 Click!</span>
+											</a>
+											<!--// 버튼 -->
+										</div>
+										<!--// 캠프란 -->
+									</div>
+								</section>
+								<!-- // 가족연수/캠프란? -->
 							<?php endif; ?>
 						</div><!-- // program-swiper -->
 
