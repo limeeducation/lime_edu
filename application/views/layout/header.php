@@ -174,7 +174,7 @@
 							<div class="depth_title">조기유학</div>
 							<ul class="depth_group">
 								<li>
-									<a href="#" class="depth_sub_title">미국 <i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i></a>
+									<a href="/earlyAbroad/whyEarlyUsa" class="depth_sub_title">미국 <i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i></a>
 									<ul class="depth_list">
 										<li><a href="/earlyAbroad/usSchoolList">조기유학 학교찾기</a></li>
 										<li><a href="/earlyAbroad/whyEarlyUsa">왜 조기유학인가?</a></li>
