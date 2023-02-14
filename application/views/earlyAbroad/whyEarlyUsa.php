@@ -21,7 +21,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="cont_title">미국 조기유학 프로그램</div>
 						<ul class="ico_btn_list type3">
 							<li>
-								<a href="#">
+								<a href="/earlyAbroad/usSchoolList">
 									<i class="ico ico1"></i>
 									<div class="text">조기유학 학교찾기</div>
 								</a>
@@ -33,7 +33,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="/earlyAbroad/usTopSchools">
 									<i class="ico ico3"></i>
 									<div class="text">명문 TOP50</div>
 								</a>
