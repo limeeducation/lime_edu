@@ -23,7 +23,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!-- 상품상세 -->
 					<div class="bnr_wrap">
 						<figure class="bnr">
-							<img src="<?= $prod_detail->prod_img_url; ?>" alt="상품상세">
+							<img src="<?= $prod_img_url; ?>" alt="상품상세">
 						</figure>
 					</div>
 					<!--// 상품상세 -->
