@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* ============================================ << 상품상세 >> ================================================ */
+#container.prd_detail {padding-bottom:0;}
+.bnr_wrap {width:100%; max-width:1000px; margin:6.7rem auto 8.4rem;}
+.bnr_wrap .bnr {width:100%; height:auto;}
+.bnr_wrap .bnr img {display:block; width:100%; height:auto;}
+
+/* ------------------------------ 상담신청란 ------------------------------ */
+.cs_area {width:100%; background:url(/static/img/product_detail/bg_cs.jpg) no-repeat 0 0; background-size:cover; padding:9rem 1rem;}
+.cs_form {width:100%; max-width:1100px; margin:0 auto; box-sizing:border-box; border:1rem solid #626262; border-radius:5rem; padding:3rem 5rem; overflow:hidden;}
+.cs_form .form_tit {text-align:center; font-size:3.2rem; font-weight:700; margin-bottom:2.5rem; color:#000; line-height:1.08em;}
+.cs_form .tit_area {display:flex; align-items:center; padding-bottom:.9rem; border-bottom:.3rem solid #d7d7d7;}
+.cs_form .tit_area .cotn_tit {width:19rem; font-size:2.5rem; font-weight:700; color:#000; line-height:1.08em;}
+.cs_form .res_wrap {padding:0 1.5rem; margin-bottom:3.5rem;}
+.cs_form .tap_wrap {display:flex; flex-wrap:wrap}
+.cs_form .tap_wrap .tab {font-size:1.9rem; margin-right:.9rem; color:#000; background-color:#f8f8f8; border:.1rem solid #b7b7b7; line-height:2.421em; border-radius:2.5rem; text-align:center; width:12.6rem; height:4.6rem; transition:background-color .2s, border-color .2s, color .2s; margin-top:.9rem;}
+.cs_form .tap_wrap .tab.on {color:#fff; background-color:#000; border-color:#000;}
+.cs_form .tap_wrap .tab.off {color:#131313; background-color:#cfcfcf; border-color:#cfcfcf;}
+.cs_form .rdo_wrap label {color:#000; line-height:1.5em;}
+.cs_form .rdo_wrap label ~ label {margin-left:6.5rem;}
+.cs_form .rdo_wrap input[type="radio"] ~ .icon_rdo {width:1.7rem; height:1.7rem;}
+.cs_form .rdo_wrap input[type="radio"] ~ .icon_rdo::after {width:1rem; height:1rem;}
+.cs_form .inpt_wrap {padding:.9rem 12rem 1rem 19rem;}
+.cs_form .inpt_wrap .date_wrap input,
+.cs_form .inpt_wrap .select_area,
+.cs_form .inpt_wrap .info_wrap .form_wrap input[type="text"] {border:.2rem solid #4f4f4f; border-radius:1rem; height:4.5rem;}
+.cs_form .inpt_wrap .date_wrap .date_text {font-size:1.8rem; margin:.8rem 0 1.3rem; color:#4b4b4b;}
+.cs_form input::placeholder {color:#696969;}
+.cs_form .inpt_wrap .info_wrap ~ .info_wrap {margin-top:.7rem;}
+.cs_form .inpt_wrap .info_wrap .info_tit {font-size:2.5rem; width:21.1rem; color:#000; border-right:.2rem solid #d7d7d7;}
+.cs_form .inpt_wrap .info_wrap .form_wrap {margin-left:5.5rem;}
+.cs_form .inpt_wrap .select_area {background-image:url(/static/img/product_detail/icon_selt_03.png); background-color:#fff;}
+.cs_form .textarea_wrap textarea {border:.2rem solid #696969; margin-top:.9rem;}
+.cs_form .textarea_wrap {margin-bottom:1rem;}
+.cs_form .policy_wrap .chk_wrap {padding:1rem 0;}
+.cs_form .chk_wrap .form_chk .icon_chk {width:2.5rem; height:2.5rem; border-radius:.5rem; border:.2rem solid #434343;}
+.cs_form .chk_wrap .form_chk label span {font-size:2rem; line-height:1.25em;}
+.cs_form .chk_wrap .form_chk .btn_policy {font-size:2rem; background-color:transparent;}
+.cs_form .policy_cotn .policy_title {font-size:2rem;}
+.cs_form .policy_cotn .policy_tab {max-width:60rem; margin:-2.2rem auto;}
+.cs_form .policy_cotn .policy_tab .tab {font-size:1.8rem;}
+.cs_form .policy_cotn .txt_list .txt_wrap .tit {font-size:1.5rem;}
+.cs_form .policy_cotn .txt_list .txt_wrap .txt {font-size:1.4rem;}
+.cs_form .btn_wrap {margin-top:1rem;}
+.cs_form .btn_wrap .cs_btn {display:block; width:100%; text-align:center; border-radius:1rem; background-color:#76cf84; border-color:#76cf84; height:5.4rem; font-size:3rem; line-height:1.8em; color:#efefef;}
+
+@media all and (max-width:1024px) {
+	.cs_form .inpt_wrap {padding:1rem 1rem 2rem;}
+}
+
+@media all and (max-width:720px) {
+	.cs_form {padding:3rem;}
+	.cs_form .tit_area .cotn_tit {width:14rem;}
+	.cs_form .inpt_wrap .date_wrap .date_text {font-size:1.5rem;}
+	.cs_form .rdo_wrap label ~ label {margin-left:2rem;}
+	.cs_form .inpt_wrap .info_wrap .info_tit {width:18rem;}
+	.cs_form .inpt_wrap .info_wrap .form_wrap {margin-left:4rem;}
+}
+
+@media all and (max-width:480px){
+	.cs_form .inpt_wrap .date_wrap .date_text {font-size:1.2rem;}
+}

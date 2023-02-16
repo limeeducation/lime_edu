@@ -433,22 +433,22 @@ $(document).ready(function(){
 	});
 
 	//보기 닫기 버튼
-	$('.btn_policy').on('click', function(){
+	$('.popup_wrap .btn_policy').on('click', function(){
 		if($(this).hasClass('on')){
 			$(this).text('[보기]');
-			$('.policy_cotn').stop().slideUp(600);
+			$('.popup_wrap .policy_cotn').stop().slideUp(600);
 			$(this).removeClass('on');
 		}else{
 			$(this).text('[닫기]');
-			$('.policy_cotn').stop().slideDown(600);
+			$('.popup_wrap .policy_cotn').stop().slideDown(600);
 			$(this).addClass('on');
 		}
 	});
 
 	//개인정보 tab
-	$('.policy_tab > a').on('click', function(){
+	$('.popup_wrap .policy_tab > a').on('click', function(){
 		var tabCnt = $(this).index();
 		$(this).addClass('on').siblings().removeClass('on');
-		$('.txt_list > div').hide().eq(tabCnt).stop().show();
+		$('.popup_wrap .txt_list > div').hide().eq(tabCnt).stop().show();
 	});
 });
