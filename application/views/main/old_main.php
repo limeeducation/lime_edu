@@ -13,10 +13,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 					<div class="main_tx_box">
 						<div class="main_text">
 						<div class="mainT">
-							캐나다 유학 컨설팅 전문 기관으로<br>많은 고객들과 함께 하였습니다. 
+							영어권 유학 컨설팅 전문 기관으로<br>많은 고객들과 함께 하였습니다.
 						</div>
 							<ul>
-								<li><p>누적 수속 학생수</p><span>210,00명</span></li>
+								<li><p>누적 수속 학생수</p><span>21,000명</span></li>
 								<li><p>누적 방문고객</p><span>39,052명</span></li>
 								<li><p>해외교육기관제휴 </p><span>120개</span></li>
 							</ul>
@@ -46,7 +46,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 			<li data-img="/static/img/old/main/ca_main_slider02.jpg">
 					<div class="mainText">
 						<div>
-							<span>26년간의 캐나다 유학 컨설팅</span>
+							<span>18년간의 영어권 유학 컨설팅</span>
 							<span>많은 고객과 해외 교육기관이 </span>
 							<span>함께 했습니다</span>
 						</div>
