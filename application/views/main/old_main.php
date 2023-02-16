@@ -16,9 +16,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 							영어권 유학 컨설팅 전문 기관으로<br>많은 고객들과 함께 하였습니다.
 						</div>
 							<ul>
-								<li><p>누적 수속 학생수</p><span>21,000명</span></li>
-								<li><p>누적 방문고객</p><span>39,052명</span></li>
-								<li><p>해외교육기관제휴 </p><span>120개</span></li>
+								<li><p>누적 수속 학생수</p><span>8,753명</span></li>
+								<li><p>누적 방문고객</p><span>14,052명</span></li>
+								<li><p>해외교육기관제휴</p><span>120개</span></li>
 							</ul>
 						</div>
 					</div>
