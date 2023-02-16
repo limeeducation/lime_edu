@@ -90,9 +90,9 @@ class Main extends CI_Controller {
 		$data['con_start_dt'] = $this->input->post('start_year').".".$this->input->post('start_month');
 		$data['con_name'] = $this->input->post('con_name');
 		$data['con_contact'] = $this->input->post('con_contact');
-		$data['con_natio'] = $this->input->post('con_natio').empty() ? '' : $this->input->post('con_natio');
-		$data['con_study'] = $this->input->post('con_study').empty() ? '' : $this->input->post('con_study');
-		$data['con_details'] = $this->input->post('con_details').empty() ? '' : $this->input->post('con_details');
+		$data['con_natio'] = empty($this->input->post('con_natio')) ? '' : $this->input->post('con_natio');
+		$data['con_study'] = empty($this->input->post('con_study')) ? '' : $this->input->post('con_study');
+		$data['con_details'] = empty($this->input->post('con_details')) ? '' : $this->input->post('con_details');
 		$data['con_apply_url'] = $this->input->post('con_apply_url');
 
 		$apply_res = $this->apply_model->consult_apply($data);
