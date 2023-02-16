@@ -19,7 +19,6 @@ class Product extends CI_Controller {
 	//상품 상세 페이지 호출
 	public function detail($prod_idx){
 		$prod_detail = $this->product_model->getProduct($prod_idx)[0];
-		print_r($prod_detail);
 		$this->load->view('product/detail', $prod_detail);
 	}
 

@@ -8,7 +8,40 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/product_detail.js"></script>
 <body>
     <script type="text/javascript">
-
+	function applyStartProd(){
+		if(''==$("#conOfficeProd").val()){
+			alert('상담 희망 지사를 선택해주세요');
+			$("#seoul_office_prod").focus();
+		}else if(''==$("#conDateProd").val()){
+			alert('상담 희망 날짜를 선택해주세요');
+			$("#conDateProd").focus();
+		}else if(''==$("#conTimeProd").val()){
+			alert('상담 희망 시간을 선택해주세요');
+			$("#conTimeProd").focus();
+		}else if(''==$("#startYearProd").val()){
+			alert('희망 시작 년도를 선택해주세요');
+			$("#startYearProd").focus();
+		}else if(''==$("#startMonthProd").val()){
+			alert('희망 시작 월을 선택해주세요');
+			$("#startMonthProd").focus();
+		}else if(''==$("#conNameProd").val()){
+			alert('이름을 입력해주세요');
+			$("#conNameProd").focus();
+		}else if(''==$("#conContactProd").val()){
+			alert('연락처를 입력해주세요');
+			$("#conContactProd").focus();
+		}else if(!$("#conAgreeYnProd").is(":checked")){
+			alert('개인정보 수집 및 이용에 동의해주세요');
+			$("#conAgreeYnProd").focus();
+		}else{
+			var cur_url = window.location.href;
+			$("#conApplyUrl").val(cur_url);
+			$("#applyConsultFromProd").submit();
+		}
+	};
+	function setValueProd(key,value){
+		$('#'+key).val(value);
+	};
     </script>
 	<div id="wrap">
 	<?php
@@ -33,7 +66,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="cs_form" style="background-color: rgba(255, 255, 255, 1);"><!-- 투명도조절 -->
 							<h2 class="form_tit">상담신청란</h2>
 
-							<form action="">
+							<form action="/main/apply_consult" id="applyConsultFromProd" method="post">
+								<input type="hidden" id="conApplyUrlProd" name="con_apply_url">
 								<!-- 지사선택 -->
 								<div class="cotn">
 									<div class="tit_area">
@@ -46,13 +80,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												탭 활성화 class="on" 추가
 												탭 비활성화 class="off" 추가
 											-->
-											<a href="#none" class="tab">전국</a>
-											<a href="#none" class="tab on">서울</a>
-											<a href="#none" class="tab">대전</a>
-											<a href="#none" class="tab">송도</a>
-											<a href="#none" class="tab off">대구</a>
-											<a href="#none" class="tab">부산</a>
-											<a href="#none" class="tab">제주</a>
+											<input type="hidden" id="conOfficeProd" name="con_office">
+											<a href="javascript:setValueProd('conOfficeProd','전국');" class="tab">전국</a>
+											<a href="javascript:setValueProd('conOfficeProd','서울');" id="seoul_office_prod" class="tab on">서울</a>
+											<a href="javascript:setValueProd('conOfficeProd','대전');" class="tab">대전</a>
+											<a href="javascript:setValueProd('conOfficeProd','송도');" class="tab">송도</a>
+											<a href="javascript:setValueProd('conOfficeProd','대구');" class="tab">대구</a>
+											<a href="javascript:setValueProd('conOfficeProd','부산');" class="tab">부산</a>
+											<a href="javascript:setValueProd('conOfficeProd','제주');" class="tab">제주</a>
 										</div>
 										<!--// 탭영역 -->
 									</div>
@@ -66,12 +101,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<!-- 라디오영역 -->
 										<div class="rdo_wrap">
 											<label for="rdo211">
-												<input type="radio" name="rdo_021" id="rdo211" checked>
+												<input type="radio" name="con_type" value="call" id="rdo211" checked>
 												<i class="icon_rdo"></i>
 												<span>전화상담</span>
 											</label>
 											<label for="rdo221">
-												<input type="radio" name="rdo_021" id="rdo221">
+												<input type="radio" name="con_type" value="visit" id="rdo221">
 												<i class="icon_rdo"></i>
 												<span>방문상담</span>
 											</label>
@@ -81,8 +116,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="inpt_wrap">
 										<div class="date_wrap">
 											<div class="form_date">
-												<input type="text" class="datepick" placeholder="예약일자">
-												<select class="select_area">
+												<input type="text" class="datepick" name="con_date" id="conDateProd" placeholder="예약일자">
+												<select class="select_area" name="con_time" id="conTimeProd">
 													<option selected>예약시간</option>
 													<option>오전 10시</option>
 													<option>오전 11시</option>
@@ -104,40 +139,40 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="info_wrap">
 											<p class="info_tit">희망 시작 시기</p>
 											<div class="form_wrap">
-												<select class="select_area">
-													<option selected>년</option>
-													<option>2023년</option>
-													<option>2024년</option>
-													<option>2025년</option>
-													<option>2026년</option>
+												<select class="select_area" name="start_year" id="startYearProd">
+													<option value="" selected>년</option>
+													<option value="2023">2023년</option>
+													<option value="2024">2024년</option>
+													<option value="2025">2025년</option>
+													<option value="2026">2026년</option>
 												</select>
-												<select class="select_area">
-													<option selected>월</option>
-													<option>1월</option>
-													<option>2월</option>
-													<option>3월</option>
-													<option>4월</option>
-													<option>5월</option>
-													<option>6월</option>
-													<option>7월</option>
-													<option>8월</option>
-													<option>9월</option>
-													<option>10월</option>
-													<option>11월</option>
-													<option>12월</option>
+												<select class="select_area" name="start_month" id="startMonthProd">
+													<option value="" selected>월</option>
+													<option value="1">1월</option>
+													<option value="2">2월</option>
+													<option value="3">3월</option>
+													<option value="4">4월</option>
+													<option value="5">5월</option>
+													<option value="6">6월</option>
+													<option value="7">7월</option>
+													<option value="8">8월</option>
+													<option value="9">9월</option>
+													<option value="10">10월</option>
+													<option value="11">11월</option>
+													<option value="12">12월</option>
 												</select>
 											</div>
 										</div>
 										<div class="info_wrap">
-											<p class="info_tit">신청자 이름*</p>
+											<p class="info_tit">이름*</p>
 											<div class="form_wrap">
-												<input type="text" placeholder="신청자 이름">
+												<input type="text" placeholder="이름" name="con_name" id="conNameProd">
 											</div>
 										</div>
 										<div class="info_wrap">
-											<p class="info_tit">신청자 연락처*</p>
+											<p class="info_tit">연락처*</p>
 											<div class="form_wrap">
-												<input type="text" placeholder="전화번호 or 카카오톡 ID">
+												<input type="text" placeholder="전화번호 or 카카오톡 ID" name="con_contact" id="conContactProd">
 											</div>
 										</div>
 									</div>
@@ -152,7 +187,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="ta_wrap">
 										<!-- textarea -->
 										<div class="textarea_wrap">
-											<textarea placeholder="(선택) 문의 내용을 간략히 입력해 주세요."></textarea>
+											<textarea placeholder="(선택) 문의 내용을 간략히 입력해 주세요." name="con_details"></textarea>
 										</div>
 										<!--// textarea -->
 
@@ -160,8 +195,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="policy_wrap">
 											<div class="chk_wrap">
 												<div class="form_chk">
-													<label for="chk1">
-														<input type="checkbox" name="chk_01" id="chk1">
+													<label for="conAgreeYnProd">
+														<input type="checkbox" name="con_agree_yn" id="conAgreeYnProd">
 														<i class="icon_chk"></i>
 														<span>개인정보 수집 및 이용 동의</span>
 													</label>
@@ -239,7 +274,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 								<!-- 버튼 -->
 								<div class="btn_wrap">
-									<button type="button" class="cs_btn">상담신청하기</button>
+									<button type="button" class="cs_btn" onclick="applyStartProd();">상담신청하기</button>
 								</div>
 								<!--// 버튼 -->
 							</form>
