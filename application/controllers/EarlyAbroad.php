@@ -436,7 +436,7 @@ class EarlyAbroad extends CI_Controller {
 
 	//조기유학 캐나다 왜 조기유학인가
 	public function whyEarlyCa(){
-		$this->load->view('earlyAbroad/caSchoolList');
+		$this->load->view('earlyAbroad/whyEarlyCa');
 	}
 
 	//조기유학 캐나다 관리형 유학
