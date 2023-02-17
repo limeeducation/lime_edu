@@ -114,12 +114,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<!-- 목록 -->
 						<div class="office_list">
 							<div class="group ontario">
+							<!--온타리오주 교육청 class="ontario" 추가
+                            브리티시 컬럼비아주 교육청 class="british" 추가-->
 								<div class="group_list">
-									<!--
-										온타리오주 교육청 class="ontario" 추가
-										브리티시 컬럼비아주 교육청 class="british" 추가
-									-->
-
 									<!-- 왼쪽이미지영역 -->
 									<div class="img_area">
 										<figure class="logo_img">
@@ -175,13 +172,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 								</div>
 							</div>
-							<div class="group british">
+							<div class="group ontario">
 								<div class="group_list">
 									<!--
 										온타리오주 교육청 class="ontario" 추가
 										브리티시 컬럼비아주 교육청 class="british" 추가
 									-->
-
 									<!-- 왼쪽이미지영역 -->
 									<div class="img_area">
 										<figure class="logo_img">
@@ -298,7 +294,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 								</div>
 							</div>
-							<div class="group british">
+							<div class="group ontario">
 								<div class="group_list">
 									<!--
 										온타리오주 교육청 class="ontario" 추가
@@ -359,7 +355,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 								</div>
 							</div>
-							<div class="group ontario">
+							<div class="group british">
 								<div class="group_list">
 									<!--
 										온타리오주 교육청 class="ontario" 추가
@@ -420,6 +416,248 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 								</div>
 							</div>
+							<div class="group british">
+								<div class="group_list">
+									<!--
+										온타리오주 교육청 class="ontario" 추가
+										브리티시 컬럼비아주 교육청 class="british" 추가
+									-->
+
+									<!-- 왼쪽이미지영역 -->
+									<div class="img_area">
+										<figure class="logo_img">
+											<img src="/static/img/early_abroad/ca/logo_nvsd.png" alt="csd">
+										</figure>
+										<p class="name">North Vancouver School<br>District #44</p>
+									</div>
+									<!--// 왼쪽이미지영역 -->
+
+									<!-- 오른쪽텍스트영역 -->
+									<div class="txt_box">
+										<!-- 학교정보 -->
+										<div class="ofc_info">
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">기관/ 학교 명 :</h4>
+												<p class="info_txt">North Vancouver School<br>District #44 (44번 교육청)</p>
+											</div>
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">주소 :</h4>
+												<p class="info_txt">2121 Lonsdale Avenue, North Vancouver, BC, (V7M 2K6)</p>
+											</div>
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">홈페이지 :</h4>
+												<a href="https://www.sd44.ca/ProgramsServices/InternationalEd/Pages/default.aspx" class="info_txt"> https://www.sd44.ca/ProgramsServices/InternationalEd/Pages/default.aspx</a>
+											</div>
+										</div>
+										<!--// 학교정보 -->
+
+										<!-- 지역설명 -->
+										<div class="ofc_info">
+											<div class="info_txt_wrap loca_area">
+												<h4 class="info_tit">지역설명 : </h4>
+												<div class="loca_txt">
+													<p>
+														노스밴쿠버 교육청은 우수한 학군으로 공립학교임에도 퀄리티 높은 교육을 제공하고 있으며,<br>
+														웨스트 밴쿠버 교육청, 밴쿠버 교육청 웨스트 지역과 함께 국제학생 원서 마감이 가장 빠른 교육청 중 하나 입니다.
+														- 광역 밴쿠버 북쪽에 위치한 부촌지역. 밴쿠버 다운타운으로부터 차량으로 15분정도 떨어져 있습니다.
+														- 노스밴쿠버 교육청 관할 구역은 Capilano/Lonsdale/Lynn Valley/Deep Cove로 나뉩니다.
+													</p>
+												</div>
+											</div>
+										</div>
+										<!--// 지역설명 -->
+
+										<!-- 상세보기버튼 -->
+										<a href="#none" class="btn_detail">
+											<span>상세보기 &nbsp; +</span>
+										</a>
+										<!--// 상세보기버튼 -->
+									</div>
+									<!--// 오른쪽텍스트영역 -->
+
+								</div>
+							</div>
+							<div class="group british">
+								<div class="group_list">
+									<!--
+										온타리오주 교육청 class="ontario" 추가
+										브리티시 컬럼비아주 교육청 class="british" 추가
+									-->
+									<!-- 왼쪽이미지영역 -->
+									<div class="img_area">
+										<figure class="logo_img">
+											<img src="/static/img/early_abroad/ca/logo_vps.png" alt="csd">
+										</figure>
+										<p class="name">Vancouver School<br>District #39</p>
+									</div>
+									<!--// 왼쪽이미지영역 -->
+
+									<!-- 오른쪽텍스트영역 -->
+									<div class="txt_box">
+										<!-- 학교정보 -->
+										<div class="ofc_info">
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">기관/ 학교 명 :</h4>
+												<p class="info_txt">Vancouver School<br>District #39</p>
+											</div>
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">주소 :</h4>
+												<p class="info_txt">1580 West Broadway, Vancouver, BC, Canada (V6J 5K8)</p>
+											</div>
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">홈페이지 :</h4>
+												<a href="http://intered.vsb.bc.ca/" class="info_txt"> http://intered.vsb.bc.ca/</a>
+											</div>
+										</div>
+										<!--// 학교정보 -->
+
+										<!-- 지역설명 -->
+										<div class="ofc_info">
+											<div class="info_txt_wrap loca_area">
+												<h4 class="info_tit">지역설명 : </h4>
+												<div class="loca_txt">
+													<p>
+														BC주 남서쪽에 위치한 안전하고 기후가 온화한 밴쿠버 대표지역으로써 살기 좋은 도시 3위에 선정되었습니다.<br>
+                                                        - BC주 주립대학인 UBC가 근접하며 높은 교육수준을 자랑합니다.<br>
+                                                        - 학교 대부분이 안전한 주택가에 인접해 있습니다.<br>
+                                                        - Vancouver West, Vancouver East지역으로 나뉩니다.<br>
+                                                        - 주요 관광명소 및 편의 상권이 밀집 해 있으며, 현지 커뮤니티와 잘 조화를 이루어 정착 선호도가 높은 지역입니다.
+													</p>
+												</div>
+											</div>
+										</div>
+										<!--// 지역설명 -->
+
+										<!-- 상세보기버튼 -->
+										<a href="#none" class="btn_detail">
+											<span>상세보기 &nbsp; +</span>
+										</a>
+										<!--// 상세보기버튼 -->
+									</div>
+									<!--// 오른쪽텍스트영역 -->
+								</div>
+							</div>
+							<div class="group british">
+								<div class="group_list">
+									<!--
+										온타리오주 교육청 class="ontario" 추가
+										브리티시 컬럼비아주 교육청 class="british" 추가
+									-->
+									<!-- 왼쪽이미지영역 -->
+									<div class="img_area">
+										<figure class="logo_img">
+											<img src="/static/img/early_abroad/ca/logo_bnby.png" alt="csd">
+										</figure>
+										<p class="name">Burnaby School<br>District #41</p>
+									</div>
+									<!--// 왼쪽이미지영역 -->
+
+									<!-- 오른쪽텍스트영역 -->
+									<div class="txt_box">
+										<!-- 학교정보 -->
+										<div class="ofc_info">
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">기관/ 학교 명 :</h4>
+												<p class="info_txt">Burnaby School<br>District #41</p>
+											</div>
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">주소 :</h4>
+												<p class="info_txt">5325 Kincaid Street, Burnaby, BC, Canada (V5G 1W2)</p>
+											</div>
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">홈페이지 :</h4>
+												<a href="https://www.studyinburnaby.ca/" class="info_txt">https://www.studyinburnaby.ca/</a>
+											</div>
+										</div>
+										<!--// 학교정보 -->
+
+										<!-- 지역설명 -->
+										<div class="ofc_info">
+											<div class="info_txt_wrap loca_area">
+												<h4 class="info_tit">지역설명 : </h4>
+												<div class="loca_txt">
+													<p>
+														BC주 중심부에 위치한 광역지역으로 동과 서를 잊는 중요한 역할을 합니다.<br>
+                                                        - BC주의 상위권 대학교 SUF와 유명한 공대 BCIT가 있습니다.<br>
+                                                        - 초등과정 교육이 특화 되어 있는 지역입니다.<br>
+                                                        - North Burnaby, South Burnaby 지역으로 나뉩니다.<br>
+                                                        - 주요 관광명소 및 거대한 상권으로의 접근성이 좋으며, 한적한 거주환경으로 인한 정착 선호도가 높은 지역입니다.<br>
+													</p>
+												</div>
+											</div>
+										</div>
+										<!--// 지역설명 -->
+
+										<!-- 상세보기버튼 -->
+										<a href="#none" class="btn_detail">
+											<span>상세보기 &nbsp; +</span>
+										</a>
+										<!--// 상세보기버튼 -->
+									</div>
+									<!--// 오른쪽텍스트영역 -->
+								</div>
+							</div>
+							<div class="group british">
+								<div class="group_list">
+									<!--
+										온타리오주 교육청 class="ontario" 추가
+										브리티시 컬럼비아주 교육청 class="british" 추가
+									-->
+									<!-- 왼쪽이미지영역 -->
+									<div class="img_area">
+										<figure class="logo_img">
+											<img src="/static/img/early_abroad/ca/logo_lnly.png" alt="csd">
+										</figure>
+										<p class="name">Langley School<br>District #35</p>
+									</div>
+									<!--// 왼쪽이미지영역 -->
+
+									<!-- 오른쪽텍스트영역 -->
+									<div class="txt_box">
+										<!-- 학교정보 -->
+										<div class="ofc_info">
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">기관/ 학교 명 :</h4>
+												<p class="info_txt">Burnaby School<br>District #41</p>
+											</div>
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">주소 :</h4>
+												<p class="info_txt">5325 Kincaid Street, Burnaby, BC, Canada (V5G 1W2)</p>
+											</div>
+											<div class="info_txt_wrap">
+												<h4 class="info_tit">홈페이지 :</h4>
+												<a href="http://www.studyinlangley.com/" class="info_txt">http://www.studyinlangley.com/</a>
+											</div>
+										</div>
+										<!--// 학교정보 -->
+
+										<!-- 지역설명 -->
+										<div class="ofc_info">
+											<div class="info_txt_wrap loca_area">
+												<h4 class="info_tit">지역설명 : </h4>
+												<div class="loca_txt">
+													<p>
+														BC주 동남쪽에 위치한 광역지역입니다.<br>
+                                                        - 밴쿠버 다운타운에서 50분가량 떨어져 있는 외각 지역이나, 최근 개발이 진행되고 있는 신흥도시입니다.<br>
+                                                        - 새 아파트 및 깔끔한 거주환경과 자연이 조화를 이루고 있는 지역입니다.<br>
+                                                        - Walnutgrove, Fort Langley, Aldergrove, Langly City, willbrook지역으로 나뉩니다.<br>
+                                                        - 큼직한 상권 및 다양한 스포츠 시설(indoor, outdoor)형성 되어 있으며, 특히 Walnutgrove, Aldergrove, willowbrook지역에는<br>
+                                                        조기유학 자녀를 동반한 한인가정이 많이 거주/이동하는 추세입니다.
+													</p>
+												</div>
+											</div>
+										</div>
+										<!--// 지역설명 -->
+
+										<!-- 상세보기버튼 -->
+										<a href="#none" class="btn_detail">
+											<span>상세보기 &nbsp; +</span>
+										</a>
+										<!--// 상세보기버튼 -->
+									</div>
+									<!--// 오른쪽텍스트영역 -->
+								</div>
+							</div>
 						</div>
 						<!--// 목록 -->
 
@@ -428,7 +666,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<a href="#none" class="btn_arr prev"></a>
 							<a href="#none" class="num on">1</a><!-- 현재페이지class="on"추가 -->
 							<a href="#none" class="num ">2</a>
-							<a href="#none" class="num ">3</a>
 							<a href="#none" class="btn_arr next"></a>
 						</div>
 						<!--// 페이징 -->
