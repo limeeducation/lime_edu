@@ -392,6 +392,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li><a href="https://www.germantownfriends.org/">Germantown Friends School</a></li>
 											<li><a href="https://www.solebury.org/">Solebury School</a></li>
 										</ul>
+									</div><!-- // swiper-slide -->
+
+									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Texas</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://www.tmi-sa.org/">TMI - The Episcopal  School of Texas</a></li>
@@ -404,9 +407,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li><a href="https://www.lyndoninstitute.org/">Lyndon Institute</a></li>
 											<li><a href="https://stjacademy.org/">St. Johnsbury Academy</a></li>
 										</ul>
-									</div><!-- // swiper-slide -->
-
-									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Virginia</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://www.blueridgeschool.com/">Blue Ridge School</a></li>
