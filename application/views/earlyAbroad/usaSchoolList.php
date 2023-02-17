@@ -89,7 +89,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								 <area target="" alt="로드아일랜드" title="로드아일랜드" href="jacascript:;" coords="995,178,1001,191,1011,185,1001,176" shape="poly">
 								 <area target="" alt="코네티컷" title="코네티컷" href="javascript:get_list('Connecticut');" coords="969,188,973,208,981,200,998,193,995,178" shape="poly">
 								 <area target="" alt="뉴욕" title="뉴욕" href="뉴욕" coords="918,127,914,135,910,141,907,150,902,155,906,169,900,177,890,183,878,186,868,190,864,195,869,201,861,215,857,223,863,226,880,217,917,209,938,200,949,211,959,214,969,213,967,194,962,172,948,142,940,121" shape="poly">
-								 <area target="" alt="펜실베이니아" title="펜실베이니아" href="펜실베이니아" coords="854,222,850,231,863,280,879,277,906,268,944,258,945,250,951,251,961,242,950,230,947,220,948,212,937,201,925,204,918,209,897,212,879,216,865,225" shape="poly">
+								 <area target="" alt="펜실베이니아" title="펜실베이니아" href="javascript:get_list('Pennsylvania');" coords="854,222,850,231,863,280,879,277,906,268,944,258,945,250,951,251,961,242,950,230,947,220,948,212,937,201,925,204,918,209,897,212,879,216,865,225" shape="poly">
 								 <area target="" alt="뉴저지" title="뉴저지" href="javascript:get_list('New_Jersey');" coords="949,215,965,215,967,229,971,231,975,238,975,248,969,265,961,262,950,251,961,240,949,228" shape="poly">
 								 <area target="" alt="델라웨어" title="델라웨어" href="jacascript:;" coords="950,253,945,260,957,280,964,280,961,268" shape="poly">
 								 <area target="" alt="메릴랜드" title="메릴랜드" href="javascript:get_list('Maryland');" coords="910,270,919,279,932,283,929,295,949,295,940,281,939,272,941,261" shape="poly">
