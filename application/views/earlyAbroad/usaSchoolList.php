@@ -5,7 +5,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/sub.css">
 <body>
     <script type="text/javascript">
-
+	function get_list(state){
+		$(".item").hide();
+		var title = $("#"+state+"_title");
+		var list = $("#"+state+"_list");
+		title.parent().show();
+		title.show();
+		list.show();
+	}
     </script>
 	<div id="wrap">
 	<?php
@@ -118,13 +125,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<ul>
 										<li><a href="jacascript:;" class="box disabled"><b>AL</b>앨라배마</a></li>
 										<li><a href="jacascript:;" class="box disabled"><b>AK</b>알래스카</a></li>
-										<li><a href="#" class="box"><b>AZ</b>애리조나</a></li>
+										<li><a href="javascript:get_list('Arizona');" class="box"><b>AZ</b>애리조나</a></li>
 										<li><a href="jacascript:;" class="box disabled"><b>AR</b>아칸소</a></li>
-										<li><a href="#" class="box"><b>CA</b>캘리포니아</a></li>
-										<li><a href="#" class="box"><b>CO</b>콜로라도</a></li>
-										<li><a href="#" class="box"><b>CT</b>코네티컷</a></li>
+										<li><a href="javascript:get_list('California');" class="box"><b>CA</b>캘리포니아</a></li>
+										<li><a href="javascript:get_list('Colorado');" class="box"><b>CO</b>콜로라도</a></li>
+										<li><a href="javascript:get_list('Connecticut');" class="box"><b>CT</b>코네티컷</a></li>
 										<li><a href="jacascript:;" class="box disabled"><b>DE</b>델라웨어</a></li>
-										<li><a href="#" class="box"><b>FL</b>플로리다</a></li>
+										<li><a href="javascript:get_list('Florida');" class="box"><b>FL</b>플로리다</a></li>
 									</ul>
 								</dd>
 							</dl>
@@ -133,8 +140,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<dd>
 									<ul>
 										<li><a href="jacascript:;" class="box disabled"><b>GA</b>조지아</a></li>
-										<li><a href="#" class="box"><b>HI</b>하와이</a></li>
-										<li><a href="#" class="box"><b>ID</b>아이다호</a></li>
+										<li><a href="javascript:get_list('Hawaii');" class="box"><b>HI</b>하와이</a></li>
+										<li><a href="javascript:get_list('Idaho');" class="box"><b>ID</b>아이다호</a></li>
 										<li><a href="#" class="box"><b>IL</b>일리노이</a></li>
 										<li><a href="jacascript:;" class="box disabled"><b>IN</b>인디애나</a></li>
 										<li><a href="jacascript:;" class="box disabled"><b>IA</b>아이오와</a></li>
@@ -212,217 +219,217 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="swiper-container">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide item">
-										<div class="school_list_title"><div class="box">Arizona</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://ranchosolano.com/">Rancho Solano Proparatory School</a></li>
-											<li><a href="https://www.vvsaz.org/">Verde Valley School</a></li>
+										<div class="school_list_title" id="Arizona_title"><div class="box">Arizona</div></div>
+										<ul class="school_list_info" id="Arizona_list">
+											<li><a target="_blank" href="https://ranchosolano.com/">Rancho Solano Proparatory School</a></li>
+											<li><a target="_blank" href="https://www.vvsaz.org/">Verde Valley School</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">California</div></div>
-										<ul class="school_list_info">
+										<div class="school_list_title" id="California_title"><div class="box">California</div></div>
+										<ul class="school_list_info" id="California_list">
 											<li><a target="_blank" href="https://www.riordanhs.org/">Archibishop Riordan High School</a></li>
-											<li><a href="https://idyllwildarts.org/">Idyllwild Arts  Academy</a></li>
-											<li><a href="https://montereybayacademy.org/">Monterey Bay Academy</a></li>
-											<li><a href="https://laketahoeprep.org/">Lake Tahoe Preparatory School</a></li>
-											<li><a href="https://www.bradshawchristian.com/">Bradshaw Christian School</a></li>
-											<li><a href="https://www.bosco.org/">St. John Bosco High School</a></li>
-											<li><a href="https://www.bishopdiego.org/">Bishop Garcia Diego High School</a></li>
-											<li><a href="https://saintbernards.us/">Villanova Preparatory School</a></li>
-											<li><a href="https://www.villanovaprep.org/">EF Academy California</a></li>
-											<li><a href="https://www.efacademy.org/">Fairmont Schools</a></li>
+											<li><a target="_blank" href="https://idyllwildarts.org/">Idyllwild Arts  Academy</a></li>
+											<li><a target="_blank" href="https://montereybayacademy.org/">Monterey Bay Academy</a></li>
+											<li><a target="_blank" href="https://laketahoeprep.org/">Lake Tahoe Preparatory School</a></li>
+											<li><a target="_blank" href="https://www.bradshawchristian.com/">Bradshaw Christian School</a></li>
+											<li><a target="_blank" href="https://www.bosco.org/">St. John Bosco High School</a></li>
+											<li><a target="_blank" href="https://www.bishopdiego.org/">Bishop Garcia Diego High School</a></li>
+											<li><a target="_blank" href="https://saintbernards.us/">Villanova Preparatory School</a></li>
+											<li><a target="_blank" href="https://www.villanovaprep.org/">EF Academy California</a></li>
+											<li><a target="_blank" href="https://www.efacademy.org/">Fairmont Schools</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Colorado</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://belleviewchristian.com/">Belleview Christian School</a></li>
+										<div class="school_list_title" id="Colorado_title"><div class="box">Colorado</div></div>
+										<ul class="school_list_info" id="Colorado_list">
+											<li><a target="_blank" href="https://belleviewchristian.com/">Belleview Christian School</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Connecticut</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.marianapolis.org/">Marianapolis  Preparatory School</a></li>
-											<li><a href="https://www.woodstockacademy.org/">Woodstock Academy</a></li>
-											<li><a href="https://watkinson.org/">Watkinson School</a></li>
+										<div class="school_list_title" id="Connecticut_title"><div class="box">Connecticut</div></div>
+										<ul class="school_list_info" id="Connecticut_list">
+											<li><a target="_blank" href="https://www.marianapolis.org/">Marianapolis  Preparatory School</a></li>
+											<li><a target="_blank" href="https://www.woodstockacademy.org/">Woodstock Academy</a></li>
+											<li><a target="_blank" href="https://watkinson.org/">Watkinson School</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Florida</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.flprep.com/">Florida Preparatory  Academy</a></li>
-											<li><a href="https://www.tka.net/">The King’s Academy</a></li>
-											<li><a href="https://www.lakemaryprep.com/">Lake Mary Preparatory School</a></li>
-											<li><a href="https://montverde.org/">Montverde Academy</a></li>
-											<li><a href="https://www.nordangliaeducation.com/nbps-florida">North Broward Preparatory School</a></li>
-											<li><a href="https://www.nordangliaeducation.com/wps-florida">Windermere  Preparatory School</a></li>
-										</ul>
-									</div><!-- // swiper-slide -->
-
-									<div class="swiper-slide item">
-										<div class="school_list_title"><div class="box">Hawaii</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.iolani.org/">‘Iolani School</a></li>
-										</ul>
-										<div class="school_list_title"><div class="box">Idaho</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.riverstoneschool.org/">Riverstone International School</a></li>
-										</ul>
-										<div class="school_list_title"><div class="box">Iowa</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://maharishischool.org/">Maharishi School of the Age of Enlightenment </a></li>
-										</ul>
-										<div class="school_list_title"><div class="box">Illinois</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.rockfordchristian.org/">Rockford Christian High School</a></li>
-											<li><a href="https://www.montini.org/">Montini Catholic High School</a></li>
-											<li><a href="https://www.st-bede.com/">St. Bede Academy</a></li>
-										</ul>
-										<div class="school_list_title"><div class="box">Kansas</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.mh-ma.com/">Maur Hill-Mount Academy</a></li>
-											<li><a href="https://overlandchristian.org/">Overland Christian School</a></li>
-											<li><a href="https://lifeprep.us/">Life Preparatory Academy </a></li>
-										</ul>
-										<div class="school_list_title"><div class="box">Maine</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://foxcroftacademy.org/">Foxcroft Academy</a></li>
-											<li><a href="https://www.fryeburgacademy.org/">Fryeburg Academy</a></li>
-											<li><a href="https://www.leeacademy.org/">Lee Academy</a></li>
-											<li><a href="https://www.lincolnacademy.org/">Lincoln Academy</a></li>
-											<li><a href="https://www.mci-school.org/">Maine Central Institute</a></li>
-											<li><a href="https://www.mssm.org/">Maine School of Science and Mathematics</a></li>
-											<li><a href="https://www.thorntonacademy.org/">Thornton Academy</a></li>
-											<li><a href="https://www.washingtonacademy.org/">Washington Academy</a></li>
-											<li><a href="https://www.johnbapst.org/">John Bapst Memorial High School </a></li>
+										<div class="school_list_title" id="Florida_title"><div class="box">Florida</div></div>
+										<ul class="school_list_info" id="Florida_list">
+											<li><a target="_blank" href="https://www.flprep.com/">Florida Preparatory  Academy</a></li>
+											<li><a target="_blank" href="https://www.tka.net/">The King’s Academy</a></li>
+											<li><a target="_blank" href="https://www.lakemaryprep.com/">Lake Mary Preparatory School</a></li>
+											<li><a target="_blank" href="https://montverde.org/">Montverde Academy</a></li>
+											<li><a target="_blank" href="https://www.nordangliaeducation.com/nbps-florida">North Broward Preparatory School</a></li>
+											<li><a target="_blank" href="https://www.nordangliaeducation.com/wps-florida">Windermere  Preparatory School</a></li>
 										</ul>
 									</div><!-- // swiper-slide -->
 
 									<div class="swiper-slide item">
-										<div class="school_list_title"><div class="box">Maryland</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.calvertonschool.org/">The Calverton School</a></li>
-											<li><a href="https://www.gunston.org/">The Gunston School</a></li>
-											<li><a href="https://www.smrhs.org/">St. Mary's Ryken High School</a></li>
-											<li><a href="https://www.olgchs.org/">Our Lady of Good Counsel</a></li>
-											<li><a href="https://www.ssfs.org/">Sandy Spring Friends School </a></li>
-											<li><a href="https://www.gfs.org/">Garrison Forest School</a></li>
+										<div class="school_list_title" id="Hawaii_title"><div class="box">Hawaii</div></div>
+										<ul class="school_list_info" id="Hawaii_list">
+											<li><a target="_blank" href="https://www.iolani.org/">‘Iolani School</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Massachusetts</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://macduffie.org/">The MacDuffie School</a></li>
-											<li><a href="https://www.nmhschool.org/">Northfield Mount Hermon School</a></li>
-											<li><a href="https://sbschool.org/">Stoneleigh-Burnham  School</a></li>
-											<li><a href="https://www.wma.us/">Wilbraham And  Monson Academy</a></li>
-											<li><a href="https://winchendon.org/">The Winchendon  School</a></li>
-											<li><a href="https://www.jpiihyannis.org/">St. John Paul II School</a></li>
-											<li><a href="https://www.awhs.org/">Archbishop Williams High School</a></li>
-											<li><a href="https://www.bostontrinity.org/">Boston Trinity Academy</a></li>
-											<li><a href="https://www.waringschool.org/">Waring School</a></li>
-											<li><a href="https://www.newmanboston.org/">Newman School</a></li>
-											<li><a href="https://www.catsacademyboston.com/">CATS Academy Boston</a></li>
-											<li><a href="https://www.applewild.org/">Applewild School</a></li>
-											<li><a href="https://www.cushing.org/">Cushing Academy </a></li>
+										<div class="school_list_title" id="Idaho_title"><div class="box">Idaho</div></div>
+										<ul class="school_list_info" id="Idaho_list">
+											<li><a target="_blank" href="https://www.riverstoneschool.org/">Riverstone International School</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Mississippi</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://ststan.com/">St. Stanislaus School</a></li>
-											<li><a href="https://www.jacksonprep.net/">Jackson Preparatory School </a></li>
+										<div class="school_list_title" id="Iowa_title"><div class="box">Iowa</div></div>
+										<ul class="school_list_info" id="Iowa_list">
+											<li><a target="_blank" href="https://maharishischool.org/">Maharishi School of the Age of Enlightenment </a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Arizona</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.stcroixlutheran.org/admissions">St. Croix Lutheran  Academy</a></li>
-											<li><a href="https://www.marshallschool.org/">Marshall School</a></li>
-											<li><a href="https://www.concordiaacademy.com/">Concordia Academy </a></li>
-											<li><a href="https://sjprep.net/">Saint John’s Preparatory School</a></li>
+										<div class="school_list_title" id="Illinois_title"><div class="box">Illinois</div></div>
+										<ul class="school_list_info" id="Illinois_list">
+											<li><a target="_blank" href="https://www.rockfordchristian.org/">Rockford Christian High School</a></li>
+											<li><a target="_blank" href="https://www.montini.org/">Montini Catholic High School</a></li>
+											<li><a target="_blank" href="https://www.st-bede.com/">St. Bede Academy</a></li>
 										</ul>
-									</div><!-- // swiper-slide -->
-
-									<div class="swiper-slide item">
-										<div class="school_list_title"><div class="box">Missouri</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://splhs.org/">Saint Paul Lutheran High School</a></li>
-											<li><a href="https://summit-christian-academy.org/">Summit Christian Academy</a></li>
-											<li><a href="https://www.chaminade-stl.org/">Chaminade College Preparatory</a></li>
+										<div class="school_list_title" id="Kansas_title"><div class="box">Kansas</div></div>
+										<ul class="school_list_info" id="Kansas_list">
+											<li><a target="_blank" href="https://www.mh-ma.com/">Maur Hill-Mount Academy</a></li>
+											<li><a target="_blank" href="https://overlandchristian.org/">Overland Christian School</a></li>
+											<li><a target="_blank" href="https://lifeprep.us/">Life Preparatory Academy </a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">North Dakota</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.highmowing.org/">Oak Grove Lutheran High School</a></li>
-										</ul>
-										<div class="school_list_title"><div class="box">Ohio</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.ccscomets.org/">Central Christian School</a></li>
-											<li><a href="https://www.lakeridgeacademy.org/">Lake Ridge Academy</a></li>
-											<li><a href="https://www.andrewsosborne.org/">Andrew Osborne Academy  </a></li>
-											<li><a href="https://www.lakecatholic.org/">Lake Catholic High School</a></li>
-											<li><a href="https://www.chca-oh.org/">Cincinnati Hills Christian Academy</a></li>
-										</ul>
-										<div class="school_list_title"><div class="box">Oregon</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.saintrays.org/">Saint Raphael Academy</a></li>
-											<li><a href="https://www.rockyhill.org/">Rocky Hill Country Day School</a></li>
-										</ul>
-										<div class="school_list_title"><div class="box">New Jersey</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.camdencatholic.org/">Camden Catholic  High School</a></li>
-											<li><a href="https://www.pilgrimacademy.org/">The Pilgrim Academy</a></li>
-											<li><a href="https://www.morriscatholic.org/">Morris Catholic High School</a></li>
-											<li><a href="https://www.mfriends.org/">Moorestown Friends School</a></li>
+										<div class="school_list_title" id="Maine_title"><div class="box">Maine</div></div>
+										<ul class="school_list_info" id="Maine_list">
+											<li><a target="_blank" href="https://foxcroftacademy.org/">Foxcroft Academy</a></li>
+											<li><a target="_blank" href="https://www.fryeburgacademy.org/">Fryeburg Academy</a></li>
+											<li><a target="_blank" href="https://www.leeacademy.org/">Lee Academy</a></li>
+											<li><a target="_blank" href="https://www.lincolnacademy.org/">Lincoln Academy</a></li>
+											<li><a target="_blank" href="https://www.mci-school.org/">Maine Central Institute</a></li>
+											<li><a target="_blank" href="https://www.mssm.org/">Maine School of Science and Mathematics</a></li>
+											<li><a target="_blank" href="https://www.thorntonacademy.org/">Thornton Academy</a></li>
+											<li><a target="_blank" href="https://www.washingtonacademy.org/">Washington Academy</a></li>
+											<li><a target="_blank" href="https://www.johnbapst.org/">John Bapst Memorial High School </a></li>
 										</ul>
 									</div><!-- // swiper-slide -->
 
 									<div class="swiper-slide item">
-										<div class="school_list_title"><div class="box">New York</div></div>
-										<ul class="school_list_info">
-											<li><a href="#">Rancho Solano Proparatory School</a></li>
-											<li><a href="#">Verde Valley School</a></li>
+										<div class="school_list_title" id="Maryland_title"><div class="box">Maryland</div></div>
+										<ul class="school_list_info" id="Maryland_list">
+											<li><a target="_blank" href="https://www.calvertonschool.org/">The Calverton School</a></li>
+											<li><a target="_blank" href="https://www.gunston.org/">The Gunston School</a></li>
+											<li><a target="_blank" href="https://www.smrhs.org/">St. Mary's Ryken High School</a></li>
+											<li><a target="_blank" href="https://www.olgchs.org/">Our Lady of Good Counsel</a></li>
+											<li><a target="_blank" href="https://www.ssfs.org/">Sandy Spring Friends School </a></li>
+											<li><a target="_blank" href="https://www.gfs.org/">Garrison Forest School</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">California</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.lemanmanhattan.org/">Léman Manhattan  Preparatory School</a></li>
-											<li><a href="https://www.oakwoodfriends.org/">Oakwood Friends  School</a></li>
-											<li><a href="https://sks.org/">The Storm King  School</a></li>
-											<li><a href="https://www.buffaloseminary.org/">Buffalo Seminary</a></li>
-											<li><a href="https://www.efacademy.org/">EF Academy New York</a></li>
-											<li><a href="https://www.stanthonyshs.org/">Saint Anthony's High School</a></li>
-											<li><a href="https://www.stjohnshigh.org/">Saint John's High School</a></li>
+										<div class="school_list_title" id="Massachusetts_title"><div class="box">Massachusetts</div></div>
+										<ul class="school_list_info" id="Massachusetts_list">
+											<li><a target="_blank" href="https://macduffie.org/">The MacDuffie School</a></li>
+											<li><a target="_blank" href="https://www.nmhschool.org/">Northfield Mount Hermon School</a></li>
+											<li><a target="_blank" href="https://sbschool.org/">Stoneleigh-Burnham  School</a></li>
+											<li><a target="_blank" href="https://www.wma.us/">Wilbraham And  Monson Academy</a></li>
+											<li><a target="_blank" href="https://winchendon.org/">The Winchendon  School</a></li>
+											<li><a target="_blank" href="https://www.jpiihyannis.org/">St. John Paul II School</a></li>
+											<li><a target="_blank" href="https://www.awhs.org/">Archbishop Williams High School</a></li>
+											<li><a target="_blank" href="https://www.bostontrinity.org/">Boston Trinity Academy</a></li>
+											<li><a target="_blank" href="https://www.waringschool.org/">Waring School</a></li>
+											<li><a target="_blank" href="https://www.newmanboston.org/">Newman School</a></li>
+											<li><a target="_blank" href="https://www.catsacademyboston.com/">CATS Academy Boston</a></li>
+											<li><a target="_blank" href="https://www.applewild.org/">Applewild School</a></li>
+											<li><a target="_blank" href="https://www.cushing.org/">Cushing Academy </a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Pennsylvania</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.grier.org/">Grier School</a></li>
-											<li><a href="https://www.mpslakers.com/">Mercyhurst Preparatory School</a></li>
-											<li><a href="https://www.perkiomen.org/">The Perkiomen  School</a></li>
-											<li><a href="https://www.bishopcarroll.com/">Bishop Carroll Catholic High School</a></li>
-											<li><a href="https://www.efcaonline.org/">Erie First Christian Academy</a></li>
-											<li><a href="https://www.dccs.org/">Delaware County Christian School</a></li>
-											<li><a href="https://www.gocfs.net/">Church Farm School</a></li>
-											<li><a href="https://www.lindenhall.org/">Linden Hall</a></li>
-											<li><a href="https://www.germantownfriends.org/">Germantown Friends School</a></li>
-											<li><a href="https://www.solebury.org/">Solebury School</a></li>
+										<div class="school_list_title" id="Mississippi_title"><div class="box">Mississippi</div></div>
+										<ul class="school_list_info" id="Mississippi_list">
+											<li><a target="_blank" href="https://ststan.com/">St. Stanislaus School</a></li>
+											<li><a target="_blank" href="https://www.jacksonprep.net/">Jackson Preparatory School </a></li>
+										</ul>
+										<div class="school_list_title" id="Arizona_title"><div class="box">Arizona</div></div>
+										<ul class="school_list_info" id="Arizona_list">
+											<li><a target="_blank" href="https://www.stcroixlutheran.org/admissions">St. Croix Lutheran  Academy</a></li>
+											<li><a target="_blank" href="https://www.marshallschool.org/">Marshall School</a></li>
+											<li><a target="_blank" href="https://www.concordiaacademy.com/">Concordia Academy </a></li>
+											<li><a target="_blank" href="https://sjprep.net/">Saint John’s Preparatory School</a></li>
 										</ul>
 									</div><!-- // swiper-slide -->
 
 									<div class="swiper-slide item">
-										<div class="school_list_title"><div class="box">Texas</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.tmi-sa.org/">TMI - The Episcopal  School of Texas</a></li>
-											<li><a href="https://www.nordangliaeducation.com/village-houston">The Village  School</a></li>
-											<li><a href="http://www.dallaslutheranschool.com/">Dallas Lutheran School</a></li>
+										<div class="school_list_title" id="Missouri_title"><div class="box">Missouri</div></div>
+										<ul class="school_list_info" id="Missouri_list">
+											<li><a target="_blank" href="https://splhs.org/">Saint Paul Lutheran High School</a></li>
+											<li><a target="_blank" href="https://summit-christian-academy.org/">Summit Christian Academy</a></li>
+											<li><a target="_blank" href="https://www.chaminade-stl.org/">Chaminade College Preparatory</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Vermont</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://burrburton.myschoolapp.com/page/?siteId=962&ssl=1">Burr and Burton  Academy</a></li>
-											<li><a href="https://www.lyndoninstitute.org/">Lyndon Institute</a></li>
-											<li><a href="https://stjacademy.org/">St. Johnsbury Academy</a></li>
+										<div class="school_list_title" id="North_Dakota_title"><div class="box">North Dakota</div></div>
+										<ul class="school_list_info" id="North_Dakota_list">
+											<li><a target="_blank" href="https://www.highmowing.org/">Oak Grove Lutheran High School</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Virginia</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.blueridgeschool.com/">Blue Ridge School</a></li>
-											<li><a href="https://www.veritasacademydc.com/">Veritas Collegiate Academy</a></li>
+										<div class="school_list_title" id="Ohio_title"><div class="box">Ohio</div></div>
+										<ul class="school_list_info" id="Ohio_list">
+											<li><a target="_blank" href="https://www.ccscomets.org/">Central Christian School</a></li>
+											<li><a target="_blank" href="https://www.lakeridgeacademy.org/">Lake Ridge Academy</a></li>
+											<li><a target="_blank" href="https://www.andrewsosborne.org/">Andrew Osborne Academy  </a></li>
+											<li><a target="_blank" href="https://www.lakecatholic.org/">Lake Catholic High School</a></li>
+											<li><a target="_blank" href="https://www.chca-oh.org/">Cincinnati Hills Christian Academy</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Washington</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.bellarmineprep.org/">Bellarmine Preparatory School</a></li>
-											<li><a href="https://www.am-hs.org/">Archbishop Murphy High School</a></li>
-											<li><a href="https://www.bishopblanchet.org/">Bishop Blanchet High School</a></li>
-											<li><a href="https://sgs.org/">Saint George's School </a></li>
-											<li><a href="https://www.aw.org/">Annie Wright Schools</a></li>
+										<div class="school_list_title" id="Oregon_title"><div class="box">Oregon</div></div>
+										<ul class="school_list_info" id="Oregon_list">
+											<li><a target="_blank" href="https://www.saintrays.org/">Saint Raphael Academy</a></li>
+											<li><a target="_blank" href="https://www.rockyhill.org/">Rocky Hill Country Day School</a></li>
 										</ul>
-										<div class="school_list_title"><div class="box">Wisconsin</div></div>
-										<ul class="school_list_info">
-											<li><a href="https://www.martinlutherhs.org/">Martin Luther High School </a></li>
+										<div class="school_list_title" id="New_Jersey_title"><div class="box">New Jersey</div></div>
+										<ul class="school_list_info" id="New_Jersey_list">
+											<li><a target="_blank" href="https://www.camdencatholic.org/">Camden Catholic  High School</a></li>
+											<li><a target="_blank" href="https://www.pilgrimacademy.org/">The Pilgrim Academy</a></li>
+											<li><a target="_blank" href="https://www.morriscatholic.org/">Morris Catholic High School</a></li>
+											<li><a target="_blank" href="https://www.mfriends.org/">Moorestown Friends School</a></li>
+										</ul>
+									</div><!-- // swiper-slide -->
+
+									<div class="swiper-slide item">
+										<div class="school_list_title" id="New_York_title"><div class="box">New York</div></div>
+										<ul class="school_list_info" id="New_York_list">
+											<li><a target="_blank" href="#">Rancho Solano Proparatory School</a></li>
+											<li><a target="_blank" href="#">Verde Valley School</a></li>
+										</ul>
+										<div class="school_list_title" id="California_title"><div class="box">California</div></div>
+										<ul class="school_list_info" id="California_list">
+											<li><a target="_blank" href="https://www.lemanmanhattan.org/">Léman Manhattan  Preparatory School</a></li>
+											<li><a target="_blank" href="https://www.oakwoodfriends.org/">Oakwood Friends  School</a></li>
+											<li><a target="_blank" href="https://sks.org/">The Storm King  School</a></li>
+											<li><a target="_blank" href="https://www.buffaloseminary.org/">Buffalo Seminary</a></li>
+											<li><a target="_blank" href="https://www.efacademy.org/">EF Academy New York</a></li>
+											<li><a target="_blank" href="https://www.stanthonyshs.org/">Saint Anthony's High School</a></li>
+											<li><a target="_blank" href="https://www.stjohnshigh.org/">Saint John's High School</a></li>
+										</ul>
+										<div class="school_list_title" id="Pennsylvania_title"><div class="box">Pennsylvania</div></div>
+										<ul class="school_list_info" id="Pennsylvania_list">
+											<li><a target="_blank" href="https://www.grier.org/">Grier School</a></li>
+											<li><a target="_blank" href="https://www.mpslakers.com/">Mercyhurst Preparatory School</a></li>
+											<li><a target="_blank" href="https://www.perkiomen.org/">The Perkiomen  School</a></li>
+											<li><a target="_blank" href="https://www.bishopcarroll.com/">Bishop Carroll Catholic High School</a></li>
+											<li><a target="_blank" href="https://www.efcaonline.org/">Erie First Christian Academy</a></li>
+											<li><a target="_blank" href="https://www.dccs.org/">Delaware County Christian School</a></li>
+											<li><a target="_blank" href="https://www.gocfs.net/">Church Farm School</a></li>
+											<li><a target="_blank" href="https://www.lindenhall.org/">Linden Hall</a></li>
+											<li><a target="_blank" href="https://www.germantownfriends.org/">Germantown Friends School</a></li>
+											<li><a target="_blank" href="https://www.solebury.org/">Solebury School</a></li>
+										</ul>
+									</div><!-- // swiper-slide -->
+
+									<div class="swiper-slide item">
+										<div class="school_list_title" id="Texas_title"><div class="box">Texas</div></div>
+										<ul class="school_list_info" id="Texas_list">
+											<li><a target="_blank" href="https://www.tmi-sa.org/">TMI - The Episcopal  School of Texas</a></li>
+											<li><a target="_blank" href="https://www.nordangliaeducation.com/village-houston">The Village  School</a></li>
+											<li><a target="_blank" href="http://www.dallaslutheranschool.com/">Dallas Lutheran School</a></li>
+										</ul>
+										<div class="school_list_title" id="Vermont_title"><div class="box">Vermont</div></div>
+										<ul class="school_list_info" id="Vermont_list">
+											<li><a target="_blank" href="https://burrburton.myschoolapp.com/page/?siteId=962&ssl=1">Burr and Burton  Academy</a></li>
+											<li><a target="_blank" href="https://www.lyndoninstitute.org/">Lyndon Institute</a></li>
+											<li><a target="_blank" href="https://stjacademy.org/">St. Johnsbury Academy</a></li>
+										</ul>
+										<div class="school_list_title" id="Virginia_title"><div class="box">Virginia</div></div>
+										<ul class="school_list_info" id="Virginia_list">
+											<li><a target="_blank" href="https://www.blueridgeschool.com/">Blue Ridge School</a></li>
+											<li><a target="_blank" href="https://www.veritasacademydc.com/">Veritas Collegiate Academy</a></li>
+										</ul>
+										<div class="school_list_title" id="Washington_title"><div class="box">Washington</div></div>
+										<ul class="school_list_info" id="Washington_list">
+											<li><a target="_blank" href="https://www.bellarmineprep.org/">Bellarmine Preparatory School</a></li>
+											<li><a target="_blank" href="https://www.am-hs.org/">Archbishop Murphy High School</a></li>
+											<li><a target="_blank" href="https://www.bishopblanchet.org/">Bishop Blanchet High School</a></li>
+											<li><a target="_blank" href="https://sgs.org/">Saint George's School </a></li>
+											<li><a target="_blank" href="https://www.aw.org/">Annie Wright Schools</a></li>
+										</ul>
+										<div class="school_list_title" id="Wisconsin_title"><div class="box">Wisconsin</div></div>
+										<ul class="school_list_info" id="Wisconsin_list">
+											<li><a target="_blank" href="https://www.martinlutherhs.org/">Martin Luther High School </a></li>
 										</ul>
 									</div><!-- // swiper-slide -->
 
