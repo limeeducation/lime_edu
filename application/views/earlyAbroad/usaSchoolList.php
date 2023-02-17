@@ -219,7 +219,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</ul>
 										<div class="school_list_title"><div class="box">California</div></div>
 										<ul class="school_list_info">
-											<li><a href="https://www.riordanhs.org/">Archibishop Riordan High School</a></li>
+											<li><a target="_blank" href="https://www.riordanhs.org/">Archibishop Riordan High School</a></li>
 											<li><a href="https://idyllwildarts.org/">Idyllwild Arts  Academy</a></li>
 											<li><a href="https://montereybayacademy.org/">Monterey Bay Academy</a></li>
 											<li><a href="https://laketahoeprep.org/">Lake Tahoe Preparatory School</a></li>
