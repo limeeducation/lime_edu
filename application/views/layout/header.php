@@ -61,13 +61,12 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
+						<a href="/earlyAbroad/whyEarlyCa" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
 						<ul class="depth_list">
-							<li><a href="#">Top 보딩스쿨</a></li>
-							<li><a href="#">관리형 조기유학</a></li>
-							<li><a href="#">국제 사립 고등학교 유학</a></li>
-							<li><a href="#">공립 중고등학교 유학</a></li>
-							<li><a href="#">자녀 무상 교육</a></li>
+							<li><a href="/earlyAbroad/caSchoolList">조기유학 학교찾기</a></li>
+							<li><a href="/earlyAbroad/whyEarlyCa">왜 조기유학인가?</a></li>
+							<li><a href="/earlyAbroad/abtCaManageAbroad">관리형 유학</a></li>
+							<li><a href="/earlyAbroad/caInternationalPrivate">국제사립학교</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -182,13 +181,12 @@
 									</ul>
 								</li>
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
+									<a href="/earlyAbroad/whyEarlyCa" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
 									<ul class="depth_list">
-										<li><a href="#">Top 보딩스쿨</a></li>
-										<li><a href="#">관리형 조기유학</a></li>
-										<li><a href="#">국제 사립 고등학교 유학</a></li>
-										<li><a href="#">공립 중고등학교 유학</a></li>
-										<li><a href="#">자녀 무상 교육</a></li>
+										<li><a href="/earlyAbroad/caSchoolList">조기유학 학교찾기</a></li>
+										<li><a href="/earlyAbroad/whyEarlyCa">왜 조기유학인가?</a></li>
+										<li><a href="/earlyAbroad/abtCaManageAbroad">관리형 유학</a></li>
+										<li><a href="/earlyAbroad/caInternationalPrivate">국제사립학교</a></li>
 									</ul>
 								</li>
 							</ul>

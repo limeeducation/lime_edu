@@ -31,4 +31,25 @@ class EarlyAbroad extends CI_Controller {
 		$this->load->view('earlyAbroad/usaTopSchools');
 	}
 
+
+	//조기유학 캐나다 학교찾기
+	public function caSchoolList(){
+		$this->load->view('earlyAbroad/caSchoolList');
+	}
+
+	//조기유학 캐나다 왜 조기유학인가
+	public function whyEarlyCa(){
+		$this->load->view('earlyAbroad/caSchoolList');
+	}
+
+	//조기유학 캐나다 관리형 유학
+	public function abtCaManageAbroad(){
+		$this->load->view('earlyAbroad/caSchoolList');
+	}
+
+	//조기유학 캐나다 국제사립학교
+	public function caInternationalPrivate(){
+		$this->load->view('earlyAbroad/caSchoolList');
+	}
 }
+
