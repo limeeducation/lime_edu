@@ -29,9 +29,9 @@
 .ico_btn_list.type5 > li{width:20%}
 .ico_btn_list > li a{display:block;position:relative;padding-top:17.6rem;}
 .ico_btn_list > li .ico{position:absolute;top:0;left:50%;display:block;width:20rem;height:20rem;margin-left:-10rem;border-radius:50%;z-index:1;background-repeat:no-repeat;background-position:50% 50%;background-size:12rem auto;}
-.ico_btn_list > li .ico1{background-image:url(/static/img/early_abroad/usa/ico_btn_list_ico1@2x.png);}
-.ico_btn_list > li .ico2{background-image:url(/static/img/early_abroad/usa/ico_btn_list_ico2@2x.png);}
-.ico_btn_list > li .ico3{background-image:url(/static/img/early_abroad/usa/ico_btn_list_ico3@2x.png);}
+.ico_btn_list > li .ico1{background-image:url(/static/img/early_abroad/ico_btn_list_ico1@2x.png);}
+.ico_btn_list > li .ico2{background-image:url(/static/img/early_abroad/ico_btn_list_ico2@2x.png);}
+.ico_btn_list > li .ico3{background-image:url(/static/img/early_abroad/ico_btn_list_ico3@2x.png);}
 .ico_btn_list > li .text{position:relative;display:inline-block;border-radius:2rem;padding:1.9rem 3.9rem 1.1rem;font-weight:700;font-size:2.4rem;line-height:3rem;color:#2E58FF;z-index:2;}
 .ico_btn_list > li a:hover .ico,.ico_btn_list > li a:focus .ico{background-color:#FFE8E8;}
 .ico_btn_list > li a:hover .text,.ico_btn_list > li a:focus .text{background-color:#FFE8E8;}
