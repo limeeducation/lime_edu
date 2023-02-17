@@ -103,7 +103,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="cotn">
 							<div class="box_tit">
 								<figure class="flag">
-									<img src="images/detail/canada.png" alt="canada">
+									<img src="/static/img/early_abroad/ca/canada.png" alt="canada">
 								</figure>
 								<h2 class="tit">캐나다 교육제도</h2>
 							</div>
@@ -121,7 +121,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="images/detail/edu_01.jpg" alt="canada">
+											<img src="/static/img/early_abroad/ca/edu_01.jpg" alt="canada">
 										</figure>
 									</div>
 									<div class="txt_area">
@@ -135,7 +135,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="images/detail/edu_02.jpg" alt="canada">
+											<img src="/static/img/early_abroad/ca/edu_02.jpg" alt="canada">
 										</figure>
 									</div>
 									<div class="txt_area">
@@ -149,7 +149,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="images/detail/edu_03.jpg" alt="canada">
+											<img src="/static/img/early_abroad/ca/edu_03.jpg" alt="canada">
 										</figure>
 									</div>
 									<div class="txt_area">
@@ -428,7 +428,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</ul>
 										<div class="img_area">
 											<figure class="img">
-												<img src="images/detail/bg_on.jpg" alt="온타리오주">
+												<img src="/static/img/early_abroad/ca/bg_on.jpg" alt="온타리오주">
 											</figure>
 										</div>
 									</div>
@@ -452,7 +452,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</ul>
 										<div class="img_area">
 											<figure class="img">
-												<img src="images/detail/bg_cs.jpg" alt="퀘벡주">
+												<img src="/static/img/early_abroad/ca/bg_cs.jpg" alt="퀘벡주">
 											</figure>
 										</div>
 									</div>
@@ -472,7 +472,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</ul>
 										<div class="img_area">
 											<figure class="img">
-												<img src="images/detail/bg_ns.jpg" alt="노바스코샤주">
+												<img src="/static/img/early_abroad/ca/bg_ns.jpg" alt="노바스코샤주">
 											</figure>
 										</div>
 									</div>
