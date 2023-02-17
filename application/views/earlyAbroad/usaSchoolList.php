@@ -32,7 +32,33 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		<div id="container" style="padding:0;">
 
 			<div id="content">
-
+				<!-- cont_sect -->
+				<section class="cont_sect sub2_1">
+					<div class="inner">
+						<div class="cont_title">미국 조기유학 프로그램</div>
+						<ul class="ico_btn_list type3">
+							<li>
+								<a href="/earlyAbroad/usSchoolList">
+									<i class="ico ico1" style="background-color:#FFE8E8;"></i>
+									<div class="text" style="background-color:#FFE8E8;">조기유학 학교찾기</div>
+								</a>
+							</li>
+							<li>
+								<a href="/earlyAbroad/whyEarlyUsa">
+									<i class="ico ico2"></i>
+									<div class="text">왜 조기유학인가?</div>
+								</a>
+							</li>
+							<li>
+								<a href="/earlyAbroad/usTopSchools">
+									<i class="ico ico3"></i>
+									<div class="text">명문 TOP50</div>
+								</a>
+							</li>
+						</ul>
+					</div><!-- // inner -->
+				</section>
+				<!-- // cont_sect -->
 				<!-- cont_sect -->
 				<section class="cont_sect" id="schoolMap">
 					<div class="inner">
