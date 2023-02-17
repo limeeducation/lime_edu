@@ -1003,10 +1003,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img1@2x.png" alt=""></li>
 										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img2@2x.png" alt=""></li>
 										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img3@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs2_img4@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs2_img5@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs2_img6@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs2_img7@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img4@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img5@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img6@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img7@2x.png" alt=""></li>
 										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img8@2x.png" alt=""></li>
 									</ul>
 								</div>
@@ -1177,13 +1177,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<div class="inner">
 									<div class="tabs_info_title">프로그램 특징</div>
 									<ul class="tabs_info_list">
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img1@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img2@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img3@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img4@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img5@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img6@2x.png" alt=""></li>
-										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img7@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img1@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img2@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img3@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img4@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img5@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img6@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img7@2x.png" alt=""></li>
 										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img8@2x.png" alt=""></li>
 									</ul>
 
