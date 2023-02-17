@@ -1,9 +1,43 @@
 $(document).ready(function(){
+	$('.image_map_wrap').length && mapRes(); //이미지맵
+	$('.cs_form').length && csDatePick(); // 상담신청란 달력
+	$('.off_tab').length && officeTab(); // 교육청리스트 목록 노출
 	$('.cs_form').length && csTab(); //지사선택탭
 	$('.cs_form').length && csBtnPolicy(); //상담신청 보기 닫기 버튼
 	$('.cs_form').length && csTabPolicy(); //개인정보 tab
-	mapRes();
+	$('.pro_btn_wrap').length && proBtn(); //캐나다 조기유학탭
 });
+
+function csDatePick() {// 상담신청란 달력
+	$('.cs_form .datepick').datepicker({
+		dateFormat: "yy-mm-dd",
+		minDate:0,
+		dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+		beforeShow: function(input) {
+			setTimeout(function(){
+				$('#ui-datepicker-div').css({'top':'7000px', 'left':'300px'}); // top / left 값으로 강제 위치 수정
+			})
+		}
+	});
+}
+
+function officeTab() {// 교육청리스트 목록 노출
+	var off_list = $('.office_list .group')
+	$('.off_tab').on('click', function(){
+		if($(this).hasClass('ont')){
+			off_list.css('display','none')
+			off_list.filter('.ontario').css('display','block');
+			return false;
+		}else if ($(this).hasClass('brt')){
+			off_list.css('display','none')
+			off_list.filter('.british').css('display','block')
+			return false;
+		}else {
+			off_list.css('display','block')
+			return false;
+		}
+	})
+}
 
 function csTab() { //지사선택탭
 	$('.cs_form .tap_wrap > a').on('click', function(){
@@ -35,9 +69,19 @@ function csTabPolicy() { //개인정보 tab
 	});
 }
 
-function mapRes(){
+function mapRes(){ //이미지맵
 	if($('img[usemap]').length){
 		$('img[usemap]').rwdImageMaps();
 	}
 }
 
+function proBtn() { //캐나다 조기유학탭
+	$('.pro_btn_wrap .pro_group').on('click', function(){
+		if(!$(this).hasClass('on')){
+			$('.pro_btn_wrap .pro_group').removeClass('on')
+			$(this).addClass('on')
+		}else {
+			return false
+		}
+	})
+}

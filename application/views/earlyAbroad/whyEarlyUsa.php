@@ -794,13 +794,655 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						</table>
 
 						<div class="cont_title">관리형 프로그램 비교</div>
-						<ul class="btn_list type3">
+						<ul id=""class="toggle_tabs_list btn_list type3">
 							<li><a href="#">프리미엄 관리형</a></li>
 							<li><a href="#">스탠다드 관리형</a></li>
 							<li><a href="#">세미 관리형</a></li>
 						</ul>
 
 					</div><!-- // inner -->
+
+					<div class="toggle_tabs_info">
+
+						<div class="toggle_tabs_item item1">
+
+							<div class="tabs_item_sect sect1">
+								<div class="inner">
+									<div class="cont_title border">프리미엄 관리형 프로그램</div>
+									<div class="tabs_info_title"><div class="box">프로그램 소개</div></div>
+									<div class="tabs_info_box">미국 명문 위스콘신주립대 오시코시 캠퍼스와 협력하여 미국 명문대학교 진학을 희망하는 학생들 또는 한국 외고 및 과학고를 <br>
+									진학하고자 하는 학생들을 위한 프로그램 입니다. 위스콘신 주립대 캠퍼스 내 기숙사 9층과 10층에서 거주하고 생활하며 <br>
+									엄선한 현지 선생님들의 집중관리를 받는 프리미엄 토탈 관리 프로그램으로써 안전하고 쾌적한 환경에서 공부에만 오롯이 집중할 수 <br>
+									있도록 각 분야의 최고 전문 선생님들과 프로그램 운영진이 20년 이상 함께해온  명실상부한 국내 최고의 관리형 프로그램입니다</div>
+								</div>
+							</div><!-- // tabs_item_sect -->
+
+							<div class="tabs_item_sect sect2">
+								<div class="inner">
+									<div class="tabs_info_title">프로그램 특징</div>
+									<ul class="tabs_info_list">
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs1_img1@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs1_img2@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs1_img3@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs1_img4@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs1_img5@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs1_img6@2x.png" alt=""></li>
+									</ul>
+								</div>
+							</div><!-- // tabs_item_sect -->
+
+							<div class="tabs_item_sect sect3">
+								<div class="inner">
+									<div class="tabs_info_title"><div class="box">주간샘플 일정표</div></div>
+									<div class="cont_table_unit program_table_unit"><p>상기일정은 현지사정에 따라 변동될 수 있습니다.</p></div>
+									<table class="cont_table program_table">
+										<colgroup>
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>시간</th>
+												<th>월</th>
+												<th>화</th>
+												<th>수</th>
+												<th>목</th>
+												<th>금</th>
+												<th>토</th>
+												<th>일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>06:00 ~ 07:00</td>
+												<td colspan="5">기상 / 아침식사</td>
+												<td rowspan="3">기상<br>아침식사</td>
+												<td rowspan="3">기상<br>아침식사</td>
+											</tr>
+											<tr>
+												<td>07:00 ~ 07:30</td>
+												<td colspan="5">스쿨버스 등교</td>
+											</tr>
+											<tr>
+												<td>08:00</td>
+												<td colspan="5" rowspan="8">학교정규 수업</td>
+											</tr>
+											<tr>
+												<td>10:00</td>
+												<td rowspan="2">YMC 운동</td>
+												<td rowspan="2">YMC 운동</td>
+											</tr>
+											<tr>
+												<td>11:00</td>
+											</tr>
+											<tr>
+												<td>12:00</td>
+												<td rowspan="7">필드트립 <br>봉사활동 <br>팀빌딩</td>
+												<td rowspan="4">자유시간</td>
+											</tr>
+											<tr>
+												<td>13:00</td>
+											</tr>
+											<tr>
+												<td>14:00</td>
+											</tr>
+											<tr>
+												<td>15:00</td>
+											</tr>
+											<tr>
+												<td>16:00</td>
+												<td rowspan="3">전과목 보충수업</td>
+											</tr>
+											<tr>
+												<td>16:30 ~ 17:00</td>
+												<td rowspan="2">SAT 수학</td>
+												<td rowspan="2">SAT 리딩 / ESL</td>
+												<td rowspan="2">SAT 리딩 / ESL</td>
+												<td rowspan="2">SAT 수학 <br>테니스 (산책)</td>
+												<td rowspan="2">승마</td>
+											</tr>
+											<tr>
+												<td>17:00 ~ 18:00</td>
+											</tr>
+											<tr>
+												<td>18:00 ~ 19:00</td>
+												<td colspan="5">저녁식사 (한식 케터링 / 캠퍼스 뷔페)</td>
+												<td rowspan="4">자유시간</td>
+												<td rowspan="4">자유시간</td>
+											</tr>
+											<tr>
+												<td>19:00 ~ 20:00</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">월마트 쇼핑</td>
+											</tr>
+											<tr>
+												<td>20:00 ~ 21:00</td>
+											</tr>
+											<tr>
+												<td>21:00 ~ 22:00</td>
+												<td colspan="5">자유시간</td>
+											</tr>
+											<tr>
+												<td>22:00 ~ 23:00</td>
+												<td colspan="5">취침</td>
+												<td>취침</td>
+												<td>취침</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div><!-- // tabs_item_sect -->
+							<div class="tabs_item_sect sect4">
+								<div class="inner">
+									<div class="tabs_info_title">추천학교</div>
+
+									<div class="tabs-swiper tabs-swiper1">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs1_slider1@2x.png" alt=""></div>
+														<div class="info">Valley Christian <br>Academy</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs1_slider2@2x.png" alt=""></div>
+														<div class="info">Lourdes <br>Academy</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs1_slider3@2x.png" alt=""></div>
+														<div class="info">Winnebago Lutheran <br>Academy</div>
+													</div>
+												</div>
+											</div><!-- // swiper-wrapper -->
+										</div><!-- // swiper-container -->
+										<div class="swiper-control">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-next"></div>
+										</div><!-- // swiper-control -->
+									</div><!-- // tabs-swiper -->
+
+								</div>
+							</div><!-- // tabs_item_sect -->
+						</div><!-- // toggle_tabs_item -->
+
+						<div class="toggle_tabs_item item2">
+
+							<div class="tabs_item_sect sect1">
+								<div class="inner">
+									<div class="cont_title border">스탠다드 관리형 프로그램</div>
+									<div class="tabs_info_title"><div class="box">프로그램 소개</div></div>
+									<div class="tabs_info_box">
+										<p>미국 현지 재단이 직접 운영하는 체계적인 관리형 프로그램으로  국제학생을 위한 기숙사를 운영하며 국제학생들이 <br>
+									성공적이고 효율적인 미국 유학 생활을 할 수 있도록 학업관리, 영어, 교육, 문화 교류, 방과 후 특별활동 및 경력관리,<br>
+									대학 진학 컨설팅의 전반적인 서비스를 제공하는 미국 굥교육기관입니다.</p>
+										<p>미국 오하이오주에 위치한 우수한 사립 중고등학교에서 공부하며 안정적이고 성공적인 유학생활을 약속합니다.</p>
+									</div>
+								</div>
+							</div><!-- // tabs_item_sect -->
+
+							<div class="tabs_item_sect sect2">
+								<div class="inner">
+									<div class="tabs_info_title">프로그램 특징</div>
+									<ul class="tabs_info_list">
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img1@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img2@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img3@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs2_img4@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs2_img5@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs2_img6@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs2_img7@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs2_img8@2x.png" alt=""></li>
+									</ul>
+								</div>
+							</div><!-- // tabs_item_sect -->
+
+							<div class="tabs_item_sect sect3">
+								<div class="inner">
+									<div class="tabs_info_title"><div class="box">주간샘플 일정표</div></div>
+									<div class="cont_table_unit program_table_unit"><p>상기일정은 현지사정에 따라 변동될 수 있습니다.</p></div>
+									<table class="cont_table program_table">
+										<colgroup>
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>시간</th>
+												<th>월</th>
+												<th>화</th>
+												<th>수</th>
+												<th>목</th>
+												<th>금</th>
+												<th>토</th>
+												<th>일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>06:00 ~ 07:00</td>
+												<td colspan="5">기상 / 아침식사</td>
+												<td rowspan="3">기상<br>아침식사</td>
+												<td rowspan="3">기상<br>아침식사</td>
+											</tr>
+											<tr>
+												<td>07:00 ~ 07:30</td>
+												<td colspan="5">스쿨버스 등교</td>
+											</tr>
+											<tr>
+												<td>08:00</td>
+												<td colspan="5" rowspan="8">학교정규 수업</td>
+											</tr>
+											<tr>
+												<td>10:00</td>
+												<td rowspan="2">YMC 운동</td>
+												<td rowspan="2">YMC 운동</td>
+											</tr>
+											<tr>
+												<td>11:00</td>
+											</tr>
+											<tr>
+												<td>12:00</td>
+												<td rowspan="7">필드트립 <br>봉사활동 <br>팀빌딩</td>
+												<td rowspan="4">자유시간</td>
+											</tr>
+											<tr>
+												<td>13:00</td>
+											</tr>
+											<tr>
+												<td>14:00</td>
+											</tr>
+											<tr>
+												<td>15:00</td>
+											</tr>
+											<tr>
+												<td>16:00</td>
+												<td rowspan="3">전과목 보충수업</td>
+											</tr>
+											<tr>
+												<td>16:30 ~ 17:00</td>
+												<td rowspan="2">SAT 수학</td>
+												<td rowspan="2">SAT 리딩 / ESL</td>
+												<td rowspan="2">SAT 리딩 / ESL</td>
+												<td rowspan="2">SAT 수학 <br>테니스 (산책)</td>
+												<td rowspan="2">승마</td>
+											</tr>
+											<tr>
+												<td>17:00 ~ 18:00</td>
+											</tr>
+											<tr>
+												<td>18:00 ~ 19:00</td>
+												<td colspan="5">저녁식사 (한식 케터링 / 캠퍼스 뷔페)</td>
+												<td rowspan="4">자유시간</td>
+												<td rowspan="4">자유시간</td>
+											</tr>
+											<tr>
+												<td>19:00 ~ 20:00</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">월마트 쇼핑</td>
+											</tr>
+											<tr>
+												<td>20:00 ~ 21:00</td>
+											</tr>
+											<tr>
+												<td>21:00 ~ 22:00</td>
+												<td colspan="5">자유시간</td>
+											</tr>
+											<tr>
+												<td>22:00 ~ 23:00</td>
+												<td colspan="5">취침</td>
+												<td>취침</td>
+												<td>취침</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div><!-- // tabs_item_sect -->
+							<div class="tabs_item_sect sect4">
+								<div class="inner">
+									<div class="tabs_info_title">추천학교</div>
+
+									<div class="tabs-swiper tabs-swiper2">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs2_slider1@2x.png" alt=""></div>
+														<div class="info">Ursuline <br>High School</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs2_slider2@2x.png" alt=""></div>
+														<div class="info">Cardinal Mooney <br>High School</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs2_slider3@2x.png" alt=""></div>
+														<div class="info">John F. Kennedy <br>Catholic School</div>
+													</div>
+												</div>
+											</div><!-- // swiper-wrapper -->
+										</div><!-- // swiper-container -->
+										<div class="swiper-control">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-next"></div>
+										</div><!-- // swiper-control -->
+									</div><!-- // tabs-swiper -->
+
+								</div>
+							</div><!-- // tabs_item_sect -->
+
+						</div><!-- // toggle_tabs_item -->
+
+						<div class="toggle_tabs_item item3">
+
+							<div class="tabs_item_sect sect1">
+								<div class="inner">
+									<div class="cont_title border">세미 관리형 프로그램</div>
+									<div class="tabs_info_title"><div class="box">프로그램 소개</div></div>
+									<div class="tabs_info_box">미국의 수준 높은 학교에 수여하는 블루리본 인증학교로 모든 파트너 학교는 Niche A이상의 우수한 학교로 구성되어 있는 미국재단의 프로그램입니다. 일반 보딩 스쿨의 단점을 보완하여 국제학생들이 현지 유학생활에 어려움 없이 적응함과 동시에 명문대학교로 진학 할 수 있도록 학업, 생활, 진학 상담  등 철저한 서포트를 제공하는 프로그램입니다. 체계적인 관리를 통해 학생들이 자기주도적 학습이 진행될 수 있도록 써포트를 하고 있으며 아이비리그 및 상위권 대학진학을 위한 Honors Track 프로그램을 제공하고 있습니다.</div>
+								</div>
+							</div><!-- // tabs_item_sect -->
+
+							<div class="tabs_item_sect sect2">
+								<div class="inner">
+									<div class="tabs_info_title">프로그램 특징</div>
+									<ul class="tabs_info_list">
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img1@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img2@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img3@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img4@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img5@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img6@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/static/img/early_abroad/usa/sub2_5_tabs3_img7@2x.png" alt=""></li>
+										<li><img src="/static/img/early_abroad/usa/sub2_5_tabs3_img8@2x.png" alt=""></li>
+									</ul>
+
+								</div>
+							</div><!-- // tabs_item_sect -->
+
+							<div class="tabs_item_sect sect3">
+								<div class="inner">
+									<div class="tabs_info_title"><div class="box">주간샘플 일정표</div></div>
+									<div class="cont_table_unit program_table_unit"><p>상기일정은 현지사정에 따라 변동될 수 있습니다.</p></div>
+									<table class="cont_table program_table">
+										<colgroup>
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+											<col style="width:12.5%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>시간</th>
+												<th>월</th>
+												<th>화</th>
+												<th>수</th>
+												<th>목</th>
+												<th>금</th>
+												<th>토</th>
+												<th>일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>06:00 ~ 07:00</td>
+												<td colspan="5">기상 / 아침식사</td>
+												<td rowspan="3">기상<br>아침식사</td>
+												<td rowspan="3">기상<br>아침식사</td>
+											</tr>
+											<tr>
+												<td>07:00 ~ 07:30</td>
+												<td colspan="5">스쿨버스 등교</td>
+											</tr>
+											<tr>
+												<td>08:00</td>
+												<td colspan="5" rowspan="8">학교정규 수업</td>
+											</tr>
+											<tr>
+												<td>10:00</td>
+												<td rowspan="2">YMC 운동</td>
+												<td rowspan="2">YMC 운동</td>
+											</tr>
+											<tr>
+												<td>11:00</td>
+											</tr>
+											<tr>
+												<td>12:00</td>
+												<td rowspan="7">필드트립 <br>봉사활동 <br>팀빌딩</td>
+												<td rowspan="4">자유시간</td>
+											</tr>
+											<tr>
+												<td>13:00</td>
+											</tr>
+											<tr>
+												<td>14:00</td>
+											</tr>
+											<tr>
+												<td>15:00</td>
+											</tr>
+											<tr>
+												<td>16:00</td>
+												<td rowspan="3">전과목 보충수업</td>
+											</tr>
+											<tr>
+												<td>16:30 ~ 17:00</td>
+												<td rowspan="2">SAT 수학</td>
+												<td rowspan="2">SAT 리딩 / ESL</td>
+												<td rowspan="2">SAT 리딩 / ESL</td>
+												<td rowspan="2">SAT 수학 <br>테니스 (산책)</td>
+												<td rowspan="2">승마</td>
+											</tr>
+											<tr>
+												<td>17:00 ~ 18:00</td>
+											</tr>
+											<tr>
+												<td>18:00 ~ 19:00</td>
+												<td colspan="5">저녁식사 (한식 케터링 / 캠퍼스 뷔페)</td>
+												<td rowspan="4">자유시간</td>
+												<td rowspan="4">자유시간</td>
+											</tr>
+											<tr>
+												<td>19:00 ~ 20:00</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">전과목 보충수업</td>
+												<td rowspan="2">월마트 쇼핑</td>
+											</tr>
+											<tr>
+												<td>20:00 ~ 21:00</td>
+											</tr>
+											<tr>
+												<td>21:00 ~ 22:00</td>
+												<td colspan="5">자유시간</td>
+											</tr>
+											<tr>
+												<td>22:00 ~ 23:00</td>
+												<td colspan="5">취침</td>
+												<td>취침</td>
+												<td>취침</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div><!-- // tabs_item_sect -->
+							<div class="tabs_item_sect sect4">
+								<div class="inner">
+									<div class="tabs_info_title">추천학교</div>
+
+									<div class="tabs-swiper tabs-swiper3">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs3_slider1@2x.png" alt=""></div>
+														<div class="info">St. Pius X <br>High School</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs3_slider2@2x.png" alt=""></div>
+														<div class="info">Carmel  Catholic <br>High School</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs3_slider3@2x.png" alt=""></div>
+														<div class="info">Cretin Derham Hall <br>High School</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs3_slider4@2x.png" alt=""></div>
+														<div class="info">Mater Dei Catholic <br>High School</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs3_slider5@2x.png" alt=""></div>
+														<div class="info">Justin-Siena <br>High School</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs3_slider6@2x.png" alt=""></div>
+														<div class="info">Bishop Montgomery <br>High School</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="box">
+														<div class="thumb"><img src="/static/img/early_abroad/usa/sub2_5_tabs3_slider7@2x.png" alt=""></div>
+														<div class="info">Saint Antony's <br>High School</div>
+													</div>
+												</div>
+											</div><!-- // swiper-wrapper -->
+										</div><!-- // swiper-container -->
+
+										<div class="swiper-control">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-next"></div>
+										</div><!-- // swiper-control -->
+
+									</div><!-- // tabs-swiper -->
+									<script>
+
+										jQuery(function($){
+
+											var tabs_swiper3 = new Swiper('.tabs-swiper3 .swiper-container', {
+												slidesPerView:4,
+												slidesPerGroup: 4,
+												slidesPerGroupSkip: 1,
+												spaceBetween:40,
+												speed :900,
+												navigation: {
+													nextEl: '.tabs-swiper3 .swiper-button-next',
+													prevEl: '.tabs-swiper3 .swiper-button-prev',
+												},
+												pagination: {
+													el : '.tabs-swiper3 .swiper-pagination',
+													clickable: true,
+													renderBullet: function (index, className) {
+														return '<span class="' + className + '">' + (index + 1) + "</span>";
+													},
+												},
+												breakpoints:{
+													480:{
+														slidesPerView:3,
+														slidesPerGroup: 3,
+														spaceBetween:10,
+													},
+													720:{
+														slidesPerView:3,
+														slidesPerGroup: 3,
+														spaceBetween:20,
+													},
+													960:{
+														slidesPerView:4,
+														slidesPerGroup: 4,
+														spaceBetween:30,
+													},
+													1200:{
+														slidesPerView:4,
+														slidesPerGroup: 4,
+														spaceBetween:40,
+													}
+												},
+											});
+
+										});
+									</script>
+
+								</div>
+							</div><!-- // tabs_item_sect -->
+
+						</div><!-- // toggle_tabs_item -->
+
+					</div>
+
+					<script>
+
+					jQuery(function($){
+
+						/* 탭메뉴 */
+						$(".toggle_tabs_list").each(function(index){
+					//		$(this).parents('section').
+							$(this).find("> li:eq(0)").addClass('on');
+							$(this).parents('section').find(".toggle_tabs_info > .toggle_tabs_item:eq(0)").addClass('on');
+						});
+
+						$('.toggle_tabs_list li a').on('click', function(){
+							var tabs_num = $(this).parent().index();
+							var $tabs_list = $(this).parents('.toggle_tabs_list');
+							var $tabs_info = $(this).parents('section').find(".toggle_tabs_info");
+
+							$('.toggle_tabs_list li').removeClass('on');
+							$('.toggle_tabs_list li').eq(tabs_num).addClass('on');
+
+							$tabs_info.find('.toggle_tabs_item').removeClass('on');
+							$tabs_info.find('.toggle_tabs_item').eq(tabs_num).addClass('on');
+							return false;
+						});
+
+					});
+					</script>
+
 				</section>
 				<!-- // cont_sect -->
 

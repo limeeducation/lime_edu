@@ -423,6 +423,11 @@ $(document).ready(function(){
 		dateFormat: "yy-mm-dd",
 		minDate:0,
 		dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+		beforeShow: function(input) {
+			setTimeout(function(){
+				$('#ui-datepicker-div').css({'top':'500px', 'left':'500px'}); // top / left 값으로 강제 위치 수정
+			})
+		}
 	});
 
 	//지사 선택 tab
