@@ -468,7 +468,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<!--// 지역설명 -->
 
 										<!-- 상세보기버튼 -->
-										<a href="#none" class="btn_detail">
+										<a href="/earlyAbroad/caSchoolDetail/nvsd" class="btn_detail">
 											<span>상세보기 &nbsp; +</span>
 										</a>
 										<!--// 상세보기버튼 -->
