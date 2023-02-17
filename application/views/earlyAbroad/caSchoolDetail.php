@@ -78,7 +78,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<figure class="logo_img">
 									<img src="/static/img/early_abroad/ca/logo_<?= $school;?>.png" alt="Tdsb">
 								</figure>
-								<p class="name">Toronto District School Board</p>
+								<p class="name"><?= $school_name[$school]?></p>
 							</div>
 							<!--// 이미지영역 -->
 
