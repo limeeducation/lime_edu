@@ -138,7 +138,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!--// 교육청리스트 -->
 
 					<!-- 추천 상품 [불필요시 삭제] -->
-					<div class="recom_tab">
+					<div class="recom_tab" style="display:none;">
 						<h2 class="area_tab_tit">추천 상품</h2>
 						<div class="area_tab_wrap">
 							<a href="#none" class="area_tab can">
