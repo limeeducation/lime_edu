@@ -18,7 +18,7 @@ class EarlyAbroad extends CI_Controller {
 
 	//조기유학 미국 학교찾기
 	public function usSchoolList(){
-
+		$this->load->view('earlyAbroad/usaSchoolList');
 	}
 
 	//조기유학 미국 왜 조기유학인가
