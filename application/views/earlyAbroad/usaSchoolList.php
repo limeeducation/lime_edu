@@ -7,6 +7,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     <script type="text/javascript">
 	function get_list(state){
 		$(".item").hide();
+		$(".school_list_title").hide();
+		$(".school_list_info").hide();
 		var title = $("#"+state+"_title");
 		var list = $("#"+state+"_list");
 		title.parent().show();
