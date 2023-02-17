@@ -39,6 +39,9 @@ class EarlyAbroad extends CI_Controller {
 
 	//조기유학 캐나다 학교 상세
 	public function caSchoolDetail($name){
+		$logo_img = array(
+			'' => ''
+		);
 		$this->load->view('earlyAbroad/caSchoolDetail', array('school' => $name));
 	}
 
