@@ -240,9 +240,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li><a href="https://www.woodstockacademy.org/">Woodstock Academy</a></li>
 											<li><a href="https://watkinson.org/">Watkinson School</a></li>
 										</ul>
-									</div><!-- // swiper-slide -->
-
-									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Florida</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://www.flprep.com/">Florida Preparatory  Academy</a></li>
@@ -252,6 +249,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li><a href="https://www.nordangliaeducation.com/nbps-florida">North Broward Preparatory School</a></li>
 											<li><a href="https://www.nordangliaeducation.com/wps-florida">Windermere  Preparatory School</a></li>
 										</ul>
+									</div><!-- // swiper-slide -->
+
+									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Hawaii</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://www.iolani.org/">‘Iolani School</a></li>
@@ -264,9 +264,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<ul class="school_list_info">
 											<li><a href="https://maharishischool.org/">Maharishi School of the Age of Enlightenment </a></li>
 										</ul>
-									</div><!-- // swiper-slide -->
-
-									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Illinois</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://www.rockfordchristian.org/">Rockford Christian High School</a></li>
@@ -291,6 +288,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li><a href="https://www.washingtonacademy.org/">Washington Academy</a></li>
 											<li><a href="https://www.johnbapst.org/">John Bapst Memorial High School </a></li>
 										</ul>
+									</div><!-- // swiper-slide -->
+
+									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Maryland</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://www.calvertonschool.org/">The Calverton School</a></li>
@@ -300,9 +300,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li><a href="https://www.ssfs.org/">Sandy Spring Friends School </a></li>
 											<li><a href="https://www.gfs.org/">Garrison Forest School</a></li>
 										</ul>
-									</div><!-- // swiper-slide -->
-
-									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Massachusetts</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://macduffie.org/">The MacDuffie School</a></li>
@@ -331,15 +328,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li><a href="https://www.concordiaacademy.com/">Concordia Academy </a></li>
 											<li><a href="https://sjprep.net/">Saint John’s Preparatory School</a></li>
 										</ul>
+									</div><!-- // swiper-slide -->
+
+									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Missouri</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://splhs.org/">Saint Paul Lutheran High School</a></li>
 											<li><a href="https://summit-christian-academy.org/">Summit Christian Academy</a></li>
 											<li><a href="https://www.chaminade-stl.org/">Chaminade College Preparatory</a></li>
 										</ul>
-									</div><!-- // swiper-slide -->
-
-									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">North Dakota</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://www.highmowing.org/">Oak Grove Lutheran High School</a></li>
@@ -407,6 +404,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li><a href="https://www.lyndoninstitute.org/">Lyndon Institute</a></li>
 											<li><a href="https://stjacademy.org/">St. Johnsbury Academy</a></li>
 										</ul>
+									</div><!-- // swiper-slide -->
+
+									<div class="swiper-slide item">
 										<div class="school_list_title"><div class="box">Virginia</div></div>
 										<ul class="school_list_info">
 											<li><a href="https://www.blueridgeschool.com/">Blue Ridge School</a></li>
