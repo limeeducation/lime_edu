@@ -6,16 +6,23 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <body>
     <script type="text/javascript">
 	function get_list(state){
-		$(".item").hide();
-		$(".swiper-control").hide();
-		$(".school_list_title").hide();
-		$(".school_list_info").hide();
-		var title = $("#"+state+"_title");
-		var list = $("#"+state+"_list");
-		title.parent().show();
-		title.show();
-		list.show();
-		title.focus();
+		if(state == 'All'){
+			$(".item").show();
+			$(".swiper-control").show();
+			$(".school_list_title").show();
+			$(".school_list_info").show();
+		}else{
+			$(".item").hide();
+			$(".swiper-control").hide();
+			$(".school_list_title").hide();
+			$(".school_list_info").hide();
+			var title = $("#"+state+"_title");
+			var list = $("#"+state+"_list");
+			title.parent().show();
+			title.show();
+			list.show();
+			title.focus();
+		}
 	}
     </script>
 	<div id="wrap">
@@ -118,7 +125,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<dt><img src="/static/img/early_abroad/usa/school_group_eng@2x.png" alt=""></dt>
 								<dd class="title">
 									<ul>
-										<li><a href="#" class="box"><b>U.S.A</b>미국</a></li>
+										<li><a href="javascript:get_list('All');" class="box"><b>U.S.A</b>미국</a></li>
 									</ul>
 								</dd>
 							</dl>
