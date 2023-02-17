@@ -177,6 +177,13 @@
 .ranking_more{display:block;position:absolute;top:-0.5rem;right:0;width:15rem;height:4.8rem;line-height:4.8rem;background:#FFFFFF;border:1px solid #4E4E4E;border-radius:2.8rem;font-weight:500;font-size:1.8rem;text-align:center;color:#4E4E4E;}
 .on .ranking_more{background:#2E58FF;border:1px solid #2E58FF;color:#fff;}
 
+.us_top_ranking_table{width:104rem;box-shadow:0 0 0 1px #E06969;}
+.us_top_ranking_table th,.us_top_ranking_table td{padding:5px;border:1px solid #E06969;font-size:12px;line-height:18px;color:#E06969;}
+.us_top_ranking_table th{background:#FFF4F4;}
+.us_top_ranking_table tbody tr{display:none;}
+.us_top_ranking_table tbody tr.top20{display:table-row}
+.us_top_ranking_table.on tbody tr{display:table-row}
+
 .cont_table_unit{margin:0 auto 8px;font-weight:500;font-size:12px;line-height:1.5;color:#2E58FF;text-align:right;}
 .cont_table_unit p{display:inline-block;position:relative;padding-left:10px;}
 .cont_table_unit p::before{display:block;clear:both;content:'';position:absolute;top:50%;left:0;width:4px;height:4px;margin-top:-2px;border-radius:50%;background:#2E58FF;}
