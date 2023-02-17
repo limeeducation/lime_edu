@@ -221,7 +221,7 @@
 .sec_03 .bor_table thead tr th ~ th ,
 .sec_03 .bor_table tbody tr td ~ td {border-left:.1rem solid #705537;}
 
-.sec_04 {padding:9.5rem 2rem 0;}
+.sec_04 {padding:9.5rem 2rem 0;padding-bottom:9.5rem;}
 .sec_04 .cotn {width:100%; max-width:1136px; margin:0 auto;}
 .sec_04 .box_tit {margin-bottom:5.8rem;}
 .sec_04 .des_box {border-top:.3rem solid #eee; border-bottom:.3rem solid #eee;}
