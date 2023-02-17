@@ -618,7 +618,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="ofc_info">
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">기관/ 학교 명 :</h4>
-												<p class="info_txt">Burnaby School District #41</p>
+												<p class="info_txt">Langley School District #35</p>
 											</div>
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">주소 :</h4>
