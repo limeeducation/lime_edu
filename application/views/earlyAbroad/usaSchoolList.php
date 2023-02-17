@@ -87,7 +87,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								 <area target="" alt="메릴랜드" title="메릴랜드" href="메릴랜드" coords="981,311,1040,348" shape="rect">
 							</map>
 						</div>
-						<script src="js/jquery.rwdImageMaps.min.js"></script>
+						<script src="/static/js/jquery.rwdImageMaps.min.js"></script>
 						<script>
 						$(document).ready(function(e) {
 							$('img[usemap]').rwdImageMaps();
