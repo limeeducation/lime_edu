@@ -438,7 +438,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="ofc_info">
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">기관/ 학교 명 :</h4>
-												<p class="info_txt">North Vancouver School<br>District #44 (44번 교육청)</p>
+												<p class="info_txt">North Vancouver School District #44 (44번 교육청)</p>
 											</div>
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">주소 :</h4>
@@ -498,7 +498,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="ofc_info">
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">기관/ 학교 명 :</h4>
-												<p class="info_txt">Vancouver School<br>District #39</p>
+												<p class="info_txt">Vancouver School District #39</p>
 											</div>
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">주소 :</h4>
@@ -558,7 +558,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="ofc_info">
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">기관/ 학교 명 :</h4>
-												<p class="info_txt">Burnaby School<br>District #41</p>
+												<p class="info_txt">Burnaby School District #41</p>
 											</div>
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">주소 :</h4>
@@ -618,7 +618,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="ofc_info">
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">기관/ 학교 명 :</h4>
-												<p class="info_txt">Burnaby School<br>District #41</p>
+												<p class="info_txt">Burnaby School District #41</p>
 											</div>
 											<div class="info_txt_wrap">
 												<h4 class="info_tit">주소 :</h4>
@@ -661,14 +661,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						</div>
 						<!--// 목록 -->
 
-						<!-- 페이징 -->
-						<div class="paging">
-							<a href="#none" class="btn_arr prev"></a>
-							<a href="#none" class="num on">1</a><!-- 현재페이지class="on"추가 -->
-							<a href="#none" class="num ">2</a>
-							<a href="#none" class="btn_arr next"></a>
-						</div>
-						<!--// 페이징 -->
 					</div>
 					<!--// 교육청리스트 -->
 				</div>
