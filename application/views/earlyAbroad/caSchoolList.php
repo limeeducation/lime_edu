@@ -24,7 +24,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						<div class="pro_btn_wrap">
 							<div class="pro_group on"><!-- 활성화시 class="on"추가 -->
-								<a href="#none">
+								<a href="/earlyAbroad/caSchoolList">
 									<figure class="pro_img">
 										<img src="/static/img/early_abroad/ca/icon_pro_01.png" alt="조기유학 학교찾기">
 									</figure>
@@ -32,7 +32,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</a>
 							</div>
 							<div class="pro_group">
-								<a href="#none">
+								<a href="/earlyAbroad/whyEarlyCa">
 									<figure class="pro_img">
 										<img src="/static/img/early_abroad/ca/icon_pro_02.png" alt="">
 									</figure>
@@ -40,7 +40,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</a>
 							</div>
 							<div class="pro_group">
-								<a href="#none">
+								<a href="/earlyAbroad/abtCaManageAbroad">
 									<figure class="pro_img">
 										<img src="/static/img/early_abroad/ca/icon_pro_03.png" alt="">
 									</figure>
@@ -48,7 +48,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</a>
 							</div>
 							<div class="pro_group">
-								<a href="#none">
+								<a href="/earlyAbroad/caInternationalPrivate">
 									<figure class="pro_img">
 										<img src="/static/img/early_abroad/ca/icon_pro_04.png" alt="">
 									</figure>
@@ -163,7 +163,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<!--// 지역설명 -->
 
 										<!-- 상세보기버튼 -->
-										<a href="#none" class="btn_detail">
+										<a href="/earlyAbroad/caSchoolDetail/tdsb" class="btn_detail">
 											<span>상세보기 &nbsp; +</span>
 										</a>
 										<!--// 상세보기버튼 -->
@@ -224,7 +224,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<!--// 지역설명 -->
 
 										<!-- 상세보기버튼 -->
-										<a href="#none" class="btn_detail">
+										<a href="/earlyAbroad/caSchoolDetail/tcds" class="btn_detail">
 											<span>상세보기 &nbsp; +</span>
 										</a>
 										<!--// 상세보기버튼 -->
@@ -285,7 +285,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<!--// 지역설명 -->
 
 										<!-- 상세보기버튼 -->
-										<a href="#none" class="btn_detail">
+										<a href="/earlyAbroad/caSchoolDetail/york" class="btn_detail">
 											<span>상세보기 &nbsp; +</span>
 										</a>
 										<!--// 상세보기버튼 -->
@@ -346,7 +346,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<!--// 지역설명 -->
 
 										<!-- 상세보기버튼 -->
-										<a href="#none" class="btn_detail">
+										<a href="/earlyAbroad/caSchoolDetail/ycdsb" class="btn_detail">
 											<span>상세보기 &nbsp; +</span>
 										</a>
 										<!--// 상세보기버튼 -->
@@ -407,7 +407,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<!--// 지역설명 -->
 
 										<!-- 상세보기버튼 -->
-										<a href="#none" class="btn_detail">
+										<a href="/earlyAbroad/caSchoolDetail/csd" class="btn_detail">
 											<span>상세보기 &nbsp; +</span>
 										</a>
 										<!--// 상세보기버튼 -->
@@ -486,7 +486,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<!-- 왼쪽이미지영역 -->
 									<div class="img_area">
 										<figure class="logo_img">
-											<img src="/static/img/early_abroad/ca/logo_vps.png" alt="csd">
+											<img src="/static/img/early_abroad/ca/logo_vps.png" alt="vps">
 										</figure>
 										<p class="name">Vancouver School<br>District #39</p>
 									</div>
@@ -529,7 +529,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<!--// 지역설명 -->
 
 										<!-- 상세보기버튼 -->
-										<a href="#none" class="btn_detail">
+										<a href="/earlyAbroad/caSchoolDetail/vps" class="btn_detail">
 											<span>상세보기 &nbsp; +</span>
 										</a>
 										<!--// 상세보기버튼 -->
@@ -546,7 +546,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<!-- 왼쪽이미지영역 -->
 									<div class="img_area">
 										<figure class="logo_img">
-											<img src="/static/img/early_abroad/ca/logo_bnby.png" alt="csd">
+											<img src="/static/img/early_abroad/ca/logo_bnby.png" alt="bnby">
 										</figure>
 										<p class="name">Burnaby School<br>District #41</p>
 									</div>
@@ -606,7 +606,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<!-- 왼쪽이미지영역 -->
 									<div class="img_area">
 										<figure class="logo_img">
-											<img src="/static/img/early_abroad/ca/logo_lnly.png" alt="csd">
+											<img src="/static/img/early_abroad/ca/logo_lnly.png" alt="lnly">
 										</figure>
 										<p class="name">Langley School<br>District #35</p>
 									</div>
