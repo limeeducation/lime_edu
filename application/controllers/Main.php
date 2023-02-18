@@ -146,5 +146,5 @@ class Main extends CI_Controller {
     foreach ($top_images as $image) {
         echo '<a href="' . $image['link_url'] . '"><img src="' . $image['image_url'] . '"></a><br>';
     }
-	}
+
 }
