@@ -124,7 +124,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="/static/img/early_abroad/uk/edu_01.jpg" alt="canada">
+											<img src="/static/img/early_abroad/uk/edu_01.png" alt="england">
 										</figure>
 									</div>
 									<div class="txt_area">
@@ -142,7 +142,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="/static/img/early_abroad/uk/edu_02.jpg" alt="canada">
+											<img src="/static/img/early_abroad/uk/edu_02.png" alt="england">
 										</figure>
 									</div>
 									<div class="txt_area">
@@ -163,7 +163,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="/static/img/early_abroad/uk/edu_03.jpg" alt="canada">
+											<img src="/static/img/early_abroad/uk/edu_03.png" alt="england">
 										</figure>
 									</div>
 									<div class="txt_area">
