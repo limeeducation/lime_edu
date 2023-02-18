@@ -186,10 +186,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<h2 class="tit">보딩스쿨 이란?</h2>
 							</div>
 							<div class="des_box">
-								<p><span>기숙사가 있는 학교를 보딩스쿨 Boarding School</span>이라고 하며, <br>
-									보통 기숙사는 학교 내에 있거나 혹은 학교 인근에 있는 경우가 많습니다. <br>
-									미국에서 명문 사립학교 중 기숙사형태로 운영되는 학교가 많은 이유는 <br>
-									학생들이 다른 나라들에서 유학 온 학생들은 물론, 미국 내 다른 주에서 온 학생들도 많기 때문입니다.</p>
+								<p><span>기숙사가 있는 학교</span>를 <span>보딩스쿨 Boarding School</span>이라고 하며,<br>
+									보통 기숙사는 학교 내에 있거나 혹은 학교 인근에 있는 경우가 많습니다.<br>
+									영국에서 명문 사립학교 중 기숙사형태로 운영되는 학교가 많은 이유는 <br>
+									학생들이 다른 나라들에서 유학 온 학생들은 물론, 영국 내 다른 도시에서 온 학생들도 많기 때문입니다.</p>
 							</div>
 
 							<div class="adt_wrap">
@@ -210,7 +210,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<li>
 										<span class="num">03</span>
 										<div class="txt_box">
-											<p>자연스럽게 친구들과 어울려 영어시력을 향상하기에 좋은 이점이 있습니다.</p>
+											<p>자연스럽게 친구들과 어울려 영어실력을 향상하기에 좋은 이점이 있습니다.</p>
 										</div>
 									</li>
 									<li>
@@ -233,174 +233,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									</li>
 								</ol>
 							</div>
-
-							<!-- 캐나다 추천 보딩스쿨 -->
-							<div class="bor_table">
-								<p class="tit">캐나다 추천 보딩스쿨</p>
-								<div class="table_wrap">
-									<table>
-										<colgroup>
-											<col width="24%">
-											<col width="60px">
-											<col width="100px">
-											<col width="90px">
-											<col width="80px">
-											<col width="150px">
-											<col width="75px">
-											<col width="17%">
-											<col width="100px">
-										</colgroup>
-										<thead>
-											<tr>
-												<th>학교이름</th>
-												<th>주</th>
-												<th>구분</th>
-												<th>학년</th>
-												<th>학생수</th>
-												<th>AP</th>
-												<th>IB</th>
-												<th>주소</th>
-												<th>학비</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Upper Canada College</td>
-												<td>ON</td>
-												<td>남학교</td>
-												<td>SK to 12</td>
-												<td>1,200명</td>
-												<td>-</td>
-												<td>Diploma IB MYP IB PYP</td>
-												<td>200 Lonsdale Road, Toronto, Ontario, M4V 1W6</td>
-												<td>C$ 71,800</td>
-											</tr>
-											<tr>
-												<td>Lake Field College School</td>
-												<td>ON</td>
-												<td>남여공학</td>
-												<td>9 to 12</td>
-												<td>425명</td>
-												<td>8개 제공</td>
-												<td>-</td>
-												<td>4391 County Rd. 29, Lakefield, Ontario, K0L 2H0</td>
-												<td>C$ 69,700</td>
-											</tr>
-											<tr>
-												<td>Appleby College</td>
-												<td>ON</td>
-												<td>남여공학</td>
-												<td>7 to 12</td>
-												<td>803명</td>
-												<td>20개 이상의 AP 과목 및 AP 캡스톤 프로그램</td>
-												<td>-</td>
-												<td>540 Lakeshore Road West, Oakville, Ontario, L6K 3P1</td>
-												<td>C$ 83,100</td>
-											</tr>
-											<tr>
-												<td>Ridly College</td>
-												<td>ON</td>
-												<td>남여공학</td>
-												<td>JK to 12</td>
-												<td>711명</td>
-												<td>-</td>
-												<td>Diploma IB MYP IB PYP</td>
-												<td>2 Ridley Road, St. Catharines, Ontario, L2R 7C3</td>
-												<td>C$ 79,800</td>
-											</tr>
-											<tr>
-												<td>Pickering College</td>
-												<td>ON</td>
-												<td>남여공학</td>
-												<td>JK to 12</td>
-												<td>485명</td>
-												<td>-</td>
-												<td>-</td>
-												<td>16945 Bayview Ave, Newmarket, Ontario, L3Y 4X2</td>
-												<td>C$ 71,740</td>
-											</tr>
-											<tr>
-												<td>Branksome Hall</td>
-												<td>ON</td>
-												<td>여학교</td>
-												<td>7 to 12</td>
-												<td>900명</td>
-												<td>-</td>
-												<td>Diploma IB MYP IB PYP</td>
-												<td>10 Elm Avenue, Toronto, M4W 1N4</td>
-												<td>C$ 69,000</td>
-											</tr>
-											<tr>
-												<td>Bodwell High School</td>
-												<td>BC</td>
-												<td>남여공학</td>
-												<td>8 to 12</td>
-												<td>560명</td>
-												<td>8개 제공</td>
-												<td>IB MYP</td>
-												<td>955 Harbourside Drive, North Vancouver, British Columbia, V7P 3S4</td>
-												<td>C$ 52,225</td>
-											</tr>
-											<tr>
-												<td>Stanstead College</td>
-												<td>QC</td>
-												<td>남여공학</td>
-												<td>7 to 11</td>
-												<td>260명</td>
-												<td>3개 제공</td>
-												<td>-</td>
-												<td>450 Dufferin Street, Stanstead, Quebec, J0B 3E0</td>
-												<td>C$ 74,900</td>
-											</tr>
-											<tr>
-												<td>Brentwood College School</td>
-												<td>BC</td>
-												<td>남여공학</td>
-												<td>8 to 12</td>
-												<td>526명</td>
-												<td>20개 제공</td>
-												<td>-</td>
-												<td>2735 Mount Baker Road, Mill Bay, British Columbia, V0R 2P1</td>
-												<td>C$ 87,000</td>
-											</tr>
-											<tr>
-												<td>Havergal College</td>
-												<td>ON</td>
-												<td>여학교</td>
-												<td>9 to 12</td>
-												<td>1,000명</td>
-												<td>6개 제공</td>
-												<td>-</td>
-												<td>1451 Avenue Road, Toronto, Ontario, M5N 2H9</td>
-												<td>C$ 68,540</td>
-											</tr>
-											<tr>
-												<td>The Bishop Strachan School</td>
-												<td>ON</td>
-												<td>여학교</td>
-												<td>8 to 12</td>
-												<td>1,000명</td>
-												<td>14개 제공</td>
-												<td>-</td>
-												<td>298 Lonsdale Road, Toronto, Ontario, M4V 1X2</td>
-												<td>C$ 69,145</td>
-											</tr>
-											<tr>
-												<td>St.Johns Academy Shawnigan Lake School</td>
-												<td>BC</td>
-												<td>남여공학</td>
-												<td>6 to 12</td>
-												<td>540명</td>
-												<td>-</td>
-												<td>IB Diploma IB MYP</td>
-												<td>1975 Renfrew Road, Shawnigan Lake, British Columbia, V0R 2W1, Canada</td>
-												<td>C$ 53,600</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<!--// 캐나다 추천 보딩스쿨 -->
 						</div>
 					</div>
 					<!--// 보딩스쿨 이란? -->

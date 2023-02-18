@@ -22,7 +22,7 @@
 
 /* ============================================ << 왜 조기유학인가 >> ================================================ */
 .cotn .box_tit {text-align:center;}
-.cotn .box_tit .tit {display:inline-block; box-sizing:border-box; padding:.9rem 4.3rem; background-color:#FF9B50; color:#fff; font-weight:700; font-size:3.2rem; border-radius:1rem;}
+.cotn .box_tit .tit {display:inline-block; box-sizing:border-box; padding:.9rem 4.3rem; background-color:#E06969; color:#fff; font-weight:700; font-size:3.2rem; border-radius:1rem;}
 
 /* 왜 캐나다 조기유학을 선택해야 하나요? */
 .sec_01 {background-color:#FFF4F4; padding:8rem 2rem 0;}
@@ -62,13 +62,13 @@
 
 
 /* 보딩스쿨 이란? */
-.sec_03 {background-color:#f0f5e3; padding:9rem 2rem 14rem;}
+.sec_03 {background-color:#E8F3FF; padding:9rem 2rem 14rem;}
 .sec_03 .cotn {width:100%; max-width:1136px; margin:0 auto; position:relative;}
 .sec_03 .cotn::before {display:block; content:''; background:url(/static/img/early_abroad/ca/boarding_01.png) no-repeat; background-size:100% 100%; width:52.5rem; height:52.5rem; position:absolute; left:-18rem; top:40.5rem;}
 .sec_03 .cotn::after {display:block; content:''; background:url(/static/img/early_abroad/ca/boarding_02.png) no-repeat; background-size:100% 100%; width:30.2rem; height:30.3rem; position:absolute; right:10rem; top:90rem;}
 .sec_03 .des_box {margin-top:3rem; width:100%; max-width:1076px; margin:3rem auto 0; box-sizing:border-box; padding:2.7rem 4.5rem; border-radius:10rem; background-color:#fff;}
 .sec_03 .des_box p {color:#705537; text-align:center; font-size:1.8rem; font-weight:500; line-height:1.444em;}
-.sec_03 .des_box p span {color:#ff6d00;}
+.sec_03 .des_box p span {color:#E06969;}
 
 .sec_03 .adt_wrap {margin:16rem 0 21rem;}
 .sec_03 .adt_wrap .tit {font-size:3.2rem; font-weight:700; line-height:1.875em; color:#705537; text-align:center;}
@@ -77,7 +77,7 @@
 .sec_03 .adt_list li:not(:nth-child(3n+1)) {margin-left:5.7rem;}
 .sec_03 .adt_list li:nth-child(n+4) {margin-top:5rem;}
 .sec_03 .adt_list li:nth-child(1) {margin-left:24.5rem;}
-.sec_03 .adt_list .num {display:block; width:6.5rem; height:6.5rem; border-radius:50%; background-color:#ff9b50; text-align:center; color:#fff; font-size:3.2rem; font-weight:700; line-height:2em; position:absolute; right:-1.9rem; top:-2.8rem;}
+.sec_03 .adt_list .num {display:block; width:6.5rem; height:6.5rem; border-radius:50%; background-color:#E06969; text-align:center; color:#fff; font-size:3.2rem; font-weight:700; line-height:2em; position:absolute; right:-1.9rem; top:-2.8rem;}
 .sec_03 .adt_list .txt_box {border-radius:5rem 1rem 5rem 1rem; background-color:#fff; padding:2.5rem 1.5rem 1.5rem; box-sizing:border-box; text-align:center; display:flex; align-items:center; width:19rem; height:22rem;}
 .sec_03 .adt_list .txt_box p {color:#705537; font-size:1.7rem; font-weight:500; line-height:1.529em;}
 
