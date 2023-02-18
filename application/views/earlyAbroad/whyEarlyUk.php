@@ -25,7 +25,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="pro_group"><!-- 활성화시 class="on"추가 -->
 								<a href="/earlyAbroad/ukSchoolList">
 									<figure class="pro_img">
-										<img src="/static/img/early_abroad/uk/icon_pro_01.png" alt="조기유학 학교찾기">
+										<img src="/static/img/early_abroad/uk/ico_btn_list_ico1.png" alt="조기유학 학교찾기">
 									</figure>
 									<span class="menu_txt">조기유학 학교찾기</span>
 								</a>
@@ -33,7 +33,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="pro_group on">
 								<a href="/earlyAbroad/whyEarlyUk">
 									<figure class="pro_img">
-										<img src="/static/img/early_abroad/uk/icon_pro_02.png" alt="">
+										<img src="/static/img/early_abroad/uk/ico_btn_list_ico2.png" alt="">
 									</figure>
 									<span class="menu_txt">왜 조기유학인가?</span>
 								</a>
@@ -41,7 +41,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="pro_group">
 								<a href="/earlyAbroad/ukTopSchools">
 									<figure class="pro_img">
-										<img src="/static/img/early_abroad/uk/icon_pro_03.png" alt="">
+										<img src="/static/img/early_abroad/uk/ico_btn_list_ico3.png" alt="">
 									</figure>
 									<span class="menu_txt">명문 TOP 100</span>
 								</a>
