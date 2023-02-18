@@ -106,6 +106,8 @@ class Main extends CI_Controller {
 
 	//블로그 이미지 테스트
 	public function get_blog(){
+		echo "시작";
+		echo "<br>";
 		// specify the URL
 		$url = 'https://blog.naver.com/mylimeeducation';
 
