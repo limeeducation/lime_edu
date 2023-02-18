@@ -448,5 +448,20 @@ class EarlyAbroad extends CI_Controller {
 	public function caInternationalPrivate(){
 		$this->load->view('earlyAbroad/caSchoolList');
 	}
+
+	//조기유학 영국 학교찾기
+	public function ukSchoolList(){
+		$this->load->view('earlyAbroad/ukSchoolList');
+	}
+
+	//조기유학 영국 왜 조기유학인가
+	public function whyEarlyUk(){
+		$this->load->view('earlyAbroad/whyEarlyUk');
+	}
+
+	//조기유학 영국 명문 TOP100
+	public function ukTopSchools(){
+		$this->load->view('earlyAbroad/ukTopSchools');
+	}
 }
 
