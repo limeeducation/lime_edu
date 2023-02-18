@@ -379,3 +379,4 @@ disabled
 .uk_top_ranking_table tbody tr.top20{display:table-row}
 .uk_top_ranking_table.on tbody tr{display:table-row}
 .uk_top_ranking_table td{background-color:#ffffff;text-align:center;}
+.uk_ranking_title{border-bottom: solid white;border-top: solid white;border-width: 1px;padding: 2rem 0 2rem 0;}

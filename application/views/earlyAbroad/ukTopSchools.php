@@ -47,7 +47,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<section class="cont_sect sub3 uk_top_sect">
 					<div class="inner">
 
-						<div class="cont_title ranking_title">
+						<div class="cont_title ranking_title uk_ranking_title">
 							학교 리스트
 						</div>
 						<table class="cont_table_top uk_top_ranking_table on">
