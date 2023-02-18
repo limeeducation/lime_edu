@@ -44,13 +44,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<!-- // cont_sect -->
 
 				<!-- cont_sect -->
-				<section class="cont_sect sub3">
+				<section class="cont_sect sub3 uk_top_sect">
 					<div class="inner">
 
 						<div class="cont_title ranking_title">
 							학교 리스트
 						</div>
-						<table class="cont_table_top us_top_ranking_table on">
+						<table class="cont_table_top uk_top_ranking_table on">
 							<colgroup>
 								<col>
 								<col>

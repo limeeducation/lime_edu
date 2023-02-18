@@ -369,3 +369,13 @@ disabled
 	.school-swiper .swiper-container-initialized .swiper-slide{padding:0;}
 }
 
+/* ============================================ << 영국 TOP100 >> ================================================ */
+.uk_top_sect{background-color:#E8F3FF;}
+
+.uk_top_ranking_table{box-shadow:0 0 0 1px #E06969;}
+.uk_top_ranking_table th,.us_top_ranking_table td{padding:5px;border:1px solid #E06969;font-size:12px;line-height:18px;color:#000000;}
+.uk_top_ranking_table th{background:#FFF4F4;}
+.uk_top_ranking_table tbody tr{display:none;}
+.uk_top_ranking_table tbody tr.top20{display:table-row}
+.uk_top_ranking_table.on tbody tr{display:table-row}
+
