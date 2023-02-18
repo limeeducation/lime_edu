@@ -20,7 +20,9 @@ class Main extends CI_Controller {
         			'result2'	=> $result2
         ));
 	}
+	require_once __DIR__.'/vendor/autoload.php';
 
+    use Goutte\Client;
 	//신규 메인페이지
 	public function new_main(){
 		//tab => 1: 메인 / 5: 해외대학 유학 / 6: 조기유학 / 7: 어학연수 / 8: 가족연수/캠프/스쿨링
@@ -109,9 +111,7 @@ class Main extends CI_Controller {
 		echo "시작";
 		echo "<br>";
 
-        require_once __DIR__.'/vendor/autoload.php';
 
-        use Goutte\Client;
 
         // specify the URL of the page containing the iframe
         $url = 'https://blog.naver.com/mylimeeducation';
