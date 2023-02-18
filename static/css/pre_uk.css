@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* ============================================ << 조기유학상세 >> ================================================ */
+#container {padding-bottom:27rem;}
+* {word-break:keep-all; word-wrap:break-word;}
+
+/* 영국조기유학프로그램탭 */
+.pro_selet {width:100rem; margin:5.7rem auto 11rem; padding:0 4rem; box-sizing:border-box;}
+
+.pro_selet .pro_title {font-size:3.2rem; font-weight:700; color:#4e4e4e; line-height:1.875em; text-align:center; margin-bottom:2rem;}
+.pro_btn_wrap {display:flex; flex-wrap:wrap;}
+.pro_btn_wrap .pro_group {width:calc(33% - 3.7rem); box-sizing:border-box; position:relative; min-height: 21.6rem;}
+.pro_btn_wrap .pro_group::before {background:url(/static/img/early_abroad/uk/pro_bg_over.png) no-repeat center; background-size:23rem 21.6rem; display:block; content:''; width:23rem; height:21.6rem; transition:.3s; position:absolute; left:50%; top:50%; transform:translate(-50% , -50%); opacity:0;}
+.pro_btn_wrap .pro_group::after {background:url(/static/img/early_abroad/uk/pro_bg_on.png) no-repeat center; background-size:23rem 21.6rem; display:block; content:''; width:23rem; height:21.6rem; transition:.3s; position:absolute; left:50%; top:50%; transform:translate(-50% , -50%); opacity:0;}
+.pro_btn_wrap .pro_group:hover::before {opacity:1;}
+.pro_btn_wrap .pro_group.on::after {opacity:1;}
+.pro_btn_wrap .pro_group ~ .pro_group {margin-left:4.9rem;}
+.pro_btn_wrap .pro_group a {display:block; padding:3.6rem 0 .8rem; position:relative; z-index:1;}
+.pro_btn_wrap .pro_group .pro_img {width:10.5rem; height:10.5rem; margin:0 auto;}
+.pro_btn_wrap .pro_group .pro_img img {display:block; width:100%; height:100%;}
+.pro_btn_wrap .pro_group .menu_txt {display:block; padding-top:1.8rem; font-size:2rem; font-weight:700; line-height:2em; color:#705537; text-align:center; }
+
+/* ============================================ << 왜 조기유학인가 >> ================================================ */
+.cotn .box_tit {text-align:center;}
+.cotn .box_tit .tit {display:inline-block; box-sizing:border-box; padding:.9rem 4.3rem; background-color:#FF9B50; color:#fff; font-weight:700; font-size:3.2rem; border-radius:1rem;}
+
+/* 왜 캐나다 조기유학을 선택해야 하나요? */
+.sec_01 {background-color:#FFF4F4; padding:8rem 2rem 0;}
+.sec_01 .cotn {width:100%; max-width:1070px; margin:0 auto; position:relative; padding-bottom:7rem;}
+.sec_01 .cotn::before {display:block; content:''; width:60rem; height:100rem; background:url(/static/img/early_abroad/uk/bg_uk.jpg) no-repeat 0 0; background-size:cover; border-radius:30rem 30rem 0 0; position:absolute; right:0; bottom:0;}
+.sec_01 .tit_area {width:60rem; padding-bottom:2rem; border-bottom:.2rem solid #E06969; position:relative; z-index:1;}
+.sec_01 .tit_area .tit {font-weight:700; font-size:6.4rem; color:#E06969; line-height:1.25em;}
+.sec_01 .reason_li {margin-top:15rem; width:67rem;}
+.sec_01 .reason_li .in_wrap {display:flex;}
+.sec_01 .reason_li .in_wrap ~ .in_wrap {margin-top:5.3rem;}
+.sec_01 .reason_li .list {display:flex; align-items:center; justify-content:center; position:relative; border-radius:1.5rem 5rem 1.5rem 5rem; box-sizing:border-box; padding:3.5rem 1.5rem 3rem; background-color:#fff;}
+.sec_01 .reason_li .list ~ .list {margin-left:3rem;}
+.sec_01 .reason_li .list .num {display:block; width:6.4rem; height:6.4rem; border-radius:50%; background-color:#ff9b50; color:#fff; font-size:3.2rem; font-weight:700; line-height:2em; text-align:center; position:absolute; left:-1.9rem; top:-3.2rem;}
+.sec_01 .reason_li .list .txt {color:#705537; font-size:1.7rem; font-weight:700; line-height:1.529em; text-align:center;}
+
+
+/* 캐나다 교육제도 */
+.sec_02 {padding:9.7rem 2rem 16.5rem;}
+.sec_02 .cotn {width:100%; max-width:1100px; margin:0 auto;}
+.sec_02 .box_tit .flag {width:9.8rem; height:5.5rem; margin:0 auto 3rem;}
+.sec_02 .box_tit .flag .img {width:100%; height:100%; display:block;}
+.sec_02 .des_box {margin-top:3.8rem; border:.5rem solid #eee; border-radius:2rem; box-sizing:border-box; padding:2.5rem 4.5rem; width:100%;}
+.sec_02 .des_box p {color:#705537; text-align:center; font-size:1.7rem; font-weight:500; line-height:1.529em;}
+.sec_02 .edu_list {margin-top:7rem;}
+.sec_02 .edu_list li {display:flex;}
+.sec_02 .edu_list li ~ li {margin-top:5.8rem;}
+.sec_02 .edu_list li .img_area {border-radius:1rem 7rem 1rem 7rem; overflow:hidden; width:38rem; height:25rem;}
+.sec_02 .edu_list li .img_area .edu_img,
+.sec_02 .edu_list li .img_area .edu_img img {display:block; width:100%; height:100%;}
+.sec_02 .edu_list li .txt_area {margin-left:3.5rem; display:flex; flex:1;}
+.sec_02 .edu_list li .txt_area .num {width:5.5rem; height:5.5rem; text-align:center; color:#FF9B50; font-size:3.2rem; font-weight:700; line-height:1.719em;}
+.sec_02 .edu_list li .txt_area .txt_wrap {margin-left:1.2rem; margin-top:1rem; width:55rem;}
+.sec_02 .edu_list li .txt_area .txt_wrap .tit {color:#705537; font-size:1.8rem; font-weight:500; line-height:2.167em; margin-bottom:1.6rem;}
+.sec_02 .edu_list li .txt_area .txt_wrap .txt {color:#705537; font-size:1.6rem; line-height:1.563em;}
+
+
+
+
+/* 보딩스쿨 이란? */
+.sec_03 {background-color:#f0f5e3; padding:9rem 2rem 14rem;}
+.sec_03 .cotn {width:100%; max-width:1136px; margin:0 auto; position:relative;}
+.sec_03 .cotn::before {display:block; content:''; background:url(/static/img/early_abroad/ca/boarding_01.png) no-repeat; background-size:100% 100%; width:52.5rem; height:52.5rem; position:absolute; left:-18rem; top:40.5rem;}
+.sec_03 .cotn::after {display:block; content:''; background:url(/static/img/early_abroad/ca/boarding_02.png) no-repeat; background-size:100% 100%; width:30.2rem; height:30.3rem; position:absolute; right:10rem; top:90rem;}
+.sec_03 .des_box {margin-top:3rem; width:100%; max-width:1076px; margin:3rem auto 0; box-sizing:border-box; padding:2.7rem 4.5rem; border-radius:10rem; background-color:#fff;}
+.sec_03 .des_box p {color:#705537; text-align:center; font-size:1.8rem; font-weight:500; line-height:1.444em;}
+.sec_03 .des_box p span {color:#ff6d00;}
+
+.sec_03 .adt_wrap {margin:16rem 0 21rem;}
+.sec_03 .adt_wrap .tit {font-size:3.2rem; font-weight:700; line-height:1.875em; color:#705537; text-align:center;}
+.sec_03 .adt_list {margin:9rem auto 0; display:flex; flex-wrap:wrap; width:93rem; z-index:1; position:relative;}
+.sec_03 .adt_list li {position:relative;}
+.sec_03 .adt_list li:not(:nth-child(3n+1)) {margin-left:5.7rem;}
+.sec_03 .adt_list li:nth-child(n+4) {margin-top:5rem;}
+.sec_03 .adt_list li:nth-child(1) {margin-left:24.5rem;}
+.sec_03 .adt_list .num {display:block; width:6.5rem; height:6.5rem; border-radius:50%; background-color:#ff9b50; text-align:center; color:#fff; font-size:3.2rem; font-weight:700; line-height:2em; position:absolute; right:-1.9rem; top:-2.8rem;}
+.sec_03 .adt_list .txt_box {border-radius:5rem 1rem 5rem 1rem; background-color:#fff; padding:2.5rem 1.5rem 1.5rem; box-sizing:border-box; text-align:center; display:flex; align-items:center; width:19rem; height:22rem;}
+.sec_03 .adt_list .txt_box p {color:#705537; font-size:1.7rem; font-weight:500; line-height:1.529em;}
+
+.sec_03 .bor_table .tit {font-size:3.2rem; font-weight:700; line-height:1.875em; color:#705537; text-align:center;}
+.sec_03 .bor_table .table_wrap {border-radius:1rem 1rem 0 0; border:.1rem solid #705537; overflow:hidden; margin-top:3.2rem;}
+.sec_03 .bor_table .table_wrap table {border-style:hidden; width:100%; height:100%;}
+.sec_03 .bor_table thead tr th {text-align:center; padding:.6rem .5rem; background-color:#ffd4a3; color:#705537; font-size:1.2rem; font-weight:700;}
+.sec_03 .bor_table tbody tr td {color:#705537; padding:0 1rem; background-color:#fff; text-align:center; border-top:.1rem solid #705537; font-size:1.2rem; line-height:1.667em; vertical-align:middle;}
+.sec_03 .bor_table thead tr th ~ th ,
+.sec_03 .bor_table tbody tr td ~ td {border-left:.1rem solid #705537;}
+
+.sec_04 {padding:9.5rem 2rem 0;padding-bottom:9.5rem;}
+.sec_04 .cotn {width:100%; max-width:1136px; margin:0 auto;}
+.sec_04 .box_tit {margin-bottom:5.8rem;}
+.sec_04 .des_box {border-top:.3rem solid #eee; border-bottom:.3rem solid #eee;}
+.sec_04 .des_box.des_01 {padding:4rem 0;}
+.sec_04 .des_box.des_02 {padding:5rem 0 6rem; margin-top:3.6rem;}
+.sec_04 .des_box .des_tit {text-align:center; color:#705537; font-size:2rem; line-height:1.3em; font-weight:700;}
+.sec_04 .des_box.des_01 .des_tit {margin-bottom:2rem;}
+.sec_04 .des_box.des_02 .des_tit {margin-bottom:3.4rem;}
+.sec_04 .des_box .des_txt {text-align:center; color:#705537; font-size:1.7rem; line-height:1.529em;}
+
+.sec_04 .free_li_01 {max-width:720px; width:100%; margin:0 auto; display:flex;}
+.sec_04 .free_li_01 li {width:calc(33.33% - 1rem); border:.1rem solid #FFD4A3; border-radius:2rem; box-sizing:border-box; color:#705537; padding:1rem; text-align:center; font-size:1.8rem; line-height:1.333em; display:flex; align-items:center; justify-content:center;}
+.sec_04 .free_li_01 li ~ li {margin-left:1.5rem;}
+.sec_04 .free_li_02 {max-width:700px; width:100%; margin:3rem auto 0;}
+.sec_04 .free_li_02 li {padding:1.2rem 1rem 1rem; background-color:#f0f5e3; border-radius:3rem; width:100%; color:#705537; font-size:1.7rem; line-height:1.647em; text-align:center;}
+.sec_04 .free_li_02 li ~ li {margin-top:2rem;}
+.sec_04 .free_li_02 li span {color:#ff9b50; font-weight:700;}
+
+.sec_04 .area_li {max-width:986px; width:100%; margin:6rem auto 0;}
+.sec_04 .area_li > li ~ li {margin-top:5.3rem;}
+.sec_04 .area_li .title_area {display:flex; align-items:center;}
+.sec_04 .area_li .title_area .num {display:block; width:5.5rem; height:5.5rem; color:#ff9b50; font-size:3.2rem; font-weight:700; line-height:1.719em; text-align:center;}
+.sec_04 .area_li .title_area .tit {margin-left:1rem; font-weight:700; font-size:2rem; line-height:1.3em; color:#705537;}
+.sec_04 .area_li .info_area {margin-top:.8rem; display:flex;}
+.sec_04 .area_li .info_area ul {flex:1;}
+.sec_04 .area_li .info_area ul li {color:#705537; font-size:1.5rem; line-height:2.267em; position:relative; padding-left:2.5rem;}
+.sec_04 .area_li .info_area ul li ~ li {margin-top:1.2rem;}
+.sec_04 .area_li .info_area ul li::before {display:block; content:''; width:.3rem; height:.3rem; border-radius:50%; background-color:#705537; position:absolute; left:1rem; top:1.5rem; border-radius:50%;}
+.sec_04 .area_li .info_area ul li p {font-size:1.2rem; line-height:1.667em;}
+.sec_04 .area_li .info_area .img_area {margin-left:4.6rem; overflow:hidden; width:38rem; height:30rem; border-radius:7rem 1rem 7rem 1rem;}
+.sec_04 .area_li .info_area .img_area .img {width:100%; height:100%;}
+.sec_04 .area_li .info_area .img_area .img img {width:100%; height:100%; display:block;}
+
+
+@media all and (max-width:1024px) {
+	.pro_selet {width:100%; padding:0 2rem;}
+
+	/* ============================================ << 왜 조기유학인가 >> ================================================ */
+	.sec_02 .edu_list li {display:block;}
+	.sec_02 .edu_list li .img_area {margin:0 auto;}
+	.sec_02 .edu_list li .txt_area {margin:2rem 0 0 0; justify-content:center;}
+
+	.sec_03 .adt_list {width:69rem;}
+	.sec_03 .adt_list li:nth-child(1) {margin-left:0;}
+	.sec_03 .cotn::before {top:45rem;}
+	.sec_03 .cotn::after {right:5rem; top:96rem;}
+}
+
+@media all and (max-width:720px) {
+	/* ============================================ << 조기유학상세 >> ================================================ */
+	.area_tab {width:calc(33.33% - 1.6rem);}
+	.area_tab ~ .area_tab {margin-left:2.4rem;}
+	.office_list .group_list .img_area .logo_img {margin-left:2rem;}
+	.office_list .group_list ~ .group_list {margin-top:8rem;}
+	.office_list .group_list {display:block;}
+	.office_list .group_list .txt_box {margin-left:0; margin-top:4rem; padding-top:6rem;}
+
+	.pro_btn_wrap .pro_group {width:calc(50% - 2rem);}
+	.pro_btn_wrap .pro_group ~ .pro_group {margin-left:0;}
+	.pro_btn_wrap .pro_group:nth-child(2n) {margin-left:4rem;}
+	.d_table table tr th {font-size:1.8rem;}
+	.d_table table tr td {font-size:1.8rem;}
+
+	/* ============================================ << 왜 조기유학인가 >> ================================================ */
+	.sec_01 .tit_area {width:auto;}
+	.sec_01 .reason_li {width:50rem; margin:10rem 0 0 5rem;}
+	.sec_01 .tit_area .tit {font-size:5.5rem;}
+	.sec_02 .des_box p br {display:none;}
+	.sec_03 .cotn::before,
+	.sec_03 .cotn::after {display:none;}
+	.sec_03 .adt_list li:not(:nth-child(3n+1)) {margin-left:2rem;}
+	.sec_03 .bor_table .table_wrap {width:100%; overflow-x:auto;}
+	.sec_03 .bor_table .table_wrap table {min-width:700px;}
+
+	.sec_04 .des_box .des_txt br {display:none;}
+	.sec_04 .area_li .info_area {display:block;}
+	.sec_04 .area_li .title_area .tit {font-size:2.4rem;}
+	.sec_04 .area_li .info_area ul li {font-size:1.8rem;}
+	.sec_04 .area_li .info_area ul li p {font-size:1.6rem;}
+	.sec_04 .area_li .info_area .img_area {margin:4rem auto 0;}
+}
+
+@media all and (max-width:480px){
+	.office_list .group_list .img_area .name {font-size:1.6rem; width:22rem;}
+	.office_list .group_list .info_tit {font-size:1.6rem;}
+	.office_list .group_list .loca_area .loca_txt p {font-size:1.5rem;}
+
+	/* ============================================ << 왜 조기유학인가 >> ================================================ */
+	.sec_03 .adt_list {width:100%;}
+	.sec_03 .adt_list li {width:calc(50% - 1rem);}
+	.sec_03 .adt_list li:not(:nth-child(3n+1)) {margin-left:0;}
+	.sec_03 .adt_list li:nth-child(n+4) {margin-top:0;}
+	.sec_03 .adt_list li:nth-child(2n) {margin-left:2rem;}
+	.sec_03 .adt_list li:nth-child(n+3) {margin-top:4rem;}
+	.sec_03 .adt_list .txt_box {width:100%; height:17rem;}
+
+}

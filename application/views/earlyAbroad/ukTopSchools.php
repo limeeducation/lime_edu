@@ -18,7 +18,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<!-- cont_sect -->
 				<section class="cont_sect sub2_1">
 					<div class="inner">
-						<div class="cont_title">미국 조기유학 프로그램</div>
+						<div class="cont_title">영국 조기유학 프로그램</div>
 						<ul class="ico_btn_list type3">
 							<li>
 								<a href="/earlyAbroad/ukSchoolList">
