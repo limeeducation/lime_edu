@@ -22,7 +22,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			title.parent().show();
 			title.show();
 			list.show();
-			title.focus();
+			title.css('margin-top','0');
 		}
 	}
     </script>
