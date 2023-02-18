@@ -7,12 +7,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     <script type="text/javascript">
 	function get_list(state){
 		if(state == 'All'){
-			$(".item").show();
+			$(".swiper-slide .item").show();
 			$(".swiper-control").show();
 			$(".school_list_title").show();
 			$(".school_list_info").show();
 		}else{
-			$(".item").hide();
+			$(".swiper-slide .item").hide();
 			$(".swiper-control").hide();
 			$(".school_list_title").hide();
 			$(".school_list_info").hide();
