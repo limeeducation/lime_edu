@@ -7,7 +7,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     <script type="text/javascript">
 	function get_list(state){
 		if(state == 'All'){
-			$(".swiper-slide .item").show();
+			$(".item").show();
 			$(".swiper-control").show();
 			$(".school_list_title").show();
 			$(".school_list_info").show();
@@ -22,7 +22,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			title.parent().show();
 			title.show();
 			list.show();
-			title.css('margin-top','0');
+			title.focus();
 		}
 	}
     </script>
