@@ -123,6 +123,35 @@
 .sec_04 .area_li .info_area .img_area .img {width:100%; height:100%;}
 .sec_04 .area_li .info_area .img_area .img img {width:100%; height:100%; display:block;}
 
+/* ============================================ << 공립 교환학생 >> ================================================ */
+.cont_box {width: 107.6rem;margin: 0 auto 4rem;padding: 3.2rem 4.2rem;border-radius: 10rem;background-color: #fff;text-align: center;font-weight: 500;font-size: 1.7rem;line-height: 2.6rem;text-align: center;color: #4E4E4E;}
+.inner {position: relative;width: 1200px;margin: 0 auto;}
+.cont_title {position: relative;margin: 0 auto 4rem;font-weight: 700;font-size: 3.2rem;line-height: 4rem;color: #4E4E4E;text-align: center;}
+.cont_image .text {position: absolute;top: 6.5rem;left: 5rem;font-weight: 700;font-size: 6.4rem;line-height: 1.25;color: #FFFFFF;text-align: left;}
+.cont_sect.sub2_6{padding:5rem 0 10rem;}
+.cont_sect.sub2_6 .cont_image{max-width:110rem;margin-bottom:9rem;}
+.cont_sect.sub2_6 .cont_title{margin-bottom:3rem;}
+.cont_sect.sub2_6 .cont_box{margin-bottom:12rem;border: 1px solid #C6C6C6;border-radius: 1rem;}
+.cont_title > .box{display: inline-block;padding: 1rem 5.8rem;background: #E06969;border-radius: 1rem;color: #FFFFFF;}
+.cont_sect.sub2_6 .cont_table{width:80rem;}
+.cont_table {width: 100%;margin: 0 auto;background-color: #fff;border-collapse: collapse;border-radius: 1rem;border-style: hidden;box-shadow: 0 0 0 1px #e06969;overflow: hidden;}
+.cont_table th {background: #FFF4F4;font-weight: 700;color: #E46D6D;}
+.cont_table th, .cont_table td {padding: 1.2rem;border: 1px solid #E06969;font-size: 1.8rem;line-height: 1.42;text-align: center;color: #4E4E4E;vertical-align: middle;}
+
+@media all and (max-width:1024px){
+	.cont_sect.sub2_6 .cont_table{width:100%;}
+}
+@media all and (max-width:768px){
+	.cont_sect.sub2_6{padding:8rem 0 10rem;}
+	.cont_sect.sub2_6 .cont_box{margin-bottom:10rem;}
+}
+.cont_sect.sub2_7{padding:4rem 0 25rem;}
+.cont_sect.sub2_7 .cont_image{max-width:90.8rem;margin-bottom:14rem;}
+@media all and (max-width:768px){
+	.cont_sect.sub2_7{padding:8rem 0 10rem;}
+	.cont_sect.sub2_7 .cont_image{margin-bottom:10rem;}
+}
+/* ============================================ << //공립 교환학생 >> ================================================ */
 
 @media all and (max-width:1024px) {
 	.pro_selet {width:100%; padding:0 2rem;}

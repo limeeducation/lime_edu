@@ -237,96 +237,133 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div>
 					<!--// 보딩스쿨 이란? -->
 
-					<!-- 자녀동반 무상교육 -->
-					<div class="sec_04">
-						<div class="cotn">
-							<div class="box_tit">
-								<h2 class="tit">자녀동반 무상교육</h2>
+					<!-- 공립 교환학생 -->
+					<section class="cont_sect sub2_6">
+						<div class="inner">
+
+							<div class="cont_image"><img src="/static/img/early_abroad/usa/sub2_6_img1@2x.png" alt=""><div class="text">공립 교환학생 <br>프로그램</div></div>
+							<div class="cont_title"><div class="box">영국 교환학생 프로그램 이란?</div></div>
+							<div class="cont_box">
+								<div>
+									<p>
+										영국 교환학생 프로그램은 영국의 공립 중고등학교에서 1년에서 최대 2년까지 합리적인 비용으로 퀄리티 높은 공교육을 받을 수 있는 프로그램입니다.<br><br>
+                                        영국의 교육제도는 오랜 역사와 높은 수준으로 세계적으로 유명하며 영국 국가에서도 공교육에 대한 예산에 매우 큰 비중을 두고 있으며 획일화된
+                                        입시위주의 교육 시스템이 아닌 학생 개개인에 최적화된 교육 방식과 프로그램을 선택하여 집중하게 공부할 수 있는 교육입니다.<br><br>영국 사립 유학과
+                                        비교했을 때 1/3의 합리적이고 경제적인 비용으로 교환학생 프로그램에 참여할 수 있습니다. 1/3 의 비용으로 참가 할 수 있습니다. 영국의 고등학교에서
+                                        학생비자로 공부하고, 교환학생으로서 문화의 다름을 이해하고 교류할 수 있는 성숙한 자세가 필요하고 교환학생 관련 법령을 잘 준수해야 하는
+                                        프로그램입니다.
+									</p>
+								</div>
 							</div>
 
-							<div class="des_box des_01">
-								<p class="des_tit">자녀동반 무상교육 프로그램이란?</p>
-								<p class="des_txt">피부양자의 자격 조건을 가진 자녀를 부모 중 한 명이 학생비자 취득을 하여 합법적으로 캐나다에 거주하며 <br>동반 자녀들을 공립학교 등록을 하여 학비를 면제 받는 방법을 이용하는 프로그램</p>
-							</div>
-							<div class="des_box des_02">
-								<p class="des_tit">자녀동반 무상교육의 조건은?</p>
-								<ul class="free_li_01">
-									<li>학생비자의 교육 레벨은 주 마다 상이</li>
-									<li>어학연수 레벨 ~ 컬리지 이상의 정규 과정 </li>
-									<li>대부분의 주에서 컬리지 이상의 정규과정만 인정</li>
-								</ul>
-								<ul class="free_li_02">
-									<li><span>컬리지 이상의 과정 시</span> 모든 주에서 자녀 동반 무상교육 등록이 가능</li>
-									<li><span>어학연수만 할 경우</span> 퀘벡주(몬트리올), 노바스코샤주(핼리팩스)만 가능</li>
-									<li><span>대학부설 영어 조건부 과정 + 정규 과정의 경우</span> ON / MB/ BC(일부) / NB</li>
-								</ul>
-							</div>
-							<ol class="area_li">
-								<li>
-									<div class="title_area">
-										<span class="num">01</span>
-										<p class="tit">온타리오주 (ON)</p>
-									</div>
-									<div class="info_area">
-										<ul>
-											<li>캐나다에서 두 번째로 큰 주이며, 뚜렷한 사계절이 있고 아메리카 제조업의 중심지 (North American manufacturing heartland) 캐나다 경제 주도 (Leading -province of Canadian Economy)이기도 하며 각 도시별 공립 컬리지들이 위치하고 있습니다. </li>
-											<li>대학부설 영어 조건부 과정 + 정규 과정의 경우 공립 컬리지나 혹은 유니버시티의 정규 과정을 들어가기 위해서 대학부설 어학원에서 부모 중 한 명이 학업을 할 경우 자녀 공립교육청 학비 무상혜택을 받을 수 있습니다.</li>
-										</ul>
-										<div class="img_area">
-											<figure class="img">
-												<img src="/static/img/early_abroad/ca/bg_on.jpg" alt="온타리오주">
-											</figure>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="title_area">
-										<span class="num">02</span>
-										<p class="tit">퀘벡주 (QC)</p>
-									</div>
-									<div class="info_area">
-										<ul>
-											<li>캐나다 두 번째 큰 도시, 영어와 불어를 동시에 구사(북미 최대 이중언어 도시) 캐나다의 문화수도, 북아메리카에서 가장 오래된 도시 한국교민 8천 여명이 거주 다양한 문화활동,유네스코 디자인 도시 17개 대형 공원과 100개 소형 공원 다양한 편의시설 6,000개가 넘는 레스토랑과 작은 카페 초대형 지하 도시로 세계적으로 유명 연간 100개 넘는 공연(재즈페스티발, 영화제 외) </li>
-											<li>
-												몬트리올의 가장 큰 이슈는 “교육청 선택”
-												<p>* 영어 교육청 (영어 7 : 불어 3)  |  * 영어, 불어 혼용(Bilingual) 교육청 (영어 5 : 불어 5) / 불어 교육청 (70 이상~)</p>
-											</li>
-											<li>
-												몬트리올 추천 거주지
-												<p>웨스트마운트 / NDG - 영어 교육청  |   LaSalle 지역 / Lachine지역 - 영/불어 교육청 Point clear 지역 - 영어 교육청</p>
-											</li>
-										</ul>
-										<div class="img_area">
-											<figure class="img">
-												<img src="/static/img/early_abroad/ca/bg_cs.jpg" alt="퀘벡주">
-											</figure>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="title_area">
-										<span class="num">03</span>
-										<p class="tit">노바스코샤주 (NS)</p>
-									</div>
-									<div class="info_area">
-										<ul>
-											<li>새로운 스코틀랜드의 유래 처럼 스코틀랜드, 아일랜드 계 백인 캐네디언이 많이 거주  (타 지역이 아시아계, 라틴계 이민자들이 많다면, 핼리팩스는 백인이 상대적으로 많음) 대도시에 비해 친절하고 순박한 사람들이 많음 기후적으로 캐나다에서 3~4번째로 덜 추운 지역 어학언 교육레벨 로만으로도 아이들 “영어” 공립학교 배정이 무상 주요 어학원들이 부모님 과정을 신설, 아이들 통학/관리 등이 용이함 단, 상대적으로 대도시들에 비해 도시 규모가 작고 선택지가 적음</li>
-											<li>
-												핼리팩스의 가장 큰 이슈는 “거주 환경”
-												<p>* 교육청은 대부분이 영어 교육청  |  * 어학원이 상대적으로 한정적(CLLC, ECLC)</p>
-											</li>
-										</ul>
-										<div class="img_area">
-											<figure class="img">
-												<img src="/static/img/early_abroad/ca/bg_ns.jpg" alt="노바스코샤주">
-											</figure>
-										</div>
-									</div>
-								</li>
-							</ol>
-						</div>
-					</div>
-					<!--// 자녀동반 무상교육 -->
+							<div class="cont_title">교환학생 프로그램 신청자격</div>
+							<table class="cont_table">
+								<colgroup>
+									<col style="width:32%">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>나이</th>
+										<td>만 16세 이상</td>
+									</tr>
+									<tr>
+										<th>성적</th>
+										<td>주요 4개 과목(국어,영어,수학,과학) 포함 총 7개 과목 평균 C 이상<br>졸업을 희망 하는 학생일 경우 입학신청시 중학교 3개년 성적 및 고 1-1학기 성적 제출</td>
+									</tr>
+									<tr>
+										<th>영어</th>
+										<td>IELTS ofr UKVI result of 5.0</td>
+									</tr>
+									<tr>
+										<th>학업기간</th>
+										<td>1년, 최대 2년</td>
+									</tr>
+									<tr>
+										<th>학업시작</th>
+										<td>9월, 1월</td>
+									</tr>
+									<tr>
+										<th>비자</th>
+										<td>Tier 4 학생비자</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div><!-- // inner -->
+					</section>
+					<!-- // cont_sect -->
+
+					<!-- cont_sect -->
+					<section class="cont_sect sub2_7">
+						<div class="inner">
+
+							<div class="cont_title">교환학생 프로그램 장점</div>
+							<div class="cont_image"><img src="/static/img/early_abroad/usa/sub2_7_img1@2x.png" alt=""></div>
+
+							<div class="cont_title">공립교환 VS 일반사립</div>
+
+							<table class="cont_table">
+								<colgroup>
+									<col style="width:33.33%">
+									<col style="width:33.33%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>J1공립교환</th>
+										<th>F1일반사립</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>비자종류</td>
+										<td>J1 문화교류 비자</td>
+										<td>F1 학생비자</td>
+									</tr>
+									<tr>
+										<td>지원나이</td>
+										<td>만 15세-18.5세</td>
+										<td>만 13세 - 18.5세</td>
+									</tr>
+									<tr>
+										<td>참가학교</td>
+										<td>미국 공립학교</td>
+										<td>미국 사립학교</td>
+									</tr>
+									<tr>
+										<td>학업기간</td>
+										<td>1학기 또는 1년</td>
+										<td>최소 1학기 - 제한 없음</td>
+									</tr>
+									<tr>
+										<td>지역</td>
+										<td>선택 불가능</td>
+										<td>선택 가능</td>
+									</tr>
+									<tr>
+										<td>숙소</td>
+										<td>자원봉사자 호스트</td>
+										<td>일반 호스트 혹은 기숙사</td>
+									</tr>
+									<tr>
+										<td>참가비</td>
+										<td>1만불대</td>
+										<td>학교별로 상이</td>
+									</tr>
+									<tr>
+										<td>졸업여부</td>
+										<td>졸업 불가</td>
+										<td>졸업 가능</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div><!-- // inner -->
+					</section>
+					<!-- // cont_sect -->
+
 				</div>
 				<!--// 조기유학상세작업 -->
 			<?php
