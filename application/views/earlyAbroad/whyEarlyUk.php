@@ -23,7 +23,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						<div class="pro_btn_wrap">
 							<div class="pro_group"><!-- 활성화시 class="on"추가 -->
-								<a href="/earlyAbroad/caSchoolList">
+								<a href="/earlyAbroad/ukSchoolList">
 									<figure class="pro_img">
 										<img src="/static/img/early_abroad/uk/icon_pro_01.png" alt="조기유학 학교찾기">
 									</figure>
@@ -31,7 +31,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</a>
 							</div>
 							<div class="pro_group on">
-								<a href="/earlyAbroad/whyEarlyCa">
+								<a href="/earlyAbroad/whyEarlyUk">
 									<figure class="pro_img">
 										<img src="/static/img/early_abroad/uk/icon_pro_02.png" alt="">
 									</figure>
@@ -39,7 +39,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</a>
 							</div>
 							<div class="pro_group">
-								<a href="/earlyAbroad/abtCaManageAbroad">
+								<a href="/earlyAbroad/ukTopSchools">
 									<figure class="pro_img">
 										<img src="/static/img/early_abroad/uk/icon_pro_03.png" alt="">
 									</figure>
