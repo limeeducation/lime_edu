@@ -109,28 +109,29 @@ class Main extends CI_Controller {
 		echo "시작";
 		echo "<br>";
 
+        require_once __DIR__.'/vendor/autoload.php';
+
+        use Goutte\Client;
+
         // specify the URL of the page containing the iframe
         $url = 'https://blog.naver.com/mylimeeducation';
 
-        // get the HTML content of the page
-        $html = file_get_contents($url);
+        // create a new Goutte client object
+        $client = new Client();
 
-        // create a DOM document object and load the HTML content
-        $dom = new DOMDocument();
-        @$dom->loadHTML($html);
+        // navigate to the parent page and get the HTML content of the page
+        $crawler = $client->request('GET', $url);
+        $html = $crawler->html();
 
         // get the src attribute of the iframe
-        $iframe_src = $dom->getElementsByTagName('iframe')->item(0)->getAttribute('src');
+        $iframe_src = $crawler->filter('iframe')->attr('src');
 
-        // get the HTML content of the embedded page within the iframe
-        $iframe_html = file_get_contents($iframe_src);
-
-        // create a DOM document object and load the HTML content of the embedded page
-        $dom = new DOMDocument();
-        @$dom->loadHTML($iframe_html);
+        // navigate to the embedded page within the iframe and get the HTML content of the page
+        $crawler = $client->request('GET', $iframe_src);
+        $html = $crawler->html();
 
         // get all the images from the embedded page
-        $images = $dom->getElementsByTagName('img');
+        $images = $crawler->filter('img');
 
         // create an array to store the top three images and their link URL
         $top_images = array();
