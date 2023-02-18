@@ -96,18 +96,28 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="cotn">
 							<div class="box_tit">
 								<figure class="flag">
-									<img src="/static/img/early_abroad/ca/canada.png" alt="canada">
+									<img src="/static/img/early_abroad/uk/national_flag_eng.png" alt="england">
 								</figure>
-								<h2 class="tit">캐나다 교육제도</h2>
+								<h2 class="tit">영국 교육제도</h2>
 							</div>
 
 							<div class="des_box">
+								<p style="color:E06969;">
+									영국의 학제<br>
+								</p>
 								<p>
-									캐나다 교육제도는 공립 학교, 사립학교, 홈스쿨링 등이 있으며 유치원에서 대학에 이르기까지 <br>
-									주정부가 교육을 책임지고 있고, 주정부의 지도를 받아 각 시 교육위원회의 지방자치 교육부가 담당하고 있습니다. <br>
-									퀘백주(11학년제)를 제외한 모든 주는 12학년제이며 전체적인 수준은 높이 평가되고 있으며, <br>
-									ON 주는 Elementary School (Junior Kindergarten - 8학년)까지이고, 세컨더리 (중고등교육)은 15 - 18세 (4년) 과정입니다. <br>
-									9월에 시작하여 12~1월까지, 1~2월 시작하여 6월까지 2학기제로 운영합니다.</p>
+									영국은 6-5-2-3 학제로 초등학교 6년, 중등학교는 중·고 통합 과정으로 5년입니다.<br>
+									후기 중등과정¹이라고 할 수 있는 2년 과정의 Sixth Form 과정²을 두고 있으며, 대학은 3년 과정입니다.<br>
+                                    식스폼으로 불리는 고등과정까지 13년제로 한국보다 1년이 깁니다.<br><br>
+                                    의무교육기간은 총 11년(초등 6년, 중등 5년)이며, 초등학교 취학 연령은 9월 1일자 기준 만 5세입니다.<br>
+                                    유치원 과정은 의무교육기간은 아니지만 3세부터 무상 교육을 받을 수 있고, 후기 중등과정도 의무교육기간은 아니지만<br>
+                                    무상 교육을 실시하고 있습니다. 대학의 학부과정은 3년 과정이 많으나, 학과에 따라 수업연한이 다양합니다.<br><br>
+                                    Certificate 과정은 1년, Diploma 과정은 2년인 경우가 많고, 석사과정은 대부분 1년이며, 박사과정은 기본적으로 3년으로 운영되고 있습니다.<br><br>
+                                    ¹ 후기 중등 과정 : 중등학교 졸업 후, 대학 진학을 목표로 하는 학생은 Sixth Form Course(대부분 중등학교 내에 설치)에서 A-level 과정을,<br>
+                                    취업을 위한 자격 취득을 목표로 하는 학생은 Further Education College에서 직업 관련 교육 과정을 이수하게 됩니다.<br>
+                                    ² ‘Sixth Form’이라는 용어는 중등 1학년인 Year 7을 ‘First Form’ 이라고 할 때 Year 12는 여섯 번째인 6학년(6th Form)에 해당됨에서<br>
+                                    유래한 명칭으로서, 흔히 A-level 과정이라고도 하며 대 대학진학을 목표로 A-Level 시험을 준비하는 과정을 지칭합니다.<br>
+								</p><br>
 							</div>
 
 							<ol class="edu_list">
