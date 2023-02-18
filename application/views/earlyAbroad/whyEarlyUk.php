@@ -312,49 +312,49 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<thead>
 									<tr>
 										<th>구분</th>
-										<th>J1공립교환</th>
-										<th>F1일반사립</th>
+										<th>공립교환</th>
+										<th>일반사립</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>비자종류</td>
-										<td>J1 문화교류 비자</td>
-										<td>F1 학생비자</td>
+										<td>Tier 4 학생비자</td>
+										<td>Tier 4 학생비자</td>
 									</tr>
 									<tr>
 										<td>지원나이</td>
-										<td>만 15세-18.5세</td>
-										<td>만 13세 - 18.5세</td>
+										<td>만 16세 - 18세</td>
+										<td>만 10세 - 18세</td>
 									</tr>
 									<tr>
 										<td>참가학교</td>
-										<td>미국 공립학교</td>
-										<td>미국 사립학교</td>
+										<td>영국 공립학교</td>
+										<td>영국 사립학교</td>
 									</tr>
 									<tr>
 										<td>학업기간</td>
-										<td>1학기 또는 1년</td>
+										<td>1년 또는 2년</td>
 										<td>최소 1학기 - 제한 없음</td>
 									</tr>
 									<tr>
 										<td>지역</td>
-										<td>선택 불가능</td>
+										<td>선택 가능</td>
 										<td>선택 가능</td>
 									</tr>
 									<tr>
 										<td>숙소</td>
-										<td>자원봉사자 호스트</td>
-										<td>일반 호스트 혹은 기숙사</td>
+										<td>홈스테이</td>
+										<td>홈스테이 혹은 기숙사</td>
 									</tr>
 									<tr>
 										<td>참가비</td>
-										<td>1만불대</td>
+										<td>1만 파운드대</td>
 										<td>학교별로 상이</td>
 									</tr>
 									<tr>
 										<td>졸업여부</td>
-										<td>졸업 불가</td>
+										<td>졸업 가능</td>
 										<td>졸업 가능</td>
 									</tr>
 								</tbody>
