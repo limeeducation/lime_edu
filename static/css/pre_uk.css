@@ -49,12 +49,12 @@
 .sec_02 .edu_list {margin-top:7rem;}
 .sec_02 .edu_list li {display:flex;}
 .sec_02 .edu_list li ~ li {margin-top:5.8rem;}
-.sec_02 .edu_list li .img_area {border-radius:1rem 7rem 1rem 7rem; overflow:hidden; width:38rem; height:25rem;}
+.sec_02 .edu_list li .img_area {overflow:hidden; width:38rem; height:25rem;}
 .sec_02 .edu_list li .img_area .edu_img,
 .sec_02 .edu_list li .img_area .edu_img img {display:block; width:100%; height:100%;}
 .sec_02 .edu_list li .txt_area {margin-left:3.5rem; display:flex; flex:1;}
 .sec_02 .edu_list li .txt_area .num {width:5.5rem; height:5.5rem; text-align:center; color:#FF9B50; font-size:3.2rem; font-weight:700; line-height:1.719em;}
-.sec_02 .edu_list li .txt_area .txt_wrap {margin-left:1.2rem; margin-top:1rem; width:55rem;}
+.sec_02 .edu_list li .txt_area .txt_wrap {margin-left:1.2rem; width:65rem;}
 .sec_02 .edu_list li .txt_area .txt_wrap .tit {color:#E06969; font-size:1.8rem; font-weight:500; line-height:2.167em; margin-bottom:1.6rem;width: fit-content;background-color: #FFF4F4;border-radius: 1rem;padding: 1rem;}
 .sec_02 .edu_list li .txt_area .txt_wrap .txt {color:#4E4E4E; font-size:1.6rem; line-height:1.563em;}
 
