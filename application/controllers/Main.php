@@ -108,10 +108,10 @@ class Main extends CI_Controller {
 	public function get_blog(){
 		echo "시작";
 		echo "<br>";
-
+		echo __DIR__.'/vendor/autoload.php';
         require_once __DIR__.'/vendor/autoload.php';
 
-        use lib\Goutte\Goutte\Client;
+//        use lib\Goutte\Goutte\Client;
 
         // specify the URL of the page containing the iframe
         $url = 'https://blog.naver.com/mylimeeducation';
