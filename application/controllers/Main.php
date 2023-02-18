@@ -103,4 +103,48 @@ class Main extends CI_Controller {
 			script_alert_go('상담 신청이 완료되었습니다.', $data['con_apply_url']);
 		}
 	}
+
+	//블로그 이미지 테스트
+	public function get_blog(){
+	// specify the URL
+    $url = 'https://blog.naver.com/mylimeeducation';
+
+    // get the HTML content of the page
+    $html = file_get_contents($url);
+
+    // create a DOM document object and load the HTML content
+    $dom = new DOMDocument();
+    @$dom->loadHTML($html);
+
+    // get all the images from the page
+    $images = $dom->getElementsByTagName('img');
+
+    // create an array to store the top three images and their link URL
+    $top_images = array();
+
+    // loop through the images and get the top three images and their link URL
+    foreach ($images as $image) {
+        // get the URL of the image
+        $image_url = $image->getAttribute('src');
+
+        // check if the image URL starts with 'https://blogthumb.pstatic.net'
+        if (strpos($image_url, 'https://blogthumb.pstatic.net') === 0) {
+            // get the link URL of the image
+            $link_url = $image->parentNode->getAttribute('href');
+
+            // add the image and link URL to the top_images array
+            $top_images[] = array('image_url' => $image_url, 'link_url' => $link_url);
+
+            // break the loop if we have found the top three images
+            if (count($top_images) == 3) {
+                break;
+            }
+        }
+    }
+
+    // display the top three images and their link URL
+    foreach ($top_images as $image) {
+        echo '<a href="' . $image['link_url'] . '"><img src="' . $image['image_url'] . '"></a><br>';
+    }
+	}
 }
