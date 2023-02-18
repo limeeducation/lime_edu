@@ -108,45 +108,57 @@ class Main extends CI_Controller {
 	public function get_blog(){
 		echo "시작";
 		echo "<br>";
-		// specify the URL
-		$url = 'https://blog.naver.com/mylimeeducation';
 
-		// get the HTML content of the page
-		$html = file_get_contents($url);
+        // specify the URL of the page containing the iframe
+        $url = 'https://blog.naver.com/mylimeeducation';
 
-		// create a DOM document object and load the HTML content
-		$dom = new DOMDocument();
-		@$dom->loadHTML($html);
+        // get the HTML content of the page
+        $html = file_get_contents($url);
 
-		// get all the images from the page
-		$images = $dom->getElementsByTagName('img');
+        // create a DOM document object and load the HTML content
+        $dom = new DOMDocument();
+        @$dom->loadHTML($html);
 
-		// create an array to store the top three images and their link URL
-		$top_images = array();
+        // get the src attribute of the iframe
+        $iframe_src = $dom->getElementsByTagName('iframe')->item(0)->getAttribute('src');
 
-		// loop through the images and get the top three images and their link URL
-		foreach ($images as $image) {
-			// get the URL of the image
-			$image_url = $image->getAttribute('src');
+        // get the HTML content of the embedded page within the iframe
+        $iframe_html = file_get_contents($iframe_src);
 
-			// check if the image URL starts with 'https://blogthumb.pstatic.net'
-			if (strpos($image_url, 'https://blogthumb.pstatic.net') === 0) {
-				// get the link URL of the image
-				$link_url = $image->parentNode->getAttribute('href');
+        // create a DOM document object and load the HTML content of the embedded page
+        $dom = new DOMDocument();
+        @$dom->loadHTML($iframe_html);
 
-				// add the image and link URL to the top_images array
-				$top_images[] = array('image_url' => $image_url, 'link_url' => $link_url);
+        // get all the images from the embedded page
+        $images = $dom->getElementsByTagName('img');
 
-				// break the loop if we have found the top three images
-				if (count($top_images) == 3) {
-					break;
-				}
-			}
-		}
+        // create an array to store the top three images and their link URL
+        $top_images = array();
 
-		// display the top three images and their link URL
-		foreach ($top_images as $image) {
-			echo '<a href="' . $image['link_url'] . '"><img src="' . $image['image_url'] . '"></a><br>';
-		}
+        // loop through the images and get the top three images and their link URL
+        foreach ($images as $image) {
+            // get the URL of the image
+            $image_url = $image->getAttribute('src');
+
+            // check if the image URL starts with 'https://blogthumb.pstatic.net'
+            if (strpos($image_url, 'https://blogthumb.pstatic.net') === 0) {
+                // get the link URL of the image
+                $link_url = $image->parentNode->getAttribute('href');
+
+                // add the image and link URL to the top_images array
+                $top_images[] = array('image_url' => $image_url, 'link_url' => $link_url);
+
+                // break the loop if we have found the top three images
+                if (count($top_images) == 3) {
+                    break;
+                }
+            }
+        }
+
+        // display the top three images and their link URL
+        foreach ($top_images as $image) {
+            echo '<a href="' . $image['link_url'] . '"><img src="' . $image['image_url'] . '"></a><br>';
+        }
+
 	}
 }
