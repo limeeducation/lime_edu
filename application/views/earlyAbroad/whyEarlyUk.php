@@ -299,7 +299,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="inner">
 
 							<div class="cont_title">교환학생 프로그램 장점</div>
-							<div class="cont_image"><img src="/static/img/early_abroad/usa/sub2_7_img1@2x.png" alt=""></div>
+							<div class="cont_image"><img src="/static/img/early_abroad/uk/sub2_7_img1.png" alt=""></div>
 
 							<div class="cont_title">공립교환 VS 일반사립</div>
 
