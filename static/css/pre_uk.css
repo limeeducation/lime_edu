@@ -146,7 +146,7 @@
 	.cont_sect.sub2_6 .cont_box{margin-bottom:10rem;}
 }
 .cont_sect.sub2_7{padding:4rem 0 25rem;background-color: #FFF4F4;}
-.cont_sect.sub2_7 .cont_image{margin-bottom:14rem;}
+.cont_sect.sub2_7 .cont_image{margin-bottom:14rem; text-align:center;}
 @media all and (max-width:768px){
 	.cont_sect.sub2_7{padding:8rem 0 10rem;}
 	.cont_sect.sub2_7 .cont_image{margin-bottom:10rem;}
