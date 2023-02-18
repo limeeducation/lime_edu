@@ -12,12 +12,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			$(".school_list_title").show();
 			$(".school_list_info").show();
 		}else{
-			$(".swiper-slide .item").hide();
+			//$(".swiper-slide .item").hide();
 			$(".swiper-control").hide();
 			$(".school_list_title").hide();
 			$(".school_list_info").hide();
 			var title = $("#"+state+"_title");
 			var list = $("#"+state+"_list");
+			title.parent().parent().children().hide();
 			title.parent().show();
 			title.show();
 			list.show();
