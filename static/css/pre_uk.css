@@ -55,8 +55,8 @@
 .sec_02 .edu_list li .txt_area {margin-left:3.5rem; display:flex; flex:1;}
 .sec_02 .edu_list li .txt_area .num {width:5.5rem; height:5.5rem; text-align:center; color:#FF9B50; font-size:3.2rem; font-weight:700; line-height:1.719em;}
 .sec_02 .edu_list li .txt_area .txt_wrap {margin-left:1.2rem; margin-top:1rem; width:55rem;}
-.sec_02 .edu_list li .txt_area .txt_wrap .tit {color:#705537; font-size:1.8rem; font-weight:500; line-height:2.167em; margin-bottom:1.6rem;}
-.sec_02 .edu_list li .txt_area .txt_wrap .txt {color:#705537; font-size:1.6rem; line-height:1.563em;}
+.sec_02 .edu_list li .txt_area .txt_wrap .tit {color:#E06969; font-size:1.8rem; font-weight:500; line-height:2.167em; margin-bottom:1.6rem;width: fit-content;background-color: #FFF4F4;border-radius: 1rem;padding: 1rem;}
+.sec_02 .edu_list li .txt_area .txt_wrap .txt {color:#4E4E4E; font-size:1.6rem; line-height:1.563em;}
 
 
 

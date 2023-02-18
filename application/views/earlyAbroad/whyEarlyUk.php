@@ -114,7 +114,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                                     무상 교육을 실시하고 있습니다. 대학의 학부과정은 3년 과정이 많으나, 학과에 따라 수업연한이 다양합니다.<br><br>
                                     Certificate 과정은 1년, Diploma 과정은 2년인 경우가 많고, 석사과정은 대부분 1년이며, 박사과정은 기본적으로 3년으로 운영되고 있습니다.<br><br>
                                     ¹ 후기 중등 과정 : 중등학교 졸업 후, 대학 진학을 목표로 하는 학생은 Sixth Form Course(대부분 중등학교 내에 설치)에서 A-level 과정을,<br>
-                                    취업을 위한 자격 취득을 목표로 하는 학생은 Further Education College에서 직업 관련 교육 과정을 이수하게 됩니다.<br>
+                                    취업을 위한 자격 취득을 목표로 하는 학생은 Further Education College에서 직업 관련 교육 과정을 이수하게 됩니다.<br><br>
                                     ² ‘Sixth Form’이라는 용어는 중등 1학년인 Year 7을 ‘First Form’ 이라고 할 때 Year 12는 여섯 번째인 6학년(6th Form)에 해당됨에서<br>
                                     유래한 명칭으로서, 흔히 A-level 과정이라고도 하며 대 대학진학을 목표로 A-Level 시험을 준비하는 과정을 지칭합니다.<br>
 								</p><br>
@@ -124,42 +124,53 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="/static/img/early_abroad/ca/edu_01.jpg" alt="canada">
+											<img src="/static/img/early_abroad/uk/edu_01.jpg" alt="canada">
 										</figure>
 									</div>
 									<div class="txt_area">
-										<span class="num">01</span>
 										<div class="txt_wrap">
-											<p class="tit">킨더가튼 (Kindergarten)</p>
-											<p class="txt">유치원으로 초등학교 입학 전 아이들이 오전 9시 - 1시까지 수업하며, Junior Kindergaten, Seneior Kindergarten으로 구성되어있으며, 2년간 의무 교육을 받게 됩니다.</p>
+											<p class="tit">초·중등 교육 (Key Stage)</p>
+											<p class="txt">초·중등학교에 단계(Key Stage)를 설정하고 이에 근거한 교육과정을 운영하며, 각 단계가 완료되는 시점에서 국가수준의 학업성취도 평가를 실시하는 점이
+                                                           특기할만한 사항입니다.
+                                            </p>
+                                            <p class="txt">
+                                            	초등학교는 Key Stage 1(Year 1-2), Key Stage 2 (Year 3-6)로 나누어지고, 중등학교(secondary school)는 Key Stage 3(Year 7-9), Key Stage 4 (Year10-11)로 구분하며, Key Stage 4를 GCSE 과정이라고 부르기도 합니다.
+                                            </p>
 										</div>
 									</div>
 								</li>
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="/static/img/early_abroad/ca/edu_02.jpg" alt="canada">
+											<img src="/static/img/early_abroad/uk/edu_02.jpg" alt="canada">
 										</figure>
 									</div>
 									<div class="txt_area">
-										<span class="num">02</span>
 										<div class="txt_wrap">
-											<p class="tit">초등교육 (Elementary School)</p>
-											<p class="txt">Grade 1부터 Grade 8학년까지의 초등학교 과정이며, 학교에 따라서는 6학년까지가 해당되기도 합니다. 저학년 학생들은 과목을 따로 나누어 배우기 보다는 미래 교육에 필요한 여러 가지 주제를 통합적으로 배우게 되는데, 말하기, 읽기, 쓰기의 언어와 사칙연산 등 기본적인 수학에 대한 기초학습과 함께 과학 및 사회 과목, 예체능 과목 등의 교육도 병행합니다.</p>
+											<p class="tit">GCSE(General Certificate of Secondary Education)</p>
+											<p class="txt">
+												GCSE(General Certificate of Secondary Education)란 중등학교를 졸업하면서 치르는 자격 시험을 일컫는 말로서 KS3 9학년에 여러 가지 개설 과목 중에서
+                                                과목선택을 하고 KS4 10-11학년에 해당 과목 수업 및 시험 준비를 하여 5~6월 중 시험을 치르게 됩니다.
+											</p>
+											<p class="txt">
+                                                GCSE 과정에서는 영어, 수학, 과학, 종교교육, 체육이 필수과목이고, 이 외에 다양한 선택과목이 개설된다. 많은 학생들이 영어, 수학, 과학 3 과목을 시험 과목으로 선택하고
+                                                여기에 몇 개의 과목을 추가로 선택하여 시험을 보게 되는데 보통 Sixth Form Course 진학을 위해서는 보통 5개 이상의 GCSE 과목에서 4(C) 이상의 성적을 필요로 하며,
+                                                A-level 시험을 위해 선택하고자 하는 과목은 GCSE 성적이 6(B) 이상이어야 하는 경우가 많습니다.
+											</p>
 										</div>
 									</div>
 								</li>
 								<li>
 									<div class="img_area">
 										<figure class="edu_img">
-											<img src="/static/img/early_abroad/ca/edu_03.jpg" alt="canada">
+											<img src="/static/img/early_abroad/uk/edu_03.jpg" alt="canada">
 										</figure>
 									</div>
 									<div class="txt_area">
-										<span class="num">03</span>
 										<div class="txt_wrap">
-											<p class="tit">중고등교육 (Secondary School)</p>
-											<p class="txt">졸업 후 학생들의 대학진학 혹은 취업에 필요한 기반 교육을 목적으로 합니다. 브리티시 컬럼비아주는 8~12 학년 , 온타리오 주와 마니토바주는 9~12 학년 , 퀘벡주는 6 ~ 11 학년 이 외의 모든 주는 7~12 학년을 중등교육과정으로 구분합니다 . 학생들은 대학수업처럼 과목에 따라 교실을 옮기며 담당교사로부터 수업을 받게 됩니다 . 주마다 차이가 있지만 , 영어나 불어 , 수학 , 과학 , 사회 , 예술 , 체육 , 제2외국어는 중등과정 졸업을 위한 필수 과목이며 , 그 외 적성과 진로에 따라 선택과목을 수강할 수 있습니다 .</p>
+											<p class="tit">A-level</p>
+											<p class="txt">Sixth Form Course 후 치르는 시험을 GCE A-level이라고 하며, 대학입학시험에 해당합니다. 학생의 진로를 고려하여 3~4개의 과목을 정해 시험을 치르며 성적은 A*, A, B, C, D, E와 같은 등급으로 표기합니다. </p>
+											<p class="txt">A-level 과정은 총 2년 과정으로 1년 차에 학교로부터 예상 점수(Predicted Grade)를 받아 대학에 지원하며, 마지막 학년 5~6월에 실시하는 실제 A-level 시험의 결과로 대학 합격 여부가 확정되는 것이 일반적입니다.</p>
 										</div>
 									</div>
 								</li>
