@@ -54,7 +54,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<colgroup>
 								<col>
 								<col>
-								<col>
 								<col style="width:34%">
 								<col style="width:15%">
 							</colgroup>
