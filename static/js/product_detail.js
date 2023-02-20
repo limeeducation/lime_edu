@@ -6,6 +6,7 @@ $(document).ready(function(){
 	$('.cs_form').length && csBtnPolicy(); //상담신청 보기 닫기 버튼
 	$('.cs_form').length && csTabPolicy(); //개인정보 tab
 	$('.pro_btn_wrap').length && proBtn(); //캐나다 조기유학탭
+	$('.rec_tab').length && recBtn(); //프로그램 탭
 });
 
 function csDatePick() {// 상담신청란 달력
