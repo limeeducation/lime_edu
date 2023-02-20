@@ -15,7 +15,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     ?>
 		<div id="container" style="padding:0;">
 
-			<div id="content">
+			<div id="content" class="academy_content">
 				<!-- 조기유학상세작업 -->
 				<div id="detail_wrap">
 					<!-- 캐나다 조기유학 프로그램 -->
