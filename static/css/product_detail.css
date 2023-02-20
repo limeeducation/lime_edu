@@ -255,11 +255,173 @@
 .sec_04 .area_li .info_area .img_area .img {width:100%; height:100%;}
 .sec_04 .area_li .info_area .img_area .img img {width:100%; height:100%; display:block;}
 
+/* ============================================ << 추천탭 공통 >> ================================================ */
+.section_tab {width:100%; max-width:1100px; margin:0 auto 10rem;}
+.section_tab h2 {font-size:3.2rem; color:#705537; line-height:1.875em; margin-bottom:3rem; font-weight:700; text-align:center;}
+.section_tab .tab_wrap {display:flex;}
+.section_tab .tab_wrap .rec_tab {width:calc(33.33% - 1.7rem); background-color:#F0F5E3; height:10.8rem; color:#705537; font-size:2.8rem; font-weight:700; text-align:center; display:flex; align-items:center; justify-content:center; border-radius:1rem;}
+.section_tab .tab_wrap .rec_tab.on {background-color:#FF9B50; color:#fff;}
+.section_tab .tab_wrap .rec_tab ~ .rec_tab {margin-left:2.5rem;}
+.tab_list_wrap > div {display:none;}
+.brd_tit {width:100%; max-width:1100px; margin:0 auto;}
+.brd_tit .tit {font-size:3.2rem; font-weight:700; line-height:1.563em; text-align:center; padding:2.3rem 0 2.5rem; border-top:.1rem solid #d9d9d9; border-bottom:.1rem solid #d9d9d9;}
+.brd_tit .tit span {font-weight:400;}
+.tab_tit_area {width:100%; max-width:1050px; margin:0 auto; }
+.content_tit {text-align:center;}
+.content_tit h3 {display:inline-block; background-color:#FF9B50; border-radius:1rem; box-sizing:border-box; padding:1rem 2rem; min-width:30rem; color:#fff; text-align:center; font-weight:700; font-size:2.4rem;}
+.cotn_box {background:#F0F5E3; border:.1rem solid #EEEEEE; border-radius:2rem; box-sizing:border-box; padding:3.8rem 3.4rem; text-align:center;}
+.cotn_box p {font-size:1.7rem; font-weight:500; line-height:1.529em; color:#705537;}
+.pro_tit {color:#705537; font-size:2.4rem; font-weight:700; line-height:1.25em; text-align:center; }
+
+/* ============================================ << 캐나다 :관리형 유학이란 >> ================================================ */
+
+/* 관리형 유학이란? */
+.intro_care {background-color:#F0F5E3;}
+.intro_care .cotn {width:100%; max-width:1076px; margin:0 auto; padding:16.2rem 0 18rem;}
+.intro_care .cotn .content_tit h3 {height:6rem; line-height:1.250em; font-size:3.2rem;}
+.content_tit .sub_txt {font-size:2.6rem; margin-bottom:1.8rem; color:#705537; font-weight:700; text-align:center;}
+
+.intro_care .intro_txt {background-color:#fff; border:5px solid #eee; text-align:center; margin-top:3rem; padding:3.3rem 4.4rem; border-radius:2rem; box-sizing:border-box;}
+.intro_care .intro_txt p {font-weight:500; font-size:1.7rem; color:#705537;}
+.intro_care .intro_txt p span {color:rgba(255, 109, 0, 1);}
+.intro_care .intro_list {display:flex; flex-wrap:wrap; justify-content:center; width:92%; margin:1.8rem auto 0;}
+.intro_list .group {width:20rem; margin:1rem 3.6rem 0 0;}
+.intro_list .group:nth-child(1) {margin-left:3.6rem;}
+.intro_list .group .i_intro {width:17.2rem; height:17.2rem; margin:0 auto; display:block; background-position:0 0 ;background-repeat:no-repeat; background-size:17.2rem 17.2rem;}
+.intro_list .group .i_intro.li_01 {background-image:url(/static/img/early_abroad/ca/intro_01.png);}
+.intro_list .group .i_intro.li_02 {background-image:url(/static/img/early_abroad/ca/intro_02.png);}
+.intro_list .group .i_intro.li_03 {background-image:url(/static/img/early_abroad/ca/intro_03.png);}
+.intro_list .group .i_intro.li_04 {background-image:url(/static/img/early_abroad/ca/intro_04.png);}
+.intro_list .group .i_intro.li_05 {background-image:url(/static/img/early_abroad/ca/intro_05.png);}
+.intro_list .group .i_intro.li_06 {background-image:url(/static/img/early_abroad/ca/intro_06.png);}
+.intro_list .group .i_intro.li_07 {background-image:url(/static/img/early_abroad/ca/intro_07.png);}
+.intro_list .group .txt_area {margin-top:.3rem; height:4.1rem; text-align:center; display:flex; align-items:center; justify-content:center; flex-direction:column;}
+.intro_list .group .txt_area p {color:#705537; font-size:1.6rem; font-weight:700; line-height:1.188em;}
+.intro_list .group .txt_area span {color:#705537; font-size:1.6rem; line-height:1.188em;}
+
+/* 탭영역 */
+.tab_care_wrap {padding-top:11rem;}
+.intr_wrap {margin-top:10rem;}
+.intr_wrap .content_tit {margin-bottom:2.5rem;}
+.wel_list {width:100%; max-width:1000px; margin:1.5rem auto; display:flex; flex-wrap:wrap; justify-content:center;}
+.home .wel_list {max-width:1080px;}
+.wel_list .group {margin-top:4.5rem;}
+.wel_list .group ~ .group {margin-left:2.4rem;}
+.wel_list .group .icon_box {width:25.2rem; height:18.4rem; box-shadow:0 2px 6px rgba(0, 0, 0, 0.25); border-radius:7rem 1rem; box-sizing:border-box; background-color:#fff; display:flex; align-items:center; justify-content:center;}
+.wel_list .group .icon_box .i_wel {display:block; width:11rem; height:11rem; background-position:0 0; background-repeat:no-repeat; background-size:100% 100%;}
+.wel_list .group .icon_box .i_wel.li_01 {background-image:url(/static/img/early_abroad/ca/wel_01.png);}
+.wel_list .group .icon_box .i_wel.li_02 {background-image:url(/static/img/early_abroad/ca/wel_02.png);}
+.wel_list .group .icon_box .i_wel.li_03 {background-image:url(/static/img/early_abroad/ca/wel_03.png);}
+.wel_list .group .icon_box .i_wel.li_04 {background-image:url(/static/img/early_abroad/ca/wel_04.png);}
+.wel_list .group .icon_box .i_wel.li_05 {background-image:url(/static/img/early_abroad/ca/wel_05.png);}
+.wel_list .group .icon_box .i_wel.li_06 {background-image:url(/static/img/early_abroad/ca/wel_06.png);}
+.wel_list .group .icon_box .i_wel.li_07 {background-image:url(/static/img/early_abroad/ca/wel_07.png);}
+.wel_list .group .icon_box .i_wel.li_08 {background-image:url(/static/img/early_abroad/ca/wel_08.png);}
+.wel_list .group .icon_box .i_wel.li_09 {background-image:url(/static/img/early_abroad/ca/wel_09.png);}
+.wel_list .group .icon_box .i_wel.li_010 {background-image:url(/static/img/early_abroad/ca/wel_010.png);}
+.wel_list .group .icon_box .i_wel.li_011 {background-image:url(/static/img/early_abroad/ca/wel_011.png);}
+.wel_list .group .icon_box .i_wel.li_012 {background-image:url(/static/img/early_abroad/ca/wel_012.png);}
+.wel_list .group .icon_box .i_wel.li_013 {background-image:url(/static/img/early_abroad/ca/wel_013.png);}
+.wel_list .group .icon_box .i_wel.li_014 {background-image:url(/static/img/early_abroad/ca/wel_014.png);}
+.wel_list .group .icon_box .i_wel.li_015 {background-image:url(/static/img/early_abroad/ca/wel_015.png);}
+.wel_list .group .icon_box .i_wel.li_016 {background-image:url(/static/img/early_abroad/ca/wel_016.png);}
+.wel_list .group .icon_box .i_wel.li_017 {background-image:url(/static/img/early_abroad/ca/wel_017.png);}
+.wel_list .group .icon_box .i_wel.li_018 {background-image:url(/static/img/early_abroad/ca/wel_018.png);}
+.wel_list .group .icon_box .i_wel.li_019 {background-image:url(/static/img/early_abroad/ca/wel_019.png); width:19.8rem;}
+.wel_list .group p {margin-top:1.2rem; color:#705537; font-size:1.8rem; text-align:center; line-height:1.444em; font-weight:700; padding:1.4rem 0;}
+
+/* 테이블레이아웃 */
+.table_area {width:100%; max-width:1000px; margin:17.7rem auto;}
+.table_area ~ .table_area {margin-top:12rem;}
+.table_area ~.intr_wrap {margin-top:24rem;}
+.table_area:last-child {margin-bottom:0;}
+.table_area .content_tit {margin-bottom:3.8rem;}
+.care_table {width:960px; margin:0 auto; overflow:hidden;}
+.care_table .cap_wrap {float:right;}
+.care_table .caption {color:#705537; font-size:1.2rem; font-weight:500; line-height:1.667em; text-align:right;}
+.care_table .table_wrap {float:left; overflow-x:auto; width:100%; border-radius:1rem; border:.1rem solid #705537; margin-top:.8rem;}
+.care_table .table_wrap table {border-style:hidden; width:100%; height:100%; min-width:800px;}
+.care_table .table_wrap thead tr th {background-color:#ffd4a2; padding:.5rem 1rem; font-size:12px; font-weight:700; color:#705537;}
+.care_table .table_wrap tbody tr td {border-top:.1rem solid #705537; padding:.5rem 1rem; background-color:#fff; font-size:12px;font-weight:500; color:#705537; text-align:center; vertical-align:middle;}
+.care_table .table_wrap tbody tr td ~ td,
+.care_table .table_wrap thead tr th ~ th {border-left:.1rem solid #705537;}
+
+/* ============================================ << 캐나다 :국제사립학교 >> ================================================ */
+.academy_content .bg_last .cotn {padding-bottom:30rem;}
+.academy_content .tit_area {position:absolute;z-index:1;margin:4rem 5rem;border-bottom:.2rem solid #fff;}
+.academy_content .tit_area .tit {font-weight:700;font-size:6rem;color:#fff;line-height:1.25em;}
+.academy_content .content_tit + .cotn_box{margin-top:3rem;}
+.academy_content .cotn_box.type2{border-radius:2rem;border:.5rem solid #eee;background-color:#fff;}
+.academy_content .cotn_box + .content_tit{margin-top:15rem;}
+.academy_content .cotn_box p + p{margin-top:1rem;}
+.academy_content .cotn{width:100%; max-width:1100px; margin:0 auto; padding-top:6rem; padding-bottom:13rem; position:relative;}
+.academy_content .bg_green{background-color:#f0f5e3;}
+.academy_content .adt_list {margin:5rem auto 0; display:flex; flex-wrap:wrap;z-index:1;position:relative; justify-content:center;}
+.academy_content .adt_list li {position:relative;margin:5rem 0 0 3rem;}
+.academy_content .adt_list li:first-child {margin-left:0;}
+.academy_content .adt_list .num {display:block; width:6.5rem; height:6.5rem; border-radius:50%; background-color:#ff9b50; text-align:center; color:#fff; font-size:3.2rem; font-weight:700; line-height:2.1em; position:absolute; left:-1.9rem; top:-2.8rem;}
+.academy_content .adt_list .txt_box {border-radius:1rem 5rem 1rem 5rem; background-color:#fff; padding:2.5rem 1.5rem 1.5rem; box-sizing:border-box; text-align:center; display:flex; align-items:center; width:19rem; height:22rem; box-shadow:0 2px 8px rgba(41, 50, 73, 0.1);}
+.academy_content .adt_list .txt_box p {color:#705537; font-size:1.7rem; font-weight:500; line-height:1.529em;}
+.academy_content .adt_list .txt_box p strong {display:block; color:#ff6d00; margin-bottom:1rem;}
+
+/* 국제사립고등학교란 */
+.sec_about_academy{padding-bottom:10rem; background-color:#f0f5e3;}
+.sec_about_academy .img_area {overflow:hidden;width:100%;margin-bottom:8rem;border-radius:3rem;}
+.sec_about_academy .academy_img {display:block;width:100%;height:100%;}
+
+/* ------------------------- 탭 컨텐츠 -------------------------- */
+.academy_tab_sec .section_tab {margin-bottom:4rem;}
+.academy_tab_sec{padding-top:17rem;}
+.academy_tab_sec .brd_tit{margin-bottom:5rem;}
+.academy_tab_sec .table_wrap{overflow:hidden;margin-top:4.5rem;border-radius:1rem;border:.1rem solid #705537;}
+.academy_tab_sec .academy_table th, .academy_tab_sec .academy_table td{padding:1.5rem 2rem;border-top:.1rem solid #705537;font-size:1.6rem;line-height:1.6em;vertical-align:middle;}
+.academy_tab_sec .academy_table tr:first-child th, .academy_tab_sec .academy_table tr:first-child td{border-top:0;}
+.academy_tab_sec .academy_table th{background-color:#ffd4a3;text-align:center;font-weight:700;color:#705537;}
+.academy_tab_sec .academy_table td{border-left:.1rem solid #705537;}
+.round_list{max-width:800px; width:100%; margin:3rem auto 0;}
+.round_list li{padding:1rem 5rem;background-color:#fff;border-radius:10rem;text-align:center;color:#705537; font-size:1.6rem;}
+.round_list li + li{margin-top:1rem;}
+
+/* 내부컨텐츠 */
+.inner_cotn {max-width:1100px; width:100%; margin:5rem auto;}
+
+/* 캠퍼스지원절차 */
+.process_wrap {margin-top:6rem;}
+.process_wrap .pro_tit {margin-bottom:4rem;}
+.process_list {display:flex; flex-wrap:wrap; justify-content:center; margin-top:-4rem;}
+.process_list li {width:19rem; height:21rem; padding:4rem 2rem; margin-top:4rem; background:#FFFFFF; border:.3rem solid #F0F5E3; box-shadow:0px 2px 8px rgba(41, 50, 73, 0.1); border-radius:0px 50px 15px; box-sizing:border-box; position:relative;}
+.process_list li ~ li {margin-left:3.6rem;}
+.process_list li:not(:last-child)::after {display:block; content:''; width:5rem; height:5rem; background:url(/static/img/early_abroad/ca/arr_right_green.png) no-repeat 0 0; background-size:5rem 5rem; position:absolute; right:-3.1rem; top:50%; transform:translateY(-50%);}
+.process_list li .num {color:#FF9B50; font-size:4.8rem; font-weight:700; line-height:1.042em; text-align:center; display:block;}
+.process_list li .txt_box {margin-top:2.4rem;}
+.process_list li .txt_box p {color:#705537; font-weight:500; font-size:1.7rem; line-height:1.529em; text-align:center;}
+
+/* 학점전환리스트 */
+.grade_ch {max-width:849px; width:100%; margin:0 auto;}
+.grade_ch .pro_tit {margin-bottom:4.5rem;}
+.group_rud_list li {display:flex; align-items:center; border:.2rem solid #FF9B50; border-radius:10rem; box-sizing:border-box; height:5rem; overflow:hidden;}
+.group_rud_list li ~ li {margin-top:1rem;}
+.group_rud_list li .grade_area {width:20%; background-color:#FF9B50; height:100%; color:#fff; font-weight:700; font-size:2rem; display:flex; align-items:center; justify-content:center; text-align:center; padding:0 1rem;}
+.group_rud_list li .txt_wrap {display:flex; align-items:center; justify-content:center; width:80%; height:100%;}
+.group_rud_list li .txt_wrap .box {flex:1; display:flex; align-items:center; justify-content:center; color:#705537; height:100%; font-weight:500; font-size:2rem; padding:0 1rem; text-align:center;}
+.group_rud_list li .txt_wrap .box ~ .box {border-left:.2rem solid #FF9B50; width:40%;}
+
+/* 취득요건 */
+.require .cotn {max-width:1188px;}
+.require .adt_list {margin-top:1.7rem;}
+.require .adt_list .txt_box {width:37rem; height:17rem;}
+.require .adt_list .txt_box p {font-weight:700;}
+
+@media all and (max-width:1240px) {
+	/* ============================================ << 캐나다 :국제사립학교 >> ================================================ */
+	.academy_content .cotn {padding-left:2rem; padding-right:2rem;}
+	.academy_content .adt_list li:first-child {margin-left:3rem;;}
+}
 
 @media all and (max-width:1024px) {
 	.pro_selet {width:100%; padding:0 2rem;}
 
-	/* ============================================ << 왜 조기유학인가 >> ================================================ */
+	/* ============================================ << 캐나다 :왜 조기유학인가 >> ================================================ */
 	.sec_02 .edu_list li {display:block;}
 	.sec_02 .edu_list li .img_area {margin:0 auto;}
 	.sec_02 .edu_list li .txt_area {margin:2rem 0 0 0; justify-content:center;}
@@ -268,10 +430,24 @@
 	.sec_03 .adt_list li:nth-child(1) {margin-left:0;}
 	.sec_03 .cotn::before {top:45rem;}
 	.sec_03 .cotn::after {right:5rem; top:96rem;}
+
+	/* ============================================ << 추천탭 공통 >> ================================================ */
+	.section_tab {padding:0 2rem;}
+	.brd_tit {padding:0 2rem;}
+	.tab_tit_area {padding:0 2rem;}
+
+	/* 관리형 유학이란 */
+	.intro_care .cotn {padding:16.2rem 2rem 18rem;}
+	.table_area {padding:0 2rem;}
+	.care_table {width:100%;}
+	.wel_list {padding:0 2rem;}
+
+	/* ============================================ << 캐나다 :국제사립학교 >> ================================================ */
+	.inner_cotn {padding:0 2rem;}
 }
 
 @media all and (max-width:720px) {
-	/* ============================================ << 조기유학상세 >> ================================================ */
+	/* ============================================ << 캐나다 :조기유학상세 >> ================================================ */
 	.area_tab {width:calc(33.33% - 1.6rem);}
 	.area_tab ~ .area_tab {margin-left:2.4rem;}
 	.office_list .group_list .img_area .logo_img {margin-left:2rem;}
@@ -285,7 +461,7 @@
 	.d_table table tr th {font-size:1.8rem;}
 	.d_table table tr td {font-size:1.8rem;}
 
-	/* ============================================ << 왜 조기유학인가 >> ================================================ */
+	/* ============================================ << 캐나다 :왜 조기유학인가 >> ================================================ */
 	.sec_01 .tit_area {width:auto;}
 	.sec_01 .reason_li {width:50rem; margin:10rem 0 0 5rem;}
 	.sec_01 .tit_area .tit {font-size:5.5rem;}
@@ -302,6 +478,15 @@
 	.sec_04 .area_li .info_area ul li {font-size:1.8rem;}
 	.sec_04 .area_li .info_area ul li p {font-size:1.6rem;}
 	.sec_04 .area_li .info_area .img_area {margin:4rem auto 0;}
+
+	.cotn_box p br {display:none;}
+
+	/* ============================================ << 캐나다 :관리형 유학이란 >> ================================================ */
+	.intro_care .intro_list {width:100%; margin:2rem auto;}
+	.intro_list .group:nth-child(1) {margin-left:0;}
+
+	/* ============================================ << 캐나다 :국제사립학교 >> ================================================ */
+	.group_rud_list li {height:7rem;}
 }
 
 @media all and (max-width:480px){
@@ -309,7 +494,7 @@
 	.office_list .group_list .info_tit {font-size:1.6rem;}
 	.office_list .group_list .loca_area .loca_txt p {font-size:1.5rem;}
 
-	/* ============================================ << 왜 조기유학인가 >> ================================================ */
+	/* ============================================ << 캐나다 :왜 조기유학인가 >> ================================================ */
 	.sec_03 .adt_list {width:100%;}
 	.sec_03 .adt_list li {width:calc(50% - 1rem);}
 	.sec_03 .adt_list li:not(:nth-child(3n+1)) {margin-left:0;}
@@ -317,5 +502,5 @@
 	.sec_03 .adt_list li:nth-child(2n) {margin-left:2rem;}
 	.sec_03 .adt_list li:nth-child(n+3) {margin-top:4rem;}
 	.sec_03 .adt_list .txt_box {width:100%; height:17rem;}
-
 }
+

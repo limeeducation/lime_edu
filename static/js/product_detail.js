@@ -85,3 +85,17 @@ function proBtn() { //캐나다 조기유학탭
 		}
 	})
 }
+
+function recBtn() { //프로그램 탭
+	$('.tab_wrap .rec_tab').on('click', function(){
+		var tabCnt = $(this).index();
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.tab_list_wrap > div').hide().eq(tabCnt).stop().show();
+
+		if($(this).hasClass('bg_on')){
+			$('#container').css('padding-bottom','0')
+		}else{
+			$('#container').css('padding-bottom','27rem')
+		}
+	})
+}

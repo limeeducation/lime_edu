@@ -441,12 +441,12 @@ class EarlyAbroad extends CI_Controller {
 
 	//조기유학 캐나다 관리형 유학
 	public function abtCaManageAbroad(){
-		$this->load->view('earlyAbroad/caSchoolList');
+		$this->load->view('earlyAbroad/caCareSchool');
 	}
 
 	//조기유학 캐나다 국제사립학교
 	public function caInternationalPrivate(){
-		$this->load->view('earlyAbroad/caSchoolList');
+		$this->load->view('earlyAbroad/intlPrivateSchool');
 	}
 
 	//조기유학 영국 학교찾기
