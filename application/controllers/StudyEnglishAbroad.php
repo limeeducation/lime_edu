@@ -21,6 +21,9 @@ class StudyEnglishAbroad extends CI_Controller {
 		$school_list = $this->school_model->getSchool('US');
 		foreach($school_list as $school){
 			print_r($school);
+			echo '<br>';
+
+			echo $school->aca_name;
 			echo '<br><br><br>';
 		}
 
