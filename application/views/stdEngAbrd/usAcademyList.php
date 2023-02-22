@@ -10,7 +10,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     <script type="text/javascript">
 		function showSchool(area){
 			$(".acad_group").hide();
-			if(school == 'all'){
+			if(area == 'all'){
 				$(".acad_group").show();
 			}else{
 				$("."+area).show();
@@ -57,7 +57,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<p class="town_tit">주요 도시</p>
 					<div class="tab_box">
 						<div class="usa_tab_area">
-							<button type="button" class="usa_tab tw_chg" open-layer="usa">
+							<button type="button" class="usa_tab tw_chg" open-layer="usa" onclick="showSchool('all');">
 								<strong>U.S.A</strong>
 								<span>미국</span>
 							</button>
