@@ -282,8 +282,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				alert("잠시 후 다시 시도해주세요.");
 			}
 		});
-		//$('.pop_cur').fadeIn(200);
-        //dimShow();
+		$('.pop_cur').fadeIn(200);
+        dimShow();
 	}
 	function showSchoolDetail(idx,school,city){
 		var intro = $("#school_intro_"+idx).innerText;
@@ -306,8 +306,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				alert("잠시 후 다시 시도해주세요.");
 			}
 		});
-		//$('.pop_intro').fadeIn(200);
-        //dimShow();
+		$('.pop_intro').fadeIn(200);
+        dimShow();
 	}
 </script>
 				<!-- 학교소개 모달팝업 -->
