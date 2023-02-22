@@ -70,10 +70,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<!-- 온타리오주 class="ont" 추가 -->
 
 							<!-- 온타리오주 교육청 링크연결 -->
-							<area target="" href="" alt="Toronto District School Board" title="Toronto District School Board" coords="774,509,58" shape="circle">
-							<area target="" href="" alt="York Catholic District School Board" title="York Catholic District School Board" coords="869,676,59" shape="circle">
-							<area target="" href="" alt="Toronto Catholic District School Board" title="Toronto Catholic District School Board" coords="803,802,59" shape="circle">
-							<area target="" href="" alt="York Region District School Board" title="York Region District School Board" coords="650,761,59" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/tdsb" alt="Toronto District School Board" title="Toronto District School Board" coords="774,509,58" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/ycdsb" alt="York Catholic District School Board" title="York Catholic District School Board" coords="869,676,59" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/tcds" alt="Toronto Catholic District School Board" title="Toronto Catholic District School Board" coords="803,802,59" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/york" alt="York Region District School Board" title="York Region District School Board" coords="650,761,59" shape="circle">
 							<!--// 온타리오주 교육청 링크연결 -->
 
 
@@ -81,11 +81,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<!-- 브리티시 컬럼비아주 class="brt" 추가 -->
 
 							<!-- 브리티시 컬럼비아주 교육청 링크연결 -->
-							<area target="" href="" alt="Langley School District #35" title="Langley School District #35" coords="207,456,59" shape="circle">
-							<area target="" href="" alt="Coquitlam School District #43" title="Coquitlam School District #43" coords="362,477,59" shape="circle">
-							<area target="" href="" alt="North Vancouver School District #44" title="North Vancouver School District #44" coords="412,654,58" shape="circle">
-							<area target="" href="" alt="Vancouver School District #39" title="Vancouver School District #39" coords="297,738,59" shape="circle">
-							<area target="" href="" alt="Burnaby School District #41" title="Burnaby School District #41" coords="175,650,58" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/lnly" alt="Langley School District #35" title="Langley School District #35" coords="207,456,59" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/csd" alt="Coquitlam School District #43" title="Coquitlam School District #43" coords="362,477,59" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/nvsd" alt="North Vancouver School District #44" title="North Vancouver School District #44" coords="412,654,58" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/vps" alt="Vancouver School District #39" title="Vancouver School District #39" coords="297,738,59" shape="circle">
+							<area target="" href="/earlyAbroad/caSchoolDetail/bnby" alt="Burnaby School District #41" title="Burnaby School District #41" coords="175,650,58" shape="circle">
 							<!--// 브리티시 컬럼비아주 교육청 링크연결 -->
 						</map>
 						<!--// 이미지맵 링크 -->
