@@ -37,10 +37,12 @@ class StudyEnglishAbroad extends CI_Controller {
 		echo json_encode($details);
 	}
 
-	//숙소 정보 상세 호출 api
+	//숙소 정보+학교소개 상세 호출 api
 	public function apiGetDormitoryDetail(){
-		$aca_idx = $this->input->post('idx');
-		$details = $this->school_model->getDormitoryDetail($aca_idx);
+		$idx = $this->input->post('idx');
+		$aca_idx = $this->input->post('aca_idx');
+		$details = $this->school_model->getDormitoryDetail($idx);
+		$details['intro'] = $this->school_model->getSchoolIntro($aca_idx);
 		echo json_encode($details);
 	}
 

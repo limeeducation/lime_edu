@@ -220,7 +220,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="acad_group <?= str_replace(' ', '', $school->city_name);?>">
 							<!-- 왼쪽이미지영역 -->
 							<div class="img_area">
-								<button type="button" class="acad_pop_btn" onclick="showSchoolDetail('<?= $school->en_aca_city_idx;?>', '<?= $school->aca_name;?>', '<?= $school->city_name;?>');">
+								<button type="button" class="acad_pop_btn" onclick="showSchoolDetail('<?= $school->en_aca_city_idx;?>', '<?= $school->en_aca_idx;?>', '<?= $school->aca_name;?>', '<?= $school->city_name;?>');">
 									<figure class="logo_img">
 										<img src="<?= $school->logo_url;?>" alt="<?= $school->logo_url;?>">
 									</figure>
@@ -285,14 +285,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		$('.pop_cur').fadeIn(200);
         dimShow();
 	}
-	function showSchoolDetail(idx,school,city){
+	function showSchoolDetail(idx,aca_idx,school,city){
 		var intro = $("#school_intro_"+idx).innerText;
 		$.ajax({
 			type: "post",
 			url: "/studyEnglishAbroad/apiGetDormitoryDetail",
 			async: true,
 			data: {
-				"idx": idx
+				"idx": idx,
+				"aca_idx": aca_idx
 			},
 			dataType: "text",
 			success: function(data){

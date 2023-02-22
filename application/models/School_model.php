@@ -10,6 +10,7 @@ class School_model extends CI_Model
 
 	public function getSchool($nation){
 		$this->db->select('en_aca_city_idx');
+		$this->db->select('en_academy.en_aca_idx');
 		$this->db->select('aca_name');
 		$this->db->select('logo_url');
 		$this->db->select('aca_intro');
@@ -48,6 +49,13 @@ class School_model extends CI_Model
 		$this->db->from('en_city_dorm');
 		$this->db->where('en_aca_city_idx', $idx);
 		return $this->db->get()->result_array();
+	}
+
+	public function getSchoolIntro($aca_idx){
+		$this->db->select('dorm_type');
+		$this->db->from('en_academy');
+        $this->db->where('en_aca_idx', $aca_idx);
+        return $this->db->result();
 	}
 
 }
