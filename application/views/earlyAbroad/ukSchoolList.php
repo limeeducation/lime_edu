@@ -65,17 +65,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						<!-- 이미지맵 링크 -->
 						<map name="image-map">
-							<area target="" alt="카디프" title="카디프" href="" coords="774,1010,686,956" shape="rect" onclick="showSchool('Cardiff');">
-							<area target="" alt="슈르지베리" title="슈르지베리" href="" coords="735,850,836,898" shape="rect" onclick="showSchool('Shrewsbury');">
-							<area target="" alt="버밍엄" title="버밍엄" href="" coords="912,900,812,940" shape="rect" onclick="showSchool('Birmingham');">
-							<area target="" alt="런던" title="런던" href="" coords="921,990,987,1032" shape="rect" onclick="showSchool('London');">
-							<area target="" alt="캠브리지" title="캠브리지" href="" coords="954,955,1040,910" shape="rect" onclick="showSchool('Cambridge');">
-							<area target="" alt="옥스포드" title="옥스포드" href="" coords="914,993,842,1036" shape="rect" onclick="showSchool('Oxford');">
-							<area target="" alt="멘체스터" title="멘체스터" href="" coords="798,826,906,778" shape="rect" onclick="showSchool('Manchester');">
-							<area target="" alt="노스햄튼" title="노스햄튼" href="" coords="854,978,950,945" shape="rect" onclick="showSchool('NorthHampton');">
-							<area target="" alt="본머스" title="본머스" href="" coords="756,1060,875,1099" shape="rect" onclick="showSchool('Bournemouth');">
-							<area target="" alt="브라이튼" title="브라이튼" href="" coords="933,1108,1001,1069" shape="rect" onclick="showSchool('Brighton');">
-							<area target="" alt="캔터버리" title="캔터버리" href="" coords="1005,1071,1100,1020" shape="rect" onclick="showSchool('Canterbury');">
+							<area target="" alt="카디프" title="카디프" href="javascript:showSchool('Cardiff');" coords="774,1010,686,956" shape="rect" >
+							<area target="" alt="슈르지베리" title="슈르지베리" href="javascript:showSchool('Shrewsbury');" coords="735,850,836,898" shape="rect" >
+							<area target="" alt="버밍엄" title="버밍엄" href="javascript:showSchool('Birmingham');" coords="912,900,812,940" shape="rect">
+							<area target="" alt="런던" title="런던" href="javascript:showSchool('London');" coords="921,990,987,1032" shape="rect">
+							<area target="" alt="캠브리지" title="캠브리지" href="javascript:showSchool('Cambridge');" coords="954,955,1040,910" shape="rect">
+							<area target="" alt="옥스포드" title="옥스포드" href="javascript:showSchool('Oxford');" coords="914,993,842,1036" shape="rect">
+							<area target="" alt="멘체스터" title="멘체스터" href="javascript:showSchool('Manchester');" coords="798,826,906,778" shape="rect">
+							<area target="" alt="노스햄튼" title="노스햄튼" href="javascript:showSchool('NorthHampton');" coords="854,978,950,945" shape="rect">
+							<area target="" alt="본머스" title="본머스" href="javascript:showSchool('Bournemouth');" coords="756,1060,875,1099" shape="rect">
+							<area target="" alt="브라이튼" title="브라이튼" href="javascript:showSchool('Brighton');" coords="933,1108,1001,1069" shape="rect">
+							<area target="" alt="캔터버리" title="캔터버리" href="javascript:showSchool('Canterbury');" coords="1005,1071,1100,1020" shape="rect">
 						</map>
 						<!--// 이미지맵 링크 -->
 					</div>
