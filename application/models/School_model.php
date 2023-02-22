@@ -21,7 +21,11 @@ class School_model extends CI_Model
 	}
 
 	public function getPrograms($idx){
-
+		$this->db->select('idx');
+		$this->db->select('pro_name');
+		$this->db->from('en_city_program');
+		$this->db->where('en_aca_city_idx', $idx);
+        return $this->db->get()->result();
 	}
 
 }

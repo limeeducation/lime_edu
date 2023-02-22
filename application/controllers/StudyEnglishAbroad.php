@@ -21,6 +21,10 @@ class StudyEnglishAbroad extends CI_Controller {
 		$school_list = $this->school_model->getSchool('US');
 		foreach($school_list as $school){
 
+			$program_list = $this->school_model->getPrograms($school->en_aca_city_idx);
+			foreach($program_list as $program){
+				array_push($school,$program);
+			}
 			print_r($school);
 			echo '<br>';
 
