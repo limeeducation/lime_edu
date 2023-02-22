@@ -28,7 +28,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			<!-- 조기유학상세작업 -->
 			<div id="detail_wrap" class="usa">
 				<!-- 왜 미국에서 영어를 배우나요? -->
-				<a href="#none">
+				<a href="/StudyEnglishAbroad/whyStudyEngUs">
 					<div class="usa_title">
 						<p>왜 미국에서 영어를 배우나요?</p>
 					</div>
