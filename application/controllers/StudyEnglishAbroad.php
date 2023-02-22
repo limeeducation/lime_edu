@@ -27,7 +27,7 @@ class StudyEnglishAbroad extends CI_Controller {
 		}
 		$data = array();
 		$data['school_list'] = $school_list;
-		$this->load->view('earlyAbroad/usaSchoolList', $data);
+		$this->load->view('stdEngAbrd/usaAcademyList', $data);
 	}
 
 
