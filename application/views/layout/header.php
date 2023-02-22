@@ -83,7 +83,7 @@
 				<a href="#"><span>어학연수</span></a>
 				<ul class="depth">
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
+						<a href="/StudyEnglishAbroad/usAcademyList" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 					</li>
 					<li>
 						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
@@ -217,7 +217,7 @@
 							<div class="depth_title">어학연수</div>
 							<ul class="depth_group">
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
+									<a href="/StudyEnglishAbroad/usAcademyList" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 								</li>
 								<li>
 									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
