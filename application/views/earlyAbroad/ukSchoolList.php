@@ -406,18 +406,328 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
+							<div class="sc_group">
+								<!-- 왼쪽이미지영역 -->
+								<div class="img_area">
+									<figure class="logo_img">
+										<img src="/static/img/early_abroad/uk/logo_overbroeck.png" alt="D' Overbroeck's Oxford">
+									</figure>
+									<p class="name">D' Overbroeck's Oxford</p>
+								</div>
+								<!--// 왼쪽이미지영역 -->
+
+								<!-- 오른쪽테이블영역 -->
+								<div class="sc_table">
+									<table>
+										<colgroup>
+											<col width="27%">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>학교명</th>
+												<td>D' Overbroeck's Oxford</td>
+											</tr>
+											<tr>
+												<th>지역</th>
+												<td>Oxford</td>
+											</tr>
+											<tr>
+												<th>홈페이지</th>
+												<td>
+													<a href="http://www.doverbroecks.com">http://www.doverbroecks.com</a>
+												</td>
+											</tr>
+											<tr>
+												<th>개설과정</th>
+												<td>GCSE / A-Level</td>
+											</tr>
+											<tr>
+												<th>보딩비용</th>
+												<td>GCSE: £46,440 / A-Level: £43,350</td>
+											</tr>
+											<tr>
+												<th>학교특징</th>
+												<td>
+													Independent School 랭킹 4위의 명문사립학교<br>
+													영국학생 60%와 국제학생 40%의 이상적인 비율<br>
+													지난 5년간 가장 많이 진학한 대학은 UCL, LSE, Imperial <br>
+													University of Bristol, Queen Mary, University of London
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--// 오른쪽테이블영역 -->
+							</div>
+							<div class="sc_group">
+								<!-- 왼쪽이미지영역 -->
+								<div class="img_area">
+									<figure class="logo_img">
+										<img src="/static/img/early_abroad/uk/logo_kings.png" alt="Kings Education College">
+									</figure>
+									<p class="name">Kings Education College</p>
+								</div>
+								<!--// 왼쪽이미지영역 -->
+
+								<!-- 오른쪽테이블영역 -->
+								<div class="sc_table">
+									<table>
+										<colgroup>
+											<col width="27%">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>학교명</th>
+												<td>Kings Education College</td>
+											</tr>
+											<tr>
+												<th>지역</th>
+												<td>London/ Oxford/ Brigton/ Bournemouth</td>
+											</tr>
+											<tr>
+												<th>홈페이지</th>
+												<td>
+													<a href="https://www.kingseducation.com/uk-uni">https://www.kingseducation.com/uk-uni</a>
+												</td>
+											</tr>
+											<tr>
+												<th>개설과정</th>
+												<td>GCSE / A- Level / Foundation</td>
+											</tr>
+											<tr>
+												<th>보딩비용</th>
+												<td>GCSE: £39,826 / A-Level: £39,826 / Foundation: £39,826</td>
+											</tr>
+											<tr>
+												<th>학교특징</th>
+												<td>
+													A-Level 64% 이상 A*/A 성적취득<br>
+													Aston, UClan 대학과 의대 파운데이션 파트너쉽 체결로 입학용이<br>
+													UAL Awarding 아트 & 디자인 파운데이션 및 Kingston 대학교 파트너쉽 진학
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--// 오른쪽테이블영역 -->
+							</div>
+							<div class="sc_group">
+								<!-- 왼쪽이미지영역 -->
+								<div class="img_area">
+									<figure class="logo_img">
+										<img src="/static/img/early_abroad/uk/logo_newton.png" alt="INTO Newton A-Level">
+									</figure>
+									<p class="name">INTO Newton A-Level</p>
+								</div>
+								<!--// 왼쪽이미지영역 -->
+
+								<!-- 오른쪽테이블영역 -->
+								<div class="sc_table">
+									<table>
+										<colgroup>
+											<col width="27%">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>학교명</th>
+												<td>INTO Newton A-Level</td>
+											</tr>
+											<tr>
+												<th>지역</th>
+												<td>Norwich</td>
+											</tr>
+											<tr>
+												<th>홈페이지</th>
+												<td>
+													<a href="www.intostudy.com/en/universities/newton-a-level-programme">www.intostudy.com/en/universities/newton-a-level-programme</a>
+												</td>
+											</tr>
+											<tr>
+												<th>개설과정</th>
+												<td>A-LEVEL (Sciences, Medicine, Mathematics, Engineering or Economics)</td>
+											</tr>
+											<tr>
+												<th>보딩비용</th>
+												<td>A-Level: £38,857</td>
+											</tr>
+											<tr>
+												<th>학교특징</th>
+												<td>
+													2018년 71%가 의대 지원생 91% 및 Oxbridge 지원생 100% 오퍼 취득<br>
+													영국 STEM  과목 중심 A-Level로 클래스 평균 사이즈 8명의 소규모 집중수업<br>
+													Norwich 병원과 UEA 대학 내 풍부한 의학 실습 환경을 갖춰 의대 진학 프로그램 단독운영
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--// 오른쪽테이블영역 -->
+							</div>
+							<div class="sc_group">
+								<!-- 왼쪽이미지영역 -->
+								<div class="img_area">
+									<figure class="logo_img">
+										<img src="/static/img/early_abroad/uk/logo_cats.png" alt="CATS Global School">
+									</figure>
+									<p class="name">CATS Global School</p>
+								</div>
+								<!--// 왼쪽이미지영역 -->
+
+								<!-- 오른쪽테이블영역 -->
+								<div class="sc_table">
+									<table>
+										<colgroup>
+											<col width="27%">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>학교명</th>
+												<td>CATS Global School</td>
+											</tr>
+											<tr>
+												<th>지역</th>
+												<td>London / Cambridge / Caterbury</td>
+											</tr>
+											<tr>
+												<th>홈페이지</th>
+												<td>
+													<a href="htttp://www.catseducation.com">htttp://www.catseducation.com</a>
+												</td>
+											</tr>
+											<tr>
+												<th>개설과정</th>
+												<td>Pre GCSE / GCSE / Pre A-Level / IB / A-Level / Foundation</td>
+											</tr>
+											<tr>
+												<th>보딩비용</th>
+												<td>GCSE: £46,600 / A-Level: £46,600 / Foundation: £46,600</td>
+											</tr>
+											<tr>
+												<th>학교특징</th>
+												<td>
+													런던 캠퍼스는 상경계열과 아트 & 디자인 특화, 유럽최조 블룸버그 터미널 랩실개설<br>
+													캠브리지 캠퍼스는 이공계 STEM 특화 캠퍼스, 기숙사와 강의실 같은 건물<br>
+													캔터버리 캠퍼스는 가장 전형적인 영국보딩스쿨로 주니어 학생들과 IB 프로그램
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--// 오른쪽테이블영역 -->
+							</div>
+							<div class="sc_group">
+								<!-- 왼쪽이미지영역 -->
+								<div class="img_area">
+									<figure class="logo_img">
+										<img src="/static/img/early_abroad/uk/logo_bic.png" alt="Bosworth Independent College">
+									</figure>
+									<p class="name">Bosworth Independent College</p>
+								</div>
+								<!--// 왼쪽이미지영역 -->
+
+								<!-- 오른쪽테이블영역 -->
+								<div class="sc_table">
+									<table>
+										<colgroup>
+											<col width="27%">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>학교명</th>
+												<td>Bosworth Independent College</td>
+											</tr>
+											<tr>
+												<th>지역</th>
+												<td>Northhampton</td>
+											</tr>
+											<tr>
+												<th>홈페이지</th>
+												<td>
+													<a href="http://www.bosworthcollege.com">http://www.bosworthcollege.com</a>
+												</td>
+											</tr>
+											<tr>
+												<th>개설과정</th>
+												<td>Pre GCSE / GCSE / Pre A-Level / A-Level / BTEC / Foundation</td>
+											</tr>
+											<tr>
+												<th>보딩비용</th>
+												<td>GCSE: £37,980 / A-Level: £37,980 / Foundation / BTEC: £37,980</td>
+											</tr>
+											<tr>
+												<th>학교특징</th>
+												<td>
+													영국학생 40%와 다양한 국적의 국제학생 비율 60%<br>
+													약 70%의 학생들이 Imperial , LSE, Kings, UCL, Machsester, Bristol 등 명문대학 진학<br>
+													수학, 과학, 영국 올림피아드 대회출전 및 우수한 성과 수상<br>
+													GCSE부터 옥스브릿지, 의대준비반 프로그램 별도로 운영
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--// 오른쪽테이블영역 -->
+							</div>
+							<div class="sc_group">
+								<!-- 왼쪽이미지영역 -->
+								<div class="img_area">
+									<figure class="logo_img">
+										<img src="/static/img/early_abroad/uk/logo_bcs.png" alt="Bournemouth Collegiate School">
+									</figure>
+									<p class="name">Bournemouth Collegiate School</p>
+								</div>
+								<!--// 왼쪽이미지영역 -->
+
+								<!-- 오른쪽테이블영역 -->
+								<div class="sc_table">
+									<table>
+										<colgroup>
+											<col width="27%">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>학교명</th>
+												<td>Bournemouth Collegiate School</td>
+											</tr>
+											<tr>
+												<th>지역</th>
+												<td>Bournemouth</td>
+											</tr>
+											<tr>
+												<th>홈페이지</th>
+												<td>
+													<a href="https://www.bournemouthcollegiateschool.co.uk">https://www.bournemouthcollegiateschool.co.uk</a>
+												</td>
+											</tr>
+											<tr>
+												<th>개설과정</th>
+												<td>Pre GCSE / GCSE / Pre A-Level / A-Level</td>
+											</tr>
+											<tr>
+												<th>보딩비용</th>
+												<td>GCSE: £36,500 / A-Level: £35,000</td>
+											</tr>
+											<tr>
+												<th>학교특징</th>
+												<td>
+													영국 전통 보딩스쿨분위기로 영국학생 60%, 국제학생 40%의 균형있는 국적비율 밸런스<br>
+													수준높은 스포츠 시설과 아트 스튜디오제공하여 스포츠와 아트관련 수업의 다양한 엑스트라 커리큘럼<br>
+													Visual Arts로 Printmaking, Painting, Textiles and Photography 경험하며 다양한 외부 경연대회에 참석하고 수상
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--// 오른쪽테이블영역 -->
+							</div>
 						</div>
 						<!--// 목록 -->
-
-						<!-- 페이징 -->
-						<div class="paging">
-							<a href="#none" class="btn_arr prev"></a>
-							<a href="#none" class="num on">1</a><!-- 현재페이지class="on"추가 -->
-							<a href="#none" class="num ">2</a>
-							<a href="#none" class="num ">3</a>
-							<a href="#none" class="btn_arr next"></a>
-						</div>
-						<!--// 페이징 -->
 					</div>
 					<!--// 학교리스트 -->
 				</div>
