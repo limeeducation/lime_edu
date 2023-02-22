@@ -225,12 +225,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<p class="info_tit">프로그램</p>
 								<div class="acad_tab_wrap">
 									<?php foreach($school->program as $program): ?>
-									<button type="button" class="acad_tab"><?= $program->pro_name;?></button>
+									<button type="button" class="acad_tab"><?= mb_strimwidth($program->pro_name, '0', '35', '...', 'utf-8');?></button>
 									<?php endforeach; ?>
 								</div>
 								<p class="info_tit">학교소개</p>
 								<div class="acad_txt">
-									<p><?= mb_strimwidth($school->aca_intro, '0', '35', '...', 'utf-8');?></p>
+									<p><?= $school->aca_intro;?></p>
 								</div>
 							</div>
 							<!--// 오른쪽설명영역 -->
