@@ -7,27 +7,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
 <body>
-	<script type="text/javascript">
-		function showProgramDetail(idx,school,city){
-			$.ajax({
-				type: "post",
-				url: "/studyEnglishAbroad/apiGetProgramDetail",
-				async: true,
-				data: {
-					"idx": idx
-				},
-				dataType: "text",
-				success: function(data){
-					var details = JSON.parse(data);
-					console.log(details);
-				},error: function(data){
-					alert("잠시 후 다시 시도해주세요.");
-				}
-			});
-			//$('.pop_cur').fadeIn(200);
-			//dimShow();
-		}
-	</script>
+    <script type="text/javascript">
+
+    </script>
 	<div id="wrap">
 	<?php
     include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header.php');
@@ -333,15 +315,41 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div>
 				</section>
 				<!--// 학교소개 모달팝업 -->
-
+<script type="text/javascript">
+	function showProgramDetail(idx,school,city){
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetProgramDetail",
+			async: true,
+			data: {
+				"idx": idx
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				console.log(details);
+				console.log(details[0]);
+				console.log(details[0].pro_class_week);
+				//$("#city_name").empty();
+				//$("#city_name").append(school+"-"+city);
+				//$("#curr_name").empty();
+				//$("#curr_name").append(details);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+		//$('.pop_cur').fadeIn(200);
+        //dimShow();
+	}
+</script>
 				<!-- 커리큘럼상세 모달팝업 -->
 				<section class="pop_detail cs_pop pop_cur"><!-- 커리큘럼상세 모달팝업 class="pop_cur" 추가 -->
 					<div class="cotn">
-						<h2 class="pop_title" id="">EF-New York</h2>
+						<h2 class="pop_title" id="city_name">EF-New York</h2>
 
 						<!-- 기본과정 -->
 						<div class="sec_wrap">
-							<h3 class="sec_tit">기본과정</h3>
+							<h3 class="sec_tit" id="curr_name">기본과정</h3>
 							<div class="sec_table">
 								<table>
 									<colgroup>
