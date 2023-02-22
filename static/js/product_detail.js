@@ -9,8 +9,6 @@ $(document).ready(function(){
 	$('.rec_tab').length && recBtn(); //프로그램 탭
 	$('.rec_pro').length && recSlide(); //추천프로그램 슬라이드
 	$('.tw_chg').length && twIntro(); //미국 주요도시소개
-	//$('.acad_tab').length && popIntro(); //학교소개 모달팝업
-	//$('.acad_pop_btn').length && popCur(); //커리큘럼상세 모달팝업
 });
 
 function csDatePick() {// 상담신청란 달력
@@ -141,19 +139,4 @@ function dimShow(){ /* 딤드 show */
 }
 function dimHide(){ /* 딤드 hide */
 	$('body').removeClass('dimed');
-}
-
-
-function popIntro(){ //학교소개 모달팝업
-	$('.acad_tab').on('click', function(e){
-		$('.pop_intro').fadeIn(200);
-		dimShow();
-	});
-}
-
-function popCur(){ //커리큘럼상세 모달팝업
-	$('.acad_pop_btn').on('click', function(e){
-		$('.pop_cur').fadeIn(200);
-		dimShow();
-	});
 }
