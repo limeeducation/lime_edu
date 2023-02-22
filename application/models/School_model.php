@@ -28,6 +28,18 @@ class School_model extends CI_Model
         return $this->db->get()->result();
 	}
 
+	public function getProgramDetail($idx){
+		$this->db->select('pro_name');
+		$this->db->select('pro_class_week');
+		$this->db->select('pro_intro');
+		$this->db->select('pro_level');
+		$this->db->select('pro_start');
+		$this->db->select('pro_period');
+		$this->db->from('en_city_program');
+		$this->db->where('idx', $idx);
+		return $this->db->get()->result_array();
+	}
+
 }
 
 ?>

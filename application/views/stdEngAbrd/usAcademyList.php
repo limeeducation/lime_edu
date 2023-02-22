@@ -225,7 +225,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<p class="info_tit">프로그램</p>
 								<div class="acad_tab_wrap">
 									<?php foreach($school->program as $program): ?>
-									<button type="button" class="acad_tab"><?= mb_strimwidth($program->pro_name, '0', '35', '...', 'utf-8');?></button>
+										<button type="button" class="acad_tab" onclick="showProgramDetail('<?= $program->idx;?>', '<?= $school->aca_name;?>', '<?= $school->city_name;?>');"><?= mb_strimwidth($program->pro_name, '0', '35', '...', 'utf-8');?></button>
 									<?php endforeach; ?>
 								</div>
 								<p class="info_tit">학교소개</p>
@@ -315,11 +315,31 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div>
 				</section>
 				<!--// 학교소개 모달팝업 -->
-
+<script type="text/javascript">
+	function showProgramDetail(idx,school,city){
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetProgramDetail",
+			async: true,
+			data: {
+				"idx": idx
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				console.log(details);
+			}error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+		//$('.pop_cur').fadeIn(200);
+        //dimShow();
+	}
+</script>
 				<!-- 커리큘럼상세 모달팝업 -->
 				<section class="pop_detail cs_pop pop_cur"><!-- 커리큘럼상세 모달팝업 class="pop_cur" 추가 -->
 					<div class="cotn">
-						<h2 class="pop_title">US-EF-New York</h2>
+						<h2 class="pop_title" id="">EF-New York</h2>
 
 						<!-- 기본과정 -->
 						<div class="sec_wrap">

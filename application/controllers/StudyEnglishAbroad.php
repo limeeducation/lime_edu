@@ -30,6 +30,11 @@ class StudyEnglishAbroad extends CI_Controller {
 		$this->load->view('stdEngAbrd/usAcademyList', $data);
 	}
 
-
+	//커리큘럼 상세 호출 api
+	public function apiGetProgramDetail(){
+		$idx = $this->input->post('idx');
+		$details = $this->school_model->getProgramDetail($idx);
+		echo json_encode($details);
+	}
 }
 
