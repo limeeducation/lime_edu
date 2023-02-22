@@ -55,7 +55,7 @@ class School_model extends CI_Model
 		$this->db->select('dorm_type');
 		$this->db->from('en_academy');
         $this->db->where('en_aca_idx', $aca_idx);
-        return $this->db->result();
+        return $this->db->get()->result();
 	}
 
 }
