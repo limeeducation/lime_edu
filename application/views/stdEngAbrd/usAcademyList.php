@@ -303,12 +303,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#pop_school_intro").empty();
 				$("#pop_school_intro").append(details['intro'].aca_intro);
 
-				//숙소 입력 전 학교소개 삭제
-				details.pop();
-
 				//숙소 내용 입력
 				var html = "";
-				for(var i = 0; i < details.length; i++){
+				//마지막 인덱스에 학교소개 들어감으로 제거 후 숙소 정보 입력
+				for(var i = 0; i < details.length-1; i++){
 					html += "<tr>";
 					html += "<td>"+details[i].dorm_type+"</td>";
 					html += "<td>"+details[i].dorm_bed_meal+"</td>";
@@ -362,11 +360,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</tr>
 									</thead>
 									<tbody id="dorm_details">
-										<tr>
-											<td>Homestay<br>홈스테이</td>
-											<td>1인실/아침,저녁</td>
-											<td>공동욕실</td>
-										</tr>
+
 									</tbody>
 								</table>
 							</div>
