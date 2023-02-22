@@ -113,9 +113,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="eng_nation" onclick="javascript:change_nation('<?= $tab;?>','us');">
 								<img class="eng_main_img" src="/static/img/main/btn_main_eng_usa.png">
 							</div>
-							<div class="eng_nation" onclick="javascript:change_nation('<?= $tab;?>','uk');">
+							<!--<div class="eng_nation" onclick="javascript:change_nation('<?= $tab;?>','uk');">
 								<img class="eng_main_img" src="/static/img/main/btn_main_eng_uk.png">
-							</div>
+							</div> -->
 							<div class="eng_nation" onclick="javascript:change_nation('<?= $tab;?>','ca');">
 								<img class="eng_main_img" src="/static/img/main/btn_main_eng_ca.png">
 							</div>
@@ -140,7 +140,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="eng_city_btn">
 								<img src="/static/img/button/btn_sanfrancisco.png" id="btn_sanfrancisco">
 							</div>
-							<div class="more_city story_more"><a href="#">전체보기<i>+</i></a></div>
+							<div class="more_city story_more"><a href="/StudyEnglishAbroad/usAcademyList">전체보기<i>+</i></a></div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_uk_area" style="display:none;">
 							<div class="eng_city_btn">
