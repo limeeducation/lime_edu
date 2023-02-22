@@ -24,14 +24,10 @@ class StudyEnglishAbroad extends CI_Controller {
 			$program_list = $this->school_model->getPrograms($school->en_aca_city_idx);
 			$school->program = $program_list;
 
-			print_r($school);
-			echo '<br>';
-
-			echo $school->city_name . "/" . $school->aca_name;
-			echo '<br><br><br>';
 		}
-
-		$this->load->view('earlyAbroad/usaSchoolList');
+		$data = array();
+		$data['school_list'] = $school_list
+		$this->load->view('earlyAbroad/usaSchoolList', $data);
 	}
 
 
