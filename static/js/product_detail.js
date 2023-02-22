@@ -100,3 +100,56 @@ function recBtn() { //프로그램 탭
 		}
 	})
 }
+
+function recSlide() { //추천프로그램 슬라이드
+	var recSlide = new Swiper('.rec_pro_slide', {
+		slidesPerView:3,
+		spaceBetween: 15,
+		loop: true,
+		loopAdditionalSlides : 1,
+		navigation: {
+			nextEl: '.btn_arrow.next',
+			prevEl: '.btn_arrow.prev',
+		},
+		breakpoints:{
+			720: {
+				slidesPerView:2,
+			},
+		}
+	});
+}
+
+function twIntro(){ //미국 주요도시소개
+	$('.tw_chg').on('click', function(e){
+		if($(this).hasClass('none')){
+			return false;
+		}else{
+			e.preventDefault();
+			var target = $(this).attr('open-layer') || e;
+			$('.tw_intro').fadeOut(0);
+			$('.tw_intro' + '.' + target).fadeIn(0);
+		}
+	});
+}
+
+function dimShow(){ /* 딤드 show */
+	$('body').addClass('dimed');
+}
+function dimHide(){ /* 딤드 hide */
+	$('body').removeClass('dimed');
+}
+
+
+function popIntro(){ //학교소개 모달팝업
+	$('.acad_tab').on('click', function(e){
+		$('.pop_intro').fadeIn(200);
+		dimShow();
+	});
+}
+
+function popCur(){ //커리큘럼상세 모달팝업
+	$('.acad_pop_btn').on('click', function(e){
+		$('.pop_cur').fadeIn(200);
+		dimShow();
+	});
+}

@@ -412,6 +412,167 @@
 .require .adt_list .txt_box {width:37rem; height:17rem;}
 .require .adt_list .txt_box p {font-weight:700;}
 
+/* ============================================ << 영국 :조기유학 학교찾기 >> ================================================ */
+
+/* 영국조기유학프로그램탭 */
+.uk .pro_selet .pro_group {width:calc(33.33% - 7.6rem);}
+.uk .pro_selet .pro_btn_wrap .pro_group ~ .pro_group {margin-left:11.4rem;}
+.uk .pro_selet .pro_btn_wrap .pro_group::after {background-image:url(/static/img/early_abroad/uk/pro_bg_on.png);}
+.uk .pro_selet .pro_btn_wrap .pro_group::before {background-image:url(/static/img/early_abroad/uk/pro_bg_over.png);}
+.pro_btn_wrap .pro_group.on::before {opacity:0;}
+
+
+/* 영국지도영역 */
+.uk .image_map_wrap {background-color:#FFF4F4;}
+.uk .image_map_wrap .canada_map {max-width:1700px; margin-top:-5rem;}
+.uk .image_map_wrap .map_tit {color:#4E4E4E;}
+
+/* 학교탭 */
+.school_tab_wrap {padding:7rem 0 9rem; display:flex; width:100%; max-width:1100px; margin:0 auto;}
+.school_tab_wrap button {border:none;}
+.uk_tab_area {overflow:hidden; width:20.9rem; height:33.2rem; border-radius:2rem;}
+.uk_tab_area .uk_tab {width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; color:#fff; background:url(/static/img/early_abroad/uk/bg_uk_1.jpg) no-repeat 0 0; background-size:cover;}
+.uk_tab_area .uk_tab strong {font-size:3.2rem; font-weight:700; line-height:1.344em;}
+.uk_tab_area .uk_tab span {margin-top:.7rem; font-size:2.4rem; line-height:1.208em;}
+.city_tab_area {display:flex; flex-wrap:wrap; margin-top:-1.5rem; flex:1;}
+.city_tab_area .city_tab {width:calc(25% - 2.2rem); height:10rem; margin-top:1.5rem; margin-left:2.2rem; display:flex; align-items:center; justify-content:center; flex-direction:column; background-color:#FFF4F4; border-radius:2rem; color:#E06969; font-size:2rem; line-height:1.4em;}
+.city_tab_area .city_tab.none {background-color:#eee; cursor:auto;}
+.city_tab_area .city_tab strong {font-weight:700;}
+.city_tab_area .city_tab span {font-weight:500; display:block; width:100%;}
+
+/* 학교리스트 */
+.uk .office_title {color:#4e4e4e;}
+.school_list .sc_group {margin-top:2rem; display:flex;}
+.sc_group .img_area {width:18rem;}
+.sc_group .img_area .logo_img {width:100%; height:18rem;}
+.sc_group .img_area .logo_img img {display:block; width:100%; height:100%;}
+.sc_group .img_area .name {height:5rem; padding:0 .5rem; display:flex; align-items:center; justify-content:center; text-align:center; background:#FFF4F4; border-radius:0px 0px 10px 10px; color:#4e4e4e; font-size:1.4rem; font-weight:700;}
+.sc_group .sc_table {margin-left:1.8rem; flex:1; overflow-x:auto; border-radius:1rem; border:.1rem solid #d9d9d9;}
+.sc_group .sc_table table {border-style:hidden; width:100%; height:100%; overflow:hidden; min-width:600px;}
+.sc_group .sc_table tr td,
+.sc_group .sc_table tr th {padding:.5rem 1rem; font-size:1.4rem; vertical-align:middle; line-height:1.286em; border-top:.1rem solid #d9d9d9;}
+.sc_group .sc_table tr th {background-color:#FFF4F4; font-weight:700; color:#4e4e4e;}
+.sc_group .sc_table tr td {background-color:#fff; color:#4e4e4e; font-weight:500;}
+
+/* ============================================ << 미국 :어학연수 학교찾기 >> ================================================ */
+.usa_title {display:flex; align-items:center; justify-content:center; max-width:1200px; width:100%; height:20rem; border-radius:2rem; margin:0 auto 3.7rem; background:url(/static/img/std_eng_abrd/us/bnr_usa.jpg) no-repeat 0 0; background-size:cover; overflow:hidden;}
+.usa_title p {font-size:4.8rem; font-weight:700; color:#fff;}
+
+/* 미국지도영역 */
+.usa .image_map_wrap {background-color:#E8F3FF;}
+.usa .image_map_wrap .canada_map {max-width:1234px; margin-top:-7rem;}
+.usa .image_map_wrap .map_tit {color:#4E4E4E;}
+
+/* 주요도시탭 */
+.town_tab_wrap {padding:4.5rem 0 8rem; width:100%; max-width:1100px; margin:0 auto;}
+.town_tab_wrap button {border:none; position:relative;}
+.town_tab_wrap button::after {display:block; content:''; width:100%; height:100%; border-radius:2rem; border:.7rem solid #2E58FF; position:absolute; left:0; top:0; box-sizing:border-box; opacity:0; transition:opacity .2s;}
+.town_tab_wrap button:hover::after {opacity:1;}
+.town_tab_wrap .town_tit {text-align:center; font-size:3.2rem; font-weight:700; line-height:2.188em; color:#4e4e4e; margin-bottom:3rem;}
+.town_tab_wrap .tab_box {display:flex;}
+.usa_tab_area {width:24.8rem; height:32rem; border-radius:2rem; overflow:hidden;}
+.usa_tab_area .usa_tab {display:flex; align-items:center; justify-content:flex-end; flex-direction:column; width:100%; height:100%; padding-bottom:2.2rem; background:url(/static/img/std_eng_abrd/us/bg_usa.jpg) no-repeat 0 0; background-size:cover; color:#fff; text-align:center; font-size:3.2rem; line-height:1.25em; font-weight:700; box-sizing:border-box;}
+.usa_tab_area .usa_tab span {display:block;}
+.town_tab_area {flex:1; display:flex; flex-wrap:wrap; margin-top:-2rem;}
+.town_tab_area .town_tab {background-position:0 0; background-repeat:no-repeat; background-size:cover; margin-left:2.3rem; margin-top:2rem; width:calc(25% - 2.3rem); height:15rem; display:flex; align-items:center; justify-content:center; flex-direction:column; color:#fff; font-size:2.4rem; font-weight:700; line-height:1.333em; border-radius:2rem; overflow:hidden;}
+.town_tab_area .town_tab span {display:block;}
+.town_tab_area .town_tab.none {background-color:#eee; cursor:auto;}
+.town_tab_area .town_tab.none::after {display:none;}
+.town_tab_area .town_tab.ny {background-image:url(/static/img/std_eng_abrd/us/bg_ny.jpg);}
+.town_tab_area .town_tab.bs {background-image:url(/static/img/std_eng_abrd/us/bg_bs.jpg);}
+.town_tab_area .town_tab.la {background-image:url(/static/img/std_eng_abrd/us/bg_la.jpg);}
+.town_tab_area .town_tab.sd {background-image:url(/static/img/std_eng_abrd/us/bg_sd.jpg);}
+.town_tab_area .town_tab.se {background-image:url(/static/img/std_eng_abrd/us/bg_se.jpg);}
+.town_tab_area .town_tab.cha{background-image:url(/static/img/std_eng_abrd/us/bg_cha.jpg);}
+.town_tab_area .town_tab.sf {background-image:url(/static/img/std_eng_abrd/us/bg_sf.jpg);}
+
+/* 주요도시소개 */
+.town_intro_wrap {width:100%; max-width:1100px; margin:0 auto; padding-bottom:6rem;}
+.town_intro_wrap .tw_intro {display:none; box-sizing:border-box; border:.2rem solid #d9d9d9; border-radius:2rem; background-color:#fff; padding:3.2rem 3rem;}
+.town_intro_wrap .tw_intro .intro_tit {color:#2e58ff; font-weight:700; font-size:2.4rem; line-height:2.333em; margin-bottom:1.1rem;}
+.town_intro_wrap .tw_intro .sub_tit {color:#2e58ff; font-weight:700; font-size:2rem; line-height:1.3em; margin-bottom:.8rem;}
+.town_intro_wrap .tw_intro .txt {color:#4e4e4e; font-size:1.4rem; line-height:1.429em; margin-bottom:2rem;}
+.town_intro_wrap .tw_intro ul {margin-bottom:1rem;}
+.town_intro_wrap .tw_intro ul li {font-size:1.6rem; color:#4e4e4e; font-weight:500; line-height:1.625em;}
+.town_intro_wrap .tw_intro.usa .intro_tit {color:#4e4e4e; padding-left:5.8rem; background:url(/static/img/std_eng_abrd/us/usa.png) no-repeat left center; background-size:4.6rem 2.7rem;}
+
+/* 학원설명 */
+.acad_list {margin-top:2rem;}
+.acad_list .acad_group button {border:none;}
+.acad_group {display:flex;}
+.acad_group ~ .acad_group {margin-top:5.6rem;}
+.acad_group .img_area {width:18rem;}
+.acad_group .img_area button {height:auto;}
+.acad_group .img_area .acad_pop_btn:hover .name {background-color:#2e58ff; color:#fff;}
+.acad_group .img_area .logo_img {height:18rem; width:100%;}
+.acad_group .img_area .logo_img img {display:block; width:100%; height:100%;}
+.acad_group .img_area .name {padding:0 .5rem; text-align:center; display:flex; align-items:center; justify-content:center; box-sizing:border-box; width:100%; height:5rem; border-radius:1rem; background-color:#F2F8FF; color:#4e4e4e; font-size:1.4rem; line-height:1.214em; font-weight:700; transition:background-color .2s, color .2s;}
+.acad_group .acad_info {flex:1;}
+.acad_group .acad_info .info_tit {margin-left:2rem; font-size:2rem; font-weight:700; color:#4e4e4e; line-height:2em;}
+.acad_group .acad_info .info_tit ~ .info_tit {margin-top:3rem;}
+.acad_group .acad_info .acad_tab_wrap {display:flex; flex-wrap:wrap;}
+.acad_group .acad_info .acad_tab_wrap .acad_tab {width:calc(25% - 2rem); margin:1.2rem 0 0 2rem; font-size:1.5rem; font-weight:700; line-height:1.2em; color:#4e4e4e; background: #F2F8FF; border-radius: 1rem; transition:background-color .2s, color .2s;}
+.acad_group .acad_info .acad_tab_wrap .acad_tab:hover {background-color:#2e58ff; color:#fff;}
+.acad_group .acad_info .acad_txt {margin:.9rem 0 0 2rem; min-height:20rem; box-sizing:border-box; background: #F2F8FF; border-radius: 1rem; padding:2rem 1rem;}
+.acad_group .acad_info .acad_txt p {font-size:1.5rem; color:#4e4e4e; line-height:1.4em;}
+
+/* ============================================ << 미국 :어학연수 학교찾기 상세 >> ================================================ */
+#container.usa_cont {padding-bottom:6.6rem;}
+
+/* 뒤로가기버튼 */
+.btn_back {position:absolute; left:-14.4rem; top:0; padding-left:5rem; display:inline-block; background:url(/static/img/std_eng_abrd/us/arr_left_blue.png) no-repeat left center; background-size:5rem 5rem;}
+.btn_back span {color:#4e4e4e; font-size:2rem; line-height:2.5em; display:block; width:9.4rem; text-align:center;}
+
+/* 왜 미국에서 영어를 배우나요? */
+.detail_usa {width:100%; max-width:1072px; margin: 0 auto; position:relative;}
+.detail_usa .tit_box {display:flex; justify-content:center;}
+.detail_usa .tit_box p {font-size:3.2rem; font-weight:700; color:#fff; background-color:#2e58ff; border-radius: 1rem; padding:.5rem 5rem;}
+.detail_usa .bdr_txt_box {margin-top:5rem; padding:3.4rem 0; border-top:.1rem solid #eee; border-bottom:.1rem solid #eee; width:100%; text-align:center;}
+.detail_usa .bdr_txt_box .tit {color:#705537; font-size:2rem; font-weight:700; line-height:1.3em;}
+.detail_usa .bdr_txt_box .sub_txt {color:#705537; font-size:1.7rem; line-height:1.3em; margin-top:2.4rem;}
+.res_list_wrap {padding:6.6rem 4.8rem 8rem 4.8rem; margin-bottom:5rem; border-bottom:.3rem solid #eee;}
+.res_list_wrap .list {display:flex;}
+.res_list_wrap .list ~ .list {margin-top:6rem;}
+.res_list_wrap .list .img_area {margin-top:1.4rem; width:38rem;}
+.res_list_wrap .list .img_area img {display:block; width:100%; height:auto; border-radius:7rem 1rem; overflow:hidden;}
+.res_list_wrap .list .txt_area {margin-left:3.4rem; flex:1;}
+.res_list_wrap .list .txt_area .tit_area {display:flex; align-items:center; margin-left:-.9rem;}
+.res_list_wrap .list .txt_area .tit_area .num {display:block; width:5.5rem; height:5.5rem; color:#2e58ff; line-height:1.719em; font-size:3.2rem; font-weight:700; text-align:center;}
+.res_list_wrap .list .txt_area .tit_area .tit {font-size:2rem; font-weight:700; color:#4e4e4e; margin-left:1.8rem;}
+.res_list_wrap .list .txt_area .txt {margin-top:.8rem; font-size:1.5rem; line-height:1.733em;}
+.res_list_wrap .list .txt_area ul li .sub_txt {font-size:1.5rem; font-weight:500; line-height:2.667em;}
+.res_list_wrap .list .txt_area ul li .des_txt {font-size:1.2rem; line-height:1.667em; margin-left:2rem;}
+
+/* 추천프로그램 */
+.rec_pro_wrap {margin: 0 auto 6rem; max-width: 665px; padding:0 2rem;}
+.rec_pro_wrap .rec_pro_tit {color:#4e4e4e; font-size:2.4rem; font-weight:700; line-height:1.083em; text-align:center; margin-bottom:4rem;}
+.rec_pro_slide {max-width: 645px; width:100%; margin: 0 auto; overflow:hidden;}
+.rec_pro_slide .rec_pro a {display:block; width:200px; height:200px; border-radius:1rem;}
+.rec_pro_slide .btn_arrow {width:30px; height:30px; background-position:0 0; background-repeat:no-repeat; background-size:30px 30px; cursor:pointer;}
+.rec_pro_slide .btn_arr_wrap {margin-top:13px; display:flex; align-items:center; justify-content:center;}
+.rec_pro_slide .btn_arrow.prev {background-image:url(/static/img/std_eng_abrd/us/btn_arr_left.png);}
+.rec_pro_slide .btn_arrow.next {background-image:url(/static/img/std_eng_abrd/us/btn_arr_right.png); margin-left:15px;}
+
+/* 모달 팝업 */
+.pop_detail{display: none; position: fixed;top: 50%;left: 50%; -webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);z-index: 9999;width: 90%;max-width: 900px;max-height: 85vh; background-color: #fff;border-radius: 2rem;}
+.pop_detail .cotn {margin:2rem 0 3rem; padding:0 2rem; overflow-y: auto; max-height: calc(85vh - 5rem);}
+.pop_detail .pop_title, .pop_detail .sec_tit{display: flex;justify-content: center;align-items: center;width: 23rem;height: 4rem;border-radius: 1rem;line-height: 1.2em;font-weight: 700;}
+.pop_detail .pop_title{background-color: #f2f8ff;font-size: 2rem;color: #2e58ff;}
+.pop_detail .pop_title + .sec_wrap{margin-top: 3rem;}
+.pop_detail .sec_wrap + .sec_wrap{margin-top: 2rem;}
+.pop_detail .sec_wrap .sec_tit{margin-bottom: 2rem;background-color: #2e58ff;font-size: 1.5rem;color: #fff;}
+.pop_detail .sec_wrap .sec_des_box{padding: 2rem;border-radius: 1rem;background-color: #f2f8ff;}
+.pop_detail .sec_wrap .sec_des_box p{font-size: 1.6rem;line-height: 1.25em;}
+.pop_detail .sec_wrap .sec_table{overflow: hidden;border-radius: 1rem;border: .1rem solid #4E4E4E;}
+.pop_detail .sec_wrap .sec_table table{border-style: hidden;}
+.pop_detail .sec_wrap .sec_table th, .pop_detail .sec_wrap .sec_table td{padding: 1.5rem 1rem;border: .1rem solid #4e4e4e;vertical-align: middle;}
+.pop_detail .sec_wrap .sec_table thead th{background-color: #f2f8ff;font-size: 1.6rem;line-height: 1.2em;font-weight: 700;text-align: center;}
+.pop_detail .sec_wrap .sec_table td{font-size: 1.6rem;line-height: 1.25em;font-weight: 500;text-align: center;}
+
+@media all and (max-width:1400px) {
+	.btn_back {left:1rem;}
+}
+
 @media all and (max-width:1240px) {
 	/* ============================================ << 캐나다 :국제사립학교 >> ================================================ */
 	.academy_content .cotn {padding-left:2rem; padding-right:2rem;}
