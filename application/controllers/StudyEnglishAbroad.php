@@ -36,5 +36,10 @@ class StudyEnglishAbroad extends CI_Controller {
 		$details = $this->school_model->getProgramDetail($idx);
 		echo json_encode($details);
 	}
+
+	//왜 미국 영어 페이지 호출
+	public function whyStudyEngUs(){
+		$this->load->view('stdEngAbrd/whyStudyEngUs');
+	}
 }
 
