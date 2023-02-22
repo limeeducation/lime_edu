@@ -42,7 +42,7 @@ class StudyEnglishAbroad extends CI_Controller {
 		$idx = $this->input->post('idx');
 		$aca_idx = $this->input->post('aca_idx');
 		$details = $this->school_model->getDormitoryDetail($idx);
-		$details['intro'] = $this->school_model->getSchoolIntro($aca_idx);
+		$details['intro'] = $this->school_model->getSchoolIntro($aca_idx)[0];
 		echo json_encode($details);
 	}
 
