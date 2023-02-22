@@ -7,9 +7,27 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
 <body>
-    <script type="text/javascript">
-
-    </script>
+	<script type="text/javascript">
+		function showProgramDetail(idx,school,city){
+			$.ajax({
+				type: "post",
+				url: "/studyEnglishAbroad/apiGetProgramDetail",
+				async: true,
+				data: {
+					"idx": idx
+				},
+				dataType: "text",
+				success: function(data){
+					var details = JSON.parse(data);
+					console.log(details);
+				}error: function(data){
+					alert("잠시 후 다시 시도해주세요.");
+				}
+			});
+			//$('.pop_cur').fadeIn(200);
+			//dimShow();
+		}
+	</script>
 	<div id="wrap">
 	<?php
     include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header.php');
@@ -315,27 +333,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div>
 				</section>
 				<!--// 학교소개 모달팝업 -->
-<script type="text/javascript">
-	function showProgramDetail(idx,school,city){
-		$.ajax({
-			type: "post",
-			url: "/studyEnglishAbroad/apiGetProgramDetail",
-			async: true,
-			data: {
-				"idx": idx
-			},
-			dataType: "text",
-			success: function(data){
-				var details = JSON.parse(data);
-				console.log(details);
-			}error: function(data){
-				alert("잠시 후 다시 시도해주세요.");
-			}
-		});
-		//$('.pop_cur').fadeIn(200);
-        //dimShow();
-	}
-</script>
+
 				<!-- 커리큘럼상세 모달팝업 -->
 				<section class="pop_detail cs_pop pop_cur"><!-- 커리큘럼상세 모달팝업 class="pop_cur" 추가 -->
 					<div class="cotn">
