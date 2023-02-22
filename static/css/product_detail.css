@@ -414,6 +414,7 @@
 
 /* ============================================ << 영국 :조기유학 학교찾기 >> ================================================ */
 
+.uk {margin-bottom:15rem;}
 /* 영국조기유학프로그램탭 */
 .uk .pro_selet .pro_group {width:calc(33.33% - 7.6rem);}
 .uk .pro_selet .pro_btn_wrap .pro_group ~ .pro_group {margin-left:11.4rem;}
