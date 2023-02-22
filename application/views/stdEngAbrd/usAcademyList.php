@@ -8,7 +8,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/product_detail.js"></script>
 <body>
     <script type="text/javascript">
-
+		function showSchool(area){
+			$(".acad_group").hide();
+			if(school == 'all'){
+				$(".acad_group").show();
+			}else{
+				$("."+area).show();
+			}
+		}
     </script>
 	<div id="wrap">
 	<?php
@@ -33,13 +40,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 					<!-- 이미지맵 링크 -->
 					<map name="image-map">
-						<area target="" class="tw_chg" open-layer="ny" alt="뉴욕" title="뉴욕" href="" coords="886,60,61" shape="circle">
-						<area target="" class="tw_chg" open-layer="bs" alt="보스턴" title="보스턴" href="" coords="1107,276,60" shape="circle">
-						<area target="" class="tw_chg" open-layer="la" alt="로스앤젤리스" title="로스앤젤리스" href="" coords="320,634,61" shape="circle">
-						<area target="" class="tw_chg" open-layer="sd" alt="샌디에이고" title="샌디에이고" href="" coords="394,437,59" shape="circle">
-						<area target="" class="tw_chg" open-layer="se" alt="시애틀" title="시애틀" href="" coords="67,96,60" shape="circle">
-						<area target="" class="tw_chg" open-layer="cha" alt="시카고" title="시카고" href="" coords="639,227,61" shape="circle">
-						<area target="" class="tw_chg" open-layer="sf" alt="샌프란시스코" title="샌프란시스코" href="" coords="62,511,63" shape="circle">
+						<area target="" class="tw_chg" open-layer="ny" alt="뉴욕" title="뉴욕" href="javascript:showSchool('New York');" coords="886,60,61" shape="circle">
+						<area target="" class="tw_chg" open-layer="bs" alt="보스턴" title="보스턴" href="javascript:showSchool('Boston');" coords="1107,276,60" shape="circle">
+						<area target="" class="tw_chg" open-layer="la" alt="로스앤젤리스" title="로스앤젤리스" href="javascript:showSchool('Los Angeles');" coords="320,634,61" shape="circle">
+						<area target="" class="tw_chg" open-layer="sd" alt="샌디에이고" title="샌디에이고" href="javascript:showSchool('San Diego');" coords="394,437,59" shape="circle">
+						<area target="" class="tw_chg" open-layer="se" alt="시애틀" title="시애틀" href="javascript:showSchool('Seattle');" coords="67,96,60" shape="circle">
+						<area target="" class="tw_chg" open-layer="cha" alt="시카고" title="시카고" href="javascript:showSchool('Chicago');" coords="639,227,61" shape="circle">
+						<area target="" class="tw_chg" open-layer="sf" alt="샌프란시스코" title="샌프란시스코" href="javascript:showSchool('San Francisco');" coords="62,511,63" shape="circle">
 					</map>
 					<!--// 이미지맵 링크 -->
 				</div>
@@ -65,31 +72,31 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								시카고 class="cha"
 								샌프란시스코 class="sf"
 							-->
-							<button type="button" class="town_tab tw_chg ny" open-layer="ny">
+							<button type="button" class="town_tab tw_chg ny" open-layer="ny" onclick="showSchool('New York');">
 								<strong>New York</strong>
 								<span>뉴욕</span>
 							</button>
-							<button type="button" class="town_tab tw_chg bs" open-layer="bs">
+							<button type="button" class="town_tab tw_chg bs" open-layer="bs" onclick="showSchool('Boston');">
 								<strong>Boston</strong>
 								<span>보스턴</span>
 							</button>
-							<button type="button" class="town_tab tw_chg la" open-layer="la">
+							<button type="button" class="town_tab tw_chg la" open-layer="la" onclick="showSchool('Los Angeles');">
 								<strong>Los Angeles</strong>
 								<span>로스앤젤리스</span>
 							</button>
-							<button type="button" class="town_tab tw_chg sd" open-layer="sd">
+							<button type="button" class="town_tab tw_chg sd" open-layer="sd" onclick="showSchool('San Diego');">
 								<strong>San Diego</strong>
 								<span>샌디에이고</span>
 							</button>
-							<button type="button" class="town_tab tw_chg se" open-layer="se">
+							<button type="button" class="town_tab tw_chg se" open-layer="se" onclick="showSchool('Seattle');">
 								<strong>Seattle</strong>
 								<span>시애틀</span>
 							</button>
-							<button type="button" class="town_tab tw_chg cha" open-layer="cha">
+							<button type="button" class="town_tab tw_chg cha" open-layer="cha" onclick="showSchool('Chicago');">
 								<strong>Chicago</strong>
 								<span>시카고</span>
 							</button>
-							<button type="button" class="town_tab tw_chg sf" open-layer="sf">
+							<button type="button" class="town_tab tw_chg sf" open-layer="sf" onclick="showSchool('San Francisco');">
 								<strong>San Francisco</strong>
 								<span>샌프란시스코</span>
 							</button>
@@ -208,12 +215,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!-- 목록 -->
 					<div class="acad_list">
 						<?php foreach($school_list as $school) : ?>
-						<div class="acad_group">
+						<div class="acad_group <?= $school->city_name;?>">
 							<!-- 왼쪽이미지영역 -->
 							<div class="img_area">
 								<button type="button" class="acad_pop_btn">
 									<figure class="logo_img">
-										<img src="<?= $school->logo_url;?>" alt="EF Academy New York">
+										<img src="<?= $school->logo_url;?>" alt="<?= $school->logo_url;?>">
 									</figure>
 									<span class="name"><?= $school->aca_name;?><br><?= $school->city_name;?></span>
 								</button>
@@ -250,11 +257,62 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!--// 페이징 -->
 				</div>
 				<!--// 학원 설명 -->
-
+<script type="text/javascript">
+	function showProgramDetail(idx,school,city){
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetProgramDetail",
+			async: true,
+			data: {
+				"idx": idx
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				//console.log(details);
+				//console.log(details[0]);
+				//console.log(details[0].pro_class_week);
+				$("#city_name").empty();
+				$("#city_name").append(school+"-"+city);
+				$("#curr_name").empty();
+				$("#curr_name").append(details[0].pro_name);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+		//$('.pop_cur').fadeIn(200);
+        //dimShow();
+	}
+	function showSchoolDetail(idx,school,city){
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetProgramDetail",
+			async: true,
+			data: {
+				"idx": idx
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				//console.log(details);
+				//console.log(details[0]);
+				//console.log(details[0].pro_class_week);
+				$("#city_name").empty();
+				$("#city_name").append(school+"-"+city);
+				$("#curr_name").empty();
+				$("#curr_name").append(details[0].pro_name);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+		//$('.pop_intro').fadeIn(200);
+        //dimShow();
+	}
+</script>
 				<!-- 학교소개 모달팝업 -->
 				<section class="pop_detail cs_pop pop_intro"><!-- 학교소개 모달팝업 class="pop_intro" 추가 -->
 					<div class="cotn">
-						<h2 class="pop_title">US-EF-New York</h2>
+						<h2 class="pop_title">EF-New York</h2>
 
 						<!-- 학교소개 -->
 						<div class="sec_wrap">
@@ -315,33 +373,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div>
 				</section>
 				<!--// 학교소개 모달팝업 -->
-<script type="text/javascript">
-	function showProgramDetail(idx,school,city){
-		$.ajax({
-			type: "post",
-			url: "/studyEnglishAbroad/apiGetProgramDetail",
-			async: true,
-			data: {
-				"idx": idx
-			},
-			dataType: "text",
-			success: function(data){
-				var details = JSON.parse(data);
-				console.log(details);
-				console.log(details[0]);
-				console.log(details[0].pro_class_week);
-				//$("#city_name").empty();
-				//$("#city_name").append(school+"-"+city);
-				//$("#curr_name").empty();
-				//$("#curr_name").append(details);
-			},error: function(data){
-				alert("잠시 후 다시 시도해주세요.");
-			}
-		});
-		//$('.pop_cur').fadeIn(200);
-        //dimShow();
-	}
-</script>
 				<!-- 커리큘럼상세 모달팝업 -->
 				<section class="pop_detail cs_pop pop_cur"><!-- 커리큘럼상세 모달팝업 class="pop_cur" 추가 -->
 					<div class="cotn">
