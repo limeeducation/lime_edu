@@ -46,7 +46,7 @@ class School_model extends CI_Model
 		$this->db->select('dorm_bath');
 		$this->db->select('dorm_distance_school');
 		$this->db->from('en_city_dorm');
-		$this->db->where('idx', $idx);
+		$this->db->where('en_aca_city_idx', $idx);
 		return $this->db->get()->result_array();
 	}
 
