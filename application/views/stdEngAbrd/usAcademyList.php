@@ -317,6 +317,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#dorm_details").append(html);
 				console.log(html);
 				console.log(details);
+				console.log(details.length);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
