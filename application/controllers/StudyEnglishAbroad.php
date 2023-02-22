@@ -19,6 +19,9 @@ class StudyEnglishAbroad extends CI_Controller {
 	//조기유학 미국 학교찾기
 	public function usAcademyList(){
 		$school_list = $this->school_model->getSchool('US');
+		foreach($school_list as $school){
+			print_r($school);
+		}
 		print_r($school_list);
 		$this->load->view('earlyAbroad/usaSchoolList');
 	}
