@@ -302,6 +302,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#pop_school_name").append(school+"-"+city);
 				$("#pop_school_intro").empty();
 				$("#pop_school_intro").append(details['intro'].aca_intro);
+
+				//숙소 입력 전 학교소개 삭제
+				details.pop();
+
+				//숙소 내용 입력
+				var html = "";
+				for(var i = 0; i < details.length; i++){
+					html += "<tr>";
+					html += "<td>"+details[i].dorm_type+"</td>";
+					html += "<td>"+details[i].dorm_bed_meal+"</td>";
+					html += "<td>"+details[i].dorm_bath+"</td>";
+					html += "<td>"+details[i].dorm_distance_school+"</td>";
+					html += "</tr>";
+				}
+				$("#dorm_details").append(html);
 				console.log(details);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
@@ -333,38 +348,23 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="sec_table">
 								<table>
 									<colgroup>
-										<col width="33.33%">
-										<col width="33.33%">
-										<col width="33.33%">
+										<col width="25%">
+										<col width="25%">
+										<col width="25%">
+										<col width="25%">
 									</colgroup>
 									<thead>
 										<tr>
 											<th>Type</th>
 											<th>Bed & Meal</th>
 											<th>Bathroom</th>
+											<th>Distance to School</th>
 										</tr>
 									</thead>
-									<tbody>
+									<tbody id="dorm_details">
 										<tr>
-											<td rowspan="2">Homestay<br>홈스테이</td>
+											<td>Homestay<br>홈스테이</td>
 											<td>1인실/아침,저녁</td>
-											<td>공동욕실</td>
-										</tr>
-										<tr>
-											<td>2인실/아침,저녁</td>
-											<td>공동욕실</td>
-										</tr>
-										<tr>
-											<td rowspan="3">On-Site Dorm<br>내부기숙사</td>
-											<td>1인실/아침,저녁</td>
-											<td>공동욕실</td>
-										</tr>
-										<tr>
-											<td>2인실/아침,저녁</td>
-											<td>공동욕실</td>
-										</tr>
-										<tr>
-											<td>3~4인실/아침,저녁</td>
 											<td>공동욕실</td>
 										</tr>
 									</tbody>
