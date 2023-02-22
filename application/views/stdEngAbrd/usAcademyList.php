@@ -302,22 +302,19 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#pop_school_name").append(school+"-"+city);
 				$("#pop_school_intro").empty();
 				$("#pop_school_intro").append(details['intro'].aca_intro);
-
+				var details_arr = Object.entries(details);
 				//숙소 내용 입력
 				var html = "";
 				//마지막 인덱스에 학교소개 들어감으로 제거 후 숙소 정보 입력
 				for(var i = 0; i < details.length-1; i++){
 					html += "<tr>";
-					html += "<td>"+details[i].dorm_type+"</td>";
-					html += "<td>"+details[i].dorm_bed_meal+"</td>";
-					html += "<td>"+details[i].dorm_bath+"</td>";
-					html += "<td>"+details[i].dorm_distance_school+"</td>";
+					html += "<td>"+details[i][1].dorm_type+"</td>";
+					html += "<td>"+details[i][1].dorm_bed_meal+"</td>";
+					html += "<td>"+details[i][1].dorm_bath+"</td>";
+					html += "<td>"+details[i][1].dorm_distance_school+"</td>";
 					html += "</tr>";
 				}
 				$("#dorm_details").append(html);
-				console.log(html);
-				console.log(details);
-				console.log(details.length);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
