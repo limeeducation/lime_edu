@@ -230,7 +230,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<p class="info_tit">학교소개</p>
 								<div class="acad_txt">
-									<p><?= $school->aca_intro;?></p>
+									<p><?= mb_strimwidth($school->aca_intro, '0', '35', '...', 'utf-8');?></p>
 								</div>
 							</div>
 							<!--// 오른쪽설명영역 -->
