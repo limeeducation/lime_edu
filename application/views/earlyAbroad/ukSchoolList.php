@@ -26,7 +26,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="pro_group on"><!-- 활성화시 class="on"추가 -->
 								<a href="/earlyAbroad/ukSchoolList">
 									<figure class="pro_img">
-										<img src="images/detail/icon_pro_05.png" alt="조기유학 학교찾기">
+										<img src="/static/img/early_abroad/uk/ico_btn_list_ico1.png" alt="조기유학 학교찾기">
 									</figure>
 									<span class="menu_txt">조기유학 학교찾기</span>
 								</a>
@@ -34,7 +34,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="pro_group">
 								<a href="/earlyAbroad/whyEarlyUk">
 									<figure class="pro_img">
-										<img src="images/detail/icon_pro_06.png" alt="">
+										<img src="/static/img/early_abroad/uk/ico_btn_list_ico2.png" alt="">
 									</figure>
 									<span class="menu_txt">왜 조기유학인가?</span>
 								</a>
@@ -42,7 +42,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="pro_group">
 								<a href="/earlyAbroad/ukTopSchools">
 									<figure class="pro_img">
-										<img src="images/detail/icon_pro_07.png" alt="">
+										<img src="/static/img/early_abroad/uk/ico_btn_list_ico3.png" alt="">
 									</figure>
 									<span class="menu_txt">명문 TOP 100</span>
 								</a>
@@ -54,7 +54,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!-- 영국지도 -->
 					<div class="image_map_wrap">
 						<h2 class="map_tit">영국</h2>
-						<img src="images/detail/map_uk.png" class="canada_map" usemap="#image-map">
+						<img src="/static/img/early_abroad/uk/map_uk.png" class="canada_map" usemap="#image-map">
 
 						<!-- 이미지맵 링크 -->
 						<map name="image-map">
@@ -143,7 +143,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
-										<img src="images/detail/logo_ccoex.png" alt="Cardiff Sxith Form College">
+										<img src="/static/img/early_abroad/uk/logo_ccoex.png" alt="Cardiff Sxith Form College">
 									</figure>
 									<p class="name">Cardiff Sxith Form College</p>
 								</div>
@@ -196,7 +196,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
-										<img src="images/detail/logo_abbey.png" alt="Abbey College">
+										<img src="/static/img/early_abroad/uk/logo_abbey.png" alt="Abbey College">
 									</figure>
 									<p class="name">Abbey College</p>
 								</div>
@@ -249,7 +249,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
-										<img src="images/detail/logo_concord.png" alt="Concord College">
+										<img src="/static/img/early_abroad/uk/logo_concord.png" alt="Concord College">
 									</figure>
 									<p class="name">Concord College</p>
 								</div>
@@ -303,7 +303,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
-										<img src="images/detail/logo_mpw.png" alt="MPW">
+										<img src="/static/img/early_abroad/uk/logo_mpw.png" alt="MPW">
 									</figure>
 									<p class="name">MPW</p>
 								</div>
@@ -357,7 +357,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
-										<img src="images/detail/logo_oxford.png" alt="Oxford Sixth Form College">
+										<img src="/static/img/early_abroad/uk/logo_oxford.png" alt="Oxford Sixth Form College">
 									</figure>
 									<p class="name">Oxford Sixth Form College</p>
 								</div>
