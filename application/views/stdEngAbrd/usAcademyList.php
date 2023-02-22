@@ -72,7 +72,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								시카고 class="cha"
 								샌프란시스코 class="sf"
 							-->
-							<button type="button" class="town_tab tw_chg ny" open-layer="ny" onclick="showSchool('New York');">
+							<button type="button" class="town_tab tw_chg ny" open-layer="ny" onclick="showSchool('NewYork');">
 								<strong>New York</strong>
 								<span>뉴욕</span>
 							</button>
@@ -80,11 +80,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<strong>Boston</strong>
 								<span>보스턴</span>
 							</button>
-							<button type="button" class="town_tab tw_chg la" open-layer="la" onclick="showSchool('Los Angeles');">
+							<button type="button" class="town_tab tw_chg la" open-layer="la" onclick="showSchool('LosAngeles');">
 								<strong>Los Angeles</strong>
 								<span>로스앤젤리스</span>
 							</button>
-							<button type="button" class="town_tab tw_chg sd" open-layer="sd" onclick="showSchool('San Diego');">
+							<button type="button" class="town_tab tw_chg sd" open-layer="sd" onclick="showSchool('SanDiego');">
 								<strong>San Diego</strong>
 								<span>샌디에이고</span>
 							</button>
@@ -96,7 +96,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<strong>Chicago</strong>
 								<span>시카고</span>
 							</button>
-							<button type="button" class="town_tab tw_chg sf" open-layer="sf" onclick="showSchool('San Francisco');">
+							<button type="button" class="town_tab tw_chg sf" open-layer="sf" onclick="showSchool('SanFrancisco');">
 								<strong>San Francisco</strong>
 								<span>샌프란시스코</span>
 							</button>
@@ -215,7 +215,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!-- 목록 -->
 					<div class="acad_list">
 						<?php foreach($school_list as $school) : ?>
-						<div class="acad_group <?= $school->city_name;?>">
+						<div class="acad_group <?= str_replace(' ', '', $school->city_name);?>">
 							<!-- 왼쪽이미지영역 -->
 							<div class="img_area">
 								<button type="button" class="acad_pop_btn">
