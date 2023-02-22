@@ -37,6 +37,13 @@ class StudyEnglishAbroad extends CI_Controller {
 		echo json_encode($details);
 	}
 
+	//숙소 정보 상세 호출 api
+	public function apiGetDormitoryDetail(){
+		$aca_idx = $this->input->post('idx');
+		$details = $this->school_model->getDormitoryDetail($aca_idx);
+		echo json_encode($details);
+	}
+
 	//왜 미국 영어 페이지 호출
 	public function whyStudyEngUs(){
 		$this->load->view('stdEngAbrd/whyStudyEngUs');

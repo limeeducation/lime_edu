@@ -220,7 +220,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="acad_group <?= str_replace(' ', '', $school->city_name);?>">
 							<!-- 왼쪽이미지영역 -->
 							<div class="img_area">
-								<button type="button" class="acad_pop_btn">
+								<button type="button" class="acad_pop_btn" onclick="showSchoolDetail('<?= $school->en_aca_city_idx;?>');">
 									<figure class="logo_img">
 										<img src="<?= $school->logo_url;?>" alt="<?= $school->logo_url;?>">
 									</figure>
@@ -239,7 +239,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<p class="info_tit">학교소개</p>
 								<div class="acad_txt">
-									<p><?= $school->aca_intro;?></p>
+									<p id="school_intro_<?= $school->en_aca_city_idx;?>"><?= $school->aca_intro;?></p>
 								</div>
 							</div>
 							<!--// 오른쪽설명영역 -->
@@ -285,10 +285,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		//$('.pop_cur').fadeIn(200);
         //dimShow();
 	}
-	function showSchoolDetail(idx,school,city){
+	function showSchoolDetail(idx){
+		var intro = $("#school_intro_"+idx).innerText;
 		$.ajax({
 			type: "post",
-			url: "/studyEnglishAbroad/apiGetProgramDetail",
+			url: "/studyEnglishAbroad/apiGetDormitoryDetail",
 			async: true,
 			data: {
 				"idx": idx
@@ -296,13 +297,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			dataType: "text",
 			success: function(data){
 				var details = JSON.parse(data);
-				//console.log(details);
-				//console.log(details[0]);
-				//console.log(details[0].pro_class_week);
-				$("#city_name").empty();
-				$("#city_name").append(school+"-"+city);
-				$("#curr_name").empty();
-				$("#curr_name").append(details[0].pro_name);
+				$("#pop_school_name").empty();
+				$("#pop_school_name").append(school+"-"+city);
+				$("#pop_school_intro").empty();
+				$("#pop_school_intro").append(intro);
+				console.log(details);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -314,13 +313,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<!-- 학교소개 모달팝업 -->
 				<section class="pop_detail cs_pop pop_intro"><!-- 학교소개 모달팝업 class="pop_intro" 추가 -->
 					<div class="cotn">
-						<h2 class="pop_title">EF-New York</h2>
+						<h2 class="pop_title" id="pop_school_name">EF-New York</h2>
 
 						<!-- 학교소개 -->
 						<div class="sec_wrap">
 							<h3 class="sec_tit">학교소개</h3>
 							<div class="sec_des_box">
-								<p>
+								<p id="pop_school_intro">
 									EF 뉴욕센터는 대부분의 어학원이 밀집해 있는 뉴욕 맨하튼 다운타운에서 벗어나 안전한 주거지역인 테리타운에 위치해 있습니다. 대학캠퍼스를 그대로 인수하여 전체 11개의 건물과 확 트인 녹지가 특징인 25 에이커에 달하는 교정은 마치 미국의 유명 대학에서 공부하는 것같은 기분이 들게 합니다. 미국에서 가장 큰 사설학원 캠퍼스라는 명성에 걸맞게 연령대별로 나누어 배정되는 클라스와 기숙사 생활, 대형 강당, 수영장, 피트니스 센터 등 학생들에게 필요한 모든 것들을 캠퍼스 안에서 할 수 있는 몰입형 캠퍼스입니다.
 								</p>
 							</div>

@@ -40,6 +40,16 @@ class School_model extends CI_Model
 		return $this->db->get()->result_array();
 	}
 
+	public function getDormitoryDetail($idx){
+		$this->db->select('dorm_type');
+		$this->db->select('dorm_bed_meal');
+		$this->db->select('dorm_bath');
+		$this->db->select('dorm_distance_school');
+		$this->db->from('en_city_dorm');
+		$this->db->where('idx', $idx);
+		return $this->db->get()->result_array();
+	}
+
 }
 
 ?>
