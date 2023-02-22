@@ -7,7 +7,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/product_detail.js"></script>
 <body>
     <script type="text/javascript">
+		function showSchool(school){
+			$(".sc_group").hide();
+			if(school == 'all'){
+				$(".sc_group").show();
+			}else{
 
+			}
+		}
     </script>
 	<div id="wrap">
 	<?php
@@ -77,53 +84,53 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!-- 학교탭 -->
 					<div class="school_tab_wrap">
 						<div class="uk_tab_area">
-							<button type="button" class="uk_tab">
+							<button type="button" class="uk_tab" onclick="showSchool('all');">
 								<strong>영국</strong>
 								<span>United Kingdom</span>
 							</button>
 						</div>
 						<div class="city_tab_area">
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Cardiff');">
 								<strong>카디프</strong>
 								<span>Cardiff</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Shrewsbury');">
 								<strong>슈르지베리</strong>
 								<span>Shrewsbury</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Birmingham');">
 								<strong>버밍엄</strong>
 								<span>Birmingham</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('London');">
 								<strong>런던</strong>
 								<span>London</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Cambridge');">
 								<strong>캠브리지</strong>
 								<span>Cambridge</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Oxford');">
 								<strong>옥스포드</strong>
 								<span>Oxford</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Manchester');">
 								<strong>멘체스터</strong>
 								<span>Manchester</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('NorthHampton');">
 								<strong>노스햄튼</strong>
-								<span>Northampton</span>
+								<span>NorthHampton</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Bournemouth');">
 								<strong>본머스</strong>
 								<span>Bournemouth</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Brighton');">
 								<strong>브라이튼</strong>
 								<span>Brighton</span>
 							</button>
-							<button type="button" class="city_tab">
+							<button type="button" class="city_tab" onclick="showSchool('Canterbury');">
 								<strong>캔터버리</strong>
 								<span>Canterbury</span>
 							</button>
@@ -139,7 +146,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						<!-- 목록 -->
 						<div class="school_list">
-							<div class="sc_group">
+							<div class="sc_group Cardiff">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -192,7 +199,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group London Cambridge Manchester">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -216,7 +223,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</tr>
 											<tr>
 												<th>지역</th>
-												<td>London/ Cambridge/ Manchester</td>
+												<td>London / Cambridge / Manchester</td>
 											</tr>
 											<tr>
 												<th>홈페이지</th>
@@ -245,7 +252,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group Shrewbury">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -299,7 +306,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group London Cambridge Birmingham">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -323,7 +330,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</tr>
 											<tr>
 												<th>지역</th>
-												<td>London/ Cambridge / Birmingham</td>
+												<td>London / Cambridge / Birmingham</td>
 											</tr>
 											<tr>
 												<th>홈페이지</th>
@@ -353,7 +360,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group Oxford">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -406,7 +413,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group Oxford">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -460,7 +467,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group London Oxford Brighton Bournemouth">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -484,7 +491,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</tr>
 											<tr>
 												<th>지역</th>
-												<td>London/ Oxford/ Brigton/ Bournemouth</td>
+												<td>London / Oxford / Brighton / Bournemouth</td>
 											</tr>
 											<tr>
 												<th>홈페이지</th>
@@ -513,7 +520,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group Norwich">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -566,7 +573,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group London Cambridge Canterbury">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -590,7 +597,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</tr>
 											<tr>
 												<th>지역</th>
-												<td>London / Cambridge / Caterbury</td>
+												<td>London / Cambridge / Canterbury</td>
 											</tr>
 											<tr>
 												<th>홈페이지</th>
@@ -619,7 +626,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group Northhampton">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -673,7 +680,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group">
+							<div class="sc_group Bournemouth">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
