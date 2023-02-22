@@ -249,13 +249,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!--// 목록 -->
 
 					<!-- 페이징 -->
-					<div class="paging">
-						<a href="#none" class="btn_arr prev"></a>
-						<a href="#none" class="num on">1</a><!-- 현재페이지class="on"추가 -->
-						<a href="#none" class="num ">2</a>
-						<a href="#none" class="num ">3</a>
-						<a href="#none" class="btn_arr next"></a>
-					</div>
+					<!-- <div class="paging">-->
+					<!-- 	<a href="#none" class="btn_arr prev"></a>-->
+					<!-- 	<a href="#none" class="num on">1</a>--><!-- 현재페이지class="on"추가 -->
+					<!-- 	<a href="#none" class="num ">2</a>-->
+					<!-- 	<a href="#none" class="num ">3</a>-->
+					<!-- 	<a href="#none" class="btn_arr next"></a>-->
+					<!-- </div>-->
 					<!--// 페이징 -->
 				</div>
 				<!--// 학원 설명 -->
