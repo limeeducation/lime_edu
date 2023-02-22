@@ -301,7 +301,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#pop_school_name").empty();
 				$("#pop_school_name").append(school+"-"+city);
 				$("#pop_school_intro").empty();
-				$("#pop_school_intro").append(intro);
+				$("#pop_school_intro").append(details.intro);
 				console.log(details);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
