@@ -7,6 +7,10 @@ $(document).ready(function(){
 	$('.cs_form').length && csTabPolicy(); //개인정보 tab
 	$('.pro_btn_wrap').length && proBtn(); //캐나다 조기유학탭
 	$('.rec_tab').length && recBtn(); //프로그램 탭
+	$('.rec_pro').length && recSlide(); //추천프로그램 슬라이드
+	$('.tw_chg').length && twIntro(); //미국 주요도시소개
+	$('.acad_tab').length && popIntro(); //학교소개 모달팝업
+	$('.acad_pop_btn').length && popCur(); //커리큘럼상세 모달팝업
 });
 
 function csDatePick() {// 상담신청란 달력
