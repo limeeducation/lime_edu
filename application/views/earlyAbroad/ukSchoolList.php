@@ -626,7 +626,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 								<!--// 오른쪽테이블영역 -->
 							</div>
-							<div class="sc_group Northhampton">
+							<div class="sc_group NorthHampton">
 								<!-- 왼쪽이미지영역 -->
 								<div class="img_area">
 									<figure class="logo_img">
@@ -650,7 +650,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</tr>
 											<tr>
 												<th>지역</th>
-												<td>Northhampton</td>
+												<td>NorthHampton</td>
 											</tr>
 											<tr>
 												<th>홈페이지</th>
