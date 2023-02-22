@@ -315,6 +315,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					html += "</tr>";
 				}
 				$("#dorm_details").append(html);
+				console.log(html);
 				console.log(details);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
