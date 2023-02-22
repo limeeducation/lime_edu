@@ -306,12 +306,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				//숙소 내용 입력
 				var html = "";
 				//마지막 인덱스에 학교소개 들어감으로 제거 후 숙소 정보 입력
-				for(var i = 0; i < details.length-1; i++){
+				for(var i = 0; i < details_arr.length-1; i++){
 					html += "<tr>";
-					html += "<td>"+details[i][1].dorm_type+"</td>";
-					html += "<td>"+details[i][1].dorm_bed_meal+"</td>";
-					html += "<td>"+details[i][1].dorm_bath+"</td>";
-					html += "<td>"+details[i][1].dorm_distance_school+"</td>";
+					html += "<td>"+details_arr[i][1].dorm_type+"</td>";
+					html += "<td>"+details_arr[i][1].dorm_bed_meal+"</td>";
+					html += "<td>"+details_arr[i][1].dorm_bath+"</td>";
+					html += "<td>"+details_arr[i][1].dorm_distance_school+"</td>";
 					html += "</tr>";
 				}
 				$("#dorm_details").append(html);
