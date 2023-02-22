@@ -70,7 +70,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="/earlyAbroad/whyEarlyCa" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
+						<a href="/earlyAbroad/whyEarlyUk" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
 						<ul class="depth_list">
 							<li><a href="/earlyAbroad/ukSchoolList">조기유학 학교찾기</a></li>
 							<li><a href="/earlyAbroad/whyEarlyUk">왜 조기유학인가?</a></li>
@@ -198,7 +198,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="/earlyAbroad/whyEarlyCa" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
+									<a href="/earlyAbroad/whyEarlyUk" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
 									<ul class="depth_list">
 										<li><a href="/earlyAbroad/ukSchoolList">조기유학 학교찾기</a></li>
 										<li><a href="/earlyAbroad/whyEarlyUk">왜 조기유학인가?</a></li>
