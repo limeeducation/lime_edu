@@ -20,10 +20,11 @@ class StudyEnglishAbroad extends CI_Controller {
 	public function usAcademyList(){
 		$school_list = $this->school_model->getSchool('US');
 		foreach($school_list as $school){
+
 			print_r($school);
 			echo '<br>';
 
-			echo $school->aca_name;
+			echo $school->city_name . "/" . $school->aca_name;
 			echo '<br><br><br>';
 		}
 
