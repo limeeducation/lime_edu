@@ -8,6 +8,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/product_detail.js"></script>
 <body>
     <script type="text/javascript">
+
+    	function init() {
+        	circle_NewYork.onclick=showSchool('NewYork');
+        	circle_Boston.onclick=showSchool('Boston');
+        	circle_LosAngeles.onclick=showSchool('LosAngeles');
+        	circle_SanDiego.onclick=showSchool('SanDiego');
+        	circle_Seattle.onclick=showSchool('Seattle');
+        	circle_Chicago.onclick=showSchool('Chicago');
+        	circle_SanFrancisco.onclick=showSchool('SanFrancisco');
+        }
+
 		function showSchool(area){
 			console.log(area);
 			$(".acad_group").hide();
@@ -116,13 +127,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 					<!-- 이미지맵 링크 -->
 					<map name="image-map">
-						<area target="" class="tw_chg" open-layer="ny" alt="뉴욕" title="뉴욕" href="javascript:showSchool('NewYork');" coords="886,60,61" shape="circle">
-						<area target="" class="tw_chg" open-layer="bs" alt="보스턴" title="보스턴" href="javascript:showSchool('Boston');" coords="1107,276,60" shape="circle">
-						<area target="" class="tw_chg" open-layer="la" alt="로스앤젤리스" title="로스앤젤리스" href="javascript:showSchool('LosAngeles');" coords="320,634,61" shape="circle">
-						<area target="" class="tw_chg" open-layer="sd" alt="샌디에이고" title="샌디에이고" href="javascript:showSchool('SanDiego');" coords="394,437,59" shape="circle">
-						<area target="" class="tw_chg" open-layer="se" alt="시애틀" title="시애틀" href="javascript:showSchool('Seattle');" coords="67,96,60" shape="circle">
-						<area target="" class="tw_chg" open-layer="cha" alt="시카고" title="시카고" href="javascript:showSchool('Chicago');" coords="639,227,61" shape="circle">
-						<area target="" class="tw_chg" open-layer="sf" alt="샌프란시스코" title="샌프란시스코" href="javascript:showSchool('SanFrancisco');" coords="62,511,63" shape="circle">
+						<area target="" class="tw_chg" id="circle_NewYork" open-layer="ny" alt="뉴욕" title="뉴욕" href="javascript:;" coords="886,60,61" shape="circle" onload="init()">
+						<area target="" class="tw_chg" id="circle_Boston" open-layer="bs" alt="보스턴" title="보스턴" href="javascript:;" coords="1107,276,60" shape="circle" onload="init()">
+						<area target="" class="tw_chg" id="circle_LosAngeles" open-layer="la" alt="로스앤젤리스" title="로스앤젤리스" href="javascript:;" coords="320,634,61" shape="circle" onload="init()">
+						<area target="" class="tw_chg" id="circle_SanDiego" open-layer="sd" alt="샌디에이고" title="샌디에이고" href="javascript:;" coords="394,437,59" shape="circle" onload="init()">
+						<area target="" class="tw_chg" id="circle_Seattle" open-layer="se" alt="시애틀" title="시애틀" href="javascript:;" coords="67,96,60" shape="circle" onload="init()">
+						<area target="" class="tw_chg" id="circle_Chicago" open-layer="cha" alt="시카고" title="시카고" href="javascript:;" coords="639,227,61" shape="circle" onload="init()">
+						<area target="" class="tw_chg" id="circle_SanFrancisco" open-layer="sf" alt="샌프란시스코" title="샌프란시스코" href="javascript:;" coords="62,511,63" shape="circle" onload="init()">
 					</map>
 					<!--// 이미지맵 링크 -->
 				</div>
