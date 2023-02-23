@@ -259,70 +259,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!--// 페이징 -->
 				</div>
 				<!--// 학원 설명 -->
-<script type="text/javascript">
-	function showProgramDetail(idx,school,city){
-		$.ajax({
-			type: "post",
-			url: "/studyEnglishAbroad/apiGetProgramDetail",
-			async: true,
-			data: {
-				"idx": idx
-			},
-			dataType: "text",
-			success: function(data){
-				var details = JSON.parse(data);
-				//console.log(details);
-				//console.log(details[0]);
-				//console.log(details[0].pro_class_week);
-				$("#city_name").empty();
-				$("#city_name").append(school+"-"+city);
-				$("#curr_name").empty();
-				$("#curr_name").append(details[0].pro_name);
-			},error: function(data){
-				alert("잠시 후 다시 시도해주세요.");
-			}
-		});
-		$('.pop_cur').fadeIn(200);
-        dimShow();
-	}
-	function showSchoolDetail(idx,aca_idx,school,city){
-		var intro = $("#school_intro_"+idx).innerText;
-		$.ajax({
-			type: "post",
-			url: "/studyEnglishAbroad/apiGetDormitoryDetail",
-			async: true,
-			data: {
-				"idx": idx,
-				"aca_idx": aca_idx
-			},
-			dataType: "text",
-			success: function(data){
-				var details = JSON.parse(data);
-				$("#pop_school_name").empty();
-				$("#pop_school_name").append(school+"-"+city);
-				$("#pop_school_intro").empty();
-				$("#pop_school_intro").append(details['intro'].aca_intro);
-				var details_arr = Object.entries(details);
-				//숙소 내용 입력
-				var html = "";
-				//마지막 인덱스에 학교소개 들어감으로 제거 후 숙소 정보 입력
-				for(var i = 0; i < details_arr.length-1; i++){
-					html += "<tr>";
-					html += "<td>"+details_arr[i][1].dorm_type+"</td>";
-					html += "<td>"+details_arr[i][1].dorm_bed_meal+"</td>";
-					html += "<td>"+details_arr[i][1].dorm_bath+"</td>";
-					html += "<td>"+details_arr[i][1].dorm_distance_school+"</td>";
-					html += "</tr>";
-				}
-				$("#dorm_details").append(html);
-			},error: function(data){
-				alert("잠시 후 다시 시도해주세요.");
-			}
-		});
-		$('.pop_intro').fadeIn(200);
-        dimShow();
-	}
-</script>
+
 				<!-- 학교소개 모달팝업 -->
 				<section class="pop_detail cs_pop pop_intro"><!-- 학교소개 모달팝업 class="pop_intro" 추가 -->
 					<div class="cotn">
@@ -368,6 +305,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div>
 				</section>
 				<!--// 학교소개 모달팝업 -->
+
 				<!-- 커리큘럼상세 모달팝업 -->
 				<section class="pop_detail cs_pop pop_cur"><!-- 커리큘럼상세 모달팝업 class="pop_cur" 추가 -->
 					<div class="cotn">
@@ -381,43 +319,112 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<colgroup>
 										<col>
 										<col>
-										<col>
 									</colgroup>
-									<thead>
-										<tr>
-											<th>Type</th>
-											<th>Bed & Meal</th>
-											<th>Bathroom</th>
-										</tr>
-									</thead>
 									<tbody>
 										<tr>
-											<td rowspan="2">Homestay<br>홈스테이</td>
-											<td>1인실/아침,저녁</td>
-											<td>공동욕실</td>
+											<th>주당수업 시간</th>
+											<td id="class_week">20레슨(13.3시간)</td>
 										</tr>
 										<tr>
-											<td>2인실/아침,저녁</td>
-											<td>공동욕실</td>
+											<th>프로그램 소개</th>
+											<td id="pro_intro">
+												여유롭게 휴식을 즐기며 회화를 주로 배우며 주로 방학이나 휴가기간을 이용해서 참여<br>
+												일반영어 16레슨 + 프로젝트 수업 2레슨 + 연사강연 2레슨으로 제공<br>
+												실생활에서 사용되는 말하기와 이해력 향상에 중점을 두고 있음<br>
+												종합적인 학습자료와 개인 맞춤형 지도, 양방향 수업을 통해 실력증진
+											</td>
 										</tr>
 										<tr>
-											<td rowspan="3">On-Site Dorm<br>내부기숙사</td>
-											<td>1인실/아침,저녁</td>
-											<td>공동욕실</td>
+											<th>입학레벨</th>
+											<td id="entry_level">홈스테이, 기숙사 (1인실/2인실/3~4인실)</td>
 										</tr>
 										<tr>
-											<td>2인실/아침,저녁</td>
-											<td>공동욕실</td>
+											<th>개강일</th>
+											<td id="start_day">3학기로 운영 (9월/1월/3월)</td>
 										</tr>
 										<tr>
-											<td>3~4인실/아침,저녁</td>
-											<td>공동욕실</td>
+											<th>학업기간</th>
+											<td id="study_period">8주</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div>
 						<!--// 기본과정 -->
+<script type="text/javascript">
+	function showProgramDetail(idx,school,city){
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetProgramDetail",
+			async: true,
+			data: {
+				"idx": idx
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				//console.log(details);
+				//console.log(details[0]);
+				//console.log(details[0].pro_class_week);
+				$("#city_name").empty();
+				$("#city_name").append(school+"-"+city);
+				$("#curr_name").empty();
+				$("#curr_name").append(details[0].pro_name);
+				$("#class_week").empty();
+				$("#class_week").append(details[0].pro_class_week);
+				$("#pro_intro").empty();
+				$("#pro_intro").append(details[0].pro_intro);
+				$("#entry_level").empty();
+				$("#entry_level").append(details[0].pro_level);
+				$("#start_day").empty();
+				$("#start_day").append(details[0].pro_start);
+				$("#study_period").empty();
+				$("#study_period").append(details[0].pro_period);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+		$('.pop_cur').fadeIn(200);
+        dimShow();
+	}
+	function showSchoolDetail(idx,aca_idx,school,city){
+		var intro = $("#school_intro_"+idx).innerText;
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetDormitoryDetail",
+			async: true,
+			data: {
+				"idx": idx,
+				"aca_idx": aca_idx
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				$("#pop_school_name").empty();
+				$("#pop_school_name").append(school+"-"+city);
+				$("#pop_school_intro").empty();
+				$("#pop_school_intro").append(details['intro'].aca_intro);
+				var details_arr = Object.entries(details);
+				//숙소 내용 입력
+				var html = "";
+				//마지막 인덱스에 학교소개 들어감으로 제거 후 숙소 정보 입력
+				for(var i = 0; i < details_arr.length-1; i++){
+					html += "<tr>";
+					html += "<td>"+details_arr[i][1].dorm_type+"</td>";
+					html += "<td>"+details_arr[i][1].dorm_bed_meal+"</td>";
+					html += "<td>"+details_arr[i][1].dorm_bath+"</td>";
+					html += "<td>"+details_arr[i][1].dorm_distance_school+"</td>";
+					html += "</tr>";
+				}
+				$("#dorm_details").append(html);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+		$('.pop_intro').fadeIn(200);
+        dimShow();
+	}
+</script>
 					</div>
 				</section>
 				<!--// 학교소개 모달팝업 -->
