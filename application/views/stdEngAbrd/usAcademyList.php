@@ -8,17 +8,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/product_detail.js"></script>
 <body>
     <script type="text/javascript">
-
-    	function init() {
-        	circle_NewYork.onclick=showSchool('NewYork');
-        	circle_Boston.onclick=showSchool('Boston');
-        	circle_LosAngeles.onclick=showSchool('LosAngeles');
-        	circle_SanDiego.onclick=showSchool('SanDiego');
-        	circle_Seattle.onclick=showSchool('Seattle');
-        	circle_Chicago.onclick=showSchool('Chicago');
-        	circle_SanFrancisco.onclick=showSchool('SanFrancisco');
-        }
-
 		function showSchool(area){
 			console.log(area);
 			$(".acad_group").hide();
@@ -28,7 +17,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("."+area).show();
 			}
 		}
-
+    	function init() {
+        	circle_NewYork.onclick=showSchool('NewYork');
+        	circle_Boston.onclick=showSchool('Boston');
+        	circle_LosAngeles.onclick=showSchool('LosAngeles');
+        	circle_SanDiego.onclick=showSchool('SanDiego');
+        	circle_Seattle.onclick=showSchool('Seattle');
+        	circle_Chicago.onclick=showSchool('Chicago');
+        	circle_SanFrancisco.onclick=showSchool('SanFrancisco');
+        }
 		function showProgramDetail(idx,school,city){
 			$.ajax({
 				type: "post",
