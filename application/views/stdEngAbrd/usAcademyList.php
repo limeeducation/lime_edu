@@ -106,6 +106,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						html += "<td>"+details_arr[i][1].dorm_distance_school+"</td>";
 						html += "</tr>";
 					}
+					$("#dorm_details").empty();
 					$("#dorm_details").append(html);
 				},error: function(data){
 					alert("잠시 후 다시 시도해주세요.");
