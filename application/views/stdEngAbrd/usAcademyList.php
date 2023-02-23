@@ -322,7 +322,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									</colgroup>
 									<tbody>
 										<tr>
-											<th>주당수업 시간</th>
+											<th>주당<br>수업시간</th>
 											<td id="class_week">20레슨(13.3시간)</td>
 										</tr>
 										<tr>
