@@ -9,6 +9,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <body>
     <script type="text/javascript">
 		function showSchool(area){
+			console.log(area);
 			$(".acad_group").hide();
 			if(area == 'all'){
 				$(".acad_group").show();
@@ -16,7 +17,80 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("."+area).show();
 			}
 		}
-    </script>
+
+		function showProgramDetail(idx,school,city){
+			$.ajax({
+				type: "post",
+				url: "/studyEnglishAbroad/apiGetProgramDetail",
+				async: true,
+				data: {
+					"idx": idx
+				},
+				dataType: "text",
+				success: function(data){
+					var details = JSON.parse(data);
+					//console.log(details);
+					//console.log(details[0]);
+					//console.log(details[0].pro_class_week);
+					$("#city_name").empty();
+					$("#city_name").append(school+"-"+city);
+					$("#curr_name").empty();
+					$("#curr_name").append(details[0].pro_name);
+					$("#class_week").empty();
+					$("#class_week").append(details[0].pro_class_week);
+					$("#pro_intro").empty();
+					$("#pro_intro").append(details[0].pro_intro);
+					$("#entry_level").empty();
+					$("#entry_level").append(details[0].pro_level);
+					$("#start_day").empty();
+					$("#start_day").append(details[0].pro_start);
+					$("#study_period").empty();
+					$("#study_period").append(details[0].pro_period);
+				},error: function(data){
+					alert("잠시 후 다시 시도해주세요.");
+				}
+			});
+			$('.pop_cur').fadeIn(200);
+			dimShow();
+		}
+		function showSchoolDetail(idx,aca_idx,school,city){
+			var intro = $("#school_intro_"+idx).innerText;
+			$.ajax({
+				type: "post",
+				url: "/studyEnglishAbroad/apiGetDormitoryDetail",
+				async: true,
+				data: {
+					"idx": idx,
+					"aca_idx": aca_idx
+				},
+				dataType: "text",
+				success: function(data){
+					var details = JSON.parse(data);
+					$("#pop_school_name").empty();
+					$("#pop_school_name").append(school+"-"+city);
+					$("#pop_school_intro").empty();
+					$("#pop_school_intro").append(details['intro'].aca_intro);
+					var details_arr = Object.entries(details);
+					//숙소 내용 입력
+					var html = "";
+					//마지막 인덱스에 학교소개 들어감으로 제거 후 숙소 정보 입력
+					for(var i = 0; i < details_arr.length-1; i++){
+						html += "<tr>";
+						html += "<td>"+details_arr[i][1].dorm_type+"</td>";
+						html += "<td>"+details_arr[i][1].dorm_bed_meal+"</td>";
+						html += "<td>"+details_arr[i][1].dorm_bath+"</td>";
+						html += "<td>"+details_arr[i][1].dorm_distance_school+"</td>";
+						html += "</tr>";
+					}
+					$("#dorm_details").append(html);
+				},error: function(data){
+					alert("잠시 후 다시 시도해주세요.");
+				}
+			});
+			$('.pop_intro').fadeIn(200);
+			dimShow();
+		}
+	</script>
 	<div id="wrap">
 	<?php
     include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header.php');
@@ -351,80 +425,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							</div>
 						</div>
 						<!--// 기본과정 -->
-<script type="text/javascript">
-	function showProgramDetail(idx,school,city){
-		$.ajax({
-			type: "post",
-			url: "/studyEnglishAbroad/apiGetProgramDetail",
-			async: true,
-			data: {
-				"idx": idx
-			},
-			dataType: "text",
-			success: function(data){
-				var details = JSON.parse(data);
-				//console.log(details);
-				//console.log(details[0]);
-				//console.log(details[0].pro_class_week);
-				$("#city_name").empty();
-				$("#city_name").append(school+"-"+city);
-				$("#curr_name").empty();
-				$("#curr_name").append(details[0].pro_name);
-				$("#class_week").empty();
-				$("#class_week").append(details[0].pro_class_week);
-				$("#pro_intro").empty();
-				$("#pro_intro").append(details[0].pro_intro);
-				$("#entry_level").empty();
-				$("#entry_level").append(details[0].pro_level);
-				$("#start_day").empty();
-				$("#start_day").append(details[0].pro_start);
-				$("#study_period").empty();
-				$("#study_period").append(details[0].pro_period);
-			},error: function(data){
-				alert("잠시 후 다시 시도해주세요.");
-			}
-		});
-		$('.pop_cur').fadeIn(200);
-        dimShow();
-	}
-	function showSchoolDetail(idx,aca_idx,school,city){
-		var intro = $("#school_intro_"+idx).innerText;
-		$.ajax({
-			type: "post",
-			url: "/studyEnglishAbroad/apiGetDormitoryDetail",
-			async: true,
-			data: {
-				"idx": idx,
-				"aca_idx": aca_idx
-			},
-			dataType: "text",
-			success: function(data){
-				var details = JSON.parse(data);
-				$("#pop_school_name").empty();
-				$("#pop_school_name").append(school+"-"+city);
-				$("#pop_school_intro").empty();
-				$("#pop_school_intro").append(details['intro'].aca_intro);
-				var details_arr = Object.entries(details);
-				//숙소 내용 입력
-				var html = "";
-				//마지막 인덱스에 학교소개 들어감으로 제거 후 숙소 정보 입력
-				for(var i = 0; i < details_arr.length-1; i++){
-					html += "<tr>";
-					html += "<td>"+details_arr[i][1].dorm_type+"</td>";
-					html += "<td>"+details_arr[i][1].dorm_bed_meal+"</td>";
-					html += "<td>"+details_arr[i][1].dorm_bath+"</td>";
-					html += "<td>"+details_arr[i][1].dorm_distance_school+"</td>";
-					html += "</tr>";
-				}
-				$("#dorm_details").append(html);
-			},error: function(data){
-				alert("잠시 후 다시 시도해주세요.");
-			}
-		});
-		$('.pop_intro').fadeIn(200);
-        dimShow();
-	}
-</script>
 					</div>
 				</section>
 				<!--// 학교소개 모달팝업 -->
