@@ -66,7 +66,7 @@ class StudyEnglishAbroad extends CI_Controller {
 	}
 
 	//왜 캐나다 영어 페이지 호출
-	public function whyStudyEngUs(){
+	public function whyStudyEngCa(){
 		$this->load->view('stdEngAbrd/whyStudyEngCa');
 	}
 }
