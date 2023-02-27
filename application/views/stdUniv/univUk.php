@@ -24,9 +24,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<div class="bnr_wrap">
 						<figure class="bnr">
 							<img id="why_uk_univ" src="/static/img/std_univ/uk/img_univ_uk_01.png" alt="왜 영국대학?">
-							<img id="uk_univ_100" src="/static/img/std_univ/uk/img_univ_uk_01.png" alt="영국대학 랭킹 100">
-							<img id="uk_univ_pathway" src="/static/img/std_univ/uk/img_univ_uk_01.png" alt="영국대학 진학 방법">
-							<img id="uk_univ_transfer" src="/static/img/std_univ/uk/img_univ_uk_01.png" alt="영국대학 편입 프로그램">
+							<img id="uk_univ_100" src="/static/img/std_univ/uk/img_univ_uk_02.png" alt="영국대학 랭킹 100">
+							<img id="uk_univ_pathway" src="/static/img/std_univ/uk/img_univ_uk_03.png" alt="영국대학 진학 방법">
+							<img id="uk_univ_transfer" src="/static/img/std_univ/uk/img_univ_uk_04.png" alt="영국대학 편입 프로그램">
 						</figure>
 					</div>
 					<!--// 상품상세 -->
