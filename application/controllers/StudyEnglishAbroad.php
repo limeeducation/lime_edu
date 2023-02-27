@@ -64,5 +64,10 @@ class StudyEnglishAbroad extends CI_Controller {
 		$data['school_list'] = $school_list;
 		$this->load->view('stdEngAbrd/caAcademyList', $data);
 	}
+
+	//왜 캐나다 영어 페이지 호출
+	public function whyStudyEngUs(){
+		$this->load->view('stdEngAbrd/whyStudyEngCa');
+	}
 }
 
