@@ -37,13 +37,12 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
+						<a href="/StudyUnivAbroad/studyUnivUk" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
 						<ul class="depth_list">
-							<li><a href="#">영국 대학교 랭킹</a></li>
-							<li><a href="#">국제학생 특별전형</a></li>
-							<li><a href="#">명문대 편입 프로그램</a></li>
-							<li><a href="#">다이렉트 지원</a></li>
-							<li><a href="#">캐나다 국제 사립고를 통한 지원</a></li>
+							<li><a href="/StudyUnivAbroad/studyUnivUk">왜 영국대학?</a></li>
+							<li><a href="/StudyUnivAbroad/studyUnivUk#uk_univ_100">영국대학 랭킹 Top 100</a></li>
+							<li><a href="/StudyUnivAbroad/studyUnivUk#uk_univ_pathway">영국대학 진학 방법</a></li>
+							<li><a href="/StudyUnivAbroad/studyUnivUk#uk_univ_transfer">영국대학 편입 프로그램</a></li>
 						</ul>
 					</li>
 
@@ -160,13 +159,12 @@
 									</ul>
 								</li>
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
+									<a href="/StudyUnivAbroad/studyUnivUk" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
 									<ul class="depth_list">
-										<li><a href="#">영국 대학교 랭킹</a></li>
-										<li><a href="#">국제학생 특별전형</a></li>
-										<li><a href="#">명문대 편입 프로그램</a></li>
-										<li><a href="#">다이렉트 지원</a></li>
-										<li><a href="#">캐나다 국제 사립고를 통한 지원</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivUk">왜 영국대학?</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivUk#uk_univ_100">영국대학 랭킹 Top 100</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivUk#uk_univ_pathway">영국대학 진학 방법</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivUk#uk_univ_transfer">영국대학 편입 프로그램</a></li>
 									</ul>
 								</li>
 							</ul>
