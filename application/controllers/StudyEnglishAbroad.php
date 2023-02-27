@@ -50,5 +50,19 @@ class StudyEnglishAbroad extends CI_Controller {
 	public function whyStudyEngUs(){
 		$this->load->view('stdEngAbrd/whyStudyEngUs');
 	}
+
+	//조기유학 캐나다 학교찾기
+	public function caAcademyList(){
+		$school_list = $this->school_model->getSchool('CA');
+		foreach($school_list as $school){
+
+			$program_list = $this->school_model->getPrograms($school->en_aca_city_idx);
+			$school->program = $program_list;
+
+		}
+		$data = array();
+		$data['school_list'] = $school_list;
+		$this->load->view('stdEngAbrd/caAcademyList', $data);
+	}
 }
 
