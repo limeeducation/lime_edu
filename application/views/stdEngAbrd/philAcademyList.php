@@ -91,7 +91,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 											<li class="training_academy_item">
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -117,7 +117,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -143,7 +143,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -169,7 +169,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -195,143 +195,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
-													<div class="logo_name">SMEAG 캐피탈</div>
-												</div><!-- // item_logo -->
-												<div class="item_info">
-													<dl class="training_academy_data">
-														<dt>학원위치</dt>
-														<dd><div class="text">세부</div></dd>
-														<dt>학생규모</dt>
-														<dd><div class="text">500</div></dd>
-														<dt>커리큘럼</dt>
-														<dd><div class="text">스파르타</div></dd>
-														<dt>설립연도</dt>
-														<dd><div class="text">2000</div></dd>
-														<dt>학원설명</dt>
-														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-													</dl>
-													<div class="training_academy_btn">
-														<a href="#modal_02" class="modal_open">상세보기 +</a>
-														<a href="#modal_03" class="modal_open">비교하기 +</a>
-													</div>
-												</div><!-- // item_info -->
-											</li><!-- // training_academy_item -->
-
-										</ul>
-									</div><!-- // swiper-slide -->
-
-									<div class="swiper-slide item">
-
-										<ul class="training_academy_list">
-
-											<li class="training_academy_item">
-												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
-													<div class="logo_name">SMEAG 캐피탈</div>
-												</div><!-- // item_logo -->
-												<div class="item_info">
-													<dl class="training_academy_data">
-														<dt>학원위치</dt>
-														<dd><div class="text">세부</div></dd>
-														<dt>학생규모</dt>
-														<dd><div class="text">500</div></dd>
-														<dt>커리큘럼</dt>
-														<dd><div class="text">스파르타</div></dd>
-														<dt>설립연도</dt>
-														<dd><div class="text">2000</div></dd>
-														<dt>학원설명</dt>
-														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-													</dl>
-													<div class="training_academy_btn">
-														<a href="#modal_02" class="modal_open">상세보기 +</a>
-														<a href="#modal_03" class="modal_open">비교하기 +</a>
-													</div>
-												</div><!-- // item_info -->
-											</li><!-- // training_academy_item -->
-
-											<li class="training_academy_item">
-
-												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
-													<div class="logo_name">SMEAG 캐피탈</div>
-												</div><!-- // item_logo -->
-												<div class="item_info">
-													<dl class="training_academy_data">
-														<dt>학원위치</dt>
-														<dd><div class="text">세부</div></dd>
-														<dt>학생규모</dt>
-														<dd><div class="text">500</div></dd>
-														<dt>커리큘럼</dt>
-														<dd><div class="text">스파르타</div></dd>
-														<dt>설립연도</dt>
-														<dd><div class="text">2000</div></dd>
-														<dt>학원설명</dt>
-														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-													</dl>
-													<div class="training_academy_btn">
-														<a href="#modal_02" class="modal_open">상세보기 +</a>
-														<a href="#modal_03" class="modal_open">비교하기 +</a>
-													</div>
-												</div><!-- // item_info -->
-											</li><!-- // training_academy_item -->
-
-											<li class="training_academy_item">
-
-												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
-													<div class="logo_name">SMEAG 캐피탈</div>
-												</div><!-- // item_logo -->
-												<div class="item_info">
-													<dl class="training_academy_data">
-														<dt>학원위치</dt>
-														<dd><div class="text">세부</div></dd>
-														<dt>학생규모</dt>
-														<dd><div class="text">500</div></dd>
-														<dt>커리큘럼</dt>
-														<dd><div class="text">스파르타</div></dd>
-														<dt>설립연도</dt>
-														<dd><div class="text">2000</div></dd>
-														<dt>학원설명</dt>
-														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-													</dl>
-													<div class="training_academy_btn">
-														<a href="#modal_02" class="modal_open">상세보기 +</a>
-														<a href="#modal_03" class="modal_open">비교하기 +</a>
-													</div>
-												</div><!-- // item_info -->
-											</li><!-- // training_academy_item -->
-
-											<li class="training_academy_item">
-
-												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
-													<div class="logo_name">SMEAG 캐피탈</div>
-												</div><!-- // item_logo -->
-												<div class="item_info">
-													<dl class="training_academy_data">
-														<dt>학원위치</dt>
-														<dd><div class="text">세부</div></dd>
-														<dt>학생규모</dt>
-														<dd><div class="text">500</div></dd>
-														<dt>커리큘럼</dt>
-														<dd><div class="text">스파르타</div></dd>
-														<dt>설립연도</dt>
-														<dd><div class="text">2000</div></dd>
-														<dt>학원설명</dt>
-														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-													</dl>
-													<div class="training_academy_btn">
-														<a href="#modal_02" class="modal_open">상세보기 +</a>
-														<a href="#modal_03" class="modal_open">비교하기 +</a>
-													</div>
-												</div><!-- // item_info -->
-											</li><!-- // training_academy_item -->
-
-											<li class="training_academy_item">
-
-												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -363,7 +227,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 											<li class="training_academy_item">
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -389,7 +253,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -415,7 +279,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -441,7 +305,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -467,7 +331,143 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 
 												<div class="item_logo">
-													<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_name">SMEAG 캐피탈</div>
+												</div><!-- // item_logo -->
+												<div class="item_info">
+													<dl class="training_academy_data">
+														<dt>학원위치</dt>
+														<dd><div class="text">세부</div></dd>
+														<dt>학생규모</dt>
+														<dd><div class="text">500</div></dd>
+														<dt>커리큘럼</dt>
+														<dd><div class="text">스파르타</div></dd>
+														<dt>설립연도</dt>
+														<dd><div class="text">2000</div></dd>
+														<dt>학원설명</dt>
+														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+													</dl>
+													<div class="training_academy_btn">
+														<a href="#modal_02" class="modal_open">상세보기 +</a>
+														<a href="#modal_03" class="modal_open">비교하기 +</a>
+													</div>
+												</div><!-- // item_info -->
+											</li><!-- // training_academy_item -->
+
+										</ul>
+									</div><!-- // swiper-slide -->
+
+									<div class="swiper-slide item">
+
+										<ul class="training_academy_list">
+
+											<li class="training_academy_item">
+												<div class="item_logo">
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_name">SMEAG 캐피탈</div>
+												</div><!-- // item_logo -->
+												<div class="item_info">
+													<dl class="training_academy_data">
+														<dt>학원위치</dt>
+														<dd><div class="text">세부</div></dd>
+														<dt>학생규모</dt>
+														<dd><div class="text">500</div></dd>
+														<dt>커리큘럼</dt>
+														<dd><div class="text">스파르타</div></dd>
+														<dt>설립연도</dt>
+														<dd><div class="text">2000</div></dd>
+														<dt>학원설명</dt>
+														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+													</dl>
+													<div class="training_academy_btn">
+														<a href="#modal_02" class="modal_open">상세보기 +</a>
+														<a href="#modal_03" class="modal_open">비교하기 +</a>
+													</div>
+												</div><!-- // item_info -->
+											</li><!-- // training_academy_item -->
+
+											<li class="training_academy_item">
+
+												<div class="item_logo">
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_name">SMEAG 캐피탈</div>
+												</div><!-- // item_logo -->
+												<div class="item_info">
+													<dl class="training_academy_data">
+														<dt>학원위치</dt>
+														<dd><div class="text">세부</div></dd>
+														<dt>학생규모</dt>
+														<dd><div class="text">500</div></dd>
+														<dt>커리큘럼</dt>
+														<dd><div class="text">스파르타</div></dd>
+														<dt>설립연도</dt>
+														<dd><div class="text">2000</div></dd>
+														<dt>학원설명</dt>
+														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+													</dl>
+													<div class="training_academy_btn">
+														<a href="#modal_02" class="modal_open">상세보기 +</a>
+														<a href="#modal_03" class="modal_open">비교하기 +</a>
+													</div>
+												</div><!-- // item_info -->
+											</li><!-- // training_academy_item -->
+
+											<li class="training_academy_item">
+
+												<div class="item_logo">
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_name">SMEAG 캐피탈</div>
+												</div><!-- // item_logo -->
+												<div class="item_info">
+													<dl class="training_academy_data">
+														<dt>학원위치</dt>
+														<dd><div class="text">세부</div></dd>
+														<dt>학생규모</dt>
+														<dd><div class="text">500</div></dd>
+														<dt>커리큘럼</dt>
+														<dd><div class="text">스파르타</div></dd>
+														<dt>설립연도</dt>
+														<dd><div class="text">2000</div></dd>
+														<dt>학원설명</dt>
+														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+													</dl>
+													<div class="training_academy_btn">
+														<a href="#modal_02" class="modal_open">상세보기 +</a>
+														<a href="#modal_03" class="modal_open">비교하기 +</a>
+													</div>
+												</div><!-- // item_info -->
+											</li><!-- // training_academy_item -->
+
+											<li class="training_academy_item">
+
+												<div class="item_logo">
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_name">SMEAG 캐피탈</div>
+												</div><!-- // item_logo -->
+												<div class="item_info">
+													<dl class="training_academy_data">
+														<dt>학원위치</dt>
+														<dd><div class="text">세부</div></dd>
+														<dt>학생규모</dt>
+														<dd><div class="text">500</div></dd>
+														<dt>커리큘럼</dt>
+														<dd><div class="text">스파르타</div></dd>
+														<dt>설립연도</dt>
+														<dd><div class="text">2000</div></dd>
+														<dt>학원설명</dt>
+														<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+													</dl>
+													<div class="training_academy_btn">
+														<a href="#modal_02" class="modal_open">상세보기 +</a>
+														<a href="#modal_03" class="modal_open">비교하기 +</a>
+													</div>
+												</div><!-- // item_info -->
+											</li><!-- // training_academy_item -->
+
+											<li class="training_academy_item">
+
+												<div class="item_logo">
+													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 													<div class="logo_name">SMEAG 캐피탈</div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -745,7 +745,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="md_cont_detail">
 										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
-										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/mopal_tabs_image@2x.png" alt=""></p>
+										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 									</div><!-- // md_cont_detail -->
 
 								</div><!-- // modal_tabs_item -->
@@ -1113,7 +1113,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="modal_training_academy">
 										<div class="training_academy_item">
 											<div class="item_logo">
-												<div class="logo_image"><img src="images/sub/academy_item_logo@2x.png" alt=""></div>
+												<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 												<div class="logo_name">SMEAG 캐피탈</div>
 											</div><!-- // item_logo -->
 											<div class="item_info">
@@ -1191,7 +1191,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="md_cont_detail">
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
-												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/mopal_tabs_image@2x.png" alt=""></p>
+												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 											</div><!-- // md_cont_detail -->
 										</li>
 										<li>
@@ -1214,7 +1214,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="md_cont_detail">
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
-												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/mopal_tabs_image@2x.png" alt=""></p>
+												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 											</div><!-- // md_cont_detail -->
 										</li>
 									</ul>
