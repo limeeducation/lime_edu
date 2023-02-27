@@ -380,3 +380,169 @@ disabled
 .uk_top_ranking_table.on tbody tr{display:table-row}
 .uk_top_ranking_table td{background-color:#ffffff;text-align:center;}
 .uk_ranking_title{border-bottom: solid white;border-top: solid white;border-width: 1px;padding: 2rem 0 2rem 0;}
+
+/* ============================================ << 필리핀 어학연수 >> ================================================ */
+#trainingVisual{position:relative;padding:15.6rem 0 16rem;background:url(/static/img/std_eng_abrd/phil/training_visual_bg@2x.png) no-repeat 50% 0 / cover;}
+#trainingVisual::after{display:block;clear:both;content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:#000;opacity:0.4;}
+#trainingVisual .inner{position:relative;z-index:2;}
+#trainingVisual .visual_flag{margin-bottom:2.4rem;text-align:center;}
+#trainingVisual .visual_flag img{width:10.2rem;}
+#trainingVisual .visual_title{font-weight:900;font-size:9.6rem;line-height:1.2;text-align:center;color:#FFFFFF;}
+
+@media all and (max-width:1280px){
+	#trainingVisual{padding:12rem 0}
+	#trainingVisual .visual_title{font-size:7.6rem;}
+}
+@media all and (max-width:960px){
+	#trainingVisual .visual_title{font-size:6rem;}
+}
+@media all and (max-width:768px){
+	#trainingVisual .visual_flag{margin-bottom:3rem;}
+	#trainingVisual .visual_flag img{width:8rem;}
+	#trainingVisual .visual_title{font-size:4.8rem;}
+}
+
+#trainingBanner{padding:5rem 0 4.5rem;}
+#trainingBanner a{display:block;}
+
+@media all and (max-width:960px){
+	#trainingBanner{padding:3rem;}
+	#trainingBanner .inner{padding:0;}
+}
+
+#trainingMap{position:relative;padding:0;background-color:#E9E8FF;}
+
+.training_tabs_list{position:absolute;top:2.2rem;left:50%;width:1200px;margin-left:-600px;text-align:right;font-size:0;}
+.training_tabs_list::after{display:block;clear:both;content:'';}
+.training_tabs_list > li{display:inline-block;margin-left:1.6rem;padding:0;text-align:center;}
+.training_tabs_list > li a{display:block;width:14.4rem;line-height:5.2rem;line-height:5.2rem;background:#FFFFFF;box-shadow:0px 4px 10px rgba(0, 0, 0, 0.2);border-radius:5px;font-weight:500;font-size:2rem;text-align:center;color:#1D1887;}
+.training_tabs_list > li a:focus,.training_tabs_list > li a:hover,.training_tabs_list > li.on a{background:#1D1887;font-weight:700;color:#fff;}
+
+.training_tabs_list{margin-bottom:4rem;}
+.training_tabs_info > .training_tabs_item{height:0;padding:0;overflow:hidden;opacity:0;background-repeat:no-repeat;background-position:50% 50%;background-size:auto 100%;text-indent:-9999px;font-size:0;}
+.training_tabs_info > .training_tabs_item.on{height:76.8rem;opacity:1;z-index:1;}
+.training_tabs_info > .training_tabs_item.item1{background-image:url(/static/img/std_eng_abrd/phil/training_map1@2x.png);}
+.training_tabs_info > .training_tabs_item.item2{background-image:url(/static/img/std_eng_abrd/phil/training_map2@2x.png);}
+.training_tabs_info > .training_tabs_item.item3{background-image:url(/static/img/std_eng_abrd/phil/training_map3@2x.png);}
+
+@media all and (max-width:1280px){
+	.training_tabs_list{position:absolute;top:2.2rem;left:auto;right:2.2rem;width:auto;margin-left:0;}
+}
+@media all and (max-width:1200px){
+	.training_tabs_info > .training_tabs_item.on{height:auto;padding-top:64%;}
+}
+@media all and (max-width:960px){
+	#trainingMap{}
+	#trainingMap .inner{padding:0;}
+}
+@media all and (max-width:768px){
+	.training_tabs_list > li{margin-left:1rem;}
+	.training_tabs_list > li a{width:11rem;line-height:4.4rem;line-height:4.4rem;font-size:1.8rem;}
+}
+
+#trainingAcademy{margin-bottom:9.2rem;padding:3rem 0 5.2rem;border-bottom:1px solid #D9D9D9;}
+#trainingAcademy .inner{width:110rem;}
+@media all and (max-width:1280px){
+	#trainingAcademy .inner{width:auto}
+}
+
+.training_academy_item{position:relative;padding-left:22rem;}
+.training_academy_item + .training_academy_item{margin-top:2.5rem}
+.training_academy_item .item_logo{position:absolute;top:1rem;left:0;width:18rem;}
+.training_academy_item .item_logo .logo_image{}
+.training_academy_item .item_logo .logo_name{position:absolute;bottom:0;left:0;width:18rem;padding:1rem;line-height:1.6;background:#E9E8FF;border-radius:1rem;font-weight:700;font-size:2rem;text-align:center;color:#1D1887;}
+
+.training_academy_item .item_info{position:relative;padding:2.6rem 22.6rem 0.5rem 0;background:#E9E8FF;border-radius:2rem;}
+.training_academy_data::after{display:block;clear:both;content:'';}
+.training_academy_data dt,.training_academy_data dd{margin-bottom:2rem;}
+.training_academy_data dt{position:relative;float:left;width:11.4rem;padding-left:2.8rem;line-height:3rem;font-weight:700;font-size:1.6rem;color:#1D1887;}
+.training_academy_data dt::after{display:block;clear:both;content:'';position:absolute;top:50%;right:0;width:1px;height:1.8rem;margin-top:-0.9rem;background-color:#293496;}
+
+.training_academy_data dd{float:left;width:calc(50% - 11.4rem);padding:0 7.9rem 0 2.7rem}
+.training_academy_data dd.colspan{width:calc(100% - 11.4rem);padding:0 0 0 2.7rem}
+.training_academy_data dd .text{width:11.2rem;height:3rem;padding:0.3rem 0;background:#FFFFFF; border-radius:5px;font-weight:500;font-size:1.6rem;line-height:2.4rem;text-align:center;color:#1D1887;}
+.training_academy_data dd .text.auto{width:100%;height:auto;min-height:6rem;padding:0.6rem 1.6rem;text-align:left;}
+.training_academy_btn{position:absolute;top:50%;right:1.6rem;width:14rem;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);font-size:0;}
+.training_academy_btn a{display:block;line-height:3.8rem;background:#FFFFFF;border:1px solid #1D1887;border-radius:2.8rem;font-weight:700;font-size:1.4rem;text-align:center;color:#1D1887;}
+.training_academy_btn a + a{margin-top:0.6rem;}
+.training_academy_btn a:hover,.training_academy_btn a:focus{background-color:#1D1887;color:#fff;}
+
+@media all and (max-width:1280px){
+	.training_academy_item .item_info{padding:2.6rem 18rem 0.5rem 0;background:#E9E8FF;border-radius:2rem;}
+	.training_academy_data dd{width:calc(50% - 11.4rem);padding:0 0 0 2.7rem}
+	.training_academy_data dd .text{width:100%;}
+}
+@media all and (max-width:960px){
+	.training_academy_item .item_info{padding:2.6rem 2.6rem 2.6rem 0;background:#E9E8FF;border-radius:2rem;}
+	.training_academy_data dt,.training_academy_data dd{margin-bottom:12px;}
+	.training_academy_data dt{line-height:26px;font-size:13px;}
+	.training_academy_data dt::after{height:12px;margin-top:-6px;}
+	.training_academy_data dd{width:calc(50% - 11.4rem);}
+	.training_academy_data dd .text{height:26px;padding:2px 0;font-size:13px;line-height:22px;}
+	.training_academy_data dd .text.auto{height:auto;min-height:48px;padding:2px 12px;}
+	.training_academy_btn{position:relative;top:auto;right:auto;width:100%;padding-top:4px;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);text-align:center;}
+	.training_academy_btn a{display:inline-block;width:120px;line-height:32px;border-radius:20px;font-size:12px}
+	.training_academy_btn a + a{margin-top:0;margin-left:10px;}
+}
+@media all and (max-width:768px){
+	.training_academy_item{padding-left:0;}
+	.training_academy_item + .training_academy_item{margin-top:20px}
+	.training_academy_item .item_logo{position:relative;top:auto;left:auto;width:28rem;margin:0 auto 2rem;}
+	.training_academy_item .item_logo .logo_name{width:100%;padding:1.2rem;font-size:2.6rem;}
+}
+@media all and (max-width:480px){
+	.training_academy_item .item_info{padding:15px}
+	.training_academy_data dt,.training_academy_data dd{margin-bottom:8px;}
+	.training_academy_data dt{width:68px;padding-left:0;}
+	.training_academy_data dd,.training_academy_data dd.colspan{width:calc(100% - 68px);padding-left:15px;}
+	.training_academy_btn a{width:100px;}
+	.training_academy_btn a + a{margin-left:8px;}
+}
+
+.training-swiper{position:relative;margin:0 auto;padding:3rem 3.6rem 0;border-top: 1px solid #D9D9D9;font-size:0;}
+.training-swiper .swiper-container{padding:0 2px;}
+.training-swiper .swiper-wrapper{align-items:center;justify-content:center;}
+
+.training-swiper .swiper-container-initialized .swiper-wrapper{align-items:stretch;justify-content:flex-start;}
+.training-swiper .swiper-container-initialized .swiper-slide{padding:0;}
+.training-swiper .swiper-container-initialized + .swiper-control{display:block;}
+
+.training-swiper .swiper-control{display:none;width:100%;padding-top:8rem;text-align:center;font-size:0;}
+.training-swiper .swiper-button-next,
+.training-swiper .swiper-button-prev{display:inline-block;position:static;top:auto;left:auto;width:5.2rem;height:5.2rem;margin:0 1rem;z-index:10;cursor:pointer;background-size:100% 100%;background-repeat:no-repeat;}
+.training-swiper .swiper-button-next{right:0;background-image:url(/static/img/std_eng_abrd/phil/tabs_swiper_next_off@2x.png);background-position:50% 50%;}
+.training-swiper .swiper-button-prev{left:0;background-image:url(/static/img/std_eng_abrd/phil/tabs_swiper_prev_off@2x.png);background-position:50% 50%;}
+.training-swiper .swiper-button-next:hover{background-image:url(/static/img/std_eng_abrd/phil/tabs_swiper_next_on@2x.png);}
+.training-swiper .swiper-button-prev:hover{background-image:url(/static/img/std_eng_abrd/phil/tabs_swiper_prev_on@2x.png);}
+
+.training-swiper .swiper-button-next.swiper-button-disabled,.training-swiper .swiper-button-prev.swiper-button-disabled{opacity:1;pointer-events:auto;cursor:auto}
+.training-swiper .swiper-pagination{display:inline-block;position:static;top:auto;left:auto;}
+.training-swiper .swiper-pagination-bullet{width:5.2rem;height:5.2rem;line-height:5.2rem;margin:0 0.5rem;text-align:center;font-weight:700;font-size:2.4rem;text-align:center;color:#999999;opacity:1;background:rgba(0, 0, 0, 0);}
+.training-swiper .swiper-pagination-bullet-active{color:#2E58FF;background:rgba(0, 0, 0, 0);}
+
+.training_search{position:absolute;bottom:-4px;right:0;width:30rem;}
+.training_search input{padding:1.6rem 3.4rem;border: 3px solid #6D69D1;border-radius:3rem;height:6rem;font-weight: 700;font-size:2rem}
+
+@media all and (max-width:1280px){
+	.training-swiper{padding:3rem 0 0;}
+	.training_search{right:4rem;width:24rem;}
+}
+@media all and (max-width:960px){
+	.training-swiper .swiper-control{padding-top:5rem;}
+}
+@media all and (max-width:768px){
+	.training_search{position:relative;bottom:auto;right:auto;width:100%;margin-top:3rem;}
+	.training_search input{height:7rem;}
+}
+
+.modal_training_academy{padding:2.4rem 4rem;border-bottom:1px solid #D9D9D9;}
+.modal_training_academy::after{display:block;clear:both;content:'';}
+.modal_training_academy .training_academy_item .item_info{padding:2.6rem 2.6rem 0.5rem 0;}
+
+@media all and (max-width:960px){
+	.modal_training_academy{padding:2.4rem 2rem;}
+	.modal_training_academy .training_academy_item .item_info{padding:15px}
+}
+@media all and (max-width:480px){
+	.modal_training_academy{padding:2.4rem 0;}
+}

@@ -170,5 +170,58 @@ jQuery(function($){
 		}
 		return false;
 	});
+
+	function modalCancel(){
+		$(".modal_wrap").each(function(){
+			if($(this).hasClass("active")){
+				$('.modal_wrap').attr('style', '');
+				$('.modal_wrap').removeClass('active');
+			}
+			$('body').removeClass('show-modal');
+		});
+	}
+
+	var $modal_wrap = $('.modal_wrap'),
+		$modal_open = $('.modal_open'),
+		$modal_close = $('.modal_close'),
+		$modal_cancel = $('.modal_wrap .cancel');
+
+	$modal_open.on("click", function(event){
+		modalCancel();
+		// modalScroll();
+		$('body').toggleClass('show-modal');
+		if($(event.target).attr('href')){
+			$($(event.target).attr('href')).toggleClass('active');
+		}else{
+			$($(this).attr('href')).toggleClass('active');
+		}
+		return false;
+	});
+	$modal_close.on("click", function(event){
+		if($('body').hasClass('show-modal')){
+			$('body').toggleClass('show-modal');
+		}
+		if($(event.target).parents('.modal_wrap').hasClass('active')){
+			$(event.target).parents('.modal_wrap').toggleClass('active');
+			return false;
+		}
+	});
+	$modal_cancel.on("click", function(event){
+		if($('body').hasClass('show-modal')){
+			$('body').toggleClass('show-modal');
+		}
+		if($(event.target).parents('.modal_wrap').hasClass('active')){
+			$(event.target).parents('.modal_wrap').toggleClass('active');
+			return false;
+		}
+	});
+
+	$modal_wrap.on("click", function(event){
+		if($(event.target).hasClass('active')){
+			$(event.target).toggleClass('active');
+			$('body').toggleClass('show-modal');
+			return false;
+		}
+	});
 });
 

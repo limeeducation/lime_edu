@@ -69,5 +69,10 @@ class StudyEnglishAbroad extends CI_Controller {
 	public function whyStudyEngCa(){
 		$this->load->view('stdEngAbrd/whyStudyEngCa');
 	}
+
+	//필리핀 어학연수 리스트 페이지 호출
+	public function philAcademyList(){
+		$this->load->view('stdEngAbrd/philAcademyList');
+	}
 }
 
