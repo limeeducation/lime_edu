@@ -486,6 +486,10 @@
 .town_tab_area .town_tab.se {background-image:url(/static/img/std_eng_abrd/us/bg_se.jpg);}
 .town_tab_area .town_tab.cha{background-image:url(/static/img/std_eng_abrd/us/bg_cha.jpg);}
 .town_tab_area .town_tab.sf {background-image:url(/static/img/std_eng_abrd/us/bg_sf.jpg);}
+.town_tab_area .town_tab.van {background-image:url(/static/img/std_eng_abrd/ca/bg_van.jpg);}
+.town_tab_area .town_tab.tor {background-image:url(/static/img/std_eng_abrd/ca/bg_tor.jpg);}
+.town_tab_area .town_tab.mon {background-image:url(/static/img/std_eng_abrd/ca/bg_mon.jpg);}
+.town_tab_area .town_tab.cal {background-image:url(/static/img/std_eng_abrd/ca/bg_cal.jpg);}
 
 /* 주요도시소개 */
 .town_intro_wrap {width:100%; max-width:1100px; margin:0 auto; padding-bottom:6rem;}
@@ -572,7 +576,7 @@
 .pop_detail .sec_wrap .sec_table td{font-size: 1.6rem;line-height: 1.25em;font-weight: 500;text-align: center;}
 
 /* ============================================ << 캐나다 :어학연수 >> ================================================ */
-.canada_title {display:flex; align-items:center; justify-content:center; max-width:1200px; width:100%; height:20rem; border-radius:2rem; margin:0 auto 3.7rem; background:url(../images/detail/bnr_can.jpg) no-repeat 0 0; background-size:cover; overflow:hidden;}
+.canada_title {display:flex; align-items:center; justify-content:center; max-width:1200px; width:100%; height:20rem; border-radius:2rem; margin:0 auto 3.7rem; background:url(/static/img/std_eng_abrd/ca/bnr_can.jpg) no-repeat 0 0; background-size:cover; overflow:hidden;}
 .canada_title p {font-size:4.8rem; font-weight:700; color:#fff;}
 
 /* 캐나다지도영역 */
@@ -588,7 +592,7 @@
 .canada .town_intro_wrap .tw_intro .intro_tit,
 .canada .town_intro_wrap .tw_intro .sub_tit {color:#ff9b50;}
 .canada .town_intro_wrap .tw_intro .txt {color:#705537;}
-.canada .town_intro_wrap .tw_intro.can .intro_tit {color:#4e4e4e; padding-left:5.8rem; background:url(../images/detail/flag_canada.png) no-repeat left center; background-size:4.6rem 2.7rem;}
+.canada .town_intro_wrap .tw_intro.can .intro_tit {color:#4e4e4e; padding-left:5.8rem; background:url(/static/img/std_eng_abrd/ca/flag_canada.png) no-repeat left center; background-size:4.6rem 2.7rem;}
 
 /* 학원설명 */
 .canada .office_title {color:#705537;}
@@ -708,6 +712,57 @@
 
 	/* ============================================ << 캐나다 :국제사립학교 >> ================================================ */
 	.group_rud_list li {height:7rem;}
+
+	/* ============================================ << 영국 :조기유학 학교찾기 >> ================================================ */
+	.uk .pro_selet .pro_group {width:calc(50% - 2rem);}
+	.uk .pro_selet .pro_btn_wrap .pro_group ~ .pro_group {margin-left:4rem;}
+	.uk_tab_area {width:15rem; height:22rem;}
+	.city_tab_area .city_tab {width:calc(33.33% - 2rem); margin-left:2rem;}
+	.sc_group .img_area .name {height:7rem;}
+
+	/* ============================================ << 미국 :조기유학 학교찾기 >> ================================================ */
+	.btn_back {position:relative; left:0; margin-bottom:3rem;}
+	.usa_title p, .canada_title p {font-size:4rem;}
+	.usa_tab_area {width:14rem;}
+	.town_tab_area .town_tab {margin-left:1rem; width:calc(33.33% - 1rem);}
+	.town_intro_wrap .tw_intro .intro_tit {font-size:14px;}
+	.town_intro_wrap .tw_intro .sub_tit {font-size:13px;}
+	.town_intro_wrap .tw_intro .txt {font-size:12px;}
+	.town_intro_wrap .tw_intro ul li {font-size:12px;}
+	.acad_group {display:block;}
+	.acad_group .img_area {margin:0 auto 2rem; width:110px;}
+	.acad_list .acad_group button {width:110px; height:auto;}
+	.acad_list .acad_group .logo_img {width:110px; height:110px;}
+	.acad_group .img_area .name {height:7rem; font-size:12px;}
+	.acad_group .acad_info .acad_tab_wrap .acad_tab {width:calc(33.33% - 1rem); margin-left:1rem; font-size:11px;}
+	.acad_group .acad_info .acad_tab_wrap .acad_tab:nth-child(2n - 1) {margin-left: 0;}
+	.acad_group .acad_info .info_tit {font-size:14px; margin-left: 0;}
+	.acad_group .acad_info .acad_txt {margin-left: 0;}
+	.acad_group .acad_info .acad_txt p {font-size:12px;}
+	.detail_usa .bdr_txt_box .tit {font-size:14px;}
+	.detail_usa .bdr_txt_box .sub_txt {font-size:13px;}
+	.trn_detail .bdr_txt_box .txt {font-size:14px;}
+	.res_list_wrap .list {display:block;}
+	.res_list_wrap .list .txt_area {margin-left:0; margin-top:2rem;}
+	.rec_pro_wrap .rec_pro_tit {font-size:16px;}
+	.rec_pro_slide {max-width: 325px;}
+	.rec_pro_slide .rec_pro a {width:150px; height:150px;}
+
+	/* 모달 팝업 */
+	.pop_detail .pop_title, .pop_detail .sec_tit {width: 27rem; height: 6rem;}
+	.pop_detail .pop_title {font-size: 14px;}
+	.pop_detail .sec_wrap .sec_tit {font-size: 14px;}
+	.pop_detail .sec_wrap .sec_des_box p {font-size: 13px;}
+	.pop_detail .sec_wrap .sec_table {overflow-x: auto;}
+	.pop_detail .sec_wrap .sec_table table {min-width: 500px;}
+	.pop_detail .sec_wrap .sec_table thead th {font-size: 13px;}
+	.pop_detail .sec_wrap .sec_table td {font-size: 12px;}
+
+	/* ============================================ << 캐나다 :어학연수 >> ================================================ */
+	.canada .town_tab_wrap .tab_box {margin-left: 0;}
+	.canada .town_tab_area .town_tab {width:calc(33.33% - 2rem); margin-left: 0;}
+	.canada .town_tab_area .town_tab ~ .town_tab {margin-left: 0;}
+	.canada .town_tab_area .town_tab:not(:nth-child(3n+1)) {margin-left: 3rem;}
 }
 
 @media all and (max-width:480px){
@@ -723,5 +778,8 @@
 	.sec_03 .adt_list li:nth-child(2n) {margin-left:2rem;}
 	.sec_03 .adt_list li:nth-child(n+3) {margin-top:4rem;}
 	.sec_03 .adt_list .txt_box {width:100%; height:17rem;}
+
+	/* ============================================ << 미국 :조기유학 학교찾기 >> ================================================ */
+	.acad_group .acad_info .acad_tab_wrap .acad_tab {width:calc(50% - 1rem);}
 }
 
