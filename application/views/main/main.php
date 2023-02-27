@@ -6,7 +6,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     <script type="text/javascript">
         function change_nation(tab,nation){
             if(tab == "5"){
-
+				if(nation == 'uk'){
+					location.href="/StudyUnivAbroad/studyUnivUk";
+				}
             }else if(tab == "6"){
                 $(".banr_lists").hide();
                 $("#banr_list_"+nation).show();
