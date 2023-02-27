@@ -86,7 +86,7 @@
 						<a href="/StudyEnglishAbroad/usAcademyList" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
+						<a href="/StudyEnglishAbroad/caAcademyList" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
 					</li>
 					<li>
 						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_phi@2x.png" alt=""></i>필리핀</a>
@@ -220,7 +220,7 @@
 									<a href="/StudyEnglishAbroad/usAcademyList" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 								</li>
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
+									<a href="/StudyEnglishAbroad/caAcademyList" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
 								</li>
 								<li>
 									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_phi@2x.png" alt=""></i>필리핀</a>
