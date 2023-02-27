@@ -173,8 +173,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<strong>Toronto</strong>
 								<span>토론토</span>
 							</button>
-							<button type="button" class="town_tab tw_chg mon" open-layer="mon" onclick="showSchool('Monreal');">
-								<strong>Monreal</strong>
+							<button type="button" class="town_tab tw_chg mon" open-layer="mon" onclick="showSchool('Montreal');">
+								<strong>Montreal</strong>
 								<span>몬트리올</span>
 							</button>
 							<button type="button" class="town_tab tw_chg cal" open-layer="cal" onclick="showSchool('Calgary');">
