@@ -562,7 +562,7 @@
 /* 모달 팝업 */
 .pop_detail{display: none; position: fixed;top: 50%;left: 50%; -webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);z-index: 9999;width: 90%;max-width: 900px;max-height: 85vh; background-color: #fff;border-radius: 2rem;}
 .pop_detail .cotn {margin:2rem 0 3rem; padding:0 2rem; overflow-y: auto; max-height: calc(85vh - 5rem);}
-.pop_detail .pop_title, .pop_detail .sec_tit{display: flex;justify-content: center;align-items: center;width: 23rem;height: fit-content;border-radius: 1rem;line-height: 1.2em;font-weight: 700;}
+.pop_detail .pop_title, .pop_detail .sec_tit{display: flex;justify-content: center;align-items: center;width: 23rem;height: fit-content;min-height: 4rem;border-radius: 1rem;line-height: 1.2em;font-weight: 700;}
 .pop_detail .pop_title {background-color: #f2f8ff;font-size: 2rem;color: #2e58ff;}
 .pop_detail .pop_title + .sec_wrap{margin-top: 3rem;}
 .pop_detail .sec_wrap + .sec_wrap{margin-top: 2rem;}
