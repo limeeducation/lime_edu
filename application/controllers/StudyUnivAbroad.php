@@ -22,5 +22,11 @@ class StudyUnivAbroad extends CI_Controller {
 		$this->load->view('stdUniv/univUk');
 	}
 
+	//해외대학유학 미국
+	public function studyUnivUk(){
+
+		$this->load->view('stdUniv/univUs');
+	}
+
 }
 
