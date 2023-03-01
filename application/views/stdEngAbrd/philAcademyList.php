@@ -89,6 +89,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			success: function(data){
 				var details = JSON.parse(data);
 				console.log(details);
+				var curri_dtl_html = "";
+				$(".each_curri_detail").remove();
+				details['curri'].forEach(function(curri){
+					curri_dtl_html += "<dl class='md_cont_data each_curri_detail'>";
+					curri_dtl_html += "<dt>"+curri.class_name+"</dt>";
+					curri_dtl_html += "<dd>"+curri.class_detail+"</dd>";
+					curri_dtl_html += "</dl>";
+				});
+				$("#each_dtl_curri").append(curri_dtl_html);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -456,27 +465,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 								</div><!-- // modal_tabs_item -->
 								<div class="modal_tabs_item item3">
-									<div class="md_cont_detail">
+									<div class="md_cont_detail" id="each_dtl_curri">
 										<div class="md_cont_title">커리큘럼</div>
 										<div class="md_cont_select">
 											<select name="" id="detail_curri_list" onchange="setCurriDetailFromSchoolDetail();">
 												<option value="">XXXXX 코스</option>
 											</select>
 										</div>
-										<dl class="md_cont_data">
+										<dl class="md_cont_data each_curri_detail">
 											<dt>1:1수업</dt>
-											<dd>Reading (50분), Speaking(50분)</dd>
-										</dl>
-										<dl class="md_cont_data">
-											<dt>1:4 수업</dt>
-											<dd>Reading (50분), Speaking(50분)</dd>
-										</dl>
-										<dl class="md_cont_data">
-											<dt>1:8 수업</dt>
-											<dd>Reading (50분), Speaking(50분)</dd>
-										</dl>
-										<dl class="md_cont_data">
-											<dt>스페셜코스 <br>(방과 후)</dt>
 											<dd>Reading (50분), Speaking(50분)</dd>
 										</dl>
 									</div><!-- // md_cont_detail -->
