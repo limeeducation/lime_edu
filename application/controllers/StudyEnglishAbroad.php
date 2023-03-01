@@ -71,8 +71,9 @@ class StudyEnglishAbroad extends CI_Controller {
 	}
 
 	//필리핀 어학연수 리스트 페이지 호출
-	public function philAcademyList(){
-		$school_list = $this->school_model->getPhilSchools();
+	public function philAcademyList($dist = null){
+
+		$school_list = $this->school_model->getPhilSchools($dist);
 		$data = array();
 		$data['school_list'] = $school_list;
 		$this->load->view('stdEngAbrd/philAcademyList', $data);

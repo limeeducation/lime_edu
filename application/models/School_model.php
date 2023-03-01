@@ -58,7 +58,7 @@ class School_model extends CI_Model
         return $this->db->get()->result();
 	}
 
-	public function getPhilSchools(){
+	public function getPhilSchools($dist = null){
 		$this->db->select('ph_idx');
 		$this->db->select('aca_name');
 		$this->db->select('logo_url');
@@ -69,6 +69,10 @@ class School_model extends CI_Model
 		$this->db->select('aca_published');
 		$this->db->select('aca_detail');
 		$this->db->from('phil_academy');
+		if($dist != null){
+			$dist = $dist == 'cebu' ? '세부' : '바기오';
+			$this->db->where('aca_city', $dist);
+		}
 		$this->db->order_by('aca_name', 'ASC');
 		return $this->db->get()->result();
 	}
