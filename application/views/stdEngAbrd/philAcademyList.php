@@ -183,14 +183,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		});
 	}
 
+	var printContents;
+    var initBody;
 	function printDetail(){
-		var printContents = document.getElementById("phil_detail");
+		printContents = document.getElementById("detail_print");
 
-		var originalContents = document.body.innerHTML;
-    	document.body.innerHTML = printContents;
-    	window.print();
-    	document.body.innerHTML = originalContents;
+		window.onbeforeprint = beforePrint;
+		window.onafterprint = afterPrint;
+		window.print();
 	}
+
+	function beforePrint(){
+		initBody = document.body.innerHTML;
+		document.body.innerHTML = printContents.innerHTML;
+    }
+
+    function afterPrint(){
+		document.body.innerHTML = initBody;
+    }
 
 	function open_compare(ph_idx){
 
@@ -478,7 +488,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<!-- // 필리핀 학원 선택 모달 -->
 				<!-- 필리핀 학원 상세보기 -->
 				<div class="modal_wrap" id="modal_02">
-					<div class="modal_area" id="phil_detail">
+					<div class="modal_area">
 
 						<div class="modal_head">
 							<div class="modal_logo"><img src="/static/img/common/header_logo_2@2x.png" alt="LIME EDU"></div>
@@ -565,7 +575,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</dl>
 									</div><!-- // md_cont_detail -->
 								</div><!-- // modal_tabs_item -->
-								<div class="modal_tabs_item item4">
+								<div class="modal_tabs_item item4" id="detail_print">
 									<div class="md_cont_detail">
 										<div class="md_cont_title">학비계산</div>
 										<div class="md_cont_select_wrap">
