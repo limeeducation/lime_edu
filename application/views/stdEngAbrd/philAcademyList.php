@@ -183,6 +183,23 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			}
 		});
 	}
+	var div;
+	var initBody;
+	function printDetail(){
+		div = document.getElementById("phil_detail");
+		window.onbeforeprint = beforePrint;
+        window.onafterprint = afterPrint;
+        window.print();
+	}
+
+	function beforePrint(){
+		initBody = document.body.innerHTML;
+		document.body.innerHTML = div.innerHTML;
+	}
+
+	function afterPrint(){
+		document.body.innerHTML = initBody;
+	}
 
 	function open_compare(ph_idx){
 
@@ -470,7 +487,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<!-- // 필리핀 학원 선택 모달 -->
 				<!-- 필리핀 학원 상세보기 -->
 				<div class="modal_wrap" id="modal_02">
-					<div class="modal_area">
+					<div class="modal_area" id="phil_detail">
 
 						<div class="modal_head">
 							<div class="modal_logo"><img src="/static/img/common/header_logo_2@2x.png" alt="LIME EDU"></div>
@@ -569,7 +586,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 													<?php endfor; ?>
 												</select>
 											</div>
-											<div class="md_cont_print"><a href="#"><img src="/static/img/std_eng_abrd/phil/modal_print@2x.png" alt="Print"></a></div>
+											<div class="md_cont_print"><a href="javascript:printDetail();"><img src="/static/img/std_eng_abrd/phil/modal_print@2x.png" alt="Print"></a></div>
 										</div>
 										<div class="md_cont_group">
 											<dl class="md_cont_data">
@@ -608,18 +625,18 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt>프로모션</dt>
 												<dd>
 													<div class="select">
-														<select name="" id="">
+														<select name="" id="detail_promotion">
 															<option value="">2022 겨울 방학 등록비 프로모션</option>
 															<option value="">2023 겨울 방학 등록비 프로모션</option>
 															<option value="">2024 겨울 방학 등록비 프로모션</option>
 														</select>
 													</div>
-													<div class="text minus">-100,000 (원)</div>
+													<div class="text minus" id="detail_promotion_cal">-100,000 (원)</div>
 												</dd>
 											</dl>
 										</div><!-- // md_cont_group -->
-										<div>
-											<p style="float:right;">-100,000</p>
+										<div id="detail_long_term_alert" style="display:none;">
+											<p style="float:right;" id="long_term_discount">-100,000</p>
 											<p style="float:right;">장기연수할인 : </p>
 										</div>
 										<dl class="md_cont_data total">
@@ -628,7 +645,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<div class="text" id="tot_price_detail">2,000,000 (원)</div>
 											</dd>
 										</dl>
-										<p style="float:right;"></p>
+										<p style="float:right;" id="detail_discount_alert" style="display:none;">프로모션 적용 가능 여부는 출발일 또는 연수 기간등에 따라 상이하므로 꼭 상담원에게 문의하시기 바랍니다</p>
 									</div><!-- // md_cont_detail -->
 
 									<div class="md_cont_detail">
