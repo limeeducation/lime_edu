@@ -84,6 +84,7 @@ class StudyEnglishAbroad extends CI_Controller {
 		$idx = $this->input->post('idx');
 		$details['info'] = $this->school_model->getPhBaseInfo($idx);
 		$details['sns'] = $this->school_model->getPhSns($idx);
+		$details['curri'] = $this->school_model->getPhCurri($idx);
 		echo json_encode($details);
 	}
 }

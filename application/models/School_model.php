@@ -99,6 +99,14 @@ class School_model extends CI_Model
         $this->db->where('ph_idx', $idx);
         return $this->db->get()->result_array();
 	}
+
+	public function getPhCurri($idx){
+    	$this->db->select('idx');
+    	$this->db->select('curri_name');
+        $this->db->from('phil_curri');
+        $this->db->where('ph_idx', $idx);
+        return $this->db->get()->result_array();
+    }
 }
 
 ?>
