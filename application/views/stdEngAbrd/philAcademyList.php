@@ -116,15 +116,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 													</div>
 												</div><!-- // item_info -->
 											</li><!-- // training_academy_item -->
-									<?php if($i %5 == 0): ?>
+									<?php if($i %5 == 0 || empty($school_list[$i]->aca_name)): ?>
 										</ul>
 									</div><!-- // swiper-slide -->
 									<?php endif; ?>
 									<?php $i++; ?>
+									<?php if(empty($school_list[$i]->aca_name)){break;}?>
 									<?php endforeach; ?>
 								</div><!-- // swiper-wrapper -->
 							</div><!-- // swiper-container -->
-
 							<div class="swiper-control">
 								<div class="swiper-button-prev"></div>
 								<div class="swiper-pagination"></div>
