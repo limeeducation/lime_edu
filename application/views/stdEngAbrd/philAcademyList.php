@@ -120,7 +120,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</ul>
 									</div><!-- // swiper-slide -->
 									<?php endif; ?>
-									<?php i++; ?>
+									<?php $i++; ?>
 									<?php endforeach; ?>
 								</div><!-- // swiper-wrapper -->
 							</div><!-- // swiper-container -->
