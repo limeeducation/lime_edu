@@ -25,7 +25,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	var map;
 	function initMap() {
     	var mapOptions = {
-    		zoom : 20,
+    		zoom : 10,
     		center : new google.maps.LatLng(37.5651, 126.98955), //서울
     		mapTypeId : google.maps.MapTypeId.ROADMAP
     	};
