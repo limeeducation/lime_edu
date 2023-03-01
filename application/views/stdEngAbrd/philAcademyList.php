@@ -20,6 +20,39 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
             $("#map_baguio").addClass("on");
 		}
 	});
+
+	function open_detail(ph_idx){
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetPhAcaDetail",
+			async: true,
+			data: {
+				"idx": ph_idx
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				$("#detail_school_name").empty();
+				$("#detail_school_name").append(details['info'].aca_name);
+				$("#detail_school_dist").empty();
+				$("#detail_school_dist").append(details['info'].aca_city);
+				$("#detail_school_students").empty();
+				$("#detail_school_students").append(details['info'].aca_students);
+				$("#detail_school_curri").empty();
+				$("#detail_school_curri").append(details['info'].aca_curri);
+				$("#detail_school_published").empty();
+				$("#detail_school_published").append(details['info'].aca_published);
+				$("#detail_school_intro").empty();
+				$("#detail_school_intro").append(details['info'].aca_detail);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+	}
+
+	function open_compare(ph_idx){
+
+    }
 </script>
 <body>
 
@@ -64,9 +97,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="training_tabs_item item2" id="map_cebu">세부 지도</div>
 						<div class="training_tabs_item item3" id="map_baguio">바기오 지도</div>
 					</div>
-
-
-
 				</section>
 				<!-- // 필리핀 전체 지도 영역 -->
 
@@ -103,8 +133,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dd class="colspan"><div class="text auto"><?= $school_list[$i]->aca_detail; ?></div></dd>
 													</dl>
 													<div class="training_academy_btn">
-														<a href="#modal_02" class="modal_open">상세보기 +</a>
-														<a href="#modal_03" class="modal_open">비교하기 +</a>
+														<a href="#modal_02" class="modal_open" onclick="open_detail('<?= $school_list[$i]->ph_idx; ?>');">상세보기 +</a>
+														<a href="#modal_03" class="modal_open" onclick="open_compare('<?= $school_list[$i]->ph_idx; ?>');">비교하기 +</a>
 													</div>
 												</div><!-- // item_info -->
 											</li><!-- // training_academy_item -->
@@ -318,20 +348,20 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<div class="training_academy_item">
 									<div class="item_logo">
 										<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-										<div class="logo_name">SMEAG 캐피탈</div>
+										<div class="logo_name" id="detail_school_name">SMEAG 캐피탈</div>
 									</div><!-- // item_logo -->
 									<div class="item_info">
 										<dl class="training_academy_data">
 											<dt>학원위치</dt>
-											<dd><div class="text">세부</div></dd>
+											<dd><div class="text" id="detail_school_dist">세부</div></dd>
 											<dt>학생규모</dt>
-											<dd><div class="text">500</div></dd>
+											<dd><div class="text" id="detail_school_students">500</div></dd>
 											<dt>커리큘럼</dt>
-											<dd><div class="text">스파르타</div></dd>
+											<dd><div class="text" id="detail_school_curri">스파르타</div></dd>
 											<dt>설립연도</dt>
-											<dd><div class="text">2000</div></dd>
+											<dd><div class="text" id="detail_school_published">2000</div></dd>
 											<dt>학원설명</dt>
-											<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+											<dd class="colspan"><div class="text auto" id="detail_school_intro">이학원은 어쩌구저쩌구가 조아요</div></dd>
 										</dl>
 									</div><!-- // item_info -->
 								</div><!-- // training_academy_item -->

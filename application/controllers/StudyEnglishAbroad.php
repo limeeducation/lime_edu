@@ -79,5 +79,12 @@ class StudyEnglishAbroad extends CI_Controller {
 		$data['dist'] = $dist;
 		$this->load->view('stdEngAbrd/philAcademyList', $data);
 	}
+
+	public function apiGetPhAcaDetail(){
+		$idx = $this->input->post('idx');
+		$details['info'] = $this->school_model->getPhBaseInfo($idx);
+
+		echo json_encode($details);
+	}
 }
 
