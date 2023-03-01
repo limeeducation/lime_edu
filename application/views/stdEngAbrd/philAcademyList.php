@@ -141,7 +141,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         var dorm_price_week = selectedDorm.options[selectedDorm.selectedIndex].value;
         var selectedPeriod = document.getElementById("detail_price_period");
         var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
-        console.log(cur_fixed);
         if(!cur_fixed){
         	var price_curri = (cur_price_week/4) * price_week;
         }else{
@@ -187,18 +186,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	var initBody;
 	function printDetail(){
 		div = document.getElementById("phil_detail");
-		window.onbeforeprint = beforePrint;
-        window.onafterprint = afterPrint;
-        window.print();
-	}
+		var windowObject = window.open('', "PrintWindow", "width=5, height=5, top=200, lefg=200, toolbars=no, scrollbars=no, status=no, resizable=no");
 
-	function beforePrint(){
-		initBody = document.body.innerHTML;
-		document.body.innerHTML = div.innerHTML;
-	}
-
-	function afterPrint(){
-		document.body.innerHTML = initBody;
+        windowObject.document.writeln(div.innerHTML);
+        windowObject.document.close();
+        windowObject.focus();
+        windowObject.print();
+        windowObject.close();
 	}
 
 	function open_compare(ph_idx){
