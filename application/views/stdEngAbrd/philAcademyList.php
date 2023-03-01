@@ -48,8 +48,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#detail_school_address").empty();
                 $("#detail_school_address").append(details['info'][0].aca_address);
                 $("#detail_sns_ul").empty();
+                var sns_html = "";
 				details['sns'].forEach(function(sns){
-					var sns_html = "";
 					if(sns.sns_type == 'Youtube'){
 						sns_html += "<li><a href='"+sns.sns_url+"' class='item1'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_youtube@2x.png' alt='Youtube'></a></li>";
 					}else if(sns.sns_type == 'Facebook'){
