@@ -65,9 +65,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#detail_sns_ul").append(sns_html);
 				$("#detail_school_curri").empty();
 				var curri_html = "<option value=''>커리큘럼 선택</option>";
-				//details['curri'].forEach(function(curri){
-				//	curri_html += "<option value='"+curri.idx+"'>"curri.curri_name"</option>";
-				//});
+				details['curri'].forEach(function(curri){
+					curri_html += "<option value='"+curri.idx+"'>"curri.curri_name"</option>";
+				});
 				$("#detail_school_curri").append(curri_html);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
