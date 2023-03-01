@@ -128,25 +128,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		});
 	}
 
-	function setCurriCalFromDetail(){
+	function setCalFromDetail(){
 		var selectedCurri = document.getElementById("detail_price_curri");
-		var cur_price_week = selectedCurri.options[selectedCurri.selectedIndex].value;
-		var selectedPeriod = document.getElementById("detail_price_period");
-		var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
-		var price_curri = (cur_price_week/4) * price_week;
-		$("#detail_price_curri_cal").empty();
-		$("#detail_price_curri_cal").append(price_curri.toLocaleString('ko-KR'));
-	}
-
-	function setDormCalFromDetail(){
-		var selectedDorm = document.getElementById("detail_price_dorm");
+        var cur_price_week = selectedCurri.options[selectedCurri.selectedIndex].value;
+        var selectedDorm = document.getElementById("detail_price_dorm");
         var dorm_price_week = selectedDorm.options[selectedDorm.selectedIndex].value;
         var selectedPeriod = document.getElementById("detail_price_period");
         var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
+        var price_curri = (cur_price_week/4) * price_week;
+        $("#detail_price_curri_cal").empty();
+        $("#detail_price_curri_cal").append(price_curri.toLocaleString('ko-KR'));
         var price_dorm = (dorm_price_week/4) * price_week;
-        console.log("price_dorm : "+price_dorm);
         $("#detail_price_dorm_cal").empty();
         $("#detail_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
+        var total_price = 100000+price_curri+price_dorm;
+        $("#tot_price_detail").val(total_price);
 	}
 
 	var geocoder;
@@ -549,7 +545,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="md_cont_title">학비계산</div>
 										<div class="md_cont_select_wrap">
 											<div class="md_cont_select">
-												<select name="" id="detail_price_period">
+												<select name="" id="detail_price_period" onchange="setCalFromDetail();">
 													<option value="">기간선택</option>
 													<?php for($i=1; $i<25; $i++):?>
 													<option value="<?= $i;?>"><?= $i;?>주</option>
@@ -569,24 +565,26 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt>학비</dt>
 												<dd>
 													<div class="select">
-														<select name="" id="detail_price_curri" onchange="setCurriCalFromDetail();">
+														<select name="" id="detail_price_curri" onchange="setCalFromDetail();">
 															<option value="">XXXXX 코스</option>
 														</select>
 													</div>
 													<div class="text" id="detail_price_curri_cal"></div>
+													<input type="hidden" id="detail_curr_price_final"/>
 												</dd>
 											</dl>
 											<dl class="md_cont_data">
 												<dt>기숙사비</dt>
 												<dd>
 													<div class="select">
-														<select name="" id="detail_price_dorm" onchange="setDormCalFromDetail();">
+														<select name="" id="detail_price_dorm" onchange="setCalFromDetail();">
 															<option value="">4인실(A)</option>
 															<option value="">6인실(A)</option>
 															<option value="">8인실(A)</option>
 														</select>
 													</div>
 													<div class="text" id="detail_price_dorm_cal">1,000,000 (원)</div>
+													<input type="hidden" id="detail_dorm_price_final"/>
 												</dd>
 											</dl>
 											<dl class="md_cont_data">
@@ -607,7 +605,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<dl class="md_cont_data total">
 											<dt>합계</dt>
 											<dd>
-												<div class="text">2,000,000 (원)</div>
+												<div class="text" id="tot_price_detail">2,000,000 (원)</div>
 											</dd>
 										</dl>
 
