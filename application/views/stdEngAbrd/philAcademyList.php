@@ -65,7 +65,31 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="training_tabs_item item3" id="map_baguio">바기오 지도</div>
 					</div>
 
+					<script>
+					jQuery(function($){
 
+						/* 탭메뉴 */
+						$(".training_tabs_list").each(function(index){
+					//		$(this).parents('section').
+							$(this).find("> li:eq(0)").addClass('on');
+							$(this).parents('section').find(".training_tabs_info > .training_tabs_item:eq(0)").addClass('on');
+						});
+
+						$('.training_tabs_list li a').on('click', function(){
+							var tabs_num = $(this).parent().index();
+							var $tabs_list = $(this).parents('.training_tabs_list');
+							var $tabs_info = $(this).parents('section').find(".training_tabs_info");
+
+							$('.training_tabs_list li').removeClass('on');
+							$('.training_tabs_list li').eq(tabs_num).addClass('on');
+
+							$tabs_info.find('.training_tabs_item').removeClass('on');
+							$tabs_info.find('.training_tabs_item').eq(tabs_num).addClass('on');
+							return false;
+						});
+
+					});
+					</script>
 
 				</section>
 				<!-- // 필리핀 전체 지도 영역 -->
