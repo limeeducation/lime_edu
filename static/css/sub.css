@@ -460,7 +460,7 @@ disabled
 
 .training_academy_data dd{float:left;width:calc(50% - 11.4rem);padding:0 7.9rem 0 2.7rem}
 .training_academy_data dd.colspan{width:calc(100% - 11.4rem);padding:0 0 0 2.7rem}
-.training_academy_data dd .text{width:11.2rem;height:3rem;padding:0.3rem 0;background:#FFFFFF; border-radius:5px;font-weight:500;font-size:1.6rem;line-height:2.4rem;text-align:center;color:#1D1887;}
+.training_academy_data dd .text{width:11.2rem;height:5rem;padding:0.3rem 0;background:#FFFFFF; border-radius:5px;font-weight:500;font-size:1.6rem;line-height:2.4rem;text-align:center;color:#1D1887;}
 .training_academy_data dd .text.auto{width:100%;height:auto;min-height:6rem;padding:0.6rem 1.6rem;text-align:left;}
 .training_academy_btn{position:absolute;top:50%;right:1.6rem;width:14rem;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);font-size:0;}
 .training_academy_btn a{display:block;line-height:3.8rem;background:#FFFFFF;border:1px solid #1D1887;border-radius:2.8rem;font-weight:700;font-size:1.4rem;text-align:center;color:#1D1887;}
