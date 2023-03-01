@@ -76,6 +76,7 @@ class StudyEnglishAbroad extends CI_Controller {
 		$school_list = $this->school_model->getPhilSchools($dist);
 		$data = array();
 		$data['school_list'] = $school_list;
+		$data['dist'] = $dist;
 		$this->load->view('stdEngAbrd/philAcademyList', $data);
 	}
 }

@@ -5,6 +5,22 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/sub.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<script>
+	$(document).ready(function(){
+		var dist = '<?= $dist;?>';
+		if(dist == 'cebu'){
+			$("#all_btn").removeClass("on");
+			$("#cebu_btn").addClass("on");
+			$(".training_tabs_item").hide();
+			$("#map_cebu").show();
+		}else if(dist == 'baguio'){
+			$("#all_btn").removeClass("on");
+            $("#baguio_btn").addClass("on");
+            $(".training_tabs_item").hide();
+            $("#map_baguio").show();
+		}
+	});
+</script>
 <body>
 
 	<div id="wrap">
@@ -39,41 +55,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<section class="cont_sect" id="trainingMap">
 
 					<ul class="inner training_tabs_list type3">
-						<li class="on"><a href="#">전체</a></li>
-						<li class=""><a href="#">세부</a></li>
-						<li class=""><a href="#">바기오</a></li>
+						<li class="on" id="all_btn"><a href="/StudyEnglishAbroad/philAcademyList">전체</a></li>
+						<li class="" id="cebu_btn"><a href="/StudyEnglishAbroad/philAcademyList/cebu">세부</a></li>
+						<li class="" id="baguio_btn"><a href="/StudyEnglishAbroad/philAcademyList/baguio">바기오</a></li>
 					</ul><!-- // inner -->
 					<div class="training_tabs_info">
-						<div class="training_tabs_item item1">전체 지도</div>
-						<div class="training_tabs_item item2">세부 지도</div>
-						<div class="training_tabs_item item3">바기오 지도</div>
+						<div class="training_tabs_item item1" id="map_all">전체 지도</div>
+						<div class="training_tabs_item item2" id="map_cebu">세부 지도</div>
+						<div class="training_tabs_item item3" id="map_baguio">바기오 지도</div>
 					</div>
 
-					<script>
-					jQuery(function($){
 
-						/* 탭메뉴 */
-						$(".training_tabs_list").each(function(index){
-					//		$(this).parents('section').
-							$(this).find("> li:eq(0)").addClass('on');
-							$(this).parents('section').find(".training_tabs_info > .training_tabs_item:eq(0)").addClass('on');
-						});
-
-						$('.training_tabs_list li a').on('click', function(){
-							var tabs_num = $(this).parent().index();
-							var $tabs_list = $(this).parents('.training_tabs_list');
-							var $tabs_info = $(this).parents('section').find(".training_tabs_info");
-
-							$('.training_tabs_list li').removeClass('on');
-							$('.training_tabs_list li').eq(tabs_num).addClass('on');
-
-							$tabs_info.find('.training_tabs_item').removeClass('on');
-							$tabs_info.find('.training_tabs_item').eq(tabs_num).addClass('on');
-							return false;
-						});
-
-					});
-					</script>
 
 				</section>
 				<!-- // 필리핀 전체 지도 영역 -->
