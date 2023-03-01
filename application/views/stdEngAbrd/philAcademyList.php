@@ -625,7 +625,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<div class="text" id="tot_price_detail">2,000,000 (원)</div>
 											</dd>
 										</dl>
-
+										<p>텍스트 영역 테스트</p>
 									</div><!-- // md_cont_detail -->
 
 									<div class="md_cont_detail">
