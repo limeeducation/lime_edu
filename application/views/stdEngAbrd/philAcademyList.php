@@ -11,12 +11,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		if(dist == 'cebu'){
 			$("#all_btn").removeClass("on");
 			$("#cebu_btn").addClass("on");
-			$(".map_all").removeClass("on");
+			$("#map_all").removeClass("on");
 			$("#map_cebu").addClass("on");
 		}else if(dist == 'baguio'){
 			$("#all_btn").removeClass("on");
             $("#baguio_btn").addClass("on");
-            $(".map_all").removeClass("on");
+            $("#map_all").removeClass("on");
             $("#map_baguio").addClass("on");
 		}
 	});
