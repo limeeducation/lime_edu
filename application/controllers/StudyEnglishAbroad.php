@@ -83,7 +83,7 @@ class StudyEnglishAbroad extends CI_Controller {
 	public function apiGetPhAcaDetail(){
 		$idx = $this->input->post('idx');
 		$details['info'] = $this->school_model->getPhBaseInfo($idx);
-
+		$details['sns'] = $this->school_model->getPhSns($idx);
 		echo json_encode($details);
 	}
 }

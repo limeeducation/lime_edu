@@ -91,6 +91,14 @@ class School_model extends CI_Model
         $this->db->where('ph_idx', $idx);
 		return $this->db->get()->result_array();
 	}
+
+	public function getPhSns($idx){
+		$this->db->select('sns_type');
+        $this->db->select('sns_url');
+        $this->db->from('phil_sns');
+        $this->db->where('ph_idx', $idx);
+        return $this->db->get()->result_array();
+	}
 }
 
 ?>
