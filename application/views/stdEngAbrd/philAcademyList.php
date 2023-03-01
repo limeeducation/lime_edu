@@ -518,7 +518,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="md_cont_select">
 												<select name="" id="">
 													<option value="">기간선택</option>
-													<?php for($i=0; $i<25; $i++):?>
+													<?php for($i=1; $i<25; $i++):?>
 													<option value="<?= $i;?>"><?= $i;?>주</option>
 													<?php endfor; ?>
 												</select>
