@@ -21,19 +21,18 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
             $("#map_baguio").addClass("on");
 		}
 	});
-	//지도 초기화
-	function initialize() {
+	//상세보기 지도 초기화
+	var map;
+	function initMap() {
     	var mapOptions = {
     		zoom : 17,
     		center : new google.maps.LatLng(37.5651, 126.98955), //서울
     		mapTypeId : google.maps.MapTypeId.ROADMAP
     	};
     	map = new google.maps.Map(document.getElementById('md_cont_map'), mapOptions);
-    	codeAddress();
     }
-    google.maps.event.addDomListener(window, 'load', initialize);
 
-	var geocoder;
+
 	function open_detail(ph_idx){
 		$.ajax({
 			type: "post",
@@ -117,6 +116,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		});
 	}
 
+	var geocoder;
 	function getDetailMapLatLon(){
 		geocoder = new google.maps.Geocoder();
 		var address = document.getElementById('detail_school_address_hidden').value;
