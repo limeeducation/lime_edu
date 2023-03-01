@@ -143,10 +143,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
         console.log(cur_fixed);
         if(!cur_fixed){
-        	selectedPeriod.val(cur_fixed).prop("selected", true);
-        	price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
         	var price_curri = (cur_price_week/4) * price_week;
         }else{
+        	selectedPeriod.val(cur_fixed).prop("selected", true);
+        	price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
         	var price_curri = (cur_price_week/4) * price_week;
         }
         $("#detail_price_curri_cal").empty();
