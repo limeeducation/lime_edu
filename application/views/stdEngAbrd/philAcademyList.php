@@ -78,7 +78,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	function setCurriDetailFromSchoolDetail(){
 		var selected = document.getElementById("detail_curri_list");
 		var selId = selected.options[selected.selectedIndex].value;
-		console.log(selId);
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetPhCurriDetail",
+			async: true,
+			data: {
+				"idx": selId
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				console.log(details);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
 	}
 
 	function open_compare(ph_idx){
