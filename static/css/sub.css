@@ -507,7 +507,7 @@ disabled
 .training-swiper .swiper-container-initialized .swiper-slide{padding:0;}
 .training-swiper .swiper-container-initialized + .swiper-control{display:block;}
 
-.training-swiper .swiper-control{display:none;width:100%;padding-top:8rem;text-align:center;font-size:0;}
+.training-swiper .swiper-control{width:100%;padding-top:8rem;text-align:center;font-size:0;}
 .training-swiper .swiper-button-next,
 .training-swiper .swiper-button-prev{display:inline-block;position:static;top:auto;left:auto;width:5.2rem;height:5.2rem;margin:0 1rem;z-index:10;cursor:pointer;background-size:100% 100%;background-repeat:no-repeat;}
 .training-swiper .swiper-button-next{right:0;background-image:url(/static/img/std_eng_abrd/phil/tabs_swiper_next_off@2x.png);background-position:50% 50%;}
