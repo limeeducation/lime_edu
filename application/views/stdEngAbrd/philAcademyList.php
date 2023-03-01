@@ -82,7 +82,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				var curri_price_html = "<option value=''>커리큘럼 선택</option>";
 				details['curri'].forEach(function(curri){
 					curri_html += "<option value='"+curri.idx+"'>"+curri.curri_name+"</option>";
-					if(curri.fixed_period == ''){
+					if(curri.fixed_period == '' || curri.fixed_period == null || curri.fixed_period == 'null'){
 						curri_price_html += "<option value='"+curri.curri_price+"'>"+curri.curri_name+"</option>";
 					}else{
 						curri_price_html += "<option id="+curri.fixed_period+" value='"+curri.curri_price+"'>"+curri.curri_name+"(기간 고정)</option>";
