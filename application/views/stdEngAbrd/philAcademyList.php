@@ -86,6 +86,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				});
 				$("#detail_curri_list").append(curri_html);
 				$("#detail_price_curri").append(curri_price_html);
+
+				$("#detail_price_dorm").empty();
+				var dorm_html = "<option value=''>기숙사 선택</option>";
+				details['dorm'].forEach(function(dorm){
+					dorm_html += "<option value='"+dorm.dorm_price+"'>"+dorm.dorm_name+"</option>";
+				});
+				$("#detail_price_dorm").append(dorm_html);
+
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -120,17 +128,25 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		});
 	}
 
-	function setCurriDetailCalFromDetail(){
+	function setCurriCalFromDetail(){
 		var selectedCurri = document.getElementById("detail_price_curri");
 		var cur_price_week = selectedCurri.options[selectedCurri.selectedIndex].value;
-		console.log("cur_price_week : "+cur_price_week);
 		var selectedPeriod = document.getElementById("detail_price_period");
 		var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
-		console.log("price_week : "+price_week);
 		var price_curri = (cur_price_week/4) * price_week;
-		console.log("price_curri : "+price_curri);
 		$("#detail_price_curri_cal").empty();
 		$("#detail_price_curri_cal").append(price_curri.toLocaleString('ko-KR'));
+	}
+
+	function setDormCalFromDetail(){
+		var selectedDorm = document.getElementById("detail_price_dorm");
+        var dorm_price_week = selectedDorm.options[selectedDorm.selectedIndex].value;
+        var selectedPeriod = document.getElementById("detail_price_period");
+        var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
+        var price_dorm = (dorm_price_week/4) * price_week;
+        console.log("price_dorm : "+price_dorm);
+        $("#detail_price_dorm_cal").empty();
+        $("#detail_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
 	}
 
 	var geocoder;
@@ -553,7 +569,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt>학비</dt>
 												<dd>
 													<div class="select">
-														<select name="" id="detail_price_curri" onchange="setCurriDetailCalFromDetail();">
+														<select name="" id="detail_price_curri" onchange="setCurriCalFromDetail();">
 															<option value="">XXXXX 코스</option>
 														</select>
 													</div>
@@ -564,13 +580,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt>기숙사비</dt>
 												<dd>
 													<div class="select">
-														<select name="" id="">
+														<select name="" id="detail_price_dorm" onchange="setDormCalFromDetail();">
 															<option value="">4인실(A)</option>
 															<option value="">6인실(A)</option>
 															<option value="">8인실(A)</option>
 														</select>
 													</div>
-													<div class="text">1,000,000 (원)</div>
+													<div class="text" id="detail_price_dorm_cal">1,000,000 (원)</div>
 												</dd>
 											</dl>
 											<dl class="md_cont_data">

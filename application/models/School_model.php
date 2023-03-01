@@ -109,6 +109,14 @@ class School_model extends CI_Model
         return $this->db->get()->result_array();
     }
 
+    public function getPhDrom($idx){
+    	$this->db->select('dorm_name');
+        $this->db->select('dorm_price');
+        $this->db->from('phil_dorm');
+        $this->db->where('ph_idx', $idx);
+        return $this->db->get()->result_array();
+    }
+
     public function getCurriDetail($idx){
     	$this->db->select('class_name');
         $this->db->select('class_detail');
