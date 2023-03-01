@@ -122,9 +122,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 	function setCurriDetailCalFromDetail(){
 		var selectedCurri = document.getElementById("detail_price_curri");
-		var cur_price_week = selected.options[selected.selectedIndex].value;
+		var cur_price_week = selectedCurri.options[selectedCurri.selectedIndex].value;
 		var selectedPeriod = document.getElementById("detail_price_period");
-		var price_week = selected.options[selected.selectedIndex].value;
+		var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
 		var price_curri = (cur_price_week/4) * price_week;
 		$("#detail_price_curri_cal").append(price_curri.toLocaleString('ko-KR'));
 	}
