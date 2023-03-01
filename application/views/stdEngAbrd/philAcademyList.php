@@ -141,6 +141,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         var dorm_price_week = selectedDorm.options[selectedDorm.selectedIndex].value;
         var selectedPeriod = document.getElementById("detail_price_period");
         var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
+        console.log(cur_fixed);
         if(cur_fixed != ''){
         	selectedPeriod.val(cur_fixed).prop("selected", true);
         	price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
