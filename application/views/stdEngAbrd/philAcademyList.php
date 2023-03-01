@@ -60,7 +60,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<li class="" id="baguio_btn"><a href="/StudyEnglishAbroad/philAcademyList/baguio">바기오</a></li>
 					</ul><!-- // inner -->
 					<div class="training_tabs_info">
-						<div class="training_tabs_item item1" id="map_all">전체 지도</div>
+						<div class="training_tabs_item item1 on" id="map_all">전체 지도</div>
 						<div class="training_tabs_item item2" id="map_cebu">세부 지도</div>
 						<div class="training_tabs_item item3" id="map_baguio">바기오 지도</div>
 					</div>
