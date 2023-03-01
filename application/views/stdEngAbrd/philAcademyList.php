@@ -32,6 +32,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			dataType: "text",
 			success: function(data){
 				var details = JSON.parse(data);
+				console.log(details);
 				$("#detail_school_name").empty();
 				$("#detail_school_name").append(details['info'].aca_name);
 				$("#detail_school_dist").empty();
