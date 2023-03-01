@@ -75,6 +75,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		});
 	}
 
+	function setCurriDetailFromSchoolDetail(){
+		var selected = document.getElementById("detail_curri_list");
+		var selId = selected.options[selected.selectedIndex].value;
+		console.log(selId);
+	}
+
 	function open_compare(ph_idx){
 
     }
@@ -439,10 +445,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="md_cont_detail">
 										<div class="md_cont_title">커리큘럼</div>
 										<div class="md_cont_select">
-											<select name="" id="detail_curri_list">
+											<select name="" id="detail_curri_list" onchange="setCurriDetailFromSchoolDetail();">
 												<option value="">XXXXX 코스</option>
-												<option value="">XXXXX 코스2</option>
-												<option value="">XXXXX 코스3</option>
 											</select>
 										</div>
 										<dl class="md_cont_data">
