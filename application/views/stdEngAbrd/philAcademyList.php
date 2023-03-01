@@ -5,6 +5,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/sub.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi41nisz2OpbuKdeFUA1824LYFLB93hso&callback=initMap"></script>
 <script>
 	$(document).ready(function(){
 		var dist = '<?= $dist;?>';
@@ -20,7 +21,19 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
             $("#map_baguio").addClass("on");
 		}
 	});
+	//지도 초기화
+	function initialize() {
+    	var mapOptions = {
+    		zoom : 17,
+    		center : new google.maps.LatLng(37.5651, 126.98955), //서울
+    		mapTypeId : google.maps.MapTypeId.ROADMAP
+    	};
+    	map = new google.maps.Map(document.getElementById('md_cont_map'), mapOptions);
+    	codeAddress();
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
 
+	var geocoder;
 	function open_detail(ph_idx){
 		$.ajax({
 			type: "post",
@@ -32,7 +45,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			dataType: "text",
 			success: function(data){
 				var details = JSON.parse(data);
-				console.log(details);
 				$("#detail_school_name").empty();
 				$("#detail_school_name").append(details['info'][0].aca_name);
 				$("#detail_school_dist").empty();
@@ -47,6 +59,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#detail_school_intro").append(details['info'][0].aca_detail);
 				$("#detail_school_address").empty();
                 $("#detail_school_address").append(details['info'][0].aca_address);
+                $("#detail_school_address_hidden").val(details['info'][0].aca_address);
+                getDetailMapLatLon();
                 $("#detail_sns_ul").empty();
                 var sns_html = "";
 				details['sns'].forEach(function(sns){
@@ -88,7 +102,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			dataType: "text",
 			success: function(data){
 				var details = JSON.parse(data);
-				console.log(details);
 				var curri_dtl_html = "";
 				$(".each_curri_detail").remove();
 				details['curri'].forEach(function(curri){
@@ -100,6 +113,27 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#each_dtl_curri").append(curri_dtl_html);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+	}
+
+	function getDetailMapLatLon(){
+		geocoder = new google.maps.Geocoder();
+		var address = document.getElementById('detail_school_address_hidden').value;
+		geocoder.geocode( { 'address': address}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				var lat = results[0]['geometry']['location']['lat']();
+				var lng = results[0]['geometry']['location']['lng']();
+				map.setCenter(results[0].geometry.location);
+				var marker = new google.maps.Marker({
+					map: map,
+					position: results[0].geometry.location,
+					draggable:false,
+					animation:google.maps.Animation.DROP,
+					title:address
+				});
+			}else{
+				alert('지도 호출 실패');
 			}
 		});
 	}
@@ -432,10 +466,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 									<div class="md_cont_detail">
 										<div class="md_cont_title">위치</div>
-										<div class="md_cont_map"><img src="/static/img/std_eng_abrd/phil/modal_tabs_map@2x.png" alt=""></div>
+										<div class="md_cont_map"></div>
 										<dl class="md_cont_addr">
 											<dt>주소</dt>
 											<dd id="detail_school_address">abcdabcdabcd road, cebu, ...</dd>
+											<input type="hidden" id="detail_school_address_hidden" value=""/>
 										</dl>
 									</div><!-- // md_cont_detail -->
 
