@@ -47,7 +47,22 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#detail_school_intro").append(details['info'][0].aca_detail);
 				$("#detail_school_address").empty();
                 $("#detail_school_address").append(details['info'][0].aca_address);
-
+                $("#detail_sns_ul").empty();
+				details['sns'].forEach(function(sns){
+					var sns_html = "";
+					if(sns.sns_type == 'Youtube'){
+						sns_html += "<li><a href='"+sns.sns_url+"' class='item1'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_youtube@2x.png' alt='Youtube'></a></li>";
+					}else if(sns.sns_type == 'Facebook'){
+						sns_html += "<li><a href='"+sns.sns_url+"' class='item1'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_facebook@2x.png' alt='Facebook'></a></li>";
+					}else if(sns.sns_type == 'Instagram'){
+                     	sns_html += "<li><a href='"+sns.sns_url+"' class='item1'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_instagram@2x.png' alt='Instagram'></a></li>";
+                    }else if(sns.sns_type == 'Twitter'){
+                    	sns_html += "<li><a href='"+sns.sns_url+"' class='item1'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_twitter@2x.png' alt='Twitter'></a></li>";
+                    }else{
+                    	sns_html += "<li><a href='"+sns.sns_url+"' class='item1'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_home@2x.png' alt='Home'></a></li>";
+                    }
+				});
+				$("#detail_sns_ul").append(sns_html);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -389,7 +404,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</dl>
 									</div><!-- // md_cont_detail -->
 
-									<ul class="md_cont_icons">
+									<ul class="md_cont_icons" id="detail_sns_ul">
 										<li><a href="#" class="item1"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_youtube@2x.png" alt="Youtube"></a></li>
 										<li><a href="#" class="item2"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_facebook@2x.png" alt="Facebook"></a></li>
 										<li><a href="#" class="item3"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_twitter@2x.png" alt="Twitter"></a></li>
