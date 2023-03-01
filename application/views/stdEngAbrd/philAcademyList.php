@@ -154,7 +154,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         var price_dorm = (dorm_price_week/4) * price_week;
         $("#detail_price_dorm_cal").empty();
         $("#detail_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
-        var total_price = 100000+price_curri+price_dorm;
+        var total_price = 100000+Math.ceil(price_curri)+price_dorm;
         $("#tot_price_detail").empty();
         $("#tot_price_detail").append(total_price.toLocaleString('ko-KR'));
 	}
