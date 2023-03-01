@@ -21,9 +21,9 @@
 					<li>
 						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 						<ul class="depth_list">
-							<li><a href="#">미국 대학교 랭킹</a></li>
-							<li><a href="#">미국 대학 진학방법</a></li>
-							<li><a href="#">명문대 편입 프로그램</a></li>
+							<li><a href="/StudyUnivAbroad/studyUnivUs">미국 대학교 랭킹</a></li>
+							<li><a href="/StudyUnivAbroad/studyUnivUk#us_univ_pathway">미국 대학 진학방법</a></li>
+							<li><a href="/StudyUnivAbroad/studyUnivUk#us_univ_pathway_list">미국 추천 패스웨이 대학</a></li>
 						</ul>
 					</li>
 					<li>
@@ -143,9 +143,9 @@
 								<li>
 									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 									<ul class="depth_list">
-										<li><a href="#">미국 대학교 랭킹</a></li>
-										<li><a href="#">미국 대학 진학방법</a></li>
-										<li><a href="#">명문대 편입 프로그램</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivUs">미국 대학교 랭킹</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivUk#us_univ_pathway">미국 대학 진학방법</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivUk#us_univ_pathway_list">미국 추천 패스웨이 대학</a></li>
 									</ul>
 								</li>
 								<li>
