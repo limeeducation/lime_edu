@@ -63,13 +63,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                     }
 				});
 				$("#detail_sns_ul").append(sns_html);
-				$("#detail_school_curri").empty();
+				$("#detail_curri_list").empty();
 				var curri_html = "<option value=''>커리큘럼 선택</option>";
 				details['curri'].forEach(function(curri){
 					console.log(curri);
+					console.log(curri.idx);
 					//curri_html += "<option value='"+curri.idx+"'>"curri.curri_name"</option>";
 				});
-				$("#detail_school_curri").append(curri_html);
+				$("#detail_curri_list").append(curri_html);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -440,7 +441,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="md_cont_detail">
 										<div class="md_cont_title">커리큘럼</div>
 										<div class="md_cont_select">
-											<select name="" id="detail_school_curri">
+											<select name="" id="detail_curri_list">
 												<option value="">XXXXX 코스</option>
 												<option value="">XXXXX 코스2</option>
 												<option value="">XXXXX 코스3</option>
