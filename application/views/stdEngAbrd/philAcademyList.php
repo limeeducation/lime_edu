@@ -182,10 +182,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			}
 		});
 	}
-	var printContents;
-	var initBody;
+
 	function printDetail(){
-		printContents = document.getElementById("phil_detail");
+		var printContents = document.getElementById("phil_detail");
 
 		var originalContents = document.body.innerHTML;
     	document.body.innerHTML = printContents;
