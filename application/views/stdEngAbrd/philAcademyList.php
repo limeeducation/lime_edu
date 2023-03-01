@@ -618,14 +618,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												</dd>
 											</dl>
 										</div><!-- // md_cont_group -->
-
+										<div>
+											<p style="float:right;">장기연수할인 : </p>
+											<p style="float:right;">-100,000</p>
+										</div>
 										<dl class="md_cont_data total">
 											<dt>합계</dt>
 											<dd>
 												<div class="text" id="tot_price_detail">2,000,000 (원)</div>
 											</dd>
 										</dl>
-										<p>텍스트 영역 테스트</p>
+										<p style="float:right;"></p>
 									</div><!-- // md_cont_detail -->
 
 									<div class="md_cont_detail">
