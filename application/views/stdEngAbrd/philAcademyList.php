@@ -116,7 +116,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 													</div>
 												</div><!-- // item_info -->
 											</li><!-- // training_academy_item -->
-									<?php if($i %5 == 1): ?>
+									<?php if($i %5 == 0): ?>
 										</ul>
 									</div><!-- // swiper-slide -->
 									<?php endif; ?>
