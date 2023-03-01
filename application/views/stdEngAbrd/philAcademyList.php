@@ -133,7 +133,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						</div><!-- // training-swiper -->
 
-						<div class="training_search">
+						<div class="training_search" style="display:none;">
 							<input type="text" placeholder="학원 이름으로 검색">
 						</div><!-- // training_search -->
 
