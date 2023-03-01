@@ -129,6 +129,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		console.log("price_week : "+price_week);
 		var price_curri = (cur_price_week/4) * price_week;
 		console.log("price_curri : "+price_curri);
+		$("#detail_price_curri_cal").empty();
 		$("#detail_price_curri_cal").append(price_curri.toLocaleString('ko-KR'));
 	}
 
