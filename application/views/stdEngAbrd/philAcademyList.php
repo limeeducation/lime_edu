@@ -45,6 +45,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#detail_school_published").append(details['info'][0].aca_published);
 				$("#detail_school_intro").empty();
 				$("#detail_school_intro").append(details['info'][0].aca_detail);
+				$("#detail_school_address").empty();
+                $("#detail_school_address").append(details['info'][0].aca_address);
+                //get_map(details['info'][0].aca_address);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -382,7 +385,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="md_cont_map"><img src="/static/img/std_eng_abrd/phil/modal_tabs_map@2x.png" alt=""></div>
 										<dl class="md_cont_addr">
 											<dt>주소</dt>
-											<dd>abcdabcdabcd road, cebu, ...</dd>
+											<dd id="detail_school_address">abcdabcdabcd road, cebu, ...</dd>
 										</dl>
 									</div><!-- // md_cont_detail -->
 
