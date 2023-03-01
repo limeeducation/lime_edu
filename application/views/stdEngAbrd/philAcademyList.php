@@ -466,7 +466,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 									<div class="md_cont_detail">
 										<div class="md_cont_title">위치</div>
-										<div class="md_cont_map" id="detail_map_div" style="width:659px;height:200px;"></div>
+										<div class="md_cont_map" id="detail_map_div" style="width:100%;height:200px;"></div>
 										<dl class="md_cont_addr">
 											<dt>주소</dt>
 											<dd id="detail_school_address">abcdabcdabcd road, cebu, ...</dd>
