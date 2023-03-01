@@ -66,7 +66,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#detail_school_curri").empty();
 				var curri_html = "<option value=''>커리큘럼 선택</option>";
 				details['curri'].forEach(function(curri){
-					curri_html += "<option value='"+curri.idx+"'>"curri.curri_name"</option>";
+					console.log(curri);
+					//curri_html += "<option value='"+curri.idx+"'>"curri.curri_name"</option>";
 				});
 				$("#detail_school_curri").append(curri_html);
 			},error: function(data){
