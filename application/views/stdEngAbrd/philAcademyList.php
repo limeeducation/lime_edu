@@ -34,17 +34,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				var details = JSON.parse(data);
 				console.log(details);
 				$("#detail_school_name").empty();
-				$("#detail_school_name").append(details['info'].aca_name);
+				$("#detail_school_name").append(details['info'][0].aca_name);
 				$("#detail_school_dist").empty();
-				$("#detail_school_dist").append(details['info'].aca_city);
+				$("#detail_school_dist").append(details['info'][0].aca_city);
 				$("#detail_school_students").empty();
-				$("#detail_school_students").append(details['info'].aca_students);
+				$("#detail_school_students").append(details['info'][0].aca_students);
 				$("#detail_school_curri").empty();
-				$("#detail_school_curri").append(details['info'].aca_curri);
+				$("#detail_school_curri").append(details['info'][0].aca_curri);
 				$("#detail_school_published").empty();
-				$("#detail_school_published").append(details['info'].aca_published);
+				$("#detail_school_published").append(details['info'][0].aca_published);
 				$("#detail_school_intro").empty();
-				$("#detail_school_intro").append(details['info'].aca_detail);
+				$("#detail_school_intro").append(details['info'][0].aca_detail);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
