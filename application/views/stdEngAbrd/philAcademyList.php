@@ -157,7 +157,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         var total_price = 100000+Math.ceil(price_curri)+price_dorm;
         $("#tot_price_detail").empty();
         $("#tot_price_detail").append(total_price.toLocaleString('ko-KR'));
-        if(price_week < 4){
+        if(price_week > 0 && price_week < 4){
         	alert("4주 미만일 경우 학원 정책에 따라 추가 비용이 발생할 수 있습니다.");
         }
 	}
