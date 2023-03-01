@@ -619,8 +619,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</dl>
 										</div><!-- // md_cont_group -->
 										<div>
-											<p style="float:right;">장기연수할인 : </p>
 											<p style="float:right;">-100,000</p>
+											<p style="float:right;">장기연수할인 : </p>
 										</div>
 										<dl class="md_cont_data total">
 											<dt>합계</dt>
