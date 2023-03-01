@@ -186,7 +186,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	var initBody;
 	function printDetail(){
 		div = document.getElementById("phil_detail");
-		var windowObject = window.open('', "PrintWindow", "width=5, height=5, top=200, lefg=200, toolbars=no, scrollbars=no, status=no, resizable=no");
+		var windowObject = window.open('', "PrintWindow", "width=5, height=5, top=200, left=200, toolbars=no, scrollbars=no, status=no, resizable=no");
 
         windowObject.document.writeln(div.innerHTML);
         windowObject.document.close();
