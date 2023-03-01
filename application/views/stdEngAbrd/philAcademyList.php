@@ -186,13 +186,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	var initBody;
 	function printDetail(){
 		div = document.getElementById("phil_detail");
-		var windowObject = window.open('', "PrintWindow", "width=100, height=100, top=200, left=200, toolbars=no, scrollbars=no, status=no, resizable=no");
 
-        windowObject.document.writeln(div.innerHTML);
-        windowObject.document.close();
-        windowObject.focus();
-        windowObject.print();
-        windowObject.close();
+		var originalContents = document.body.innerHTML;
+    	document.body.innerHTML = printContents;
+    	window.print();
+    	document.body.innerHTML = originalContents;
 	}
 
 	function open_compare(ph_idx){
