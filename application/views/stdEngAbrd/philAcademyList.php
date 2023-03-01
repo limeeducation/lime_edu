@@ -82,7 +82,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				var curri_price_html = "<option value=''>커리큘럼 선택</option>";
 				details['curri'].forEach(function(curri){
 					curri_html += "<option value='"+curri.idx+"'>"+curri.curri_name+"</option>";
-					curri_price_html += "<option value='"+curri.curri_price+"'>"+curri.curri_name+"</option>";
+					if(curri.fixed_period == ''){
+						curri_price_html += "<option value='"+curri.curri_price+"'>"+curri.curri_name+"</option>";
+					}else{
+						curri_price_html += "<option id="+curri.fixed_period+" value='"+curri.curri_price+"'>"+curri.curri_name+"(기간 고정)</option>";
+					}
+
 				});
 				$("#detail_curri_list").append(curri_html);
 				$("#detail_price_curri").append(curri_price_html);
@@ -131,13 +136,20 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	function setCalFromDetail(){
 		var selectedCurri = document.getElementById("detail_price_curri");
         var cur_price_week = selectedCurri.options[selectedCurri.selectedIndex].value;
+        var cur_fixed = selectedCurri.options[selectedCurri.selectedIndex].id;
         var selectedDorm = document.getElementById("detail_price_dorm");
         var dorm_price_week = selectedDorm.options[selectedDorm.selectedIndex].value;
         var selectedPeriod = document.getElementById("detail_price_period");
         var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
-        var price_curri = (cur_price_week/4) * price_week;
+        if(cur_fixed != ''){
+        	selectedPeriod.val(cur_fixed).prop("selected", true);
+        	price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
+        	var price_curri = (cur_price_week/4) * price_week;
+        }else{
+        	var price_curri = (cur_price_week/4) * price_week;
+        }
         $("#detail_price_curri_cal").empty();
-        $("#detail_price_curri_cal").append(price_curri.toLocaleString('ko-KR'));
+        $("#detail_price_curri_cal").append(Math.ceil(price_curri).toLocaleString('ko-KR'));
         var price_dorm = (dorm_price_week/4) * price_week;
         $("#detail_price_dorm_cal").empty();
         $("#detail_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));

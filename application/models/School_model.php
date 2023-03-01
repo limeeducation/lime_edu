@@ -104,6 +104,7 @@ class School_model extends CI_Model
     	$this->db->select('idx');
     	$this->db->select('curri_name');
     	$this->db->select('curri_price');
+    	$this->db->select('fixed_period');
         $this->db->from('phil_curri');
         $this->db->where('ph_idx', $idx);
         return $this->db->get()->result_array();
