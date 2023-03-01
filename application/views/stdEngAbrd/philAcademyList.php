@@ -142,7 +142,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         $("#detail_price_dorm_cal").empty();
         $("#detail_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
         var total_price = 100000+price_curri+price_dorm;
-        $("#tot_price_detail").val(total_price);
+        $("#tot_price_detail").empty();
+        $("#tot_price_detail").append(total_price.toLocaleString('ko-KR'));
 	}
 
 	var geocoder;
