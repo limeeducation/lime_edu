@@ -508,8 +508,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</select>
 										</div>
 										<dl class="md_cont_data each_curri_detail">
-											<dt>1:1수업</dt>
-											<dd>Reading (50분), Speaking(50분)</dd>
 										</dl>
 									</div><!-- // md_cont_detail -->
 								</div><!-- // modal_tabs_item -->
@@ -520,8 +518,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="md_cont_select">
 												<select name="" id="">
 													<option value="">기간선택</option>
-													<option value="">기간선택2</option>
-													<option value="">기간선택3</option>
+													<?php for($i=0; $i<25; $i++):?>
+													<option value="<?= $i;?>"><?= $i;?>주</option>
+													<?php endfor; ?>
 												</select>
 											</div>
 											<div class="md_cont_print"><a href="#"><img src="/static/img/std_eng_abrd/phil/modal_print@2x.png" alt="Print"></a></div>
