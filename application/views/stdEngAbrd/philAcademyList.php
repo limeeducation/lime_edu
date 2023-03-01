@@ -77,11 +77,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				});
 				$("#detail_sns_ul").append(sns_html);
 				$("#detail_curri_list").empty();
+				$("#detail_price_curri").empty();
 				var curri_html = "<option value=''>커리큘럼 선택</option>";
+				var curri_price_html = "<option value=''>커리큘럼 선택</option>";
 				details['curri'].forEach(function(curri){
 					curri_html += "<option value='"+curri.idx+"'>"+curri.curri_name+"</option>";
+					curri_price_html += "<option value='"+curri.curri_price+"'>"+curri.curri_name+"</option>";
 				});
 				$("#detail_curri_list").append(curri_html);
+				$("#detail_price_curri").append(curri_price_html);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -114,6 +118,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				alert("잠시 후 다시 시도해주세요.");
 			}
 		});
+	}
+
+	function setCurriDetailCalFromDetail(){
+		var selectedCurri = document.getElementById("detail_price_curri");
+		var cur_price_week = selected.options[selected.selectedIndex].value;
+		var selectedPeriod = document.getElementById("detail_price_period");
+		var price_week = selected.options[selected.selectedIndex].value;
+		var price_curri = (cur_price_week/4) * price_week;
+		$("#detail_price_curri_cal").append(price_curri.toLocaleString('ko-KR'));
 	}
 
 	var geocoder;
@@ -516,7 +529,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="md_cont_title">학비계산</div>
 										<div class="md_cont_select_wrap">
 											<div class="md_cont_select">
-												<select name="" id="">
+												<select name="" id="detail_price_period">
 													<option value="">기간선택</option>
 													<?php for($i=1; $i<25; $i++):?>
 													<option value="<?= $i;?>"><?= $i;?>주</option>
@@ -536,13 +549,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt>학비</dt>
 												<dd>
 													<div class="select">
-														<select name="" id="">
+														<select name="" id="detail_price_curri" onchange="setCurriDetailCalFromDetail();">
 															<option value="">XXXXX 코스</option>
-															<option value="">XXXXX 코스2</option>
-															<option value="">XXXXX 코스3</option>
 														</select>
 													</div>
-													<div class="text">1,000,000 (원)</div>
+													<div class="text" id="detail_price_curri_cal"></div>
 												</dd>
 											</dl>
 											<dl class="md_cont_data">
