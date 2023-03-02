@@ -828,7 +828,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="md_cont_title">커리큘럼</div>
 										<div class="md_cont_select">
 											<select name="" id="detail_curri_list" onchange="setCurriDetailFromSchoolDetail();">
-												<option value="">XXXXX 코스</option>
+												<option value="">커리큘럼 선택</option>
 											</select>
 										</div>
 										<dl class="md_cont_data each_curri_detail">
@@ -873,12 +873,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dd>
 													<div class="select">
 														<select name="" id="detail_price_dorm" onchange="setCalFromDetail();">
-															<option value="">4인실(A)</option>
-															<option value="">6인실(A)</option>
-															<option value="">8인실(A)</option>
+															<option value=""></option>
 														</select>
 													</div>
-													<div class="text" id="detail_price_dorm_cal">1,000,000 (원)</div>
+													<div class="text" id="detail_price_dorm_cal"></div>
 													<input type="hidden" id="detail_dorm_price_final"/>
 												</dd>
 											</dl>
@@ -1256,10 +1254,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dd>
 															<div class="select">
 																<select name="" id="compare_from_price_curri" onchange="setCalFromCompare('from');">
-																	<option value="">XXXXX 코스</option>
+																	<option value="">커리큘럼 선택</option>
 																</select>
 															</div>
-															<div class="text" id="compare_from_price_curri_cal">1,000,000 (원)</div>
+															<div class="text" id="compare_from_price_curri_cal"></div>
 														</dd>
 													</dl>
 													<dl class="md_cont_data">
@@ -1267,12 +1265,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dd>
 															<div class="select">
 																<select name="" id="compare_from_price_dorm" onchange="setCalFromCompare('from');">
-																	<option value="">4인실(A)</option>
-																	<option value="">6인실(A)</option>
-																	<option value="">8인실(A)</option>
+																	<option value="">기숙사 선택</option>
 																</select>
 															</div>
-															<div class="text" id="compare_from_price_dorm_cal">1,000,000 (원)</div>
+															<div class="text" id="compare_from_price_dorm_cal"></div>
 														</dd>
 													</dl>
 													<dl class="md_cont_data">
@@ -1357,12 +1353,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dd>
 															<div class="select">
 																<select name="" id="compare_to_price_curri" onchange="setCalFromCompare('to');">
-																	<option value="">XXXXX 코스</option>
-																	<option value="">XXXXX 코스2</option>
-																	<option value="">XXXXX 코스3</option>
+																	<option value="">커리큘럼 선택</option>
 																</select>
 															</div>
-															<div class="text" id="compare_to_price_curri_cal">1,000,000 (원)</div>
+															<div class="text" id="compare_to_price_curri_cal"></div>
 														</dd>
 													</dl>
 													<dl class="md_cont_data">
@@ -1370,12 +1364,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dd>
 															<div class="select">
 																<select name="" id="compare_to_price_dorm" onchange="setCalFromCompare('to');">
-																	<option value="">4인실(A)</option>
-																	<option value="">6인실(A)</option>
-																	<option value="">8인실(A)</option>
+																	<option value="">기숙사 선택</option>
 																</select>
 															</div>
-															<div class="text" id="compare_to_price_dorm_cal">1,000,000 (원)</div>
+															<div class="text" id="compare_to_price_dorm_cal"></div>
 														</dd>
 													</dl>
 													<dl class="md_cont_data">
