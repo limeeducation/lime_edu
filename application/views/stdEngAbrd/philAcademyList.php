@@ -164,7 +164,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				console.log("price_week : "+price_week);
 				if(long_term.promo_over_period == price_week){
 					$("#detail_long_term_alert").show();
-					$("#long_term_discount_detail").append("-"+long_term.discount_price);
+					$("#long_term_discount_detail").append("-"+long_term.discount_price.toLocaleString('ko-KR'));
 					long_term_discount = long_term.discount_price;
 				}
 			});
@@ -193,12 +193,30 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         	price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
         	var price_curri = (cur_price_week/4) * price_week;
         }
+        $("#long_term_discount_compare"+compare).empty();
+        $("#compare_"+compare+"_long_term_alert").hide();
         $("#compare_"+compare+"_price_curri_cal").empty();
         $("#compare_"+compare+"_price_curri_cal").append(Math.ceil(price_curri).toLocaleString('ko-KR'));
         var price_dorm = (dorm_price_week/4) * price_week;
         $("#compare_"+compare+"_price_dorm_cal").empty();
         $("#compare_"+compare+"_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
-        var total_price = 100000+Math.ceil(price_curri)+price_dorm;
+        var compare_long_term_discount = 0;
+        var cal_long_now;
+        if(compare == 'from'){
+        	cal_long_now = compare_from_long_term;
+        }else{
+        	cal_long_now = compare_to_long_term;
+        }
+        if(cal_long_now){
+        	cal_long_now.forEach(function(long_term){
+        		if(long_term.promo_over_period == price_week){
+        			$("#comapre_"+compare+"_long_term_alert").show();
+        			$("#long_term_discount_compare_"+compare).append("-"+long_term.discount_price.toLocaleString('ko-KR'));
+        			compare_long_term_discount = long_term.discount_price;
+        		}
+        	});
+        }
+        var total_price = 100000+Math.ceil(price_curri)+price_dorm - compare_long_term_discount;
         $("#tot_price_compare_"+compare).empty();
         $("#tot_price_compare_"+compare).append(total_price.toLocaleString('ko-KR'));
         if(price_week > 0 && price_week < 4){
@@ -248,6 +266,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     }
 	var compare_from;
 	var compare_to;
+	var compare_from_long_term;
 	function open_compare(ph_idx){
 		$.ajax({
 			type: "post",
@@ -259,6 +278,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			dataType: "text",
 			success: function(data){
 				var details = JSON.parse(data);
+				compare_from_long_term = details['long_term'];
 				$("#start_compare_name").empty();
                 $("#start_compare_name").append(details['info'][0].aca_name);
                 $("#start_compare_city").empty();
@@ -346,7 +366,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		compare_to = ph_idx;
 		console.log(compare_to);
     }
-
+	var compare_to_long_term;
     function setCompareAll(){
     	$.ajax({
         	type: "post",
@@ -358,6 +378,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         	dataType: "text",
         	success: function(data){
         		var details = JSON.parse(data);
+        		compare_to_long_term = details['long_term'];
         		$("#compare_to_name").empty();
                 $("#compare_to_name").append(details['info'][0].aca_name);
                 $("#compare_to_city").empty();
@@ -1268,7 +1289,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														</dd>
 													</dl>
 												</div><!-- // md_cont_group -->
-												<div id="detail_long_term_alert" style="display:none;">
+												<div id="compare_from_long_term_alert" style="display:none;">
                                                 	<p style="float:right;" id="long_term_discount_compare_from">-100,000</p>
                                                 	<p style="float:right;">장기연수할인 : </p>
                                                 </div>
@@ -1372,7 +1393,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														</dd>
 													</dl>
 												</div><!-- // md_cont_group -->
-												<div id="detail_long_term_alert" style="display:none;">
+												<div id="compare_to_long_term_alert" style="display:none;">
                                                 	<p style="float:right;" id="long_term_discount_compare_to">-100,000</p>
                                                 	<p style="float:right;">장기연수할인 : </p>
                                                 </div>
