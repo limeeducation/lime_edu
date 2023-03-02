@@ -233,7 +233,16 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			}
 		});
     }
-
+	function setCompareCity(city){
+		$(".btn_compare_city").removeClass("on");
+		$("#btn_compare_city_"+city).addClass("on");
+		if(city == 'all'){
+			$(".compare_list_city").show();
+		}else{
+			$(".compare_list_city").hide();
+            $("."+city).show();
+		}
+	}
     function set_compare(ph_idx){
     	console.log(ph_idx);
 
@@ -764,7 +773,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<div class="training_academy_item">
 											<div class="item_logo">
 												<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/logo_none.png" alt=""></div>
-												<div class="logo_name">비교할 학원을 선택해주세요</div>
+												<div class="logo_name"></div>
 											</div><!-- // item_logo -->
 											<div class="item_info">
 												<dl class="training_academy_data">
@@ -789,15 +798,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="modal_compare_cont">
 								<div class="modal_compare_title"><div>비교할 학원을 선택해 주세요</div></div>
 								<ul class="modal_compare_btn">
-									<li class="on"><a href="#">전체</a></li>
-									<li><a href="#">세부</a></li>
-									<li><a href="#">바기오</a></li>
-									<li><a href="#">기타</a></li>
+									<li id="btn_compare_city_all" class="btn_compare_city on"><a href="javascript:setCompareCity('all');">전체</a></li>
+									<li id="btn_compare_city_cebu" class="btn_compare_city"><a href="javascript:setCompareCity('cebu');">세부</a></li>
+									<li id="btn_compare_city_baguio" class="btn_compare_city"><a href="javascript:setCompareCity('baguio');">바기오</a></li>
+									<li id="btn_compare_city_etc" class="btn_compare_city"><a href="javascript:setCompareCity('etc');">기타</a></li>
 								</ul>
 
 								<ul class="training_academy_list">
 									<?php foreach($school_list as $key => $value): ?>
-									<li class="training_academy_item" onclick="set_compare('<?= $school_list[$key]->ph_idx; ?>');"><a href="#"><div class="box">
+									<?php $city = "";
+										if($school_list[$key]->aca_city == "Cebu"){
+											$city = "cebu";
+										}else if($school_list[$key]->aca_city == "Baguio"){
+											$city = "baguio";
+										}else{
+											$city = "etc";
+										}
+									?>
+									<li class="training_academy_item compare_list_city <?= $city; ?>" onclick="set_compare('<?= $school_list[$key]->ph_idx; ?>');"><a href="#"><div class="box">
 										<div class="item_logo">
 											<div class="logo_image"><img src="<?= $school_list[$key]->logo_url; ?>" alt=""></div>
 											<div class="logo_name"><?= $school_list[$key]->aca_name; ?></div>
