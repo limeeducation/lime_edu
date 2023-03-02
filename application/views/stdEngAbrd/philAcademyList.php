@@ -162,6 +162,34 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         }
 	}
 
+	function setCalFromCompare(compare){
+		var selectedCurri = document.getElementById("compare_"+compare+"_price_curri");
+        var cur_price_week = selectedCurri.options[selectedCurri.selectedIndex].value;
+        var cur_fixed = selectedCurri.options[selectedCurri.selectedIndex].id;
+        var selectedDorm = document.getElementById("compare_"+compare+"_price_dorm");
+        var dorm_price_week = selectedDorm.options[selectedDorm.selectedIndex].value;
+        var selectedPeriod = document.getElementById("compare_"+compare+"_price_period");
+        var price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
+        if(!cur_fixed){
+        	var price_curri = (cur_price_week/4) * price_week;
+        }else{
+        	$("#compare_"+compare+"_price_period").val(cur_fixed).prop("selected", true);
+        	price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
+        	var price_curri = (cur_price_week/4) * price_week;
+        }
+        $("#compare_"+compare+"_price_curri_cal").empty();
+        $("#compare_"+compare+"_price_curri_cal").append(Math.ceil(price_curri).toLocaleString('ko-KR'));
+        var price_dorm = (dorm_price_week/4) * price_week;
+        $("#compare_"+compare+"_price_dorm_cal").empty();
+        $("#compare_"+compare+"_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
+        var total_price = 100000+Math.ceil(price_curri)+price_dorm;
+        $("#tot_price_compare_"+compare).empty();
+        $("#tot_price_compare_"+compare).append(total_price.toLocaleString('ko-KR'));
+        if(price_week > 0 && price_week < 4){
+        	alert("4주 미만일 경우 학원 정책에 따라 추가 비용이 발생할 수 있습니다.");
+        }
+	}
+
 	var geocoder;
 	function getDetailMapLatLon(){
 		geocoder = new google.maps.Geocoder();
@@ -1171,10 +1199,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="md_cont_detail">
 												<div class="md_cont_select_wrap">
 													<div class="md_cont_select">
-														<select name="" id="">
-															<option value="">기간선택</option>
-															<option value="">기간선택2</option>
-															<option value="">기간선택3</option>
+														<select name="" id="compare_from_price_period" onchange="setCalFromCompare('from');">
+															<?php for($i=1; $i<25; $i++):?>
+															<option value="<?= $i;?>"><?= $i;?>주</option>
+															<?php endfor; ?>
 														</select>
 													</div>
 													<div class="md_cont_print"><a href="#"><img src="/static/img/std_eng_abrd/phil/modal_print@2x.png" alt="Print"></a></div>
@@ -1190,26 +1218,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dt>학비</dt>
 														<dd>
 															<div class="select">
-																<select name="" id="">
+																<select name="" id="compare_from_price_curri" onchange="setCalFromCompare('from');">
 																	<option value="">XXXXX 코스</option>
-																	<option value="">XXXXX 코스2</option>
-																	<option value="">XXXXX 코스3</option>
 																</select>
 															</div>
-															<div class="text">1,000,000 (원)</div>
+															<div class="text" id="compare_from_price_curri_cal">1,000,000 (원)</div>
 														</dd>
 													</dl>
 													<dl class="md_cont_data">
 														<dt>기숙사비</dt>
 														<dd>
 															<div class="select">
-																<select name="" id="">
+																<select name="" id="compare_from_price_dorm" onchange="setCalFromCompare('from');">
 																	<option value="">4인실(A)</option>
 																	<option value="">6인실(A)</option>
 																	<option value="">8인실(A)</option>
 																</select>
 															</div>
-															<div class="text">1,000,000 (원)</div>
+															<div class="text" id="compare_from_price_dorm_cal">1,000,000 (원)</div>
 														</dd>
 													</dl>
 													<dl class="md_cont_data">
@@ -1226,14 +1252,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														</dd>
 													</dl>
 												</div><!-- // md_cont_group -->
-
+												<div id="detail_long_term_alert" style="display:none;">
+                                                	<p style="float:right;" id="long_term_discount">-100,000</p>
+                                                	<p style="float:right;">장기연수할인 : </p>
+                                                </div>
 												<dl class="md_cont_data total">
 													<dt>합계</dt>
 													<dd>
-														<div class="text">2,000,000 (원)</div>
+														<div class="text" id="tot_price_compare_from">2,000,000 (원)</div>
 													</dd>
 												</dl>
-
+												<p style="float:right;" id="compare_from_discount_alert" style="display:none;">프로모션 적용 가능 여부는 출발일 또는 연수 기간등에 따라 상이하므로 꼭 상담원에게 문의하시기 바랍니다</p>
 											</div><!-- // md_cont_detail -->
 
 											<div class="md_cont_detail">
@@ -1272,10 +1301,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="md_cont_detail">
 												<div class="md_cont_select_wrap">
 													<div class="md_cont_select">
-														<select name="" id="">
-															<option value="">기간선택</option>
-															<option value="">기간선택2</option>
-															<option value="">기간선택3</option>
+														<select name="" id="compare_to_price_period" onchange="setCalFromCompare('to');">
+															<?php for($i=1; $i<25; $i++):?>
+															<option value="<?= $i;?>"><?= $i;?>주</option>
+															<?php endfor; ?>
 														</select>
 													</div>
 													<div class="md_cont_print"><a href="#"><img src="/static/img/std_eng_abrd/phil/modal_print@2x.png" alt="Print"></a></div>
@@ -1291,26 +1320,26 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dt>학비</dt>
 														<dd>
 															<div class="select">
-																<select name="" id="">
+																<select name="" id="compare_to_price_curri" onchange="setCalFromCompare('to');">
 																	<option value="">XXXXX 코스</option>
 																	<option value="">XXXXX 코스2</option>
 																	<option value="">XXXXX 코스3</option>
 																</select>
 															</div>
-															<div class="text">1,000,000 (원)</div>
+															<div class="text" id="compare_to_price_curri_cal">1,000,000 (원)</div>
 														</dd>
 													</dl>
 													<dl class="md_cont_data">
 														<dt>기숙사비</dt>
 														<dd>
 															<div class="select">
-																<select name="" id="">
+																<select name="" id="compare_to_price_dorm" onchange="setCalFromCompare('to');">
 																	<option value="">4인실(A)</option>
 																	<option value="">6인실(A)</option>
 																	<option value="">8인실(A)</option>
 																</select>
 															</div>
-															<div class="text">1,000,000 (원)</div>
+															<div class="text" id="compare_to_price_dorm_cal">1,000,000 (원)</div>
 														</dd>
 													</dl>
 													<dl class="md_cont_data">
@@ -1327,14 +1356,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														</dd>
 													</dl>
 												</div><!-- // md_cont_group -->
-
+												<div id="detail_long_term_alert" style="display:none;">
+                                                	<p style="float:right;" id="long_term_discount">-100,000</p>
+                                                	<p style="float:right;">장기연수할인 : </p>
+                                                </div>
 												<dl class="md_cont_data total">
 													<dt>합계</dt>
 													<dd>
-														<div class="text">2,000,000 (원)</div>
+														<div class="text" id="tot_price_compare_to">2,000,000 (원)</div>
 													</dd>
 												</dl>
-
+												<p style="float:right;" id="compare_to_discount_alert" style="display:none;">프로모션 적용 가능 여부는 출발일 또는 연수 기간등에 따라 상이하므로 꼭 상담원에게 문의하시기 바랍니다</p>
 											</div><!-- // md_cont_detail -->
 
 											<div class="md_cont_detail">
