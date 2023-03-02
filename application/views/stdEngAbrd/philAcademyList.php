@@ -6,6 +6,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi41nisz2OpbuKdeFUA1824LYFLB93hso&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi41nisz2OpbuKdeFUA1824LYFLB93hso&callback=initCompareFromMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi41nisz2OpbuKdeFUA1824LYFLB93hso&callback=initCompareToMap"></script>
 <script>
 	$(document).ready(function(){
 		var dist = '<?= $dist;?>';
@@ -31,6 +33,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     	};
     	map = new google.maps.Map(document.getElementById('detail_map_div'), mapOptions);
     }
+    var map_compare_from;
+    function initCompareFromMap() {
+		var mapOptions = {
+			zoom : 15,
+			center : new google.maps.LatLng(37.5651, 126.98955), //서울
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		};
+		map_compare_from = new google.maps.Map(document.getElementById('compare_from_map'), mapOptions);
+	}
+    var map_compare_to;
+    function initCompareToMap() {
+		var mapOptions = {
+			zoom : 15,
+			center : new google.maps.LatLng(37.5651, 126.98955), //서울
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		};
+		map_compare_to = new google.maps.Map(document.getElementById('compare_to_map'), mapOptions);
+	}
 	var compare_from_long_term;
 	var compare_to_long_term;
 	var long_term_detail;
@@ -247,6 +267,48 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		});
 	}
 
+	function getCompareFromMapLatLon(){
+		geocoder = new google.maps.Geocoder();
+		var address = document.getElementById('compare_from_school_address_hidden').value;
+		geocoder.geocode( { 'address': address}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				var lat = results[0]['geometry']['location']['lat']();
+				var lng = results[0]['geometry']['location']['lng']();
+				map_compare_from.setCenter(results[0].geometry.location);
+				var marker = new google.maps.Marker({
+					map: map_compare_from,
+					position: results[0].geometry.location,
+					draggable:false,
+					animation:google.maps.Animation.DROP,
+					title:address
+				});
+			}else{
+				alert('지도 호출 실패');
+			}
+		});
+	}
+
+	function getCompareToMapLatLon(){
+		geocoder = new google.maps.Geocoder();
+		var address = document.getElementById('compare_to_school_address_hidden').value;
+		geocoder.geocode( { 'address': address}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				var lat = results[0]['geometry']['location']['lat']();
+				var lng = results[0]['geometry']['location']['lng']();
+				map_compare_to.setCenter(results[0].geometry.location);
+				var marker = new google.maps.Marker({
+					map: map_compare_to,
+					position: results[0].geometry.location,
+					draggable:false,
+					animation:google.maps.Animation.DROP,
+					title:address
+				});
+			}else{
+				alert('지도 호출 실패');
+			}
+		});
+	}
+
 	var printContents;
     var initBody;
 	function printDetail(){
@@ -311,6 +373,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#compare_from_detail").append(details['info'][0].aca_detail);
                 $("#compare_from_addr").empty();
                 $("#compare_from_addr").append(details['info'][0].aca_address);
+                $("#compare_from_school_address_hidden").val(details['info'][0].aca_address);
+                getCompareFromMapLatLon();
 				$("#compare_from_sns_ul").empty();
                 var sns_html = "";
 				details['sns'].forEach(function(sns){
@@ -395,6 +459,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#compare_to_detail").append(details['info'][0].aca_detail);
                 $("#compare_to_addr").empty();
                 $("#compare_to_addr").append(details['info'][0].aca_address);
+                $("#compare_to_school_address_hidden").val(details['info'][0].aca_address);
+                getCompareToMapLatLon();
                 $("#compare_to_sns_ul").empty();
                 var sns_html = "";
 				details['sns'].forEach(function(sns){
@@ -861,7 +927,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dd>
 													<div class="select">
 														<select name="" id="detail_price_curri" onchange="setCalFromDetail();">
-															<option value="">XXXXX 코스</option>
+															<option value="">커리큘럼 선택</option>
 														</select>
 													</div>
 													<div class="text" id="detail_price_curri_cal"></div>
@@ -1139,10 +1205,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<ul class="modal_half modal_half_info">
 										<li>
 											<div class="md_cont_detail">
-												<div class="md_cont_map"><img id="compare_from_map" src="/static/img/std_eng_abrd/phil/modal_tabs_map@2x.png" alt=""></div>
+												<div class="md_cont_map"><img id="compare_from_map" alt=""></div>
 												<dl class="md_cont_addr">
 													<dt>주소</dt>
 													<dd id="compare_from_addr">abcdabcdabcd road, cebu, ...</dd>
+													<input type="hidden" id="compare_from_school_address_hidden" value=""/>
 												</dl>
 											</div><!-- // md_cont_detail -->
 
@@ -1161,6 +1228,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dl class="md_cont_addr">
 													<dt>주소</dt>
 													<dd id="compare_to_addr">abcdabcdabcd road, cebu, ...</dd>
+													<input type="hidden" id="compare_to_school_address_hidden" value=""/>
 												</dl>
 											</div><!-- // md_cont_detail -->
 
