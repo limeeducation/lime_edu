@@ -29,11 +29,10 @@
 					<li>
 						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
 						<ul class="depth_list">
-							<li><a href="#">캐나다 대학교 랭킹</a></li>
-							<li><a href="#">국제학생 특별 전형</a></li>
-							<li><a href="#">국제고를 통한 지원</a></li>
-							<li><a href="#">명문대 편입 프로그램</a></li>
-							<li><a href="#">캐나다 대학교 다이렉트 신입학 & 편입</a></li>
+							<li><a href="/StudyUnivAbroad/studyUnivCa">왜 캐나다 대학?</a></li>
+                            <li><a href="/StudyUnivAbroad/studyUnivCa#ca_univ_20">캐나다 대학교 랭킹</a></li>
+                            <li><a href="/StudyUnivAbroad/studyUnivCa#ca_univ_pathway">캐나다 대학 진학 방법</a></li>
+                            <li><a href="/StudyUnivAbroad/studyUnivCa#ca_univ_pathway_list">추천 패스웨이 대학</a></li>
 						</ul>
 					</li>
 					<li>
@@ -141,7 +140,7 @@
 							<div class="depth_title">해외대학 유학</div>
 							<ul class="depth_group">
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
+									<a href="/StudyUnivAbroad/studyUnivUs" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 									<ul class="depth_list">
 										<li><a href="/StudyUnivAbroad/studyUnivUs">미국 대학교 랭킹</a></li>
 										<li><a href="/StudyUnivAbroad/studyUnivUk#us_univ_pathway">미국 대학 진학방법</a></li>
@@ -149,13 +148,12 @@
 									</ul>
 								</li>
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
+									<a href="/StudyUnivAbroad/studyUnivCa" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
 									<ul class="depth_list">
-										<li><a href="#">캐나다 대학교 랭킹</a></li>
-										<li><a href="#">국제학생 특별 전형</a></li>
-										<li><a href="#">국제고를 통한 지원</a></li>
-										<li><a href="#">명문대 편입 프로그램</a></li>
-										<li><a href="#">캐나다 대학교 다이렉트 신입학 & 편입</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivCa">왜 캐나다 대학?</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivCa#ca_univ_20">캐나다 대학교 랭킹</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivCa#ca_univ_pathway">캐나다 대학 진학 방법</a></li>
+										<li><a href="/StudyUnivAbroad/studyUnivCa#ca_univ_pathway_list">추천 패스웨이 대학</a></li>
 									</ul>
 								</li>
 								<li>
