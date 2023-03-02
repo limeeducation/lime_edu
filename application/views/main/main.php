@@ -414,9 +414,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							</a>
 						</div>
 						<ul class="banner_list">
-							<li><a href="#"><img src="/static/img/main/banner_image1@2x.png" alt=""></a></li>
-							<li><a href="#"><img src="/static/img/main/banner_image2@2x.png" alt=""></a></li>
-							<li><a href="#"><img src="/static/img/main/banner_image3@2x.png" alt=""></a></li>
+							<li><a href="https://blog.naver.com/mylimeeducation/222948209043"><img src="https://firebasestorage.googleapis.com/v0/b/lime-education-76e4e.appspot.com/o/blog%2Fblog_thumb_230302_01.jpg?alt=media" alt=""></a></li>
+							<li><a href="https://blog.naver.com/mylimeeducation/222978540117"><img src="https://firebasestorage.googleapis.com/v0/b/lime-education-76e4e.appspot.com/o/blog%2Fblog_thumb_230302_02.jpg?alt=media" alt=""></a></li>
+							<!-- <li><a href="#"><img src="/static/img/main/banner_image3@2x.png" alt=""></a></li> -->
 						</ul>
 
 					</div><!-- // inner -->
