@@ -261,7 +261,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				var lng = results[0]['geometry']['location']['lng']();
 				map_compare_from.setCenter(results[0].geometry.location);
 				var marker = new google.maps.Marker({
-					map: map,
+					map: map_compare_from,
 					position: results[0].geometry.location,
 					draggable:false,
 					animation:google.maps.Animation.DROP,
@@ -282,7 +282,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				var lng = results[0]['geometry']['location']['lng']();
 				map_compare_to.setCenter(results[0].geometry.location);
 				var marker = new google.maps.Marker({
-					map: map,
+					map: map_compare_to,
 					position: results[0].geometry.location,
 					draggable:false,
 					animation:google.maps.Animation.DROP,
