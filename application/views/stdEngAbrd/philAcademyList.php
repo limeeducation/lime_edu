@@ -216,7 +216,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         	console.log("price_week");
             console.log(price_week);
         		if(long_term.promo_over_period == price_week){
-        			$("#comapre_"+compare+"_long_term_alert").show();
+        			$("#compare_"+compare+"_long_term_alert").show();
         			$("#long_term_discount_compare_"+compare).append("-"+long_term.discount_price.toLocaleString('ko-KR'));
         			compare_long_term_discount = long_term.discount_price;
         		}
