@@ -208,13 +208,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         }else if(compare == 'to' && compare_to_long_term){
         	cal_long_now = compare_to_long_term;
         }
-        console.log(cal_long_now);
         if(cal_long_now){
         	cal_long_now.forEach(function(long_term){
-        	console.log("long_term");
-        	console.log(long_term);
-        	console.log("price_week");
-            console.log(price_week);
         		if(long_term.promo_over_period == price_week){
         			$("#compare_"+compare+"_long_term_alert").show();
         			$("#long_term_discount_compare_"+compare).append("-"+long_term.discount_price.toLocaleString('ko-KR'));
@@ -892,12 +887,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dd>
 													<div class="select">
 														<select name="" id="detail_promotion">
-															<option value="">2022 겨울 방학 등록비 프로모션</option>
-															<option value="">2023 겨울 방학 등록비 프로모션</option>
-															<option value="">2024 겨울 방학 등록비 프로모션</option>
+															<option value="">프로모션 선택</option>
+															<option value="">-현재 선택 가능한 프로모션이 없습니다-</option>
 														</select>
 													</div>
-													<div class="text minus" id="detail_promotion_cal">-100,000 (원)</div>
+													<div class="text minus" id="detail_promotion_cal">-0</div>
 												</dd>
 											</dl>
 										</div><!-- // md_cont_group -->
@@ -1286,12 +1280,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dd>
 															<div class="select">
 																<select name="" id="">
-																	<option value="">2022 겨울 방학 등록비 프로모션</option>
-																	<option value="">2023 겨울 방학 등록비 프로모션</option>
-																	<option value="">2024 겨울 방학 등록비 프로모션</option>
+																	<option value="">프로모션 선택</option>
+																	<option value="">-현재 선택 가능한 프로모션이 없습니다-</option>
 																</select>
 															</div>
-															<div class="text minus">-100,000 (원)</div>
+															<div class="text minus">-0</div>
 														</dd>
 													</dl>
 												</div><!-- // md_cont_group -->
@@ -1390,12 +1383,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dd>
 															<div class="select">
 																<select name="" id="">
-																	<option value="">2022 겨울 방학 등록비 프로모션</option>
-																	<option value="">2023 겨울 방학 등록비 프로모션</option>
-																	<option value="">2024 겨울 방학 등록비 프로모션</option>
+																	<option value="">프로모션 선택</option>
+																	<option value="">-현재 선택 가능한 프로모션이 없습니다-</option>
 																</select>
 															</div>
-															<div class="text minus">-100,000 (원)</div>
+															<div class="text minus">-0</div>
 														</dd>
 													</dl>
 												</div><!-- // md_cont_group -->
