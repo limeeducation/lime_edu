@@ -211,6 +211,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         console.log(cal_long_now);
         if(cal_long_now){
         	cal_long_now.forEach(function(long_term){
+        	console.log("long_term");
+        	console.log(long_term);
+        	console.log("price_week");
+            console.log(price_week);
         		if(long_term.promo_over_period == price_week){
         			$("#comapre_"+compare+"_long_term_alert").show();
         			$("#long_term_discount_compare_"+compare).append("-"+long_term.discount_price.toLocaleString('ko-KR'));
