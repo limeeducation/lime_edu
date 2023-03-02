@@ -205,7 +205,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	var compare_from;
 	var compare_to;
 	function open_compare(ph_idx){
-		compare_from = ph_idx;
 		$.ajax({
 			type: "post",
 			url: "/studyEnglishAbroad/apiGetPhAcaDetail",
@@ -229,6 +228,61 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#start_compare_published").append(details['info'][0].aca_published);
                 $("#start_compare_detail").empty();
                 $("#start_compare_detail").append(details['info'][0].aca_detail);
+
+                //비교하기 클릭 시 비교 모달 기본정보 선세팅
+                compare_from = details;
+                $("#compare_from_name").empty();
+                $("#compare_from_name").append(details['info'][0].aca_name);
+                $("#compare_from_city").empty();
+                $("#compare_from_city").append(details['info'][0].aca_city);
+                $("#compare_from_logo").attr("src", details['info'][0].logo_url);
+                $("#compare_from_students").empty();
+                $("#compare_from_students").append(details['info'][0].aca_students);
+                $("#compare_from_curri").empty();
+                $("#compare_from_curri").append(details['info'][0].aca_curri);
+                $("#compare_from_published").empty();
+                $("#compare_from_published").append(details['info'][0].aca_published);
+                $("#compare_from_detail").empty();
+                $("#compare_from_detail").append(details['info'][0].aca_detail);
+                $("#compare_from_addr").empty();
+                $("#compare_from_addr").append(details['info'][0].aca_address);
+				$("#compare_from_sns_ul").empty();
+                var sns_html = "";
+				details['sns'].forEach(function(sns){
+					if(sns.sns_type == 'Youtube'){
+						sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_youtube@2x.png' alt='Youtube'></a></li>";
+					}else if(sns.sns_type == 'Facebook'){
+						sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_facebook@2x.png' alt='Facebook'></a></li>";
+					}else if(sns.sns_type == 'Instagram'){
+                     	sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_instagram@2x.png' alt='Instagram'></a></li>";
+                    }else if(sns.sns_type == 'Twitter'){
+                    	sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_twitter@2x.png' alt='Twitter'></a></li>";
+                    }else{
+                    	sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_home@2x.png' alt='Home'></a></li>";
+                    }
+				});
+				$("#compare_from_sns_ul").append(sns_html);
+
+				$("#compare_from_curri_list").empty();
+                $("#compare_from_price_curri").empty();
+                var curri_html = "<option value=''>커리큘럼 선택</option>";
+                var curri_price_html = "<option value=''>커리큘럼 선택</option>";
+                details['curri'].forEach(function(curri){
+                	curri_html += "<option value='"+curri.idx+"'>"+curri.curri_name+"</option>";
+                	if(curri.fixed_period == '' || curri.fixed_period == null || curri.fixed_period == 'null'){
+                		curri_price_html += "<option value='"+curri.curri_price+"'>"+curri.curri_name+"</option>";
+                	}else{
+                		curri_price_html += "<option id="+curri.fixed_period+" value='"+curri.curri_price+"'>"+curri.curri_name+"(기간 고정)</option>";
+                	}
+                });
+                $("#compare_from_curri_list").append(curri_html);
+                $("#compare_from_price_curri").append(curri_price_html);
+                $("#compare_from_price_dorm").empty();
+                var dorm_html = "<option value=''>기숙사 선택</option>";
+                details['dorm'].forEach(function(dorm){
+                	dorm_html += "<option value='"+dorm.dorm_price+"'>"+dorm.dorm_name+"</option>";
+                });
+                $("#compare_from_price_dorm").append(dorm_html);
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -248,6 +302,103 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		compare_to = ph_idx;
 		console.log(compare_to);
     }
+
+    function setCompareAll(){
+    	$.ajax({
+        	type: "post",
+        	url: "/studyEnglishAbroad/apiGetPhAcaDetail",
+        	async: true,
+        	data: {
+        		"idx": compare_to
+        	},
+        	dataType: "text",
+        	success: function(data){
+        		var details = JSON.parse(data);
+        		$("#compare_to_name").empty();
+                $("#compare_to_name").append(details['info'][0].aca_name);
+                $("#compare_to_city").empty();
+                $("#compare_to_city").append(details['info'][0].aca_city);
+                $("#compare_to_logo").attr("src", details['info'][0].logo_url);
+                $("#compare_to_students").empty();
+                $("#compare_to_students").append(details['info'][0].aca_students);
+                $("#compare_to_curri").empty();
+                $("#compare_to_curri").append(details['info'][0].aca_curri);
+                $("#compare_to_published").empty();
+                $("#compare_to_published").append(details['info'][0].aca_published);
+                $("#compare_to_detail").empty();
+                $("#compare_to_detail").append(details['info'][0].aca_detail);
+                $("#compare_to_addr").empty();
+                $("#compare_to_addr").append(details['info'][0].aca_address);
+                $("#compare_to_sns_ul").empty();
+                var sns_html = "";
+				details['sns'].forEach(function(sns){
+					if(sns.sns_type == 'Youtube'){
+						sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_youtube@2x.png' alt='Youtube'></a></li>";
+					}else if(sns.sns_type == 'Facebook'){
+						sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_facebook@2x.png' alt='Facebook'></a></li>";
+					}else if(sns.sns_type == 'Instagram'){
+                     	sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_instagram@2x.png' alt='Instagram'></a></li>";
+                    }else if(sns.sns_type == 'Twitter'){
+                    	sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_twitter@2x.png' alt='Twitter'></a></li>";
+                    }else{
+                    	sns_html += "<li><a href='"+sns.sns_url+"' class='item1' target='_blank'><img src='/static/img/std_eng_abrd/phil/modal_tabs_icons_home@2x.png' alt='Home'></a></li>";
+                    }
+				});
+				$("#compare_to_sns_ul").append(sns_html);
+
+				$("#compare_to_curri_list").empty();
+                $("#compare_to_price_curri").empty();
+                var curri_html = "<option value=''>커리큘럼 선택</option>";
+                var curri_price_html = "<option value=''>커리큘럼 선택</option>";
+                details['curri'].forEach(function(curri){
+                	curri_html += "<option value='"+curri.idx+"'>"+curri.curri_name+"</option>";
+                	if(curri.fixed_period == '' || curri.fixed_period == null || curri.fixed_period == 'null'){
+                		curri_price_html += "<option value='"+curri.curri_price+"'>"+curri.curri_name+"</option>";
+                	}else{
+                		curri_price_html += "<option id="+curri.fixed_period+" value='"+curri.curri_price+"'>"+curri.curri_name+"(기간 고정)</option>";
+                	}
+                });
+                $("#compare_to_curri_list").append(curri_html);
+                $("#compare_to_price_curri").append(curri_price_html);
+                $("#compare_to_price_dorm").empty();
+                var dorm_html = "<option value=''>기숙사 선택</option>";
+                details['dorm'].forEach(function(dorm){
+                	dorm_html += "<option value='"+dorm.dorm_price+"'>"+dorm.dorm_name+"</option>";
+                });
+                $("#compare_to_price_dorm").append(dorm_html);
+            },error: function(data){
+            	alert('잠시 후 다시 시도해주세요.');
+            }
+        });
+    }
+
+	function setCurriCompareSchoolDetail(compare){
+		var selected = document.getElementById("each_compare_"+compare+"_list");
+		var selId = selected.options[selected.selectedIndex].value;
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetPhCurriDetail",
+			async: true,
+			data: {
+				"idx": selId
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				var curri_dtl_html = "";
+				$(".each_curri_compare_"+compare).remove();
+				details['curri'].forEach(function(curri){
+					curri_dtl_html += "<dl class='md_cont_data each_curri_compare_"+compare+"'>";
+					curri_dtl_html += "<dt>"+curri.class_name+"</dt>";
+					curri_dtl_html += "<dd>"+curri.class_detail+"</dd>";
+					curri_dtl_html += "</dl>";
+				});
+				$("#each_compare_"+compare+"_curri").append(curri_dtl_html);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+	}
 </script>
 <body>
 
@@ -865,21 +1016,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="modal_training_academy">
 										<div class="training_academy_item">
 											<div class="item_logo">
-												<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-												<div class="logo_name">SMEAG 캐피탈</div>
+												<div class="logo_image"><img id="compare_from_logo" src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+												<div class="logo_name" id="compare_from_name">SMEAG 캐피탈</div>
 											</div><!-- // item_logo -->
 											<div class="item_info">
 												<dl class="training_academy_data">
 													<dt>학원위치</dt>
-													<dd><div class="text">세부</div></dd>
+													<dd><div class="text" id="compare_from_city">세부</div></dd>
 													<dt>학생규모</dt>
-													<dd><div class="text">500</div></dd>
+													<dd><div class="text" id="compare_from_students">500</div></dd>
 													<dt>커리큘럼</dt>
-													<dd><div class="text">스파르타</div></dd>
+													<dd><div class="text" id="compare_from_curri">스파르타</div></dd>
 													<dt>설립연도</dt>
-													<dd><div class="text">2000</div></dd>
+													<dd><div class="text" id="compare_from_published">2000</div></dd>
 													<dt>학원설명</dt>
-													<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+													<dd class="colspan"><div class="text auto" id="compare_from_detail">이학원은 어쩌구저쩌구가 조아요</div></dd>
 												</dl>
 											</div><!-- // item_info -->
 										</div><!-- // training_academy_item -->
@@ -889,21 +1040,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="modal_training_academy">
 										<div class="training_academy_item">
 											<div class="item_logo">
-												<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-												<div class="logo_name"></div>
+												<div class="logo_image"><img id="compare_to_logo" src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+												<div class="logo_name" id="compare_to_name"></div>
 											</div><!-- // item_logo -->
 											<div class="item_info">
 												<dl class="training_academy_data">
 													<dt>학원위치</dt>
-													<dd><div class="text"></div></dd>
+													<dd><div class="text" id="compare_to_city"></div></dd>
 													<dt>학생규모</dt>
-													<dd><div class="text"></div></dd>
+													<dd><div class="text" id="compare_to_students"></div></dd>
 													<dt>커리큘럼</dt>
-													<dd><div class="text"></div></dd>
+													<dd><div class="text" id="compare_to_curri"></div></dd>
 													<dt>설립연도</dt>
-													<dd><div class="text"></div></dd>
+													<dd><div class="text" id="compare_to_published"></div></dd>
 													<dt>학원설명</dt>
-													<dd class="colspan"><div class="text auto"></div></dd>
+													<dd class="colspan"><div class="text auto" id="compare_to_detail"></div></dd>
 												</dl>
 											</div><!-- // item_info -->
 										</div><!-- // training_academy_item -->
@@ -925,19 +1076,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<ul class="modal_half modal_half_info">
 										<li>
 											<div class="md_cont_detail">
-												<div class="md_cont_map"><img src="/static/img/std_eng_abrd/phil/modal_tabs_map@2x.png" alt=""></div>
+												<div class="md_cont_map"><img id="compare_from_map" src="/static/img/std_eng_abrd/phil/modal_tabs_map@2x.png" alt=""></div>
 												<dl class="md_cont_addr">
 													<dt>주소</dt>
-													<dd>abcdabcdabcd road, cebu, ...</dd>
+													<dd id="compare_from_addr">abcdabcdabcd road, cebu, ...</dd>
 												</dl>
 											</div><!-- // md_cont_detail -->
 
-											<ul class="md_cont_icons">
-												<li><a href="#" class="item1"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_youtube@2x.png" alt="Youtube"></a></li>
-												<li><a href="#" class="item2"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_facebook@2x.png" alt="Facebook"></a></li>
-												<li><a href="#" class="item3"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_twitter@2x.png" alt="Twitter"></a></li>
-												<li><a href="#" class="item4"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_instagram@2x.png" alt="Instagram"></a></li>
-												<li><a href="#" class="item5"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_home@2x.png" alt="Home"></a></li>
+											<ul class="md_cont_icons" id="compare_from_sns_ul">
 											</ul><!-- // md_cont_icons -->
 
 											<div class="md_cont_detail">
@@ -948,19 +1094,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</li>
 										<li>
 											<div class="md_cont_detail">
-												<div class="md_cont_map"><img src="/static/img/std_eng_abrd/phil/modal_tabs_map@2x.png" alt=""></div>
+												<div class="md_cont_map"><img id="compare_to_map" src="/static/img/std_eng_abrd/phil/modal_tabs_map@2x.png" alt=""></div>
 												<dl class="md_cont_addr">
 													<dt>주소</dt>
-													<dd>abcdabcdabcd road, cebu, ...</dd>
+													<dd id="compare_to_addr">abcdabcdabcd road, cebu, ...</dd>
 												</dl>
 											</div><!-- // md_cont_detail -->
 
-											<ul class="md_cont_icons">
-												<li><a href="#" class="item1"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_youtube@2x.png" alt="Youtube"></a></li>
-												<li><a href="#" class="item2"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_facebook@2x.png" alt="Facebook"></a></li>
-												<li><a href="#" class="item3"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_twitter@2x.png" alt="Twitter"></a></li>
-												<li><a href="#" class="item4"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_instagram@2x.png" alt="Instagram"></a></li>
-												<li><a href="#" class="item5"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_home@2x.png" alt="Home"></a></li>
+											<ul class="md_cont_icons" id="compare_to_sns_ul">
 											</ul><!-- // md_cont_icons -->
 
 											<div class="md_cont_detail">
@@ -998,56 +1139,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 									<ul class="modal_half modal_half_info">
 										<li>
-											<div class="md_cont_detail">
+											<div class="md_cont_detail" id="each_compare_from_curri">
 												<div class="md_cont_select">
-													<select name="" id="">
+													<select name="" id="compare_from_curri_list" onchange="setCurriCompareSchoolDetail('from');">
 														<option value="">XXXXX 코스</option>
-														<option value="">XXXXX 코스2</option>
-														<option value="">XXXXX 코스3</option>
 													</select>
 												</div>
-												<dl class="md_cont_data">
-													<dt>1:1수업</dt>
-													<dd>Reading (50분), Speaking(50분)</dd>
-												</dl>
-												<dl class="md_cont_data">
-													<dt>1:4 수업</dt>
-													<dd>Reading (50분), Speaking(50분)</dd>
-												</dl>
-												<dl class="md_cont_data">
-													<dt>1:8 수업</dt>
-													<dd>Reading (50분), Speaking(50분)</dd>
-												</dl>
-												<dl class="md_cont_data">
-													<dt>스페셜코스 <br>(방과 후)</dt>
-													<dd>Reading (50분), Speaking(50분)</dd>
+												<dl class="md_cont_data each_curri_compare_from">
 												</dl>
 											</div><!-- // md_cont_detail -->
 										</li>
 										<li>
-											<div class="md_cont_detail">
+											<div class="md_cont_detail" id="each_compare_to_curri">
 												<div class="md_cont_select">
-													<select name="" id="">
+													<select name="" id="compare_to_curri_list" onchange="setCurriCompareSchoolDetail('to');">
 														<option value="">XXXXX 코스</option>
-														<option value="">XXXXX 코스2</option>
-														<option value="">XXXXX 코스3</option>
 													</select>
 												</div>
-												<dl class="md_cont_data">
-													<dt>1:1수업</dt>
-													<dd>Reading (50분), Speaking(50분)</dd>
-												</dl>
-												<dl class="md_cont_data">
-													<dt>1:4 수업</dt>
-													<dd>Reading (50분), Speaking(50분)</dd>
-												</dl>
-												<dl class="md_cont_data">
-													<dt>1:8 수업</dt>
-													<dd>Reading (50분), Speaking(50분)</dd>
-												</dl>
-												<dl class="md_cont_data">
-													<dt>스페셜코스 <br>(방과 후)</dt>
-													<dd>Reading (50분), Speaking(50분)</dd>
+												<dl class="md_cont_data each_curri_compare_to">
 												</dl>
 											</div><!-- // md_cont_detail -->
 										</li>
