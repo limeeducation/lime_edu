@@ -1190,7 +1190,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<ul class="modal_half modal_half_info">
 										<li>
 											<div class="md_cont_detail">
-												<div class="md_cont_map"><img id="compare_from_map" alt=""></div>
+												<div class="md_cont_map" id="compare_from_map" style="width:100%;height:200px;"></div>
 												<dl class="md_cont_addr">
 													<dt>주소</dt>
 													<dd id="compare_from_addr">abcdabcdabcd road, cebu, ...</dd>
@@ -1209,7 +1209,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</li>
 										<li>
 											<div class="md_cont_detail">
-												<div class="md_cont_map"><img id="compare_to_map" alt=""></div>
+												<div class="md_cont_map" id="compare_to_map" style="width:100%;height:200px;"></div>
 												<dl class="md_cont_addr">
 													<dt>주소</dt>
 													<dd id="compare_to_addr">abcdabcdabcd road, cebu, ...</dd>
