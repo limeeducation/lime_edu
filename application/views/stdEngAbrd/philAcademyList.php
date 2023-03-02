@@ -31,7 +31,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     	};
     	map = new google.maps.Map(document.getElementById('detail_map_div'), mapOptions);
     }
-
+	var compare_from_long_term;
+	var compare_to_long_term;
 	var long_term_detail;
 	function open_detail(ph_idx){
 		$.ajax({
@@ -202,11 +203,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         $("#compare_"+compare+"_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
         var compare_long_term_discount = 0;
         var cal_long_now;
-        if(compare == 'from'){
+        if(compare == 'from' && compare_from_long_term){
         	cal_long_now = compare_from_long_term;
-        }else{
+        }else if(compare == 'to' && compare_to_long_term){
         	cal_long_now = compare_to_long_term;
         }
+        console.log(cal_long_now);
         if(cal_long_now){
         	cal_long_now.forEach(function(long_term){
         		if(long_term.promo_over_period == price_week){
@@ -266,7 +268,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     }
 	var compare_from;
 	var compare_to;
-	var compare_from_long_term;
+
 	function open_compare(ph_idx){
 		$.ajax({
 			type: "post",
@@ -366,7 +368,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		compare_to = ph_idx;
 		console.log(compare_to);
     }
-	var compare_to_long_term;
+
     function setCompareAll(){
     	$.ajax({
         	type: "post",
