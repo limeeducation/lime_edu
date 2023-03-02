@@ -158,7 +158,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         $("#detail_price_dorm_cal").empty();
         $("#detail_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
         var long_term_discount = 0;
-        if(!long_term_detail){
+        if(long_term_detail){
 			long_term_detail.forEach(function(long_term){
 				console.log("promo_over_period : "+long_term.promo_over_period);
 				console.log("price_week : "+price_week);
