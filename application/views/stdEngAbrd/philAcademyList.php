@@ -807,9 +807,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<ul class="training_academy_list">
 									<?php foreach($school_list as $key => $value): ?>
 									<?php $city = "";
-										if($school_list[$key]->aca_city == "Cebu"){
+										if($school_list[$key]->aca_city == "세부"){
 											$city = "cebu";
-										}else if($school_list[$key]->aca_city == "Baguio"){
+										}else if($school_list[$key]->aca_city == "바기오"){
 											$city = "baguio";
 										}else{
 											$city = "etc";
