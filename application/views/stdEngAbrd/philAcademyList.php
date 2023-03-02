@@ -261,7 +261,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				var lng = results[0]['geometry']['location']['lng']();
 				map_compare_from.setCenter(results[0].geometry.location);
 				var marker = new google.maps.Marker({
-					map: map_compare_from,
+					map: map,
 					position: results[0].geometry.location,
 					draggable:false,
 					animation:google.maps.Animation.DROP,
@@ -282,7 +282,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				var lng = results[0]['geometry']['location']['lng']();
 				map_compare_to.setCenter(results[0].geometry.location);
 				var marker = new google.maps.Marker({
-					map: map_compare_to,
+					map: map,
 					position: results[0].geometry.location,
 					draggable:false,
 					animation:google.maps.Animation.DROP,
@@ -1209,7 +1209,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										</li>
 										<li>
 											<div class="md_cont_detail">
-												<div class="md_cont_map"><img id="compare_to_map" src="/static/img/std_eng_abrd/phil/modal_tabs_map@2x.png" alt=""></div>
+												<div class="md_cont_map"><img id="compare_to_map" alt=""></div>
 												<dl class="md_cont_addr">
 													<dt>주소</dt>
 													<dd id="compare_to_addr">abcdabcdabcd road, cebu, ...</dd>
