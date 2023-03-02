@@ -6,8 +6,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi41nisz2OpbuKdeFUA1824LYFLB93hso&callback=initMap"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi41nisz2OpbuKdeFUA1824LYFLB93hso&callback=initCompareFromMap"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi41nisz2OpbuKdeFUA1824LYFLB93hso&callback=initCompareToMap"></script>
 <script>
 	$(document).ready(function(){
 		var dist = '<?= $dist;?>';
@@ -25,6 +23,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	});
 	//상세보기 지도 초기화
 	var map;
+	var map_compare_from;
+	var map_compare_to;
 	function initMap() {
     	var mapOptions = {
     		zoom : 15,
@@ -32,25 +32,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     		mapTypeId : google.maps.MapTypeId.ROADMAP
     	};
     	map = new google.maps.Map(document.getElementById('detail_map_div'), mapOptions);
+    	map_compare_from = new google.maps.Map(document.getElementById('compare_from_map'), mapOptions);
+    	map_compare_to = new google.maps.Map(document.getElementById('compare_to_map'), mapOptions);
     }
-    var map_compare_from;
-    function initCompareFromMap() {
-		var mapOptions = {
-			zoom : 15,
-			center : new google.maps.LatLng(37.5651, 126.98955), //서울
-			mapTypeId : google.maps.MapTypeId.ROADMAP
-		};
-		map_compare_from = new google.maps.Map(document.getElementById('compare_from_map'), mapOptions);
-	}
-    var map_compare_to;
-    function initCompareToMap() {
-		var mapOptions = {
-			zoom : 15,
-			center : new google.maps.LatLng(37.5651, 126.98955), //서울
-			mapTypeId : google.maps.MapTypeId.ROADMAP
-		};
-		map_compare_to = new google.maps.Map(document.getElementById('compare_to_map'), mapOptions);
-	}
+
 	var compare_from_long_term;
 	var compare_to_long_term;
 	var long_term_detail;
