@@ -160,6 +160,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         var long_term_discount = 0;
         if(!long_term_detail){
 			long_term_detail.forEach(function(long_term){
+				console.log("promo_over_period : "+long_term.promo_over_period);
+				console.log("price_week : "+price_week);
 				if(long_term.promo_over_period == price_week){
 					$("#detail_long_term_alert").show();
 					$("#long_term_discount_detail").append("-"+long_term.discount_price);
