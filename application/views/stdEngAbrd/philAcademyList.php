@@ -373,7 +373,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     }
 
 	function setCurriCompareSchoolDetail(compare){
-		var selected = document.getElementById("each_compare_"+compare+"_list");
+		var selected = document.getElementById("compare_"+compare+"_list");
 		var selId = selected.options[selected.selectedIndex].value;
 		$.ajax({
 			type: "post",
