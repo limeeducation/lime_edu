@@ -80,12 +80,14 @@ class StudyEnglishAbroad extends CI_Controller {
 		$this->load->view('stdEngAbrd/philAcademyList', $data);
 	}
 
+	//필리핀 어학원 상세 호출 api
 	public function apiGetPhAcaDetail(){
 		$idx = $this->input->post('idx');
 		$details['info'] = $this->school_model->getPhBaseInfo($idx);
 		$details['sns'] = $this->school_model->getPhSns($idx);
 		$details['curri'] = $this->school_model->getPhCurri($idx);
 		$details['dorm'] = $this->school_model->getPhDrom($idx);
+		$details['long_term'] = $this->school_model->getLongTerm($idx);
 		echo json_encode($details);
 	}
 

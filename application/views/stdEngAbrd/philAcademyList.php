@@ -32,7 +32,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     	map = new google.maps.Map(document.getElementById('detail_map_div'), mapOptions);
     }
 
-
+	var long_term_detail;
 	function open_detail(ph_idx){
 		$.ajax({
 			type: "post",
@@ -44,6 +44,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			dataType: "text",
 			success: function(data){
 				var details = JSON.parse(data);
+				long_term_detail = details['long_term'];
 				$("#detail_school_name").empty();
 				$("#detail_school_name").append(details['info'][0].aca_name);
 				$("#detail_school_dist").empty();
@@ -149,17 +150,30 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         	price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
         	var price_curri = (cur_price_week/4) * price_week;
         }
+        $("#long_term_discount_detail").empty();
+        $("#detail_long_term_alert").hide();
         $("#detail_price_curri_cal").empty();
         $("#detail_price_curri_cal").append(Math.ceil(price_curri).toLocaleString('ko-KR'));
         var price_dorm = (dorm_price_week/4) * price_week;
         $("#detail_price_dorm_cal").empty();
         $("#detail_price_dorm_cal").append(price_dorm.toLocaleString('ko-KR'));
-        var total_price = 100000+Math.ceil(price_curri)+price_dorm;
+        var long_term_discount = 0;
+        if(!long_term_detail){
+			long_term_detail.forEach(function(long_term){
+				if(long_term.promo_over_period == price_week){
+					$("#detail_long_term_alert").show();
+					$("#long_term_discount_detail").append("-"+long_term.discount_price);
+					long_term_discount = long_term.discount_price;
+				}
+			});
+		}
+        var total_price = 100000+Math.ceil(price_curri)+price_dorm - long_term_discount;
         $("#tot_price_detail").empty();
         $("#tot_price_detail").append(total_price.toLocaleString('ko-KR'));
         if(price_week > 0 && price_week < 4){
         	alert("4주 미만일 경우 학원 정책에 따라 추가 비용이 발생할 수 있습니다.");
         }
+
 	}
 
 	function setCalFromCompare(compare){
@@ -859,7 +873,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</dl>
 										</div><!-- // md_cont_group -->
 										<div id="detail_long_term_alert" style="display:none;">
-											<p style="float:right;" id="long_term_discount">-100,000</p>
+											<p style="float:right;" id="long_term_discount_detail">-100,000</p>
 											<p style="float:right;">장기연수할인 : </p>
 										</div>
 										<dl class="md_cont_data total">
@@ -1253,7 +1267,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 													</dl>
 												</div><!-- // md_cont_group -->
 												<div id="detail_long_term_alert" style="display:none;">
-                                                	<p style="float:right;" id="long_term_discount">-100,000</p>
+                                                	<p style="float:right;" id="long_term_discount_compare_from">-100,000</p>
                                                 	<p style="float:right;">장기연수할인 : </p>
                                                 </div>
 												<dl class="md_cont_data total">
@@ -1262,7 +1276,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<div class="text" id="tot_price_compare_from">2,000,000 (원)</div>
 													</dd>
 												</dl>
-												<p style="float:right;" id="compare_from_discount_alert" style="display:none;">프로모션 적용 가능 여부는 출발일 또는 연수 기간등에 따라 상이하므로 꼭 상담원에게 문의하시기 바랍니다</p>
+												<p style="float:right;" id="compare_from_discount_alert" style="display:none;">프로모션 적용 가능 여부는 출발일 또는 연수 기간등에 따라 상이하므로<br>꼭 상담원에게 문의하시기 바랍니다</p>
 											</div><!-- // md_cont_detail -->
 
 											<div class="md_cont_detail">
@@ -1357,7 +1371,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 													</dl>
 												</div><!-- // md_cont_group -->
 												<div id="detail_long_term_alert" style="display:none;">
-                                                	<p style="float:right;" id="long_term_discount">-100,000</p>
+                                                	<p style="float:right;" id="long_term_discount_compare_to">-100,000</p>
                                                 	<p style="float:right;">장기연수할인 : </p>
                                                 </div>
 												<dl class="md_cont_data total">
@@ -1366,7 +1380,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<div class="text" id="tot_price_compare_to">2,000,000 (원)</div>
 													</dd>
 												</dl>
-												<p style="float:right;" id="compare_to_discount_alert" style="display:none;">프로모션 적용 가능 여부는 출발일 또는 연수 기간등에 따라 상이하므로 꼭 상담원에게 문의하시기 바랍니다</p>
+												<p style="float:right;" id="compare_to_discount_alert" style="display:none;">프로모션 적용 가능 여부는 출발일 또는 연수 기간등에 따라 상이하므로<br>꼭 상담원에게 문의하시기 바랍니다</p>
 											</div><!-- // md_cont_detail -->
 
 											<div class="md_cont_detail">

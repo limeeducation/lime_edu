@@ -118,6 +118,14 @@ class School_model extends CI_Model
         return $this->db->get()->result_array();
     }
 
+    public function getLongTerm($idx){
+    	$this->db->select('promo_over_period');
+    	$this->db->select('discount_price');
+    	$this->db->from('phil_long_term_promo');
+        $this->db->where('ph_idx', $idx);
+        return $this->db->get()->result_array();
+    }
+
     public function getCurriDetail($idx){
     	$this->db->select('class_name');
         $this->db->select('class_detail');
