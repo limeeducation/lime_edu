@@ -202,8 +202,40 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     function afterPrint(){
 		document.body.innerHTML = initBody;
     }
-
+	var compare_from;
+	var compare_to;
 	function open_compare(ph_idx){
+		$.ajax({
+			type: "post",
+			url: "/studyEnglishAbroad/apiGetPhAcaDetail",
+			async: true,
+			data: {
+				"idx": ph_idx
+			},
+			dataType: "text",
+			success: function(data){
+				var details = JSON.parse(data);
+				$("#start_compare_name").empty();
+                $("#start_compare_name").append(details['info'][0].aca_name);
+                $("#start_compare_city").empty();
+                $("#start_compare_city").append(details['info'][0].aca_city);
+                $("#start_compare_logo").attr("src", details['info'][0].logo_url);
+                $("#start_compare_students").empty();
+                $("#start_compare_students").append(details['info'][0].aca_students);
+                $("#start_compare_curri").empty();
+                $("#start_compare_curri").append(details['info'][0].aca_curri);
+                $("#start_compare_published").empty();
+                $("#start_compare_published").append(details['info'][0].aca_published);
+                $("#start_compare_detail").empty();
+                $("#start_compare_detail").append(details['info'][0].aca_detail);
+			},error: function(data){
+				alert("잠시 후 다시 시도해주세요.");
+			}
+		});
+    }
+
+    function set_compare(ph_idx){
+    	console.log(ph_idx);
 
     }
 </script>
@@ -707,21 +739,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="modal_training_academy">
 										<div class="training_academy_item">
 											<div class="item_logo">
-												<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-												<div class="logo_name">SMEAG 캐피탈</div>
+												<div class="logo_image"><img id="start_compare_logo" src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+												<div class="logo_name" id="start_compare_name">SMEAG 캐피탈</div>
 											</div><!-- // item_logo -->
 											<div class="item_info">
 												<dl class="training_academy_data">
 													<dt>학원위치</dt>
-													<dd><div class="text">세부</div></dd>
+													<dd><div class="text" id="start_compare_city">세부</div></dd>
 													<dt>학생규모</dt>
-													<dd><div class="text">500</div></dd>
+													<dd><div class="text" id="start_compare_students">500</div></dd>
 													<dt>커리큘럼</dt>
-													<dd><div class="text">스파르타</div></dd>
+													<dd><div class="text" id="start_compare_curri">스파르타</div></dd>
 													<dt>설립연도</dt>
-													<dd><div class="text">2000</div></dd>
+													<dd><div class="text" id="start_compare_published">2000</div></dd>
 													<dt>학원설명</dt>
-													<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+													<dd class="colspan"><div class="text auto" id="start_compare_detail">이학원은 어쩌구저쩌구가 조아요</div></dd>
 												</dl>
 											</div><!-- // item_info -->
 										</div><!-- // training_academy_item -->
@@ -731,8 +763,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="modal_training_academy">
 										<div class="training_academy_item">
 											<div class="item_logo">
-												<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-												<div class="logo_name"></div>
+												<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/logo_none.png" alt=""></div>
+												<div class="logo_name">비교할 학원을 선택해주세요</div>
 											</div><!-- // item_logo -->
 											<div class="item_info">
 												<dl class="training_academy_data">
@@ -764,125 +796,33 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</ul>
 
 								<ul class="training_academy_list">
-
-									<li class="training_academy_item"><a href="#"><div class="box">
+									<?php foreach($school_list as $key => $value): ?>
+									<li class="training_academy_item" onclick="set_compare('<?= $school_list[$key]->ph_idx; ?>');"><a href="#"><div class="box">
 										<div class="item_logo">
-											<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-											<div class="logo_name">SMEAG 캐피탈</div>
+											<div class="logo_image"><img src="<?= $school_list[$key]->logo_url; ?>" alt=""></div>
+											<div class="logo_name"><?= $school_list[$key]->aca_name; ?></div>
 										</div><!-- // item_logo -->
 										<div class="item_info">
 											<dl class="training_academy_data">
 												<dt>학원위치</dt>
-												<dd><div class="text">세부</div></dd>
+												<dd><div class="text"><?= $school_list[$key]->aca_city; ?></div></dd>
 												<dt>학생규모</dt>
-												<dd><div class="text">500</div></dd>
+												<dd><div class="text"><?= $school_list[$key]->aca_students; ?></div></dd>
 												<dt>커리큘럼</dt>
-												<dd><div class="text">스파르타</div></dd>
+												<dd><div class="text"><?= $school_list[$key]->aca_curri; ?></div></dd>
 												<dt>설립연도</dt>
-												<dd><div class="text">2000</div></dd>
+												<dd><div class="text"><?= $school_list[$key]->aca_published; ?></div></dd>
 												<dt>학원설명</dt>
-												<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
+												<dd class="colspan"><div class="text auto"><?= $school_list[$key]->aca_detail; ?></div></dd>
 											</dl>
 										</div><!-- // item_info -->
 									</div></a></li><!-- // training_academy_item -->
-
-									<li class="training_academy_item"><a href="#"><div class="box">
-
-										<div class="item_logo">
-											<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-											<div class="logo_name">SMEAG 캐피탈</div>
-										</div><!-- // item_logo -->
-										<div class="item_info">
-											<dl class="training_academy_data">
-												<dt>학원위치</dt>
-												<dd><div class="text">세부</div></dd>
-												<dt>학생규모</dt>
-												<dd><div class="text">500</div></dd>
-												<dt>커리큘럼</dt>
-												<dd><div class="text">스파르타</div></dd>
-												<dt>설립연도</dt>
-												<dd><div class="text">2000</div></dd>
-												<dt>학원설명</dt>
-												<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-											</dl>
-										</div><!-- // item_info -->
-									</div></a></li><!-- // training_academy_item -->
-
-									<li class="training_academy_item"><a href="#"><div class="box">
-
-										<div class="item_logo">
-											<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-											<div class="logo_name">SMEAG 캐피탈</div>
-										</div><!-- // item_logo -->
-										<div class="item_info">
-											<dl class="training_academy_data">
-												<dt>학원위치</dt>
-												<dd><div class="text">세부</div></dd>
-												<dt>학생규모</dt>
-												<dd><div class="text">500</div></dd>
-												<dt>커리큘럼</dt>
-												<dd><div class="text">스파르타</div></dd>
-												<dt>설립연도</dt>
-												<dd><div class="text">2000</div></dd>
-												<dt>학원설명</dt>
-												<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-											</dl>
-										</div><!-- // item_info -->
-									</div></a></li><!-- // training_academy_item -->
-
-									<li class="training_academy_item"><a href="#"><div class="box">
-
-										<div class="item_logo">
-											<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-											<div class="logo_name">SMEAG 캐피탈</div>
-										</div><!-- // item_logo -->
-										<div class="item_info">
-											<dl class="training_academy_data">
-												<dt>학원위치</dt>
-												<dd><div class="text">세부</div></dd>
-												<dt>학생규모</dt>
-												<dd><div class="text">500</div></dd>
-												<dt>커리큘럼</dt>
-												<dd><div class="text">스파르타</div></dd>
-												<dt>설립연도</dt>
-												<dd><div class="text">2000</div></dd>
-												<dt>학원설명</dt>
-												<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-											</dl>
-										</div><!-- // item_info -->
-									</div></a></li><!-- // training_academy_item -->
-
-									<li class="training_academy_item"><a href="#"><div class="box">
-
-										<div class="item_logo">
-											<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
-											<div class="logo_name">SMEAG 캐피탈</div>
-										</div><!-- // item_logo -->
-										<div class="item_info">
-											<dl class="training_academy_data">
-												<dt>학원위치</dt>
-												<dd><div class="text">세부</div></dd>
-												<dt>학생규모</dt>
-												<dd><div class="text">500</div></dd>
-												<dt>커리큘럼</dt>
-												<dd><div class="text">스파르타</div></dd>
-												<dt>설립연도</dt>
-												<dd><div class="text">2000</div></dd>
-												<dt>학원설명</dt>
-												<dd class="colspan"><div class="text auto">이학원은 어쩌구저쩌구가 조아요</div></dd>
-											</dl>
-										</div><!-- // item_info -->
-									</div></a></li><!-- // training_academy_item -->
-
+									<?php endforeach; ?>
 								</ul>
 
 							</div><!-- // modal_compare_cont -->
-
-							<ul class="modal_compare_paging">
-								<li class="on"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-							</ul>
-							<div class="modal_compare_submit"><a href="#modal_04" class="modal_open">선택 완료</a></div>
+							<div class="modal_compare_submit">
+							<a href="#modal_04" class="modal_open">선택 완료</a></div>
 
 						</div><!-- // modal_body -->
 
