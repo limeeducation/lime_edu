@@ -48,6 +48,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#detail_school_name").append(details['info'][0].aca_name);
 				$("#detail_school_dist").empty();
 				$("#detail_school_dist").append(details['info'][0].aca_city);
+				$("#detail_logo_img").attr("src", details['info'][0].logo_url);
 				$("#detail_school_students").empty();
 				$("#detail_school_students").append(details['info'][0].aca_students);
 				$("#detail_school_curri").empty();
@@ -268,7 +269,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<!-- 해당 li가 반복되어야 함 -->
 											<li class="training_academy_item">
 												<div class="item_logo">
-													<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+													<div class="logo_image"><img src="<?= $school_list[$i]->logo_url; ?>" alt=""></div>
 													<div class="logo_name"><?= $school_list[$i]->aca_name; ?></div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -499,7 +500,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="modal_training_academy">
 								<div class="training_academy_item">
 									<div class="item_logo">
-										<div class="logo_image"><img src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
+										<div class="logo_image"><img id="detail_logo_img" src="/static/img/std_eng_abrd/phil/academy_item_logo@2x.png" alt=""></div>
 										<div class="logo_name" id="detail_school_name">SMEAG 캐피탈</div>
 									</div><!-- // item_logo -->
 									<div class="item_info">
