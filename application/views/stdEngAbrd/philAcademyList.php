@@ -194,7 +194,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
         	price_week = selectedPeriod.options[selectedPeriod.selectedIndex].value;
         	var price_curri = (cur_price_week/4) * price_week;
         }
-        $("#long_term_discount_compare"+compare).empty();
+        $("#long_term_discount_compare_"+compare).empty();
         $("#compare_"+compare+"_long_term_alert").hide();
         $("#compare_"+compare+"_price_curri_cal").empty();
         $("#compare_"+compare+"_price_curri_cal").append(Math.ceil(price_curri).toLocaleString('ko-KR'));
