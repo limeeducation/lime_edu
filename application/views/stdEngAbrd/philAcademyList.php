@@ -205,6 +205,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	var compare_from;
 	var compare_to;
 	function open_compare(ph_idx){
+		compare_from = ph_idx;
 		$.ajax({
 			type: "post",
 			url: "/studyEnglishAbroad/apiGetPhAcaDetail",
@@ -244,8 +245,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		}
 	}
     function set_compare(ph_idx){
-    	console.log(ph_idx);
-
+		compare_to = ph_idx;
+		console.log(compare_to);
     }
 </script>
 <body>
@@ -840,7 +841,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 							</div><!-- // modal_compare_cont -->
 							<div class="modal_compare_submit">
-							<a href="#modal_04" class="modal_open">선택 완료</a></div>
+							<a href="#modal_04" class="modal_open" onclick="setCompareAll();">선택 완료</a></div>
 
 						</div><!-- // modal_body -->
 
