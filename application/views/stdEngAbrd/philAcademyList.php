@@ -339,7 +339,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#start_compare_published").empty();
                 $("#start_compare_published").append(details['info'][0].aca_published);
                 $("#start_compare_detail").empty();
-                $("#start_compare_detail").append(details['info'][0].aca_detail);
+                $("#start_compare_detail").append(details['info'][0].aca_detail.substr(0, 100)+'...');
 
                 //비교하기 클릭 시 비교 모달 기본정보 선세팅
                 compare_from = details;
@@ -593,7 +593,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dt>설립연도</dt>
 														<dd><div class="text"><?= $school_list[$i]->aca_published; ?></div></dd>
 														<dt>학원설명</dt>
-														<dd class="colspan"><div class="text auto"><?= $school_list[$i]->aca_detail; ?></div></dd>
+														<dd class="colspan"><div class="text auto"><?= substr($school_list[$i]->aca_detail, 0, 100).'...'; ?></div></dd>
 													</dl>
 													<div class="training_academy_btn">
 														<a href="#modal_02" class="modal_open" onclick="open_detail('<?= $school_list[$i]->ph_idx; ?>');">상세보기 +</a>
@@ -1097,7 +1097,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt>설립연도</dt>
 												<dd><div class="text"><?= $school_list[$key]->aca_published; ?></div></dd>
 												<dt>학원설명</dt>
-												<dd class="colspan"><div class="text auto"><?= $school_list[$key]->aca_detail; ?></div></dd>
+												<dd class="colspan"><div class="text auto"><?= substr($school_list[$key]->aca_detail,0,100).'...'; ?></div></dd>
 											</dl>
 										</div><!-- // item_info -->
 									</div></a></li><!-- // training_academy_item -->
