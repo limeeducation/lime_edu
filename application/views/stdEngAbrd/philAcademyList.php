@@ -350,7 +350,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#start_compare_published").empty();
                 $("#start_compare_published").append(details['info'][0].aca_published);
                 $("#start_compare_detail").empty();
-                var detail = !details['info'][0].aca_detail ? details['info'][0].aca_detail.substr(0, 100)+'...' : '-';
+                var detail = details['info'][0].aca_detail;
+                if(detail.length>0){
+                	detail =  details['info'][0].aca_detail.substr(0, 100)+'...';
+                }else{
+                	detail = "-";
+                }
                 $("#start_compare_detail").append(detail);
 
                 //비교하기 클릭 시 비교 모달 기본정보 선세팅
