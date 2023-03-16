@@ -107,6 +107,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				});
 				$("#detail_price_dorm").append(dorm_html);
 
+				$("#detail_images").empty();
+				var image_html = "<div class='md_cont_title'>시설</div>";
+				if(details['photo'].length > 0){
+					details['photo'].forEach(function(photo){
+						image_html += "<p class='md_cont_image'><img src='+"photo.img_url"+' alt=''></p>";
+					});
+				}else{
+					image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
+				}
+				$("#detail_images").append(image_html);
+
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
 			}
@@ -339,7 +350,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#start_compare_published").empty();
                 $("#start_compare_published").append(details['info'][0].aca_published);
                 $("#start_compare_detail").empty();
-                $("#start_compare_detail").append(details['info'][0].aca_detail.substr(0, 100)+'...');
+                var detail = !details['info'][0].aca_detail ? details['info'][0].aca_detail.substr(0, 100)+'...' : '-';
+                $("#start_compare_detail").append(detail);
 
                 //비교하기 클릭 시 비교 모달 기본정보 선세팅
                 compare_from = details;
@@ -376,6 +388,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                     }
 				});
 				$("#compare_from_sns_ul").append(sns_html);
+
+				$("#compare_from_image").empty();
+				var image_html = "";
+				if(details['photo'].length > 0){
+					details['photo'].forEach(function(photo){
+						image_html += "<p class='md_cont_image'><img src='+"photo.img_url"+' alt=''></p>";
+					});
+				}else{
+					image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
+				}
+				$("#compare_from_image").append(image_html);
 
 				$("#compare_from_curri_list").empty();
                 $("#compare_from_price_curri").empty();
@@ -462,6 +485,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                     }
 				});
 				$("#compare_to_sns_ul").append(sns_html);
+
+				$("#compare_to_image").empty();
+				var image_html = "";
+				if(details['photo'].length > 0){
+					details['photo'].forEach(function(photo){
+						image_html += "<p class='md_cont_image'><img src='+"photo.img_url"+' alt=''></p>";
+					});
+				}else{
+					image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
+				}
+				$("#compare_to_image").append(image_html);
 
 				$("#compare_to_curri_list").empty();
                 $("#compare_to_price_curri").empty();
@@ -866,7 +900,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div><!-- // modal_tabs_item -->
 								<div class="modal_tabs_item item2">
 
-									<div class="md_cont_detail">
+									<div class="md_cont_detail" id="detail_images">
 										<div class="md_cont_title">시설</div>
 										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
@@ -1234,14 +1268,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 									<ul class="modal_half modal_half_info">
 										<li>
-											<div class="md_cont_detail">
+											<div class="md_cont_detail" id="compare_from_image">
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 											</div><!-- // md_cont_detail -->
 										</li>
 										<li>
-											<div class="md_cont_detail">
+											<div class="md_cont_detail" id="compare_to_image">
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>

@@ -88,6 +88,7 @@ class StudyEnglishAbroad extends CI_Controller {
 		$details['curri'] = $this->school_model->getPhCurri($idx);
 		$details['dorm'] = $this->school_model->getPhDrom($idx);
 		$details['long_term'] = $this->school_model->getLongTerm($idx);
+		$details['photo'] = $this->school_model->getPhoto($idx);
 		echo json_encode($details);
 	}
 

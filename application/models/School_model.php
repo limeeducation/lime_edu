@@ -133,6 +133,13 @@ class School_model extends CI_Model
         $this->db->where('curri_idx', $idx);
         return $this->db->get()->result_array();
     }
+
+    public function getPhoto($idx){
+    	$this->db->select('img_url');
+        $this->db->from('phil_photo');
+        $this->db->where('ph_idx', $idx);
+        return $this->db->get()->result_array();
+    }
 }
 
 ?>
