@@ -67,7 +67,7 @@
 						<a href="javascript:setValue('conOffice','송도');" class="tab">송도</a>
 						<a href="javascript:setValue('conOffice','대구');" class="tab">대구</a>
 						<a href="javascript:setValue('conOffice','부산');" class="tab">부산</a>
-						<a href="javascript:setValue('conOffice','제주');" class="tab">제주</a>
+						<a href="javascript:setValue('conOffice','전남');" class="tab">전남</a>
 					</div>
 					<!--// 탭영역 -->
 				</div>

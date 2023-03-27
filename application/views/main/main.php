@@ -247,22 +247,22 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                             			<div class="program_title">추천상품</div>
                             			<ul class="program_list banr_lists" id="banr_list_us">
                             				<? foreach($us_banner_list as $us_banner): ?>
-                            					<li><a href="#"><div class="thumb"><img src="<?= $us_banner->banr_img;?>" alt=""></div></a></li>
+                            					<li><a href="<?= $us_banner->banr_link_url;?>"><div class="thumb"><img src="<?= $us_banner->banr_img;?>" alt=""></div></a></li>
                             				<? endforeach; ?>
                             			</ul>
                             			<ul class="program_list banr_lists" id="banr_list_uk" style="display:none;">
                                         	<? foreach($uk_banner_list as $uk_banner): ?>
-                                        		<li><a href="#"><div class="thumb"><img src="<?= $uk_banner->banr_img;?>" alt=""></div></a></li>
+                                        		<li><a href="<?= $uk_banner->banr_link_url;?>"><div class="thumb"><img src="<?= $uk_banner->banr_img;?>" alt=""></div></a></li>
                                         	<? endforeach; ?>
                                         </ul>
                             			<ul class="program_list banr_lists" id="banr_list_ca"style="display:none;">
                                         	<? foreach($ca_banner_list as $ca_banner): ?>
-                                        		<li><a href="#"><div class="thumb"><img src="<?= $ca_banner->banr_img;?>" alt=""></div></a></li>
+                                        		<li><a href="<?= $ca_banner->banr_link_url;?>"><div class="thumb"><img src="<?= $ca_banner->banr_img;?>" alt=""></div></a></li>
                                         	<? endforeach; ?>
                                         </ul>
                             			<ul class="program_list banr_lists" id="banr_list_phil"style="display:none;">
                                         	<? foreach($phil_banner_list as $phil_banner): ?>
-                                        		<li><a href="#"><div class="thumb"><img src="<?= $phil_banner->banr_img;?>" alt=""></div></a></li>
+                                        		<li><a href="<?= $phil_banner->banr_link_url;?>"><div class="thumb"><img src="<?= $phil_banner->banr_img;?>" alt=""></div></a></li>
                                         	<? endforeach; ?>
                                         </ul>
                             			<a href="#" class="box"></a>
@@ -367,7 +367,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<section class="main_sect" id="mainStory" style="background-color:#EFF4F3; padding: 5rem 0;">
 				<?php endif; ?>
 
-					<div class="inner">
+					<div class="inner" style="display:none;">
 
 						<div class="story_title">라임스토리</div>
 						<div class="story_more"><a href="#">전체보기<i>+</i></a></div>

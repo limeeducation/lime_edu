@@ -87,7 +87,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<a href="javascript:setValueProd('conOfficeProd','송도');" class="tab">송도</a>
 											<a href="javascript:setValueProd('conOfficeProd','대구');" class="tab">대구</a>
 											<a href="javascript:setValueProd('conOfficeProd','부산');" class="tab">부산</a>
-											<a href="javascript:setValueProd('conOfficeProd','제주');" class="tab">제주</a>
+											<a href="javascript:setValueProd('conOfficeProd','전남');" class="tab">전남</a>
 										</div>
 										<!--// 탭영역 -->
 									</div>
