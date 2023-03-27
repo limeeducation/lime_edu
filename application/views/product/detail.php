@@ -55,7 +55,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<div id="detail_wrap">
 					<!-- 상품상세 -->
 					<div class="bnr_wrap">
-						<h1 class="pro_title">
+						<h1 class="pro_title prod_name">
 							<?= $prod_name; ?>
 						</h1>
 						<figure class="bnr">

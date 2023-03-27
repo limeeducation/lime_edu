@@ -633,6 +633,9 @@
 .canada .res_list_wrap .list .txt_area .txt {color:#705537;}
 .canada .rec_pro_wrap .rec_pro_tit {color:#705537;}
 
+/* ============================================ << 상품 상세 >> ================================================ */
+.prod_name{font-size: xxx-large; text-align: center;}
+
 
 @media all and (max-width:1400px) {
 	.btn_back {left:1rem;}
