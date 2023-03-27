@@ -203,7 +203,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="program_title">어학연수</div>
 											<ul class="program_list">
 												<? foreach($normal_banner_list[0] as $nor_banr_0): ?>
-													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_0->banr_img;?>" alt=""></div></a></li>
+													<li><a href="<?= $nor_banr_0->banr_link_url;?>"><div class="thumb"><img src="<?= $nor_banr_0->banr_img;?>" alt=""></div></a></li>
 												<? endforeach; ?>
 											</ul>
 											<a href="#" class="box"></a>
@@ -212,7 +212,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="program_title">초중고 유학</div>
 											<ul class="program_list">
 												<? foreach($normal_banner_list[1] as $nor_banr_1): ?>
-													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_1->banr_img;?>" alt=""></div></a></li>
+													<li><a href="<?= $nor_banr_1->banr_link_url;?>"><div class="thumb"><img src="<?= $nor_banr_1->banr_img;?>" alt=""></div></a></li>
 												<? endforeach; ?>
 											</ul>
 											<a href="#" class="box"></a>
@@ -221,7 +221,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="program_title">대학 유학</div>
 											<ul class="program_list">
 												<? foreach($normal_banner_list[2] as $nor_banr_2): ?>
-													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_2->banr_img;?>" alt=""></div></a></li>
+													<li><a href="<?= $nor_banr_2->banr_link_url;?>"><div class="thumb"><img src="<?= $nor_banr_2->banr_img;?>" alt=""></div></a></li>
 												<? endforeach; ?>
 											</ul>
 											<a href="#" class="box"></a>
@@ -230,7 +230,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<div class="program_title">컬리지 유학 후 이민 / 자녀무상</div>
 											<ul class="program_list">
 												<? foreach($normal_banner_list[3] as $nor_banr_3): ?>
-													<li><a href="#"><div class="thumb"><img src="<?= $nor_banr_3->banr_img;?>" alt=""></div></a></li>
+													<li><a href="<?= $nor_banr_3->banr_link_url;?>"><div class="thumb"><img src="<?= $nor_banr_3->banr_img;?>" alt=""></div></a></li>
 												<? endforeach; ?>
 											</ul>
 											<a href="#" class="box"></a>
