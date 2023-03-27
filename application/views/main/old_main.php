@@ -144,12 +144,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 			<div class="swiper-slide">
 				<a href="/ca/bod/ridely">
 					<div>
-						<img src="/static/img/old/prog_ca01_new.jpg" alt="">
+						<img src="/static/img/old/prog_ca01_new_01.jpg" alt="">
 					</div>
 				</a>
 				<a href="/ca/family">
 					<div>
-						<img src="/static/img/old/prog_ca05_new.jpg" alt="">
+						<img src="/static/img/old/prog_ca05_new_01.jpg" alt="">
 					</div>
 				</a>
 			</div>
@@ -173,7 +173,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/old/head_ca.php');
 				</div>
 				<div>
 					<a href="/ca/college/major">
-						<img src="/static/img/old/prog_ca07_new.jpg" alt="">
+						<img src="/static/img/old/prog_ca07_new_01.jpg" alt="">
 					</a>
 				</div>
 			</div>

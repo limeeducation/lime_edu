@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p><i class="fas fa-phone mr-3"></i> 02 2135 7699</p>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
             <h6 class="text-uppercase fw-bold">서울 강남센터</h6>
-            <p><i class="fas fa-home mr-3"></i> 서울시 강남구 강남대로 310 유니온센터 1204호</p>
+            <p><i class="fas fa-home mr-3"></i> 서울특별시 강남구 강남대로 310 유니온센터 1204호</p>
           </div>
           <!-- Grid column -->
 
@@ -91,14 +91,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">국내 직영센터</h6>
-            <p><i class="fas fa-phone mr-3"></i> 대표번호 1688-0897</p>
+            <p><i class="fas fa-phone mr-3"></i> 대표번호 1688-9806</p>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
             <h6 class="text-uppercase fw-bold">인천 송도 센터</h6>
             <p><i class="fas fa-home mr-3"></i> 인천광역시 연수구 컨벤시아대로 165 포스코타워 26층</p>
 			<h6 class="text-uppercase fw-bold">대구 동성로 센터</h6>
 			<p><i class="fas fa-home mr-3"></i> 대구광역시 중구 중앙대로 385-1 3층</p>
 			<h6 class="text-uppercase fw-bold">부산 서면 센터</h6>
-			<p><i class="fas fa-home mr-3"></i> 부산시 진구 동천로 109 삼한골든게이트 빌딩 9층</p>
+			<p><i class="fas fa-home mr-3"></i> 부산광역시 진구 동천로 109 삼한골든게이트 빌딩 9층</p>
           </div>
           <!-- Grid column -->
           <!-- Grid column -->
