@@ -21,6 +21,8 @@
 							<p class="addr">대구광역시 중구 중앙대로 385-1 3층</p>
 							<p>부산 서면 센터</p>
 							<p class="addr">부산시 진구 동천로 109 삼한골든게이트 빌딩 9층</p>
+							<p>전남 센터</p>
+                            <p class="addr">전라남도 순천시 삼산로 15-1, 3층</p>
 						</dd>
 					</dl>
 					<dl class="footer_data">
