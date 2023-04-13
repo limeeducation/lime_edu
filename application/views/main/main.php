@@ -47,7 +47,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="visual-slider slider-rotate">
 							<div class="banner_main slider-rotate__container">
 								<?php foreach($event_banner_list as $event_banner) : ?>
-									<a class="item slider-rotate__item" href="#" target="_blank"><img src="<?= $event_banner->banr_img;?>"></a>
+									<a class="item slider-rotate__item" href="<?= $event_banner->banr_link_url;?>" ><img src="<?= $event_banner->banr_img;?>"></a>
 								<?php endforeach; ?>
 							</div>
 							<div class="slider-rotate__nav">
