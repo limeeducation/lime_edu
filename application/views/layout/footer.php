@@ -12,7 +12,7 @@
 					<dl class="footer_data">
 						<dt>국내 직영센터</dt>
 						<dd>
-							<p class="tel">대표번호 1688-0897</p>
+							<p class="tel">대표번호 1688-9806</p>
 						</dd>
 						<dd>
 							<p class="addr">인천 송도 센터</p>
