@@ -8,6 +8,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
             if(tab == "5"){
 				if(nation == 'uk'){
 					location.href="/StudyUnivAbroad/studyUnivUk";
+				} else if(nation == 'us'){
+					location.href="/StudyUnivAbroad/studyUnivUs";
+				} else if(nation == 'ca'){
+					location.href="/StudyUnivAbroad/studyUnivCa";
 				}
             }else if(tab == "6"){
                 $(".banr_lists").hide();
