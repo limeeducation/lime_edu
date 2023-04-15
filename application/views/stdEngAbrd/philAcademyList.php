@@ -838,16 +838,18 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="md_cont_text">
 										<div class="title">공통사항</div>
 										<div class="text">
-											<strong>▶ ㅇㅇㅇ특징</strong>
-											<p>이러저러하고 이러저러한 특징이 있음</p>
+											<strong>▶ 학습 환경</strong>
+											<p>기숙사 형 어학원에서는 영어 강의를 듣는 것 외에도, 영어로 일상 생활을 하면서 실제로 사용되는 영어를 배울 수 있음</p>
+											<p>학생들끼리 함께 공부하고 교류하는 것도 가능</p>
 										</div>
 										<div class="text">
-											<strong>▶ ㅇㅇㅇ특징</strong>
-											<p>이러저러하고 이러저러한 특징이 있음</p>
+											<strong>▶ 안전한 환경</strong>
+											<p>기숙사 형 어학원은 학생들의 안전을 보장하기 위해 보안 시스템을 갖추고 있음</p>
 										</div>
 										<div class="text">
-											<strong>▶ ㅇㅇㅇ특징</strong>
-											<p>이러저러하고 이러저러한 특징이 있음</p>
+											<strong>▶ 문화 체험</strong>
+											<p>기숙사 형 어학원에서는 다양한 문화 프로그램을 제공하여, 필리핀의 문화를 더욱 체험할 수 있음</p>
+											<p>필리핀 문화 강좌, 요리 강좌, 춤 강좌 등을 제공하며, 새로운 문화를 체험하면서 영어 능력도 함께 향상시킬 수 있음</p>
 										</div>
 									</div><!-- // md_cont_text -->
 
