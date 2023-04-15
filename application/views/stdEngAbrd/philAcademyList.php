@@ -338,7 +338,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 		var width = document.body.offsetWidth;
 		if(width < 800){
 			alert("비교하기 기능은 너비 800px 이상의 PC 환경에 최적화 되어있습니다.");
-			return false;
 		}
 		$.ajax({
 			type: "post",
@@ -462,7 +461,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	}
     function set_compare(ph_idx){
 		compare_to = ph_idx;
-		console.log(compare_to);
     }
 
     function setCompareAll(){
