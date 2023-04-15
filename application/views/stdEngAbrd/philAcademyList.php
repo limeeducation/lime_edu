@@ -108,7 +108,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#detail_price_dorm").append(dorm_html);
 
 				$("#detail_images").empty();
+				$("#detail_intro_image").empty();
 				var image_html = "<div class='md_cont_title'>시설</div>";
+				var intro_image_html = "<div class='md_cont_title'>시설</div>";
 				if(details['photo'].length > 0){
 					details['photo'].forEach(function(photo){
 						image_html += "<p class='md_cont_image'><img src='"+photo.img_url+"' alt=''></p>";
@@ -117,6 +119,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
 				}
 				$("#detail_images").append(image_html);
+				if(details['photo'].length > 0){
+					intro_image_html += "<p class='md_cont_image'><img src='"+details['photo'][0].img_url+"' alt=''></p>";
+				}else{
+					intro_image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
+				}
+				$("#detail_intro_image").append(intro_image_html);
 
 			},error: function(data){
 				alert("잠시 후 다시 시도해주세요.");
@@ -395,7 +403,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#compare_from_sns_ul").append(sns_html);
 
 				$("#compare_from_image").empty();
+				$("#compare_from_intro_image").empty();
 				var image_html = "";
+				var image_intro_html = "";
 				if(details['photo'].length > 0){
 					details['photo'].forEach(function(photo){
 						image_html += "<p class='md_cont_image'><img src='"+photo.img_url+"' alt=''></p>";
@@ -403,7 +413,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				}else{
 					image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
 				}
-				$("#compare_from_image").append(image_html);
+				if(details['photo'].length > 0){
+					image_intro_html += "<p class='md_cont_image'><img src='"+details['photo'][0].img_url+"' alt=''></p>";
+				}else{
+					image_intro_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
+				}
+				$("#compare_from_intro_image").append(image_intro_html);
 
 				$("#compare_from_curri_list").empty();
                 $("#compare_from_price_curri").empty();
@@ -492,7 +507,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#compare_to_sns_ul").append(sns_html);
 
 				$("#compare_to_image").empty();
+				$("#compare_to_intro_image").empty();
 				var image_html = "";
+				var image_intro_html = "";
 				if(details['photo'].length > 0){
 					details['photo'].forEach(function(photo){
 						image_html += "<p class='md_cont_image'><img src='"+photo.img_url+"' alt=''></p>";
@@ -500,7 +517,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				}else{
 					image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
 				}
-				$("#compare_to_image").append(image_html);
+				if(details['photo'].length > 0){
+					image_intro_html += "<p class='md_cont_image'><img src='"+details['photo'][0].img_url+"' alt=''></p>";
+				}else{
+					image_intro_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
+				}
+				$("#compare_to_intro_image").append(image_intro_html);
 
 				$("#compare_to_curri_list").empty();
                 $("#compare_to_price_curri").empty();
@@ -766,18 +788,19 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt><img src="/static/img/std_eng_abrd/phil/modal_tabs_academy3_2@2x.png" alt=""></dt>
 												<dd>
 													<strong>클락</strong>
-													<p>유흥시설 등 학업 저해요소가 현저히 적고, 조용한 환경에서 공부에 집중하기에 적합한 도시</p>
-													<p>필리핀 내 타 도시에 비해 치안이 안정되어 있어 안전한 학업과 생활이 가능</p>
+													<p>상대적으로 조용한 분위기가 특징</p>
+													<p>교외 지역에서는 해변이나 공원 등 자연 환경이 잘 갖추어져 있어서 휴양과 학습이 가능함</p>
+													<p>클락 시티 내부는 외부인의 출입이 제한되는 곳으로 안전한 학습이 가능</p>
 												</dd>
 											</dl>
-											<dl class="md_cont_academy_data">
+											<!-- <dl class="md_cont_academy_data">
 												<dt><img src="/static/img/std_eng_abrd/phil/modal_tabs_academy3_3@2x.png" alt=""></dt>
 												<dd>
 													<strong>일로일로</strong>
 													<p>유흥시설 등 학업 저해요소가 현저히 적고, 조용한 환경에서 공부에 집중하기에 적합한 도시</p>
 													<p>필리핀 내 타 도시에 비해 치안이 안정되어 있어 안전한 학업과 생활이 가능</p>
 												</dd>
-											</dl>
+											</dl> -->
 
 										</div><!-- // modal_tabs_item -->
 
@@ -896,7 +919,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<li><a href="#" class="item5"><img src="/static/img/std_eng_abrd/phil/modal_tabs_icons_home@2x.png" alt="Home"></a></li>
 									</ul><!-- // md_cont_icons -->
 
-									<div class="md_cont_detail">
+									<div class="md_cont_detail" id="detail_intro_image">
 										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 										<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
@@ -1240,7 +1263,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<ul class="md_cont_icons" id="compare_from_sns_ul">
 											</ul><!-- // md_cont_icons -->
 
-											<div class="md_cont_detail">
+											<div class="md_cont_detail" id="compare_from_intro_image">
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
@@ -1259,7 +1282,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<ul class="md_cont_icons" id="compare_to_sns_ul">
 											</ul><!-- // md_cont_icons -->
 
-											<div class="md_cont_detail">
+											<div class="md_cont_detail" id="compare_to_intro_image">
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
 												<p class="md_cont_image"><img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" alt=""></p>
