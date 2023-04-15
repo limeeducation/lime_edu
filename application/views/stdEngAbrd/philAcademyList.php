@@ -769,7 +769,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<ul class="md_cont_list">
 												<li>유흥시설 등 학업 저해요소가 현저히 적고, <br>조용한 환경에서 공부에 집중하기에 적합한 도시</li>
 												<li>필리핀 내 타 도시에 비해 치안이 안정되어 있어 <br>안전한 학업과 생활이 가능</li>
-												<li>선선한 날씨 덕분에 기후로 인한 어려움이 감소하여<br>더위에 지치지 않고 공부할 수 있음음</li>
+												<li>선선한 날씨 덕분에 기후로 인한 어려움이 감소하여<br>더위에 지치지 않고 공부할 수 있음</li>
 											</ul>
 
 										</div><!-- // modal_tabs_item -->
@@ -780,8 +780,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt><img src="/static/img/std_eng_abrd/phil/modal_tabs_academy3_1@2x.png" alt=""></dt>
 												<dd>
 													<strong>마닐라</strong>
-													<p>유흥시설 등 학업 저해요소가 현저히 적고, 조용한 환경에서 공부에 집중하기에 적합한 도시</p>
-													<p>필리핀 내 타 도시에 비해 치안이 안정되어 있어 안전한 학업과 생활이 가능</p>
+													<p>필리핀에서 가장 많은 영어 사용자가 있는 도시 중 하나, 일상에서 영어 사용 빈도가 높아서 학생들은 영어 사용 능력을 더욱 발전시킬 수 있음</p>
+													<p>필리핀에서 문화 시설이 가장 많이 위치해 있어 박물관, 영화관, 라이브 공연장 등 다양한 문화 시설을 방문하며, 새로운 문화를 체험할 수 있음</p>
 												</dd>
 											</dl>
 											<dl class="md_cont_academy_data">
