@@ -316,6 +316,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	var printContents;
     var initBody;
 	function printDetail(){
+		alert("현재 준비중인 기능입니다.");
+		return;
 		printContents = document.getElementById("detail_print");
 
 		window.onbeforeprint = beforePrint;
