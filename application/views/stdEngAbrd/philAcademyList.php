@@ -417,6 +417,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				}else{
 					image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
 				}
+				$("#compare_from_image").append(image_html);
 				if(details['photo'].length > 0){
 					image_intro_html += "<p class='md_cont_image'><img src='"+details['photo'][0].img_url+"' alt=''></p>";
 				}else{
@@ -520,6 +521,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				}else{
 					image_html += "<p class='md_cont_image'><img src='/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png' alt=''></p>";
 				}
+				$("#compare_to_image").append(image_html);
 				if(details['photo'].length > 0){
 					image_intro_html += "<p class='md_cont_image'><img src='"+details['photo'][0].img_url+"' alt=''></p>";
 				}else{
