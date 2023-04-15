@@ -335,6 +335,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 	var compare_to;
 
 	function open_compare(ph_idx){
+		var width = document.body.offsetWidth;
+		if(width < 800){
+			alert("비교하기 기능은 너비 800px 이상의 PC 환경에 최적화 되어있습니다.");
+			return;
+		}
 		$.ajax({
 			type: "post",
 			url: "/studyEnglishAbroad/apiGetPhAcaDetail",
