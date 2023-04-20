@@ -129,11 +129,11 @@
 
 	<!-- headGlobal -->
 	<div id="headGlobal">
-		<h1 class="header_logo"><a href="/main/new_main">라임에듀</a></h1>
+		<h1 class="header_logo"><a href="/">라임에듀</a></h1>
 
 		<nav class="header_nav">
 			<ul id="gnb">
-				<li class="item item1"><a href="/main/new_main?tab=5">해외대학 유학</a>
+				<li class="item item1"><a href="/?tab=5">해외대학 유학</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -170,7 +170,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="item item2"><a href="/main/new_main?tab=6">조기유학</a>
+				<li class="item item2"><a href="/?tab=6">조기유학</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -206,7 +206,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="item item3"><a href="/main/new_main?tab=7">어학연수</a>
+				<li class="item item3"><a href="/?tab=7">어학연수</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
@@ -226,7 +226,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="item item4"><a href="/main/new_main?tab=8">가족연수/캠프/스쿨링</a>
+				<li class="item item4"><a href="/?tab=8">가족연수/캠프/스쿨링</a>
 					<div class="depth_wrap">
 						<div class="inner">
 
