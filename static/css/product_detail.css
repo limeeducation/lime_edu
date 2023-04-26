@@ -753,7 +753,7 @@
 	.rec_pro_slide .rec_pro a {width:150px; height:150px;}
 
 	/* 모달 팝업 */
-	.pop_detail .pop_title, .pop_detail .sec_tit {width: 27rem; height: 6rem;}
+	.pop_detail .pop_title, .pop_detail .sec_tit {width: 27rem; height: 100%;}
 	.pop_detail .pop_title {font-size: 14px;}
 	.pop_detail .sec_wrap .sec_tit {font-size: 14px;}
 	.pop_detail .sec_wrap .sec_des_box p {font-size: 13px;}
