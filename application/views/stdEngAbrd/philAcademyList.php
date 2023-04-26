@@ -366,7 +366,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#start_compare_detail").empty();
                 var detail = details['info'][0].aca_detail;
                 if(detail.length>0){
-                	detail =  details['info'][0].aca_detail.substr(0, 100)+'...';
+                	detail =  details['info'][0].aca_detail.mb_substr(0, 100, 'utf-8')+'...';
                 }else{
                 	detail = "-";
                 }
@@ -661,7 +661,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dt>설립연도</dt>
 														<dd><div class="text"><?= $school_list[$i]->aca_published; ?></div></dd>
 														<dt>학원설명</dt>
-														<dd class="colspan"><div class="text auto"><?= substr($school_list[$i]->aca_detail, 0, 100).'...'; ?></div></dd>
+														<dd class="colspan"><div class="text auto"><?= mb_substr($school_list[$i]->aca_detail, 0, 100, 'utf-8').'...'; ?></div></dd>
 													</dl>
 													<div class="training_academy_btn">
 														<a href="#modal_02" class="modal_open" onclick="open_detail('<?= $school_list[$i]->ph_idx; ?>');">상세보기 +</a>
@@ -1168,7 +1168,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 												<dt>설립연도</dt>
 												<dd><div class="text"><?= $school_list[$key]->aca_published; ?></div></dd>
 												<dt>학원설명</dt>
-												<dd class="colspan"><div class="text auto"><?= substr($school_list[$key]->aca_detail,0,100).'...'; ?></div></dd>
+												<dd class="colspan"><div class="text auto"><?= mb_substr($school_list[$key]->aca_detail,0,100, 'utf-8').'...'; ?></div></dd>
 											</dl>
 										</div><!-- // item_info -->
 									</div></a></li><!-- // training_academy_item -->
