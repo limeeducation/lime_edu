@@ -737,7 +737,7 @@
 	.acad_group .img_area {margin:0 auto 2rem; width:110px;}
 	.acad_list .acad_group button {width:110px; height:auto;}
 	.acad_list .acad_group .logo_img {width:110px; height:110px;}
-	.acad_group .img_area .name {height:7rem; font-size:12px;}
+	.acad_group .img_area .name {height:100%; font-size:12px;}
 	.acad_group .acad_info .acad_tab_wrap .acad_tab {width:calc(33.33% - 1rem); margin-left:1rem; font-size:11px;}
 	.acad_group .acad_info .acad_tab_wrap .acad_tab:nth-child(2n - 1) {margin-left: 0;}
 	.acad_group .acad_info .info_tit {font-size:14px; margin-left: 0;}
