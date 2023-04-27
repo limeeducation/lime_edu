@@ -403,13 +403,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<!--// 숙소옵션 -->
 
 						<!-- 학교 이미지 -->
-						<div class="sec_wrap">
+						<!-- <div class="sec_wrap">
 							<h3 class="sec_tit">학교 사진</h3>
 							<div class="sec_des_box">
 								<img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" style="padding-bottom:2%;">
 								<img src="/static/img/std_eng_abrd/phil/modal_tabs_image@2x.png" style="padding-bottom:2%;">
 							</div>
-						</div>
+						</div> -->
 						<!--// 학교 이미지 -->
 					</div>
 				</section>
