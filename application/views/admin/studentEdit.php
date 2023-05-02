@@ -40,7 +40,7 @@
 	});
 
 	function del_student(){
-		location.href="/adminStudent/studentDelete<?= empty($idx) ? '' : '/'.$idx;?>";
+		location.href="/adminStudent/studentDelete<?= empty($con_idx) ? '' : '/'.$con_idx;?>";
 	}
 </script>
 <body>
