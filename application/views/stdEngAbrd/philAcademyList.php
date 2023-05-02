@@ -648,20 +648,20 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<li class="training_academy_item">
 												<div class="item_logo">
 													<div class="logo_image"><img src="<?= $school_list[$i]->logo_url; ?>" alt=""></div>
-													<div class="logo_name"><?= $school_list[$i]->aca_name; ?></div>
+													<div class="logo_name"><?= $school_list[$i-1]->aca_name; ?></div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
 													<dl class="training_academy_data">
 														<dt>학원위치</dt>
-														<dd><div class="text"><?= $school_list[$i]->aca_city; ?></div></dd>
+														<dd><div class="text"><?= $school_list[$i-1]->aca_city; ?></div></dd>
 														<dt>학생규모</dt>
-														<dd><div class="text"><?= $school_list[$i]->aca_students; ?></div></dd>
+														<dd><div class="text"><?= $school_list[$i-1]->aca_students; ?></div></dd>
 														<dt>커리큘럼</dt>
-														<dd><div class="text"><?= $school_list[$i]->aca_curri; ?></div></dd>
+														<dd><div class="text"><?= $school_list[$i-1]->aca_curri; ?></div></dd>
 														<dt>설립연도</dt>
-														<dd><div class="text"><?= $school_list[$i]->aca_published; ?></div></dd>
+														<dd><div class="text"><?= $school_list[$i-1]->aca_published; ?></div></dd>
 														<dt>학원설명</dt>
-														<dd class="colspan"><div class="text auto"><?= mb_substr($school_list[$i]->aca_detail, 0, 100, 'utf-8').'...'; ?></div></dd>
+														<dd class="colspan"><div class="text auto"><?= mb_substr($school_list[$i-1]->aca_detail, 0, 100, 'utf-8').'...'; ?></div></dd>
 													</dl>
 													<div class="training_academy_btn">
 														<a href="#modal_02" class="modal_open" onclick="open_detail('<?= $school_list[$i]->ph_idx; ?>');">상세보기 +</a>
@@ -669,12 +669,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 													</div>
 												</div><!-- // item_info -->
 											</li><!-- // training_academy_item -->
-									<?php if($i %5 == 0 || empty($school_list[$i]->aca_name)): ?>
+									<?php if($i %5 == 0 || empty($school_list[$i-1]->aca_name)): ?>
 										</ul>
 									</div><!-- // swiper-slide -->
 									<?php endif; ?>
 									<?php $i++; ?>
-									<?php if(empty($school_list[$i]->aca_name)){break;}?>
+									<?php if(empty($school_list[$i-1]->aca_name)){break;}?>
 									<?php endforeach; ?>
 								</div><!-- // swiper-wrapper -->
 							</div><!-- // swiper-container -->
