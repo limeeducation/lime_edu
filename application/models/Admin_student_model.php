@@ -71,6 +71,11 @@ class Admin_student_model extends CI_Model
     	$this->db->update('apply_students', $edit_data, $edit_where);
     	return $this->db->trans_status();
     }
+
+    public function deleteStudent($data){
+    	$this->db->delete('apply_students', $data);
+    	return $this->db->trans_status();
+    }
 }
 
 ?>

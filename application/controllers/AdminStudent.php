@@ -83,4 +83,17 @@ class AdminStudent extends CI_Controller {
 			script_alert_back('저장중 장애가 발생했습니다.');
 		}
     }
+
+    public function studentDelete($idx = null){
+    	if($idx ==  null){
+    		script_alert_go("학생 기록을 다시 확인해주세요.", base_url('/AdminStudent/studentList'));
+    	}
+    	$data['con_idx']	= $idx;
+    	$res = $this->admin_student_model->deleteStudent($data);
+    	if($res){
+			script_alert_go("상담 기록이 삭제되었습니다.", base_url('/AdminStudent/studentList'));
+    	}else{
+			script_alert_back('삭제중 장애가 발생했습니다.');
+    	}
+    }
 }
