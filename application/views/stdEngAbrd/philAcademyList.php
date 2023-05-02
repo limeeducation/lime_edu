@@ -647,7 +647,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<!-- 해당 li가 반복되어야 함 -->
 											<li class="training_academy_item">
 												<div class="item_logo">
-													<div class="logo_image"><img src="<?= $school_list[$i]->logo_url; ?>" alt=""></div>
+													<div class="logo_image"><img src="<?= $school_list[$i-1]->logo_url; ?>" alt=""></div>
 													<div class="logo_name"><?= $school_list[$i-1]->aca_name; ?></div>
 												</div><!-- // item_logo -->
 												<div class="item_info">
@@ -664,8 +664,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 														<dd class="colspan"><div class="text auto"><?= mb_substr($school_list[$i-1]->aca_detail, 0, 100, 'utf-8').'...'; ?></div></dd>
 													</dl>
 													<div class="training_academy_btn">
-														<a href="#modal_02" class="modal_open" onclick="open_detail('<?= $school_list[$i]->ph_idx; ?>');">상세보기 +</a>
-														<a href="#modal_03" class="modal_open" onclick="open_compare('<?= $school_list[$i]->ph_idx; ?>');">비교하기 +</a>
+														<a href="#modal_02" class="modal_open" onclick="open_detail('<?= $school_list[$i-1]->ph_idx; ?>');">상세보기 +</a>
+														<a href="#modal_03" class="modal_open" onclick="open_compare('<?= $school_list[$i-1]->ph_idx; ?>');">비교하기 +</a>
 													</div>
 												</div><!-- // item_info -->
 											</li><!-- // training_academy_item -->
