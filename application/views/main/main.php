@@ -77,7 +77,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					</div>
 					<?php elseif($tab == '6'): ?>
 					<div class="big_inner">
-						<div class="sect_image"><img src="/static/img/main/early_main_banner.png" alt=""></div>
+						<div class="sect_image"><img src="/static/img/main/early_main_banner.jpg" alt=""></div>
 					</div>
 					<?php elseif($tab == '7'): ?>
 					<div class="big_inner">
