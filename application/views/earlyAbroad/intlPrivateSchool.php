@@ -184,6 +184,49 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						</div>
 					</div>
 					<!--// 학점전환 -->
+
+					<!-- 취득요건 -->
+					<div class="require bg_last">
+						<div class="cotn">
+							<p class="pro_tit">온타리오주 고교 졸업장(OSSD) 취득을 위한 요건</p>
+							<ol class="adt_list">
+								<li>
+									<span class="num">01</span>
+									<div class="txt_box">
+										<p>
+											<strong>30학점이수 (필수 18학점 + 선택 12학점)</strong>
+											기존 고등학교의 성적표 제출시 추가로
+											필요한 학점을 이수할 수 있습니다
+										</p>
+									</div>
+								</li>
+								<li>
+									<span class="num">02</span>
+									<div class="txt_box">
+										<p>
+											<strong>영어평가시험</strong>
+											온타리오주 문해력시험 (OSSLT)<br>
+											온타리오주의 고등학교에서 일괄적으로
+											시행되는 시험에 통과해야 합니다
+										</p>
+									</div>
+								</li>
+								<li>
+									<span class="num">03</span>
+									<div class="txt_box">
+										<p>
+											<strong>봉사활동</strong>
+											40시간의 지역 커뮤니티, 학교행사나
+											관련기관에서 봉사활동 후<br>
+											증빙자료를 제출하면 인정됩니다
+										</p>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<!--// 취득요건 -->
+
 					<!-- 탭영역 -->
 					<section class="tab_sec academy_tab_sec">
 						<!-- 추천탭 -->
@@ -500,50 +543,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									</div>
 								</div>
 								<!--// 학교특징 -->
-
-
-
-								<!-- 취득요건 -->
-								<div class="bg_green require bg_last">
-									<div class="cotn">
-										<p class="pro_tit">온타리오주 고교 졸업장(OSSD) 취득을 위한 요건</p>
-										<ol class="adt_list">
-											<li>
-												<span class="num">01</span>
-												<div class="txt_box">
-													<p>
-														<strong>30학점이수 (필수 18학점 + 선택 12학점)</strong>
-														기존 고등학교의 성적표 제출시 추가로
-														필요한 학점을 이수할 수 있습니다
-													</p>
-												</div>
-											</li>
-											<li>
-												<span class="num">02</span>
-												<div class="txt_box">
-													<p>
-														<strong>영어평가시험</strong>
-														온타리오주 문해력시험 (OSSLT)<br>
-														온타리오주의 고등학교에서 일괄적으로
-														시행되는 시험에 통과해야 합니다
-													</p>
-												</div>
-											</li>
-											<li>
-												<span class="num">03</span>
-												<div class="txt_box">
-													<p>
-														<strong>봉사활동</strong>
-														40시간의 지역 커뮤니티, 학교행사나
-														관련기관에서 봉사활동 후<br>
-														증빙자료를 제출하면 인정됩니다
-													</p>
-												</div>
-											</li>
-										</ol>
-									</div>
-								</div>
-								<!--// 취득요건 -->
 							</div>
 							<!--// TAIE -->
 						</div>
