@@ -495,83 +495,84 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<!--// 학교특징 -->
 							</div>
 							<!--// TAIE -->
+
+							<!-- SGA -->
+							<div class="tab_04">
+								<div class="cotn">
+									<div class="brd_tit">
+										<h2 class="tit">SGA <span>St George Academy High School</span></h2>
+									</div>
+									<div class="tab_tit_area">
+										<div class="cotn_box">
+											<p>
+												토론토에서 부촌으로 꼽히는 Bayview 지하철 역에서 1분거리에 있는 SGA는 조용하고 안전한 지역에 위치하고 있으며 공립 도서관과 식당, 몰 등과 같은 다양한 편의시설이 주변에 자리잡고 있습니다. SGA 학교에서 기숙사와의 이동거리는 20분으로 이동시간이 짧고 교통이 편리합니다.<br><br>
+												대규모가 아닌 소규모의 학생수를 유지하여 학업을 제공하고 있는 SGA는 학생 하나하나에 세심한 관리를 하고 있으며 2주마다 학생의 학업적이고 생활적인 리포트 카드가 발송됩니다.
+												소규모의 가족적인 학교 분위기로 학생들의 생일까지 챙기고 서로 축하는 분위기로 정서적으로 안정된 분위기에서 학업이 가능합니다.
+												5학기 정규 학기제와 Night School을 운영하여 최대 1년에 18학점까지 취득이 가능합니다. 방과 후 교내외 클럽활동과 학과목 튜터링 그리고 경시대회 준비반을 운영하고 있습니다.
+												또한 학교에서 1분거리의 YMCA에서 학생들은 자유롭게 운동을 하고 체육수업을 받게 됩니다.
+											</p>
+										</div>
+										<div class="table_wrap">
+											<table class="academy_table">
+												<colgroup>
+													<col>
+													<col>
+												</colgroup>
+												<tbody>
+													<tr>
+														<th>학교 구분</th>
+														<td>국제 사립 학교</td>
+													</tr>
+													<tr>
+														<th>학기 시작</th>
+														<td>5학기(2월/4월/7월/9월/11월)</td>
+													</tr>
+													<tr>
+														<th>학교 위치</th>
+														<td>College / 라임에듀케이션 직영센터에서 20분거리</td>
+													</tr>
+													<tr>
+														<th>숙소 형태</th>
+														<td>홈스테이 1인실/기숙사(1인, 2인)</td>
+													</tr>
+													<tr>
+														<th>제공 프로그램</th>
+														<td>
+															9~12학년 고등학교 정규<br>
+															ESL 제공 (3레벨 제공)<br>
+															IELTS, TOEFL, SAT 준비반<br>
+															Tutoring 제공<br>
+															다양한 교내 클럽활동
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+
+								<!-- 학교특징 -->
+								<div class="bg_green">
+									<div class="cotn">
+										<div class="content_tit">
+											<h3>학교 특징</h3>
+										</div>
+										<ul class="round_list">
+											<li>토론토의 부촌으로 유명한 Bayview 지역에서 1분거리로 매우 안전하고 조용한 학업분위기 </li>
+											<li>2주마다 학업리포트가 전달되어 학생들의 학업현황을 꼼꼼히 살필수 있음</li>
+											<li>소규모로 학교로 운영하는 것을 모토로 하여 학생들에게 집중도가 높고 가족 같은 분위기</li>
+											<li>베이뷰 공립도서관과 YMCA, 베이뷰 빌리지 쇼핑몰 등이 있어 편의시설 접근성이 용이함</li>
+											<li>모의 유엔클럽, 퍼블릭스피킹클럽, 아티클 분석, 체육클럽 등 다양한 교내 활동클럽이 제공</li>
+											<li>미국대학 진학을 위한 SAT 준비 및 토플준비반, 각종 경시대회 참가하여 엑스트라 커리큘럼 준비</li>
+										</ul>
+									</div>
+								</div>
+								<!--// 학교특징 -->
+							</div>
+							<!--// SGA -->
+
 						</div>
 						<!--// 탭컨텐츠 -->
-
-						<!-- SGA -->
-						<div class="tab_04">
-							<div class="cotn">
-								<div class="brd_tit">
-									<h2 class="tit">SGA <span>St George Academy High School</span></h2>
-								</div>
-								<div class="tab_tit_area">
-									<div class="cotn_box">
-										<p>
-											토론토에서 부촌으로 꼽히는 Bayview 지하철 역에서 1분거리에 있는 SGA는 조용하고 안전한 지역에 위치하고 있으며 공립 도서관과 식당, 몰 등과 같은 다양한 편의시설이 주변에 자리잡고 있습니다. SGA 학교에서 기숙사와의 이동거리는 20분으로 이동시간이 짧고 교통이 편리합니다.<br><br>
-											대규모가 아닌 소규모의 학생수를 유지하여 학업을 제공하고 있는 SGA는 학생 하나하나에 세심한 관리를 하고 있으며 2주마다 학생의 학업적이고 생활적인 리포트 카드가 발송됩니다.
-											소규모의 가족적인 학교 분위기로 학생들의 생일까지 챙기고 서로 축하는 분위기로 정서적으로 안정된 분위기에서 학업이 가능합니다.
-											5학기 정규 학기제와 Night School을 운영하여 최대 1년에 18학점까지 취득이 가능합니다. 방과 후 교내외 클럽활동과 학과목 튜터링 그리고 경시대회 준비반을 운영하고 있습니다.
-											또한 학교에서 1분거리의 YMCA에서 학생들은 자유롭게 운동을 하고 체육수업을 받게 됩니다.
-										</p>
-									</div>
-									<div class="table_wrap">
-										<table class="academy_table">
-											<colgroup>
-												<col>
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th>학교 구분</th>
-													<td>국제 사립 학교</td>
-												</tr>
-												<tr>
-													<th>학기 시작</th>
-													<td>5학기(2월/4월/7월/9월/11월)</td>
-												</tr>
-												<tr>
-													<th>학교 위치</th>
-													<td>College / 라임에듀케이션 직영센터에서 20분거리</td>
-												</tr>
-												<tr>
-													<th>숙소 형태</th>
-													<td>홈스테이 1인실/기숙사(1인, 2인)</td>
-												</tr>
-												<tr>
-													<th>제공 프로그램</th>
-													<td>
-														9~12학년 고등학교 정규<br>
-														ESL 제공 (3레벨 제공)<br>
-														IELTS, TOEFL, SAT 준비반<br>
-														Tutoring 제공<br>
-														다양한 교내 클럽활동
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-
-							<!-- 학교특징 -->
-							<div class="bg_green">
-								<div class="cotn">
-									<div class="content_tit">
-										<h3>학교 특징</h3>
-									</div>
-									<ul class="round_list">
-										<li>토론토의 부촌으로 유명한 Bayview 지역에서 1분거리로 매우 안전하고 조용한 학업분위기 </li>
-										<li>2주마다 학업리포트가 전달되어 학생들의 학업현황을 꼼꼼히 살필수 있음</li>
-										<li>소규모로 학교로 운영하는 것을 모토로 하여 학생들에게 집중도가 높고 가족 같은 분위기</li>
-										<li>베이뷰 공립도서관과 YMCA, 베이뷰 빌리지 쇼핑몰 등이 있어 편의시설 접근성이 용이함</li>
-										<li>모의 유엔클럽, 퍼블릭스피킹클럽, 아티클 분석, 체육클럽 등 다양한 교내 활동클럽이 제공</li>
-										<li>미국대학 진학을 위한 SAT 준비 및 토플준비반, 각종 경시대회 참가하여 엑스트라 커리큘럼 준비</li>
-									</ul>
-								</div>
-							</div>
-							<!--// 학교특징 -->
-						</div>
-						<!--// SGA -->
 					</div>
 					<!--// 탭컨텐츠 -->
 
