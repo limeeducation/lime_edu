@@ -527,7 +527,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 
 								<!-- 학교특징 -->
-								<div class="bg_green bg_last">
+								<div class="bg_green">
 									<div class="cotn">
 										<div class="content_tit">
 											<h3>학교 특징</h3>
