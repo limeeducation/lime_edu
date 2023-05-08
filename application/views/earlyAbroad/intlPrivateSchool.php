@@ -58,51 +58,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						</div>
 					</div>
 					<!--// 캐나다 조기유학 프로그램 -->
-					<!-- 학점전환 -->
-					<div class="bg_green">
-						<div class="cotn">
-							<div class="grade_ch">
-								<p class="pro_tit">국내 고등학교에서 온타리오주 학점 전환</p>
-								<ul class="group_rud_list">
-									<li>
-										<p class="grade_area">중3 수료</p>
-										<div class="txt_wrap">
-											<p class="box">Grade 9 까지 인정</p>
-											<p class="box">최대 8학점 + 10시간 봉사활동 인정</p>
-										</div>
-									</li>
-									<li>
-										<p class="grade_area">고1 수료</p>
-										<div class="txt_wrap">
-											<p class="box">Grade 10 까지 인정</p>
-											<p class="box">최대 16학점 + 20시간 봉사활동 인정</p>
-										</div>
-									</li>
-									<li>
-										<p class="grade_area">고2 수료</p>
-										<div class="txt_wrap">
-											<p class="box">Grade 11 까지 인정</p>
-											<p class="box">최대 22학점 + 30시간 봉사활동 인정</p>
-										</div>
-									</li>
-									<li>
-										<p class="grade_area">고3 수료</p>
-										<div class="txt_wrap">
-											<p class="box">Grade 12 까지 인정</p>
-											<p class="box">최대 26학점 + 40시간 봉사활동 인정</p>
-										</div>
-									</li>
-									<li>
-										<p class="grade_area">고교 검정고시</p>
-										<div class="txt_wrap">
-											<p class="box">22학점까지 인정</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!--// 학점전환 -->
+
 					<!-- 국제사립고등학교란 -->
 					<div class="bg_green">
 						<div class="sec_about_academy cotn">
@@ -185,7 +141,51 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						</div>
 					</div>
 					<!--// 국제사립고등학교란 -->
-
+					<!-- 학점전환 -->
+					<div class="bg_green">
+						<div class="cotn">
+							<div class="grade_ch">
+								<p class="pro_tit">학점 전환</p>
+								<ul class="group_rud_list">
+									<li>
+										<p class="grade_area">중3 수료</p>
+										<div class="txt_wrap">
+											<p class="box">Grade 9 까지 인정</p>
+											<p class="box">최대 8학점 + 10시간 봉사활동 인정</p>
+										</div>
+									</li>
+									<li>
+										<p class="grade_area">고1 수료</p>
+										<div class="txt_wrap">
+											<p class="box">Grade 10 까지 인정</p>
+											<p class="box">최대 16학점 + 20시간 봉사활동 인정</p>
+										</div>
+									</li>
+									<li>
+										<p class="grade_area">고2 수료</p>
+										<div class="txt_wrap">
+											<p class="box">Grade 11 까지 인정</p>
+											<p class="box">최대 22학점 + 30시간 봉사활동 인정</p>
+										</div>
+									</li>
+									<li>
+										<p class="grade_area">고3 수료</p>
+										<div class="txt_wrap">
+											<p class="box">Grade 12 까지 인정</p>
+											<p class="box">최대 26학점 + 40시간 봉사활동 인정</p>
+										</div>
+									</li>
+									<li>
+										<p class="grade_area">고교 검정고시</p>
+										<div class="txt_wrap">
+											<p class="box">22학점까지 인정</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--// 학점전환 -->
 					<!-- 탭영역 -->
 					<section class="tab_sec academy_tab_sec">
 						<!-- 추천탭 -->
