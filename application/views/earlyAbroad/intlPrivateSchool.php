@@ -186,7 +186,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<!--// 학점전환 -->
 
 					<!-- 취득요건 -->
-					<div class="bg_green require bg_last">
+					<div class="bg_green require">
 						<div class="cotn">
 							<p class="pro_tit">온타리오주 고교 졸업장(OSSD) 취득을 위한 요건</p>
 							<ol class="adt_list">
@@ -527,7 +527,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								</div>
 
 								<!-- 학교특징 -->
-								<div class="bg_green">
+								<div class="bg_green bg_last">
 									<div class="cotn">
 										<div class="content_tit">
 											<h3>학교 특징</h3>
