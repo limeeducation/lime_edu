@@ -30,7 +30,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			else if(nation == "phil") url = "/StudyEnglishAbroad/philAcademyList/";
 			console.log("url : " + url);
 			//var city_id = obj.firstElementChild.prop("id");
-			var city_id = obj.prop("class");
+			var city_id = obj.firstElementChild.id;
 			console.log("city_id : " + city_id);
 			var city = city_id.replace('btn_','');
 			console.log("city : " + city);
