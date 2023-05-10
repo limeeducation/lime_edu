@@ -69,7 +69,7 @@ class School_model extends CI_Model
 		$this->db->select('aca_published');
 		$this->db->select('aca_detail');
 		$this->db->from('phil_academy');
-		if($dist != null){
+		if($dist != null && $dist != 'etc'){
 			$dist = $dist == 'cebu' ? '세부' : '바기오';
 			$this->db->where('aca_city', $dist);
 		}
