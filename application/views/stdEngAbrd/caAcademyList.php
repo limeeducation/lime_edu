@@ -23,6 +23,18 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				showSchool('Montreal');
             });
 
+            var city = "<?= $city;?>";
+            if(city != ""){
+				if(city == 'calgary'){
+					$("#map_Calgary").click();
+				}else if(city == 'montreal'){
+					$("#map_Montreal").click();
+				}else if(city == 'toronto'){
+					$("#map_Toronto").click();
+                }else if(city == 'vancouver'){
+                	$("#map_Vancouver").click();
+                }
+            }
     	});
 		function showSchool(area){
 			console.log(area);
