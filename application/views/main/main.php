@@ -23,7 +23,20 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#banr_list_"+nation).show();
             }
         }
-
+		unction goAcaList(nation){
+			var url = "";
+			if(nation == "us") url = "/StudyEnglishAbroad/usAcademyList/";
+			else if(nation == "ca") url = "/StudyEnglishAbroad/caAcademyList/";
+			else if(nation == "phil") url = "/StudyEnglishAbroad/philAcademyList/";
+			console.log("url : " + url);
+			var city_id = $this.firstElementChild.prop("id");
+			console.log("city_id : " + city_id);
+			var city = city_id.replace('btn_','');
+			console.log("city : " + city);
+			url = url+city;
+			console.log("url : " + url);
+			//window.location.href = url;
+		}
         $('.natio_btn_area').each(function() {
 
 			var nowImg = $(this).find('img');  //호버한 부분의 img파일 찾기
@@ -134,16 +147,16 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				<section class="main_sect" id="mainUniv">
 					<div class="inner">
 						 <div class="univ_main_sect natio_btn_area" id="btn_us_area">
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('us');">
 								<img src="/static/img/button/btn_boston.png" id="btn_boston">
 							</div>
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('us');">
 								<img src="/static/img/button/btn_newyork.png" id="btn_newyork">
 							</div>
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('us');">
 								<img src="/static/img/button/btn_sandiego.png" id="btn_sandiego">
 							</div>
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('us');">
 								<img src="/static/img/button/btn_sanfrancisco.png" id="btn_sanfrancisco">
 							</div>
 							<div class="more_city story_more"><a href="/StudyEnglishAbroad/usAcademyList">전체보기<i>+</i></a></div>
@@ -164,31 +177,31 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							<div class="more_city story_more"><a href="#">전체보기<i>+</i></a></div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_ca_area" style="display:none;">
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('ca');">
 								<img src="/static/img/button/btn_calgary.png" id="btn_calgary">
 							</div>
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('ca');">
 								<img src="/static/img/button/btn_montreal.png" id="btn_montreal">
 							</div>
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('ca');">
 								<img src="/static/img/button/btn_toronto.png" id="btn_toronto">
 							</div>
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('ca');">
 								<img src="/static/img/button/btn_vancouver.png" id="btn_vancouver">
 							</div>
-							<div class="more_city story_more"><a href="#">전체보기<i>+</i></a></div>
+							<div class="more_city story_more"><a href="/StudyEnglishAbroad/caAcademyList">전체보기<i>+</i></a></div>
 						 </div>
 						 <div class="univ_main_sect natio_btn_area" id="btn_phil_area" style="display:none;">
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('phil');">
 								<img src="/static/img/button/btn_baguio.png" id="btn_baguio">
 							</div>
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('phil');">
 								<img src="/static/img/button/btn_cebu.png" id="btn_cebu">
 							</div>
-							<div class="eng_city_btn">
+							<div class="eng_city_btn" onclick="goAcaList('phil');">
 								<img src="/static/img/button/btn_etc.png" id="btn_etc">
 							</div>
-							<div class="more_city story_more"><a href="#">전체보기<i>+</i></a></div>
+							<div class="more_city story_more"><a href="/StudyEnglishAbroad/philAcademyList">전체보기<i>+</i></a></div>
 						 </div>
 					</div>
 				</section>
