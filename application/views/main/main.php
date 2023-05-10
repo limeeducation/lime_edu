@@ -23,7 +23,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 				$("#banr_list_"+nation).show();
             }
         }
-		unction goAcaList(nation){
+		function goAcaList(nation){
 			var url = "";
 			if(nation == "us") url = "/StudyEnglishAbroad/usAcademyList/";
 			else if(nation == "ca") url = "/StudyEnglishAbroad/caAcademyList/";
