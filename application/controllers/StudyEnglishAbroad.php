@@ -26,7 +26,8 @@ class StudyEnglishAbroad extends CI_Controller {
 
 		}
 		$data = array();
-		if(!$city){
+		$data['city'] = "";
+		if(!empty($city)){
 			$data['city'] = $city;
 		}
 		$data['school_list'] = $school_list;
