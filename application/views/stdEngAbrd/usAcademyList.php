@@ -31,7 +31,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
             $("#circle_SanFrancisco").click(function(){
 				showSchool('SanFrancisco');
             });
-            var city = "<?= $city?>";
+            var city = "<?= $city;?>";
             if(city != ""){
 				if(city == 'boston'){
 					$("#circle_Boston").click();
