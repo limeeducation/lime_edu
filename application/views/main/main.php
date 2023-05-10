@@ -29,14 +29,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			else if(nation == "ca") url = "/StudyEnglishAbroad/caAcademyList/";
 			else if(nation == "phil") url = "/StudyEnglishAbroad/philAcademyList/";
 			console.log("url : " + url);
-			//var city_id = obj.firstElementChild.prop("id");
 			var city_id = obj.firstElementChild.id;
 			console.log("city_id : " + city_id);
 			var city = city_id.replace('btn_','');
 			console.log("city : " + city);
 			url = url+city;
 			console.log("url : " + url);
-			//window.location.href = url;
+			window.location.href = url;
 		}
         $('.natio_btn_area').each(function() {
 

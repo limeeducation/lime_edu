@@ -16,8 +16,8 @@ class StudyEnglishAbroad extends CI_Controller {
 		$this->usAcademyList();
 	}
 
-	//조기유학 미국 학교찾기
-	public function usAcademyList(){
+	//미국 어학연수 학교찾기
+	public function usAcademyList($city = null){
 		$school_list = $this->school_model->getSchool('US');
 		foreach($school_list as $school){
 
@@ -26,6 +26,9 @@ class StudyEnglishAbroad extends CI_Controller {
 
 		}
 		$data = array();
+		if(!$city){
+			$data['city'] = $city;
+		}
 		$data['school_list'] = $school_list;
 		$this->load->view('stdEngAbrd/usAcademyList', $data);
 	}
@@ -51,8 +54,8 @@ class StudyEnglishAbroad extends CI_Controller {
 		$this->load->view('stdEngAbrd/whyStudyEngUs');
 	}
 
-	//조기유학 캐나다 학교찾기
-	public function caAcademyList(){
+	//캐나다 어학연수 학교찾기
+	public function caAcademyList($city = null){
 		$school_list = $this->school_model->getSchool('CA');
 		foreach($school_list as $school){
 
@@ -61,6 +64,9 @@ class StudyEnglishAbroad extends CI_Controller {
 
 		}
 		$data = array();
+		if(!$city){
+			$data['city'] = $city;
+		}
 		$data['school_list'] = $school_list;
 		$this->load->view('stdEngAbrd/caAcademyList', $data);
 	}
@@ -72,7 +78,6 @@ class StudyEnglishAbroad extends CI_Controller {
 
 	//필리핀 어학연수 리스트 페이지 호출
 	public function philAcademyList($dist = null){
-
 		$school_list = $this->school_model->getPhilSchools($dist);
 		$data = array();
 		$data['school_list'] = $school_list;

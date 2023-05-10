@@ -31,6 +31,18 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
             $("#circle_SanFrancisco").click(function(){
 				showSchool('SanFrancisco');
             });
+            var city = "<?= $city?>";
+            if(city != ""){
+				if(city == 'boston'){
+					$("#circle_Boston").click();
+				}else if(city == 'newyork'){
+					$("#circle_NewYork").click();
+				}else if(city == 'sandiego'){
+					$("#circle_SanDiego").click();
+                }else if(city == 'sanfrancisco'){
+                	$("#circle_SanFrancisco").click();
+                }
+            }
     	});
 		function showSchool(area){
 			console.log(area);
