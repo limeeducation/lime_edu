@@ -322,7 +322,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<!--// 컨텐츠 -->
 
 											<!-- 버튼 -->
-											<a href="#none" class="btn_intro btn_i_01">
+											<a href="javascript:;" class="btn_intro btn_i_01 popup_open">
 												<span>가족연수 모집공고 확인하기 Click!</span>
 											</a>
 											<!--// 버튼 -->
@@ -361,7 +361,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											<!--// 컨텐츠 -->
 
 											<!-- 버튼 -->
-											<a href="#none" class="btn_intro btn_i_02">
+											<a href="javascript:;" class="btn_intro btn_i_02 popup_open">
 												<span>캠프 모집공고 확인하기 Click!</span>
 											</a>
 											<!--// 버튼 -->
