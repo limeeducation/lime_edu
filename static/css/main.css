@@ -145,7 +145,7 @@
 #mainProgram .inner{width:1000px;}
 .program-swiper{position:relative;}
 .program-swiper .swiper-slide{position:relative;}
-.program_title{margin-bottom:3.2rem;line-height:5.2rem;font-weight:700;font-size:3.2rem;color:#76CF84;text-align:center;}
+.program_title{margin-bottom:3.2rem;line-height:5.2rem;font-weight:700;font-size:3.2rem;color:#070066;text-align:center;}
 .program_list{position:relative;margin:0 -2.5rem;}
 .program_list::after{display:block;clear:both;content:'';}
 .program_list > li{float:left;width:33.33%;padding:0 2.5rem 2rem;}
