@@ -366,7 +366,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
                 $("#start_compare_detail").empty();
                 var detail = details['info'][0].aca_detail;
                 if(detail.length>0){
-                	detail =  details['info'][0].aca_detail.mb_substr(0, 100, 'utf-8')+'...';
+                	detail =  details['info'][0].aca_detail;
                 }else{
                 	detail = "-";
                 }
