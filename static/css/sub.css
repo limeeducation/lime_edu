@@ -450,7 +450,7 @@ disabled
 .training_academy_item + .training_academy_item{margin-top:2.5rem}
 .training_academy_item .item_logo{position:absolute;top:1rem;left:0;width:18rem;}
 .training_academy_item .item_logo .logo_image{}
-.training_academy_item .item_logo .logo_name{position:absolute;bottom:0;left:0;width:18rem;padding:1rem;line-height:1.6;background:#E9E8FF;border-radius:1rem;font-weight:700;font-size:2rem;text-align:center;color:#1D1887;}
+.training_academy_item .item_logo .logo_name{position:absolute;bottom:0;left:0;width:18rem;padding:1rem;line-height:1.6;border-radius:1rem;font-weight:700;font-size:2rem;text-align:center;color:#1D1887;}
 
 .training_academy_item .item_info{position:relative;padding:2.6rem 22.6rem 0.5rem 0;background:#E9E8FF;border-radius:2rem;}
 .training_academy_data::after{display:block;clear:both;content:'';}
