@@ -452,7 +452,7 @@ disabled
 .training_academy_item .item_logo .logo_image{}
 .training_academy_item .item_logo .logo_name{position:absolute;bottom:0;left:0;width:18rem;padding:1rem;line-height:1.6;border-radius:1rem;font-weight:700;font-size:2rem;text-align:center;color:#1D1887;}
 
-.training_academy_item .item_info{position:relative;padding:2.6rem 22.6rem 0.5rem 0;background:#E9E8FF;border-radius:2rem;}
+.training_academy_item .item_info{position:relative;padding:2.6rem 22.6rem 0.5rem 0;border-radius:2rem;border:solid;}
 .training_academy_data::after{display:block;clear:both;content:'';}
 .training_academy_data dt,.training_academy_data dd{margin-bottom:2rem;}
 .training_academy_data dt{position:relative;float:left;width:11.4rem;padding-left:2.8rem;line-height:3rem;font-weight:700;font-size:1.6rem;color:#1D1887;}
@@ -468,12 +468,12 @@ disabled
 .training_academy_btn a:hover,.training_academy_btn a:focus{background-color:#1D1887;color:#fff;}
 
 @media all and (max-width:1280px){
-	.training_academy_item .item_info{padding:2.6rem 18rem 0.5rem 0;background:#E9E8FF;border-radius:2rem;}
+	.training_academy_item .item_info{padding:2.6rem 18rem 0.5rem 0;border:solid;border-radius:2rem;}
 	.training_academy_data dd{width:calc(50% - 11.4rem);padding:0 0 0 2.7rem}
 	.training_academy_data dd .text{width:100%;}
 }
 @media all and (max-width:960px){
-	.training_academy_item .item_info{padding:2.6rem 2.6rem 2.6rem 0;background:#E9E8FF;border-radius:2rem;}
+	.training_academy_item .item_info{padding:2.6rem 2.6rem 2.6rem 0;border:solid;border-radius:2rem;}
 	.training_academy_data dt,.training_academy_data dd{margin-bottom:12px;}
 	.training_academy_data dt{line-height:26px;font-size:13px;}
 	.training_academy_data dt::after{height:12px;margin-top:-6px;}
