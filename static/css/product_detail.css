@@ -517,8 +517,8 @@
 .acad_group .acad_info .info_tit {margin-left:2rem; font-size:2rem; font-weight:700; color:#4e4e4e; line-height:2em;}
 .acad_group .acad_info .info_tit ~ .info_tit {margin-top:3rem;}
 .acad_group .acad_info .acad_tab_wrap {display:flex; flex-wrap:wrap;}
-.acad_group .acad_info .acad_tab_wrap .acad_tab {width:calc(25% - 2rem); margin:1.2rem 0 0 2rem; font-size:1.5rem; font-weight:700; line-height:1.2em; color:#4e4e4e; background: #F2F8FF; border-radius: 1rem; transition:background-color .2s, color .2s;}
-.acad_group .acad_info .acad_tab_wrap .acad_tab:hover {background-color:#2e58ff; color:#fff;}
+.acad_group .acad_info .acad_tab_wrap .acad_tab {width:calc(25% - 2rem); margin:1.2rem 0 0 2rem; font-size:1.5rem; font-weight:700; line-height:1.2em; color:#fff; background: #070066; border-radius: 1rem; transition:background-color .2s, color .2s;}
+.acad_group .acad_info .acad_tab_wrap .acad_tab:hover {background-color:#070066; color:#fff;}
 .acad_group .acad_info .acad_txt {margin:.9rem 0 0 2rem; min-height:10rem; box-sizing:border-box; background: #F2F8FF; border-radius: 1rem; padding:2rem 1rem;}
 .acad_group .acad_info .acad_txt p {font-size:1.5rem; color:#4e4e4e; line-height:1.4em;}
 
@@ -599,8 +599,8 @@
 .canada .office_title {color:#705537;}
 .canada .acad_group .img_area .name {background-color:#F0F5E3;}
 .canada .acad_group .img_area .acad_pop_btn:hover .name {background-color:#FF9B50;}
-.canada .acad_group .acad_info .acad_tab_wrap .acad_tab {background-color:#F0F5E3;}
-.canada .acad_group .acad_info .acad_tab_wrap .acad_tab:hover {background-color:#FF9B50;}
+.canada .acad_group .acad_info .acad_tab_wrap .acad_tab {background-color:#BF0A30; color:#fff;}
+.canada .acad_group .acad_info .acad_tab_wrap .acad_tab:hover {background-color:#BF0A30;}
 .canada .acad_group .acad_info .acad_txt {background-color:#F0F5E3;}
 .canada .acad_group .acad_info .info_tit {color:#705537;}
 
