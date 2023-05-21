@@ -274,7 +274,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="acad_group <?= str_replace(' ', '', $school->city_name);?>">
 							<!-- 왼쪽이미지영역 -->
 							<div class="img_area">
-								<button type="button" class="acad_pop_btn" onclick="showSchoolDetail('<?= $school->en_aca_city_idx;?>', '<?= $school->en_aca_idx;?>', '<?= $school->aca_name;?>', '<?= $school->city_name;?>');">
+								<button type="button" class="acad_pop_btn" >
 									<figure class="logo_img">
 										<img src="<?= $school->logo_url;?>" alt="<?= $school->logo_url;?>">
 									</figure>
@@ -291,7 +291,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 										<button type="button" class="acad_tab" onclick="showProgramDetail('<?= $program->idx;?>', '<?= $school->aca_name;?>', '<?= $school->city_name;?>');"><?= mb_strimwidth($program->pro_name, '0', '35', '...', 'utf-8');?></button>
 									<?php endforeach; ?>
 								</div>
-								<p class="info_tit">학교소개</p>
+								/* <p class="info_tit">학교소개</p> */
+								<div class="acad_tab_wrap" style="margin-top: 3rem; display: block;">
+                                	<p type="button" class="acad_tab" style="background-color: #fff;color: #000;font-size: 2rem;float: left;width: fit-content;margin-top: 2rem;">학교소개</p>
+                                	<button type="button" class="acad_tab" onclick="showSchoolDetail('<?= $school->en_aca_city_idx;?>', '<?= $school->en_aca_idx;?>', '<?= $school->aca_name;?>', '<?= $school->city_name;?>');">자세히보기</button></div>
 								<div class="acad_txt">
 									<p id="school_intro_<?= $school->en_aca_city_idx;?>"><?= $school->aca_intro;?></p>
 								</div>
