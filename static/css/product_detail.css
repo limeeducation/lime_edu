@@ -566,7 +566,7 @@
 .pop_detail .pop_title {background-color: #f2f8ff;font-size: 2rem;color: #2e58ff;}
 .pop_detail .pop_title + .sec_wrap{margin-top: 3rem;}
 .pop_detail .sec_wrap + .sec_wrap{margin-top: 2rem;}
-.pop_detail .sec_wrap .sec_tit{margin-bottom: 2rem;background-color: #2e58ff;font-size: 1.5rem;color: #fff;}
+.pop_detail .sec_wrap .sec_tit{margin-bottom: 2rem;font-size: 1.5rem;color: #000;border: solid;}
 .pop_detail .sec_wrap .sec_des_box{padding: 2rem;border-radius: 1rem;background-color: #f2f8ff;}
 .pop_detail .sec_wrap .sec_des_box p{font-size: 1.6rem;line-height: 1.25em;}
 .pop_detail .sec_wrap .sec_table{overflow: hidden;border-radius: 1rem;border: .1rem solid #4E4E4E;}
@@ -606,7 +606,7 @@
 
 /* 모달 팝업 */
 .pop_canada.pop_detail .pop_title {background-color:#f0f5e3; color:#ff9b50;}
-.pop_canada.pop_detail .sec_wrap .sec_tit {background-color:#FF9B50;}
+.pop_canada.pop_detail .sec_wrap .sec_tit {}
 .pop_canada.pop_detail .sec_wrap .sec_des_box {background-color:#f0f5e3;}
 .pop_canada.pop_detail .sec_wrap .sec_table {border-color:#705537;}
 .pop_canada.pop_detail .sec_wrap .sec_table th,
