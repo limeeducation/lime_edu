@@ -434,7 +434,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						<!-- 기본과정 -->
 						<div class="sec_wrap">
-							<h3 class="sec_tit" id="curr_name">기본과정</h3>
+							<h3 class="sec_tit" id="curr_name" style="background-color:#070066; color:#fff;">기본과정</h3>
 							<div class="sec_table">
 								<table>
 									<colgroup>
