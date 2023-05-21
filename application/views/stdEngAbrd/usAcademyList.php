@@ -331,7 +331,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<div class="acad_group <?= str_replace(' ', '', $school->city_name);?>">
 							<!-- 왼쪽이미지영역 -->
 							<div class="img_area">
-								<button type="button" class="acad_pop_btn" onclick="showSchoolDetail('<?= $school->en_aca_city_idx;?>', '<?= $school->en_aca_idx;?>', '<?= $school->aca_name;?>', '<?= $school->city_name;?>');">
+								<button type="button" class="acad_pop_btn">
 									<figure class="logo_img">
 										<img src="<?= $school->logo_url;?>" alt="<?= $school->logo_url;?>">
 									</figure>
