@@ -60,363 +60,567 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 							</colgroup>
 							<thead>
 								<tr>
-									<th>Ranking</th>
-									<th>School</th>
-									<th>Location</th>
-									<th>SAT Average</th>
-									<th>ACT Average</th>
+									<th>랭킹</th>
+									<th>학교이름</th>
+									<th>지역</th>
+									<th>학년</th>
+									<th>학생수</th>
+									<th>SAT 평균</th>
+									<th>ACT 평균</th>
+									<th>AP 과목수</th>
+									<th>학비</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr class="top20">
 									<td>1</td>
-									<td>Princeton University</td>
-									<td>Princeton, NJ</td>
-									<td>1450-1570</td>
-									<td>32-35</td>
+									<td>Phillips Academy Andover</td>
+									<td>Andover, MA•</td>
+									<td>9-12</td>
+									<td>1,187</td>
+									<td>1470</td>
+									<td>33</td>
+									<td>N/A</td>
+									<td>66290</td>
 								</tr>
 								<tr class="top20">
 									<td>2</td>
-									<td>Harvard University</td>
-									<td>Cambridge, MA</td>
-									<td>1510-1580</td>
-									<td>34-36</td>
+									<td>Choate Rosemary Hall</td>
+									<td>Wallingford, CT•</td>
+									<td>9-12</td>
+									<td>868</td>
+									<td>1428</td>
+									<td>33</td>
+									<td>N/A</td>
+									<td>65,820 </td>
 								</tr>
 								<tr class="top20">
 									<td>3</td>
-									<td>Massachusetts Institute of Technology</td>
-									<td>Cambridge, MA</td>
-									<td>1510-1580</td>
-									<td>34-36</td>
+									<td>Phillips Exeter Academy</td>
+									<td>Exeter, NH•</td>
+									<td>9-12</td>
+									<td>1,077</td>
+									<td>1450</td>
+									<td>33</td>
+									<td>N/A</td>
+									<td>61,121 </td>
 								</tr>
 								<tr class="top20">
 									<td>4</td>
-									<td>Yale University</td>
-									<td>New Haven, CT</td>
-									<td>1460-1580</td>
-									<td>33-35</td>
+									<td>Groton School</td>
+									<td>Groton, MA•</td>
+									<td>8-12</td>
+									<td>380</td>
+									<td>1420</td>
+									<td>31</td>
+									<td>8</td>
+									<td>59,995 </td>
 								</tr>
 								<tr class="top20">
 									<td>5</td>
-									<td>Stanford University</td>
-									<td>Stanford, CA</td>
-									<td>1420-1570</td>
-									<td>31-35</td>
+									<td>The Hotchkiss School</td>
+									<td>Lakeville, CT•</td>
+									<td>9-12</td>
+									<td>599</td>
+									<td>1420</td>
+									<td>32</td>
+									<td>17</td>
+									<td>65,490 </td>
 								</tr>
 								<tr class="top20">
 									<td>6</td>
-									<td>University of Chicago</td>
-									<td>Chicago, IL</td>
-									<td>1500-1570</td>
-									<td>34-35</td>
+									<td>Princeton International School of Math and Science</td>
+									<td>Princeton, NJ•</td>
+									<td>9-12</td>
+									<td>120</td>
+									<td>1490</td>
+									<td>31</td>
+									<td>17</td>
+									<td>61,500 </td>
 								</tr>
 								<tr class="top20">
 									<td>7</td>
-									<td>University of Pennsylvania</td>
-									<td>Philadelphia, PA</td>
-									<td>1460-1570</td>
-									<td>33-35</td>
+									<td>St. Paul's School</td>
+									<td>Concord, NH•</td>
+									<td>9-12</td>
+									<td>530</td>
+									<td>1410</td>
+									<td>32</td>
+									<td>N/A</td>
+									<td>62,000 </td>
 								</tr>
 								<tr class="top20">
 									<td>8</td>
-									<td>California Institute of Technology</td>
-									<td>Pasadena, CA</td>
-									<td>1530-1580</td>
-									<td>35-36</td>
+									<td>The Lawrenceville School</td>
+									<td>Lawrenceville, NJ•</td>
+									<td>9-12</td>
+									<td>822</td>
+									<td>1440</td>
+									<td>32</td>
+									<td>N/A</td>
+									<td>73,220 </td>
 								</tr>
 								<tr class="top20">
 									<td>9</td>
-									<td>Duke University</td>
-									<td>Durham, NC</td>
-									<td>1470-1570</td>
-									<td>34-35</td>
+									<td>Deerfield Academy</td>
+									<td>Deerfield, MA•</td>
+									<td>9-12</td>
+									<td>658</td>
+									<td>1420</td>
+									<td>32</td>
+									<td>9</td>
+									<td>61,840 </td>
 								</tr>
 								<tr class="top20">
 									<td>10</td>
-									<td>Johns Hopkins University</td>
-									<td>Baltimore, MD</td>
-									<td>1480-1570</td>
-									<td>34-35</td>
+									<td>Noble and Greenough School</td>
+									<td>Dedham, MA•</td>
+									<td>7-12</td>
+									<td>614</td>
+									<td>1410</td>
+									<td>33</td>
+									<td>13</td>
+									<td>60,300 </td>
 								</tr>
 								<tr class="top20">
 									<td>11</td>
-									<td>Northwestern University</td>
-									<td>Evanston, IL</td>
-									<td>1430-1550</td>
-									<td>33-35</td>
+									<td>The Loomis Chaffee School</td>
+									<td>Windsor, CT•</td>
+									<td>9-12</td>
+									<td>741</td>
+									<td>1400</td>
+									<td>32</td>
+									<td>N/A</td>
+									<td>65,350 </td>
 								</tr>
 								<tr class="top20">
 									<td>12</td>
-									<td>Dartmouth College</td>
-									<td>Hanover, NH</td>
-									<td>1440-1560</td>
-									<td>32-35</td>
+									<td>Concord Academy</td>
+									<td>Concord, MA•</td>
+									<td>9-12</td>
+									<td>398</td>
+									<td>1390</td>
+									<td>32</td>
+									<td>18</td>
+									<td>65,850 </td>
 								</tr>
 								<tr class="top20">
 									<td>13</td>
-									<td>Brown University</td>
-									<td>Providence, RI</td>
-									<td>1440-1560</td>
-									<td>33-35</td>
+									<td>Milton Academy</td>
+									<td>Milton, MA•</td>
+									<td>K-12</td>
+									<td>1,020</td>
+									<td>1400</td>
+									<td>32</td>
+									<td>N/A</td>
+									<td>65,950 </td>
 								</tr>
 								<tr class="top20">
 									<td>14</td>
-									<td>Vanderbilt University</td>
-									<td>Nashville, TN</td>
-									<td>1470-1570</td>
-									<td>33-35</td>
+									<td>Cate School</td>
+									<td>Carpinteria, CA•</td>
+									<td>9-12</td>
+									<td>298</td>
+									<td>1410</td>
+									<td>32</td>
+									<td>19</td>
+									<td>65,500 </td>
 								</tr>
 								<tr class="top20">
 									<td>15</td>
-									<td>Washington University in St. Louis</td>
-									<td>St. Louis, MO</td>
-									<td>1480-1560</td>
-									<td>33-35</td>
+									<td>Middlesex School</td>
+									<td>Concord, MA•</td>
+									<td>9-12</td>
+									<td>409</td>
+									<td>1420</td>
+									<td>32</td>
+									<td>20</td>
+									<td>69,280 </td>
 								</tr>
 								<tr class="top20">
 									<td>16</td>
-									<td>Cornell University</td>
-									<td>Ithaca, NY</td>
-									<td>1400-1540</td>
-									<td>32-35</td>
+									<td>The Thacher School</td>
+									<td>Ojai, CA•</td>
+									<td>9-12</td>
+									<td>259</td>
+									<td>1420</td>
+									<td>32</td>
+									<td>N/A</td>
+									<td>67,940 </td>
 								</tr>
 								<tr class="top20">
 									<td>17</td>
-									<td>Rice University</td>
-									<td>Houston, TX</td>
-									<td>1460-1570</td>
-									<td>34-36</td>
+									<td>St. Mark's School</td>
+									<td>Southborough, MA•</td>
+									<td>9-12</td>
+									<td>385</td>
+									<td>1390</td>
+									<td>31</td>
+									<td>N/A</td>
+									<td>69,960 </td>
 								</tr>
 								<tr class="top20">
 									<td>18</td>
-									<td>University of Notre Dame</td>
-									<td>Notre Dame, IN</td>
-									<td>1400-1550</td>
-									<td>32-35</td>
+									<td>Lake Forest Academy</td>
+									<td>Lake Forest, IL•</td>
+									<td>9-12</td>
+									<td>437</td>
+									<td>1390</td>
+									<td>30</td>
+									<td>24</td>
+									<td>61,500 </td>
 								</tr>
 								<tr class="top20">
 									<td>19</td>
-									<td>University of California--Los Angeles</td>
-									<td>Los Angeles, CA</td>
-									<td>1290-1520</td>
-									<td>29-34</td>
+									<td>Cranbrook Schools</td>
+									<td>Bloomfield Hills, MI•</td>
+									<td>PK, K-12</td>
+									<td>1,659</td>
+									<td>1400</td>
+									<td>31</td>
+									<td>15</td>
+									<td>52,350 </td>
 								</tr>
 								<tr class="top20">
 									<td>20</td>
-									<td>Emory University</td>
-									<td>Atlanta, GA</td>
-									<td>1380-1530</td>
-									<td>31-34</td>
+									<td>American Heritage Schools, Broward Campus</td>
+									<td>Plantation, FL•</td>
+									<td>PK, K-12</td>
+									<td>2,794</td>
+									<td>1380</td>
+									<td>31</td>
+									<td>24</td>
+									<td>60,000 </td>
 								</tr>
 								<tr>
 									<td>21</td>
-									<td>University of California--Berkeley</td>
-									<td>Berkeley, CA</td>
-									<td>1290-1530</td>
-									<td>27-35</td>
+									<td>The Peddie School</td>
+									<td>Hightstown, NJ•</td>
+									<td>9-12</td>
+									<td>532</td>
+									<td>1390</td>
+									<td>32</td>
+									<td>22</td>
+									<td>67,900 </td>
 								</tr>
 								<tr>
 									<td>22</td>
-									<td>Georgetown University</td>
-									<td>Washington, DC</td>
-									<td>1380-1550</td>
-									<td>31-35</td>
+									<td>The Madeira School</td>
+									<td>Mclean, VA•</td>
+									<td>9-12</td>
+									<td>343</td>
+									<td>1360</td>
+									<td>31</td>
+									<td>18</td>
+									<td>63,250 </td>
 								</tr>
 								<tr>
 									<td>23</td>
-									<td>University of Michigan--Ann Arbor</td>
-									<td>Ann Arbor, MI</td>
-									<td>1340-1560</td>
-									<td>31-34</td>
+									<td>St. Albans School</td>
+									<td>Washington, DC•</td>
+									<td>4-12</td>
+									<td>592</td>
+									<td>1410</td>
+									<td>33</td>
+									<td>13</td>
+									<td>74,120 </td>
 								</tr>
 								<tr>
 									<td>24</td>
-									<td>Carnegie Mellon University</td>
-									<td>Pittsburgh, PA</td>
-									<td>1460-1560</td>
-									<td>33-35</td>
+									<td>Belmont Hill School</td>
+									<td>Belmont, MA•</td>
+									<td>7-12</td>
+									<td>465</td>
+									<td>1420</td>
+									<td>33</td>
+									<td>N/A</td>
+									<td>65,640 </td>
 								</tr>
 								<tr>
 									<td>25</td>
-									<td>University of Virginia</td>
-									<td>Charlottesville, VA</td>
-									<td>1320-1510</td>
-									<td>30-34</td>
+									<td>American Heritage Schools, Palm Beach Campus</td>
+									<td>Delray Beach, FL•</td>
+									<td>PK, K-12</td>
+									<td>1,797</td>
+									<td>1360</td>
+									<td>30</td>
+									<td>24</td>
+									<td>60,000 </td>
 								</tr>
 								<tr>
 									<td>26</td>
-									<td>University of Southern California</td>
-									<td>Los Angeles, CA</td>
-									<td>1340-1530</td>
-									<td>30-34</td>
+									<td>The Webb Schools</td>
+									<td>Claremont, CA•</td>
+									<td>9-12</td>
+									<td>404</td>
+									<td>1380</td>
+									<td>31</td>
+									<td>21</td>
+									<td>73,320 </td>
 								</tr>
 								<tr>
 									<td>27</td>
-									<td>New York University</td>
-									<td>New York, NY</td>
-									<td>1370-1540</td>
-									<td>31-34</td>
+									<td>St. Andrew's School</td>
+									<td>Middletown, DE•</td>
+									<td>9-12</td>
+									<td>310</td>
+									<td>1370</td>
+									<td>32</td>
+									<td>N/A</td>
+									<td>57,000 </td>
 								</tr>
 								<tr>
 									<td>28</td>
-									<td>Tufts University</td>
-									<td>Medford, MA</td>
-									<td>1380-1530</td>
-									<td>32-35</td>
+									<td>Thomas Jefferson School</td>
+									<td>Saint Louis, MO•</td>
+									<td>7-12</td>
+									<td>85</td>
+									<td>1420</td>
+									<td>32</td>
+									<td>14</td>
+									<td>62,600 </td>
 								</tr>
 								<tr>
 									<td>29</td>
-									<td>University of California--Santa Barbara</td>
-									<td>Santa Barbara, CA</td>
-									<td>1230-1480</td>
-									<td>26-33</td>
+									<td>St. Stephen's Episcopal School</td>
+									<td>Austin, TX•</td>
+									<td>6-12</td>
+									<td>699</td>
+									<td>1380</td>
+									<td>32</td>
+									<td>20</td>
+									<td>72,570 </td>
 								</tr>
 								<tr>
 									<td>30</td>
-									<td>University of Florida</td>
-									<td>Gainesville, FL</td>
-									<td>1290-1460</td>
-									<td>29-33</td>
+									<td>Hackley School</td>
+									<td>Tarrytown, NY•</td>
+									<td>K-12</td>
+									<td>855</td>
+									<td>1410</td>
+									<td>32</td>
+									<td>13</td>
+									<td>67,475 </td>
 								</tr>
 								<tr>
 									<td>31</td>
-									<td>University of North Carolina at Chapel Hill</td>
-									<td>Chapel Hill, NC</td>
-									<td>1270-1470</td>
-									<td>27-33</td>
+									<td>Kent School</td>
+									<td>Kent, CT•</td>
+									<td>9-12</td>
+									<td>520</td>
+									<td>1370</td>
+									<td>31</td>
+									<td>N/A</td>
+									<td>69,950 </td>
 								</tr>
 								<tr>
 									<td>32</td>
-									<td>Wake Forest University</td>
-									<td>Winston-Salem, NC</td>
-									<td>1290-1470</td>
-									<td>30-33</td>
+									<td>Mercersburg Academy</td>
+									<td>Mercersburg, PA•</td>
+									<td>9-12</td>
+									<td>447</td>
+									<td>1330</td>
+									<td>30</td>
+									<td>32</td>
+									<td>66,900 </td>
 								</tr>
 								<tr>
 									<td>33</td>
-									<td>University of California--San Diego</td>
-									<td>La Jolla, CA</td>
-									<td>1260-1480</td>
-									<td>26-33</td>
+									<td>The Taft School</td>
+									<td>Watertown, CT•</td>
+									<td>9-12</td>
+									<td>609</td>
+									<td>1370</td>
+									<td>31</td>
+									<td>29</td>
+									<td>69,600 </td>
 								</tr>
 								<tr>
 									<td>34</td>
-									<td>University of Rochester</td>
-									<td>Rochester, NY</td>
-									<td>1310-1500</td>
-									<td>30-34</td>
+									<td>Episcopal High School</td>
+									<td>Alexandria, VA•</td>
+									<td>9-12</td>
+									<td>464</td>
+									<td>1350</td>
+									<td>30</td>
+									<td>22</td>
+									<td>66,360 </td>
 								</tr>
 								<tr>
 									<td>35</td>
-									<td>Boston College</td>
-									<td>Chestnut Hill, MA</td>
-									<td>1330-1500</td>
-									<td>31-34</td>
+									<td>Blair Academy</td>
+									<td>Blairstown, NJ•</td>
+									<td>9-12</td>
+									<td>465</td>
+									<td>1340</td>
+									<td>31</td>
+									<td>22</td>
+									<td>70,200 </td>
 								</tr>
 								<tr>
 									<td>36</td>
-									<td>University of California--Irvine</td>
-									<td>Irvine, CA</td>
-									<td>1215-1450</td>
-									<td>N/A</td>
+									<td>'Iolani School</td>
+									<td>Honolulu, HI•</td>
+									<td>K-12</td>
+									<td>2,181</td>
+									<td>1370</td>
+									<td>31</td>
+									<td>30</td>
+									<td>61,200 </td>
 								</tr>
 								<tr>
 									<td>37</td>
-									<td>Georgia Institute of Technology</td>
-									<td>Atlanta, GA</td>
-									<td>1370-1530</td>
-									<td>31-35</td>
+									<td>The Athenian School</td>
+									<td>Danville, CA•</td>
+									<td>6-12</td>
+									<td>536</td>
+									<td>1380</td>
+									<td>32</td>
+									<td>N/A</td>
+									<td>80,260 </td>
 								</tr>
 								<tr>
 									<td>38</td>
-									<td>University of California--Davis</td>
-									<td>Davis, CA</td>
-									<td>1140-1400</td>
-									<td>25-31</td>
+									<td>Northfield Mount Hermon</td>
+									<td>Mount Hermon, MA•</td>
+									<td>9-12</td>
+									<td>655</td>
+									<td>1350</td>
+									<td>31</td>
+									<td>N/A</td>
+									<td>66,810 </td>
 								</tr>
 								<tr>
 									<td>39</td>
-									<td>University of Texas at Austin</td>
-									<td>Austin, TX</td>
-									<td>1210-1470</td>
-									<td>26-33</td>
+									<td>Miss Porter's School</td>
+									<td>Farmington, CT•</td>
+									<td>9-12</td>
+									<td>334</td>
+									<td>1320</td>
+									<td>30</td>
+									<td>N/A</td>
+									<td>68,725 </td>
 								</tr>
 								<tr>
 									<td>40</td>
-									<td>William & Mary</td>
-									<td>Williamsburg, VA</td>
-									<td>1300-1490</td>
-									<td>30-34</td>
+									<td>The Village School</td>
+									<td>Houston, TX•</td>
+									<td>PK, K-12</td>
+									<td>1,773</td>
+									<td>1350</td>
+									<td>30</td>
+									<td>21</td>
+									<td>69,550 </td>
 								</tr>
 								<tr>
 									<td>41</td>
-									<td>Boston University</td>
-									<td>Boston, MA</td>
-									<td>1310-1500</td>
-									<td>30-34</td>
+									<td>Sierra Canyon School</td>
+									<td>Chatsworth, CA•</td>
+									<td>PK, K-12</td>
+									<td>1,154</td>
+									<td>1330</td>
+									<td>30</td>
+									<td>25</td>
+									<td>40,770 </td>
 								</tr>
 								<tr>
 									<td>42</td>
-									<td>Brandeis University</td>
-									<td>Waltham, MA</td>
-									<td>1320-1510</td>
-									<td>31-33</td>
+									<td>Western Reserve Academy</td>
+									<td>Hudson, OH•</td>
+									<td>9-12</td>
+									<td>431</td>
+									<td>1380</td>
+									<td>30</td>
+									<td>20</td>
+									<td>68,425 </td>
 								</tr>
 								<tr>
 									<td>43</td>
-									<td>Case Western Reserve University</td>
-									<td>Cleveland, OH</td>
-									<td>1340-1520</td>
-									<td>31-35</td>
+									<td>Fairmont Preparatory Academy</td>
+									<td>Anaheim, CA•</td>
+									<td>9-12</td>
+									<td>456</td>
+									<td>1350</td>
+									<td>31</td>
+									<td>27</td>
+									<td>67,120 </td>
 								</tr>
 								<tr>
 									<td>44</td>
-									<td>Tulane University</td>
-									<td>New Orleans, LA</td>
-									<td>1340-1500</td>
-									<td>30-33</td>
+									<td>United World College USA</td>
+									<td>Montezuma, NM•</td>
+									<td>11-12</td>
+									<td>235</td>
+									<td>1370</td>
+									<td>31</td>
+									<td>N/A</td>
+									<td>36,750 </td>
 								</tr>
 								<tr>
 									<td>45</td>
-									<td>University of Wisconsin--Madison</td>
-									<td>Madison, WI</td>
-									<td>1260-1460</td>
-									<td>27-32</td>
+									<td>The Hill School</td>
+									<td>Pottstown, PA•</td>
+									<td>9-12</td>
+									<td>529</td>
+									<td>1350</td>
+									<td>31</td>
+									<td>28</td>
+									<td>61,410 </td>
 								</tr>
 								<tr>
 									<td>46</td>
-									<td>University of Illinois--Urbana-Champaign</td>
-									<td>Champaign, IL</td>
-									<td>1210-1470</td>
-									<td>27-33</td>
+									<td>Georgetown Preparatory School</td>
+									<td>North Bethesda, MD•</td>
+									<td>9-12</td>
+									<td>496</td>
+									<td>1350</td>
+									<td>31</td>
+									<td>24</td>
+									<td>66,200 </td>
 								</tr>
 								<tr>
 									<td>47</td>
-									<td>University of Georgia</td>
-									<td>Athens, GA</td>
-									<td>1220-1400</td>
-									<td>27-32</td>
+									<td>Indian Springs School</td>
+									<td>Indian Springs, AL•</td>
+									<td>8-12</td>
+									<td>327</td>
+									<td>1400</td>
+									<td>31</td>
+									<td>18</td>
+									<td>56,000 </td>
 								</tr>
 								<tr>
 									<td>48</td>
-									<td>Lehigh University</td>
-									<td>Bethlehem, PA</td>
-									<td>1260-1433</td>
-									<td>29-33</td>
+									<td>Pomfret School</td>
+									<td>Pomfret, CT•</td>
+									<td>9-12</td>
+									<td>350</td>
+									<td>1320</td>
+									<td>30</td>
+									<td>N/A</td>
+									<td>66,900 </td>
 								</tr>
 								<tr>
 									<td>49</td>
-									<td>Northeastern University</td>
-									<td>Boston, MA</td>
-									<td>1410-1540</td>
-									<td>33-35</td>
+									<td>Suffield Academy</td>
+									<td>Suffield, CT•</td>
+									<td>9-12</td>
+									<td>410</td>
+									<td>1280</td>
+									<td>29</td>
+									<td>12</td>
+									<td>66,500 </td>
 								</tr>
 								<tr>
 									<td>50</td>
-									<td>The Ohio State University</td>
-									<td>Columbus, OH</td>
-									<td>1210-1430</td>
-									<td>26-32</td>
+									<td>The Masters School</td>
+									<td>Dobbs Ferry, NY•</td>
+									<td>5-12</td>
+									<td>694</td>
+									<td>1360</td>
+									<td>31</td>
+									<td>15</td>
+									<td>63,000 </td>
 								</tr>
 							</tbody>
 						</table>
