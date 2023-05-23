@@ -418,14 +418,26 @@ $(document).ready(function(){
 
 	modalPop();
 
-	// 달력
+	// 달력(리모콘 달력 실행)
 	$('.datepick').datepicker({
 		dateFormat: "yy-mm-dd",
 		minDate:0,
 		dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 		beforeShow: function(input) {
 			setTimeout(function(){
-				$('#ui-datepicker-div').css({'top':'500px', 'left':'500px'}); // top / left 값으로 강제 위치 수정
+				$('#ui-datepicker-div').css({'top':'50%', 'left':'50%'}); // top / left 값으로 강제 위치 수정
+			})
+		}
+	});
+
+	// 달력(상품 상세 달력 실행)
+	$('.datepickProd').datepicker({
+		dateFormat: "yy-mm-dd",
+		minDate:0,
+		dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+		beforeShow: function(input) {
+			setTimeout(function(){
+				$('#ui-datepicker-div').css({'bottom':'119%', 'left':'37%', 'position':'relative'}); // top / left 값으로 강제 위치 수정
 			})
 		}
 	});

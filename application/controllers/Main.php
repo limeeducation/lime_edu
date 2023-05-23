@@ -95,6 +95,10 @@ class Main extends CI_Controller {
 		$data['con_study'] = empty($this->input->post('con_study')) ? '' : $this->input->post('con_study');
 		$data['con_details'] = empty($this->input->post('con_details')) ? '' : $this->input->post('con_details');
 		$data['con_apply_url'] = $this->input->post('con_apply_url');
+		//url이 없는 경우 비정상접근.
+		if($data['con_apply_url'] == null || $data['con_apply_url'] == ''){
+			script_alert_back('상담 신청에 실패했습니다. 관리자에게 문의하세요.');
+		}
 
 		$apply_res = $this->apply_model->consult_apply($data);
 

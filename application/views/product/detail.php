@@ -35,7 +35,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 			$("#conAgreeYnProd").focus();
 		}else{
 			var cur_url = window.location.href;
-			$("#conApplyUrl").val(cur_url);
+			$("#conApplyUrlProd").val(cur_url);
 			$("#applyConsultFromProd").submit();
 		}
 	};
@@ -119,19 +119,19 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 									<div class="inpt_wrap">
 										<div class="date_wrap">
 											<div class="form_date">
-												<input type="text" class="datepick" name="con_date" id="conDateProd" placeholder="예약일자">
+												<input type="text" class="datepickProd" name="con_date" id="conDateProd" placeholder="예약일자">
 												<select class="select_area" name="con_time" id="conTimeProd">
 													<option selected>예약시간</option>
-													<option>오전 10시</option>
-													<option>오전 11시</option>
-													<option>오후 12시</option>
-													<option>오후 1시</option>
-													<option>오후 2시</option>
-													<option>오후 3시</option>
-													<option>오후 4시</option>
-													<option>오후 5시</option>
-													<option>오후 6시</option>
-													<option>오후 7시</option>
+													<option value="10">오전 10시</option>
+													<option value="11">오전 11시</option>
+													<option value="12">오후 12시</option>
+													<option value="13">오후 1시</option>
+													<option value="14">오후 2시</option>
+													<option value="15">오후 3시</option>
+													<option value="16">오후 4시</option>
+													<option value="17">오후 5시</option>
+													<option value="18">오후 6시</option>
+													<option value="19">오후 7시</option>
 												</select>
 											</div>
 											<div class="date_text">
