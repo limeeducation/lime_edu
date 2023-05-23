@@ -437,7 +437,7 @@ $(document).ready(function(){
 		dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 		beforeShow: function(input) {
 			setTimeout(function(){
-				$('#ui-datepicker-div').css({'bottom':'119%', 'left':'37%', 'position':'relative'}); // top / left 값으로 강제 위치 수정
+				$('#ui-datepicker-div').css({'top':'','bottom':'119%', 'left':'37%', 'position':'relative'}); // top / left 값으로 강제 위치 수정
 			})
 		}
 	});
