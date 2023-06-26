@@ -58,7 +58,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<h1 class="pro_title prod_name">
 							<?= $col_title; ?>
 						</h1>
-						<h3 class="pro_title prod_name" style="float:left;">
+						<h3 class="" style="text-align:right;">
 							주제 : <?php
 							if($col_subject == '1'){
 								echo "해외대학 유학";
