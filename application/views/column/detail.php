@@ -61,13 +61,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 						<h3 class="pro_title prod_name" style="float:left;">
 							주제 : <?php
 							if($col_subject == '1'){
-								echo "해외대학 유학"
+								echo "해외대학 유학";
 							}else if($col_subject == '2'){
-								echo "조기 유학"
+								echo "조기 유학";
 							}else if($col_subject == '3'){
-								echo "어학 연수"
+								echo "어학 연수";
 							}else if($col_subject == '2'){
-								echo "가족연수 / 캠프 / 스쿨링"
+								echo "가족연수 / 캠프 / 스쿨링";
 							}
 							?>
 						</h3>
