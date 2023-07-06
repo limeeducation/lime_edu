@@ -33,8 +33,6 @@
 						<dd>
 							<p class="addr">캐나다 토론토 센터</p>
 							<p>55 Eglinton Ave East, Suite 601, Toronto ON M4P 1G8 Canada</p>
-							<p class="addr">캐나다 벤쿠버 센터</p>
-							<p>595 Burrard st., Vancouver BC V7X 1J1 Canada</p>
 						</dd>
 					</dl>
 				</div>
