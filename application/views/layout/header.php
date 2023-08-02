@@ -95,19 +95,19 @@
 				<a href="#"><span>가족연수/캠프/스쿨링</span></a>
 				<ul class="depth">
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
+						<a href="https://blog.naver.com/PostView.naver?blogId=mylimeeducation&logNo=222885946422&categoryNo=11&parentCategoryNo=&from=thumbnailList" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
+						<a href="https://blog.naver.com/mylimeeducation/223172798003" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
+						<a href="https://blog.naver.com/PostView.naver?blogId=mylimeeducation&logNo=223116638375&categoryNo=11&parentCategoryNo=&from=thumbnailList" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_nz@2x.png" alt="NZ"></i>뉴질랜드</a>
+						<a href="https://blog.naver.com/PostView.naver?blogId=mylimeeducation&logNo=222986445472&categoryNo=11&parentCategoryNo=&from=thumbnailList" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_nz@2x.png" alt="NZ"></i>뉴질랜드</a>
 					</li>
 					<li>
-						<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_phi@2x.png" alt="PH"></i>필리핀</a>
+						<a href="https://blog.naver.com/PostView.naver?blogId=mylimeeducation&logNo=223166922539&categoryNo=9&parentCategoryNo=&from=thumbnailList" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_phi@2x.png" alt="PH"></i>필리핀</a>
 					</li>
 				</ul>
 			</li>
@@ -233,19 +233,19 @@
 							<div class="depth_title">가족연수/캠프/스쿨링</div>
 							<ul class="depth_group type5">
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
+									<a href="https://blog.naver.com/PostView.naver?blogId=mylimeeducation&logNo=222885946422&categoryNo=11&parentCategoryNo=&from=thumbnailList" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</a>
 								</li>
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
+									<a href="https://blog.naver.com/mylimeeducation/223172798003" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</a>
 								</li>
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
+									<a href="https://blog.naver.com/PostView.naver?blogId=mylimeeducation&logNo=223116638375&categoryNo=11&parentCategoryNo=&from=thumbnailList" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</a>
 								</li>
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_nz@2x.png" alt="NZ"></i>뉴질랜드</a>
+									<a href="https://blog.naver.com/PostView.naver?blogId=mylimeeducation&logNo=222986445472&categoryNo=11&parentCategoryNo=&from=thumbnailList" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_nz@2x.png" alt="NZ"></i>뉴질랜드</a>
 								</li>
 								<li>
-									<a href="#" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_phi@2x.png" alt="PH"></i>필리핀</a>
+									<a href="https://blog.naver.com/PostView.naver?blogId=mylimeeducation&logNo=223166922539&categoryNo=9&parentCategoryNo=&from=thumbnailList" target="_blank" class="depth_sub_title"><i><img src="/static/img/common/gnb_ico_phi@2x.png" alt="PH"></i>필리핀</a>
 								</li>
 							</ul>
 
