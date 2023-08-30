@@ -84,7 +84,7 @@
 						</div>
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" id="colThumb" name="col_thumb">
-							<label for="colThumb" class="form-label">썸네일 url</label>
+							<label for="colThumb" class="form-label">썸네일 url(권장크기: 200px X 200px)</label>
 						</div>
 						<div class="form-floating mb-3">
 							<select class="form-select" id="colSubject" name="col_subject">
