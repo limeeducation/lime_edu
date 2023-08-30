@@ -60,7 +60,7 @@
 													<h3 class="mb-0"><?= $columns->col_title; ?></h3>
 													<h6 class="mb-0 ms-3"><?= $columns->col_subject; ?></h6><small class="ms-3"><?= $columns->reg_name; ?></small>
 												</div>
-												<span><?= $columns->col_cnts;?></span>
+												<span><?= $columns->col_cnts;?>...</span>
 											</div>
 										</div>
 									</a>
