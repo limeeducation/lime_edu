@@ -394,7 +394,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 								<div class="swiper-wrapper">
 									<?php foreach($column_list as $column) : ?>
 										<div class="swiper-slide">
-											<a href="#" class="box">
+											<a href="/column/detail/<?= $column->idx; ?>" class="box">
 												<div class="thumb"><img src="<?= $column->col_thumb; ?>" alt=""></div>
 												<div class="info">
 													<span class="title"><?= $column->col_title; ?></span>

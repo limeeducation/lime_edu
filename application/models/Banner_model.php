@@ -22,6 +22,7 @@ class Banner_model extends CI_Model
 	}
 
 	public function getColumn($subject = null){
+		$this->db->select('idx');
 		$this->db->select('col_title');
 		$this->db->select('col_cnts');
 		$this->db->select('col_thumb');
