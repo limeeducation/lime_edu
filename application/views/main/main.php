@@ -384,7 +384,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 					<section class="main_sect" id="mainStory" style="background-color:#EFF4F3; padding: 5rem 0;">
 				<?php endif; ?>
 
-					<div class="inner" style="display:none;">
+					<div class="inner">
 
 						<div class="story_title">라임스토리</div>
 						<div class="story_more"><a href="#">전체보기<i>+</i></a></div>
