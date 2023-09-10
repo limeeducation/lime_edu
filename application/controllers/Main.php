@@ -44,7 +44,7 @@ class Main extends CI_Controller {
 			//전체 칼럼 리스트 중 최근 작성 글 10개 불러오기
 			$column_list = get_column();
 			foreach($column_list as $column){
-				$column->col_cnts = mb_strimwidth($column->col_cnts, '0', '70', '...', 'utf-8');
+				$column->col_cnts = mb_strimwidth(strip_tags($column->col_cnts), '0', '70', '...', 'utf-8');
 			}
 			$data['column_list'] = $column_list;
 		}else{
@@ -74,7 +74,7 @@ class Main extends CI_Controller {
 			$data['normal_banner_list'] = $normal_banner_list;
 			$column_list = get_column();
 			foreach($column_list as $column){
-				$column->col_cnts = mb_strimwidth($column->col_cnts, '0', '70', '...', 'utf-8');
+				$column->col_cnts = mb_strimwidth(strip_tags($column->col_cnts), '0', '70', '...', 'utf-8');
 			}
 			$data['column_list'] = $column_list;
 		}

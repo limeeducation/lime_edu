@@ -108,7 +108,7 @@ class Admin_prod_model extends CI_Model
 		if(!empty($sub_str)) $subSearch = "AND col_subject = '".$subSearch."'";
 
 		$search_q =	" SELECT `col`.idx as col_idx, col_title,
-					  col_thumb, col_subject, SUBSTRING(col_cnts, 1, 50) as col_cnts,
+					  col_thumb, col_subject, col_cnts,
 					  (SELECT id FROM lime_adn_user AS u WHERE `u`.idx = `col`.reg_idx) as reg_name,
 					  DATE_FORMAT(`col`.reg_date,'%Y-%m-%d') `reg_dt`
 					  		FROM `lime_columns` AS col

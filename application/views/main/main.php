@@ -388,7 +388,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 
 						<div class="story_title">라임스토리</div>
 						<div class="story_more"><a href="#">전체보기<i>+</i></a></div>
-
 						<div class="story-swiper">
 							<div class="swiper-container">
 								<div class="swiper-wrapper">
@@ -403,7 +402,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 											</a>
 										</div>
 									<?php endforeach; ?>
-
 								</div><!-- // swiper-wrapper -->
 							</div><!-- // swiper-container -->
 							<div class="swiper-button-wrap">
