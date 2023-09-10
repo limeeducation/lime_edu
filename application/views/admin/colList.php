@@ -60,7 +60,7 @@
 													<h3 class="mb-0"><?= $columns->col_title; ?></h3>
 													<h6 class="mb-0 ms-3"><?= $columns->col_subject; ?></h6><small class="ms-3"><?= $columns->reg_name; ?></small>
 												</div>
-												<span><?= strip_tags($columns->col_cnts);?>...</span>
+												<span><?= mb_strimwidth(strip_tags($column->col_cnts), '0', '70', '...', 'utf-8');?>...</span>
 											</div>
 										</div>
 									</a>
