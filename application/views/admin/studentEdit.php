@@ -97,7 +97,9 @@
 								<option value="송도">송도</option>
 								<option value="대구">대구</option>
 								<option value="부산">부산</option>
-								<option value="제주">제주</option>
+								<option value="전남">전남</option>
+								<option value="토론토">토론토</option>
+								<option value="밴쿠버">밴쿠버</option>
 							</select>
 							<label for="conOffice" class="form-label">상담 센터</label>
 						</div>
@@ -126,6 +128,9 @@
                         		<option value="ca">캐나다</option>
                         		<option value="aus">호주</option>
                         		<option value="phil">필리핀</option>
+                        		<option value="nz">뉴질랜드</option>
+                        		<option value="ire">아일랜드</option>
+                        		<option value="etc">기타</option>
                         	</select>
                         	<label for="conNatio" class="form-label">상담 국가</label>
                         </div>

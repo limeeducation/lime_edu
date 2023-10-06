@@ -68,6 +68,8 @@
 						<a href="javascript:setValue('conOffice','대구');" class="tab">대구</a>
 						<a href="javascript:setValue('conOffice','부산');" class="tab">부산</a>
 						<a href="javascript:setValue('conOffice','전남');" class="tab">전남</a>
+						<a href="javascript:setValue('conOffice','토론토');" class="tab">토론토</a>
+						<a href="javascript:setValue('conOffice','밴쿠버');" class="tab">밴쿠버</a>
 					</div>
 					<!--// 탭영역 -->
 				</div>
@@ -179,6 +181,9 @@
 						<a href="javascript:setValue('conNatio','ca');" class="tab">캐나다</a>
 						<a href="javascript:setValue('conNatio','aus');" class="tab">호주</a>
 						<a href="javascript:setValue('conNatio','phil');" class="tab">필리핀</a>
+						<a href="javascript:setValue('conNatio','nz');" class="tab">뉴질랜드</a>
+						<a href="javascript:setValue('conNatio','ire');" class="tab">아일랜드</a>
+						<a href="javascript:setValue('conNatio','etc');" class="tab">기타</a>
 					</div>
 					<!--// 탭영역 -->
 				</div>
