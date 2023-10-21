@@ -221,29 +221,29 @@
 							</label>
 						</div>
 						<div class="rdo_inner in_02">
-							<label for="rdo5" style="width: fit-content;">
+							<label for="rdo5" style="width: 33%;">
 								<input type="radio" name="con_study" id="rdo5" value="5">
 								<i class="icon_rdo"></i>
 								<span>스쿨링/영어캠프</span>
 							</label>
-							<label for="rdo6">
+							<label for="rdo6" style="width: 33%;">
 								<input type="radio" name="con_study" id="rdo6" value="6">
 								<i class="icon_rdo"></i>
 								<span>조기유학</span>
 							</label>
-							<label for="rdo7" class="label_m">
+							<label for="rdo7" style="width: 33%;">
 								<input type="radio" name="con_study" id="rdo7" value="7">
 								<i class="icon_rdo"></i>
 								<span>컬리지 유학</span>
 							</label>
 						</div>
 						<div class="rdo_inner in_03">
-							<label for="rdo8">
+							<label for="rdo8" style="width: 50%;">
 								<input type="radio" name="con_study" id="rdo8" value="8">
 								<i class="icon_rdo"></i>
 								<span>대학유학</span>
 							</label>
-							<label for="rdo9">
+							<label for="rdo9" style="width: 50%;">
 								<input type="radio" name="con_study" id="rdo9" value="9">
 								<i class="icon_rdo"></i>
 								<span>석박사 유학</span>
