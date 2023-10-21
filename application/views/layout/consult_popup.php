@@ -221,7 +221,7 @@
 							</label>
 						</div>
 						<div class="rdo_inner in_02">
-							<label for="rdo5">
+							<label for="rdo5" style="width: fit-content;">
 								<input type="radio" name="con_study" id="rdo5" value="5">
 								<i class="icon_rdo"></i>
 								<span>스쿨링/영어캠프</span>
