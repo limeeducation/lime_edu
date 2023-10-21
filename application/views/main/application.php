@@ -6,7 +6,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
     <script type="text/javascript">
     $(document).ready(function(){
     	$('.cs_pop').fadeIn(200);
-        dimShow();
 
 		// 취소버튼 메인으로가기
 		$('.cancel').on('click', function(){
