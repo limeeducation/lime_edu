@@ -109,4 +109,9 @@ class Main extends CI_Controller {
 		}
 	}
 
+	//상담신청페이지
+	public function application(){
+		$this->load->view('main/application');
+	}
+
 }

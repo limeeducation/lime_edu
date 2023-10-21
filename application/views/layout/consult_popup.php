@@ -207,56 +207,46 @@
 							<label for="rdo2" class="label_b">
 								<input type="radio" name="con_study" id="rdo2" value="2">
 								<i class="icon_rdo"></i>
-								<span>전문과정 (테솔/통번역/인턴쉽 등)</span>
+								<span>워킹홀리데이</span>
 							</label>
 							<label for="rdo3" class="label_m">
 								<input type="radio" name="con_study" id="rdo3" value="3">
 								<i class="icon_rdo"></i>
-								<span>교환학생 (중고생)</span>
+								<span>해외인턴쉽</span>
 							</label>
 						</div>
 						<div class="rdo_inner in_02">
 							<label for="rdo4">
 								<input type="radio" name="con_study" id="rdo4" value="4">
 								<i class="icon_rdo"></i>
-								<span>조기유학 (초)</span>
+								<span>유학후 이민</span>
 							</label>
 							<label for="rdo5">
 								<input type="radio" name="con_study" id="rdo5" value="5">
 								<i class="icon_rdo"></i>
-								<span>조기유학 (중)</span>
+								<span>스쿨링/영어캠프</span>
 							</label>
 							<label for="rdo6">
 								<input type="radio" name="con_study" id="rdo6" value="6">
 								<i class="icon_rdo"></i>
-								<span>조기유학 (고)</span>
+								<span>조기유학</span>
 							</label>
 							<label for="rdo7" class="label_m">
 								<input type="radio" name="con_study" id="rdo7" value="7">
 								<i class="icon_rdo"></i>
-								<span>영어캠프 (초중고)</span>
+								<span>컬리지 유학</span>
 							</label>
 						</div>
 						<div class="rdo_inner in_03">
 							<label for="rdo8">
 								<input type="radio" name="con_study" id="rdo8" value="8">
 								<i class="icon_rdo"></i>
-								<span>컬리지</span>
+								<span>대학유학</span>
 							</label>
 							<label for="rdo9">
 								<input type="radio" name="con_study" id="rdo9" value="9">
 								<i class="icon_rdo"></i>
-								<span>학사</span>
-							</label>
-							<label for="rdo10">
-								<input type="radio" name="con_study" id="rdo10" value="10">
-								<i class="icon_rdo"></i>
-								<span>석사</span>
-							</label>
-							<label for="rdo11" class="label_m">
-								<input type="radio" name="con_study" id="rdo11" value="11">
-								<i class="icon_rdo"></i>
-								<span>박사</span>
+								<span>석박사 유학</span>
 							</label>
 						</div>
 					</div>

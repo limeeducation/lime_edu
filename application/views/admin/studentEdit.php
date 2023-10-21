@@ -107,16 +107,14 @@
                         	<select class="form-select" id="conStudy" name="con_study">
                         		<option value="">유학과정 선택</option>
                         		<option value="1">어학연수</option>
-                        		<option value="2">전문과정(테솔/통번역/인턴쉽 등)</option>
-                        		<option value="3">교환학생(중고생)</option>
-                        		<option value="4">조기유학(초)</option>
-                        		<option value="5">조기유학(중)</option>
-                        		<option value="6">조기유학(고)</option>
-                        		<option value="7">영어캠프(초중고)</option>
-                        		<option value="8">컬리지</option>
-                        		<option value="9">학사</option>
-                        		<option value="10">석사</option>
-                        		<option value="11">박사</option>
+                        		<option value="2">워킹홀리데이</option>
+                        		<option value="3">해외인턴쉽</option>
+                        		<option value="4">유학후 이민</option>
+                        		<option value="5">스쿨링/영어캠프</option>
+                        		<option value="6">조기유학</option>
+                        		<option value="7">컬리지 유학</option>
+                        		<option value="8">대학유학</option>
+                        		<option value="9">석박사 유학</option>
                         	</select>
                         	<label for="conStudy" class="form-label">유학과정</label>
                         </div>
