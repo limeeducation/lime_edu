@@ -214,13 +214,13 @@
 								<i class="icon_rdo"></i>
 								<span>해외인턴쉽</span>
 							</label>
-						</div>
-						<div class="rdo_inner in_02">
 							<label for="rdo4">
 								<input type="radio" name="con_study" id="rdo4" value="4">
 								<i class="icon_rdo"></i>
 								<span>유학후 이민</span>
 							</label>
+						</div>
+						<div class="rdo_inner in_02">
 							<label for="rdo5">
 								<input type="radio" name="con_study" id="rdo5" value="5">
 								<i class="icon_rdo"></i>
