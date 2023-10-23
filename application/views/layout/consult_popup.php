@@ -195,8 +195,8 @@
 				<div class="tit_area">
 					<p class="cotn_tit">유학과정</p>
 				</div>
-				<div class="inpt_wrap">
-					<select class="select_area" name="con_study" >
+				<div class="inpt_wrap" style="padding: 0;">
+					<select class="select_area" name="con_study" style="width: 100%;">
 						<option value="" selected="">유학과정을 선택해주세요</option>
 						<option value="1">어학연수</option>
 						<option value="2">워킹홀리데이</option>
