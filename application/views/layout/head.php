@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>라임에듀</title>
+	<title>라임유학</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
 	<meta name="format-detection" content="telephone=no" />
 	<meta property="og:title" content="라임에듀">
@@ -14,7 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta property="og:type" content="website">
 	<meta name="description" content="라임에듀">
 	<meta property="og:image" content="https://mylimeedu.com/static/img/common/header_logo_2@2x.png">
-
+	<link rel="icon" href="/img/logo-favicon-96x96.png"/>
+	<link rel="apple-touch-icon" href="/img/logo-favicon-96x96.png"/>
 	<link rel="stylesheet" type="text/css" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/swiper.min.css">
