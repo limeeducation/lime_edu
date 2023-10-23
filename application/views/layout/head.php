@@ -14,8 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta property="og:type" content="website">
 	<meta name="description" content="라임에듀">
 	<meta property="og:image" content="https://mylimeedu.com/static/img/common/header_logo_2@2x.png">
-	<link rel="icon" href="/img/logo-favicon-96x96.png"/>
-	<link rel="apple-touch-icon" href="/img/logo-favicon-96x96.png"/>
+	<link rel="icon" href="/static/img/logo-favicon-96x96.png"/>
+	<link rel="apple-touch-icon" href="/static/img/logo-favicon-96x96.png"/>
 	<link rel="stylesheet" type="text/css" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/swiper.min.css">
