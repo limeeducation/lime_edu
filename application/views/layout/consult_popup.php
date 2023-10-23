@@ -195,9 +195,21 @@
 				<div class="tit_area">
 					<p class="cotn_tit">유학과정</p>
 				</div>
-				<div class="res_wrap">
+				<div class="inpt_wrap">
+					<select class="select_area" name="con_study" >
+						<option value="" selected="">유학과정을 선택해주세요</option>
+						<option value="1">어학연수</option>
+						<option value="2">워킹홀리데이</option>
+						<option value="3">해외인턴쉽</option>
+						<option value="4">유학후 이민</option>
+						<option value="5">스쿨링/영어캠프</option>
+						<option value="6">조기유학</option>
+						<option value="7">컬리지 유학</option>
+						<option value="8">대학유학</option>
+						<option value="9">석박사 유학</option>
+					</select>
 					<!-- 라디오영역 -->
-					<div class="rdo_wrap res_rdo">
+					<!-- <div class="rdo_wrap res_rdo">
 						<div class="rdo_inner in_01">
 							<label for="rdo1">
 								<input type="radio" name="con_study" id="rdo1" value="1" checked>
@@ -249,7 +261,7 @@
 								<span>석박사 유학</span>
 							</label>
 						</div>
-					</div>
+					</div> -->
 					<!--// 라디오영역 -->
 				</div>
 			</div>
