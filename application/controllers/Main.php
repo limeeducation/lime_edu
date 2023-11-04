@@ -103,7 +103,7 @@ class Main extends CI_Controller {
 		//상담 신청일이 날짜형식이 아니거나 상담신청일이 오늘보다 이전인경우 비정상접근
 		$str_conDate = str_replace('-', '', $data['con_date']);
 		$today = date("Ymd");
-		if((!preg_match("/^[0-9]$/", $str_conDate)) || ($str_conDate < $today)){
+		if((!date_check($str_conDate)) || ($str_conDate < $today)){
 			script_alert_back('상담 신청일을 다시 확인해주세요.');
 		}
 
@@ -121,5 +121,18 @@ class Main extends CI_Controller {
 	public function application(){
 		$this->load->view('main/application');
 	}
+
+	function date_check($str) {
+		$str = str_replace('.', '', $str);
+		$str = str_replace('-', '', $str);
+		$YY = substr(date('Y'),0,2);
+		if(strlen($str)==6) { $str = $YY.$str; }
+		if ( preg_match('/^(\d{4})-?(\d{2})-?(\d{2})$/',$str,$match)
+				 && checkdate($match[2],$match[3],$match[1]) ) {
+				return true;
+		} else {
+				return false;
+		}
+    }
 
 }
