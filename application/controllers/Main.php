@@ -100,6 +100,12 @@ class Main extends CI_Controller {
 			script_alert_back('상담 신청에 실패했습니다. 관리자에게 문의하세요.');
 		}
 
+		//상담 신청일이 날짜형식이 아닌경우 비정상접근
+		if(!preg_match("/^([0-9]{4})-([0-9]{2})-([0-9]{2})$/", $data['con_date']){
+			script_alert_back('상담 신청에 실패했습니다. 관리자에게 문의하세요.');
+		}
+
+
 		$apply_res = $this->apply_model->consult_apply($data);
 
 		if(!$apply_res){
