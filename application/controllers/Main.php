@@ -101,11 +101,11 @@ class Main extends CI_Controller {
 		}
 
 		//상담 신청일이 날짜형식이 아니거나 상담신청일이 오늘보다 이전인경우 비정상접근
-		/* $str_conDate = str_replace('-', '', $data['con_date']);
+		$str_conDate = str_replace('-', '', $data['con_date']);
 		$today = date("Ymd");
-		if((!preg_match("/^[0-9]/i", $str_conDate) || $str_conDate < $today){
+		if((!preg_match("/^[0-9]$/", $str_conDate) || $str_conDate < $today){
 			script_alert_back('상담 신청일을 다시 확인해주세요.');
-		} */
+		}
 
 
 		$apply_res = $this->apply_model->consult_apply($data);
