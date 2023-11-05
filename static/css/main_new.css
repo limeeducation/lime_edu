@@ -38,9 +38,9 @@
 .swiper_util .paging_progress .swiper-pagination-progressbar-fill {background-color: #009743;}
 .swiper_util .arr_swiper {display: flex;}
 .swiper_util .arr_swiper button {display: block; width: 15px; height: 15px; background-position: center; background-repeat: no-repeat;}
-.swiper_util .arr_swiper button.arr_prev {background-image:url(../images/arr_main_prev.svg); background-size: 9px 11px;}
-.swiper_util .arr_swiper button.pause {background-image:url(../images/ico_pasuse.svg); background-size: 15px auto;}
-.swiper_util .arr_swiper button.arr_next {background-image:url(../images/arr_main_next.svg); background-size: 9px 11px;}
+.swiper_util .arr_swiper button.arr_prev {background-image:url(../img/img_new/arr_main_prev.svg); background-size: 9px 11px;}
+.swiper_util .arr_swiper button.pause {background-image:url(../img/img_new/ico_pasuse.svg); background-size: 15px auto;}
+.swiper_util .arr_swiper button.arr_next {background-image:url(../img/img_new/arr_main_next.svg); background-size: 9px 11px;}
 
 @media only screen and (max-width:1024px) {
 	.main_item .info_wrap {padding-right:0;}
@@ -69,7 +69,7 @@
 /* 라임에듀를 선택하는 이유 */
 .cont_wrap .group {display: none;}
 .cont_wrap .group.on {display: block;}
-.intro_01 {background:url(../images/bg_intro.png) no-repeat center; background-size: cover; padding-top: 160px; padding-bottom: 95px;}
+.intro_01 {background:url(../img/img_new/bg_intro.png) no-repeat center; background-size: cover; padding-top: 160px; padding-bottom: 95px;}
 .intro_01 .inner {max-width: 1030px;}
 .intro_01 .tit_01 {font-size: 6.4rem; color: #fff; font-weight: 700; text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); text-align: center;}
 .intro_01 .tit_02 {font-size:4.8rem; color: #fff; font-weight: 700; letter-spacing: -1.28px; text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); text-align: center;}
@@ -95,8 +95,8 @@
 .posting_wrap {width: calc(50% - 15px); display: flex; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);}
 .posting_wrap .info_wrap {flex:1; background-color: #43D32B; padding: 20px 19px 8px; box-sizing: border-box;}
 .posting_wrap .info_wrap h4 {font-size: 2.4rem; letter-spacing: -1.28px; color: #fff; font-weight: 600; line-height: 1em;}
-.posting_wrap.insta .info_wrap h4 {padding-top: 46px; background:url(../images/ico_insta.svg) no-repeat left top; background-size: 37px auto;}
-.posting_wrap.blog .info_wrap h4 {padding-top: 54px; background:url(../images/ico_blog.svg) no-repeat left top; background-size: 48px auto;}
+.posting_wrap.insta .info_wrap h4 {padding-top: 46px; background:url(../img/img_new/ico_insta.svg) no-repeat left top; background-size: 37px auto;}
+.posting_wrap.blog .info_wrap h4 {padding-top: 54px; background:url(../img/img_new/ico_blog.svg) no-repeat left top; background-size: 48px auto;}
 .posting_wrap .info_wrap p {min-height: 77px; margin-top: 10px; color: #fff; letter-spacing: -0.27px; box-sizing:border-box;}
 .posting_wrap .link_wrap {display: flex;}
 .posting_wrap .link_wrap a {margin-top: 10px; color: #fff; font-size: 2.4rem; font-weight: 700;}
@@ -119,8 +119,8 @@
 .column_slide .txt_wrap .txt {padding: 0 10px; letter-spacing: -0.27px; display:-webkit-box; word-wrap:break-word; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden;}
 .column_slide .arr_swiper {position: absolute; top: 37%; z-index: 1; width: 100%;}
 .column_slide .arr_swiper .arr {width: 53px; height: 53px; background-color: rgba(0, 99, 35, .6); background-repeat: no-repeat; background-position: center; border-radius:10px; position: absolute; top: 0;}
-.column_slide .arr_swiper .arr.column_arr_prev {left: 19px; background-image:url(../images/arr_intro_prev.svg);}
-.column_slide .arr_swiper .arr.column_arr_next {right: 19px; background-image:url(../images/arr_intro_next.svg);}
+.column_slide .arr_swiper .arr.column_arr_prev {left: 19px; background-image:url(../img/img_new/arr_intro_prev.svg);}
+.column_slide .arr_swiper .arr.column_arr_next {right: 19px; background-image:url(../img/img_new/arr_intro_next.svg);}
 
 @media only screen and (max-width:1250px) {
 	/* 라임에듀SNS포스팅 */
@@ -210,13 +210,13 @@
 
 /* ============================== [ 조기유학/ 대학유학 ] ========================================================================================== */
 .sec_04 {background-color: #FBFFFD; padding-top:104px; padding-bottom: 196px;}
-.sec_04 .abroad {margin-top: 97px; padding: 160px 0 80px; background:url(../images/bg_abroad.png) no-repeat center; background-size: cover; box-sizing:border-box;}
+.sec_04 .abroad {margin-top: 97px; padding: 160px 0 80px; background:url(../img/img_new/bg_abroad.png) no-repeat center; background-size: cover; box-sizing:border-box;}
 .abroad .country_li .group {width: 580px; padding: 20px 40px; background-color: rgba(255, 255, 255, .85); border-radius: 10px 0 10px 0; box-sizing:border-box;}
 .abroad .country_li .group ~ .group {margin-top:20px;}
 .abroad .country_li .tit {display: inline-block; font-size: 2.8rem; font-weight: 700; padding-right: 60px; background-position: right center; background-repeat: no-repeat;}
-.abroad .country_li .canada .tit {background-image: url(../images/flag_canada.png);}
-.abroad .country_li .uk .tit {background-image: url(../images/flag_uk.png);}
-.abroad .country_li .usa .tit {background-image: url(../images/flag_usa.png);}
+.abroad .country_li .canada .tit {background-image: url(../img/img_new/flag_canada.png);}
+.abroad .country_li .uk .tit {background-image: url(../img/img_new/flag_uk.png);}
+.abroad .country_li .usa .tit {background-image: url(../img/img_new/flag_usa.png);}
 .abroad .country_li .tag {margin-top: 10px;}
 .abroad .country_li .tag span {display: inline-block; font-size: 2rem; line-height: 1.5em; letter-spacing: -0.4px; font-weight: 500;}
 .abroad .country_li .tag span ~ span {margin-left: 13px; padding-left: 13px; position: relative;}
@@ -281,7 +281,7 @@
 .camp_txt .tit {font-size:4.2rem; font-weight:700; margin-bottom:17px;}
 .camp_txt .txt {font-size:2rem; font-weight:500; letter-spacing: -0.4px; line-height:1.3em;}
 .camp_txt .btn_outlink {margin-top:66px; width: 308px;}
-.camp_txt .bg_camp {margin-top:40px; width:100%; height:360px; background: url(../images/bg_camp.png) no-repeat center; background-size: cover;}
+.camp_txt .bg_camp {margin-top:40px; width:100%; height:360px; background: url(../img/img_new/bg_camp.png) no-repeat center; background-size: cover;}
 .camp_link {width:378px; margin-left:30px;}
 .camp_link .group {width:100%; height:307px; position:relative;}
 .camp_link .group ~ .group {margin-top:25px;}
@@ -313,7 +313,7 @@
 .noti_wrap {padding:38px 20px; box-sizing:border-box; margin-top:16px; border-radius: 10px; background-color:#fff; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 .noti_wrap ul {max-width: 880px; width:100%; margin:0 auto;}
 .noti_wrap li {border-bottom: 1px solid #B7B7B7;}
-.noti_wrap li.fix_li p {color:#43D32B; padding-left:72px; background:url(../images/ico_pix.svg) no-repeat left 24px center; background-size: 24px;}
+.noti_wrap li.fix_li p {color:#43D32B; padding-left:72px; background:url(../img/img_new/ico_pix.svg) no-repeat left 24px center; background-size: 24px;}
 .noti_wrap li a {display:flex; align-items:center; padding:17px 0;}
 .noti_wrap li p {flex:1; letter-spacing: -0.27px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; line-height: 1.34em;}
 .noti_wrap li span {font-size:14px; letter-spacing: -0.27px; display:block; width:80px; text-align:right;}
@@ -340,11 +340,11 @@
 .loc .group {display:none; position:relative;}
 .loc .group.on {display:block;}
 .loc .group .map {height:585px; background-repeat: no-repeat; background-size: cover; background-position: center;}
-.loc .group:nth-child(1) .map {background-image:url(../images/map_01.png);}
-.loc .group:nth-child(2) .map {background-image:url(../images/map_02.png);}
-.loc .group:nth-child(3) .map {background-image:url(../images/map_03.png);}
-.loc .group:nth-child(4) .map {background-image:url(../images/map_04.png);}
-.loc .group:nth-child(5) .map {background-image:url(../images/map_05.png);}
+.loc .group:nth-child(1) .map {background-image:url(../img/img_new/map_01.png);}
+.loc .group:nth-child(2) .map {background-image:url(../img/img_new/map_02.png);}
+.loc .group:nth-child(3) .map {background-image:url(../img/img_new/map_03.png);}
+.loc .group:nth-child(4) .map {background-image:url(../img/img_new/map_04.png);}
+.loc .group:nth-child(5) .map {background-image:url(../img/img_new/map_05.png);}
 .loc .info_wrap {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); max-width: 1030px; padding:0 18px; width:100%; display:flex; align-items: flex-end ; justify-content:space-between; box-sizing:border-box;}
 .loc .info_wrap .txt_box {max-width: 540px; width:100%; padding:20px 0; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px; border-top:20px solid #CDF564; border-bottom:20px solid #CDF564; background-color:#fff; box-sizing: border-box;}
 .loc .info_wrap .txt_box .tit {font-size:2.8rem; margin-bottom: 30px; font-weight:700; text-align:center;}
@@ -377,7 +377,7 @@
 }
 
 /* ============================== [ 상담신청 ] ========================================================================================== */
-.sec_09 {padding:70px 0 140px; background: url(../images/bg_cs.png) no-repeat center; background-size: cover;}
+.sec_09 {padding:70px 0 140px; background: url(../img/img_new/bg_cs.png) no-repeat center; background-size: cover;}
 .sec_09 .cs_box {background:rgba(0, 99, 35, .6); border-radius: 15px; padding:105px 105px 83px; overflow-y:auto; height:100%;}
 .sec_09 .cs_box .form_tit {color:#fff; width:auto; margin-right:0;}
 .sec_09 .cs_inner {display:flex; max-width: 990px; width: 100%;}
