@@ -71,15 +71,15 @@
 							</ul>
 						</div>
 						<ul class="clock">
-							<li data-value="10" class="on"><img src="assets/images/common/clock_01.png" alt=""></li>
-							<li data-value="11"><img src="assets/images/common/clock_02.png" alt=""></li>
-							<li data-value="12"><img src="assets/images/common/clock_03.png" alt=""></li>
-							<li data-value="13"><img src="assets/images/common/clock_04.png" alt=""></li>
-							<li data-value="14"><img src="assets/images/common/clock_05.png" alt=""></li>
-							<li data-value="15"><img src="assets/images/common/clock_06.png" alt=""></li>
-							<li data-value="16"><img src="assets/images/common/clock_07.png" alt=""></li>
-							<li data-value="17"><img src="assets/images/common/clock_08.png" alt=""></li>
-							<li data-value="18"><img src="assets/images/common/clock_09.png" alt=""></li>
+							<li data-value="10" class="on"><img src="/static/img/img_new/common/clock_01.png" alt=""></li>
+							<li data-value="11"><img src="/static/img/img_new/common/clock_02.png" alt=""></li>
+							<li data-value="12"><img src="/static/img/img_new/common/clock_03.png" alt=""></li>
+							<li data-value="13"><img src="/static/img/img_new/common/clock_04.png" alt=""></li>
+							<li data-value="14"><img src="/static/img/img_new/common/clock_05.png" alt=""></li>
+							<li data-value="15"><img src="/static/img/img_new/common/clock_06.png" alt=""></li>
+							<li data-value="16"><img src="/static/img/img_new/common/clock_07.png" alt=""></li>
+							<li data-value="17"><img src="/static/img/img_new/common/clock_08.png" alt=""></li>
+							<li data-value="18"><img src="/static/img/img_new/common/clock_09.png" alt=""></li>
 						</ul>
 					</div>
 				</div>
