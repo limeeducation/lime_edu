@@ -136,4 +136,8 @@ class Main extends CI_Controller {
 		}
 	}
 
+	public function new_main_page(){
+		$this->load->view('main/new_main');
+	}
+
 }
