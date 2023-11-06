@@ -34,7 +34,7 @@ function mainSlide() { //메인 슬라이드
 		loopAdditionalSlides : 1,
 		speed:2000,
 		autoplay:{
-			delay:1000,
+			delay:3000,
 			disableOnInteraction:false
 		},
 		navigation : {
