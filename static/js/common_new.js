@@ -7,6 +7,8 @@ $(document).ready(function(){
 	$('.tab_li').length && mainTab(); //메인 탭
 	$('.site_menu').length && siteMenu(); //사이트맵
 	$('#header').length && gnbMenu(); //GNB
+	$('.btn_more').length && moreLinkTab(); //탭
+	$('.camp_slide').length && campSlide(); //캠프슬라이드
 	$('.ni_select').niceSelect(); //select 커스텀
 
 
