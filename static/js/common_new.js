@@ -152,3 +152,36 @@ function gnbMenu(){ //gnb메뉴
 		$(".sub_menu_li").find("[data-menu='" + name_data + "']").addClass('on')
 	})
 }
+
+function moreLinkTab() { //탭
+	$('.more_wrap .btn_more').on('click', function(e){
+		e.preventDefault();
+		$(this).parent().toggleClass('on')
+	})
+}
+
+function campSlide() { //캠프 슬라이드
+	var text = [
+		'가족연수',
+		'캠프',
+		'스쿨링'
+	]
+	var campSlide = new Swiper('.camp_slide', {
+		slidesPerView : '1',
+		spaceBetween:3,
+		loop:true,
+		loopAdditionalSlides : 1,
+		speed:1000,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<div class="' + className + '"><span></span><p>' + (text[index]) + '</p><i></i></div>';
+			}
+		},
+		navigation: {
+			nextEl: '.arr.camp_next',
+			prevEl: '.arr.camp_prev',
+		},
+	});
+}

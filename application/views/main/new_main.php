@@ -334,44 +334,37 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 						<p class="txt">평균 경력 16년 전문 컨설턴트의 비교 불가 프리미엄상담</p>
 						<p class="txt">현지 직영 지사 컨설턴트의 살아있는 상담과 노하우를 가진 최소 10년 이상 경력의 컨설턴트들</p>
 						<p class="txt">어학연수도 전문가가 상담하면 다릅니다.</p>
-						<table>
-							<colgroup>
-								<col width="33.33%">
-								<col width="33.33%">
-								<col width="33.33%">
-							</colgroup>
-							<thead>
-								<tr>
-									<th>초특가 어학연수</th>
-									<th>공무원 유학</th>
-									<th>인턴쉽 프로그램</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<ul>
-											<li>미국</li>
-											<li>캐나다</li>
-											<li>필리핀</li>
-											<li>영국</li>
-										</ul>
-									</td>
-									<td>
-										<ul>
-											<li>미국</li>
-											<li>캐나다</li>
-											<li>필리핀</li>
-										</ul>
-									</td>
-									<td>
-										<ul>
-											<li>영국</li>
-										</ul>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="more_wrap">
+							<ul>
+								<li class="">
+									<a href="#" class="btn_more">가성비 연수</a>
+									<div class="show_link">
+										<a href="#">필리핀</a>
+										<a href="#">캐나다</a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="btn_more">연계 연수</a>
+									<div class="show_link">
+										<a href="#">필리핀+캐나다</a>
+										<a href="#">필리핀+호주</a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="btn_more">공무원 유학</a>
+									<div class="show_link">
+										<a href="#">안식년 유학 방법</a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="btn_more">인턴쉽 프로그램</a>
+									<div class="show_link">
+										<a href="#">캐나다</a>
+										<a href="#">미국</a>
+									</div>
+								</li>
+							</ul>
+						</div>
 						<a href="#" class="dt_btn">자세히 알아보기 ></a>
 					</div>
 				</div>
@@ -508,32 +501,57 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 
 		<!-- 가족연수/캠프 -->
 		<section class="sec_06">
-			<h2 class="sec_tit">가족연수/캠프</h2>
+			<h2 class="sec_tit">가족연수/캠프/스쿨링</h2>
 			<div class="inner">
-				<div class="camp_txt">
-					<p class="tit">가족과 함께하는 즐거운 영어 연수!</p>
-					<p class="txt">다양한 액티비티와 엄선된 강사진들과 함께하는 필리핀 어학연수.<br>가족과 함께 영어공부도 하고, 매일 매일 새로운 경험 할 수 있습니다. (설명글 보완필요)</p>
-					<a href="#" class="btn_outlink">모집중인 가족연수 모아보기</a>
-					<div class="bg_camp"></div>
+				<div class="camp_page">
+					<div class="swiper-pagination"></div>
 				</div>
-				<div class="camp_link">
-					<div class="group">
-						<figure class="img">
-							<img src="/static/img/img_new/camp_link_01.png">
-						</figure>
-						<div class="txt_wrap">
-							<p>CELLA어학원 가족연수 선착순 모집중!</p>
-							<a href="#">자세히 알아보기 ></a>
+				<div class="slide_wrap">
+					<div class="camp_slide swiper">
+						<div class="swiper-wrapper">
+							<div class="item swiper-slide">
+								<div class="cotn">
+									<figure class="img">
+										<img src="/static/img/img_new/bg_camp_01.png">
+									</figure>
+									<div class="txt_wrap">
+										<p class="tit">가족연수</p>
+										<p class="txt">주로 학업 위주의 일정으로 준비된 프로그램입니다.<br>자녀는 물론 보호자도 함께 수업을 받고, 주말에는 가족과 좋은 추억을 만들 수 있습니다.</p>
+										<p class="txt">캠프에 비해 비교적 저렴한 것이 특징입니다.</p>
+										<a href="#" class="dt_btn">자세히 알아보기 ></a>
+									</div>
+								</div>
+							</div>
+							<div class="item swiper-slide">
+								<div class="cotn">
+									<figure class="img">
+										<img src="/static/img/img_new/bg_camp_02.png">
+									</figure>
+									<div class="txt_wrap">
+										<p class="tit">주니어/가족 캠프</p>
+										<p class="txt">방학 기간을 활용 하여 개설 되는 프로그램 입니다.</p>
+										<p class="txt">체계적인 커리큘럼과 다양한 액티비티로 구성 되어 있으며, 프로그램에 따라 아이 혼자, 가족과 함께, 친구와 함께 등 다양한 구성원으로 신청할 수 있습니다.</p>
+										<a href="#" class="dt_btn">자세히 알아보기 ></a>
+									</div>
+								</div>
+							</div>
+							<div class="item swiper-slide">
+								<div class="cotn">
+									<figure class="img">
+										<img src="/static/img/img_new/bg_camp_01.png">
+									</figure>
+									<div class="txt_wrap">
+										<p class="tit">스쿨링</p>
+										<p class="txt">TEXT</p>
+										<a href="#" class="dt_btn">자세히 알아보기 ></a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="group">
-						<figure class="img">
-							<img src="/static/img/img_new/camp_link_02.png">
-						</figure>
-						<div class="txt_wrap">
-							<p>세부 티샤인 호텔 겨울 영어캠프</p>
-							<a href="#">자세히 알아보기 ></a>
-						</div>
+					<div class="arr_wrap">
+						<button class="arr camp_prev"></button>
+						<button class="arr camp_next"></button>
 					</div>
 				</div>
 			</div>
