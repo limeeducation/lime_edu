@@ -5,6 +5,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/product_detail.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<header>
+	<meta name="description" content="라임유학-캐나다 관리형 조기유학">
+	<meta property="og:description" content="라임유학-캐나다 관리형 조기유학">
+	<meta name=”keywords” content=”밴쿠버관리형유학,캐나다관리형유학,토론토관리형유학,워털루관리형유학,캘거리관리형유학,알버타관리형유학,골든힐교육청,골든힐관리형,메이플릿지관리형유학,온타리오관리형유학,BC관리형유학,공립교육청기숙사관리형,버논관리형”>
+</header>
 <body>
     <script type="text/javascript">
 

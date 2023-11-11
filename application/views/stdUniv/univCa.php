@@ -6,6 +6,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/product_detail.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<header>
+	<meta name="description" content="라임유학-캐나다 대학 유학">
+	<meta property="og:description" content="라임유학-캐나다 대학 유학">
+	<meta name=”keywords” content=”토론토대학교입학,토론토대학교입시,캐나다명문대입학,캐나다명문대편입,캐나다명문대,UBC,퀸즈대학교,웨스턴대학교,맥마스터대학교,유티,욕대학교,캐나다대학교입학,캐나다대학교가기,캐나다대학교편입,캐나다명문대편입,캐나다대학교유학,캐나다대학편입,캐나다대학원유학,캐나다석사유학,알렉산더컬리지,UBC편입,토론토대학교편입,캐나다대학교순위,캐나다명문대,알버타대학교,캘거리대학교,맥길대학교,워털루대학교,토론토메트로폴리탄대학교,SFU,빅토리아대학교”>
+</header>
 <body>
     <script type="text/javascript">
 

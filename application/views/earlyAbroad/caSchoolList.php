@@ -5,6 +5,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/product_detail.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<header>
+	<meta name="description" content="라임유학-캐나다 조기유학 학교 찾기">
+	<meta property="og:description" content="라임유학-캐나다 조기유학 학교 찾기">
+	<meta name=”keywords” content=”토론토교육청,토론토카톨릭교육청,캐나다공립학교,토론토공립학교,밴쿠버공립학교,캐나다런던공립학교,탬즈밸리교육청,놀스밴쿠버교육청,욕교육청,랭리교육청,코퀴틀람교육청,버나비교육청,밴쿠버공립교육청,캐나다공립교육청”>
+</header>
 <body>
     <script type="text/javascript">
 

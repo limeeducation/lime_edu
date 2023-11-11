@@ -6,6 +6,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/product_detail.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<header>
+	<meta name="description" content="라임유학-캐나다 어학연수">
+	<meta property="og:description" content="라임유학-캐나다 어학연수">
+	<meta name=”keywords” content=”캐나다어학원,밴쿠버어학원,캘거리어학원,토론토어학원,할리팩스어학원,오타와어학원,토론토어학연수,빅토리아어학원,캐나다어학연수,밴쿠버어학연수,캘거리어학연수,오타와어학연수,빅토리아어학연수,몬트리올어학연수,아일락어학원,아일락,ILAC,ILSC,ILSC어학원,퀘스트어학원,토론토소형어학원,밴쿠버소형어학원,캘거리소형어학원,CCEL,밴웨스트,Vanwest,SGIC,TLG,UMC,UMC어학원,탬우드,카플란캐나다,카플란토론토,카플란밴쿠버,ILAC토론토,ILSC밴쿠버,아일락토론토,아일락밴쿠버,ILAC밴쿠버,코넥트어학원,커넥트어학원,토론토커넥트,ESC,OHC토론토,캐나다명문대어학연수,캐나다명문대어학원,토론토대학교연수,토론토대학교어학연수,UBC어학연수,UBC연수,캐나다명문대연수,LAB밴쿠버,VGC밴쿠버,St.Giles어학원,코너스톤어학원,Bayswater어학원,베이스워터어학원,EF빅토리아,EF밴쿠버,EF토론토,LSI어학원,LSI밴쿠버,LSI토론토,EC어학원,EC몬트리올,EC밴쿠버,EC토론토,캘거리대학교어학연수,퀸즈대학교어학연수,빅토리아대학교어학연수,탬우드토론토,탬우드밴쿠버,UMC토론토,UMC몬트리올,ILAC토론토,ILAC밴쿠버,SSLC어학원,SSLC밴쿠버,SSLC토론토,SSLC빅토리아,오타와대학교연수,요크대학교연수”>
+</header>
 <body>
     <script type="text/javascript">
 

@@ -6,6 +6,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi41nisz2OpbuKdeFUA1824LYFLB93hso&callback=initMap"></script>
+<header>
+	<meta name="description" content="라임유학-필리핀 어학연수">
+	<meta property="og:description" content="라임유학-필리핀 어학연수">
+	<meta name=”keywords” content=”세부어학연수,바기오어학연수,필리핀어학연수,필리핀한달살기,바기오한달살기,세부한달살기,필리핀영어공부,세부영어공부,바기오영어공부,EV어학원,EV어학연수,EV,파인스,파인스어학원,파인스어학연수,CELLA,CELLA어학연수,CELLA어학원,CG,CG어학원,CG어학연수,CIA,CIA어학원,CIA어학연수,CPLIS어학원,CPILS,CPILS어학연수,IBREEZE,IBREEZE어학원,IBREEZE어학연수,SMEAG어학원,SMEAG,SMEAG어학연수,BECI어학원,BECI,BECI어학연수,WALES,WALES어학원,WALES어학연수”>
+</header>
 <script>
 	$(document).ready(function(){
 		var dist = '<?= $dist;?>';

@@ -5,6 +5,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/product_detail.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<header>
+	<meta name="description" content="라임유학-캐나다 국제 사립학교">
+	<meta property="og:description" content="라임유학-캐나다 국제 사립학교">
+	<meta name=”keywords” content=”캐나다국제사립학교,캐나다국제학교,토론토국제학교,밴쿠버국제학교,BICC,UIS,TIA,SGA,UMC하이스쿨,BICC국제학교,UIS국제학교,UMC국제학교,토론토BICC,캐나다BICC,토론토UIS,캐나다UIS,TIA국제학교,SGA국제학교,아폴로국제학교,웨스트필드국제학교,TAIE기숙사,로얄크라운컬리지,런던인터네셔널국제학교”>
+</header>
 <body>
     <script type="text/javascript">
 

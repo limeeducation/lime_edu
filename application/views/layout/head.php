@@ -9,10 +9,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>라임유학</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
 	<meta name="format-detection" content="telephone=no" />
-	<meta property="og:title" content="라임에듀">
-	<meta property="og:description" content="라임에듀">
+	<meta property="og:title" content="라임유학">
 	<meta property="og:type" content="website">
-	<meta name="description" content="라임에듀">
 	<meta property="og:image" content="https://mylimeedu.com/static/img/common/header_logo_2@2x.png">
 	<link rel="icon" href="/static/img/logo-favicon-96x96.png"/>
 	<link rel="apple-touch-icon" href="/static/img/logo-favicon-96x96.png"/>

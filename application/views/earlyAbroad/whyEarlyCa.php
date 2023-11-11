@@ -5,6 +5,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/product_detail.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<header>
+	<meta name="description" content="라임유학-캐나다 조기유학">
+	<meta property="og:description" content="라임유학-캐나다 조기유학">
+	<meta name=”keywords” content=”캐나다조기유학,토론토조기유학,밴쿠버조기유학,캐나다조기유학전문,캐나다조기유학원,밴쿠버조기유학원,토론토조기유학원,토론토조기유학전문,밴쿠버조기유학전문,캐나다고등학교,캐나다사립학교,캐나다고등학교유학,캐나다중학교,캐나다자녀무상교육,캐나다고등학생유학,캐나다조기유학비용,캐나다조기유학준비,밴쿠버자녀무상,토론토자녀무상,몬트리올자녀무상,런던자녀무상,킹스턴자녀무상”>
+</header>
 <body>
     <script type="text/javascript">
 		function go_back(){

@@ -6,6 +6,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/product_detail.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<header>
+	<meta name="description" content="라임유학-미국 어학연수">
+	<meta property="og:description" content="라임유학-미국 어학연수">
+	<meta name=”keywords” content=”뉴욕어학원,뉴욕어학연수,보스턴어학원,보스턴어학연수,뉴욕연수,보스턴연수,시카고어학원,시카고어학연수,시카고연수,시애틀어학원,시애틀어학연수,시애틀연수,샌프란시스코어학원,샌프란시스코어학연수,샌프란시스코연수,샌디에고어학원,샌디에고연수,샌디에고어학연수,카플란어학원,이에프어학원,미국어학연수,카플란LA,카플란보스턴,카플란뉴욕,카플란시카고,카플란버클리,카플란시애틀,EC어학원,EC뉴욕,EC샌프란시스코,EC보스턴,EC샌디에고,워싱턴대학교연수,컬럼비아대학교부설어학원,샌프란시스코주립대부설어학원,USC부설어학원,보스턴대학교부설어학원,킹스어학원,킹스뉴욕,킹스보스턴,킹스LA,EF뉴욕,EF보스턴,EF샌디에고,EF샌프란시스코,EFLA,EF시애틀,미국대학부설어학원,LSI보스턴,LSI뉴욕,LSI버클리,LSI샌디에고,GT시카고,UCSD대학부설”>
+</header>
 <body>
     <script type="text/javascript">
 

@@ -3,6 +3,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 //include_once($_SERVER['DOCUMENT_ROOT']."/inc/blog_list.php");
 ?>
 <link rel="stylesheet" type="text/css" href="/static/css/sub.css">
+<header>
+	<meta name="description" content="라임유학-미국 조기유학">
+	<meta property="og:description" content="라임유학-미국 조기유학">
+	<meta name=”keywords” content=”미국조기유학,미국고등학교유학,미국수학,미국대학입학,미국항공유학,미국조기유학준비,미국조기유학비용,미국중학생유학,미국공립교환,미국보딩스쿨,보스턴보딩스쿨,캣츠보스턴,미국관리형유학,위스콘신관리형유학,미국고등학교유학,메인주보딩스쿨,미국조기유학추천,미국조기유학준비,주니어보딩,뉴욕보딩스쿨,캘리포니아보딩스쿨,미국데이스쿨,미국하키유학,미국하키고등학교,미국탑보딩,미국조기,미국기숙사학교”>
+</header>
 <body>
     <script type="text/javascript">
 

@@ -5,6 +5,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/head.php');
 <link rel="stylesheet" type="text/css" href="/static/css/product_detail.css">
 <script src="/static/js/map.js"></script>
 <script src="/static/js/product_detail.js"></script>
+<header>
+	<meta name="description" content="라임유학-영국 조기유학">
+	<meta property="og:description" content="라임유학-영국 조기유학">
+	<meta name=”keywords” content=”영국조기유학,영국고등학교유학,영국조기유학,영국에이레벨,영국보딩스쿨,런던보딩스쿨,영국A레벨,영국GCSE,영국식스폼컬리지,카디프식스폼컬리지,애비컬리지,콩코드컬리지,영국MPW,옥스포드식스폼컬리지,도버브룩옥스포드,킹스에듀케이션,뉴튼에이레벨,보스워스컬리지,영국BCS,영국학제,영국A레벨학교,영국CATS컬리지,영국국제학교,영국IB”>
+</header>
 <body>
     <script type="text/javascript">
 		function showSchool(school){
