@@ -33,10 +33,10 @@
 							<p class="tel">대표번호 +1-647-427-2006</p>
 						</dd>
 						<dd>
-							<p class="addr">캐나다 토론토 센터</p>
-							<p>55 Eglinton Ave East, Suite 601, Toronto ON M4P 1G8 Canada</p>
-							<p class="addr">캐나다 옥빌센터 - 조기유학/동부 탑보딩 관리 업무(애플비, 리들리 등)</p>
-							<p>1054 John Laird Circle, Oakville ON L6H 3R5 Canada</p>
+							<p>캐나다 토론토 센터</p>
+							<p class="addr">55 Eglinton Ave East, Suite 601, Toronto ON M4P 1G8 Canada</p>
+							<p>캐나다 옥빌센터 - 조기유학/동부 탑보딩 관리 업무(애플비, 리들리 등)</p>
+							<p class="addr">1054 John Laird Circle, Oakville ON L6H 3R5 Canada</p>
 						</dd>
 					</dl>
 					<dl class="footer_data">
