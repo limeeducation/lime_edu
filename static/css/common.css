@@ -168,6 +168,7 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 .quick_list > li.home a::after{background-image:url(/static/img/common/quick_ico_home@2x.png);}
 .quick_list > li.kakao a::after{background-image:url(/static/img/common/quick_ico_kakao@2x.png);}
 .popup_open{background-image:url(/static/img/common/button_booking.png);background-size: cover;background-repeat: no-repeat;background-position: 50% 4px;}
+.kakao_chat{background-image:url(/static/img/common/button_kakao.png);background-size: cover;background-repeat: no-repeat;background-position: 50% 4px;}
 .popup_open:hover{transform:scale(1.1);}
 .kakao_chat:hover{transform:scale(1.1);}
 
@@ -211,6 +212,8 @@ body #wrap ::-webkit-scrollbar-thumb{background-color:#d8d8d8;border-radius:10px
 	.quick_list > li.phone a{background-image:url(/static/img/common/quick_ico_phone@2x.png);}
 	.quick_list > li.home a{background-image:url(/static/img/common/quick_ico_home@2x.png);}
 	.quick_list > li.kakao a{background-image:url(/static/img/common/quick_ico_kakao@2x.png);}
+	.quick_list > li.popup_li a{background-image:url(/static/img/common/button_booking_ico.png);}
+	.quick_list > li.kakao_li a{background-image:url(/static/img/common/button_kakao_ico.png);}
 	.quick_list > li a:after{display:none;}
 	.quick_list > li a:hover{background-color: #169B62;}
 }
