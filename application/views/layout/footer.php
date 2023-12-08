@@ -44,7 +44,6 @@
 						<dd>
 							<p>영국 런던센터</p>
 							<p class="addr">1 Partridge Mews, Chertsey, Surrey, KT16 9GB</p>
-							<p class="tel">+44-7796-575950</p>
 						</dd>
 						<dd>
 							<p>캐나다 밴쿠버센터</p>
@@ -53,7 +52,6 @@
 						<dd>
 							<p>뉴질랜드 오클랜드센터</p>
 							<p class="addr">18 Cayman place. Usworth Heights. North Shore, Auckland New Zealand </p>
-							<p class="tel">+6421308802</p>
 						</dd>
 					</dl>
 				</div>
