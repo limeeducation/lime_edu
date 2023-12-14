@@ -18,11 +18,11 @@
 							<p>인천 송도 센터</p>
 							<p class="addr">인천광역시 연수구 컨벤시아대로 165 포스코타워 26층</p>
 							<p>대전센터</p>
-							<p class="addr">대전시 서구 청사로 136 대전무역회관 18층</p>
+							<p class="addr">대전광역시 서구 청사로 136 대전무역회관 18층</p>
 							<p>대구센터</p>
-							<p class="addr">대구시 중구 중앙대로 385-1 3층</p>
+							<p class="addr">대구광역시 중구 중앙대로 385-1 3층</p>
 							<p>부산 서면센터</p>
-                            <p class="addr">부산시 진구 동천로 109 삼한골든게이트 빌딩 9층</p>
+                            <p class="addr">부산광역시 진구 동천로 109 삼한골든게이트 빌딩 9층</p>
 							<p>전남 센터</p>
                             <p class="addr">전라남도 순천시 삼산로 15-1, 3층</p>
 						</dd>
@@ -34,8 +34,8 @@
 						</dd>
 						<dd>
 							<p>캐나다 토론토 센터</p>
-							<p class="addr">55 Eglinton Ave East, Suite 601, Toronto ON M4P 1G8 Canada</p>
-							<p>캐나다 옥빌센터 - 조기유학/동부 탑보딩 관리 업무(애플비, 리들리 등)</p>
+							<p class="addr">Regional HQ 55 Eglinton Ave East, Suite 601, Toronto ON, M4P 1G8 Canada</p>
+							<p>캐나다 옥빌센터 - 미국 명문대 입시 조기유학/동부 탑보딩 관리센터</p>
 							<p class="addr">1054 John Laird Circle, Oakville ON L6H 3R5 Canada</p>
 						</dd>
 					</dl>
@@ -43,15 +43,15 @@
 						<dt>해외 협력지사</dt>
 						<dd>
 							<p>영국 런던센터</p>
-							<p class="addr">1 Partridge Mews, Chertsey, Surrey, KT16 9GB</p>
+							<p class="addr">1 Partridge Mews, Chertsey, Surrey KT16 9GB</p>
 						</dd>
 						<dd>
 							<p>캐나다 밴쿠버센터</p>
-							<p class="addr">789 W Pender St, Suite 1100, Vancouver, BC V6C 1H2</p>
+							<p class="addr">789 W Pender St, Suite 1100, Vancouver, BC V6C 1H2 Canada</p>
 						</dd>
 						<dd>
 							<p>뉴질랜드 오클랜드센터</p>
-							<p class="addr">18 Cayman place. Usworth Heights. North Shore, Auckland New Zealand </p>
+							<p class="addr">18 Cayman place, Unsworth Heights, Auckland 0632 New Zealand</p>
 						</dd>
 					</dl>
 				</div>
