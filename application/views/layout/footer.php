@@ -34,24 +34,30 @@
 						</dd>
 						<dd>
 							<p>캐나다 토론토 센터</p>
-							<p class="addr">Regional HQ 55 Eglinton Ave East, Suite 601, Toronto ON, M4P 1G8 Canada</p>
+							<p>Regional HQ</p>
+							<p class="addr">55 Eglinton Ave East, Suite 601,</p>
+							<p>Toronto ON, M4P 1G8 Canada</p>
 							<p>캐나다 옥빌센터 - 미국 명문대 입시 조기유학/동부 탑보딩 관리센터</p>
-							<p class="addr">1054 John Laird Circle, Oakville ON L6H 3R5 Canada</p>
+							<p class="addr">1054 John Laird Circle,</p>
+							<p>Oakville ON L6H 3R5 Canada</p>
 						</dd>
 					</dl>
 					<dl class="footer_data">
 						<dt>해외 협력지사</dt>
 						<dd>
-							<p>영국 런던센터</p>
-							<p class="addr">1 Partridge Mews, Chertsey, Surrey KT16 9GB</p>
+							<p>캐나다 밴쿠버센터</p>
+							<p class="addr">789 W Pender St, Suite 1100,</p>
+							<p>Vancouver, BC V6C 1H2 Canada</p>
 						</dd>
 						<dd>
-							<p>캐나다 밴쿠버센터</p>
-							<p class="addr">789 W Pender St, Suite 1100, Vancouver, BC V6C 1H2 Canada</p>
+							<p>영국 런던센터</p>
+							<p class="addr">1 Partridge Mews, Chertsey,</p>
+							<p>Surrey KT16 9GB</p>
 						</dd>
 						<dd>
 							<p>뉴질랜드 오클랜드센터</p>
-							<p class="addr">18 Cayman place, Unsworth Heights, Auckland 0632 New Zealand</p>
+							<p class="addr">18 Cayman place, Unsworth Heights,</p>
+							<p>Auckland 0632 New Zealand</p>
 						</dd>
 					</dl>
 				</div>
