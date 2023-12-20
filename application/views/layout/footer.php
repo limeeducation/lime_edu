@@ -33,12 +33,12 @@
 							<p class="tel">대표번호 +1-647-427-2006</p>
 						</dd>
 						<dd>
-							<p></p>
+							<p> </p>
 							<p>캐나다 토론토 센터</p>
 							<p>Regional HQ</p>
 							<p class="addr">55 Eglinton Ave East, Suite 601,</p>
 							<p>Toronto ON, M4P 1G8 Canada</p>
-							<p></p>
+							<p> </p>
 							<p>캐나다 옥빌센터</p>
 							<p>- 미국 명문대 입시 조기유학/동부 탑보딩 관리센터</p>
 							<p class="addr">1054 John Laird Circle,</p>
@@ -53,13 +53,13 @@
 							<p>Vancouver, BC V6C 1H2 Canada</p>
 						</dd>
 						<dd>
-							<p></p>
+							<p> </p>
 							<p>영국 런던센터</p>
 							<p class="addr">1 Partridge Mews, Chertsey,</p>
 							<p>Surrey KT16 9GB</p>
 						</dd>
 						<dd>
-							<p></p>
+							<p> </p>
 							<p>뉴질랜드 오클랜드센터</p>
 							<p class="addr">18 Cayman place, Unsworth Heights,</p>
 							<p>Auckland 0632 New Zealand</p>
