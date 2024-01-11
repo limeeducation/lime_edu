@@ -397,7 +397,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 							</div>
 						</div>
 					</div>
-					<p class="txt">라임에듀의 1:1 맞춤 관리로<br>든든하게 시작하는 유학 준비</p>
+					<p class="txt">라임에듀의 1:1 맞춤 관리로 든든하게<br>시작하는 유학 준비</p>
 				</div>
 			</div>
 		</section>

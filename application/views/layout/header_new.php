@@ -12,8 +12,8 @@
 				<div class="srch_bar">
 					<div class="login_link">
 						<ul>
-							<li><a href="#">로그인</a></li>
-							<li><a href="#">회원가입</a></li>
+							<!-- <li><a href="#">로그인</a></li> -->
+							<!-- <li><a href="#">회원가입</a></li>  -->
 						</ul>
 					</div>
 					<div class="search_wrap">

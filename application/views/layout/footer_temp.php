@@ -79,11 +79,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 mx-auto">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">본점</h6>
+            <h6 class="text-uppercase fw-bold">본사</h6>
             <p><i class="fas fa-phone mr-3"></i> 02 2135 7699</p>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
             <h6 class="text-uppercase fw-bold">서울 강남센터</h6>
-            <p><i class="fas fa-home mr-3"></i> 서울특별시 강남구 강남대로 310 유니온센터 1204호</p>
+            <p><i class="fas fa-home mr-3"></i> 서울시 서초구 사임당로 174 강남미래타워 602호</p>
           </div>
           <!-- Grid column -->
 
@@ -95,22 +95,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
             <h6 class="text-uppercase fw-bold">인천 송도 센터</h6>
             <p><i class="fas fa-home mr-3"></i> 인천광역시 연수구 컨벤시아대로 165 포스코타워 26층</p>
-			<h6 class="text-uppercase fw-bold">대구 동성로 센터</h6>
+			<h6 class="text-uppercase fw-bold">대전센터</h6>
+			<p><i class="fas fa-home mr-3"></i> 대전광역시 서구 청사로 136 대전무역회관 18층</p>
+			<h6 class="text-uppercase fw-bold">대구센터</h6>
 			<p><i class="fas fa-home mr-3"></i> 대구광역시 중구 중앙대로 385-1 3층</p>
-			<h6 class="text-uppercase fw-bold">부산 서면 센터</h6>
+			<h6 class="text-uppercase fw-bold">부산 서면센터</h6>
 			<p><i class="fas fa-home mr-3"></i> 부산광역시 진구 동천로 109 삼한골든게이트 빌딩 9층</p>
+			<h6 class="text-uppercase fw-bold">전남 센터</h6>
+			<p><i class="fas fa-home mr-3"></i> 전라남도 순천시 삼산로 15-1, 3층</p>
           </div>
           <!-- Grid column -->
           <!-- Grid column -->
 		  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 		    <!-- Links -->
 		    <h6 class="text-uppercase fw-bold">해외 직영센터</h6>
-		    <p><i class="fas fa-phone mr-3"></i> 대표번호 +1 647 427 2006</p>
+		    <p><i class="fas fa-phone mr-3"></i> 대표번호 +1-647-427-2006</p>
 		    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
 		    <h6 class="text-uppercase fw-bold">캐나다 토론토 센터</h6>
-		    <p><i class="fas fa-home mr-3"></i> 55 Eglinton Ave East, Suite 601, Toronto ON M4P 1G8 Canada</p>
-			<h6 class="text-uppercase fw-bold">캐나다 벤쿠버 센터</h6>
-			<p><i class="fas fa-home mr-3"></i> 595 Burrard st., Vancouver BC V7X 1J1 Canada</p>
+		    <p style="margin-bottom: 0px; padding-left: 1.4rem;"> Regional HQ</p>
+		    <p style="margin-bottom: 0px;"><i class="fas fa-home mr-3"></i> 55 Eglinton Ave East, Suite 601,</p>
+		    <p style=" padding-left: 1.4rem;"> Toronto ON, M4P 1G8 Canada</p>
+			<h6 class="text-uppercase fw-bold">캐나다 옥빌센터</h6>
+		    <p style="margin-bottom: 0px;"> - 미국 명문대 입시 조기유학/동부 탑보딩 관리센터</p>
+		    <p style="margin-bottom: 0px;"><i class="fas fa-home mr-3"></i> 1054 John Laird Circle,</p>
+		    <p style=" padding-left: 1.4rem;"> Oakville ON L6H 3R5 Canada</p>
+		  </div>
+		  <!-- Grid column -->
+          <!-- Grid column -->
+		  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+		    <!-- Links -->
+		    <h6 class="text-uppercase fw-bold" style="margin-bottom : 1rem;">해외 협력지사</h6>
+		    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px" />
+		    <h6 class="text-uppercase fw-bold">캐나다 밴쿠버센터</h6>
+		    <p style="margin-bottom: 0px;"><i class="fas fa-home mr-3"></i> 789 W Pender St, Suite 1100,</p>
+		    <p style=" padding-left: 1.4rem;"> Vancouver, BC V6C 1H2 Canada</p>
+			<h6 class="text-uppercase fw-bold">영국 런던센터</h6>
+		    <p style="margin-bottom: 0px;"><i class="fas fa-home mr-3"></i> 1 Partridge Mews, Chertsey,</p>
+		    <p style=" padding-left: 1.4rem;"> Surrey KT16 9GB</p>
+			<h6 class="text-uppercase fw-bold">뉴질랜드 오클랜드센터</h6>
+		    <p style="margin-bottom: 0px;"><i class="fas fa-home mr-3"></i> 18 Cayman place, Unsworth Heights,</p>
+		    <p style=" padding-left: 1.4rem;"> Auckland 0632 New Zealand</p>
 		  </div>
 		  <!-- Grid column -->
 
