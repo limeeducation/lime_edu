@@ -560,7 +560,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 		<!--// 가족연수/캠프 -->
 
 		<!-- 알리는 글 -->
-		<section class="sec_07">
+		<section class="sec_07" style="display:none;">
 			<div class="inner">
 				<h2 class="sec_tit">알리는 글</h2>
 				<p class="sec_txt">라임에듀에서 전달드리는 정보와 칼럼을 보실수 있습니다.</p>
