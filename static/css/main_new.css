@@ -475,7 +475,7 @@
 .sec_09 .txt_wrap {width:100%;}
 .sec_09 .textarea_wrap {padding-right: 0;}
 .sec_09 .cs_box .start_date {display: flex; margin: 0;}
-.cs_box .start_date .start_wrap .wrap_main {width:100%; margin-left: 3rem;}
+.cs_box .start_date .start_wrap .wrap_main {}
 .sec_09 .cs_box .start_date .start_y {width:68%;}
 .sec_09 .cs_box .start_date .start_m {width:27%;}
 .sec_09 .chk_wrap {margin-top:37px;}

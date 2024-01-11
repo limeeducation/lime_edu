@@ -918,7 +918,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 						<div class="cs_inner">
 							<div class="start_date">
 								<p class="form_tit">희망시작시기</p>
-								<div class="start_wrap wrap_main">
+								<div class="start_wrap" style="width:100%; margin-left:3rem;">
 									<div class="select_menu start_y">
 										<a href="#n" class="select_btn">2023</a>
 										<ul class="select_list">
