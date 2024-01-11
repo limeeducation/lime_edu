@@ -359,7 +359,7 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 .chk_wrap label p {margin-left:23px; user-select: none;}
 
 .cs_btn {margin-top:30px; display:flex; justify-content:center;}
-.cs_btn .btn {width:100%; max-width: 360px; padding:19px 0; background-color:#CDF564; border-radius: 10px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); font-size:24px; font-weight:700; text-align:center;}
+.cs_btn .btn {width:100%; max-width: 360px; padding:19px 0; background-color:#CDF564; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); font-size:24px; font-weight:700; text-align:center;}
 
 /* 스크롤 커스텀 */
 .mCSB_scrollTools {position:relative; margin:16px 0; width:31px !important; }
