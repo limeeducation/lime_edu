@@ -951,12 +951,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 										</ul>
 									</div>
 								</div>
-								<div class="chk_wrap">
-									<label for="chk_01">
-										<input type="checkbox" id="chk_01">
-										<p>개인정보 수집 및 이용 동의[보기]</p>
-									</label>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -966,7 +960,16 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 								<p class="form_tit">문의내용</p>
 								<div class="textarea_wrap"><textarea cols="30" rows="10" placeholder="문의 내용을 적어주세요&#13;&#10;*자세히 입력할수록 정확한 상담이 가능합니다"></textarea></div>
 							</div>
-
+						</div>
+					</div>
+					<div class="group">
+						<div class="cs_inner">
+							<div class="chk_wrap">
+								<label for="chk_01">
+									<input type="checkbox" id="chk_01">
+									<p>개인정보 수집 및 이용 동의[보기]</p>
+								</label>
+							</div>
 						</div>
 					</div>
 					<div class="cs_btn">
