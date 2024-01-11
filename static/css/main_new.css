@@ -455,8 +455,7 @@
 .sec_09 .cs_box .cs_tab_wrap .form_tit {margin-right:72px;}
 .sec_09 .cs_box .cs_tab_wrap .tab_li {padding-left:0;}
 .sec_09 .cs_box .cs_tab_wrap .tab_li a {width:99px; padding:6px 0; color:#fff;}
-.sec_09 .cs_box .cs_tab_wrap .tab_li a .sub1{width:60px;}
-.sec_09 .cs_box .cs_tab_wrap .tab_li a .sub1{width:60px;}
+.sec_09 .cs_box .cs_tab_wrap .tab_li .sub1{width:60px;}
 
 /* 상담 희망일자 / 시간 */
 .sec_09 .cs_box .select_wrap {margin-right:25px;}
