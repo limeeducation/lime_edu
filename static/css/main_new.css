@@ -409,7 +409,7 @@
 .loc .group:nth-child(4) .map {background-image:url(../img/img_new/map_04.png);}
 .loc .group:nth-child(5) .map {background-image:url(../img/img_new/map_05.png);}
 .loc .info_wrap {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); max-width: 1030px; padding:0 18px; width:100%; display:flex; align-items: flex-end ; justify-content:space-between; box-sizing:border-box;}
-.loc .info_wrap .txt_box {max-width: 540px; width:100%; padding:20px 0; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); border-top:20px solid #CDF564; border-bottom:20px solid #CDF564; background-color:#fff; box-sizing: border-box;}
+.loc .info_wrap .txt_box {max-width: 540px; width:100%; padding:20px 0; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); border-top:20px solid #009225; border-bottom:20px solid #009225; background-color:#fff; box-sizing: border-box;}
 .loc .info_wrap .txt_box .tit {font-size:24px; margin-bottom: 30px; font-weight:700; text-align:center;}
 .loc .info_wrap .txt_box .tit::after {display:block; content: ''; width:126px; height:8px; background-color:#009225; position:absolute; left:21%; bottom:76%;}
 .loc .info_wrap .txt_box dl {display:flex;}
