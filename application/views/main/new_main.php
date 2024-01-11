@@ -849,16 +849,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 								</div>
 							</div>
 							<div class="con_wrap_02">
-								<div class="cs_tab_wrap tab_country">
-									<p class="form_tit">상담국가</p>
-									<ul class="tab_li">
-										<li><a href="#" class="on">미국</a></li>
-										<li><a href="#">영국</a></li>
-										<li><a href="#">캐나다</a></li>
-										<li><a href="#">호주</a></li>
-										<li><a href="#">필리핀</a></li>
-									</ul>
-								</div>
 								<div class="rdo_wrap">
 									<p class="form_tit">유학 과정</p>
 									<div class="rdo_li">
@@ -910,6 +900,18 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="group">
+						<div class="cs_tab_wrap">
+							<p class="form_tit">상담국가</p>
+							<ul class="tab_li">
+								<li><a href="#" class="on sub1">미국</a></li>
+								<li><a href="#" class="sub1">영국</a></li>
+								<li><a href="#" class="sub1">캐나다</a></li>
+								<li><a href="#" class="sub1">호주</a></li>
+								<li><a href="#" class="sub1">필리핀</a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="group">
