@@ -915,46 +915,48 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 						</div>
 					</div>
 					<div class="group">
-						<div class="start_date">
-							<p class="form_tit">희망시작시기</p>
-							<div class="start_wrap">
-								<div class="select_menu start_y">
-									<a href="#n" class="select_btn">2023</a>
-									<ul class="select_list">
-										<li class="on"><a href="#n">2023</a></li>
-										<li><a href="#n">2022</a></li>
-										<li><a href="#n">2021</a></li>
-										<li><a href="#n">2020</a></li>
-										<li><a href="#n">2019</a></li>
-										<li><a href="#n">2018</a></li>
-										<li><a href="#n">2017</a></li>
-										<li><a href="#n">2016</a></li>
-										<li><a href="#n">2015</a></li>
-									</ul>
+						<div class="cs_inner">
+							<div class="start_date">
+								<p class="form_tit">희망시작시기</p>
+								<div class="start_wrap wrap_main">
+									<div class="select_menu start_y">
+										<a href="#n" class="select_btn">2023</a>
+										<ul class="select_list">
+											<li class="on"><a href="#n">2023</a></li>
+											<li><a href="#n">2022</a></li>
+											<li><a href="#n">2021</a></li>
+											<li><a href="#n">2020</a></li>
+											<li><a href="#n">2019</a></li>
+											<li><a href="#n">2018</a></li>
+											<li><a href="#n">2017</a></li>
+											<li><a href="#n">2016</a></li>
+											<li><a href="#n">2015</a></li>
+										</ul>
+									</div>
+									<div class="select_menu start_m">
+										<a href="#n" class="select_btn">12</a>
+										<ul class="select_list">
+											<li class="on"><a href="#n">12</a></li>
+											<li><a href="#n">11</a></li>
+											<li><a href="#n">10</a></li>
+											<li><a href="#n">09</a></li>
+											<li><a href="#n">08</a></li>
+											<li><a href="#n">07</a></li>
+											<li><a href="#n">06</a></li>
+											<li><a href="#n">05</a></li>
+											<li><a href="#n">04</a></li>
+											<li><a href="#n">03</a></li>
+											<li><a href="#n">02</a></li>
+											<li><a href="#n">01</a></li>
+										</ul>
+									</div>
 								</div>
-								<div class="select_menu start_m">
-									<a href="#n" class="select_btn">12</a>
-									<ul class="select_list">
-										<li class="on"><a href="#n">12</a></li>
-										<li><a href="#n">11</a></li>
-										<li><a href="#n">10</a></li>
-										<li><a href="#n">09</a></li>
-										<li><a href="#n">08</a></li>
-										<li><a href="#n">07</a></li>
-										<li><a href="#n">06</a></li>
-										<li><a href="#n">05</a></li>
-										<li><a href="#n">04</a></li>
-										<li><a href="#n">03</a></li>
-										<li><a href="#n">02</a></li>
-										<li><a href="#n">01</a></li>
-									</ul>
+								<div class="chk_wrap">
+									<label for="chk_01">
+										<input type="checkbox" id="chk_01">
+										<p>개인정보 수집 및 이용 동의[보기]</p>
+									</label>
 								</div>
-							</div>
-							<div class="chk_wrap">
-								<label for="chk_01">
-									<input type="checkbox" id="chk_01">
-									<p>개인정보 수집 및 이용 동의[보기]</p>
-								</label>
 							</div>
 						</div>
 					</div>
