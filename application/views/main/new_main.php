@@ -30,7 +30,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 									</ul>
 									<p>영국 2025년 목표<br>약대진학반 개설</p>
 								</div>
-								<a href="#" class="btn_outlink">자세히 알아보기→</a>
+								<a href="#" class="btn_outlink">자세히 보기</a>
 							</div>
 						</div>
 					</div>
@@ -48,7 +48,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 									</ul>
 									<p>영국 2025년 목표<br>약대진학반 개설</p>
 								</div>
-								<a href="#" class="btn_outlink">자세히 알아보기→</a>
+								<a href="#" class="btn_outlink">자세히 보기</a>
 							</div>
 						</div>
 					</div>
@@ -66,7 +66,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 									</ul>
 									<p>자녀 동반 유학<br>홈스쿨링 방법</p>
 								</div>
-								<a href="#" class="btn_outlink">자세히 알아보기→</a>
+								<a href="#" class="btn_outlink">자세히 보기</a>
 							</div>
 						</div>
 					</div>
@@ -398,6 +398,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 						</div>
 					</div>
 					<p class="txt">라임에듀의 1:1 맞춤 관리로 든든하게<br>시작하는 유학 준비</p>
+					<p class="txt"><a href="#none">자세히보기</a></p>
 				</div>
 			</div>
 		</section>

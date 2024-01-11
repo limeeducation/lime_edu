@@ -6,7 +6,7 @@
 .btn_outlink {width: 277px; height: 50px; box-sizing: border-box; font-size: 20px; font-weight: 700; background-color: #fff; transition: .3s; display: flex; align-items: center; justify-content: center;}
 .btn_outlink:hover {box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);}
 .btn_outlink:active {background-color: #009225; color: #fff;}
-.sec_tit {font-weight: 700; font-size: 6.4rem; text-align: center; letter-spacing: -1.28px;}
+.sec_tit {font-weight: 700; font-size: 45px; text-align: center; letter-spacing: -1.28px;}
 .sec_txt {margin-top: 15px; font-weight: 500; font-size: 2rem; letter-spacing: -0.04px; text-align: center;}
 
 @media only screen and (max-width:1024px) {
@@ -62,7 +62,7 @@
 .tab_wrap li {flex:1;}
 .tab_wrap li ~ li {margin-left: 30px;}
 .tab_wrap li a {display: flex; align-items: center; justify-content: center; line-height:1.3em; height: 96px; box-sizing: border-box; font-size: 24px; font-weight: 700; position: relative; text-align:center;}
-.tab_wrap li a::after {content: ''; width: 0; height: 10px; background-color: #B9DD5A; position: absolute; left: 0; bottom: 0; opacity:0; visibility:hidden; transition: .3s;}
+.tab_wrap li a::after {content: ''; width: 0; height: 10px; background-color: #009225; position: absolute; left: 0; bottom: 0; opacity:0; visibility:hidden; transition: .3s;}
 .tab_wrap li a.on::after {opacity:1; visibility:visible; width:100%;}
 
 
@@ -70,7 +70,7 @@
 .cont_wrap .group {display: none;}
 .cont_wrap .group.on {display: block;}
 .intro_01 {background:url(../img/img_new/bg_intro.png) no-repeat center; background-size: cover; padding-top: 160px; padding-bottom: 95px;}
-.intro_01 .inner {max-width: 1030px;}
+.intro_01 .inner {max-width: 844px;}
 .intro_01 .tit_01 {font-size: 6.4rem; color: #fff; font-weight: 700; text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); text-align: center;}
 .intro_01 .tit_02 {font-size:4.8rem; color: #fff; font-weight: 700; letter-spacing: -1.28px; text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); text-align: center;}
 .intro_01 .txt_01 {margin-top: 28px; color: #fff; letter-spacing: -0.27px; text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);}
@@ -177,10 +177,10 @@
 
 /* ============================== [ 어학연수 ] ========================================================================================== */
 .sec_03 {padding: 188px 0 80px;}
-.sec_03 .inner {max-width:1520px;}
+.sec_03 .inner {max-width:844px;}
 .sec_03 .lang_tr {margin-top: 60px; display: flex;}
 .sec_03 .lang_tr .img {display: block; width: 630px; height: 610px;}
-.sec_03 .lang_tr .txt_wrap {margin-left: 125px; padding-top: 19px;}
+.sec_03 .lang_tr .txt_wrap {margin-left: 15px;}
 .sec_03 .lang_tr .tit {font-size: 4.2rem; font-weight: 700; margin-bottom: 26px; line-height: 1.4em;}
 .sec_03 .lang_tr .txt {font-size: 2.0rem; font-weight: 500; letter-spacing: -0.4px;}
 .sec_03 .lang_tr .txt ~ .txt {margin-top: 35px;}
@@ -220,7 +220,7 @@
 /* ============================== [ 조기유학/ 대학유학 ] ========================================================================================== */
 .sec_04 {background-color: #FBFFFD; padding-top:104px; padding-bottom: 196px;}
 .sec_04 .abroad {margin-top: 97px; padding: 160px 0 80px; background:url(../img/img_new/bg_abroad.png) no-repeat center; background-size: cover; box-sizing:border-box;}
-.abroad .country_li .group {width: 580px; padding: 20px 40px; background-color: rgba(255, 255, 255, .85); border-radius: 10px 0 10px 0; box-sizing:border-box;}
+.abroad .country_li .group {width: 580px; padding: 20px 40px; background-color: rgba(255, 255, 255, .85); box-sizing:border-box;}
 .abroad .country_li .group ~ .group {margin-top:20px;}
 .abroad .country_li .tit {display: inline-block; font-size: 24px; font-weight: 700; padding-right: 60px; background-position: right center; background-repeat: no-repeat;}
 .abroad .country_li .canada .tit {background-image: url(../img/img_new/flag_canada.png);}
@@ -230,7 +230,8 @@
 .abroad .country_li .tag span {display: inline-block; font-size: 2rem; line-height: 1.5em; letter-spacing: -0.4px; font-weight: 500;}
 .abroad .country_li .tag span ~ span {margin-left: 13px; padding-left: 13px; position: relative;}
 .abroad .country_li .tag span ~ span::after {display: block; content: ''; width: 1px; height: 17px; background-color: #000; position: absolute; left: 0; top:7px;}
-.abroad .txt {margin-top: -17px; font-size: 4.2rem; font-weight: 700; text-shadow: 0px 0px 20px #51685A; text-align: right; color: #fff;}
+.abroad .txt {margin-top: 5rem; font-size: 4.2rem; font-weight: 700; text-shadow: 0px 0px 20px #51685A; text-align: right; color: #fff;}
+.abroad .txt a{margin-top: 5rem; font-size: 4.2rem; font-weight: 700; text-shadow: 0px 0px 20px #51685A; text-align: right; color: #006323;}
 
 @media only screen and (max-width:844px) {
 	.abroad .country_li .group {width:523px;}
