@@ -182,7 +182,7 @@
 .sec_03 .lang_tr .img {display: block; width: 630px; height: 610px;}
 .sec_03 .lang_tr .txt_wrap {margin-left: 15px;}
 .sec_03 .lang_tr .tit {font-size: 4.2rem; font-weight: 700; margin-bottom: 26px; line-height: 1.4em;}
-.sec_03 .lang_tr .txt {font-size: 2.0rem; font-weight: 500; letter-spacing: -0.4px;}
+.sec_03 .lang_tr .txt {font-size: 18px; font-weight: 500; letter-spacing: -0.4px;}
 .sec_03 .lang_tr .txt ~ .txt {margin-top: 35px;}
 .sec_03 .dt_btn {margin-top: 60px; font-size: 2.4rem; font-weight: 700; display: block; color: #009225; text-align: right;}
 .sec_03 .more_wrap {margin-top:45px;}
