@@ -349,7 +349,7 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 
 /* 문의내용 */
 .textarea_wrap {margin-top:15px; padding-right: 10px;}
-.textarea_wrap textarea {text-align:center; height:100px; width:100%; border:1px solid #009225; background-color:#FBFFFD; border-radius: 10px; padding:27px 15px; box-sizing:border-box; resize: none; outline: none;}
+.textarea_wrap textarea {text-align:center; height:100px; width:100%; border:1px solid #009225; background-color:#FBFFFD; padding:27px 15px; box-sizing:border-box; resize: none; outline: none;}
 
 /* 개인정보 체크박스 */
 .chk_wrap {margin-top:30px;}

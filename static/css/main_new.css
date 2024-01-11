@@ -472,7 +472,7 @@
 
 
 /* 문의내용 */
-.sec_09 .txt_wrap {width:70%;}
+.sec_09 .txt_wrap {width:100%;}
 .sec_09 .textarea_wrap {padding-right: 0;}
 .sec_09 .cs_box .start_date {display: flex; margin: 0;}
 .cs_box .start_date .start_wrap .wrap_main {width:100%; margin-left: 3rem;}
