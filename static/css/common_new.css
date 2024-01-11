@@ -104,8 +104,8 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 .depth_wrap::after {display:block; content: ''; width:100%; height:1px; background-color:#CFCFCF; position:absolute; left:0; top:66px;}
 .depth_wrap .inner {display:flex;}
 .depth_wrap .menu_tit {padding-top:66px; box-sizing:border-box;}
-.depth_wrap .menu_tit .tit_wrap {width:200px; margin-left:auto; height:100%; display:flex; align-items:center; justify-content:center;}
-.depth_wrap .menu_tit h2 {font-size:4.2rem; font-weight:700; text-align:center; color:#009225;}
+.depth_wrap .menu_tit .tit_wrap {width:200px; margin-left:auto; height:100%; display:flex; align-items:center; justify-content:center; background-color: #43D32B;}
+.depth_wrap .menu_tit h2 {font-size:3rem; font-weight:700; text-align:center; color:#ffffff;}
 .sub_menu {display:flex; position:relative;}
 .sub_menu .item {width:204px; min-height: 275px;}
 .sub_menu h3 {font-size:24px; padding:16px 0; font-weight:700; text-align:center; height:66px; box-sizing:border-box;}
