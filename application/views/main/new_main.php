@@ -851,52 +851,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 							<div class="start_date">
 								<div class="rdo_wrap">
 									<p class="form_tit">유학 과정</p>
-									<div class="rdo_li">
-										<label for="rdo_01">
-											<input type="radio" id="rdo_01" name="rdo">
-											<i></i>
-											<p>어학연수</p>
-										</label>
-										<label for="rdo_02">
-											<input type="radio" id="rdo_02" name="rdo">
-											<i></i>
-											<p>전문과정</p>
-										</label>
-										<label for="rdo_03">
-											<input type="radio" id="rdo_03" name="rdo">
-											<i></i>
-											<p>중고생 교환학생</p>
-										</label>
-										<label for="rdo_04">
-											<input type="radio" id="rdo_04" name="rdo">
-											<i></i>
-											<p>조기유학</p>
-										</label>
-										<label for="rdo_05">
-											<input type="radio" id="rdo_05" name="rdo">
-											<i></i>
-											<p>영어캠프</p>
-										</label>
-										<label for="rdo_06">
-											<input type="radio" id="rdo_06" name="rdo">
-											<i></i>
-											<p>컬리지</p>
-										</label>
-										<label for="rdo_07">
-											<input type="radio" id="rdo_07" name="rdo">
-											<i></i>
-											<p>박사</p>
-										</label>
-										<label for="rdo_08">
-											<input type="radio" id="rdo_08" name="rdo">
-											<i></i>
-											<p>학사</p>
-										</label>
-										<label for="rdo_09">
-											<input type="radio" id="rdo_09" name="rdo">
-											<i></i>
-											<p>석사</p>
-										</label>
+									<div class="start_wrap" style="width:100%; margin-left:3rem;">
+										<div class="select_menu start_y">
+											<a href="#n" class="select_btn">어학연수</a>
+											<ul class="select_list">
+												<li class="on"><a href="#n">어학연수</a></li>
+												<li><a href="#n">전문과정</a></li>
+												<li><a href="#n">중고생 교환학생</a></li>
+												<li><a href="#n">조기유학</a></li>
+												<li><a href="#n">영어캠프</a></li>
+												<li><a href="#n">컬리지</a></li>
+												<li><a href="#n">박사</a></li>
+												<li><a href="#n">학사</a></li>
+												<li><a href="#n">석사</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
