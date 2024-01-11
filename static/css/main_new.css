@@ -230,8 +230,8 @@
 .abroad .country_li .tag span {display: inline-block; font-size: 2rem; line-height: 1.5em; letter-spacing: -0.4px; font-weight: 500;}
 .abroad .country_li .tag span ~ span {margin-left: 13px; padding-left: 13px; position: relative;}
 .abroad .country_li .tag span ~ span::after {display: block; content: ''; width: 1px; height: 17px; background-color: #000; position: absolute; left: 0; top:7px;}
-.abroad .txt {margin-top: 5rem; font-size: 4.2rem; font-weight: 700; text-shadow: 0px 0px 20px #51685A; text-align: right; color: #fff;}
-.abroad .txt a{margin-top: 5rem; font-size: 4.2rem; font-weight: 700; text-shadow: 0px 0px 20px #51685A; text-align: right; color: #006323;}
+.abroad .txt {margin-top: 5rem; font-size: 24px; font-weight: 700; text-shadow: 0px 0px 20px #51685A; text-align: right; color: #fff;}
+.abroad .txt a{margin-top: 5rem; font-size: 24px; font-weight: 700; text-shadow: 0px 0px 20px #51685A; text-align: right; color: #006323;}
 
 @media only screen and (max-width:844px) {
 	.abroad .country_li .group {width:523px;}
@@ -260,7 +260,7 @@
 .edu_txt {margin-top: 60px;}
 .edu_txt .tit {font-size: 4.2rem;font-weight: 700; margin-bottom: 30px;}
 .edu_txt .txt {font-size: 2.0rem; letter-spacing: -0.4px; font-weight: 500;}
-.edu_txt .edu_link {margin-top: 20px; color: #009225; font-size: 2.4rem; font-weight: 700; display: block;}
+.edu_txt .edu_link {margin-top: 20px; color: #006323; font-size: 2.4rem; font-weight: 700; display: block;}
 .edu_txt .slide_tit {margin-top: 60px; font-size: 4.2rem; font-weight: 700;}
 .edu_slide {margin-top: 45px; padding-bottom: 30px;}
 .edu_slide .item {border-radius: 10px; box-shadow: 0px 11px 17px rgba(41, 94, 49, 0.25);}
@@ -286,17 +286,17 @@
 /* ============================== [ 가족연수/캠프 ] ========================================================================================== */
 			   .sec_06 {padding:100px 0; background-color:#FBFFFD;}
 .sec_06 .sec_tit {margin-bottom:60px;}
-.sec_06 .inner {max-width: 1270px;}
+.sec_06 .inner {max-width: 844px;}
 .camp_slide {margin-top:66px;}
 .camp_slide .item {padding:4px 0;}
 .camp_slide .cotn {display:flex; height:520px; width:100%; box-sizing:border-box; padding:0 4px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color:#fff;}
-.camp_slide .img {width:60%; position:relative;}
+.camp_slide .img {width:50%; position:relative;}
 .camp_slide .img img {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); height:100%;}
 .camp_slide .txt_wrap {flex:1; box-sizing:border-box; padding:75px 10px 0 30px; position:relative;}
 .camp_slide .txt_wrap .tit {font-size:24px; font-weight:700; padding-bottom:29px; position:relative;}
 .camp_slide .txt_wrap .tit::after {display:block; content: ''; width:97px; height:8px; background-color:#009225; position:absolute; left:0; bottom:0;}
 .camp_slide .txt_wrap .txt {margin-top:30px; font-size:2rem; font-weight:500; letter-spacing: -0.4px;}
-.camp_slide .txt_wrap a {position:absolute; left:30px; bottom:110px; color:#009225; font-size:2.4rem; font-weight:700;}
+.camp_slide .txt_wrap a {position:absolute; left:50%; bottom:110px; color:#009225; font-size:20px; font-weight:700;}
 
 .camp_page {height:123px; width:100%; position:relative;}
 .camp_page .swiper-pagination {z-index:1;}
@@ -346,7 +346,7 @@
 	.camp_slide .txt_wrap {padding:30px 20px;}
 	.camp_slide .txt_wrap .tit {font-size:2rem; padding-bottom:10px;}
 	.camp_slide .txt_wrap .tit::after {width:60px; height:4px;}
-	.camp_slide .txt_wrap .txt {margin-top:15px; font-size:1.6rem;}
+	.camp_slide .txt_wrap .txt {margin-top:15px; font-size:18px;}
 	.camp_slide .txt_wrap a {position:relative; left:0;bottom:0; margin-top:20px; display:block; font-size:1.8rem;}
 
 	.camp_page {height:108px;}
@@ -382,7 +382,7 @@
 .noti_wrap li span {font-size:14px; letter-spacing: -0.27px; display:block; width:80px; text-align:right;}
 .noti_wrap .btn_outlink {width:379px; margin:28px auto 0;}
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:844px) {
 	.sec_07 {padding: 80px 0;}
 	.noti_wrap {padding: 30px 20px;}
 }
@@ -411,7 +411,7 @@
 .loc .info_wrap {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); max-width: 1030px; padding:0 18px; width:100%; display:flex; align-items: flex-end ; justify-content:space-between; box-sizing:border-box;}
 .loc .info_wrap .txt_box {max-width: 540px; width:100%; padding:20px 0; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); border-top:20px solid #CDF564; border-bottom:20px solid #CDF564; background-color:#fff; box-sizing: border-box;}
 .loc .info_wrap .txt_box .tit {font-size:24px; margin-bottom: 30px; font-weight:700; text-align:center;}
-.loc .info_wrap .txt_box .tit::after {display:block; content: ''; width:97px; height:8px; background-color:#009225; position:absolute; left:0; bottom:0;}
+.loc .info_wrap .txt_box .tit::after {display:block; content: ''; width:126px; height:8px; background-color:#009225; position:absolute; left:21%; bottom:76%;}
 .loc .info_wrap .txt_box dl {display:flex;}
 .loc .info_wrap .txt_box dl ~ dl {margin-top:40px;}
 .loc .info_wrap .txt_box dl dt {width:36%; margin-right:30px; text-align:center;}
@@ -420,7 +420,7 @@
 .loc .info_wrap .txt_box dl dd p {font-size:2.4rem; font-weight:700; line-height:1.250em;}
 .loc .info_wrap .btn_outlink {transform: translateY(25px);}
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:844px) {
 	.sec_08 {padding: 80px 0;}
 	.center_tab {margin-top: 30px;}
 	.center_tab a {width: 120px;}
