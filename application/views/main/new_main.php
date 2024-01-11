@@ -849,10 +849,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 								</div>
 							</div>
 							<div class="start_date">
-								<div class="rdo_wrap">
-									<p class="form_tit">유학 과정</p>
+								<div class="rdo_wrap" style="width:160px;">
+									<p class="form_tit" style="margin-bottom:15px;">유학 과정</p>
 									<div class="start_wrap" style="width:100%; margin-left:3rem;">
-										<div class="select_menu start_y">
+										<div class="select_menu start_y" style="width:100%;">
 											<a href="#n" class="select_btn">어학연수</a>
 											<ul class="select_list">
 												<li class="on"><a href="#n">어학연수</a></li>
