@@ -848,7 +848,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 									</ul>
 								</div>
 							</div>
-							<div class="con_wrap_02">
+							<div class="start_date">
 								<div class="rdo_wrap">
 									<p class="form_tit">유학 과정</p>
 									<div class="rdo_li">
@@ -962,7 +962,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 							</div>
 						</div>
 					</div>
-					<div class="group">
+					<div class="group" style="margin:0;">
 						<div class="cs_inner">
 							<div class="chk_wrap">
 								<label for="chk_01">
