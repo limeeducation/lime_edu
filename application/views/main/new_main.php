@@ -916,10 +916,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 					</div>
 					<div class="group">
 						<div class="cs_inner">
-							<div class="txt_wrap">
-								<p class="form_tit">문의내용</p>
-								<div class="textarea_wrap"><textarea cols="30" rows="10" placeholder="문의 내용을 적어주세요&#13;&#10;*자세히 입력할수록 정확한 상담이 가능합니다"></textarea></div>
-							</div>
 							<div class="start_date">
 								<p class="form_tit">희망시작시기</p>
 								<div class="start_wrap">
@@ -962,6 +958,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 									</label>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="group">
+						<div class="cs_inner">
+							<div class="txt_wrap">
+								<p class="form_tit">문의내용</p>
+								<div class="textarea_wrap"><textarea cols="30" rows="10" placeholder="문의 내용을 적어주세요&#13;&#10;*자세히 입력할수록 정확한 상담이 가능합니다"></textarea></div>
+							</div>
+
 						</div>
 					</div>
 					<div class="cs_btn">
