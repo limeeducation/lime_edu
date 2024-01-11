@@ -889,9 +889,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 								<p class="form_tit">희망시작시기</p>
 								<div class="start_wrap" style="width:100%; margin-left:3rem;">
 									<div class="select_menu start_y">
-										<a href="#n" class="select_btn">2023</a>
+										<a href="#n" class="select_btn">2024</a>
 										<ul class="select_list">
-											<li class="on"><a href="#n">2023</a></li>
+											<li class="on"><a href="#n">2024</a></li>
+											<li><a href="#n">2023</a></li>
 											<li><a href="#n">2022</a></li>
 											<li><a href="#n">2021</a></li>
 											<li><a href="#n">2020</a></li>
