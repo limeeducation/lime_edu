@@ -314,7 +314,7 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 .cs_box .cs_tab_wrap .form_tit {margin-right:20px; text-align:center;}
 .cs_box .cs_tab_wrap .tab_li {padding-left:35px; display:flex; flex-wrap: wrap;}
 .cs_box .cs_tab_wrap .tab_li li ~ li {margin-left:10px;}
-.cs_box .cs_tab_wrap .tab_li a {display:block; font-size:2.4rem;font-weight:600; padding:6px 16px; border:1px solid transparent; border-radius: 5px; transition: .2s; box-sizing:border-box; text-align:center;}
+.cs_box .cs_tab_wrap .tab_li a {display:block; font-size:20px;font-weight:600; padding:6px 16px; border:1px solid transparent; transition: .2s; box-sizing:border-box; text-align:center;}
 .cs_box .cs_tab_wrap .tab_li a.on {border-color: #009225; background-color:#212121; color:#fff;}
 .cs_box .cs_tab_wrap .tab_li.cs_tab a {padding:6px 24px;}
 .cs_box .select_wrap {display:flex;}

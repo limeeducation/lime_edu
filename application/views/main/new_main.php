@@ -782,13 +782,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 						<div class="cs_tab_wrap">
 							<p class="form_tit">지사선택</p>
 							<ul class="tab_li">
-								<li><a href="#" class="on">전국</a></li>
-								<li><a href="#">서울</a></li>
-								<li><a href="#">대전</a></li>
-								<li><a href="#">송도</a></li>
-								<li><a href="#">대구</a></li>
-								<li><a href="#">부산</a></li>
-								<li><a href="#">제주</a></li>
+								<li><a href="#" class="on sub1">전국</a></li>
+								<li><a href="#" class="sub1">서울</a></li>
+								<li><a href="#" class="sub1">대전</a></li>
+								<li><a href="#" class="sub1">송도</a></li>
+								<li><a href="#" class="sub1">대구</a></li>
+								<li><a href="#" class="sub1">부산</a></li>
+								<li><a href="#" class="sub1">제주</a></li>
 							</ul>
 						</div>
 					</div>

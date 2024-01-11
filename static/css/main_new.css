@@ -442,7 +442,7 @@
 
 /* ============================== [ 상담신청 ] ========================================================================================== */
 .sec_09 {padding:70px 0 140px; background: url(../img/img_new/bg_cs.png) no-repeat center; background-size: cover;}
-.sec_09 .cs_box {background:rgba(0, 99, 35, .6); border-radius: 15px; padding:105px 105px 83px; overflow-y:auto; height:100%;}
+.sec_09 .cs_box {background:rgb(51, 51, 51); padding:105px 72px 83px; overflow-y:auto; height:100%;}
 .sec_09 .cs_box .form_tit {color:#fff; width:auto; margin-right:0;}
 .sec_09 .cs_inner {display:flex; max-width: 990px; width: 100%;}
 .sec_09 .cs_box .inpt_wrap ~ .inpt_wrap {margin-top:0; margin-left:30px;}
@@ -455,6 +455,8 @@
 .sec_09 .cs_box .cs_tab_wrap .form_tit {margin-right:72px;}
 .sec_09 .cs_box .cs_tab_wrap .tab_li {padding-left:0;}
 .sec_09 .cs_box .cs_tab_wrap .tab_li a {width:99px; padding:6px 0; color:#fff;}
+.sec_09 .cs_box .cs_tab_wrap .tab_li a .sub1{width:60px;}
+.sec_09 .cs_box .cs_tab_wrap .tab_li a .sub1{width:60px;}
 
 /* 상담 희망일자 / 시간 */
 .sec_09 .cs_box .select_wrap {margin-right:25px;}
