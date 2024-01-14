@@ -124,7 +124,7 @@
 					<input type="text" class="inpt inpt_month" placeholder="12">월
 				</div>
 			</div>
-			<hr style="display:block;"/>
+			<hr style="display:block; margin-top:35px;"/>
 			<div class="group">
 				<p class="form_tit">문의내용</p>
 				<div class="textarea_wrap"><textarea cols="30" rows="10" placeholder="문의 내용을 적어주세요&#13;&#10;*자세히 입력할수록 정확한 상담이 가능합니다"></textarea></div>
