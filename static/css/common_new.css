@@ -70,14 +70,14 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 /* Header Bottom */
 .h_btm {background-color: #fff; position:relative;}
 .h_btm > .inner {display: flex; justify-content: space-between;}
-.h_btm h1 {padding-top: 12px;}
+.h_btm h1 {padding-top: 14px;}
 .h_btm h1 a {display: block; width: 173px; height: 63px;}
-.h_btm h1 a img {display: block; width: 100%; height: auto;}
+.h_btm h1 a img {display: block; width: 103px; height: auto;}
 .h_btm nav {flex:1; margin: 0 30px;}
 .h_btm .d_01 {display: flex;}
-.h_btm .d_01 .depth01 {min-width: 204px;}
-.h_btm .d_01 .menu_01 {padding: 47px 0 32px; font-size: 24px; font-weight: 700; line-height: 1.2145em; display: block; text-align:center;}
-.h_btm .site_menu {display: block; width: 72px; height: 72px; box-sizing: border-box; padding: 26px 24px; margin-top: 21px;}
+.h_btm .d_01 .depth01 {min-width: 171px;}
+.h_btm .d_01 .menu_01 {padding: 32px 0 32px; font-size: 20px; font-weight: 700; line-height: 1.2145em; display: block; text-align:center;}
+.h_btm .site_menu {display: block; width: 72px; height: 72px; box-sizing: border-box; padding: 26px 24px; margin-top: 8px;}
 .h_btm .site_menu span {width: 24px; height: 2px; display: block; background-color: #000;}
 .h_btm .site_menu span ~ span {margin-top: 6px;}
 
