@@ -133,7 +133,7 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 }
 
 /* ============================== [ site menu ] ========================================================================================== */
-.site_menu_wrap {display:none; background-color:#FBFFFD; width:100%; height:calc(100vh - 113px); position:fixed; left:0; top:113px; z-index:9999; box-shadow:inset 0px 4px 22px 0px rgba(0, 0, 0, 0.13);}
+.site_menu_wrap {display:none; background-color:#FBFFFD; width:100%; height:calc(100vh - 113px); position:fixed; left:0; top:88px; z-index:9999; box-shadow:inset 0px 4px 22px 0px rgba(0, 0, 0, 0.13);}
 .site_pc {height:100%;}
 .site_mo {display:none;}
 .site_menu_wrap .inner {max-width: 1077px;}
