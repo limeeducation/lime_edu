@@ -118,44 +118,10 @@
 				</div>
 			</div>
 			<div class="group">
-				<div class="con_wrap">
-					<div class="start_date">
-						<p class="form_tit">희망시작시기</p>
-						<div class="start_wrap" style="width:100%; margin-left:3rem;">
-							<div class="select_menu start_y">
-								<a href="#n" class="select_btn">2024</a>
-								<ul class="select_list">
-									<li class="on"><a href="#n">2024</a></li>
-									<li><a href="#n">2023</a></li>
-									<li><a href="#n">2022</a></li>
-									<li><a href="#n">2021</a></li>
-									<li><a href="#n">2020</a></li>
-									<li><a href="#n">2019</a></li>
-									<li><a href="#n">2018</a></li>
-									<li><a href="#n">2017</a></li>
-									<li><a href="#n">2016</a></li>
-									<li><a href="#n">2015</a></li>
-								</ul>
-							</div>
-							<div class="select_menu start_m">
-								<a href="#n" class="select_btn">12</a>
-								<ul class="select_list">
-									<li class="on"><a href="#n">12</a></li>
-									<li><a href="#n">11</a></li>
-									<li><a href="#n">10</a></li>
-									<li><a href="#n">09</a></li>
-									<li><a href="#n">08</a></li>
-									<li><a href="#n">07</a></li>
-									<li><a href="#n">06</a></li>
-									<li><a href="#n">05</a></li>
-									<li><a href="#n">04</a></li>
-									<li><a href="#n">03</a></li>
-									<li><a href="#n">02</a></li>
-									<li><a href="#n">01</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+				<div class="inpt_wrap">
+					<p class="form_tit">희망시작시기</p>
+					<input type="text" class="inpt inpt_name" placeholder="2024">
+					<input type="text" class="inpt inpt_name" placeholder="12">
 				</div>
 			</div>
 			<hr style="display:block;"/>
