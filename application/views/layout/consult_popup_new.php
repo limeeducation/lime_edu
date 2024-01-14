@@ -83,9 +83,9 @@
 						</ul>
 					</div>
 					<div class="start_date">
-						<div class="rdo_wrap" style="width:160px;">
-							<p class="form_tit" style="margin-bottom:15px;">유학 과정</p>
-							<div class="start_wrap" style="width:100%;">
+						<div class="rdo_wrap">
+							<p class="form_tit" style="margin-bottom:15px; text-align:center;">유학 과정</p>
+							<div class="start_wrap">
 								<div class="select_menu start_y" style="width:100%;">
 									<a href="#n" class="select_btn">어학연수</a>
 									<ul class="select_list">
