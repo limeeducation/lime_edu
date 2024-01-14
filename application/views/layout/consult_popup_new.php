@@ -120,8 +120,8 @@
 			<div class="group">
 				<div class="inpt_wrap">
 					<p class="form_tit">희망시작시기</p>
-					<input type="text" class="inpt inpt_name" placeholder="2024">
-					<input type="text" class="inpt inpt_name" placeholder="12">
+					<input type="text" class="inpt inpt_year" placeholder="2024">년
+					<input type="text" class="inpt inpt_month" placeholder="12">월
 				</div>
 			</div>
 			<hr style="display:block;"/>
