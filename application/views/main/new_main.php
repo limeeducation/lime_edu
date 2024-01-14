@@ -924,7 +924,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/application/views/layout/header_new.php');
 							</div>
 						</div>
 					</div>
-					<hr/>
+					<hr style="display:block;"/>
 					<div class="group">
 						<div class="cs_inner">
 							<div class="txt_wrap">
