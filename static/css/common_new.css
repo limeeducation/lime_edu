@@ -121,6 +121,7 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 .sub_menu .sub_box .city_wrap ul.fl_1 li {width:100%; margin-top:27px;}
 .sub_menu .sub_box .city_wrap ul.fl_1 li:first-child {margin-top:19px;}
 .sub_menu .sub_box .city_wrap li ~ li {margin:0 !important;}
+.sub_menu .item img {width:15%;}
 .camp_menu {width:100%; padding-top:66px; position:absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
 .camp_menu a {display:block; text-align:center;}
 .camp_menu a ~ a {margin-top:35px;}

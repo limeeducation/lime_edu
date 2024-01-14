@@ -40,7 +40,7 @@
 									</div>
 									<div class="sub_menu">
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</h3>
+											<h3><img src="/static/img/common/gnb_ico_us@2x.png" alt="">미국</h3>
 											<div class="sub_box">
 												<ul>
 													<li><a href="#">미국 대학교 랭킹</a></li>
@@ -50,7 +50,7 @@
 											</div>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</h3>
+											<h3><img src="/static/img/common/gnb_ico_ca@2x.png" alt="">캐나다</h3>
 											<div class="sub_box">
 												<ul>
 													<li><a href="#">왜 캐나다 대학?</a></li>
@@ -61,7 +61,7 @@
 											</div>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</h3>
+											<h3><img src="/static/img/common/gnb_ico_gb@2x.png" alt="">영국</h3>
 											<div class="sub_box">
 												<ul>
 													<li><a href="#">왜 영국 대학?</a></li>
@@ -84,7 +84,7 @@
 									</div>
 									<div class="sub_menu">
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</h3>
+											<h3><img src="/static/img/common/gnb_ico_us@2x.png" alt="">미국</h3>
 											<div class="sub_box">
 												<ul>
 													<li><a href="#">조기유학 미국 학교 찾기</a></li>
@@ -94,7 +94,7 @@
 											</div>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</h3>
+											<h3><img src="/static/img/common/gnb_ico_ca@2x.png" alt="">캐나다</h3>
 											<div class="sub_box">
 												<ul>
 													<li><a href="#">조기유학 캐나다 학교 찾기</a></li>
@@ -105,7 +105,7 @@
 											</div>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</h3>
+											<h3><img src="/static/img/common/gnb_ico_gb@2x.png" alt="">영국</h3>
 											<div class="sub_box">
 												<ul>
 													<li><a href="#">조기유학 영국 학교 찾기</a></li>
@@ -127,7 +127,7 @@
 									</div>
 									<div class="sub_menu">
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</h3>
+											<h3><img src="/static/img/common/gnb_ico_us@2x.png" alt="">미국</h3>
 											<div class="sub_box">
 												<p class="box_tit">미국 전체</p>
 												<div class="city_wrap">
@@ -155,7 +155,7 @@
 											</div>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</h3>
+											<h3><img src="/static/img/common/gnb_ico_ca@2x.png" alt="">캐나다</h3>
 											<div class="sub_box">
 												<p class="box_tit">캐나다 전체</p>
 												<div class="city_wrap">
@@ -171,7 +171,7 @@
 											</div>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_phi@2x.png" alt=""></i>필리핀</h3>
+											<h3><img src="/static/img/common/gnb_ico_phi@2x.png" alt="">필리핀</h3>
 											<div class="sub_box">
 												<p class="box_tit">필리핀 전체</p>
 												<div class="city_wrap">
@@ -195,19 +195,19 @@
 									</div>
 									<div class="sub_menu">
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_us@2x.png" alt=""></i>미국</h3>
+											<h3><img src="/static/img/common/gnb_ico_us@2x.png" alt="">미국</h3>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_ca@2x.png" alt=""></i>캐나다</h3>
+											<h3><img src="/static/img/common/gnb_ico_ca@2x.png" alt="">캐나다</h3>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_gb@2x.png" alt=""></i>영국</h3>
+											<h3><img src="/static/img/common/gnb_ico_gb@2x.png" alt="">영국</h3>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_nz@2x.png" alt="NZ"></i>뉴질랜드</h3>
+											<h3><img src="/static/img/common/gnb_ico_nz@2x.png" alt="NZ">뉴질랜드</h3>
 										</div>
 										<div class="item">
-											<h3><i><img src="/static/img/common/gnb_ico_phi@2x.png" alt=""></i>필리핀</h3>
+											<h3><img src="/static/img/common/gnb_ico_phi@2x.png" alt="">필리핀</h3>
 										</div>
 										<div class="camp_menu">
 											<a href="#">가족연수 모집 공고 확인하기</a>
