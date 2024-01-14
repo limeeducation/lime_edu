@@ -298,8 +298,8 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 }
 
 /* ============================== [ 상담신청 팝업 ] ========================================================================================== */
-.popup {display: none; position:fixed; left:50%; top:50%; transform: translate(-50%, -50%); height:95vh; width:calc(100% - 40px); max-width: 990px; z-index:9999; background-color:#fff; box-sizing:border-box; border-radius: 10px; overflow:hidden;}
-.cs_pop .pop_inner {padding:30px 50px; border-top:38px solid #CDF564; border-bottom:38px solid #CDF564; box-sizing:border-box; height:100%;}
+.popup {display: none; position:fixed; left:50%; top:50%; transform: translate(-50%, -50%); height:95vh; width:calc(100% - 40px); max-width: 990px; z-index:9999; background-color:#fff; box-sizing:border-box; overflow:hidden;}
+.cs_pop .pop_inner {padding:30px 50px; border-top:38px solid #009225; border-bottom:38px solid #009225; box-sizing:border-box; height:100%;}
 .cs_pop .pop_tit {font-size:6rem; font-weight:700; letter-spacing: -1.28px; text-align:center;}
 .cs_pop .des {margin-top:10px; text-align:center; letter-spacing: -0.27px;}
 .cs_box {margin-top:40px; overflow-y:auto; height:60%;}
@@ -360,7 +360,7 @@ body.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:fixed
 .chk_wrap label p {margin-left:23px; user-select: none;}
 
 .cs_btn {margin-top:30px; display:flex; justify-content:center;}
-.cs_btn .btn {width:100%; max-width: 360px; padding:19px 0; background-color:#CDF564; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); font-size:24px; font-weight:700; text-align:center;}
+.cs_btn .btn {width:100%; max-width: 360px; padding:19px 0; background-color:#009225; color:#000000; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); font-size:24px; font-weight:700; text-align:center;}
 
 /* 스크롤 커스텀 */
 .mCSB_scrollTools {position:relative; margin:16px 0; width:31px !important; }
