@@ -83,6 +83,27 @@
 						</ul>
 					</div>
 				</div>
+				<div class="start_date">
+					<div class="rdo_wrap" style="width:160px;">
+						<p class="form_tit" style="margin-bottom:15px;">유학 과정</p>
+						<div class="start_wrap" style="width:100%;">
+							<div class="select_menu start_y" style="width:100%;">
+								<a href="#n" class="select_btn">어학연수</a>
+								<ul class="select_list">
+									<li class="on"><a href="#n">어학연수</a></li>
+									<li><a href="#n">전문과정</a></li>
+									<li><a href="#n">중고생 교환학생</a></li>
+									<li><a href="#n">조기유학</a></li>
+									<li><a href="#n">영어캠프</a></li>
+									<li><a href="#n">컬리지</a></li>
+									<li><a href="#n">박사</a></li>
+									<li><a href="#n">학사</a></li>
+									<li><a href="#n">석사</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="group">
 				<div class="cs_tab_wrap">
@@ -98,63 +119,14 @@
 			</div>
 			<div class="group">
 				<div class="con_wrap">
-					<div class="rdo_wrap">
-						<p class="form_tit">유학 과정</p>
-						<div class="rdo_li">
-							<label for="rdo_011">
-								<input type="radio" id="rdo_011" name="rdo1">
-								<i></i>
-								<p>어학연수</p>
-							</label>
-							<label for="rdo_021">
-								<input type="radio" id="rdo_021" name="rdo1">
-								<i></i>
-								<p>전문과정</p>
-							</label>
-							<label for="rdo_031">
-								<input type="radio" id="rdo_031" name="rdo1">
-								<i></i>
-								<p>중고생 교환학생</p>
-							</label>
-							<label for="rdo_041">
-								<input type="radio" id="rdo_041" name="rdo1">
-								<i></i>
-								<p>조기유학</p>
-							</label>
-							<label for="rdo_051">
-								<input type="radio" id="rdo_051" name="rdo1">
-								<i></i>
-								<p>영어캠프</p>
-							</label>
-							<label for="rdo_061">
-								<input type="radio" id="rdo_061" name="rdo1">
-								<i></i>
-								<p>컬리지</p>
-							</label>
-							<label for="rdo_071">
-								<input type="radio" id="rdo_071" name="rdo1">
-								<i></i>
-								<p>박사</p>
-							</label>
-							<label for="rdo_081">
-								<input type="radio" id="rdo_081" name="rdo1">
-								<i></i>
-								<p>학사</p>
-							</label>
-							<label for="rdo_091">
-								<input type="radio" id="rdo_091" name="rdo1">
-								<i></i>
-								<p>석사</p>
-							</label>
-						</div>
-					</div>
 					<div class="start_date">
 						<p class="form_tit">희망시작시기</p>
-						<div class="start_wrap">
+						<div class="start_wrap" style="width:100%; margin-left:3rem;">
 							<div class="select_menu start_y">
-								<a href="#n" class="select_btn">2023</a>
+								<a href="#n" class="select_btn">2024</a>
 								<ul class="select_list">
-									<li class="on"><a href="#n">2023</a></li>
+									<li class="on"><a href="#n">2024</a></li>
+									<li><a href="#n">2023</a></li>
 									<li><a href="#n">2022</a></li>
 									<li><a href="#n">2021</a></li>
 									<li><a href="#n">2020</a></li>
@@ -186,6 +158,7 @@
 					</div>
 				</div>
 			</div>
+			<hr style="display:block;"/>
 			<div class="group">
 				<p class="form_tit">문의내용</p>
 				<div class="textarea_wrap"><textarea cols="30" rows="10" placeholder="문의 내용을 적어주세요&#13;&#10;*자세히 입력할수록 정확한 상담이 가능합니다"></textarea></div>
