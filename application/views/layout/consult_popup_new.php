@@ -82,24 +82,24 @@
 							<li data-value="18"><img src="/static/img/img_new/common/clock_09.png" alt=""></li>
 						</ul>
 					</div>
-				</div>
-				<div class="start_date">
-					<div class="rdo_wrap" style="width:160px;">
-						<p class="form_tit" style="margin-bottom:15px;">유학 과정</p>
-						<div class="start_wrap" style="width:100%;">
-							<div class="select_menu start_y" style="width:100%;">
-								<a href="#n" class="select_btn">어학연수</a>
-								<ul class="select_list">
-									<li class="on"><a href="#n">어학연수</a></li>
-									<li><a href="#n">전문과정</a></li>
-									<li><a href="#n">중고생 교환학생</a></li>
-									<li><a href="#n">조기유학</a></li>
-									<li><a href="#n">영어캠프</a></li>
-									<li><a href="#n">컬리지</a></li>
-									<li><a href="#n">박사</a></li>
-									<li><a href="#n">학사</a></li>
-									<li><a href="#n">석사</a></li>
-								</ul>
+					<div class="start_date">
+						<div class="rdo_wrap" style="width:160px;">
+							<p class="form_tit" style="margin-bottom:15px;">유학 과정</p>
+							<div class="start_wrap" style="width:100%;">
+								<div class="select_menu start_y" style="width:100%;">
+									<a href="#n" class="select_btn">어학연수</a>
+									<ul class="select_list">
+										<li class="on"><a href="#n">어학연수</a></li>
+										<li><a href="#n">전문과정</a></li>
+										<li><a href="#n">중고생 교환학생</a></li>
+										<li><a href="#n">조기유학</a></li>
+										<li><a href="#n">영어캠프</a></li>
+										<li><a href="#n">컬리지</a></li>
+										<li><a href="#n">박사</a></li>
+										<li><a href="#n">학사</a></li>
+										<li><a href="#n">석사</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
